@@ -4,142 +4,117 @@
 	<meta charset="UTF-8">
 	<title>JS</title>
 </head>
-<style>
-	* {
-		margin: 0;/*191919*//*414141*/
-		padding: 0;
-		box-sizing: border-box;
-	}
-	body {
-		background: #ccc;
-	}
-	ul {
-		width: 640px;
-	    position: relative;
-	    margin: 50px auto;
-	    overflow: hidden;
-	    background: #414141;
-	}
-	.wrap {
-		overflow: hidden;
-    	border: 20px solid #191919;
-	}
-	ul li {
-		width: 120px;
-		float: left;
-		height: 120px;
-		border: 20px solid #191919;
-		list-style: none;
-	}
-	#car {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 35px;
-		height: 60px;
-		z-index: 100;
-		background: url(car.png) no-repeat;
-		background-size: cover;
-		transition: all .3s linear;
-	}
-	.trans-l {
-		transform: rotate(90deg);
-	}
-	.trans-r {
-		transform: rotate(-90deg);
-	}
-	.trans-v {
-		transform: rotate(180deg);
-	}
-</style>
+	<style>
+		.wrapper {
+			max-width: 350px;
+			position: relative;
+			margin: 50px auto;
+			border: 3px solid #ccc;
+			height: 550px;
+		}
+		.box {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			background: #191919;
+		}
+		/*
+		#box1 {background: red;}
+		#box2 {background: orange;}
+		#box3 {background: yellow;}
+		#box4 {background: green;}
+		#box5 {background: lightblue;}
+		#box6 {background: blue;}
+		#box7 {background: purple;}
+		*/
+
+		#car {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			background: #2ab1bf;
+			border-radius: 50%;
+			z-index: 1;
+			transition: all .3s linear;
+		}
+	</style>
 <body>
-	<ul>
-		<div class="wrap">
-			<div id="car"></div>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</div>
-	</ul>
-
+	<div class="wrapper">
+		<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>
+		<div class="box" id="box3"></div>
+		<div class="box" id="box4"></div>
+		<div class="box" id="box5"></div>
+		<div class="box" id="box6"></div>
+		<div class="box" id="box7"></div>
+		<div class="box" id="car"></div>
+	</div>
 	<script>
-		window.addEventListener("DOMContentLoaded", init);
+		var box1 = document.getElementById('box1'),
+			box2 = document.getElementById('box2'),
+			box3 = document.getElementById('box3'),
+			car = document.getElementById('car');
 
-		function init(){
-			
-
-			var car = document.getElementById('car');
-			car.style.left = '0px';
-			car.style.top = '0px';
-
-			window.addEventListener("keydown", function(event){
-				/*if(event.keyCode == 82){
-					car.classList.toggle("circle");
-				}*/
-				if(event.keyCode == 37){
-					car.style.left = (parseInt(car.style.left) - 50) + "px";
-					car.classList.add("trans-l");
-					car.classList.remove("trans-r");
-					car.classList.remove("trans-v");
-				}
-				if(event.keyCode == 39){
-					car.style.left = (parseInt(car.style.left) + 50) + "px";
-					car.classList.add("trans-r");
-					car.classList.remove("trans-l");
-					car.classList.remove("trans-v");
-				}
-				if(event.keyCode == 40){
-					car.style.top = (parseInt(car.style.top) + 50) + "px";
-					car.classList.remove("trans-v");
-					car.classList.remove("trans-l");
-					car.classList.remove("trans-r");
-				}
-				if(event.keyCode == 38){
-					car.style.top = (parseInt(car.style.top) - 50) + "px";
-					car.classList.remove("trans-l");
-					car.classList.remove("trans-r");
-					car.classList.add("trans-v");
-				}
-			});
+		function Box(x,y) {
+			this.x = x;
+			this.y = y;
 		}
 
+		var box_pos_1 = new Box('50px','50px'),
+			box_pos_2 = new Box('150px','50px'),
+			box_pos_3 = new Box('250px','50px'),
+			box_pos_4 = new Box('50px','150px'),
+			box_pos_5 = new Box('150px','150px'),
+			box_pos_6 = new Box('250px','150px'),
+			box_pos_7 = new Box('50px','250px'),
+			car_pos   = new Box('100px','100px');
+
+		box1.style.left = box_pos_1.x;
+		box1.style.top = box_pos_1.y;
+
+		box2.style.left = box_pos_2.x;
+		box2.style.top = box_pos_2.y;
+
+		box3.style.left = box_pos_3.x;
+		box3.style.top = box_pos_3.y;
+
+		box4.style.left = box_pos_4.x;
+		box4.style.top = box_pos_4.y;
+
+		box5.style.left = box_pos_5.x;
+		box5.style.top = box_pos_5.y;
+
+		box6.style.left = box_pos_6.x;
+		box6.style.top = box_pos_6.y;
+
+		box7.style.left = box_pos_7.x;
+		box7.style.top = box_pos_7.y;
+
+		car.style.left = car_pos.x;
+		car.style.top = car_pos.y;
+
+		window.addEventListener('keyup', function(event){
+			if(event.keyCode == 37){
+				if(car.style.left != '0px'){
+					car.style.left = (parseInt(car.style.left) - 100) + 'px';
+				}
+			}
+			if(event.keyCode == 39){
+				if(car.style.left != '300px'){
+					car.style.left = (parseInt(car.style.left) + 100) + 'px';
+				}
+			}
+			if(event.keyCode == 38){
+				if(car.style.top != '0px'){
+					car.style.top = (parseInt(car.style.top) - 100) + 'px';
+				}
+			}
+			if(event.keyCode == 40){
+				if(car.style.top != '450px' && car.style.top < '450px'){
+					car.style.top = (parseInt(car.style.top) + 100) + 'px';
+				}
+			}
+		});
 	</script>
 </body>
 </html>
