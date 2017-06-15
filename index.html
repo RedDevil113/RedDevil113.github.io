@@ -25,15 +25,10 @@
 		<div id="car"></div>
 	</div>
 	<script>
-		var /*box1 = document.getElementById('box1'),
-			box2 = document.getElementById('box2'),
-			box3 = document.getElementById('box3'),*/
-			car = document.getElementById('car');
 
-		function Box(x,y) {
-			this.x = x;
-			this.y = y;
-		}
+		var car = document.getElementById('car');
+		car.style.left = '150px';
+		car.style.top = '150px';
 
 		function moveCar(top,left,deg) {
 			car.style.left = (parseInt(car.style.left) - left) + 'px';
@@ -41,27 +36,22 @@
 			car.style.transform = "rotate(" + deg + "deg)";
 		}
 
-		var car_pos = new Box('160px','150px');
-
-		car.style.left = car_pos.x;
-		car.style.top = car_pos.y;
-
 		window.addEventListener('keyup', function(event){
 			if(event.keyCode == 37){
 				if(car.style.left != '0px' && car.style.left != '10px')
-					moveCar(0,150,90);
+					setTimeout(moveCar,200,0,150,90);
 			}
 			if(event.keyCode == 39){
-				if(car.style.left != '450px' && car.style.left != '460px')
-					moveCar(0,-150,-90);
+				if(car.style.left != '450px')
+					setTimeout(moveCar,200,0,-150,-90);
 			}
 			if(event.keyCode == 38){
 				if(car.style.top != '0px')
-					moveCar(150,0,-180);
+					setTimeout(moveCar,200,150,0,-180);
 			}
 			if(event.keyCode == 40){
 				if(car.style.top != '750px' && car.style.top < '750px')
-					moveCar(-150,0,0);
+					setTimeout(moveCar,200,-150,0,0);
 			}
 		});
 	</script>
