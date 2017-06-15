@@ -20,15 +20,64 @@ body {
 	border-radius: 7px;
     box-shadow: inset 0px 0px 0px 3px rgba(156, 156, 156, 0.2);
 	z-index: 2;
+	transform: translate(-50%,-50%);
 }
 
 #car {
 	position: absolute;
+	transform: translate(-50%,-50%);
 	width: 28px;
 	height: 50px;
-	margin-left: 11px;
 	z-index: 1;
 	transition: left .3s linear, top .3s linear;
 	background: url(../images/car.png) no-repeat;
 	background-size: cover;
 }
+
+/* key */
+
+.key {
+	width: 20px;
+	height: 20px;
+	transform: translate(-50%,-50%);/*translateY(-50%)*/
+	border-radius: 50%;
+	position: absolute;
+	z-index: 3;
+	transition: .2s linear;
+}
+
+.keyO {background: orange;}
+.keyY {background: yellow;}
+.keyG {background: green;}
+
+/* house */
+
+.house {
+	width: 40px;
+	height: 20px;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	z-index: 3;
+	border-bottom: 2px solid #000;
+	transition: .2s linear;
+}
+
+.house::after {
+	content: '';
+    position: absolute;
+    top: -32px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.oHouse {background: orange;}
+.yHouse {background: yellow;}
+.gHouse {background: green;}
+
+.oHouse::after {border-bottom-color: orange;}
+.yHouse::after {border-bottom-color: yellow;}
+.gHouse::after {border-bottom-color: green;}

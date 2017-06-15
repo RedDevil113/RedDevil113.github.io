@@ -22,39 +22,19 @@
 		<div class="box" id="box13"></div>
 		<div class="box" id="box14"></div>
 		<div class="box" id="box15"></div>
+
+		<div class="house oHouse" id="oHouse"></div>
+		<div class="house yHouse" id="yHouse"></div>
+		<div class="house gHouse" id="gHouse"></div>
+
+		<div class="key keyO" id="keyO"></div>
+		<div class="key keyY" id="keyY"></div>
+		<div class="key keyG" id="keyG"></div>
+
 		<div id="car"></div>
+
 	</div>
-	<script>
-
-		var car = document.getElementById('car');
-		car.style.left = '150px';
-		car.style.top = '150px';
-
-		function moveCar(top,left,deg) {
-			car.style.left = (parseInt(car.style.left) - left) + 'px';
-			car.style.top = (parseInt(car.style.top) - top) + 'px';
-			car.style.transform = "rotate(" + deg + "deg)";
-		}
-
-		window.addEventListener('keyup', function(event){
-			if(event.keyCode == 37){
-				if(car.style.left != '0px' && car.style.left != '10px')
-					setTimeout(moveCar,200,0,150,90);
-			}
-			if(event.keyCode == 39){
-				if(car.style.left != '450px')
-					setTimeout(moveCar,200,0,-150,-90);
-			}
-			if(event.keyCode == 38){
-				if(car.style.top != '0px')
-					setTimeout(moveCar,200,150,0,-180);
-			}
-			if(event.keyCode == 40){
-				if(car.style.top != '750px' && car.style.top < '750px')
-					setTimeout(moveCar,200,-150,0,0);
-			}
-		});
-	</script>
 	<script src="js/main.js"></script>
+	<script src="js/position.js"></script>
 </body>
 </html>
