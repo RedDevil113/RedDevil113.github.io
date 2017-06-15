@@ -26,11 +26,13 @@ position(box14,250,700);
 position(box15,400,700);
 
 //=== key ===
+position(keyR,175,325);
 position(keyO,25,25);
 position(keyY,325,325);
 position(keyG,175,625);
 
 //=== house ===
+position(rHouse,475,175);
 position(oHouse,325,775);
 position(yHouse,175,475);
 position(gHouse,475,25);

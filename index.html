@@ -6,6 +6,18 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="loss-game">
+		<div class="game-text">
+			<h2>Вы проиграли!</h2>
+			<button onclick="document.location.reload()">Повторить</button>
+		</div>
+	</div>
+	<div class="win-game">
+		<div class="game-text">
+			<h2>Вы выиграли!</h2>
+			<button onclick="document.location.reload()">Повторить</button>
+		</div>
+	</div>
 	<div class="wrapper">
 		<div class="trunk">
 			<span>Багажник</span>
@@ -26,11 +38,13 @@
 		<div class="box" id="box13"></div>
 		<div class="box" id="box14"></div>
 		<div class="box" id="box15"></div>
-
+		
+		<div class="house rHouse" id="rHouse"></div>
 		<div class="house oHouse" id="oHouse"></div>
 		<div class="house yHouse" id="yHouse"></div>
 		<div class="house gHouse" id="gHouse"></div>
 
+		<div class="key keyR" id="keyR"></div>
 		<div class="key keyO" id="keyO"></div>
 		<div class="key keyY" id="keyY"></div>
 		<div class="key keyG" id="keyG"></div>
