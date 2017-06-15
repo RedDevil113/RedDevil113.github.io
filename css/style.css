@@ -6,7 +6,8 @@ body {
 	max-width: 500px;/*350/*191919*//*414141*/
 	position: relative;
 	margin: 100px auto;
-	/*border: 3px solid red;*/
+	border-radius: 7px;
+    box-shadow: 0px 0px 18px 3px rgba(65, 65, 65, 0.5);
 	background: #191919;
 	height: 800px;/*550*/
 }
@@ -29,13 +30,3 @@ body {
 	background: url(../images/car.png)no-repeat;
 	background-size: cover;
 }
-
-.trans-l {
-		transform: rotate(90deg);
-	}
-	.trans-r {
-		transform: rotate(-90deg);
-	}
-	.trans-v {
-		transform: rotate(-180deg);
-	}
