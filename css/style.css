@@ -1,17 +1,44 @@
 body {
-	background: radial-gradient(circle at 80px 40px,#191919, #414141);
+	background: radial-gradient(#191919, #414141);/*radial-gradient(circle at 80px 40px,#191919, #414141);*/
 }
 
 .wrapper {
 	max-width: 500px;/*350/*191919*//*414141*/
 	position: relative;
-	margin: 100px auto;
+	margin: 50px auto;
 	border-radius: 7px;
     box-shadow: 0px 0px 18px 3px rgba(65, 65, 65, 0.5);
 	background: #191919;
 	border: 10px solid #191919;
 	height: 800px;/*550*/
 }
+
+#counter {
+	position: absolute;
+    top: -10px;
+    right: -120px;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(97, 97, 97, 0.65);
+    border-radius: 7px;
+}
+
+.trunk {
+	position: absolute;
+	font-size: 17px;
+    top: 50px;
+    right: -120px;
+    color: #fff;
+    width: 100px;
+    height: 200px;
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(97, 97, 97, 0.65);
+    border-radius: 7px;
+}
+
 .box {
 	width: 100px;/*50*/
 	height: 100px;/*50*/
@@ -72,6 +99,20 @@ body {
     border-bottom: 30px solid transparent;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
+}
+.keyO-tr {
+    left: 570px!important;
+    top: 110px!important;
+}
+
+.keyY-tr {
+    left: 570px!important;
+    top: 150px!important;
+}
+
+.keyG-tr {
+    left: 570px!important;
+    top: 190px!important;
 }
 
 .oHouse {background: orange;}
