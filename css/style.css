@@ -1,0 +1,41 @@
+body {
+	background: radial-gradient(circle at 80px 40px,#191919, #414141);
+}
+
+.wrapper {
+	max-width: 500px;/*350/*191919*//*414141*/
+	position: relative;
+	margin: 100px auto;
+	/*border: 3px solid red;*/
+	background: #191919;
+	height: 800px;/*550*/
+}
+.box {
+	width: 100px;/*50*/
+	height: 100px;/*50*/
+	position: absolute;
+	background: #414141;
+	border-radius: 7px;
+    box-shadow: inset 0px 0px 0px 3px rgba(156, 156, 156, 0.2);
+	z-index: 2;
+}
+
+#car {
+	position: absolute;
+	width: 28px;
+	height: 50px;
+	z-index: 1;
+	transition: left .3s linear, top .3s linear;
+	background: url(../images/car.png)no-repeat;
+	background-size: cover;
+}
+
+.trans-l {
+		transform: rotate(90deg);
+	}
+	.trans-r {
+		transform: rotate(-90deg);
+	}
+	.trans-v {
+		transform: rotate(-180deg);
+	}
