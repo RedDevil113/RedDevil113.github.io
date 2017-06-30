@@ -1,6 +1,7 @@
 header {
   padding: 15px 0 10px;
   position: fixed;
+  height: 56px;
   top: 0;
   left: 0;
   width: 100%;
@@ -55,7 +56,13 @@ header {
     header .menu li:nth-child(4) i, header .menu li:nth-child(4)::before, header .menu li:nth-child(4)::after {
       background-color: #feb960; }
     header .menu li:nth-child(5) i, header .menu li:nth-child(5)::before, header .menu li:nth-child(5)::after {
+      background-color: #fc5f45; }
+    header .menu li:nth-child(6) i, header .menu li:nth-child(6)::before, header .menu li:nth-child(6)::after {
       background-color: #38c695; }
+    header .menu li:nth-child(7) i, header .menu li:nth-child(7)::before, header .menu li:nth-child(7)::after {
+      background-color: #b27cf5; }
+    header .menu li:nth-child(8) i, header .menu li:nth-child(8)::before, header .menu li:nth-child(8)::after {
+      background-color: #feb960; }
 
 #home {
   height: 100vh;
@@ -133,7 +140,7 @@ header {
   top: 0;
   right: 0;
   width: 50px;
-  border-left: 1px solid #000;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;

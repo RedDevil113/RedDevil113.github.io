@@ -1,0 +1,47 @@
+@import 'variables'
+
+#steps
+	background: $section-bg
+	.section-text
+		margin-bottom: 100px
+
+.steps-column
+	position: relative
+	max-width: 550px
+	margin: 0 auto -5px
+	border-radius: 5px
+	img 
+		max-width: 650px
+
+.steps-column-text
+	position: absolute
+	top: -70px
+	padding: 40px 25px 40px 80px
+	background: $white-color
+	max-width: 460px
+	border-bottom: 5px solid transparent
+	box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.1)
+	&.steps-1
+		left: -280px
+		border-color: $red-color
+	&.steps-2
+		right: -280px
+		border-color: $green-color
+	&.steps-3
+		left: -280px
+		border-color: $purple-color
+	&.steps-4
+		right: -280px
+		border-color: $orange-color
+	span
+		position: absolute
+		top: 10px
+		left: 20px
+		font-size: 50px
+		color: #e0e0e0
+	h4
+		font-size: 22px
+		margin-bottom: 15px
+	p 
+		font-size: 16px
+

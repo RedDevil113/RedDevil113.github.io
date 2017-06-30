@@ -1,5 +1,78 @@
+@import 'variables'
 @import 'reset'
 @import 'header'
 @import 'about'
 @import 'service'
+@import 'portfolio'
+@import 'steps'
+
+footer
+	padding: 60px 0
+	background: $purple-dark
+	position: relative
+	span
+		position: absolute
+		bottom: 0
+		width: 25%
+		height: 5px
+		left: 0%
+		background: $red-color
+		&:nth-child(2)
+			left: 25%
+			background: $green-color
+		&:nth-child(3)
+			left: 50%
+			background: $purple-color
+		&:nth-child(4)
+			left: 75%
+			background: $orange-color
+
+.footer
+	display: flex 
+	flex-wrap: wrap
+	.fot-column
+		width: 25%
+		&:nth-child(1)
+			width: 20%
+		&:nth-child(2)
+			width: 30%
+		&.fot-logo
+			line-height: 150px
+		h4
+			font-size: 22px
+			color: $orange-color
+			margin-bottom: 25px
+		&.contact 
+			h4
+				color: $green-color
+			ul li, ul li a 
+				padding: 5px 0
+				color: #fef4f2
+				i 
+					width: 30px
+					text-align: center
+			a:hover
+				color: $green-color
+		&.info h4
+				color: $purple-color
+		p 
+			color: #fef4f2
+
+.fot-social
+	li 
+		display: inline-block
+		font-size: 25px
+		a
+			border: 3px solid #fef4f2
+			color: #fef4f2
+			display: block
+			width: 40px
+			height: 40px
+			text-align: center
+			line-height: 36px
+			margin: 0 3px
+			&:hover
+				color: $red-color
+				border-color: $red-color
+
 @import 'media'

@@ -27,7 +27,7 @@ a
 
 body
 	font-size: 18px
-	height: 4000px
+	height: 8000px
 
 .wrapper
 	max-width: 1160px
@@ -50,9 +50,18 @@ body
 
 .section
 	padding: 90px 0
+	position: relative
+	.section-text
+		text-align: center
 
 .section-bg-num 
-		font-size: 210px
-		position: absolute
-		z-index: -1
-		color: rgba(224, 224, 224, 0.5)
+	font-size: 210px
+	position: absolute
+	z-index: -1
+	color: rgba(224, 224, 224, 0.5)
+	&.sec-num
+		left: 50%
+		top: 0
+		z-index: 0
+		color: rgba(0, 0, 0, 0.1)
+		transform: translate(-50%,0%)

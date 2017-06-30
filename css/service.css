@@ -1,24 +1,18 @@
 #services {
-  background: #f7f7f7;
-  text-align: center;
-  position: relative; }
+  background: #f7f7f7; }
   #services .services {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
-  #services .section-bg-num {
-    left: 50%;
-    top: 0;
-    z-index: 0;
-    color: rgba(0, 0, 0, 0.1);
-    -webkit-transform: translate(-50%, 0%);
-        -ms-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%); }
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
 
 .services-column {
   padding: 50px 30px;
-  margin: 70px 15px 20px;
+  margin: 70px 1% 20px;
+  width: 23%;
   background: #ffffff;
   border-bottom: 5px solid transparent;
   -webkit-box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.1);
@@ -26,7 +20,8 @@
   -webkit-border-radius: 5px;
           border-radius: 5px;
   -webkit-transition: .35s linear;
-  transition: .35s linear; }
+  transition: .35s linear;
+  text-align: center; }
   .services-column:hover {
     -webkit-box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3); }
@@ -46,3 +41,60 @@
     font-size: 20px; }
   .services-column p {
     font-size: 16px; }
+
+.count-section {
+  background-size: cover !important;
+  position: relative; }
+  .count-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 39, 50, 0.85); }
+
+#counter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  #counter .count-column {
+    width: 25%;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 99; }
+  #counter img {
+    width: 60px; }
+  #counter .number {
+    font-size: 40px;
+    padding: 8px 0 13px 0;
+    font-weight: bold;
+    opacity: 0;
+    color: #ffffff;
+    -webkit-transition: .35s linear;
+    transition: .35s linear;
+    position: relative; }
+    #counter .number.n1:after {
+      background: #fc5f45; }
+    #counter .number.n2:after {
+      background: #38c695; }
+    #counter .number.n3:after {
+      background: #b27cf5; }
+    #counter .number.n4:after {
+      background: #feb960; }
+    #counter .number::after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 40%;
+      width: 20%;
+      height: 2px; }
+  #counter .viz {
+    opacity: 1; }
+  #counter h5 {
+    color: #fefefe;
+    font-size: 20px; }

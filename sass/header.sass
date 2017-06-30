@@ -3,6 +3,7 @@
 header
 	padding: 15px 0 10px
 	position: fixed
+	height: 56px
 	top: 0
 	left: 0
 	width: 100%
@@ -57,7 +58,16 @@ header
 	        background-color: $orange-color
 	    &:nth-child(5)
 	      i, &::before, &::after
+	        background-color: $red-color
+	    &:nth-child(6)
+	      i, &::before, &::after
 	        background-color: $green-color
+	    &:nth-child(7)
+	      i, &::before, &::after
+	        background-color: $purple-color
+	    &:nth-child(8)
+	      i, &::before, &::after
+	        background-color: $orange-color
 
 #home 
 	height: 100vh
@@ -124,7 +134,7 @@ header
 	top: 0
 	right: 0
 	width: 50px
-	border-left: 1px solid #000
+	border-left: 1px solid rgba(255, 255, 255, 0.3)
 	height: 100%
 	display: flex 
 	justify-content: center

@@ -27,7 +27,7 @@ a {
 
 body {
   font-size: 18px;
-  height: 4000px; }
+  height: 8000px; }
 
 .wrapper {
   max-width: 1160px;
@@ -48,10 +48,21 @@ body {
     background: rgba(0, 0, 0, 0.6); }
 
 .section {
-  padding: 90px 0; }
+  padding: 90px 0;
+  position: relative; }
+  .section .section-text {
+    text-align: center; }
 
 .section-bg-num {
   font-size: 210px;
   position: absolute;
   z-index: -1;
   color: rgba(224, 224, 224, 0.5); }
+  .section-bg-num.sec-num {
+    left: 50%;
+    top: 0;
+    z-index: 0;
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%); }
