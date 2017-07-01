@@ -26,8 +26,7 @@ a {
   transition: .35s linear; }
 
 body {
-  font-size: 18px;
-  height: 8000px; }
+  font-size: 18px; }
 
 .wrapper {
   max-width: 1160px;

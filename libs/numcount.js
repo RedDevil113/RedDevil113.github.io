@@ -1,12 +1,12 @@
 var time = 2, cc = 1;
 $(window).scroll(function(){
-$('#counter').each(function(){/*сдесь мы указываем ID который будут содержаться все блоки с прокруткой счетчика*/
+$('#counter').each(function(){
       var
       cPos = $(this).offset().top,
       topWindow = $(window).scrollTop();
       if(cPos < topWindow + 200){
         if(cc < 2){
-          $('.number').addClass('viz');/*сдесь мы указываем класс который добавляеи opacity: 1;*/
+          $('.number').addClass('viz');
           $('div').each(function(){
           var 
           i = 1,
