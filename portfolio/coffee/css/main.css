@@ -741,7 +741,11 @@ footer {
     .gallery .good_coffee_bg .h2 {
       text-align: center; }
   .footer_social ul {
-    text-align: center; } }
+    text-align: center; } 
+  .home .baner_text .h1 {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    margin-bottom: 1rem;}}
 
 @media screen and (max-width: 650px) {
   .home .baner_text {
@@ -755,6 +759,11 @@ footer {
       border-bottom: none; } }
 
 @media screen and (max-width: 560px) {
+  .home .baner_text p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1.875rem;
+  }
   .product_1 {
     padding: 0px 20px; }
   .product_1 .slick-dots {
@@ -797,7 +806,7 @@ footer {
     .sweets .product_2 .slick-arrow {
       display: none !important; }
   .address {
-    padding: 0 !important; }
+    padding: 0 20px 0 20px !important; }
   .gallery .good_coffee_bg {
     padding: 4.0625rem 0; } }
 
