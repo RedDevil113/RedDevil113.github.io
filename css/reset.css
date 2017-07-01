@@ -26,7 +26,8 @@ a {
   transition: .35s linear; }
 
 body {
-  font-size: 18px; }
+  font-size: 18px;
+  overflow-x: hidden; }
 
 .wrapper {
   max-width: 1160px;
@@ -50,7 +51,8 @@ body {
   padding: 90px 0;
   position: relative; }
   .section .section-text {
-    text-align: center; }
+    text-align: center;
+    margin: 0 15px; }
 
 .section-bg-num {
   font-size: 210px;

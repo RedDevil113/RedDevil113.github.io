@@ -7,6 +7,37 @@
 @import 'steps'
 @import 'skills'
 
+/*PRELOADER*/
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 99999
+	transition: 1s all ease
+	opacity: 1
+	visibility: visible
+	background-color: $purple-color
+	.loader
+		width: 100%
+		height: 75px
+		line-height: 75px
+		text-align: center
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		font-size: 75px
+		#load_prec
+			font-size: 70px
+			font-weight: bold
+			color: $purple-dark
+	&.done
+		opacity: 0
+		visibility: hidden
+
 footer
 	padding: 60px 0
 	background: $purple-dark

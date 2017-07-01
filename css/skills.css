@@ -26,19 +26,33 @@
     .skills .skills-column:nth-child(1) {
       border-color: #fc5f45; }
     .skills .skills-column:nth-child(2) {
-      border-color: #38c695; }
+      border-color: #38c695;
+      -webkit-animation-delay: .2s;
+              animation-delay: .2s; }
     .skills .skills-column:nth-child(3) {
-      border-color: #b27cf5; }
+      border-color: #b27cf5;
+      -webkit-animation-delay: .4s;
+              animation-delay: .4s; }
     .skills .skills-column:nth-child(4) {
-      border-color: #feb960; }
+      border-color: #feb960;
+      -webkit-animation-delay: .6s;
+              animation-delay: .6s; }
     .skills .skills-column:nth-child(5) {
-      border-color: #fc5f45; }
+      border-color: #fc5f45;
+      -webkit-animation-delay: .2s;
+              animation-delay: .2s; }
     .skills .skills-column:nth-child(6) {
-      border-color: #38c695; }
+      border-color: #38c695;
+      -webkit-animation-delay: .4s;
+              animation-delay: .4s; }
     .skills .skills-column:nth-child(7) {
-      border-color: #b27cf5; }
+      border-color: #b27cf5;
+      -webkit-animation-delay: .6s;
+              animation-delay: .6s; }
     .skills .skills-column:nth-child(8) {
-      border-color: #feb960; }
+      border-color: #feb960;
+      -webkit-animation-delay: .8s;
+              animation-delay: .8s; }
     .skills .skills-column img {
       height: 130px;
       margin-bottom: 15px; }

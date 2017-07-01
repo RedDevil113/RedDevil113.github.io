@@ -10,7 +10,8 @@
   -webkit-border-radius: 5px;
           border-radius: 5px; }
   .steps-column img {
-    max-width: 650px; }
+    max-width: 650px;
+    width: 100%; }
 
 .steps-column-text {
   position: absolute;

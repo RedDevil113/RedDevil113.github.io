@@ -28,11 +28,17 @@
   .services-column:nth-child(1) {
     border-color: #fc5f45; }
   .services-column:nth-child(2) {
-    border-color: #38c695; }
+    border-color: #38c695;
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s; }
   .services-column:nth-child(3) {
-    border-color: #b27cf5; }
+    border-color: #b27cf5;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s; }
   .services-column:nth-child(4) {
-    border-color: #feb960; }
+    border-color: #feb960;
+    -webkit-animation-delay: .6s;
+            animation-delay: .6s; }
   .services-column img {
     width: 70px;
     margin-bottom: 25px; }

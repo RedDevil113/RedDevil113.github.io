@@ -64,6 +64,54 @@ header {
     header .menu li:nth-child(8) i, header .menu li:nth-child(8)::before, header .menu li:nth-child(8)::after {
       background-color: #feb960; }
 
+.mob-menu {
+  position: absolute;
+  top: 3px;
+  right: 25px;
+  background: #fc5f45;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.4);
+          box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.4);
+  z-index: 1000;
+  cursor: pointer;
+  display: none; }
+  .mob-menu span, .mob-menu span:before, .mob-menu span:after {
+    display: block;
+    height: 3px;
+    width: 28px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5px;
+    left: 50%;
+    margin-left: -14px;
+    background: #ffffff; }
+  .mob-menu span:before {
+    content: '';
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    margin-top: -8px; }
+  .mob-menu span:after {
+    content: '';
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    margin-top: 6px; }
+
+.open .mob-menu span {
+  background: transparent; }
+  .open .mob-menu span:before {
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+    margin-top: 0; }
+  .open .mob-menu span:after {
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    margin-top: 0; }
+
 #home {
   height: 100vh;
   display: -webkit-box;
@@ -141,6 +189,8 @@ header {
   right: 0;
   width: 50px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
