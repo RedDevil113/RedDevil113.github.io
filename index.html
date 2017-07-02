@@ -11,6 +11,39 @@
 	<link rel="stylesheet" href="libs/animate/animate.css"/>
 	<link rel="stylesheet" href="css/main.css">
 </head>
+<style>
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  opacity: 1;
+  visibility: visible;
+  background-color: #fc5f45; }
+  .preloader .loader {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 75px; }
+    .preloader .loader #load_prec {
+      font-size: 70px;
+      font-weight: bold;
+      color: #fff; }
+  .preloader.done {
+    opacity: 0;
+    visibility: hidden; }
+</style>
 <body>
 	<div id="page-preloader" class="preloader">
 		<div class="loader">
