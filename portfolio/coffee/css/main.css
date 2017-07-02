@@ -189,7 +189,7 @@ header {
     .home .baner_text .h1 {
       font-size: 3.75rem;
       line-height: 3.75rem;
-      font-style: italic;
+      letter-spacing: 6px;
       color: #fff;
       margin-bottom: 1.25rem; }
     .home .baner_text p {
@@ -198,9 +198,8 @@ header {
       margin-bottom: 1.875rem; }
     .home .baner_text a {
       display: inline-block;
-      padding: 0.625rem 1.875rem 0.7rem;
-      font-size: 1.5625rem;
-      font-style: italic;
+      padding: 8px 20px;
+      font-size: 20px;
       font-weight: bold;
       background: #c59d5f;
       -webkit-border-radius: 9px;
@@ -208,7 +207,7 @@ header {
       -webkit-box-shadow: 1px 5px 0px rgba(197, 157, 95, 0.5);
               box-shadow: 1px 5px 0px rgba(197, 157, 95, 0.5); }
       .home .baner_text a .fa {
-        font-size: 1.875rem;
+        font-size: 22px;
         margin-right: 2px; }
       .home .baner_text a:hover {
         background: #644007;
