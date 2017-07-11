@@ -1,0 +1,230 @@
+.modal {
+    max-width: 600px;
+    max-height: 94%;
+    width: 100%;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    z-index: 9999;
+    text-align: center;
+    transform: translate(-50%,-50%) scale(.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.cancel::before, .cancel::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 2px;
+    height: 16px;
+    background-color: #83a7a5;
+}
+
+.cancel::before {
+    right: 7px;
+    transform: rotate(-45deg);
+}
+
+.cancel::after {
+    left: 7px;
+    transform: rotate(45deg);
+}
+
+.modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.8);
+    transition: all 0.3s;
+}
+
+.modal h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #444446;
+    margin: 0 0 12px;
+}
+
+.modal h6 {
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: #444446;
+    margin-bottom: 40px;
+}
+
+.modal-content input,.modal-requisites input {
+    width: 250px;
+    height: 36px;
+    border: solid 1px #83a7a5;
+    padding: 9px 10px;
+    outline: none;
+    display: block;
+    margin: 0 auto 15px;
+    opacity: .6;
+}
+.modal-content input:focus,.modal-requisites input:focus {
+    opacity: 1;
+}
+
+.modal input::-webkit-input-placeholder {color: #2e2e30; }
+.modal input::-moz-placeholder          {color: #2e2e30; }
+.modal input::-moz-placeholder          {color: #2e2e30; }
+.modal input::-ms-input-placeholder     {color: #2e2e30; }
+
+.modal-content input[type=submit],.modal-requisites input[type=submit] {
+    padding: 9px 30px;
+    background: #83a7a5;
+    color: #fff;
+    transition: .4s linear;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    max-width: 140px;
+    margin: 30px auto 15px
+    opacity: 1;
+}
+
+.modal-content input#submit:hover {background: #6fb048;}
+
+.modal-form {
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.modal-content .modal-form p,.modal-content .modal-form p a {
+    font-size: 11px;
+    line-height: 1.18;
+    color: #0f5f5c;
+    line-height: 1.3;
+}
+
+.modal-content .modal-form p a {text-decoration: underline;}
+.modal-content .modal-form p a:hover {color: #6fb048;}
+
+.modal-form::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -150px;
+    max-width: 300px;
+    width: 100%;
+    height: 2px;
+    opacity: 0.7;
+    background: #83a7a5;
+}
+
+.descr-service h4 {
+    font-size: 20px;
+    color: #444446;
+    font-family: 'Open Sans Italic';
+    margin-bottom: 10px;
+}
+
+.first-price,.last-price {
+    font-size: 30px;
+    font-family: 'Open Sans Semibold Italic';
+}
+
+.first-price  {color: #444446;text-decoration: line-through;}
+.last-price  {color: #f95454;margin-bottom: 20px;}
+
+.modal-pay {
+    padding: 9px 25px;
+    background-color: #6fb048;
+    display: inline-block;
+    color: #fff;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.present h3 {
+    font-size: 21px;
+    color: #0f5f5c;
+    margin-bottom: 2px;
+}
+
+.present p {
+    font-size: 14px;
+    color: #444446;
+    margin-bottom: 4px;
+}
+
+.present p span {
+    font-size: 10px;
+    color: #83a7a5;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.present .present-p {
+    font-family: 'Open Sans Light Italic';
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+.modal-requisites {margin: 10px 0;}
+
+.modal#modal-requisites {max-width: 500px;}
+
+.modal-requisites input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #83a7a5;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+.checkbox {
+    text-align: left;
+    margin: 0 0 0 75px;
+}
+
+.checkbox label {
+    font-size: 14px;
+    vertical-align: text-top;
+}
+
+.modal-requisites input[type=submit] {
+    background: #6fb048;
+    max-width: 180px;
+}
+.modal-requisites input[type=submit]:hover {background: #83a7a5;}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.modal-overlay.open-overlay {
+    visibility: visible;
+    opacity: 1;
+}

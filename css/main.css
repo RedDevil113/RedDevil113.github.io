@@ -29,6 +29,11 @@ body {
   font-size: 18px;
   overflow-x: hidden; }
 
+.port-logo {
+  padding: 5px;
+  background: #fff;
+}
+
 .wrapper {
   max-width: 1160px;
   width: 96%;

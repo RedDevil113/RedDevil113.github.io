@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  src: url("../fonts/OpenSans/OpenSans-Italic.ttf");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans Light Italic';
+  src: url("../fonts/OpenSans/OpenSans-LightItalic.ttf");
+  font-weight: lighter;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans SemiBold Italic';
+  src: url("../fonts/OpenSans/OpenSans-SemiBoldItalic.ttf");
+  font-weight: bold; }
+
+::-webkit-input-placeholder {
+  color: #ffffff; }
+
+::-moz-placeholder {
+  color: #ffffff; }
+
+::-moz-placeholder {
+  color: #ffffff; }
+
+::-ms-input-placeholder {
+  color: #ffffff; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  border: 3px solid red;
+  -webkit-transition: .2s linear;
+  transition: .2s linear; }
+
+body input:required:valid,
+body textarea:required:valid {
+  border: 3px solid green;
+  -webkit-transition: .2s linear;
+  transition: .2s linear; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none; }
+
+ol, ul {
+  list-style: none; }
+
+p {
+  color: #2e2e30;
+  font-family: 'Open Sans'; }
+
+h1, h2, h3, h4, h5, h6, i {
+  color: #000000;
+  font-family: 'Open Sans Light';
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  -webkit-transition: .35s linear;
+  transition: .35s linear;
+  font-family: 'Open Sans'; }
+
+body {
+  font-size: 18px;
+  font-family: 'Open Sans'; }
+
+.wrapper {
+  max-width: 1140px;
+  width: 96%;
+  margin: 0 auto; }
+
+section {
+  padding: 90px 0; }
