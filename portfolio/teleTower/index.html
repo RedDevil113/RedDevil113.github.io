@@ -11,16 +11,25 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
-
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#8dc63f">
+	<meta name="msapplication-navbutton-color" content="#8dc63f">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#8dc63f">
 
 </head>
 <body>
+	<div class="modal-overlay"></div>
+	<div class="modal-content" id="modal1">
+		<div class="cancel"></div>
+		<form method="post" action="">
+			<h3>Lorem ipsum dolor.</h3>
+			<input name="name" type="text" placeholder="Имя*" required>
+			<input name="phone" type="phone" placeholder="Телефон*" required>
+			<textarea name="area" placeholder="Сообщение*" required></textarea>
+			<input class="lading-button" value="ОТПРАВИТЬ" type="submit">
+		</form>
+	</div>
 	<!-- start header section -->
 	<header class="header">
 		<div class="wrapper">
@@ -31,13 +40,12 @@
 					 	<img class="logo" src="img/header/logo.png" alt="logo">
 					</picture>
 					<div class="header-phone">
-						<!--<picture>
-						 	<source srcset="img/header/phone.svg" type="image/svg+xml">
-						 	<img class="phone" src="img/header/phone.png" alt="phone">
-						</picture>-->
 						<a href="tel:74957084243">+7 (495) 708-42-43<br></a>
 						<span>Ежедневно с 9:00 до 18:00</span>
 					</div>
+				</div>
+				<div class="mob-menu">
+					<span></span>
 				</div>
 				<nav class="col-sm-7 top-menu">
 					<ul class="menu-list">
@@ -53,7 +61,7 @@
 	<!-- end header -->
 	<!-- start banner section -->
 	<div class="slide-banner">
-		<div class="slide" style="background: url(img/header/slide-1.png);">
+		<div class="slide" style="background: url(img/header/slide-1.jpg);">
 			<div class="wrapper">
 				<div class="slider-text">
 					<h3 class="slide-title">
@@ -69,7 +77,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="slide" style="background: url(img/header/slide-1.png);">
+		<div class="slide" style="background: url(img/header/slide-1.jpg);">
 			<div class="wrapper">
 				<div class="slider-text">
 					<h3 class="slide-title">
@@ -101,28 +109,28 @@
 	<section class="options">
 		<div class="wrapper">
 			<div class="row">
-				<div class="col-md-3 col-sm-6 options-column">
+				<div class="col-md-3 col-xs-6 options-column">
 					<picture>
 					 	<source srcset="img/options/column-1.svg" type="image/svg+xml">
 					 	<img src="img/options/column-1.png" alt="column">
 					</picture>
 					<span class="options-column__text">Прямой стык с M9</span>
 				</div>
-				<div class="col-md-3 col-sm-6 options-column">
+				<div class="col-md-3 col-xs-6 options-column">
 					<picture>
 					 	<source srcset="img/options/column-2.svg" type="image/svg+xml">
 					 	<img src="img/options/column-2.png" alt="column">
 					</picture>
 					<span class="options-column__text">22 Ггбит</span>
 				</div>
-				<div class="col-md-3 col-sm-6 options-column">
+				<div class="col-md-3 col-xs-6 options-column">
 					<picture>
 					 	<source srcset="img/options/column-3.svg" type="image/svg+xml">
 					 	<img src="img/options/column-3.png" alt="column">
 					</picture>
 					<span class="options-column__text">4 оператора</span>
 				</div>
-				<div class="col-md-3 col-sm-6 options-column">
+				<div class="col-md-3 col-xs-6 options-column">
 					<picture>
 					 	<source srcset="img/options/column-4.svg" type="image/svg+xml">
 					 	<img src="img/options/column-4.png" alt="column">
@@ -283,10 +291,7 @@
 				 	<img src="img/group-6.png" alt="group">
 				</picture>
 				<h2 class="to_order-title">Вы можете заказать <br>индивидуальные условия <br>и персональный тариф</h2>
-				<picture class="to_order-column">
-				 	<source srcset="img/arrow.svg" type="image/svg+xml">
-				 	<img class="arrow" src="img/arrow.png" alt="arrow">
-				</picture>
+				<a href="#modal1" class="to_order-column button-modal"></a>
 			</div>
 		</div>
 	</section>
@@ -341,7 +346,13 @@
 	<section class="partners">
 		<div class="wrapper">
 			<h2 class="partners-title">Партнеры</h2>
-			<div class="partners-row">
+			<div class="slider-partners">
+				<div class="partners-column">
+					<img src="img/partner-logo-1.jpg" alt="partner">
+				</div>
+				<div class="partners-column">
+					<img src="img/partner-logo-1.jpg" alt="partner">
+				</div>
 				<div class="partners-column">
 					<img src="img/partner-logo-1.jpg" alt="partner">
 				</div>
@@ -362,7 +373,7 @@
 	<footer class="footer" style="background: url(img/action.jpg);">
 		<div class="wrapper">
 			<div class="row">
-				<div class="col-md-4 footer-column">
+				<div class="col-md-4 col-sm-6 footer-column">
 					<div class="footer-logo">
 						<picture>
 						 	<source srcset="img/header/logo.svg" type="image/svg+xml">
@@ -379,7 +390,7 @@
 						<span>Ежедневно с 9:00 до 18:00</span>
 					</div>
 				</div>
-				<div class="col-md-6 footer-column">
+				<div class="col-md-6 col-sm-6 footer-column">
 					<a class="main-site" href="#">Основной сайт компании</a>
 					<p>«ТелеТауэр» работает на рынке ИТ и телекоммуникационных услуг с 2005 года. Компания начала свою деятельность с ряда успешных проектов комплексного оснащения объектов недвижимости.</p>
 				}
@@ -390,41 +401,9 @@
 
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
-    <script>
-	    ymaps.ready(init);
-	    var myMap,myPlacemark;
-	    function init(){     
-	      myMap = new ymaps.Map("map", {
-	          center: [55.74388267, 37.66478768],
-	          zoom: 18,
-	          controls: ['smallMapDefaultSet']
-	      });
-	      myMap.behaviors.disable([
-	      	'scrollZoom'
-	      ]);
-		var squareLayout = ymaps.templateLayoutFactory.createClass('<div class="placemark_layout_container"><div class="square_layout"></div><p>ул. Александра Солженицына, д. 27</p></div>');
-
-	    var squarePlacemark = new ymaps.Placemark(
-	        [55.74388267, 37.66478768], {
-	            hintContent: 'ул. Александра Солженицына, д. 27'
-	        }, {
-	            iconLayout: squareLayout,
-	            iconShape: {
-	                type: 'Rectangle',
-	                coordinates: [
-	                    [-25, -25], [25, 25]
-	                ]
-	            }
-	        }
-	    );
-	    myMap.geoObjects.add(squarePlacemark);
-	   }
-    </script>
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/slick/slick-theme.css">
-	<link rel="stylesheet" href="css/main.min.css">
+    <script src="js/map.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/slick/slick.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
