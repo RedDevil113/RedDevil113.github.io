@@ -282,14 +282,13 @@ header {
           flex-direction: column;
   text-align: center;
   z-index: 99; }
-  .banner-social li {
-    font-size: 25px; }
+  .banner-social li a img {
+    width: 25px; }
     .banner-social li a {
-      color: #ffffff;
       display: block;
       padding: 8px 0; }
-      .banner-social li a:hover {
-        color: #fc5f45; }
+      .banner-social li a:hover img {
+        transform: scale(1.2); }
 
 @-webkit-keyframes blink {
   0% {
@@ -823,17 +822,16 @@ footer {
   font-size: 20px; }
   .fot-social li a {
     border: 2px solid #fef4f2;
-    color: #fef4f2;
     display: block;
     width: 40px;
     height: 40px;
     text-align: center;
-    line-height: 36px;
+    line-height: 44px;
     margin: 0 3px;
     -webkit-border-radius: 50%;
             border-radius: 50%; }
+  .fot-social li a img { width: 22px; }
     .fot-social li a:hover {
-      color: #fc5f45;
       border-color: #fc5f45; }
 
 @media only screen and (max-width: 1130px) {
