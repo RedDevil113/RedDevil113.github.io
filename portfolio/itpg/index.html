@@ -20,6 +20,28 @@
 
 </head>
 <body>
+	<!-- modal -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<form method="post" action="">
+				<h3 class="modal-content__title">Lorem ipsum dolor.</h3>
+				<div class="modal-content__row">
+					<div class="modal-content__column">
+						<input type="text" name="name" placeholder="name">
+					<input type="text" name="phone" placeholder="phone">
+					</div>
+					<div class="modal-content__column">
+						<input type="text" name="name" placeholder="name">
+						<input type="text" name="phone" placeholder="phone">
+					</div>
+				</div>
+				<textarea name="text" placeholder="Message"></textarea>
+				<input type="submit" value="send" class="button">
+			</form>
+		</div>
+	</div>
 	<!-- start header -->
 	<header class="header">
 		<div class="wrapper">
@@ -30,7 +52,7 @@
 						 	<source srcset="img/logo.svg" type="image/svg+xml">
 						 	<img class="logo" src="img/logo.png" alt="IPT Group">
 						</picture>
-						<a href="#" class="btn-primary">Оставить заявку</a>
+						<a href="#modal-form" class="btn-primary button-modal">Оставить заявку</a>
 					</div>
 				</div><!-- header-column(1) -->
 				<div class="col-md-6 header-column header-navigation">
@@ -57,16 +79,56 @@
 					<nav class="header-menu__main">
 						<ul class="menu-main__list">
 							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">Услуги</a>
-								<ul class="drop-menu">
+								<div class="drop-menu">
 									<div class="wrapper">
-						        <li><a href="#">Юридическая деятельность</a></li>
-						        <li><a href="#">Налоговая практика</a></li>
-						        <li><a href="#">Финансовые услуги</a></li>
-						        <li><a href="#">Управление коллективными инвестициями</a></li>
-						        <li><a href="#">Оценочные услуги</a></li>
-						        <li><a href="#">Управление бизнесом</a></li>
-						      </div>
-		      			</ul>
+										<div class="drop-menu__row">
+											<div class="drop-menu__column">
+												<h5 class="drop-menu__title">Категория</h5>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(1) -->
+											<div class="drop-menu__column">
+												<h5 class="drop-menu__title">Категория</h5>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(2) -->
+											<div class="drop-menu__column">
+												<h5 class="drop-menu__title">Категория</h5>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(3) -->
+											<div class="drop-menu__column">
+												<h5 class="drop-menu__title">Категория</h5>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(4) -->
+										</div><!-- row -->
+						      </div><!-- wrapper -->
+		      			</div><!-- drop-menu -->
 							</li>
 							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">Отрасли</a>
 								<ul class="drop-menu">
@@ -109,7 +171,7 @@
 					<div class="col-md-6 col-sm-6 header-menu">
 						<nav class="header-nav__secondary">
 							<ul class="menu-secondary__list">
-								<li class="menu-secondary__item"><a class="drop-link" href="javascript:void(0);">О компании</a>
+								<li class="menu-secondary__item"><a class="drop-link drop-link__secondary" href="javascript:void(0);">О компании</a>
 									<ul class="drop-menu drop-menu__secondary">
 										<div class="wrapper">
 											<li><a href="#">item-1</a></li>
@@ -205,17 +267,26 @@
 						<ul class="action-social__list">
 							<li class="action-social__item">
 								<a href="#">
-									<img src="img/facebook-black.png" alt="IPT Group">
+									<picture>
+									 	<source srcset="img/facebook-black.svg" type="image/svg+xml">
+									 	<img src="img/facebook-black.png" alt="IPT Group">
+									</picture>
 								</a>
 							</li>
 							<li class="action-social__item">
 								<a href="#">
-									<img src="img/you-tube-black.png" alt="IPT Group">
+									<picture>
+									 	<source srcset="img/youtube-black.svg" type="image/svg+xml">
+									 	<img src="img/youtube-black.png" alt="IPT Group">
+									</picture>
 								</a>
 							</li>
 							<li class="action-social__item">
 								<a href="#">
-									<img src="img/twitter-black.png" alt="IPT Group">
+									<picture>
+									 	<source srcset="img/twitter-black.svg" type="image/svg+xml">
+									 	<img src="img/twitter-black.png" alt="IPT Group">
+									</picture>
 								</a>
 							</li>
 						</ul>
@@ -562,7 +633,7 @@
 						 	<source srcset="img/logo.svg" type="image/svg+xml">
 						 	<img src="img/logo.png" alt="IPT Group">
 						</picture>
-						<a href="#" class="btn-primary">Оставить заявку</a>
+						<a href="#modal-form" class="btn-primary button-modal">Оставить заявку</a>
 					</div>
 					<p class="footer-column__text">2017 IPT Group Все права защищены <a href="#">Правовая информация</a></p>
 				</div><!-- footer-column-1-->
@@ -578,17 +649,26 @@
 					<ul class="footer-column__list">
 						<li class="footer-social__item">
 							<a href="#">
-								<img src="img/facebook.png" alt="IPT Group">
+								<picture>
+								 	<source srcset="img/facebook-white.svg" type="image/svg+xml">
+								 	<img src="img/facebook-white.png" alt="IPT Group">
+								</picture>
 							</a>
 						</li>
 						<li class="footer-social__item">
 							<a href="#">
-								<img src="img/you-tube.png" alt="IPT Group">
+								<picture>
+								 	<source srcset="img/youtube-white.svg" type="image/svg+xml">
+								 	<img src="img/youtube-white.png" alt="IPT Group">
+								</picture>
 							</a>
 						</li>
 						<li class="footer-social__item">
 							<a href="#">
-								<img src="img/twitter.png" alt="IPT Group">
+								<picture>
+								 	<source srcset="img/twitter-white.svg" type="image/svg+xml">
+								 	<img src="img/twitter-white.png" alt="IPT Group">
+								</picture>
 							</a>
 						</li>
 					</ul>
