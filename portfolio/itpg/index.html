@@ -26,19 +26,84 @@
 		<div class="modal-content">
 			<div class="cancel"></div>
 			<form method="post" action="">
-				<h3 class="modal-content__title">Lorem ipsum dolor.</h3>
-				<div class="modal-content__row">
-					<div class="modal-content__column">
-						<input type="text" name="name" placeholder="name">
-					<input type="text" name="phone" placeholder="phone">
-					</div>
-					<div class="modal-content__column">
-						<input type="text" name="name" placeholder="name">
-						<input type="text" name="phone" placeholder="phone">
-					</div>
+				<div class="modal-content__head">
+					<h3 class="modal-content__title">Запрос на оказание услуг</h3>
+					<p class="modal-content__text">*поля со звездочками обязательные к заполнению</p>
 				</div>
-				<textarea name="text" placeholder="Message"></textarea>
-				<input type="submit" value="send" class="button">
+				<div class="modal-content__select">
+					<label>Направление:</label>
+					<select name="industry">
+				    <option selected value="item-1">Выберите направление</option>
+				    <option value="item-2">Международное направление</option>
+				    <option value="item-3">Оценочные услуги</option>
+				    <option value="item-4">Сопровождение бизнеса на Кипре</option>
+				  </select>
+				</div>
+				<div class="modal-content__row">
+					<!-- start modal-content__column -->
+					<div class="modal-content__column">
+						<div class="modal-content__column-input">
+							<label for="input-name">Имя, Фамилия: *</label>
+							<input id="input-name" type="text" name="name" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-email">E-mail: *</label>
+							<input id="input-email" type="email" name="email" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-company">Компания:</label>
+							<input id="input-company" type="text" name="company">
+						</div>
+						<div class="modal-content__column-input">
+							<label>Годовой доход:</label>
+							<select name="income">
+						    <option selected value="item-1">До 500 млн.</option>
+						    <option value="item-2">От 500 млн. до 1 млрд.</option>
+						    <option value="item-3">Свыше 1 млрд.</option>
+						  </select>
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-site">Приложение:</label>
+							<input type="file" name="file">
+						</div>
+						<button class="add-file">Добавить еще файл</button>
+					</div>
+					<!-- end modal-content__column -->
+					<!-- start modal-content__column -->
+					<div class="modal-content__column">
+						<div class="modal-content__column-input">
+							<label for="input-position">Должность: *</label>
+							<input id="input-position" type="text" name="position" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-phone">Телефон:</label>
+							<input id="input-phone" type="phone" name="phone">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-site">Сайт компании:</label>
+							<input id="input-site" type="text" name="site">
+						</div>
+						<div class="modal-content__column-input">
+							<label>Отрасль:</label>
+							<select name="industry">
+						    <option selected value="item-1">Банки и финансы</option>
+						    <option value="item-2">Коллективные инвестиции</option>
+						    <option value="item-3">Культурные ценности</option>
+						    <option value="item-4">Металлургия</option>
+						  </select>
+						</div>
+					</div>
+					<!-- end modal-content__column -->
+				</div><!-- row -->
+				<div class="modal-content__textarea">
+					<label for="input-site">Сообщение:</label>
+					<textarea name="text"></textarea>
+				</div>
+				<div class="modal-content__radio">
+					<input id="input-radio" type="radio">
+					<label for="input-radio">Отправляя персональные данные из этой формы, я даю <a href="#">согласие на обработку персональных данных</a></label>
+				</div>
+				<button class="submit">Отправить</button>
 			</form>
 		</div>
 	</div>
@@ -70,6 +135,11 @@
 							<li class="header-item header-item__en"><a href="#">EN</a></li>
 							<li class="header-item"><a href="#">CHN</a></li>
 						</ul>
+						<!-- start mob-site__phone -->
+						<div class="site__phone mob-site__phone">
+							<a href="tel:+74959884770">+7 495 988-47-70</a>
+						</div>
+						<!-- end mob-site__phone -->
 					</div>
 					<!-- start mob menu -->
 					<div class="menu-bar">
@@ -77,24 +147,46 @@
 					</div>
 					<!-- end mob menu -->
 					<nav class="header-menu__main">
+						<!-- start mob input -->
+						<div class="header-languages mob-header__languages">
+							<div class="wrapper">
+								<ul class="header-list mob-header__list">
+									<div>
+										<li class="header-item header-item__search">
+											<form action="/search/">
+												<input class="search" type="text" name="search" value="" size="15" maxlength="50" placeholder="Поиск"/>
+											</form>
+											<picture>
+											 	<source srcset="img/search.svg" type="image/svg+xml">
+											 	<img class="search-ico" src="img/search.png" alt="IPT Group">
+											</picture>
+										</li>
+									</div>
+									<div>
+										<li class="header-item header-item__en"><a href="#">EN</a></li>
+										<li class="header-item header-item__chn"><a href="#">CHN</a></li>
+									</div>
+								</ul>
+							</div>
+						</div>
+						<!-- end mob input -->
 						<ul class="menu-main__list">
 							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">Услуги</a>
 								<div class="drop-menu">
 									<div class="wrapper">
 										<div class="drop-menu__row">
 											<div class="drop-menu__column">
-												<h5 class="drop-menu__title">Категория</h5>
+												<h5 class="drop-menu__title"> Юридическая деятельность</h5>
 												<ul class="drop-menu__column-list">
-									        <li><a href="#">Юридическая деятельность</a></li>
-									        <li><a href="#">Налоговая практика</a></li>
-									        <li><a href="#">Финансовые услуги</a></li>
-									        <li><a href="#">Управление коллективными инвестициями</a></li>
-									        <li><a href="#">Оценочные услуги</a></li>
-									        <li><a href="#">Управление бизнесом</a></li>
+									        <li><a href="#">Иностранное корпоративное право. Структурирование и сопровождение сделок M&A</a></li>
+									        <li><a href="#">Антимонопольное право</a></li>
+									        <li><a href="#">Банкротство юридического лица</a></li>
+									        <li><a href="#">Недвижимость и строительство. Земельное право.</a></li>
+									        <li><a href="#">Судебные споры и арбитраж в фармацевтике</a></li>
 								        </ul>
 											</div><!-- column(1) -->
 											<div class="drop-menu__column">
-												<h5 class="drop-menu__title">Категория</h5>
+												<h5 class="drop-menu__title">Финансовые услуги</h5>
 												<ul class="drop-menu__column-list">
 									        <li><a href="#">Юридическая деятельность</a></li>
 									        <li><a href="#">Налоговая практика</a></li>
@@ -105,7 +197,7 @@
 								        </ul>
 											</div><!-- column(2) -->
 											<div class="drop-menu__column">
-												<h5 class="drop-menu__title">Категория</h5>
+												<h5 class="drop-menu__title">Оценочные услуги</h5>
 												<ul class="drop-menu__column-list">
 									        <li><a href="#">Юридическая деятельность</a></li>
 									        <li><a href="#">Налоговая практика</a></li>
@@ -116,7 +208,7 @@
 								        </ul>
 											</div><!-- column(3) -->
 											<div class="drop-menu__column">
-												<h5 class="drop-menu__title">Категория</h5>
+												<h5 class="drop-menu__title">Международное направление</h5>
 												<ul class="drop-menu__column-list">
 									        <li><a href="#">Юридическая деятельность</a></li>
 									        <li><a href="#">Налоговая практика</a></li>
@@ -156,8 +248,25 @@
 					        </div>
 		      			</ul>
 							</li>
-							<li class="menu-main__item"><a href="#">Мероприятия</a></li>
+							<li class="menu-main__item menu-item__static"><a href="#">Мероприятия</a></li>
 						</ul>
+						<!-- start mob menu-secondary -->
+						<ul class="menu-main__list mob-menu__secondary">
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">О компании</a>
+								<ul class="drop-menu">
+									<div class="wrapper">
+										<li><a href="#">item-1</a></li>
+										<li><a href="#">item-2</a></li>
+										<li><a href="#">item-3</a></li>
+										<li><a href="#">item-4</a></li>
+										<li><a href="#">item-5</a></li>
+									</div>
+		      			</ul>
+							</li>
+							<li class="menu-main__item menu-item__static"><a href="#">Карьера</a></li>
+							<li class="menu-main__item menu-item__static"><a href="#">Контакты</a></li>
+						</ul>
+						<!-- end mob menu-secondary -->
 					</nav>
 				</div><!-- header-column(2) -->
 			</div>
@@ -219,7 +328,7 @@
 		<div class="wrapper">
 			<div class="action-wrap">
 				<div class="row">
-					<div class="col-md-10">
+					<div class="col-md-10 action-subscription">
 						<h4 class="action-title">подписка на обновления</h4>
 							<form action="">
 								<div class="action-submit">
