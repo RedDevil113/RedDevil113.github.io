@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>IPT Group - Услуги</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+<body>
+	<!-- button scroll to top -->
+	<div class="scroll-to__top">
+		<picture>
+		 	<source srcset="img/up-arrow.svg" type="image/svg+xml">
+		 	<img src="img/up-arrow.png" alt="IPT Group">
+		</picture>
+	</div>
+	<!-- modal -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<form method="post" action="">
+				<div class="modal-content__head">
+					<h3 class="modal-content__title">Запрос на оказание услуг</h3>
+					<p class="modal-content__text">*поля со звездочками обязательные к заполнению</p>
+				</div>
+				<div class="modal-content__select">
+					<label>Направление:</label>
+					<select name="industry">
+				    <option selected value="item-1">Выберите направление</option>
+				    <option value="item-2">Международное направление</option>
+				    <option value="item-3">Оценочные услуги</option>
+				    <option value="item-4">Сопровождение бизнеса на Кипре</option>
+				  </select>
+				</div>
+				<div class="modal-content__row">
+					<!-- start modal-content__column -->
+					<div class="modal-content__column">
+						<div class="modal-content__column-input">
+							<label for="input-name">Имя, Фамилия: *</label>
+							<input id="input-name" type="text" name="name" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-email">E-mail: *</label>
+							<input id="input-email" type="email" name="email" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-company">Компания:</label>
+							<input id="input-company" type="text" name="company">
+						</div>
+						<div class="modal-content__column-input">
+							<label>Годовой доход:</label>
+							<select name="income">
+						    <option selected value="item-1">До 500 млн.</option>
+						    <option value="item-2">От 500 млн. до 1 млрд.</option>
+						    <option value="item-3">Свыше 1 млрд.</option>
+						  </select>
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-site">Приложение:</label>
+							<input type="file" name="file">
+						</div>
+						<button class="add-file">Добавить еще файл</button>
+					</div>
+					<!-- end modal-content__column -->
+					<!-- start modal-content__column -->
+					<div class="modal-content__column">
+						<div class="modal-content__column-input">
+							<label for="input-position">Должность: *</label>
+							<input id="input-position" type="text" name="position" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-phone">Телефон:</label>
+							<input id="input-phone" type="phone" name="phone">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-site">Сайт компании:</label>
+							<input id="input-site" type="text" name="site">
+						</div>
+						<div class="modal-content__column-input">
+							<label>Отрасль:</label>
+							<select name="industry">
+						    <option selected value="item-1">Банки и финансы</option>
+						    <option value="item-2">Коллективные инвестиции</option>
+						    <option value="item-3">Культурные ценности</option>
+						    <option value="item-4">Металлургия</option>
+						  </select>
+						</div>
+					</div>
+					<!-- end modal-content__column -->
+				</div><!-- row -->
+				<div class="modal-content__textarea">
+					<label for="input-site">Сообщение:</label>
+					<textarea name="text"></textarea>
+				</div>
+				<div class="modal-content__radio">
+					<input id="input-radio" type="radio">
+					<label for="input-radio">Отправляя персональные данные из этой формы, я даю <a href="#">согласие на обработку персональных данных</a></label>
+				</div>
+				<button class="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-6 header-column header-column__first">
+					<div class="header-column__logo-button">
+						<picture>
+						 	<source srcset="img/logo.svg" type="image/svg+xml">
+						 	<img class="logo" src="img/logo.png" alt="IPT Group">
+						</picture>
+						<a href="#modal-form" class="btn-primary button-modal">Оставить заявку</a>
+					</div>
+				</div><!-- header-column(1) -->
+				<div class="col-md-6 header-column header-navigation">
+					<div class="header-languages">
+						<ul class="header-list">
+							<li class="header-item header-item__search">
+								<form action="/search/">
+									<input class="search" type="text" name="search" value="" size="15" maxlength="50" placeholder="Поиск"/>
+								</form>
+								<picture>
+								 	<source srcset="img/search.svg" type="image/svg+xml">
+								 	<img class="search-ico" src="img/search.png" alt="IPT Group">
+								</picture>
+							</li>
+							<li class="header-item header-item__en"><a href="#">EN</a></li>
+							<li class="header-item"><a href="#">CHN</a></li>
+						</ul>
+						<!-- start mob-site__phone -->
+						<div class="site__phone mob-site__phone">
+							<a href="tel:+74959884770">+7 495 988-47-70</a>
+						</div>
+						<!-- end mob-site__phone -->
+					</div>
+					<!-- start mob menu -->
+					<div class="menu-bar">
+						<span class="menu-bar__item"></span>
+					</div>
+					<!-- end mob menu -->
+					<nav class="header-menu__main">
+						<!-- start mob input -->
+						<div class="header-languages mob-header__languages">
+							<div class="wrapper">
+								<ul class="header-list mob-header__list">
+									<div>
+										<li class="header-item header-item__search">
+											<form action="/search/">
+												<input class="search" type="text" name="search" value="" size="15" maxlength="50" placeholder="Поиск"/>
+											</form>
+											<picture>
+											 	<source srcset="img/search.svg" type="image/svg+xml">
+											 	<img class="search-ico" src="img/search.png" alt="IPT Group">
+											</picture>
+										</li>
+									</div>
+									<div>
+										<li class="header-item header-item__en"><a href="#">EN</a></li>
+										<li class="header-item header-item__chn"><a href="#">CHN</a></li>
+									</div>
+								</ul>
+							</div>
+						</div>
+						<!-- end mob input -->
+						<ul class="menu-main__list">
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">Услуги</a>
+								<div class="drop-menu">
+									<div class="wrapper">
+										<div class="drop-menu__row">
+											<div class="drop-menu__column">
+												<a href="https://www.google.ru/" class="drop-menu__title"> Юридическая деятельность</a>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Иностранное корпоративное право. Структурирование и сопровождение сделок M&A</a></li>
+									        <li><a href="#">Антимонопольное право</a></li>
+									        <li><a href="#">Банкротство юридического лица</a></li>
+									        <li><a href="#">Недвижимость и строительство. Земельное право.</a></li>
+									        <li><a href="#">Судебные споры и арбитраж в фармацевтике</a></li>
+								        </ul>
+											</div><!-- column(1) -->
+											<div class="drop-menu__column">
+												<a href="#" class="drop-menu__title">Финансовые услуги</a>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(2) -->
+											<div class="drop-menu__column">
+												<a href="#" class="drop-menu__title">Оценочные услуги</a>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(3) -->
+											<div class="drop-menu__column">
+												<a href="#" class="drop-menu__title">Международное направление</a>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(4) -->
+										</div><!-- row -->
+						      </div><!-- wrapper -->
+		      			</div><!-- drop-menu -->
+							</li>
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">Отрасли</a>
+								<ul class="drop-menu">
+									<div class="wrapper">
+						        <li><a href="#">Недвижимость и строительство</a></li>
+						        <li><a href="#">Фармацевтическая биотехнологии</a></li>
+						        <li><a href="#">Медицины</a></li>
+						        <li><a href="#">Нефтегазовая отрасль и энергетика</a></li>
+						        <li><a href="#">Банки и финансы</a></li>
+						        <li><a href="#">Государственный сектор</a></li>
+						        <li><a href="#">Технологии, медиа и телекоммуникации</a></li>
+						        <li><a href="#">Культурные ценности</a></li>
+						        <li><a href="#">Металлургия</a></li>
+						      </div>
+		      			</ul>
+							</li>
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">Публикации</a>
+								<ul class="drop-menu">
+									<div class="wrapper">
+						        <li><a href="#">Исследовательный центр</a></li>
+						        <li><a href="#">Экспертное мнение</a></li>
+						        <li><a href="#">Видеоматериалы</a></li>
+						        <li><a href="#">Новости и события</a></li>
+						        <li><a href="#">Мы в СМИ</a></li>
+					        </div>
+		      			</ul>
+							</li>
+							<li class="menu-main__item menu-item__static"><a href="#">Мероприятия</a></li>
+						</ul>
+						<!-- start mob menu-secondary -->
+						<ul class="menu-main__list mob-menu__secondary">
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">О компании</a>
+								<ul class="drop-menu">
+									<div class="wrapper">
+										<li><a href="#">item-1</a></li>
+										<li><a href="#">item-2</a></li>
+										<li><a href="#">item-3</a></li>
+										<li><a href="#">item-4</a></li>
+										<li><a href="#">item-5</a></li>
+									</div>
+		      			</ul>
+							</li>
+							<li class="menu-main__item menu-item__static"><a href="#">Карьера</a></li>
+							<li class="menu-main__item menu-item__static"><a href="#">Контакты</a></li>
+						</ul>
+						<!-- end mob menu-secondary -->
+					</nav>
+				</div><!-- header-column(2) -->
+			</div>
+		</div>
+		<div class="header-menu__secondary">
+			<div class="wrapper">
+				<div class="row header-menu__secondary-row">
+					<div class="col-md-6 col-sm-6 site__phone">
+						<a href="tel:+74959884770">+7 495 988-47-70</a>
+					</div>
+					<div class="col-md-6 col-sm-6 header-menu">
+						<nav class="header-nav__secondary">
+							<ul class="menu-secondary__list">
+								<li class="menu-secondary__item"><a class="drop-link drop-link__secondary" href="javascript:void(0);">О компании</a>
+									<ul class="drop-menu drop-menu__secondary">
+										<div class="wrapper">
+											<li><a href="#">item-1</a></li>
+											<li><a href="#">item-2</a></li>
+											<li><a href="#">item-3</a></li>
+											<li><a href="#">item-4</a></li>
+											<li><a href="#">item-5</a></li>
+										</div>
+			      			</ul>
+								</li>
+								<li class="menu-secondary__item"><a href="#">Карьера</a></li>
+								<li class="menu-secondary__item"><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start slider section -->
+	<section class="mainSlider">
+		<div class="slider">
+			<div class="slide" style="background: url(img/slide-1.png);">
+				<div class="wrapper">
+					<div class="slide-descr">
+						<h1 class="slide-descr__title">От решения частных<br> проблем до комплексного<br> управления бизнесом</h1>
+						<p class="slide-descr__text">Подробнее об истории компании <span>IPT GROUP</span></p>
+					</div>
+				</div>
+			</div><!--slide-1-->
+			<div class="slide" style="background: url(img/slide-3.jpeg);">
+				<div class="wrapper">
+					<div class="slide-descr">
+						<h2 class="slide-descr__title">От решения частных<br> проблем до комплексного<br> управления бизнесом</h2>
+						<p class="slide-descr__text">Подробнее об истории компании <span>IPT GROUP</span></p>
+					</div>
+				</div>
+			</div><!--slide-2-->
+		</div>
+	</section>
+	<!-- end slider section -->
+	<!-- start action section -->
+	<section class="action">
+		<div class="wrapper">
+			<div class="action-wrap">
+				<div class="row">
+					<div class="col-md-10 action-subscription">
+						<h4 class="action-title">подписка на обновления</h4>
+							<form action="">
+								<div class="action-submit">
+									<div class="action-column action-column__submit">
+										<input type="email" name="email" placeholder="Введите e-mail" required="required">
+										<input class="btn-primary" type="submit" value="Подписаться">
+									</div>
+									<div class="action-column__radio">
+										<div class="action-column">
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="study">
+												<label for="study">исследование</label>
+											</div>
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="articles">
+												<label for="articles">статьи</label>
+											</div>
+										</div>
+										<div class="action-column">
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="reviews">
+												<label for="reviews">обзоры</label>
+											</div>
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="library">
+												<label for="library">медиатека</label>
+											</div>
+										</div>
+										<div class="action-column">
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="news">
+												<label for="news">новости</label>
+											</div>
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="massmedia">
+												<label for="massmedia">СМИ</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+					</div><!--col-md-10-->
+					<div class="col-md-2 action-social">
+						<h4 class="action-title">мы в соцсетях</h4>
+						<ul class="action-social__list">
+							<li class="action-social__item">
+								<a href="#">
+									<picture>
+									 	<source srcset="img/facebook-black.svg" type="image/svg+xml">
+									 	<img src="img/facebook-black.png" alt="IPT Group">
+									</picture>
+								</a>
+							</li>
+							<li class="action-social__item">
+								<a href="#">
+									<picture>
+									 	<source srcset="img/youtube-black.svg" type="image/svg+xml">
+									 	<img src="img/youtube-black.png" alt="IPT Group">
+									</picture>
+								</a>
+							</li>
+							<li class="action-social__item">
+								<a href="#">
+									<picture>
+									 	<source srcset="img/twitter-black.svg" type="image/svg+xml">
+									 	<img src="img/twitter-black.png" alt="IPT Group">
+									</picture>
+								</a>
+							</li>
+						</ul>
+					</div><!--action-social-->
+				</div>
+			</div><!--action-wrap-->
+		</div>
+	</section>
+	<!-- end action section -->
+	<div class="breadcrumbs">
+		<div class="wrapper">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item"><a href="#">Главная</a></li>
+				<li class="breadcrumbs-item"><a href="#">Юридическая деятельность</a></li>
+				<li class="breadcrumbs-item"><a href="#" class="active-page">Услуги</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- start content -->
+	<section class="content">
+		<div class="wrapper">
+			<div class="row">
+				<aside class="content-column sidebar col-md-3">
+					<ul class="sidebar-listLinks">
+						<li class="sidebar-listLinks__item"><a href="#">Иностранное корпоративное право. Структурирование и сопровождение сделок M&A</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Антимонопольное право</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Банкротство юридического лица</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Недвижимость и строительство. Земельное право.</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Судебные споры и арбитраж в фармацевтике</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Защита медицинских работников от уголовного преследования</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Недвижимость и cтроительство в фармацевтике</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Интеллектуальная собственность в фармацевтике</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Правовое сопровождение проектов «НИР и НИОКР»</a></li>
+						<li class="sidebar-listLinks__item"><a href="#">Правовое сопровождение проектов в области фармацевтики и биотехнологий</a></li>
+					</ul>
+					<h3 class="content-column__title content-column__title-sidebar">Отрасли</h3>
+					<div class="content-column__row content-column__sidebar">
+						<article class="content-column__article content-column__article-secondary">
+							<div class="content-column__article-category">
+								<a class="financial_services" href="#">Финансовые услуги</a>
+							</div>
+							<div class="content-column__article-descr">
+								<h3 class="article-descr__title article-descr__title-only">Банковские гарантии - надежная защита?</h3>
+								<ul class="content-column__list">
+									<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+									<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+								</ul>
+							</div>
+						</article><!-- column-1 -->
+						<article class="content-column__article content-column__article-secondary">
+							<div class="content-column__article-category">
+								<a class="legal_activity" href="#">юридическая деятельность</a>
+							</div>
+							<div class="content-column__article-descr">
+								<h3 class="article-descr__title article-descr__title-only">Аналитическая записка: «Что можно ждать от M&A?»</h3>
+								<ul class="content-column__list">
+									<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+									<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+								</ul>
+							</div>
+						</article><!-- column-2 -->
+						<article class="content-column__article content-column__article-secondary">
+							<div class="content-column__article-category">
+								<a class="evaluation_services" href="#">Оценочные услуги</a>
+							</div>
+							<div class="content-column__article-descr">
+								<h3 class="article-descr__title article-descr__title-only">Штрафы по итогам налоговых проверок могут вырасти в 2 раза</h3>
+								<ul class="content-column__list">
+									<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+									<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+								</ul>
+							</div>
+						</article><!-- column-3 -->
+					</div><!-- content-column__row -->
+				</aside><!--aside-->
+				<main class="content-column main col-md-9 services-content">
+					<div class="services-info">
+						<div class="services-info__head row">
+							<div class="col-md-9">
+								<div class="services-info__main">
+									<h3 class="services-info__title">Антимонопольное право</h3>
+									<p class="services-info__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился первую не свое города это предупреждал, жизни если рукопись живет толку, которое, то меня власти решила напоивший родного продолжил.</p>
+								</div>
+								<div class="services-info__main">
+									<h3 class="services-info__title">Наименование работ в рамках услуги</h3>
+									<p class="services-info__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился первую не свое города это предупреждал, жизни если рукопись живет толку, которое, то меня власти решила напоивший родного продолжил.Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился первую не свое города это предупреждал, жизни если рукопись живет толку, которое, то меня власти решила напоивший родного продолжил.Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился первую не свое города это предупреждал, жизни если рукопись живет толку, которое, то меня власти решила напоивший родного продолжил.</p>
+								</div>
+								<div class="row services-info__row">
+									<div class="col-sm-4 services-info__column">
+										<h4 class="services-info__column-title">1.5 млрд рублей</h4>
+										<p class="services-info__column-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+									</div>
+									<div class="col-sm-4 services-info__column">
+										<h4 class="services-info__column-title">200</h4>
+										<p class="services-info__column-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+									</div>
+									<div class="col-sm-4 services-info__column">
+										<h4 class="services-info__column-title">Forbes</h4>
+										<p class="services-info__column-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="human-info">
+									<img src="img/human-2.jpg" alt="IPT Group">
+									<h5 class="human-info__title">Баловнев<br> Евгений Леонидович</h5>
+									<p class="human-info__text">Финансовый контролер Департамента управленческого учета и финансового контроля</p>
+								</div>
+								<div class="human-info">
+									<img src="img/human-1.jpg" alt="IPT Group">
+									<h5 class="human-info__title">Алешина<br> Светлана Валентиновна</h5>
+									<p class="human-info__text">Руководитель Департамента подбора и развития персонала</p>
+								</div>
+							</div>
+						</div>
+						<div class="services-info__bottom">
+							<h3 class="services-info__bottom-title">Достижения</h3>
+							<p class="services-info__bottom-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился первую не свое города это предупреждал, жизни если рукопись живет толку, которое, то меня власти решила напоивший родного продолжил.</p>
+							<p class="services-info__bottom-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись ведущими скатился точках букв жаренные напоивший океана, выйти не злых своих вершину сих оксмокс.</p>
+							<p class="services-info__bottom-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грамматики снова имеет, пунктуация осталось.</p>
+							<p class="services-info__bottom-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Даже путь которое что напоивший заглавных по всей, прямо за злых он курсивных сбить послушавшись, повстречался маленькая собрал грамматики. Парадигматическая, выйти это, инициал своих текстов наш.</p>
+							<a href="#modal-form" class="services-info__btn btn-primary button-modal">Оставить заявку</a>
+						</div>
+					</div>
+				</main><!--main-->
+			</div>
+		</div>
+	</section>
+	<!-- end content section -->
+	<section class="services-post">
+		<div class="wrapper">
+			<h3 class="content-column__title">актуально</h3>
+			<div class="content-column__directions">
+				<div class="content-column__row">
+					<article class="content-column__article">
+						<div class="content-column__article-img">
+							<a href="#">
+								<img src="img/rawpixel-1.jpg" alt="IPT Group">
+							</a><!-- link to post -->
+							<div class="content-column__article-category">
+								<a class="financial_services" href="#">Финансовые услуги</a>
+							</div>
+						</div>
+						<div class="content-column__article-descr">
+							<h3 class="article-descr__title">Банковские гарантии - надежная защита?</h3>
+							<ul class="content-column__list">
+								<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+								<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+							</ul>
+						</div>
+					</article><!-- column-1 -->
+					<article class="content-column__article">
+						<div class="content-column__article-img">
+							<a href="#">
+								<img src="img/rawpixel-2.jpg" alt="IPT Group">
+							</a><!-- link to post -->
+							<div class="content-column__article-category">
+								<a class="evaluation_services" href="#">Оценочные услуги</a>
+							</div>
+						</div>
+						<div class="content-column__article-descr">
+							<h3 class="article-descr__title">Штрафы по итогам налоговых проверок могут вырасти в 2 раза</h3>
+							<ul class="content-column__list">
+								<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+								<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+							</ul>
+						</div>
+					</article><!-- column-2 -->
+					<article class="content-column__article">
+						<div class="content-column__article-img">
+							<a href="#">
+								<img src="img/rawpixel-3.jpg" alt="IPT Group">
+							</a><!-- link to post -->
+							<div class="content-column__article-category">
+								<a class="legal_activity" href="#">юридическая деятельность</a>
+							</div>
+						</div>
+						<div class="content-column__article-descr">
+							<h3 class="article-descr__title">Аналитическая записка: «Что можно ждать от M&A?»</h3>
+							<ul class="content-column__list">
+								<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+								<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+							</ul>
+						</div>
+					</article><!-- column-3 -->
+				</div><!-- content-column__row -->
+			</div><!-- content-column__directions -->
+		</div>
+	</section>
+	<!-- start siteMap -->
+	<section class="siteMap">
+		<div class="wrapper">
+			<div class="row siteMap-row">
+				<div class="col-md-3 col-sm-6 siteMap-column">
+					<h4 class="siteMap-column__title">Публикации</h4>
+					<ul class="siteMap-column__list">
+						<li class="siteMap-column__item"><a href="#">Исследовательский центр</a></li>
+						<li class="siteMap-column__item"><a href="#">Опросы</a></li>
+						<li class="siteMap-column__item"><a href="#">Экспертное мнение</a></li>
+						<li class="siteMap-column__item"><a href="#">Видеоматериалы</a></li>
+						<li class="siteMap-column__item"><a href="#">Новости и события</a></li>
+						<li class="siteMap-column__item"><a href="#">Мы в СМИ</a></li>
+					</ul>
+				</div><!-- siteMap-column-1 -->
+				<div class="col-md-3 col-sm-6 siteMap-column">
+					<h4 class="siteMap-column__title">Услуги</h4>
+					<ul class="siteMap-column__list">
+						<li class="siteMap-column__item"><a href="#">Юридическая деятельность</a></li>
+						<li class="siteMap-column__item"><a href="#">Налоговая практика</a></li>
+						<li class="siteMap-column__item"><a href="#">Финансовые услуги</a></li>
+						<li class="siteMap-column__item"><a href="#">Управление коллективными </a></li>
+						<li class="siteMap-column__item"><a href="#">Инвестициями</a></li>
+						<li class="siteMap-column__item"><a href="#">Оценочные услуги</a></li>
+						<li class="siteMap-column__item"><a href="#">Управление бизнесом</a></li>
+					</ul>
+				</div><!-- siteMap-column-2 -->
+				<div class="col-md-3 col-sm-6 siteMap-column">
+					<h4 class="siteMap-column__title">Отрасли</h4>
+					<ul class="siteMap-column__list">
+						<li class="siteMap-column__item"><a href="#">Недвижимость и строительство</a></li>
+						<li class="siteMap-column__item"><a href="#">Фармацевтика, биотехнологии</a></li>
+						<li class="siteMap-column__item"><a href="#">Медицина</a></li>
+						<li class="siteMap-column__item"><a href="#">Нефтегазовая отрасль и энергетика</a></li>
+						<li class="siteMap-column__item"><a href="#">Государственный сектор</a></li>
+						<li class="siteMap-column__item"><a href="#">Технологии, медиа и <br>телекоммуникации</a></li>
+						<li class="siteMap-column__item"><a href="#">Телекоммуникации</a></li>
+						<li class="siteMap-column__item"><a href="#">Металлургия</a></li>
+					</ul>
+				</div><!-- siteMap-column-3 -->
+				<div class="col-md-3 col-sm-6 siteMap-column">
+					<h4 class="siteMap-column__title">Мероприятия</h4>
+					<a href="#" class="siteMap-column__link">О компании</a>
+					<ul class="siteMap-column__list">
+						<li class="siteMap-column__item"><a href="#">О компании</a></li>
+						<li class="siteMap-column__item"><a href="#">Руководство</a></li>
+						<li class="siteMap-column__item"><a href="#">Наши ценности</a></li>
+						<li class="siteMap-column__item"><a href="#">Группа компаний</a></li>
+					</ul>
+					<a href="#" class="siteMap-column__link">Карьера</a>
+					<a href="#" class="siteMap-column__link">Контакты</a>
+				</div><!-- siteMap-column-4 -->
+			</div>
+		</div>
+	</section>
+	<!-- end siteMap -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-6 col-sm-7 footer-column footer-column__first">
+					<div class="footer-column__logo-button">
+						<picture>
+						 	<source srcset="img/logo.svg" type="image/svg+xml">
+						 	<img src="img/logo.png" alt="IPT Group">
+						</picture>
+						<a href="#modal-form" class="btn-primary button-modal">Оставить заявку</a>
+					</div>
+					<p class="footer-column__text">2017 IPT Group Все права защищены <a href="#">Правовая информация</a></p>
+				</div><!-- footer-column-1-->
+				<div class="col-md-3 col-sm-5 footer-column">
+					<a href="tel:+74959884770" class="footer-column__phone">+7 495 988-47-70</a>
+					<p class="footer-column__text">
+						Россия, 109004, Москва<br>
+						ул. А. Солженицына, д. 27<br>
+						Пн-Пт 10:00-19:00
+					</p>
+				</div><!-- footer-column-2-->
+				<div class="col-md-3 col-sm-6 footer-column">
+					<ul class="footer-column__list">
+						<li class="footer-social__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/facebook-white.svg" type="image/svg+xml">
+								 	<img src="img/facebook-white.png" alt="IPT Group">
+								</picture>
+							</a>
+						</li>
+						<li class="footer-social__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/youtube-white.svg" type="image/svg+xml">
+								 	<img src="img/youtube-white.png" alt="IPT Group">
+								</picture>
+							</a>
+						</li>
+						<li class="footer-social__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/twitter-white.svg" type="image/svg+xml">
+								 	<img src="img/twitter-white.png" alt="IPT Group">
+								</picture>
+							</a>
+						</li>
+					</ul>
+				</div><!-- footer-column-3-->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
