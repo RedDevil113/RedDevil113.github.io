@@ -361,80 +361,19 @@
 	<section class="action">
 		<div class="wrapper">
 			<div class="action-wrap">
-				<div class="row">
-					<div class="col-md-10 action-subscription">
-						<h4 class="action-title">подписка на обновления</h4>
-							<form action="">
-								<div class="action-submit">
-									<div class="action-column action-column__submit">
-										<input type="email" name="email" placeholder="Введите e-mail" required="required">
-										<input class="btn-primary" type="submit" value="Подписаться">
-									</div>
-									<div class="action-column__radio">
-										<div class="action-column">
-											<div class="action-column__checkbox">
-												<input type="checkbox" id="study">
-												<label for="study">исследование</label>
-											</div>
-											<div class="action-column__checkbox">
-												<input type="checkbox" id="articles">
-												<label for="articles">статьи</label>
-											</div>
-										</div>
-										<div class="action-column">
-											<div class="action-column__checkbox">
-												<input type="checkbox" id="reviews">
-												<label for="reviews">обзоры</label>
-											</div>
-											<div class="action-column__checkbox">
-												<input type="checkbox" id="library">
-												<label for="library">медиатека</label>
-											</div>
-										</div>
-										<div class="action-column">
-											<div class="action-column__checkbox">
-												<input type="checkbox" id="news">
-												<label for="news">новости</label>
-											</div>
-											<div class="action-column__checkbox">
-												<input type="checkbox" id="massmedia">
-												<label for="massmedia">СМИ</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</form>
-					</div><!--col-md-10-->
-					<div class="col-md-2 action-social">
-						<h4 class="action-title">мы в соцсетях</h4>
-						<ul class="action-social__list">
-							<li class="action-social__item">
-								<a href="#">
-									<picture>
-									 	<source srcset="img/facebook-black.svg" type="image/svg+xml">
-									 	<img src="img/facebook-black.png" alt="IPT Group">
-									</picture>
-								</a>
-							</li>
-							<li class="action-social__item">
-								<a href="#">
-									<picture>
-									 	<source srcset="img/youtube-black.svg" type="image/svg+xml">
-									 	<img src="img/youtube-black.png" alt="IPT Group">
-									</picture>
-								</a>
-							</li>
-							<li class="action-social__item">
-								<a href="#">
-									<picture>
-									 	<source srcset="img/twitter-black.svg" type="image/svg+xml">
-									 	<img src="img/twitter-black.png" alt="IPT Group">
-									</picture>
-								</a>
-							</li>
-						</ul>
-					</div><!--action-social-->
-				</div>
+				<h4 class="action-title">Подписывайтесь на наши новости!</h4>
+				<form action="">
+					<div class="action-submit__email">
+						<div class="action-column action-column__submit">
+							<input type="email" class="submit-email" name="email" placeholder="Введите e-mail" required="required">
+							<input class="btn-primary" type="submit" value="Подписаться">
+						</div>
+						<div class="action-submit__checkbox">
+							<input id="pers-inf" type="checkbox" class="action-submit__input-checkbox">
+							<label for="pers-inf" class="action-submit__label">Отправляя персональные данные из этой формы, я даю <a href="#">согласие на обработку персональных данных</a></label>
+						</div>
+					</div>
+				</form>
 			</div><!--action-wrap-->
 		</div>
 	</section>
@@ -443,7 +382,7 @@
 	<section class="content">
 		<div class="wrapper">
 			<div class="row">
-				<main class="content-column main col-md-9 col-md-push-4 services-content">
+				<main class="content-column main col-md-9 col-md-push-3 services-content">
 					<div class="services-info">
 						<div class="services-info__head row">
 							<div class="col-md-9">
