@@ -20,6 +20,46 @@
 
 </head>
 <body>
+	<!-- modal -->
+	<div class="modal-overlay"></div>
+	<!-- modal-back_call -->
+	<div class="modal modal-back_call" id="modal-back_call">
+		<div class="modal-call__content">
+			<h3 class="modal-title modal-call__content-title">Обратный звонок</h3>
+			<span class="modal-call__content-subtitle">Мы перезвоним вам в течении 10 минут</span>
+			<div class="cancel"></div>
+			<form method="post" action="">
+				<div class="modal-call__content-column">
+					<label for="modal-call__name">Ваше имя</label>
+					<input name="name" id="modal-call__name" type="text">
+				</div>
+				<div class="modal-call__content-column">
+					<label for="modal-call__phone">Номер телефона</label>
+					<input name="name" id="modal-call__phone" type="text">
+				</div>
+				<button class="primary-btn modal-call__content-btn">Жду звонка</button>
+			</form>
+		</div>
+	</div>
+	<!-- modal-come_in -->
+	<div class="modal modal-come_in" id="modal-come_in">
+		<div class="modal-come__content">
+			<h3 class="modal-title modal-come__content-title">Авторизация</h3>
+			<div class="cancel"></div>
+			<form method="post" action="">
+				<div class="modal-come__content-column">
+					<label for="modal-come__login">Логин</label>
+					<input name="name" id="modal-come__login" type="text">
+				</div>
+				<div class="modal-come__content-column">
+					<label for="modal-come__password">Пароль</label>
+					<input name="name" id="modal-come__password" type="text">
+				</div>
+				<button class="primary-btn modal-come__content-btn">Войти</button>
+				<button class="modal-come__content-btn remind-password__btn">Напомнить пароль</button>
+			</form>
+		</div>
+	</div>
 	<!-- start aside -->
 	<aside class="aside mCustomScrollbar main-bar">
 		<div class="aside-wrap">
@@ -38,89 +78,275 @@
 			<nav class="aside-menu">
 				<ul class="aside-menu__list">
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-1.svg" alt="heyFood">
 							<span>Овощи, фрукты и ягоды</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-1 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-2.svg" alt="heyFood">
 							<span>Молочные продукты, сыр и яйца</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-2 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-3.svg" alt="heyFood">
 							<span>Мясо и птица</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">Птица</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Говядина</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Свинина</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Баранина</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Другие виды мяса</a></li>
+								<li class="aside-menu__item-drop__item"><a class="aside-menu__item-drop-active__link" href="#">Фарш и полуфабрикаты</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Субпродукты</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Заморозка</a></li>
+							</ul>
+						</div>
 					</li><!-- li-3 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-4.svg" alt="heyFood">
 							<span>Рыба и морепродукты</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-4 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-5.svg" alt="heyFood">
 							<span>Колбасные изделия</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-5 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-6.svg" alt="heyFood">
 							<span>Хлеб и выпечка</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-6 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-7.svg" alt="heyFood">
 							<span>Крупы, макароны и закуски</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-7 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-8.svg" alt="heyFood">
 							<span>Консервированные продукты</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-8 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-9.svg" alt="heyFood">
 							<span>Соусы, приправы и масла</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-9 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-10.svg" alt="heyFood">
 							<span>Сладости и кондитерские изделия</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-10 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-11.svg" alt="heyFood">
 							<span>Чай, кофе</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-11 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-12.svg" alt="heyFood">
 							<span>Безалкогольные напитки</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-12 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-13.svg" alt="heyFood">
 							<span>Замороженные продукты </span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-13 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-14.svg" alt="heyFood">
 							<span>Бытовая химия и товары для дома</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-14 -->
+					<li class="aside-menu__item">
+						<a href="#" class="drop-link">
+							<img src="img/icons/ico-15.svg" class="drop-link__img" alt="heyFood">
+							<span>Косметика и гигиена</span>
+						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
+					</li><!-- li-15 -->
 				</ul>
 			</nav>
 		</div>
@@ -131,7 +357,7 @@
 		<!-- start header -->
 		<header class="header">
 			<div class="header-top header-action">
-				<a href="#" class="header-top__link">Войти</a>
+				<a href="#modal-come_in" class="button-modal header-top__link">Войти</a>
 				<a href="#" class="header-top__link">Регистрация</a>
 			</div><!-- header-top -->
 			<div class="header-middle">
@@ -147,13 +373,13 @@
 					<div class="header-middle__column header-phone" style="background: url(img/icons/phone.svg);">
 						<p class="header-phone-text">
 							<a class="header-bold" href="tel:83532465511">8 (3532) 46-55-11</a>
-							<a href="#">Обратный звонок</a>
+							<a class="button-modal" href="#modal-back_call">Обратный звонок</a>
 						</p>
 					</div>
 					<div class="header-middle__column header-page__basket">
 						<a href="#">
 							<p>
-								<img src="img/icons/basket.svg" alt="">
+								<img src="img/icons/basket-red.svg" alt="">
 								<span class="header-bold">12 шт.&nbsp;&nbsp;/</span>
 								&nbsp;&nbsp;14 890 р.
 						</p>
@@ -383,7 +609,7 @@
 					</ul>
 				</div><!-- footer-col-3-->
 				<div class="footer-column">
-					<p class="footer-column-text"><a href="#">
+					<p class="footer-column-text"><a class="button-modal" href="#modal-back_call">
 						<img src="img/icons/mail.svg" alt="heyFood"><span>Форма обратной связи</span>
 					</a></p>
 					<p class="footer-column-text footer-column-text__soc">Мы в соцсетях:</p>

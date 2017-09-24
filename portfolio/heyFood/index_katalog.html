@@ -20,6 +20,102 @@
 
 </head>
 <body>
+	<!-- modal -->
+	<div class="modal-overlay"></div>
+	<!-- modal-back_call -->
+	<div class="modal modal-back_call" id="modal-back_call">
+		<div class="modal-call__content">
+			<h3 class="modal-title modal-call__content-title">Обратный звонок</h3>
+			<span class="modal-call__content-subtitle">Мы перезвоним вам в течении 10 минут</span>
+			<div class="cancel"></div>
+			<form method="post" action="">
+				<div class="modal-call__content-column">
+					<label for="modal-call__name">Ваше имя</label>
+					<input name="name" id="modal-call__name" type="text">
+				</div>
+				<div class="modal-call__content-column">
+					<label for="modal-call__phone">Номер телефона</label>
+					<input name="name" id="modal-call__phone" type="text">
+				</div>
+				<button class="primary-btn modal-call__content-btn">Жду звонка</button>
+			</form>
+		</div>
+	</div>
+	<!-- modal-come_in -->
+	<div class="modal modal-come_in" id="modal-come_in">
+		<div class="modal-come__content">
+			<h3 class="modal-title modal-come__content-title">Авторизация</h3>
+			<div class="cancel"></div>
+			<form method="post" action="">
+				<div class="modal-come__content-column">
+					<label for="modal-come__login">Логин</label>
+					<input name="name" id="modal-come__login" type="text">
+				</div>
+				<div class="modal-come__content-column">
+					<label for="modal-come__password">Пароль</label>
+					<input name="name" id="modal-come__password" type="text">
+				</div>
+				<button class="primary-btn modal-come__content-btn">Войти</button>
+				<button class="modal-come__content-btn remind-password__btn">Напомнить пароль</button>
+			</form>
+		</div>
+	</div>
+	<!-- modal-product -->
+	<div class="modal modal-product" id="product-card">
+		<div class="cancel"></div>
+		<div class="modal-product__content">
+			<ul class="breadCrumbs-list">
+				<li class="breadCrumbs-item modal-product__breadCrumbs"><a href="#">Главная</a></li>
+				<li class="breadCrumbs-item"><a href="#">Каталог продукци</a></li>
+				<li class="breadCrumbs-item"><a href="#">Мясо и птица</a></li>
+			</ul>
+			<h3 class="modal-title modal-product__title">Шоколад молочный с ромом, изюмом и орехом тм Ritter Sport (Риттер спорт)</h3>
+			<div class="modal-product__row">
+				<div class="modal-product__column">
+					<div class="modal-product__column-img">
+						<img src="img/product-5.jpg" alt="">
+					</div>
+				</div>
+				<div class="modal-product__column">
+					<p class="modal-product__column-value">За 1 шт. — 900 гр. / 110,50р.</p>
+					<span class="modal-product__column-val__text">Кол-во</span>
+					<div class="modal-product__column-add">
+						<div class="personal-basket__column-add modal-product__column-add__input">
+							<form action="">
+								<span class="personal-basket__column-add__plus" style="background-image: url(img/icons/plus.png);"></span>
+								<input class="personal-basket__column-add__input" type="text" value="1">
+								<span class="personal-basket__column-add__minus"></span>
+							</form>
+						</div>
+						<p class="modal-product__column-price">110,50 р</p>
+					</div>
+					<a href="#" class="primary-btn modal-product__btn">
+						<img src="img/icons/basket.svg" alt="">
+						<span>В корзину</span>
+					</a>
+				</div>
+			</div>
+			<ul class="modal-product__tabs">
+				<li class="modal-product__tabs-item tabs-item__active" data-tabs="tabs1">Информация</li>
+				<li class="modal-product__tabs-item" data-tabs="tabs2">Состав</li>
+				<li class="modal-product__tabs-item" data-tabs="tabs3">Похожие товары</li>
+			</ul>
+			<div class="modal-product__tabs-wrap">
+				<div class="modal-product__tabbed tabbed-active" id="tabs1">
+					<p class="modal-product__tabbed-text"><span>Изготовитель:</span> Alfred Ritter GmbH & Co.KG; Импортер ООО "Риттер Спорт Шоколад"</p>
+					<p class="modal-product__tabbed-text"><span>Описание:</span> Шоколад молочный с ямайским ромом, изюмом и орехом лещины.</p>
+				</div>
+				<div class="modal-product__tabbed" id="tabs2">
+					<p class="modal-product__tabbed-text"><span>1Изготовитель:</span> Alfred Ritter GmbH & Co.KG; Импортер ООО "Риттер Спорт Шоколад"</p>
+					<p class="modal-product__tabbed-text"><span>1Описание:</span> Шоколад молочный с ямайским ромом, изюмом и орехом лещины.</p>
+				</div>
+				<div class="modal-product__tabbed" id="tabs3">
+					<p class="modal-product__tabbed-text"><span>2Изготовитель:</span> Alfred Ritter GmbH & Co.KG; Импортер ООО "Риттер Спорт Шоколад"</p>
+					<p class="modal-product__tabbed-text"><span>2Описание:</span> Шоколад молочный с ямайским ромом, изюмом и орехом лещины.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- start aside -->
 	<aside class="aside mCustomScrollbar main-bar">
 		<div class="aside-wrap">
@@ -38,89 +134,275 @@
 			<nav class="aside-menu">
 				<ul class="aside-menu__list">
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-1.svg" alt="heyFood">
 							<span>Овощи, фрукты и ягоды</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-1 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-2.svg" alt="heyFood">
 							<span>Молочные продукты, сыр и яйца</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-2 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-3.svg" alt="heyFood">
 							<span>Мясо и птица</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">Птица</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Говядина</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Свинина</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Баранина</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Другие виды мяса</a></li>
+								<li class="aside-menu__item-drop__item"><a class="aside-menu__item-drop-active__link" href="#">Фарш и полуфабрикаты</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Субпродукты</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">Заморозка</a></li>
+							</ul>
+						</div>
 					</li><!-- li-3 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-4.svg" alt="heyFood">
 							<span>Рыба и морепродукты</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-4 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-5.svg" alt="heyFood">
 							<span>Колбасные изделия</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-5 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-6.svg" alt="heyFood">
 							<span>Хлеб и выпечка</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-6 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-7.svg" alt="heyFood">
 							<span>Крупы, макароны и закуски</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-7 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-8.svg" alt="heyFood">
 							<span>Консервированные продукты</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-8 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-9.svg" alt="heyFood">
 							<span>Соусы, приправы и масла</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-9 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-10.svg" alt="heyFood">
 							<span>Сладости и кондитерские изделия</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-10 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-11.svg" alt="heyFood">
 							<span>Чай, кофе</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-11 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-12.svg" alt="heyFood">
 							<span>Безалкогольные напитки</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-12 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-13.svg" alt="heyFood">
 							<span>Замороженные продукты </span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-13 -->
 					<li class="aside-menu__item">
-						<a href="#">
+						<a href="#" class="drop-link">
 							<img src="img/icons/ico-14.svg" alt="heyFood">
 							<span>Бытовая химия и товары для дома</span>
 						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
 					</li><!-- li-14 -->
+					<li class="aside-menu__item">
+						<a href="#" class="drop-link">
+							<img src="img/icons/ico-15.svg" class="drop-link__img" alt="heyFood">
+							<span>Косметика и гигиена</span>
+						</a>
+						<div class="aside-menu__item-drop">
+							<ul class="aside-menu__item-drop__list">
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 1</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 2</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 3</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 4</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 5</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 6</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 7</a></li>
+								<li class="aside-menu__item-drop__item"><a href="#">пункт 8</a></li>
+							</ul>
+						</div>
+					</li><!-- li-15 -->
 				</ul>
 			</nav>
 		</div>
@@ -131,7 +413,7 @@
 		<!-- start header -->
 		<header class="header">
 			<div class="header-top header-action">
-				<a href="#" class="header-top__link">Войти</a>
+				<a href="#modal-come_in" class="button-modal header-top__link">Войти</a>
 				<a href="#" class="header-top__link">Регистрация</a>
 			</div><!-- header-top -->
 			<div class="header-middle">
@@ -147,13 +429,13 @@
 					<div class="header-middle__column header-phone" style="background: url(img/icons/phone.svg);">
 						<p class="header-phone-text">
 							<a class="header-bold" href="tel:83532465511">8 (3532) 46-55-11</a>
-							<a href="#">Обратный звонок</a>
+							<a class="button-modal" href="#modal-back_call">Обратный звонок</a>
 						</p>
 					</div>
 					<div class="header-middle__column header-page__basket">
 						<a href="#">
 							<p>
-								<img src="img/icons/basket.svg" alt="">
+								<img src="img/icons/basket-red.svg" alt="">
 								<span class="header-bold">12 шт.&nbsp;&nbsp;/</span>
 								&nbsp;&nbsp;14 890 р.
 						</p>
@@ -267,14 +549,14 @@
 		<section class="catalogContent">
 			<h2 class="product-category"><a href="#">Товар со скидкой <span>(119)</span></a></h2>
 			<div class="catalogContent-slider">
-				<div class="card-product">
+				<div class="card-product card-product__slide">
 					<div class="card-product__img">
-						<a href="#">
-							<img src="img/meat.jpg" alt="heyFood">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-1.jpg" alt="heyFood">
 						</a>
 					</div>
 					<div class="card-product__name">
-						<a href="#">Окорок из молочной телятины без кости, «Лучезар», Россия</a>
+						<a class="button-modal" href="#product-card">Окорок из молочной телятины без кости, «Лучезар», Россия</a>
 					</div>
 					<div class="card-product__price">
 						<p class="card-product__price-quantity">За 100 гр.</p>
@@ -287,14 +569,14 @@
 						<img src="img/icons/procent.png" alt="heyFood">
 					</div>
 				</div><!-- product-1 -->
-				<div class="card-product">
+				<div class="card-product card-product__slide">
 					<div class="card-product__img">
-						<a href="#">
-							<img src="img/meat-2.jpg" alt="heyFood">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-2.jpg" alt="heyFood">
 						</a>
 					</div>
 					<div class="card-product__name">
-						<a href="#">Фарш Столичный из индейки замороженный ТМ Damate Инди Лайт (Дамате Инди Лайт)</a>
+						<a class="button-modal" href="#product-card">Фарш Столичный из индейки замороженный ТМ Damate Инди Лайт (Дамате Инди Лайт)</a>
 					</div>
 					<div class="card-product__price">
 						<p class="card-product__price-quantity">За 1 шт. — 900 гр.</p>
@@ -307,14 +589,14 @@
 						<img src="img/icons/procent.png" alt="heyFood">
 					</div>
 				</div><!-- product-2 -->
-				<div class="card-product">
+				<div class="card-product card-product__slide">
 					<div class="card-product__img">
-						<a href="#">
-							<img src="img/meat-3.jpg" alt="heyFood">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-3.jpg" alt="heyFood">
 						</a>
 					</div>
 					<div class="card-product__name">
-						<a href="#">Язык говяжий охлажденный, «Лучезар», Россия</a>
+						<a class="button-modal" href="#product-card">Язык говяжий охлажденный, «Лучезар», Россия</a>
 					</div>
 					<div class="card-product__price">
 						<p class="card-product__price-quantity">За 1 шт. — 1,200 гр.</p>
@@ -327,14 +609,14 @@
 						<img src="img/icons/procent.png" alt="heyFood">
 					</div>
 				</div><!-- product-3 -->
-				<div class="card-product">
+				<div class="card-product card-product__slide">
 					<div class="card-product__img">
-						<a href="#">
-							<img src="img/meat.jpg" alt="heyFood">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-4.jpg" alt="heyFood">
 						</a>
 					</div>
 					<div class="card-product__name">
-						<a href="#">Окорок из молочной телятины без кости, «Лучезар», Россия</a>
+						<a class="button-modal" href="#product-card">Окорок из молочной телятины без кости, «Лучезар», Россия</a>
 					</div>
 					<div class="card-product__price">
 						<p class="card-product__price-quantity">За 100 гр.</p>
@@ -347,14 +629,14 @@
 						<img src="img/icons/procent.png" alt="heyFood">
 					</div>
 				</div><!-- product-4 -->
-				<div class="card-product">
+				<div class="card-product card-product__slide">
 					<div class="card-product__img">
-						<a href="#">
-							<img src="img/meat-3.jpg" alt="heyFood">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-5.jpg" alt="heyFood">
 						</a>
 					</div>
 					<div class="card-product__name">
-						<a href="#">Язык говяжий охлажденный, «Лучезар», Россия</a>
+						<a class="button-modal" href="#product-card">Язык говяжий охлажденный, «Лучезар», Россия</a>
 					</div>
 					<div class="card-product__price">
 						<p class="card-product__price-quantity">За 1 шт. — 1,200 гр.</p>
@@ -369,7 +651,181 @@
 				</div><!-- product-5 -->
 			</div>
 			<h2 class="product-category"><a href="#">Акции <span>(13)</span></a></h2>
+			<div class="catalogContent-slider">
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-4.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Окорок из молочной телятины без кости, «Лучезар», Россия</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 100 гр.</p>
+						<p class="card-product__price-text">429,49 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-1 -->
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-5.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Фарш Столичный из индейки замороженный ТМ Damate Инди Лайт (Дамате Инди Лайт)</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 1 шт. — 900 гр.</p>
+						<p class="card-product__price-text">110,50 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-2 -->
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-6.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Язык говяжий охлажденный, «Лучезар», Россия</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 1 шт. — 1,200 гр.</p>
+						<p class="card-product__price-text">419,99 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-3 -->
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-1.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Окорок из молочной телятины без кости, «Лучезар», Россия</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 100 гр.</p>
+						<p class="card-product__price-text">429,49 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-4 -->
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-2.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Язык говяжий охлажденный, «Лучезар», Россия</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 1 шт. — 1,200 гр.</p>
+						<p class="card-product__price-text">419,99 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-5 -->
+			</div>
 			<h2 class="product-category"><a href="#">Самые продаваемые товары <span>(67)</span></a></h2>
+			<div class="catalogContent-slider">
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-4.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Кисломолочный напиток Danone Активиа 1% кефирная АО "Данон</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 100 гр.</p>
+						<p class="card-product__price-text">429,49 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-1 -->
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-5.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Паштет из утки Ле Бон Гу с черносливом и грецким орехом, стекло Россия</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 1 шт. — 900 гр.</p>
+						<p class="card-product__price-text">110,50 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-2 -->
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-6.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Паштет овощной Tartex с благородными грибами Allos GmbH</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 1 шт. — 1,200 гр.</p>
+						<p class="card-product__price-text">419,99 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-3 -->
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-1.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Окорок из молочной телятины без кости, «Лучезар», Россия</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 100 гр.</p>
+						<p class="card-product__price-text">429,49 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-4 -->
+				<div class="card-product card-product__slide">
+					<div class="card-product__img">
+						<a class="button-modal" href="#product-card">
+							<img src="img/product-2.jpg" alt="heyFood">
+						</a>
+					</div>
+					<div class="card-product__name">
+						<a class="button-modal" href="#product-card">Язык говяжий охлажденный, «Лучезар», Россия</a>
+					</div>
+					<div class="card-product__price">
+						<p class="card-product__price-quantity">За 1 шт. — 1,200 гр.</p>
+						<p class="card-product__price-text">419,99 р</p>
+					</div>
+					<a class="btn-add__basket" href="#">
+						<img src="img/icons/added.svg" alt="heyFood">
+					</a>
+				</div><!-- product-5 -->
+			</div>
 		</section>
 		<!-- start page-info -->
 		<div class="page-info">
@@ -410,7 +866,7 @@
 					</ul>
 				</div><!-- footer-col-3-->
 				<div class="footer-column">
-					<p class="footer-column-text"><a href="#">
+					<p class="footer-column-text"><a class="button-modal" href="#modal-back_call">
 						<img src="img/icons/mail.svg" alt="heyFood"><span>Форма обратной связи</span>
 					</a></p>
 					<p class="footer-column-text footer-column-text__soc">Мы в соцсетях:</p>

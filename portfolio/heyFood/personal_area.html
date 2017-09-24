@@ -466,134 +466,257 @@
 		<div class="breadCrumbs">
 			<ul class="breadCrumbs-list">
 				<li class="breadCrumbs-item"><a href="#">Главная</a></li>
-				<li class="breadCrumbs-item"><a href="#">Поиск</a></li>
+				<li class="breadCrumbs-item"><a href="#">Корзина</a></li>
 			</ul>
 		</div>
 		<!-- end breadCrumbs -->
-		<!-- start page-search -->
-		<section class="page-search" style="background: url(img/search-bg.jpg);">
-			<form action="" class="page-search__form">
-				<input class="search-catalog__input" type="text">
-				<input class="search-catalog__submit" type="submit" value="" style="background: url(img/icons/search.svg)">
-			</form>
-			<p class="search-found">Найдено: <span class="search-found__num">57</span> совпадений</p>
+		<!-- start catalog-content -->
+		<section class="personal-content">
+			<h1 class="catalog-name personal-name">Личный кабинет</h1>
+			<ul class="personal-content__tabs-list">
+				<li class="personal-content__tabs-item"><a class="personal-tabs__item-active" href="#">Корзина с товаром</a></li>
+				<li class="personal-content__tabs-item"><a href="#">Архив заказов</a></li>
+				<li class="personal-content__tabs-item"><a href="#">Настройки</a></li>
+			</ul>
 		</section>
-		<!-- end page-search -->
-		<!-- start search-result -->
-		<section class="search-result">
-			<div class="search-result__row">
-				<div class="search-result__column">
-					<a class="search-result__column-link" href="#"></a>
-					<div class="search-result__column-info">
-						<div class="search-result__column-img">
+		<!-- end personal-content -->
+		<!-- start personal-basket -->
+		<section class="personal-basket">
+			<div class="personal-basket__column personal-basket__header">
+				<div class="personal-basket__column-info">
+					<div class="personal-basket__column-img personal-basket__header-img">
+						<img src="img/icons/basket-red.svg" alt="">
+					</div>
+					<div class="personal-basket__column-name">
+						<p class="personal-basket__column-name__text">Дата формирования заказа: <span>22 августа 2017 г (14:56)</span></p>
+					</div>
+				</div>
+				<div class="card-product__price personal-basket__column-price">
+					<p class="card-product__price-quantity">Общая стоимость:</p>
+					<p class="card-product__price-text personal-basket__price-text">2 760 р</p>
+				</div>
+				<span class="curtail-basket" style="background-image: url(img/icons/curtail.png);"></span>
+			</div><!-- header -->
+			<div class="personal-basket__row">
+				<div class="personal-basket__column">
+					<div class="personal-basket__column-info">
+						<div class="personal-basket__column-img">
 							<img src="img/product-1.jpg" alt="">
 						</div>
-						<div class="search-result__column-name">
-							<p class="search-result__column-name__text">Окорок из молочной телятины без кости, «Лучезар», Россия</p>
+						<div class="personal-basket__column-name">
+							<p class="personal-basket__column-name__text">Окорок из молочной телятины без кости, «Лучезар», Россия</p>
 						</div>
 					</div>
-					<div class="card-product__price search-result__column-price">
-						<p class="card-product__price-quantity">За 1 шт. — 900 гр.</p>
-						<p class="card-product__price-text">110,50 р</p>
+					<div class="personal-basket__column-add">
+						<form action="">
+							<span class="personal-basket__column-add__plus" style="background-image: url(img/icons/plus.png);"></span>
+							<input class="personal-basket__column-add__input" type="text" value="500г">
+							<span class="personal-basket__column-add__minus"></span>
+						</form>
 					</div>
+					<div class="card-product__price personal-basket__column-price">
+						<p class="card-product__price-quantity">За 100г — 129.80р.</p>
+						<p class="card-product__price-text">829,49 р</p>
+					</div>
+					<a href="#" class="remove-card__basket" style="background-image: url(img/icons/close.png);"></a>
 				</div><!-- col-1 -->
-				<div class="search-result__column">
-					<a class="search-result__column-link" href="#"></a>
-					<div class="search-result__column-info">
-						<div class="search-result__column-img">
+				<div class="personal-basket__column">
+					<div class="personal-basket__column-info">
+						<div class="personal-basket__column-img">
 							<img src="img/product-2.jpg" alt="">
 						</div>
-						<div class="search-result__column-name">
-							<p class="search-result__column-name__text">Фарш из свинины и говядины Домашний охлажденный ТМ Черкизово</p>
+						<div class="personal-basket__column-name">
+							<p class="personal-basket__column-name__text">Фарш из свинины и говядины Домашний охлажденный ТМ Черкизово</p>
 						</div>
 					</div>
-					<div class="card-product__price search-result__column-price">
+					<div class="personal-basket__column-add">
+						<form action="">
+							<span class="personal-basket__column-add__plus" style="background-image: url(img/icons/plus.png);"></span>
+							<input class="personal-basket__column-add__input" type="text" value="2">
+							<span class="personal-basket__column-add__minus"></span>
+						</form>
+					</div>
+					<div class="card-product__price personal-basket__column-price">
 						<p class="card-product__price-quantity">За 1 шт (800г) — 188,50 р.</p>
 						<p class="card-product__price-text">396,00 р</p>
 					</div>
+					<a href="#" class="remove-card__basket" style="background-image: url(img/icons/close.png);"></a>
 				</div><!-- col-2 -->
-				<div class="search-result__column">
-					<a class="search-result__column-link" href="#"></a>
-					<div class="search-result__column-info">
-						<div class="search-result__column-img">
+				<div class="personal-basket__column">
+					<div class="personal-basket__column-info">
+						<div class="personal-basket__column-img">
 							<img src="img/product-5.jpg" alt="">
 						</div>
-						<div class="search-result__column-name">
-							<p class="search-result__column-name__text">Набор конфет Ferrero Collection ТМ Ferrero (Ферреро)</p>
+						<div class="personal-basket__column-name">
+							<p class="personal-basket__column-name__text">Набор конфет Ferrero Collection ТМ Ferrero (Ферреро)</p>
 						</div>
 					</div>
-					<div class="card-product__price search-result__column-price">
+					<div class="personal-basket__column-add">
+						<form action="">
+							<span class="personal-basket__column-add__plus" style="background-image: url(img/icons/plus.png);"></span>
+							<input class="personal-basket__column-add__input" type="text" value="1">
+							<span class="personal-basket__column-add__minus"></span>
+						</form>
+					</div>
+					<div class="card-product__price personal-basket__column-price">
 						<p class="card-product__price-quantity">За 1 шт (172 г) — 373,68 р</p>
 						<p class="card-product__price-text">373,68 р</p>
 					</div>
+					<a href="#" class="remove-card__basket" style="background-image: url(img/icons/close.png);"></a>
 				</div><!-- col-3 -->
-				<div class="search-result__column">
-					<a class="search-result__column-link" href="#"></a>
-					<div class="search-result__column-info">
-						<div class="search-result__column-img">
+				<div class="personal-basket__column">
+					<div class="personal-basket__column-info">
+						<div class="personal-basket__column-img">
 							<img src="img/product-1.jpg" alt="">
 						</div>
-						<div class="search-result__column-name">
-							<p class="search-result__column-name__text">Окорок из молочной телятины без кости, «Лучезар», Россия</p>
+						<div class="personal-basket__column-name">
+							<p class="personal-basket__column-name__text">Окорок из молочной телятины без кости, «Лучезар», Россия</p>
 						</div>
 					</div>
-					<div class="card-product__price search-result__column-price">
-						<p class="card-product__price-quantity">За 1 шт. — 900 гр.</p>
-						<p class="card-product__price-text">110,50 р</p>
+					<div class="personal-basket__column-add">
+						<form action="">
+							<span class="personal-basket__column-add__plus" style="background-image: url(img/icons/plus.png);"></span>
+							<input class="personal-basket__column-add__input" type="text" value="500г">
+							<span class="personal-basket__column-add__minus"></span>
+						</form>
 					</div>
+					<div class="card-product__price personal-basket__column-price">
+						<p class="card-product__price-quantity">За 100г — 129.80р.</p>
+						<p class="card-product__price-text">829,49 р</p>
+					</div>
+					<a href="#" class="remove-card__basket" style="background-image: url(img/icons/close.png);"></a>
 				</div><!-- col-4 -->
-				<div class="search-result__column">
-					<a class="search-result__column-link" href="#"></a>
-					<div class="search-result__column-info">
-						<div class="search-result__column-img">
+				<div class="personal-basket__column">
+					<div class="personal-basket__column-info">
+						<div class="personal-basket__column-img">
 							<img src="img/product-2.jpg" alt="">
 						</div>
-						<div class="search-result__column-name">
-							<p class="search-result__column-name__text">Фарш из свинины и говядины Домашний охлажденный ТМ Черкизово</p>
+						<div class="personal-basket__column-name">
+							<p class="personal-basket__column-name__text">Фарш из свинины и говядины Домашний охлажденный ТМ Черкизово</p>
 						</div>
 					</div>
-					<div class="card-product__price search-result__column-price">
+					<div class="personal-basket__column-add">
+						<form action="">
+							<span class="personal-basket__column-add__plus" style="background-image: url(img/icons/plus.png);"></span>
+							<input class="personal-basket__column-add__input" type="text" value="2">
+							<span class="personal-basket__column-add__minus"></span>
+						</form>
+					</div>
+					<div class="card-product__price personal-basket__column-price">
 						<p class="card-product__price-quantity">За 1 шт (800г) — 188,50 р.</p>
 						<p class="card-product__price-text">396,00 р</p>
 					</div>
+					<a href="#" class="remove-card__basket" style="background-image: url(img/icons/close.png);"></a>
 				</div><!-- col-5 -->
-				<div class="search-result__column">
-					<a class="search-result__column-link" href="#"></a>
-					<div class="search-result__column-info">
-						<div class="search-result__column-img">
+				<div class="personal-basket__column">
+					<div class="personal-basket__column-info">
+						<div class="personal-basket__column-img">
 							<img src="img/product-5.jpg" alt="">
 						</div>
-						<div class="search-result__column-name">
-							<p class="search-result__column-name__text">Набор конфет Ferrero Collection ТМ Ferrero (Ферреро)</p>
+						<div class="personal-basket__column-name">
+							<p class="personal-basket__column-name__text">Набор конфет Ferrero Collection ТМ Ferrero (Ферреро)</p>
 						</div>
 					</div>
-					<div class="card-product__price search-result__column-price">
+					<div class="personal-basket__column-add">
+						<form action="">
+							<span class="personal-basket__column-add__plus" style="background-image: url(img/icons/plus.png);"></span>
+							<input class="personal-basket__column-add__input" type="text" value="1">
+							<span class="personal-basket__column-add__minus"></span>
+						</form>
+					</div>
+					<div class="card-product__price personal-basket__column-price">
 						<p class="card-product__price-quantity">За 1 шт (172 г) — 373,68 р</p>
 						<p class="card-product__price-text">373,68 р</p>
 					</div>
+					<a href="#" class="remove-card__basket" style="background-image: url(img/icons/close.png);"></a>
 				</div><!-- col-6 -->
 			</div>
 		</section>
 		<!-- end search-result -->
-		<!-- start pagination -->
-		<div class="pagination pagination-search__page">
-			<ul class="pagination-list">
-				<li class="pagination-item"><a href="#">1</a></li>
-				<li class="pagination-item"><a href="#">2</a></li>
-				<li class="pagination-item"><a href="#">3</a></li>
-				<li class="pagination-item"><a href="#">4</a></li>
-				<li class="pagination-item"><a href="#">5</a></li>
-				<li class="pagination-item"><a href="#">6</a></li>
-				<li class="pagination-item pagination-item__disabled">. . .</li>
-				<li class="pagination-item"><a href="#">27</a></li>
-			</ul>
-			<a href="#" class="pagination-item__next">
-				<span>Следующая</span>
-				<img src="img/icons/arrow-pag.png" alt="">
-			</a>
-		</div>
-		<!-- end pagination -->
-		<!-- end catalog-content -->
+		<!-- start ordering -->
+		<section class="ordering">
+			<div class="ordering-compliance">
+				<h2 class="ordering-compliance__title">Общая сумма заказа: <span>2 760 р</span></h2>
+				<a href="#" class="primary-btn ordering-compliance__btn">Оформить заказ</a>
+			</div>
+			<div class="ordering-form">
+				<h2 class="ordering-form__title">Оформление заказа</h2>
+				<div class="ordering-form__wrap">
+					<form action="">
+						<h4 class="ordering-form__section-title">Получатель</h4>
+						<div class="ordering-form__recipient">
+							<div class="ordering-form__recipient-input">
+								<label for="ordering-form__name">Фамилия</label>
+								<input type="text" name="surname" placeholder="Топорков" id="ordering-form__name">
+							</div>
+							<div class="ordering-form__recipient-input">
+								<label for="ordering-form__name">Имя</label>
+								<input type="text" name="name" placeholder="Евгений" id="ordering-form__name">
+							</div>
+						</div>
+						<div class="ordering-form__recipient-goods">
+							<h4 class="ordering-form__section-title ordering-form__recipient-goods__title">Получение товара</h4>
+							<div class="ordering-form__recipient-goods__radio">
+								<input name="pickup" type="radio" id="ordering-form__pickup">
+								<label for="ordering-form__pickup">Самовывоз</label>
+							</div>
+							<div class="ordering-form__recipient-goods__radio">
+								<input checked="checked" name="courier" type="radio" id="ordering-form__courier">
+								<label class="label-active" for="ordering-form__courier">Доставка курьером (+250 р)</label>
+							</div>
+						</div>
+						<div class="ordering-form__place">
+							<div class="ordering-form__place-column">
+								<label for="ordering-form__street">Улица</label>
+								<input class="ordering-form__place-column__input" name="street" type="text" id="ordering-form__street">
+							</div>
+							<div class="ordering-form__place-column">
+								<label for="ordering-form__house">Дом, корпус, строение</label>
+								<input class="ordering-form__place-column__input" name="house" type="text" id="ordering-form__house">
+							</div>
+							<div class="ordering-form__place-column ordering-form__place-column__last">
+								<label for="ordering-form__apartment">Квартира</label>
+								<input class="ordering-form__place-column__input" name="apartment" type="text" id="ordering-form__apartment">
+							</div>
+						</div>
+						<div class="ordering-form__time">
+							<h5 class="ordering-form__time-title">Выбрать временной интервал доставки:</h5>
+							<ul class="ordering-form__time-list">
+								<li class="ordering-form__time-item">07:00 - 09:00</li>
+								<li class="ordering-form__time-item">09:00 - 11:00</li>
+								<li class="ordering-form__time-item ordering-form__time-item__active">11:00 - 13:00</li>
+								<li class="ordering-form__time-item">13:00 - 15:00</li>
+								<li class="ordering-form__time-item">15:00 - 17:00</li>
+								<li class="ordering-form__time-item">17:00 - 19:00</li>
+							</ul>
+						</div>
+						<div class="ordering-form__contacts">
+							<h2 class="ordering-form__contacts-title">Контакты<span>Для уведомления о статусе заказа</span></h2>
+							<div class="ordering-form__contacts-row">
+								<div class="ordering-form__contacts-column">
+									<label for="ordering-form__phone">Контактный телефон</label>
+									<input name="phone" type="number" id="ordering-form__phone">
+								</div>
+								<div class="ordering-form__contacts-column">
+									<label for="ordering-form__email">Электронная почта</label>
+									<input name="phone" type="number" id="ordering-form__email">
+								</div>
+								<div class="ordering-form__contacts-column ordering-form__contacts-checkbox">
+									<input checked="checked" name="compliance" type="checkbox" id="ordering-form__compliance">
+									<label for="ordering-form__compliance">Хочу получать персональные предложения и скидки по электронной почте</label>
+								</div>
+							</div>
+						</div>
+						<div class="ordering-form__result">
+							<h2 class="ordering-form__result-title">Итого:  <span>2 900 р.</span> с учетом доставки</h2>
+							<a href="#" class="primary-btn ordering-form__result-btn">Оформить заказ</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- start ordering -->
+		<div class="personal-bottom"></div>
 		<!-- start footer -->
 		<footer class="footer">
 			<div class="footer-row">
