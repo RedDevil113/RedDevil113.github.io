@@ -117,7 +117,7 @@
 		</div>
 	</div>
 	<!-- start aside -->
-	<aside class="aside mCustomScrollbar main-bar">
+	<aside class="aside main-bar">
 		<div class="aside-wrap">
 			<div class="aside-wrap__logo">
 				<a href="#">
@@ -413,6 +413,9 @@
 		<!-- start header -->
 		<header class="header">
 			<div class="header-top header-action">
+				<div class="aside-menu__bar">
+					<span></span>
+				</div>
 				<a href="#modal-come_in" class="button-modal header-top__link">Войти</a>
 				<a href="#" class="header-top__link">Регистрация</a>
 			</div><!-- header-top -->
@@ -483,7 +486,7 @@
 		<!-- start personal-basket -->
 		<section class="personal-basket">
 			<div class="personal-basket__column personal-basket__header">
-				<div class="personal-basket__column-info">
+				<div class="personal-basket__column-info personal-basket__header-info">
 					<div class="personal-basket__column-img personal-basket__header-img">
 						<img src="img/icons/basket-red.svg" alt="">
 					</div>
@@ -491,7 +494,7 @@
 						<p class="personal-basket__column-name__text">Дата формирования заказа: <span>22 августа 2017 г (14:56)</span></p>
 					</div>
 				</div>
-				<div class="card-product__price personal-basket__column-price">
+				<div class="card-product__price personal-basket__column-price header-all__price">
 					<p class="card-product__price-quantity">Общая стоимость:</p>
 					<p class="card-product__price-text personal-basket__price-text">2 760 р</p>
 				</div>
@@ -661,7 +664,7 @@
 								<label for="ordering-form__pickup">Самовывоз</label>
 							</div>
 							<div class="ordering-form__recipient-goods__radio">
-								<input checked="checked" name="courier" type="radio" id="ordering-form__courier">
+								<input checked="checked" name="pickup" type="radio" id="ordering-form__courier">
 								<label class="label-active" for="ordering-form__courier">Доставка курьером (+250 р)</label>
 							</div>
 						</div>
