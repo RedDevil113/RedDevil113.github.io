@@ -27,14 +27,17 @@
 				<div class="header-logo">
 					<img class="logo" src="img/logo.png" alt="endo">
 				</div>
+				<div class="menu-bar">
+					<span></span>
+				</div>
 				<nav class="header-nav">
 					<ul class="header-nav__list">
 						<li class="header-nav__item"><a href="#banner">Главная</a></li>
 						<li class="header-nav__item"><a href="#advantages">О сервисе</a></li>
-						<li class="header-nav__item"><a href="#">Бета версия</a></li>
-						<li class="header-nav__item"><a href="#">ico</a></li>
-						<li class="header-nav__item"><a href="#">Команда</a></li>
-						<li class="header-nav__item"><a href="#">Контакты</a></li>
+						<li class="header-nav__item"><a href="#meetBeta">Бета версия</a></li>
+						<li class="header-nav__item"><a href="#ico">ico</a></li>
+						<li class="header-nav__item"><a href="#team">Команда</a></li>
+						<li class="header-nav__item"><a href="#contacts">Контакты</a></li>
 						<li class="header-nav__item header-nav__item-soc"><a class="lang-active" href="#"><img src="img/telegram.png" alt="endo"></a></li>
 					</ul>
 				</nav>
@@ -48,13 +51,19 @@
 						</li>
 						<li class="header-lang__item">
 							<a href="#">
-								<img src="img/lang_2.png" alt="endo">
+								<picture>
+								 	<source srcset="img/lang_2.svg" type="image/svg+xml">
+								 	<img src="img/lang_2.png" alt="endo">
+								</picture>
 								<span>En</span>
 							</a>
 						</li>
 						<li class="header-lang__item">
 							<a href="#">
-								<img src="img/lang_3.png" alt="endo">
+								<picture>
+								 	<source srcset="img/lang_3.svg" type="image/svg+xml">
+								 	<img src="img/lang_3.png" alt="endo">
+								</picture>
 								<span>Cn</span>
 							</a>
 						</li>
@@ -199,10 +208,20 @@
 		</div>
 	</section>
 	<!-- end educational -->
-
-
+	<!-- start howWorks -->
+	<!--<section class="howWorks">
+		<div class="wrapper">
+			<h2 class="section-title">Возможности платформы</h2>
+			<div class="howWorks-row">
+				<div class="howWorks-column">
+					
+				</div>
+			</div>
+		</div>
+	</section>-->
+	<!-- end howWorks -->
 	<!-- start capabilities -->
-	<section class="capabilities">
+	<section class="capabilities" style="background: url(img/scaling-3.png);">
 		<div class="wrapper">
 			<h2 class="section-title">Возможности платформы</h2>
 			<div class="capabilities-row">
@@ -239,19 +258,19 @@
 		<div class="capabilities-mocup">
 			<div class="wrapper">
 				<div class="capabilities-mocup__row">
-					<div class="capabilities-mocup__row-img">
+					<div class="capabilities-mocup__row-img capabilities-mocup__row-img__left">
 						<img src="img/mockup-1.jpg" alt="endo">
 					</div>
-					<div class="capabilities-mocup__row-descr">
+					<div class="capabilities-mocup__row-descr capabilities-mocup__row-descr__right">
 						<h4 class="capabilities-mocup__row-descr__title">Верификация диплома по публичной прямой ссылке</h4>
 						<p class="capabilities-mocup__row-descr__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 					</div>
 				</div>
 				<div class="capabilities-mocup__row">
-					<div class="capabilities-mocup__row-img">
+					<div class="capabilities-mocup__row-img capabilities-mocup__row-img__right">
 						<img src="img/mockup-1.jpg" alt="endo">
 					</div>
-					<div class="capabilities-mocup__row-descr capabilities-mocup_descr-list">
+					<div class="capabilities-mocup__row-descr capabilities-mocup__row-descr__left capabilities-mocup_descr-list">
 						<h4 class="capabilities-mocup__row-descr__title">Удобное создание и управление дипломами</h4>
 						<ul class="capabilities-mocup__row-descr__list">
 							<li class="capabilities-mocup__row-descr__item">Шаблоны</li>
@@ -263,10 +282,10 @@
 					</div>
 				</div>
 				<div class="capabilities-mocup__row">
-					<div class="capabilities-mocup__row-img">
+					<div class="capabilities-mocup__row-img capabilities-mocup__row-img__left">
 						<img src="img/mockup-1.jpg" alt="endo">
 					</div>
-					<div class="capabilities-mocup__row-descr capabilities-mocup_descr-list">
+					<div class="capabilities-mocup__row-descr capabilities-mocup__row-descr__right capabilities-mocup_descr-list">
 						<h4 class="capabilities-mocup__row-descr__title">Безопасность</h4>
 						<ul class="capabilities-mocup__row-descr__list">
 							<li class="capabilities-mocup__row-descr__item">2-хфакторная аутентификация</li>
@@ -278,10 +297,10 @@
 					</div>
 				</div>
 				<div class="capabilities-mocup__row">
-					<div class="capabilities-mocup__row-img">
+					<div class="capabilities-mocup__row-img capabilities-mocup__row-img__right">
 						<img src="img/mockup-1.jpg" alt="endo">
 					</div>
-					<div class="capabilities-mocup__row-descr capabilities-mocup_descr-list">
+					<div class="capabilities-mocup__row-descr capabilities-mocup__row-descr__left capabilities-mocup_descr-list">
 						<h4 class="capabilities-mocup__row-descr__title">Профиль пользователя</h4>
 						<ul class="capabilities-mocup__row-descr__list">
 							<li class="capabilities-mocup__row-descr__item">2-хфакторная аутентификация</li>
@@ -293,11 +312,49 @@
 				</div>
 			</div>
 		</div>
+		<div class="capabilities-scaling">
+			<div class="wrapper">
+				<h2 class="section-title capabilities-scaling__title">Масштабирование</h2>
+				<p class="capabilities-scaling__text-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				Aenean euismod bibendum laoreet. Proin gravida dolor sit 
+				amet lacus accumsan et viverra justo commodo. Proin sodales 
+				pulvinar tempor.</p>
+				<div class="capabilities-scaling__row">
+					<div class="capabilities-scaling__column capabilities-scaling__column-first">
+						<div class="capabilities-scaling__column-img" style="background: url(img/scaling-1.png);">
+							<p class="capabilities-scaling__column-img__descr">3 квартал 2017</p>
+							<p class="capabilities-scaling__column-img__stage">1 <span>этап</span></p>
+							<p class="capabilities-scaling__column-text capabilities-scaling__text-first">Работа с коммерческими институтами (~100000 студентов в год)</p>
+							<p class="capabilities-scaling__column-text capabilities-scaling__text-second">Тестирование, разработка протоколов безопасности, репликации данных</p>
+							<p class="capabilities-scaling__column-text capabilities-scaling__text-last">Внедрение новых функций на основе отзывов пользователей</p>
+						</div>
+					</div>
+					<div class="capabilities-scaling__column capabilities-scaling__column-second">
+						<div class="capabilities-scaling__column-img-2">
+							<p class="capabilities-scaling__column-img__stage-2">3 <span>этап</span></p>
+							<p class="capabilities-scaling__column-img__descr-2">4 квартал 2018</p>
+						</div>
+						<p class="capabilities-scaling__column-text__p">3 млрд. выпущенных документов в год</p>
+						<p class="capabilities-scaling__column-text__p">Любые документы: паспорта, водительскоие права, страховки, ученые степени, статусы, медицинские документы, трудовые записи.</p>
+						<p class="capabilities-scaling__column-text__p">Машинное обучение, выявление тенденций в образовании, медицине, страховании</p>
+						<p class="capabilities-scaling__column-text__p">Развитие сервиса в более 50 странах мира</p>
+					</div>
+				</div>
+				<div class="capabilities-scaling__column capabilities-scaling__column-last">
+					<div class="capabilities-scaling__column-img__last" style="background: url(img/scaling-2.png);">
+						<div class="capabilities-scaling__column-img__text-last">
+							<p class="capabilities-scaling__column-img__stage-last">2 <span>этап</span></p>
+							<p class="capabilities-scaling__column-img__descr-last">1 квартал 2018</p>
+						</div>
+					<p class="capabilities-scaling__column-text__p-2 capabilities-scaling__column-text__p-2__1">Выход на государственные образовательные учреждения (~10000000 студентов в год)</p>
+					<p class="capabilities-scaling__column-text__p-2 capabilities-scaling__column-text__p-2__2">Внедрение системы параллельно с имеющимися</p>
+					<p class="capabilities-scaling__column-text__p-2 capabilities-scaling__column-text__p-2__3">Создание интеграций</p>
+					<p class="capabilities-scaling__column-text__p-2 capabilities-scaling__column-text__p-2__4">Реализация блочкейна промышленного типа</p>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- end capabilities -->
-
-
-
 	<!-- start token -->
 	<section class="token">
 		<div class="wrapper">
@@ -326,7 +383,7 @@
 	</section>
 	<!-- end token -->
 	<!-- start ico -->
-	<section class="ico">
+	<section class="ico" id="ico">
 		<div class="wrapper">
 			<h2 class="section-title">Cтарта ICO</h2>
 			<h3 class="ico-title__start">01.12.2017  /  12:00</h3>
@@ -354,16 +411,16 @@
 						<p class="ico-info__column-text">$ 50 000 000</p>
 						<p class="ico-info__column-text">$130m (47%)</p>
 					</div>
-					<div class="ico-info__column">
-						<p class="ico-info__column-title"><img class="ico-column__img" src="img/ico-column-1.png" alt="">LTC</p>
+					<div class="ico-info__column ico-info__column-2">
+						<p class="ico-info__column-title"><img class="ico-column__img" src="img/ico-column-1.png" alt="endo">LTC</p>
 						<p class="ico-info__column-text">23 424</p>
 					</div>
-					<div class="ico-info__column">
-						<p class="ico-info__column-title"><img src="img/ico-column-2.png" alt=""><span>ETH</span></p>
+					<div class="ico-info__column ico-info__column-3">
+						<p class="ico-info__column-title"><img src="img/ico-column-2.png" alt="endo"><span>ETH</span></p>
 						<p class="ico-info__column-text">82 950</p>
 					</div>
-					<div class="ico-info__column">
-						<p class="ico-info__column-title"><img class="ico-column__img" src="img/ico-column-3.png" alt=""><span>BTC</span></p>
+					<div class="ico-info__column ico-info__column-last">
+						<p class="ico-info__column-title"><img class="ico-column__img" src="img/ico-column-3.png" alt="endo"><span>BTC</span></p>
 						<p class="ico-info__column-text">1 232</p>
 					</div>
 				</div>
@@ -395,20 +452,225 @@
 		</div>
 	</section>
 	<!-- end ico -->
-
-	<!-- start footer -->
-	<section class="timeLine">
+	<!-- start timeLine -->
+	<!--<section class="timeLine">
 		<div class="wrapper">
 			<h2 class="section-title">История развития</h2>
 		</div>
+	</section>-->
+	<!-- end timeLine -->
+	<!-- start team -->
+	<section class="team" id="team">
+		<div class="wrapper">
+			<h2 class="section-title section-title__white">Команда проекта</h2>
+			<div class="team-row">
+				<div class="team-column">
+					<div class="team-column__img">
+						<img src="img/person-1.jpg" alt="endo">
+					</div>
+					<p class="team-column__name">Ян</p>
+					<p class="team-column__position">Основатель</p>
+				</div><!-- col(1) -->
+				<div class="team-column">
+					<div class="team-column__img">
+						<img src="img/person-2.jpg" alt="endo">
+					</div>
+					<p class="team-column__name">Николай Березовский</p>
+					<p class="team-column__position">Бэкенд разработчик</p>
+				</div><!-- col(2) -->
+				<div class="team-column">
+					<div class="team-column__img">
+						<img src="img/person-3.jpg" alt="endo">
+					</div>
+					<p class="team-column__name">Иванов Иван</p>
+					<p class="team-column__position">Главный аналитик</p>
+				</div><!-- col(3) -->
+				<div class="team-column">
+					<div class="team-column__img">
+						<img src="img/person-4.jpg" alt="endo">
+					</div>
+					<p class="team-column__name">Анжелла Кью</p>
+					<p class="team-column__position">Главный бухгалтер</p>
+				</div><!-- col(4) -->
+				<div class="team-column">
+					<div class="team-column__img">
+						<img src="img/person-5.jpg" alt="endo">
+					</div>
+					<p class="team-column__name">Лариса Фатова</p>
+					<p class="team-column__position">Менеджер по работе с клиентами</p>
+				</div><!-- col(5) -->
+			</div>
+			<div class="team-consultants">
+				<h2 class="section-title section-title__white">Консультанты проекта</h2>
+				<div class="team-consultants__row">
+					<div class="team-consultants__column">
+						<div class="team-consultants__column-img">
+							<img src="img/consultant-1.jpg" alt="endo">
+						</div>
+						<div class="team-consultants__column-descr">
+							<p class="team-consultants__column-name">Марк Цукерберг</p>
+							<p class="team-consultants__column-text">Основатель всемирной социальной сети Facebook</p>
+						</div>
+					</div><!-- col(1) -->
+					<div class="team-consultants__column">
+						<div class="team-consultants__column-img">
+							<img src="img/consultant-2.jpg" alt="endo">
+						</div>
+						<div class="team-consultants__column-descr">
+							<p class="team-consultants__column-name">Михаил Токовин</p>
+							<p class="team-consultants__column-text">Генеральный директор Qsoft</p>
+						</div>
+					</div><!-- col(2) -->
+					<div class="team-consultants__column">
+						<div class="team-consultants__column-img">
+							<img src="img/consultant-3.jpg" alt="endo">
+						</div>
+						<div class="team-consultants__column-descr">
+							<p class="team-consultants__column-name">Ларри Пейдж</p>
+							<p class="team-consultants__column-text">Сооснователь Google</p>
+						</div>
+					</div><!-- col(3) -->
+				</div>
+			</div>
+		</div>
 	</section>
-	<!-- end footer -->
-
+	<!-- end team -->
+	<!-- start documentation -->
+	<section class="documentation">
+		<div class="wrapper">
+			<h2 class="section-title">Документы</h2>
+			<div class="documentation-row">
+				<div class="documentation-column">
+					<div class="documentation-column__img">
+						<img src="img/document-1.png" alt="endo">
+					</div>
+					<p class="documentation-column__title">One Page</p>
+					<ul class="documentation-column__list">
+						<li class="documentation-column__item">
+							<a href="#">
+								<img src="img/lang_1.png" alt="endo">
+								<span>Ru</span>
+							</a>
+						</li>
+						<li class="documentation-column__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/lang_2.svg" type="image/svg+xml">
+								 	<img src="img/lang_2.png" alt="endo">
+								</picture>
+								<span>En</span>
+							</a>
+						</li>
+						<li class="documentation-column__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/lang_3.svg" type="image/svg+xml">
+								 	<img src="img/lang_3.png" alt="endo">
+								</picture>
+								<span>Cn</span>
+							</a>
+						</li>
+					</ul>
+				</div><!-- col(1) -->
+				<div class="documentation-column">
+					<div class="documentation-column__img">
+						<img src="img/document-1.png" alt="endo">
+					</div>
+					<p class="documentation-column__title">Whitepaper</p>
+					<ul class="documentation-column__list">
+						<li class="documentation-column__item">
+							<a href="#">
+								<img src="img/lang_1.png" alt="endo">
+								<span>Ru</span>
+							</a>
+						</li>
+						<li class="documentation-column__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/lang_2.svg" type="image/svg+xml">
+								 	<img src="img/lang_2.png" alt="endo">
+								</picture>
+								<span>En</span>
+							</a>
+						</li>
+						<li class="documentation-column__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/lang_3.svg" type="image/svg+xml">
+								 	<img src="img/lang_3.png" alt="endo">
+								</picture>
+								<span>Cn</span>
+							</a>
+						</li>
+					</ul>
+				</div><!-- col(2) -->
+				<div class="documentation-column">
+					<div class="documentation-column__img">
+						<img src="img/document-1.png" alt="endo">
+					</div>
+					<p class="documentation-column__title">Video</p>
+					<ul class="documentation-column__list">
+						<li class="documentation-column__item">
+							<a href="#">
+								<img src="img/lang_1.png" alt="endo">
+								<span>Ru</span>
+							</a>
+						</li>
+						<li class="documentation-column__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/lang_2.svg" type="image/svg+xml">
+								 	<img src="img/lang_2.png" alt="endo">
+								</picture>
+								<span>En</span>
+							</a>
+						</li>
+						<li class="documentation-column__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/lang_3.svg" type="image/svg+xml">
+								 	<img src="img/lang_3.png" alt="endo">
+								</picture>
+								<span>Cn</span>
+							</a>
+						</li>
+					</ul>
+				</div><!-- col(3) -->
+			</div>
+		</div>
+	</section>
+	<!-- end documentation -->
+	<!-- start usWrite -->
+	<section class="usWrite">
+		<div class="wrapper">
+			<h2 class="section-title">О нас пишут</h2>
+			<div class="usWrite-row">
+				<div class="usWrite-column">
+					<img src="img/us_write-1.jpg" alt="endo">
+					<p class="usWrite-column__text"><a href="#">vc.ru</a></p>
+				</div>
+				<div class="usWrite-column">
+					<img src="img/us_write-2.jpg" alt="endo">
+					<p class="usWrite-column__text"><a href="#">Spark</a></p>
+				</div>
+				<div class="usWrite-column">
+					<img src="img/us_write-3.jpg" alt="endo">
+					<p class="usWrite-column__text"><a href="#">Workspace</a></p>
+				</div>
+				<div class="usWrite-column">
+					<img src="img/us_write-4.jpg" alt="endo">
+					<p class="usWrite-column__text"><a href="#">The New York Times</a></p>
+				</div>
+				<div class="usWrite-column">
+					<img src="img/us_write-5.jpg" alt="endo">
+					<p class="usWrite-column__text"><a href="#">НГС</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end usWrite -->
 	<!-- start footer -->
-	<!-- end footer -->
-	
-	<!-- start footer -->
-	<footer class="footer">
+	<footer class="footer" id="contacts">
 		<div class="footer-top">
 			<div class="wrapper">
 				<div class="footer-top__row">
@@ -466,7 +728,7 @@
 	</footer>
 	<!-- end footer -->
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
