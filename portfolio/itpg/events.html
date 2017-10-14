@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>IPT Group - Услуги</title>
+	<title>IPT Group - Главная страница</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -361,19 +361,80 @@
 	<section class="action">
 		<div class="wrapper">
 			<div class="action-wrap">
-				<h4 class="action-title">Подписывайтесь на наши новости!</h4>
-				<form action="">
-					<div class="action-submit__email">
-						<div class="action-column action-column__submit">
-							<input type="email" class="submit-email" name="email" placeholder="Введите e-mail" required="required">
-							<input class="btn-primary" type="submit" value="Подписаться">
-						</div>
-						<div class="action-submit__checkbox">
-							<input id="pers-inf" type="checkbox" class="action-submit__input-checkbox">
-							<label for="pers-inf" class="action-submit__label">Отправляя персональные данные из этой формы, я даю <a href="#">согласие на обработку персональных данных</a></label>
-						</div>
-					</div>
-				</form>
+				<div class="row">
+					<div class="col-md-10 action-subscription">
+						<h4 class="action-title">подписка на обновления</h4>
+							<form action="">
+								<div class="action-submit">
+									<div class="action-column action-column__submit">
+										<input class="action-column__email" type="email" name="email" placeholder="Введите e-mail" required="required">
+										<input class="btn-primary" type="submit" value="Подписаться">
+									</div>
+									<div class="action-column__radio">
+										<div class="action-column">
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="study">
+												<label for="study">исследование</label>
+											</div>
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="articles">
+												<label for="articles">статьи</label>
+											</div>
+										</div>
+										<div class="action-column">
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="reviews">
+												<label for="reviews">обзоры</label>
+											</div>
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="library">
+												<label for="library">медиатека</label>
+											</div>
+										</div>
+										<div class="action-column">
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="news">
+												<label for="news">новости</label>
+											</div>
+											<div class="action-column__checkbox">
+												<input type="checkbox" id="massmedia">
+												<label for="massmedia">СМИ</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+					</div><!--col-md-10-->
+					<div class="col-md-2 action-social">
+						<h4 class="action-title">мы в соцсетях</h4>
+						<ul class="action-social__list">
+							<li class="action-social__item">
+								<a href="#">
+									<picture>
+									 	<source srcset="img/facebook-black.svg" type="image/svg+xml">
+									 	<img src="img/facebook-black.png" alt="IPT Group">
+									</picture>
+								</a>
+							</li>
+							<li class="action-social__item">
+								<a href="#">
+									<picture>
+									 	<source srcset="img/youtube-black.svg" type="image/svg+xml">
+									 	<img src="img/youtube-black.png" alt="IPT Group">
+									</picture>
+								</a>
+							</li>
+							<li class="action-social__item">
+								<a href="#">
+									<picture>
+									 	<source srcset="img/twitter-black.svg" type="image/svg+xml">
+									 	<img src="img/twitter-black.png" alt="IPT Group">
+									</picture>
+								</a>
+							</li>
+						</ul>
+					</div><!--action-social-->
+				</div>
 			</div><!--action-wrap-->
 		</div>
 	</section>
@@ -382,259 +443,147 @@
 	<section class="content">
 		<div class="wrapper">
 			<div class="row">
-				<main class="content-column main col-md-9 col-md-push-3 detail-content">
-					<div class="detail-row">
-						<div class="detail-column detail-img"><img src="img/main-human.jpg" alt=""></div>
-						<div class="detail-column detail-descr">
-							<h3 class="detail-column__title">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</h3>
-							<p class="detail-column__text detail-column__text-first">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Проектах сбить вопрос его свою! Города если даже всемогущая большой использовало не парадигматическая, эта несколько?</p>
-							<p class="detail-column__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Инициал, даль, подзаголовок.</p>
-							<p class="detail-column__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жизни предложения на берегу страна несколько жаренные снова сих алфавит путь заглавных запятой рыбными, мир собрал напоивший, за буквенных приставка своего? Единственное запятых домах семантика жаренные рыбными знаках свой, строчка он.</p>
+				<main class="content-column main col-md-9 col-md-push-3 event-content">
+					<div class="event-banner" style="background: url(img/slide-3.jpeg);">
+						<div class="event-banner__info">
+							<p class="event-banner__text">12 июня 2017</p>
+							<p class="event-banner__text">БЦ "Северная Башня"</p>
+							<p class="event-banner__text event-banner__text-last">Круглы стол</p>
+							<h3 class="event-banner__title">исследование рынка эпиф недвижимости</h3>
+							<a href="#" class="event-banner__more">подробнее >></a>
+							<a href="#modal-form" class="event-banner__modal btn-primary button-modal">Оставить заявку</a>
 						</div>
 					</div>
-					<div class="detail-action">
-						<div class="detail-action__row">
-							<div class="detail-action__column">
-								<ul class="detail-action__column-list">
-									<li class="detail-action__column-item">
-										<a href="#">
-											<picture>
-											 	<source srcset="img/vk.svg" type="image/svg+xml">
-											 	<img src="img/vk.png" alt="IPT Group">
-											</picture>
-										</a>
-									</li>
-									<li class="detail-action__column-item">
-										<a href="#">
-											<picture>
-											 	<source srcset="img/facebook-white.svg" type="image/svg+xml">
-											 	<img src="img/facebook-white.png" alt="IPT Group">
-											</picture>
-										</a>
-									</li>
-									<li class="detail-action__column-item">
-										<a href="#">
-											<picture>
-											 	<source srcset="img/twitter-white.svg" type="image/svg+xml">
-											 	<img src="img/twitter-white.png" alt="IPT Group">
-											</picture>
-										</a>
-									</li>
-									<li class="detail-action__column-item">
-										<a href="#">
-											<picture>
-											 	<source srcset="img/instagram.svg" type="image/svg+xml">
-											 	<img src="img/instagram.png" alt="IPT Group">
-											</picture>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="detail-action__column">
-								<a href="#" class="detail-action__column-pdf">
-									<p class="detail-action__column-text">Скачать программу <span>pdf</span></p>
-								</a>
-							</div>
-						</div>
-						<div class="detail-slider">
-							<div class="detail-slide">
-								<img src="img/rawpixel-1.jpg" alt="">
-							</div>
-							<div class="detail-slide">
-								<img src="img/rawpixel-2.jpg" alt="">
-							</div>
-							<div class="detail-slide">
-								<img src="img/rawpixel-3.jpg" alt="">
-							</div>
-							<div class="detail-slide">
-								<img src="img/rawpixel-1.jpg" alt="">
-							</div>
-							<div class="detail-slide">
-								<img src="img/rawpixel-2.jpg" alt="">
-							</div>
-							<div class="detail-slide">
-								<img src="img/rawpixel-3.jpg" alt="">
-							</div>
-						</div>
-					</div>
+					<div class="content-column__branches">
+						<h3 class="content-column__title">Отрасли</h3>
+						<div class="content-column__row">
+							<article class="content-column__article">
+								<div class="content-column__article-img">
+									<a href="#">
+										<img src="img/rawpixel-1.jpg" alt="IPT Group">
+									</a><!-- link to post -->
+									<div class="content-column__article-category">
+										<a class="financial_services" href="#">Финансовые услуги</a>
+									</div>
+								</div>
+								<div class="content-column__article-descr">
+									<h3 class="article-descr__title">Банковские гарантии - надежная защита?</h3>
+									<ul class="content-column__list">
+										<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+										<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+									</ul>
+								</div>
+							</article><!-- column-1 -->
+							<article class="content-column__article">
+								<div class="content-column__article-img">
+									<a href="#">
+										<img src="img/rawpixel-2.jpg" alt="IPT Group">
+									</a><!-- link to post -->
+									<div class="content-column__article-category">
+										<a class="evaluation_services" href="#">Оценочные услуги</a>
+									</div>
+								</div>
+								<div class="content-column__article-descr">
+									<h3 class="article-descr__title">Штрафы по итогам налоговых проверок могут вырасти в 2 раза</h3>
+									<ul class="content-column__list">
+										<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+										<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+									</ul>
+								</div>
+							</article><!-- column-2 -->
+							<article class="content-column__article">
+								<div class="content-column__article-img">
+									<a href="#">
+										<img src="img/rawpixel-3.jpg" alt="IPT Group">
+									</a><!-- link to post -->
+									<div class="content-column__article-category">
+										<a class="legal_activity" href="#">юридическая деятельность</a>
+									</div>
+								</div>
+								<div class="content-column__article-descr">
+									<h3 class="article-descr__title">Аналитическая записка: «Что можно ждать от M&A?»</h3>
+									<ul class="content-column__list">
+										<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+										<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+									</ul>
+								</div>
+							</article><!-- column-3 -->
+						</div><!-- content-column__row -->
+						<div class="content-column__row">
+							<article class="content-column__article content-column__article-secondary">
+								<div class="content-column__article-category">
+									<a class="financial_services" href="#">Финансовые услуги</a>
+								</div>
+								<div class="content-column__article-descr">
+									<h3 class="article-descr__title article-descr__title-only">Банковские гарантии - надежная защита?</h3>
+									<ul class="content-column__list">
+										<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+										<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+									</ul>
+								</div>
+							</article><!-- column-1 -->
+							<article class="content-column__article content-column__article-secondary">
+								<div class="content-column__article-category">
+									<a class="legal_activity" href="#">юридическая деятельность</a>
+								</div>
+								<div class="content-column__article-descr">
+									<h3 class="article-descr__title article-descr__title-only">Аналитическая записка: «Что можно ждать от M&A?»</h3>
+									<ul class="content-column__list">
+										<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+										<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+									</ul>
+								</div>
+							</article><!-- column-2 -->
+							<article class="content-column__article content-column__article-secondary">
+								<div class="content-column__article-category">
+									<a class="evaluation_services" href="#">Оценочные услуги</a>
+								</div>
+								<div class="content-column__article-descr">
+									<h3 class="article-descr__title article-descr__title-only">Штрафы по итогам налоговых проверок могут вырасти в 2 раза</h3>
+									<ul class="content-column__list">
+										<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
+										<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
+									</ul>
+								</div>
+							</article><!-- column-3 -->
+						</div><!-- content-column__branches -->
+					</div><!-- content-column__directions -->
 				</main><!--main-->
 				<aside class="content-column sidebar col-md-3 col-md-pull-9">
-					<h3 class="content-column__title content-column__title-sidebar">Услуги</h3>
-					<div class="services-row">
-						<div class="services-row__main">
-							<div class="service-item">
-								<a class="service-item__title" href="#">Иностранное корпоративное право. Структурирование и сопровождение сделок M&A</a>
+					<h3 class="content-column__title content-column__title-sidebar">Менеджер</h3>
+					<div class="content-column__contact">
+						<p class="content-column__contact-text">Тедефон<a href="tel:+74959560370">+7 495 956-03-70</a></p>
+						<p class="content-column__contact-text">Эл. почта<a class="contact-mail" href="mailto:itpg@gmail.com">itpg@gmail.com</a></p>
+					</div>
+					<div class="content-column__wrap">
+						<div class="content-column__select">
+							<h4 class="content-column__select-title">Выбор направления</h4>
+							<div>
+								<input id="checkbox-1" type="checkbox">
+								<label for="checkbox-1">Юридическая деятельность</label>
 							</div>
-							<div class="service-item">
-								<a class="service-item__title" href="#">Антимонопольное право</a>
-							</div>
-							<div class="service-item">
-								<a class="service-item__title" href="#">Банкротство юридического лица</a>
+							<div>
+								<input id="checkbox-2" type="checkbox">
+								<label for="checkbox-2">Юридическая деятельность</label>
 							</div>
 						</div>
-						<div class="drop-services__row">
-							<img src="img/up-arrow.png" alt="">
-						</div><!-- arrow -->
-						<div class="services-row__secondary">
-							<div class="service-item">
-								<a class="service-item__title" href="#">Недвижимость и строительство. Земельное право.</a>
+						<div class="content-column__select">
+							<h4 class="content-column__select-title">Выбор направления</h4>
+							<div>
+								<input id="checkbox-3" type="checkbox">
+								<label for="checkbox-3">Юридическая деятельность</label>
 							</div>
-							<div class="service-item">
-								<a class="service-item__title" href="#">Судебные споры и арбитраж в фармацевтике</a>
-							</div>
-							<div class="service-item">
-								<a class="service-item__title" href="#">Защита медицинских работников от уголовного преследования</a>
-							</div>
-							<div class="service-item">
-								<a class="service-item__title" href="#">Недвижимость и cтроительство в фармацевтике</a>
-							</div>
-							<div class="service-item">
-								<a class="service-item__title" href="#">Интеллектуальная собственность в фармацевтике</a>
-							</div>
-							<div class="service-item">
-								<a class="service-item__title" href="#">Правовое сопровождение проектов «НИР и НИОКР»</a>
-							</div>
-							<div class="service-item">
-								<a class="service-item__title" href="#">Правовое сопровождение проектов в области фармацевтики и биотехнологий</a>
+							<div>
+								<input id="checkbox-4" type="checkbox">
+								<label for="checkbox-4">Юридическая деятельность</label>
 							</div>
 						</div>
 					</div>
-					<h3 class="content-column__title content-column__title-services">Отрасли</h3>
-					<div class="content-service__row">
-						<div class="content-service">
-							<a class="content-service__title" href="#">Банковские гарантии - надежная защита?</a>
-						</div>
-						<div class="content-service">
-							<a class="content-service__title" href="#">Аналитическая записка: «Что можно ждать от M&A?»</a>
-						</div>
-						<div class="content-service">
-							<a class="content-service__title" href="#">Штрафы по итогам налоговых проверок могут вырасти в 2 раза</a>
-						</div>
-					</div><!-- content-column__row -->
 				</aside><!--aside-->
 			</div>
 		</div>
 	</section>
 	<!-- end content section -->
-	<!-- start services-post -->
-	<section class="services-post">
-		<div class="wrapper">
-			<h3 class="content-column__title">актуально</h3>
-			<div class="content-column__directions">
-				<div class="content-column__row">
-					<article class="content-column__article">
-						<div class="content-column__article-img">
-							<a href="#">
-								<img src="img/rawpixel-1.jpg" alt="IPT Group">
-							</a><!-- link to post -->
-							<div class="content-column__article-category">
-								<a class="financial_services" href="#">Финансовые услуги</a>
-							</div>
-						</div>
-						<div class="content-column__article-descr">
-							<h3 class="article-descr__title">Банковские гарантии - надежная защита?</h3>
-							<ul class="content-column__list">
-								<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
-								<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
-							</ul>
-						</div>
-					</article><!-- column-1 -->
-					<article class="content-column__article">
-						<div class="content-column__article-img">
-							<a href="#">
-								<img src="img/rawpixel-2.jpg" alt="IPT Group">
-							</a><!-- link to post -->
-							<div class="content-column__article-category">
-								<a class="evaluation_services" href="#">Оценочные услуги</a>
-							</div>
-						</div>
-						<div class="content-column__article-descr">
-							<h3 class="article-descr__title">Штрафы по итогам налоговых проверок могут вырасти в 2 раза</h3>
-							<ul class="content-column__list">
-								<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
-								<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
-							</ul>
-						</div>
-					</article><!-- column-2 -->
-					<article class="content-column__article">
-						<div class="content-column__article-img">
-							<a href="#">
-								<img src="img/rawpixel-3.jpg" alt="IPT Group">
-							</a><!-- link to post -->
-							<div class="content-column__article-category">
-								<a class="legal_activity" href="#">юридическая деятельность</a>
-							</div>
-						</div>
-						<div class="content-column__article-descr">
-							<h3 class="article-descr__title">Аналитическая записка: «Что можно ждать от M&A?»</h3>
-							<ul class="content-column__list">
-								<li class="content-column__item post-date"><a href="#">20 Августа 2017</a></li>
-								<li class="content-column__item learn_more"><a href="#">Подробнее</a></li><!-- link to post -->
-							</ul>
-						</div>
-					</article><!-- column-3 -->
-				</div><!-- content-column__row -->
-			</div><!-- content-column__directions -->
-		</div>
-	</section>
-	<!-- end services-post -->
-	<!-- start speakers -->
-	<section class="speakers">
-		<div class="wrapper">
-			<h3 class="content-column__title speakers-title">наши спикеры и участники</h3>
-			<div class="speakers-slider">
-				<div class="human-info speakers-slide">
-					<a class="speakers-slide__contact" href="#"></a><!-- mail -->
-					<img src="img/human-2.jpg" alt="IPT Group">
-					<h5 class="human-info__title">Баловнев<br> Евгений Леонидович</h5>
-					<p class="human-info__text">Финансовый контролер Департамента управленческого учета и финансового контроля</p>
-				</div><!-- slide(1) -->
-				<div class="human-info speakers-slide">
-					<a class="speakers-slide__contact" href="#"></a><!-- mail -->
-					<img src="img/human-1.jpg" alt="IPT Group">
-					<h5 class="human-info__title">Алешина<br> Светлана Валентиновна</h5>
-					<p class="human-info__text">Руководитель Департамента подбора и развития персонала</p>
-				</div><!-- slide(2) -->
-				<div class="human-info speakers-slide">
-					<a class="speakers-slide__contact" href="#"></a><!-- mail -->
-					<img src="img/human-2.jpg" alt="IPT Group">
-					<h5 class="human-info__title">Баловнев<br> Евгений Леонидович</h5>
-					<p class="human-info__text">Финансовый контролер Департамента управленческого учета и финансового контроля</p>
-				</div><!-- slide(3) -->
-				<div class="human-info speakers-slide">
-					<a class="speakers-slide__contact" href="#"></a><!-- mail -->
-					<img src="img/human-1.jpg" alt="IPT Group">
-					<h5 class="human-info__title">Алешина<br> Светлана Валентиновна</h5>
-					<p class="human-info__text">Руководитель Департамента подбора и развития персонала</p>
-				</div><!-- slide(4) -->
-				<div class="human-info speakers-slide">
-					<a class="speakers-slide__contact" href="#"></a><!-- mail -->
-					<img src="img/human-2.jpg" alt="IPT Group">
-					<h5 class="human-info__title">Баловнев<br> Евгений Леонидович</h5>
-					<p class="human-info__text">Финансовый контролер Департамента управленческого учета и финансового контроля</p>
-				</div><!-- slide(5) -->
-				<div class="human-info speakers-slide">
-					<a class="speakers-slide__contact" href="#"></a><!-- mail -->
-					<img src="img/human-1.jpg" alt="IPT Group">
-					<h5 class="human-info__title">Алешина<br> Светлана Валентиновна</h5>
-					<p class="human-info__text">Руководитель Департамента подбора и развития персонала</p>
-				</div><!-- slide(6) -->
-				<div class="human-info speakers-slide">
-					<a class="speakers-slide__contact" href="#"></a><!-- mail -->
-					<img src="img/human-2.jpg" alt="IPT Group">
-					<h5 class="human-info__title">Баловнев<br> Евгений Леонидович</h5>
-					<p class="human-info__text">Финансовый контролер Департамента управленческого учета и финансового контроля</p>
-				</div><!-- slide(7) -->
-				<div class="human-info speakers-slide">
-					<a class="speakers-slide__contact" href="#"></a><!-- mail -->
-					<img src="img/human-1.jpg" alt="IPT Group">
-					<h5 class="human-info__title">Алешина<br> Светлана Валентиновна</h5>
-					<p class="human-info__text">Руководитель Департамента подбора и развития персонала</p>
-				</div><!-- slide(8) -->
-			</div><!-- slider end -->
-		</div>
-	</section>
-	<!-- end speakers -->
 	<!-- start siteMap -->
 	<section class="siteMap">
 		<div class="wrapper">
