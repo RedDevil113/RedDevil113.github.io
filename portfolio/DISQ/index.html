@@ -45,7 +45,7 @@
 		<div class="header-wrap">
 			<div class="header-logo">
 				<a href="#">
-					<img src="img/logo.png" alt="DISQ - Фитнес студия">
+					<img class="logo" src="img/logo.png" alt="DISQ - Фитнес студия">
 				</a>
 			</div>
 			<nav class="header-nav">
@@ -53,9 +53,15 @@
 					<li class="header-nav__item"><a href="#card">Карта</a></li>
 					<li class="header-nav__item"><a href="#advantages">Тренеры</a></li>
 					<li class="header-nav__item"><a href="#timetable">Расписание</a></li>
-					<li class="header-nav__item"><a href="#map">О клубе</a></li>
+					<li class="header-nav__item"><a href="#video">О клубе</a></li>
 				</ul>
 				<a href="#modal-call" class="button-modal btn-primary header-nav__button"><span>заказать карту</span></a>
+				<div class="menu-bar">
+					<picture>
+					 	<source srcset="img/burge.svg" type="image/svg+xml">
+					 	<img src="img/burge.png" alt="DISQ - Фитнес студия">
+					</picture>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -97,7 +103,7 @@
 	<section class="product" id="product">
 		<div class="product-wrap">
 			<div class="product-wrap__column product-wrap__img" style="background: url(img/product.png);"></div>
-			<div class="product-wrap__column">
+			<div class="product-wrap__column product-wrap__info">
 				<div class="product-wrap__descr">
 					<h2 class="section-title product-column__title">Новый подход 
 						<span class="product-column__title-span transform-skew__bg">
@@ -117,6 +123,7 @@
 	<!-- start card -->
 	<section class="card" id="card">
 		<div class="card-bg"></div>
+		<h2 class="section-title section-title__white card-wrap__column-title card-wrap__column-title-1">Клубная карта</h2>
 		<div class="card-wrap">
 			<div class="card-wrap__column card-wrap__descr">
 				<h2 class="section-title section-title__white card-wrap__column-title">Клубная карта</h2>
@@ -132,42 +139,49 @@
 	</section>
 	<!-- end card -->
 	<!-- start advantages -->
-	<section class="advantages" id="advantages" style="background: url(img/advantages-bg.jpg);">
+	<section class="advantages" id="advantages">
 		<div class="advantages-wrap">
 			<div class="advantages-slider">
-				<div class="advantages-slide">
-					<h2 class="section-title section-title__white advantages-slide__title">Александра 
-						<span class="transform-skew__bg">
-							<span class="transform-text advantages-slide__title-span">Слободина</span>
-						</span>
-					</h2>
-					<div class="advantages-slide__text">
-						<p>Краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества</p>
+				<div class="advantages-slide" style="background: url(img/advantages-bg.jpg);">
+					<div class="advantages-slide__descr">
+						<h2 class="section-title section-title__white advantages-slide__title">Александра 
+							<span class="transform-skew__bg">
+								<span class="transform-text advantages-slide__title-span">Слободина</span>
+							</span>
+						</h2>
+						<div class="advantages-slide__text">
+							<p>Краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества</p>
+						</div>
+						<a href="#" class="btn-primary advantages-slide__link"><span>ЗАПИСАТЬСЯ</span></a>
 					</div>
-					<a href="#" class="btn-primary advantages-slide__link"><span>ЗАПИСАТЬСЯ</span></a>
 				</div><!-- slide(1) -->
-				<div class="advantages-slide">
-					<h2 class="section-title section-title__white advantages-slide__title">Александра 
-						<span class="transform-skew__bg">
-							<span class="transform-text advantages-slide__title-span">Слободина</span>
-						</span>
-					</h2>
-					<div class="advantages-slide__text">
-						<p>Краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества</p>
+				<div class="advantages-slide" style="background: url(img/slide-2.jpg);">
+					<div class="advantages-slide__descr">
+						<h2 class="section-title section-title__white advantages-slide__title">Александра 
+							<span class="transform-skew__bg">
+								<span class="transform-text advantages-slide__title-span">Слободина</span>
+							</span>
+						</h2>
+						<div class="advantages-slide__text">
+							<p>Краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества</p>
+						</div>
+						<a href="#" class="btn-primary advantages-slide__link"><span>ЗАПИСАТЬСЯ</span></a>
 					</div>
-					<a href="#" class="btn-primary advantages-slide__link"><span>ЗАПИСАТЬСЯ</span></a>
-				</div><!-- slide(1) -->
-				<div class="advantages-slide">
-					<h2 class="section-title section-title__white advantages-slide__title">Александра 
-						<span class="transform-skew__bg">
-							<span class="transform-text advantages-slide__title-span">Слободина</span>
-						</span>
-					</h2>
-					<div class="advantages-slide__text">
-						<p>Краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества</p>
+				</div><!-- slide(2) -->
+				<div class="advantages-slide" style="background: url(img/advantages-bg.jpg);">
+					<div class="advantages-slide__descr">
+						<h2 class="section-title section-title__white advantages-slide__title">Александра 
+							<span class="transform-skew__bg">
+								<span class="transform-text advantages-slide__title-span">Слободина</span>
+							</span>
+						</h2>
+						<div class="advantages-slide__text">
+							<p>Краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества краткое описание, текст, плюсы и преимущества</p>
+						</div>
+						<a href="#" class="btn-primary advantages-slide__link"><span>ЗАПИСАТЬСЯ</span></a>
 					</div>
-					<a href="#" class="btn-primary advantages-slide__link"><span>ЗАПИСАТЬСЯ</span></a>
-				</div><!-- slide(1) -->
+				</div><!-- slide(3) -->
+
 			</div>
 		</div>
 	</section>
@@ -178,37 +192,44 @@
 			<h2 class="section-title timetable-title">РАсписание занятий</h2>
 			<div class="timetable-nav">
 				<ul class="timetable-nav__list">
-					<li data-schedule="category-all" class="timetable-nav__item"><span>все занятия</span></li>
+					<li data-schedule="category-all" class="timetable-nav__item timetable-nav__item-active"><span>все занятия</span></li>
 					<li data-schedule="category-fitness" class="timetable-nav__item"><span>ФИТНЕС</span></li>
 					<li data-schedule="category-gym" class="timetable-nav__item"><span>тренажерный зал</span></li>
 					<li data-schedule="category-group" class="timetable-nav__item"><span>групповые занятия</span></li>
 				</ul>
 			</div>
 			<div class="timetable-header__menu">
-				<div class="timetable-header__menu-column">
+				<div class="timetable-header__menu-column timetable-header__menu-column__active" data-day="timetable-monday">
 					<p>понедельник</p>
+					<p class="timetable-header__menu-short">пн</p>
 				</div>
-				<div class="timetable-header__menu-column">
+				<div class="timetable-header__menu-column" data-day="timetable-tuesday">
 					<p>вторник</p>
+					<p class="timetable-header__menu-short">вт</p>
 				</div>
-				<div class="timetable-header__menu-column">
+				<div class="timetable-header__menu-column" data-day="timetable-wednesday">
 					<p>среда</p>
+					<p class="timetable-header__menu-short">ср</p>
 				</div>
-				<div class="timetable-header__menu-column">
+				<div class="timetable-header__menu-column" data-day="timetable-thursday">
 					<p>четверг</p>
+					<p class="timetable-header__menu-short">чт</p>
 				</div>
-				<div class="timetable-header__menu-column">
+				<div class="timetable-header__menu-column" data-day="timetable-friday">
 					<p>пятница</p>
+					<p class="timetable-header__menu-short">пт</p>
 				</div>
-				<div class="timetable-header__menu-column">
+				<div class="timetable-header__menu-column" data-day="timetable-saturday">
 					<p>суббота</p>
+					<p class="timetable-header__menu-short">сб</p>
 				</div>
-				<div class="timetable-header__menu-column">
+				<div class="timetable-header__menu-column" data-day="timetable-sunday">
 					<p>воскресенье</p>
+					<p class="timetable-header__menu-short">вс</p>
 				</div>
 			</div>
 			<div class="timetable-table">
-				<div class="timetable-column">
+				<div class="timetable-column timetable-monday timetable-column__active">
 					<div class="timetable-column__cell category-fitness">
 						<p class="timetable-column__cell-time">08:00</p>
 						<p class="timetable-column__cell-name">занятия с Disq</p>
@@ -235,7 +256,7 @@
 						<p class="timetable-column__cell-category">Тренажерный зал</p>
 					</div><!-- cell(5) -->
 				</div><!-- col(1) -->
-				<div class="timetable-column">
+				<div class="timetable-column timetable-tuesday">
 					<div class="timetable-column__cell category-gym">
 						<p class="timetable-column__cell-time">08:00</p>
 						<p class="timetable-column__cell-name">инструктаж базовый</p>
@@ -262,7 +283,7 @@
 						<p class="timetable-column__cell-category">групповые занятия</p>
 					</div><!-- cell(5) -->
 				</div><!-- col(2) -->
-				<div class="timetable-column">
+				<div class="timetable-column timetable-wednesday">
 					<div class="timetable-column__cell category-fitness">
 						<p class="timetable-column__cell-time">08:00</p>
 						<p class="timetable-column__cell-name">занятия с Disq</p>
@@ -289,7 +310,7 @@
 						<p class="timetable-column__cell-category">групповые занятия</p>
 					</div><!-- cell(5) -->
 				</div><!-- col(3) -->
-				<div class="timetable-column">
+				<div class="timetable-column timetable-thursday">
 					<div class="timetable-column__cell category-group">
 						<p class="timetable-column__cell-time">08:00</p>
 						<p class="timetable-column__cell-name">yoga</p>
@@ -316,7 +337,7 @@
 						<p class="timetable-column__cell-category">Фитнес</p>
 					</div><!-- cell(5) -->
 				</div><!-- col(4) -->
-				<div class="timetable-column">
+				<div class="timetable-column timetable-friday">
 					<div class="timetable-column__cell category-group">
 						<p class="timetable-column__cell-time">10:00</p>
 						<p class="timetable-column__cell-name">zumba</p>
@@ -343,7 +364,7 @@
 						<p class="timetable-column__cell-category">Тренажерный зал</p>
 					</div><!-- cell(5) -->
 				</div><!-- col(5) -->
-				<div class="timetable-column">
+				<div class="timetable-column timetable-saturday">
 					<div class="timetable-column__cell category-gym">
 						<p class="timetable-column__cell-time">10:00</p>
 						<p class="timetable-column__cell-name">инструктаж базовый</p>
@@ -370,7 +391,7 @@
 						<p class="timetable-column__cell-category">Фитнес</p>
 					</div><!-- cell(5) -->
 				</div><!-- col(6) -->
-				<div class="timetable-column">
+				<div class="timetable-column timetable-sunday">
 					<div class="timetable-column__cell category-fitness">
 						<p class="timetable-column__cell-time">10:00</p>
 						<p class="timetable-column__cell-name">занятия с Disq</p>
@@ -405,7 +426,7 @@
 	<section class="video" id="video" style="background: url(img/video-bg.jpg);">
 		<div class="video-wrap">
 			<div class="video-wrap__descr">
-				<h2 class="section-title section-title__white video-wrap__descr-title">фитнес-студия 
+				<h2 class="section-title section-title__white video-wrap__descr-title">фитнес-студия<br>
 					<span class="transform-skew__bg">
 						<span class="transform-text advantages-slide__title-span">disq</span>
 					</span>
@@ -418,12 +439,13 @@
 			</div>
 		</div>
 		<div class="video-play">
-			<iframe src="https://www.youtube.com/embed/Mhfg2lVpW8k?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<iframe id="iframe" src="https://www.youtube.com/embed/Mhfg2lVpW8k?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</section>
 	<!-- end video -->
 	<!-- start footer -->
-	<div class="footer" id="map">
+	<div class="footer">
+		<div id="map"></div>
 		<div class="footer-info">
 			<h3 class="footer-info__title">Оставьте заявку на клубную карту</h3>
 			<form action="" class="footer-info__form">
