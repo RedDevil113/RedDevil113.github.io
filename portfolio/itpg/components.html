@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>IPT Group - Услуги</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+<body>
+	<!-- button scroll to top -->
+	<div class="scroll-to__top">
+		<picture>
+		 	<source srcset="img/up-arrow.svg" type="image/svg+xml">
+		 	<img src="img/up-arrow.png" alt="IPT Group">
+		</picture>
+	</div>
+	<!-- modal -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<form method="post" action="">
+				<div class="modal-content__head">
+					<h3 class="modal-content__title">Запрос на оказание услуг</h3>
+					<p class="modal-content__text">*поля со звездочками обязательные к заполнению</p>
+				</div>
+				<div class="modal-content__select">
+					<label>Направление:</label>
+					<select name="industry">
+				    <option selected value="item-1">Выберите направление</option>
+				    <option value="item-2">Международное направление</option>
+				    <option value="item-3">Оценочные услуги</option>
+				    <option value="item-4">Сопровождение бизнеса на Кипре</option>
+				  </select>
+				</div>
+				<div class="modal-content__row">
+					<!-- start modal-content__column -->
+					<div class="modal-content__column">
+						<div class="modal-content__column-input">
+							<label for="input-name">Имя, Фамилия: *</label>
+							<input id="input-name" type="text" name="name" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-email">E-mail: *</label>
+							<input id="input-email" type="email" name="email" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-company">Компания:</label>
+							<input id="input-company" type="text" name="company">
+						</div>
+						<div class="modal-content__column-input">
+							<label>Годовой доход:</label>
+							<select name="income">
+						    <option selected value="item-1">До 500 млн.</option>
+						    <option value="item-2">От 500 млн. до 1 млрд.</option>
+						    <option value="item-3">Свыше 1 млрд.</option>
+						  </select>
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-site">Приложение:</label>
+							<input type="file" name="file">
+						</div>
+						<button class="add-file">Добавить еще файл</button>
+					</div>
+					<!-- end modal-content__column -->
+					<!-- start modal-content__column -->
+					<div class="modal-content__column">
+						<div class="modal-content__column-input">
+							<label for="input-position">Должность: *</label>
+							<input id="input-position" type="text" name="position" required="required">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-phone">Телефон:</label>
+							<input id="input-phone" type="phone" name="phone">
+						</div>
+						<div class="modal-content__column-input">
+							<label for="input-site">Сайт компании:</label>
+							<input id="input-site" type="text" name="site">
+						</div>
+						<div class="modal-content__column-input">
+							<label>Отрасль:</label>
+							<select name="industry">
+						    <option selected value="item-1">Банки и финансы</option>
+						    <option value="item-2">Коллективные инвестиции</option>
+						    <option value="item-3">Культурные ценности</option>
+						    <option value="item-4">Металлургия</option>
+						  </select>
+						</div>
+					</div>
+					<!-- end modal-content__column -->
+				</div><!-- row -->
+				<div class="modal-content__textarea">
+					<label for="input-site">Сообщение:</label>
+					<textarea name="text"></textarea>
+				</div>
+				<div class="modal-content__radio">
+					<input id="input-radio" type="radio">
+					<label for="input-radio">Отправляя персональные данные из этой формы, я даю <a href="#">согласие на обработку персональных данных</a></label>
+				</div>
+				<button class="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-6 header-column header-column__first">
+					<div class="header-column__logo-button">
+						<picture>
+						 	<source srcset="img/logo.svg" type="image/svg+xml">
+						 	<img class="logo" src="img/logo.png" alt="IPT Group">
+						</picture>
+						<a href="#modal-form" class="btn-primary button-modal">Оставить заявку</a>
+					</div>
+				</div><!-- header-column(1) -->
+				<div class="col-md-6 header-column header-navigation">
+					<div class="header-languages">
+						<ul class="header-list">
+							<li class="header-item header-item__search">
+								<form action="/search/">
+									<input class="search" type="text" name="search" value="" size="15" maxlength="50" placeholder="Поиск"/>
+								</form>
+								<picture>
+								 	<source srcset="img/search.svg" type="image/svg+xml">
+								 	<img class="search-ico" src="img/search.png" alt="IPT Group">
+								</picture>
+							</li>
+							<li class="header-item header-item__en"><a href="#">EN</a></li>
+							<li class="header-item"><a href="#">CHN</a></li>
+						</ul>
+						<!-- start mob-site__phone -->
+						<div class="site__phone mob-site__phone">
+							<a href="tel:+74959884770">+7 495 988-47-70</a>
+						</div>
+						<!-- end mob-site__phone -->
+					</div>
+					<!-- start mob menu -->
+					<div class="menu-bar">
+						<span class="menu-bar__item"></span>
+					</div>
+					<!-- end mob menu -->
+					<nav class="header-menu__main">
+						<!-- start mob input -->
+						<div class="header-languages mob-header__languages">
+							<div class="wrapper">
+								<ul class="header-list mob-header__list">
+									<div>
+										<li class="header-item header-item__search">
+											<form action="/search/">
+												<input class="search" type="text" name="search" value="" size="15" maxlength="50" placeholder="Поиск"/>
+											</form>
+											<picture>
+											 	<source srcset="img/search.svg" type="image/svg+xml">
+											 	<img class="search-ico" src="img/search.png" alt="IPT Group">
+											</picture>
+										</li>
+									</div>
+									<div>
+										<li class="header-item header-item__en"><a href="#">EN</a></li>
+										<li class="header-item header-item__chn"><a href="#">CHN</a></li>
+									</div>
+								</ul>
+							</div>
+						</div>
+						<!-- end mob input -->
+						<ul class="menu-main__list">
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="https://www.youtube.com/">Услуги</a>
+								<div class="drop-menu">
+									<div class="wrapper">
+										<div class="drop-menu__row">
+											<div class="drop-menu__column">
+												<a href="https://www.google.ru/" class="drop-menu__title menu-main__item-hidden">Услуги</a>
+												<a href="https://www.google.ru/" class="drop-menu__title"> Юридическая деятельность</a>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Иностранное корпоративное право. Структурирование и сопровождение сделок M&A</a></li>
+									        <li><a href="#">Антимонопольное право</a></li>
+									        <li><a href="#">Банкротство юридического лица</a></li>
+									        <li><a href="#">Недвижимость и строительство. Земельное право.</a></li>
+									        <li><a href="#">Судебные споры и арбитраж в фармацевтике</a></li>
+								        </ul>
+											</div><!-- column(1) -->
+											<div class="drop-menu__column">
+												<a href="#" class="drop-menu__title">Финансовые услуги</a>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(2) -->
+											<div class="drop-menu__column">
+												<a href="#" class="drop-menu__title">Оценочные услуги</a>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(3) -->
+											<div class="drop-menu__column">
+												<a href="#" class="drop-menu__title">Международное направление</a>
+												<ul class="drop-menu__column-list">
+									        <li><a href="#">Юридическая деятельность</a></li>
+									        <li><a href="#">Налоговая практика</a></li>
+									        <li><a href="#">Финансовые услуги</a></li>
+									        <li><a href="#">Управление коллективными инвестициями</a></li>
+									        <li><a href="#">Оценочные услуги</a></li>
+									        <li><a href="#">Управление бизнесом</a></li>
+								        </ul>
+											</div><!-- column(4) -->
+										</div><!-- row -->
+						      </div><!-- wrapper -->
+		      			</div><!-- drop-menu -->
+							</li>
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="https://www.youtube.com/">Отрасли</a>
+								<ul class="drop-menu">
+									<div class="wrapper">
+										<li class="menu-main__item-hidden"><a href="https://www.youtube.com/">Отрасли</a></li>
+						        <li><a href="#">Недвижимость и строительство</a></li>
+						        <li><a href="#">Фармацевтическая биотехнологии</a></li>
+						        <li><a href="#">Медицины</a></li>
+						        <li><a href="#">Нефтегазовая отрасль и энергетика</a></li>
+						        <li><a href="#">Банки и финансы</a></li>
+						        <li><a href="#">Государственный сектор</a></li>
+						        <li><a href="#">Технологии, медиа и телекоммуникации</a></li>
+						        <li><a href="#">Культурные ценности</a></li>
+						        <li><a href="#">Металлургия</a></li>
+						      </div>
+		      			</ul>
+							</li>
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="https://www.youtube.com/">Публикации</a>
+								<ul class="drop-menu">
+									<div class="wrapper">
+										<li class="menu-main__item-hidden"><a href="#">Публикации</a></li>
+						        <li><a href="#">Исследовательный центр</a></li>
+						        <li><a href="#">Экспертное мнение</a></li>
+						        <li><a href="#">Видеоматериалы</a></li>
+						        <li><a href="#">Новости и события</a></li>
+						        <li><a href="#">Мы в СМИ</a></li>
+					        </div>
+		      			</ul>
+							</li>
+							<li class="menu-main__item menu-item__static menu-item__static-last"><a href="#">Мероприятия</a></li>
+						</ul>
+						<!-- start mob menu-secondary -->
+						<ul class="menu-main__list mob-menu__secondary">
+							<li class="menu-main__item main__item-drop"><a class="drop-link" href="javascript:void(0);">О компании</a>
+								<ul class="drop-menu">
+									<div class="wrapper">
+										<li><a href="#">item-1</a></li>
+										<li><a href="#">item-2</a></li>
+										<li><a href="#">item-3</a></li>
+										<li><a href="#">item-4</a></li>
+										<li><a href="#">item-5</a></li>
+									</div>
+		      			</ul>
+							</li>
+							<li class="menu-main__item menu-item__static"><a href="#">Карьера</a></li>
+							<li class="menu-main__item menu-item__static"><a href="#">Контакты</a></li>
+						</ul>
+						<!-- end mob menu-secondary -->
+					</nav>
+				</div><!-- header-column(2) -->
+			</div>
+		</div>
+		<div class="header-menu__secondary">
+			<div class="wrapper">
+				<div class="row header-menu__secondary-row">
+					<div class="col-md-6 col-sm-6 site__phone">
+						<a href="tel:+74959884770">+7 495 988-47-70</a>
+					</div>
+					<div class="col-md-6 col-sm-6 header-menu">
+						<nav class="header-nav__secondary">
+							<ul class="menu-secondary__list">
+								<li class="menu-secondary__item"><a class="drop-link drop-link__secondary" href="javascript:void(0);">О компании</a>
+									<ul class="drop-menu drop-menu__secondary">
+										<div class="wrapper">
+											<li><a href="#">item-1</a></li>
+											<li><a href="#">item-2</a></li>
+											<li><a href="#">item-3</a></li>
+											<li><a href="#">item-4</a></li>
+											<li><a href="#">item-5</a></li>
+										</div>
+			      			</ul>
+								</li>
+								<li class="menu-secondary__item"><a href="#">Карьера</a></li>
+								<li class="menu-secondary__item"><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start components -->
+	<section class="components">
+		<div class="components-row">
+			<div class="components-wrap">
+				<h2 class="components-row__title">Метки</h2>
+				<h1 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h1>
+				<h2 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h2>
+				<h3 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h3>
+				<h4 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h3>
+				<h5 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h5>
+				<h6 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h6>
+				<div class="components-wrap__code">
+				<xmp>
+<h1 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h1>
+<h2 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h2>
+<h3 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h3>
+<h4 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h3>
+<h5 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h5>
+<h6 class="title-default">Пример заголовка <span class="label label-default">Новый</span></h6>					
+				</xmp>
+				</div>
+				<h4 class="components-wrap__subtitle">Доступные варианты</h4>
+				<span class="label label-default">Default</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-success">Success</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+				<div class="components-wrap__code">
+				<xmp>
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>					
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Кнопки</h2>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default">1</button>
+				  <button type="button" class="btn btn-default">2</button>
+				  <div class="btn-group">
+				    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				        Dropdown
+				        <span class="caret"></span>
+				      </button>
+				    <ul class="dropdown-menu">
+				      <li><a href="#">Dropdown ссылка</a></li>
+				      <li><a href="#">Dropdown ссылка</a></li>
+				    </ul>
+				  </div>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="btn-group">
+  <button type="button" class="btn btn-default">1</button>
+  <button type="button" class="btn btn-default">2</button>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Dropdown ссылка</a></li>
+      <li><a href="#">Dropdown ссылка</a></li>
+    </ul>
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h4 class="components-wrap__subtitle">Одиночная кнопка выпадающего меню</h4>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-danger">Действие</button>
+				  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+				 <span class="caret"></span>
+				 <span class="sr-only">Меню с переключением</span>
+				 </button>
+				  <ul class="dropdown-menu" role="menu">
+				    <li><a href="#">Действие</a></li>
+				    <li><a href="#">Другое действие</a></li>
+				    <li><a href="#">Что-то иное</a></li>
+				    <li class="divider"></li>
+				    <li><a href="#">Отдельная ссылка</a></li>
+				  </ul>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Действие</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+ <span class="caret"></span>
+ <span class="sr-only">Меню с переключением</span>
+ </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Действие</a></li>
+    <li><a href="#">Другое действие</a></li>
+    <li><a href="#">Что-то иное</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Отдельная ссылка</a></li>
+  </ul>
+</div>				
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Jumbotron</h2>
+				<div class="jumbotron">
+				  <h1 class="title-default">Привет, мир!</h1>
+				  <p>Это простая и очень выразительная часть с большим экраном, для привлечения дополнительного внимания к вашей информации.</p>
+				  <p><a class="btn btn-danger btn-lg" role="button">Узнать больше</a></p>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="jumbotron">
+  <h1 class="title-default">Привет, мир!</h1>
+  <p>...</p>
+  <p><a class="btn btn-danger btn-lg" role="button">Узнать больше</a></p>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Эскизы</h2>
+				<div class="row">
+				  <div class="col-xs-6 col-md-3">
+				    <a href="#" class="thumbnail">
+				      <img src="img/slide-1.png"  alt="...">
+				    </a>
+				  </div>
+				  <div class="col-xs-6 col-md-3">
+				    <a href="#" class="thumbnail">
+				      <img src="img/slide-3.jpeg"  alt="...">
+				    </a>
+				  </div>
+				  <div class="col-xs-6 col-md-3">
+				    <a href="#" class="thumbnail">
+				      <img src="img/slide-2.jpeg" alt="...">
+				    </a>
+				  </div>
+				  <div class="col-xs-6 col-md-3">
+				    <a href="#" class="thumbnail">
+				      <img src="img/slide-post-1.jpeg" alt="...">
+				    </a>
+				  </div>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/slide-1.png"  alt="...">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/slide-3.jpeg"  alt="...">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/slide-2.jpeg" alt="...">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/slide-post-1.jpeg" alt="...">
+    </a>
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h4 class="components-wrap__subtitle">Настраиваемое содержимое</h4>
+				<div class="row">
+				  <div class="col-sm-6 col-md-4">
+				    <div class="thumbnail">
+				      <img src="img/slide-1.png" alt="...">
+				      <div class="caption">
+				        <h3 class="title-default">Ярлык эскиза</h3>
+				        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+				        <p><a href="#" class="btn btn-danger" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-4">
+				    <div class="thumbnail">
+				      <img src="img/slide-2.jpeg" alt="...">
+				      <div class="caption">
+				        <h3 class="title-default">Ярлык эскиза</h3>
+				        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+				        <p><a href="#" class="btn btn-danger" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="col-sm-6 col-md-4">
+				    <div class="thumbnail">
+				      <img src="img/slide-3.jpeg" alt="...">
+				      <div class="caption">
+				        <h3 class="title-default">Ярлык эскиза</h3>
+				        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. </p>
+				        <p><a href="#" class="btn btn-danger" role="button">Кнопка</a> <a href="#" class="btn btn-default" role="button">Кнопка</a></p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="img/slide-3.jpeg" alt="...">
+      <div class="caption">
+        <h3 class="title-default">Ярлык эскиза</h3>
+        <p>...</p>
+        <p>
+          <a href="#" class="btn btn-danger" role="button">Кнопка</a>
+          <a href="#" class="btn btn-default" role="button">Кнопка</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Уведомления</h2>
+				<div class="alert alert-success">Well done! You successfully read this important alert message.
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				</div>
+				<div class="alert alert-info">Heads up! This alert needs your attention, but it's not super important.</div>
+				<div class="alert alert-warning">Warning! Better check yourself, you're not looking too good.</div>
+				<div class="alert alert-danger">Oh snap! Change a few things up and try submitting again.</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="alert alert-success">...
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+</div>
+<div class="alert alert-info">...</div>
+<div class="alert alert-warning">...</div>
+<div class="alert alert-danger">...</div>
+				</xmp>
+				</div>
+				<h4 class="components-wrap__subtitle">Ссылки в замечаниях</h4>
+				<div class="alert alert-success">
+				  <a href="#" class="alert-link">Well done! You successfully read this important alert message.</a>
+				</div>
+				<div class="alert alert-info">
+				  <a href="#" class="alert-link">Heads up! This alert needs your attention, but it's not super important.</a>
+				</div>
+				<div class="alert alert-warning">
+				  <a href="#" class="alert-link">Warning! Better check yourself, you're not looking too good.</a>
+				</div>
+				<div class="alert alert-danger">
+				  <a href="#" class="alert-link">Oh snap! Change a few things up and try submitting again.</a>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="alert alert-success">
+  <a href="#" class="alert-link">...</a>
+</div>
+<div class="alert alert-info">
+  <a href="#" class="alert-link">...</a>
+</div>
+<div class="alert alert-warning">
+  <a href="#" class="alert-link">...</a>
+</div>
+<div class="alert alert-danger">
+  <a href="#" class="alert-link">...</a>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Индикатор выполнения</h2>
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+				    60%
+				  </div>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" 
+  aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h4 class="components-wrap__subtitle">Полосатый индикатор</h4>
+				<div class="progress progress-striped">
+				  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+				    <span class="sr-only">40% Complete (success)</span>
+				  </div>
+				</div>
+				<div class="progress progress-striped">
+				  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+				    <span class="sr-only">20% Complete</span>
+				  </div>
+				</div>
+				<div class="progress progress-striped">
+				  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+				    <span class="sr-only">60% Complete (warning)</span>
+				  </div>
+				</div>
+				<div class="progress progress-striped">
+				  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+				    <span class="sr-only">80% Complete (danger)</span>
+				  </div>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="progress progress-striped">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+   aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+<div class="progress progress-striped">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20"
+   aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+<div class="progress progress-striped">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+   aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+<div class="progress progress-striped">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80"
+   aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h4 class="components-wrap__subtitle">Индикатор с анимацией</h4>
+				<div class="progress progress-striped active">
+				  <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+				    <span class="sr-only">45% Complete</span>
+				  </div>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="progress progress-striped active">
+  <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0"
+   aria-valuemax="100" style="width: 45%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Медиа объект</h2>
+				<div class="media">
+		      <a class="pull-left" href="#">
+		        <img class="media-object" alt="64x64" src="img/slide-post-1.jpeg" style="width: 64px; height: 64px;">
+		      </a>
+		      <div class="media-body">
+		        <h4 class="media-heading">Заголовок медиа</h4>
+		        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+		      </div>
+		    </div>
+		    <div class="media">
+		      <a class="pull-left" href="#">
+		        <img class="media-object" alt="64x64" src="img/slide-post-1.jpeg" style="width: 64px; height: 64px;">
+		      </a>
+		      <div class="media-body">
+		        <h4 class="media-heading">Заголовок медиа</h4>
+		        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+		      </div>
+		    </div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" alt="64x64" src="img/slide-post-1.jpeg" style="width: 64px; height: 64px;">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Заголовок медиа</h4>
+   ...
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Popover</h2>
+				<a href="javascript:void(0);" class="btn btn-md btn-warning" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Click</a>
+				<a href="javascript:void(0);" class="btn btn-md btn-danger" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Click</a>
+				<a href="javascript:void(0);" class="btn btn-md btn-info" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Click</a>
+				<a href="javascript:void(0);" class="btn btn-md btn-success" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Click</a>
+				<div class="components-wrap__code">
+				<xmp>
+<a href="javascript:void(0);" class="btn btn-md btn-warning" title="Header" data-toggle="popover"
+data-placement="top" data-content="Content">Click</a>
+
+<a href="javascript:void(0);" class="btn btn-md btn-danger" title="Header" data-toggle="popover"
+data-placement="bottom" data-content="Content">Click</a>
+
+<a href="javascript:void(0);" class="btn btn-md btn-info" title="Header" data-toggle="popover"
+data-placement="left" data-content="Content">Click</a>
+
+<a href="javascript:void(0);" class="btn btn-md btn-success" title="Header" data-toggle="popover"
+data-placement="right" data-content="Content">Click</a>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Связанные элементы</h2>
+				<div class="list-group">
+				  <a href="#" class="list-group-item active">
+				    Cras justo odio
+				  </a>
+				  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+				  <a href="#" class="list-group-item">Morbi leo risus</a>
+				  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+				  <a href="#" class="list-group-item">Vestibulum at eros</a>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    Cras justo odio
+  </a>
+  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+  <a href="#" class="list-group-item">Morbi leo risus</a>
+  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+  <a href="#" class="list-group-item">Vestibulum at eros</a>
+</div>
+				</xmp>
+				</div>
+				<h4 class="components-wrap__subtitle">Настраиваемое содержимое</h4>
+				<div class="list-group">
+				  <a href="#" class="list-group-item active">
+				    <h4 class="title-default list-group-item-heading">Заголовок пункта списка группы</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				  <a href="#" class="list-group-item">
+				    <h4 class="title-default list-group-item-heading">Заголовок пункта списка группы</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				  <a href="#" class="list-group-item">
+				    <h4 class="title-default list-group-item-heading">Заголовок пункта списка группы</h4>
+				    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+				  </a>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="list-group">
+  <a href="#" class="list-group-item active">
+    <h4 class="title-default list-group-item-heading">Заголовок пункта списка группы</h4>
+    <p class="list-group-item-text">Donec.</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="title-default list-group-item-heading">Заголовок пункта списка группы</h4>
+    <p class="list-group-item-text">Donec.</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="title-default list-group-item-heading">Заголовок пункта списка группы</h4>
+    <p class="list-group-item-text">Donec.</p>
+  </a>
+</div> 
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Панель</h2>
+				<div class="panel panel-primary">
+		      <div class="panel-heading">
+		        <h3 class="panel-title">Название панели</h3>
+		      </div>
+		      <div class="panel-body">
+		        Panel content
+		      </div>
+		    </div>
+		    <div class="panel panel-success">
+		      <div class="panel-heading">
+		        <h3 class="panel-title">Название панели</h3>
+		      </div>
+		      <div class="panel-body">
+		        Panel content
+		      </div>
+		    </div>
+		    <div class="panel panel-info">
+		      <div class="panel-heading">
+		        <h3 class="panel-title">Название панели</h3>
+		      </div>
+		      <div class="panel-body">
+		        Panel content
+		      </div>
+		    </div>
+		    <div class="panel panel-warning">
+		      <div class="panel-heading">
+		        <h3 class="panel-title">Название панели</h3>
+		      </div>
+		      <div class="panel-body">
+		        Panel content
+		      </div>
+		    </div>
+		    <div class="panel panel-danger">
+		      <div class="panel-heading">
+		        <h3 class="panel-title">Название панели</h3>
+		      </div>
+		      <div class="panel-body">
+		        Panel content
+		      </div>
+		    </div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Название панели</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Таблицы</h2>
+				<div class="panel panel-danger">
+		      <div class="panel-heading">Panel heading</div>
+		      <!-- Table -->
+		      <table class="table">
+		        <thead>
+		          <tr>
+		            <th>#</th>
+		            <th>Имя</th>
+		            <th>Фамилия</th>
+		            <th>Имя пользователя</th>
+		          </tr>
+		        </thead>
+		        <tbody>
+		          <tr>
+		            <td>1</td>
+		            <td>Mark</td>
+		            <td>Otto</td>
+		            <td>@mdo</td>
+		          </tr>
+		          <tr>
+		            <td>2</td>
+		            <td>Jacob</td>
+		            <td>Thornton</td>
+		            <td>@fat</td>
+		          </tr>
+		          <tr>
+		            <td>3</td>
+		            <td>Larry</td>
+		            <td>the Bird</td>
+		            <td>@twitter</td>
+		          </tr>
+		        </tbody>
+		      </table>
+		    </div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="panel panel-danger">
+  <div class="panel-heading">Panel heading</div>
+  <!-- Table -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Имя пользователя</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Модальные окна</h2>
+				<!-- modal -->
+				<a href="#modal1" class="button-modal button-modal__default btn-danger">Модал</a>
+				<div class="modal" id="modal1">
+					<div class="modal-content">
+						<div class="cancel"></div>
+						<h3 class="title-default">Lorem ipsum dolor.</h3>
+						<img src="img/slide-3.jpeg"  alt="...">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione cum aperiam quae repellendus fugiat, aliquid unde impedit, ea eligendi officia. Cum, quisquam unde iusto iste optio aperiam voluptatibus, aut aliquid, sequi reprehenderit iure provident ipsam facere non adipisci. Iusto optio sed laborum obcaecati at aliquam quas, odio in qui eligendi quaerat aspernatur, rem mollitia amet omnis consequatur nulla. Labore at pariatur, ratione voluptatum ab architecto error itaque veritatis debitis quaerat, unde reiciendis. Incidunt aspernatur non numquam officiis, magnam voluptatibus iste quam beatae minus. Vitae soluta, nisi consectetur exercitationem aspernatur. Quaerat unde, totam quasi soluta. Molestiae dolorum beatae voluptates. Laudantium saepe eos vero tempora fugiat animi magnam totam soluta necessitatibus error adipisci asperiores eum, ratione laboriosam optio sit doloribus minus veritatis unde numquam molestiae magni nisi. Debitis dolorem distinctio maiores nemo ex rem ipsum esse dolores. Temporibus voluptates in soluta optio, laudantium, eveniet quidem dicta rerum saepe atque a repudiandae deserunt, sunt eius illum repellat eos, ab dolore perspiciatis esse. Quo inventore ducimus harum quis, repellat qui esse sapiente repellendus? Qui aspernatur nihil explicabo et molestias enim magni itaque necessitatibus in quidem eveniet, repellendus ut? Deleniti tempore totam dolores consectetur earum nulla commodi, deserunt repudiandae repellat numquam dolorem id, ab fuga!</p>
+					</div>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<a href="#modal1" class="button-modal button-modal__default btn-danger">Модал</a>
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <div class="cancel"></div>
+    <h3 class="title-default">Lorem ipsum dolor.</h3>
+    <img src="img/slide-3.jpeg"  alt="...">
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Переход по вкладкам</h2>
+				<ul id="myTab" class="nav nav-tabs">
+		      <li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
+		      <li><a href="#profile" data-toggle="tab">Профиль</a></li>
+		      <li class="dropdown">
+		          <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Выпадающее меню <b class="caret"></b></a>
+		          <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+		            <li class=""><a href="#dropdown1" tabindex="-1" data-toggle="tab">@fat</a></li>
+		            <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">@mdo</a></li>
+		          </ul>
+		        </li>
+		    </ul>
+		    <div id="myTabContent" class="tab-content">
+		      <div class="tab-pane fade active in" id="home">
+		        <p>Здесь произвольный текст. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate qui nisi.</p>
+		      </div>
+		      <div class="tab-pane fade" id="profile">
+		        <p>Здесь произвольный текст. Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+		      </div>
+		      <div class="tab-pane fade" id="dropdown1">
+		        <p>Здесь произвольный текст. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+		      </div>
+		      <div class="tab-pane fade" id="dropdown2">
+		        <p>Здесь произвольный текст. Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+		      </div>
+		    </div>
+				<div class="components-wrap__code">
+				<xmp>
+<ul id="myTab" class="nav nav-tabs">
+  <li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
+  <li><a href="#profile" data-toggle="tab">Профиль</a></li>
+  <li class="dropdown">
+      <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Выпадающее меню 
+      <b class="caret"></b></a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+        <li class=""><a href="#dropdown1" tabindex="-1" data-toggle="tab">@fat</a></li>
+        <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">@mdo</a></li>
+      </ul>
+    </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="home">
+    <p>Здесь</p>
+  </div>
+  <div class="tab-pane fade" id="profile">
+    <p>Здесь</p>
+  </div>
+  <div class="tab-pane fade" id="dropdown1">
+    <p>Здесь</p>
+  </div>
+  <div class="tab-pane fade" id="dropdown2">
+    <p>Здесь</p>
+ </div>
+</div>
+				</xmp>
+				</div>
+				<h2 class="components-row__title">Сворачивание</h2>
+				<div class="panel-group" id="accordion">
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <p class="panel-title">
+				              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				                Пункт Группы Свертывания #1
+				              </a>
+				            </p>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <p class="panel-title">
+				              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				                Пункт Группы Свертывания #2
+				              </a>
+				            </p>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <p class="panel-title">
+				              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				                Пункт Группы Свертывания #3
+				              </a>
+				            </p>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="components-wrap__code">
+				<xmp>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <p class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Пункт Свертывания #1</a>
+      </p>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Текст...
+      </div>
+    </div>
+  </div>
+</div>					
+				</xmp>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- end components -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-6 col-sm-7 footer-column footer-column__first">
+					<div class="footer-column__logo-button">
+						<picture>
+						 	<source srcset="img/logo.svg" type="image/svg+xml">
+						 	<img src="img/logo.png" alt="IPT Group">
+						</picture>
+						<a href="#modal-form" class="btn-primary button-modal">Оставить заявку</a>
+					</div>
+					<p class="footer-column__text">2017 IPT Group Все права защищены <a href="#">Правовая информация</a></p>
+				</div><!-- footer-column-1-->
+				<div class="col-md-3 col-sm-5 footer-column">
+					<a href="tel:+74959884770" class="footer-column__phone">+7 495 988-47-70</a>
+					<p class="footer-column__text">
+						Россия, 109004, Москва<br>
+						ул. А. Солженицына, д. 27<br>
+						Пн-Пт 10:00-19:00
+					</p>
+				</div><!-- footer-column-2-->
+				<div class="col-md-3 col-sm-6 footer-column">
+					<ul class="footer-column__list">
+						<li class="footer-social__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/facebook-white.svg" type="image/svg+xml">
+								 	<img src="img/facebook-white.png" alt="IPT Group">
+								</picture>
+							</a>
+						</li>
+						<li class="footer-social__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/youtube-white.svg" type="image/svg+xml">
+								 	<img src="img/youtube-white.png" alt="IPT Group">
+								</picture>
+							</a>
+						</li>
+						<li class="footer-social__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/twitter-white.svg" type="image/svg+xml">
+								 	<img src="img/twitter-white.png" alt="IPT Group">
+								</picture>
+							</a>
+						</li>
+					</ul>
+				</div><!-- footer-column-3-->
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
