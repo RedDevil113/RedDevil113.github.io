@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Sabline</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+<body>
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<form class="callback" method="POST">
+				<div class="success"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Skilltrade">
+				<input type="hidden" name="admin_email" value="info@skilltrade.ru">
+				<input type="hidden" name="form_subject" value="Заявка с сайта Skilltrade">
+				<input type="hidden" name="subject" value="">
+
+				<h3 class="modal-content__title">Это попап!</h3>
+				<input type="text" name="name" placeholder="Имя" required minlength="3">
+				<input id="modal-phone" type="text" name="phone" placeholder="Телефон" minlength="8">
+				<input type="text" name="text" placeholder="Сообщение" minlength="8">
+				<button class="btn-primary submit">Отправить</button>
+			</form>
+			<p class="modal-text">Copyright © 2017 Sabline. Все права защищены. <a target="_blank" href="http://skilltrade.ru/uploads/policy.pdf">Политика конфенциальности.</a></p>
+		</div>
+	</div>
+	<!-- modal-form-2 -->
+	<div class="modal" id="modal-form-2">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<form class="callback" method="POST">
+				<div class="success"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Skilltrade">
+				<input type="hidden" name="admin_email" value="info@skilltrade.ru">
+				<input type="hidden" name="form_subject" value="Заявка с сайта Skilltrade">
+				<input type="hidden" name="subject" value="">
+
+				<h3 class="modal-content__title">Это попап!</h3>
+				<input type="text" name="name" placeholder="Имя" required minlength="3">
+				<input id="modal-phone" type="text" name="phone" placeholder="Телефон" minlength="8">
+				<button class="btn-primary submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<!-- modal-successfully -->
+	<div class="modal" id="modal-successfully">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<div class="modal-title"><span>Спасибо!</span><br>Мы свяжемся с вами в ближайшее время</div>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-row">
+				<div class="header-column header-logo">
+					<p class="header-logo__title">Sabline<span>юридическая помощь</span></p>
+				</div><!-- header-column(1) -->
+				<div class="header-column header-menu">
+					<div class="menu-bar">
+						<span></span>
+					</div>
+					<nav class="header-nav">
+						<ul class="header-list">
+							<li class="header-item"><a href="#cases">Кейсы</a></li>
+							<li class="header-item"><a href="#test">Оставить заявку</a></li>
+							<li class="header-item"><a href="#calculator">Калькулятор неустоек</a></li>
+							<li class="header-item"><a href="#issues">FAQ</a></li>
+							<li class="header-item"><a href="#rate">Тарифы</a></li>
+							<li class="header-item"><a href="#contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</div><!-- header-column(2) -->
+				<div class="header-column header-contact">
+					<p class="header-contact__phone"><a href="tel:+84957777777">8 495 777 77 77</a></p>
+					<p class="header-contact__contact"><a href="#banner-form">Связаться с юристом</a></p>
+				</div><!-- header-column(3) -->
+			</div><!-- header-row -->
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start banner -->
+	<section class="banner section-bg" style="background: url(img/banner-bg.jpg);">
+		<div class="wrapper">
+			<div class="banner-descr">
+				<h1 class="banner-descr__title">Получите максимальную сумму законной неустойки</h1>
+				<h2 class="banner-descr__subtitle section-title">за нарушение сроков сдачи квартиры</h2>
+				<div class="banner-form" id="banner-form">
+					<p class="banner-form__title">Закажите консультацию прямо сейчас</p>
+					<form class="callback" method="POST">
+						<div class="success"><span>Спасибо за заявку!</span></div>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Sabline">
+						<input type="hidden" name="admin_email" value="gubacevdima@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
+						<!-- END Hidden Required Fields -->
+						<input type="text" name="name" id="name" required="required" minlength="3" placeholder="Имя">
+						<input type="phone" name="phone" id="phone" required="required" minlength="7" placeholder="Телефон">
+						<button class="btn-primary banner-form__button">Получить консультацию</button>
+						<a class="banner-form__link" href="#">Политика конфиденциальности</a>
+					</form>
+				</div><!-- banner-form -->
+			</div>
+		</div>
+	</section>
+	<!-- end banner -->
+	<!-- start advantages -->
+	<section class="advantages">
+		<div class="wrapper">
+			<div class="advantages-row">
+				<div class="advantages-column">
+					<p class="advantages-column__text">1024 <span>дела в производстве</span></p>
+				</div>
+				<div class="advantages-column">
+					<p class="advantages-column__text">4834 <span>выйгранных дела<br>у застройщиков</span></p>
+				</div>
+			</div><!-- advantages-row -->
+			<div class="advantages-logos">
+				<div class="advantages-logo">
+					<img src="img/logo-1.jpg" alt="Sabline">
+				</div>
+				<div class="advantages-logo">
+					<img src="img/logo-2.jpg" alt="Sabline">
+				</div>
+				<div class="advantages-logo">
+					<img src="img/logo-3.jpg" alt="Sabline">
+				</div>
+				<div class="advantages-logo">
+					<img src="img/logo-4.jpg" alt="Sabline">
+				</div>
+				<div class="advantages-logo">
+					<img src="img/logo-5.jpg" alt="Sabline">
+				</div>
+				<div class="advantages-logo">
+					<img src="img/logo-6.jpg" alt="Sabline">
+				</div>
+				<div class="advantages-logo">
+					<img src="img/logo-7.jpg" alt="Sabline">
+				</div>
+				<div class="advantages-logo">
+					<img src="img/logo-8.jpg" alt="Sabline">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end advantages -->
+	<!-- start cases -->
+	<section class="cases" id="cases">
+		<div class="wrapper">
+			<h2 class="section-title cases-title">Мои кейсы</h2>
+			<div class="cases-slider" style="background: url(img/slider-bg.png);">
+				<div class="cases-slide">
+					<div class="cases-slide__descr">
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Застройщик:</p>
+							<p class="cases-slide__info-value">Saint-Gobain</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Сколько дней просрочка:</p>
+							<p class="cases-slide__info-value">394 дня</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Стоимость квартиры:</p>
+							<p class="cases-slide__info-value">4 000 000 рублей</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Сколько взыскано неустойки:</p>
+							<p class="cases-slide__info-value">300 000 рублей</p>
+						</div>
+						<div class="cases-slide__info-wrap">
+							<p class="cases-slide__info-name">Сколько получено за доп. компенсацию:</p>
+							<div class="cases-slide__info-row">
+								<div class="cases-slide__info-col">
+									<p>76 620 руб.</p>
+									<p>5 000 руб.<span>моральный вред</span></p>
+								</div>
+								<div class="cases-slide__info-col">
+									<p>70 000 руб.<span>штраф</span></p>
+									<p>1 620 руб.<span>прочее</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cases-slide__img" style="background: url(img/slide-1.jpg);">
+						<div class="cases-slide__logo">
+							<img src="img/logo-7.jpg" alt="Sabline">
+						</div>
+					</div>
+				</div><!-- slide(1) -->
+				<div class="cases-slide">
+					<div class="cases-slide__descr">
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Застройщик:</p>
+							<p class="cases-slide__info-value">Saint-Gobain</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Сколько дней просрочка:</p>
+							<p class="cases-slide__info-value">394 дня</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Стоимость квартиры:</p>
+							<p class="cases-slide__info-value">4 000 000 рублей</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Сколько взыскано неустойки:</p>
+							<p class="cases-slide__info-value">300 000 рублей</p>
+						</div>
+						<div class="cases-slide__info-wrap">
+							<p class="cases-slide__info-name">Сколько получено за доп. компенсацию:</p>
+							<div class="cases-slide__info-row">
+								<div class="cases-slide__info-col">
+									<p>76 620 руб.</p>
+									<p>5 000 руб.<span>моральный вред</span></p>
+								</div>
+								<div class="cases-slide__info-col">
+									<p>70 000 руб.<span>штраф</span></p>
+									<p>1 620 руб.<span>прочее</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cases-slide__img" style="background: url(img/slide-1.jpg);">
+						<div class="cases-slide__logo">
+							<img src="img/logo-7.jpg" alt="Sabline">
+						</div>
+					</div>
+				</div><!-- slide(2) -->
+				<div class="cases-slide">
+					<div class="cases-slide__descr">
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Застройщик:</p>
+							<p class="cases-slide__info-value">Saint-Gobain</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Сколько дней просрочка:</p>
+							<p class="cases-slide__info-value">394 дня</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Стоимость квартиры:</p>
+							<p class="cases-slide__info-value">4 000 000 рублей</p>
+						</div>
+						<div class="cases-slide__info">
+							<p class="cases-slide__info-name">Сколько взыскано неустойки:</p>
+							<p class="cases-slide__info-value">300 000 рублей</p>
+						</div>
+						<div class="cases-slide__info-wrap">
+							<p class="cases-slide__info-name">Сколько получено за доп. компенсацию:</p>
+							<div class="cases-slide__info-row">
+								<div class="cases-slide__info-col">
+									<p>76 620 руб.</p>
+									<p>5 000 руб.<span>моральный вред</span></p>
+								</div>
+								<div class="cases-slide__info-col">
+									<p>70 000 руб.<span>штраф</span></p>
+									<p>1 620 руб.<span>прочее</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cases-slide__img" style="background: url(img/slide-1.jpg);">
+						<div class="cases-slide__logo">
+							<img src="img/logo-7.jpg" alt="Sabline">
+						</div>
+					</div>
+				</div><!-- slide(3) -->
+			</div>
+		</div>
+	</section>
+	<!-- end cases -->
+	<!-- start test -->
+	<section class="test section-bg" id="test" style="background: url(img/test-bg.png);">
+		<div class="wrapper">
+			<h2 class="section-title test-title">Проверить застройщика<span>на возможность выплаты неустойки</span></h2>
+			<div class="test-info">
+				<div class="test-info__row">
+					<form class="callback" method="POST">
+						<div class="success"><span>Спасибо за заявку!</span></div>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Sabline">
+						<input type="hidden" name="admin_email" value="gubacevdima@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
+						<!-- END Hidden Required Fields -->
+						<div class="test-info__column test-info__column-first">
+							<input class="test-info__column-input" type="text" name="name" id="name" required="required" minlength="3" placeholder="Имя">
+							<input class="test-info__column-input" type="number" name="phone" id="phone" required="required" minlength="7" placeholder="Телефон">
+							<input class="test-info__column-input" type="email" name="email" id="email" required="required" minlength="7" placeholder="E-mail">
+							<input class="test-info__column-input" type="text" name="denomination" id="denomination" required="required" minlength="2" placeholder="Наименование застройщика">
+							<input class="test-info__column-input" type="text" name="value" id="value" required="required" minlength="1" placeholder="Стоимость квартиры">
+						</div><!-- col(1) -->
+						<div class="test-info__column test-info__column-last">
+							<div class="test-info__column-row">
+								<span>Дата передачи квартиры по ДДУ</span>
+								<select name="transfer" required="required">
+							    <option value="13.05.13">13.05.13</option>
+							    <option value="13.05.13">13.05.13</option>
+							    <option value="13.05.13">13.05.13</option>
+							    <option value="13.05.13">13.05.13</option>
+							    <option value="13.05.13">13.05.13</option>
+							  </select>
+							</div>
+							<div class="test-info__column-row test-info__column-second">
+								<span>Дата подписания акта</span>
+								<select name="signing" required="required">
+							    <option value="13.05.13">13.05.13</option>
+							    <option value="13.05.13">13.05.13</option>
+							    <option value="13.05.13">13.05.13</option>
+							    <option value="13.05.13">13.05.13</option>
+							    <option value="13.05.13">13.05.13</option>
+							  </select>
+							</div>
+							<div class="test-info__column-checkbox">
+								<input type="checkbox" name="house" id="house">
+								<label for="house">Дом не сдан</label>
+							</div>
+							<button class="btn-primary form-button">Проверить</button>
+						</div><!-- col(2) -->
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end test -->
+	<!-- start developer -->
+	<section class="developer">
+		<div class="wrapper">
+			<h2 class="section-title developer-title">Обойдем острые углы<span>при общении с застройщиком</span></h2>
+			<div class="developer-row">
+				<div class="developer-column">
+					<p class="developer-column__text">Хотите разобрать ДДУ по пунктам, оценить риски, подготовить правки по тексту договора?</p>
+					<a href="#modal-form-2" class="button-modal developer-column__button">Начать работу</a>
+				</div><!-- col(1) -->
+				<div class="developer-column">
+					<p class="developer-column__text">Хотите подготовиться к приемке квартиры, оформить акт о недостатках, проверить акт приемки и сопутствующие документы?</p>
+					<a href="#modal-form-2" class="button-modal developer-column__button">Начать работу</a>
+				</div><!-- col(2) -->
+				<div class="developer-column">
+					<p class="developer-column__text">Хотите расторгнуть ДДУ, вернуть деньги и проценты за их пользование застройщиком?</p>
+					<a href="#modal-form-2" class="button-modal developer-column__button">Начать работу</a>
+				</div><!-- col(3) -->
+				<div class="developer-column">
+					<p class="developer-column__text">Оценка финансового состояния застройщика</p>
+					<a href="#modal-form-2" class="button-modal developer-column__button">Начать работу</a>
+				</div><!-- col(4) -->
+				<div class="developer-column">
+					<p class="developer-column__text">Хотите договориться с застройщиком без суда о компенсации неустойки?</p>
+					<a href="#modal-form-2" class="button-modal developer-column__button">Начать работу</a>
+				</div><!-- col(5) -->
+				<div class="developer-column">
+					<p class="developer-column__text">Хотят получить консультацию по порядку действий при банкротстве застройщика, вставть в реестр кредиторов для получения денег?</p>
+					<a href="#modal-form-2" class="button-modal developer-column__button">Начать работу</a>
+				</div><!-- col(6) -->
+			</div>
+			<div class="developer-action">
+				<p class="developer-action__text">Хотите обратиться к застройщику с претензией по качеству жилья, обязать исполнить гарантийные</p>
+				<a href="#modal-form" class="button-modal btn-primary developer-action__link">Отправить заявку</a>
+			</div>
+		</div>
+	</section>
+	<!-- end developer -->
+	<!-- start about -->
+	<section class="about section-bg" style="background: url(img/about-bg.png);">
+		<div class="wrapper">
+			<h2 class="section-title about-title">Я помогу вам<span>законно получить деньги с застройщика</span></h2>
+			<div class="about-row">
+				<div class="about-img">
+					<img src="img/human.jpg" alt="Sabline">
+				</div>
+				<div class="about-descr">
+					<h5 class="about-descr__name">Устьянов Александр</h5>
+					<span class="about-descr__info">Стаж более 10 лет.</span>
+					<span class="about-descr__info">432 выгранных дела</span>
+					<p class="about-descr__text">Юрист - практик с 10 летним стажем, сопровождаю деятельность компаний, а также защищаю права и интересы частных лиц, независимый эксперт интернет проекта «Новострой-М», веду блог о правах дольщиков в Инстаграм @vkursedela, добросовестный налогоплательщик (ОГРНИП 314774623901195)</p>
+					<ul class="about-descr__social">
+						<li class="about-descr__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/facebook.svg" type="image/svg+xml">
+								 	<img src="img/facebook.png" alt="Sabline">
+								</picture>
+							</a>
+						</li>
+						<li class="about-descr__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/vk.svg" type="image/svg+xml">
+								 	<img src="img/vk.png" alt="Sabline">
+								</picture>
+							</a>
+						</li>
+						<li class="about-descr__item">
+							<a href="#">
+								<picture>
+								 	<source srcset="img/instagram.svg" type="image/svg+xml">
+								 	<img src="img/instagram.png" alt="Sabline">
+								</picture>
+							</a>
+						</li>
+					</ul>
+					<a href="#modal-form" class="button-modal about-descr__button">Задать вопрос</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start action -->
+	<section class="action">
+		<div class="wrapper">
+			<div class="action-row">
+				<p class="action-row__text">Пригласить юриста на собрание дольщиков</p>
+				<a href="#modal-form-2" class="button-modal btn-primary action-row__button">Пригласить</a>
+			</div>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start steps -->
+	<section class="steps">
+		<div class="wrapper">
+			<h2 class="section-title steps-title">5 шагов до получения денег<span>с застройщика</span></h2>
+			<div class="steps-row">
+				<div class="steps-column">
+					<picture>
+					 	<source srcset="img/step-ico-1.svg" type="image/svg+xml">
+					 	<img src="img/step-ico-1.png" alt="Sabline">
+					</picture>
+					<p class="steps-column__text">Заявка</p>
+				</div><!-- col(1) -->
+				<div class="steps-column">
+					<picture>
+					 	<source srcset="img/step-ico-2.svg" type="image/svg+xml">
+					 	<img src="img/step-ico-2.png" alt="Sabline">
+					</picture>
+					<p class="steps-column__text">Встреча</p>
+				</div><!-- col(2) -->
+				<div class="steps-column">
+					<picture>
+					 	<source srcset="img/step-ico-3.svg" type="image/svg+xml">
+					 	<img src="img/step-ico-3.png" alt="Sabline">
+					</picture>
+					<p class="steps-column__text">Подготовка документов</p>
+				</div><!-- col(3) -->
+				<div class="steps-column">
+					<picture>
+					 	<source srcset="img/step-ico-4.svg" type="image/svg+xml">
+					 	<img src="img/step-ico-4.png" alt="Sabline">
+					</picture>
+					<p class="steps-column__text">Суд</p>
+				</div><!-- col(4) -->
+				<div class="steps-column">
+					<picture>
+					 	<source srcset="img/step-ico-5.svg" type="image/svg+xml">
+					 	<img src="img/step-ico-5.png" alt="Sabline">
+					</picture>
+					<p class="steps-column__text">Получение денег</p>
+				</div><!-- col(5) -->
+			</div>
+		</div>
+	</section>
+	<!-- end steps -->
+	<!-- start guarantee -->
+	<section class="guarantee section-bg" style="background: url(img/guarantee-bg.png);">
+		<div class="wrapper">
+			<h2 class="section-title guarantee-title">Ваша гарантия результата<span>для каждого варианта работы</span></h2>
+			<div class="guarantee-row">
+				<div class="guarantee-column">
+					<p>Гарантии выплат - отношения исполнителя и заказчика защищены официальным договором, который приобщается к материалам дела в суде</p>
+				</div>
+				<div class="guarantee-column">
+					<p>Прозрачное взаимодействие без посредников - клиент-исполнитель (нет других юристов, которые массово ведут дела)</p>
+				</div>
+				<div class="guarantee-column">
+					<p>Оперативное взаимодействие (на связи 24/7)</p>
+				</div>
+				<div class="guarantee-column">
+					<p>Оплата работы по результату (после получение денег от застройщика)</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end guarantee -->
+	<!-- start calculator -->
+	<section class="calculator" id="calculator">
+		<div class="wrapper">
+			<h2 class="section-title calculator-title">Калькулятор неустойки по 214 ФЗ<span>Калькулятор учитывает изменение ключевой ставки с 18.09.2017 года (8,5%)</span></h2>
+			<div class="calculator-row">
+				<div class="calculator-column calculator-column__first">
+					<div class="calculator-column__row">
+						<p>Цена квартиры по договору долевого участия</p>
+						<input type="number" name="sum" id="sum" required="required" minlength="2" placeholder="Введите сумму">
+					</div>
+					<div class="calculator-column__radio">
+						<input checked="checked" name="day" id="day" type="radio">
+						<p>Расчет на день подписания акта приема-пенредачи или текущая цена</p>
+					</div>
+					<div class="calculator-column__radio">
+						<input name="day" id="day" type="radio">
+						<p>Расчет по периодам действия ставок ЦБ РФ</p>
+					</div>
+					<div class="calculator-column__date">
+						<p>Дата передачи квартиры по условиям ДДУ</p>
+						<select name="date" required="required">
+					    <option value="13.05.13">13.05.13</option>
+					    <option value="13.05.13">13.05.13</option>
+					    <option value="13.05.13">13.05.13</option>
+					    <option value="13.05.13">13.05.13</option>
+					    <option value="13.05.13">13.05.13</option>
+					  </select>
+					</div>
+					<div class="calculator-column__date">
+						<p>Дата передачи квартиры по актуили текущая дата</p>
+						<select name="date" required="required">
+					    <option value="13.05.13">13.05.13</option>
+					    <option value="13.05.13">13.05.13</option>
+					    <option value="13.05.13">13.05.13</option>
+					    <option value="13.05.13">13.05.13</option>
+					    <option value="13.05.13">13.05.13</option>
+					  </select>
+					</div>
+				</div>
+				<div class="calculator-column calculator-column__last" style="background: url(img/calculator-bg.png);">
+					<p class="calculator-column__last-text">В соответствии с изложенным расчет законной неустойки за период просрочки обязательств будет выглядеть следующим образом:</p>
+					<p class="calculator-column__last-name">Просрочка в календарных днях</p>
+					<p class="calculator-column__last-value">164</p>
+					<p class="calculator-column__last-name">Неустойка</p>
+					<p class="calculator-column__last-value">120 825 руб. 43 коп.</p>
+					<p class="calculator-column__last-name">Штраф (50% от суммы неустойки по ЗоЗПП)</p>
+					<p class="calculator-column__last-value">120 825 руб. 43 коп.</p>
+					<p class="calculator-column__last-name">Неустойка со шрифтом</p>
+					<p class="calculator-column__last-value">120 825 руб. 43 коп.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end calculator -->
+	<!-- start issues -->
+	<section class="issues section-bg" id="issues" style="background: url(img/issues-bg.png);">
+		<div class="wrapper">
+			<h2 class="section-title issues-title">Часто задаваемые вопросы</h2>
+			<div class="issues-accordeons">
+				<div class="issues-accordeons__column">
+					<span class="issues-accordeons__num">1</span>
+					<p class="issues-accordeons__column-title">Какие гарантии получения мной денег при переуступке права требования неустойки?</p>
+					<p class="issues-accordeons__column-text">Данный пункт не освобождает должника от ответственности, установленной законом. Главное, что бы не было прямого указания, что петензий по срокам сдачи к застройщику вы не имеете. Не вносите в акт никаких изменений от руки, в Росреестре могут возникнуть проблемы с регистрацией права собственности.</p>
+				</div><!-- accordeon(1) -->
+				<div class="issues-accordeons__column">
+					<span class="issues-accordeons__num">2</span>
+					<p class="issues-accordeons__column-title">Можно ли взыскать неустойку, если в акте приема-передачи есть пукнт об отсутствии финансовых претензий к застройщику?</p>
+					<p class="issues-accordeons__column-text">Данный пункт не освобождает должника от ответственности, установленной законом. Главное, что бы не было прямого указания, что петензий по срокам сдачи к застройщику вы не имеете. Не вносите в акт никаких изменений от руки, в Росреестре могут возникнуть проблемы с регистрацией права собственности.</p>
+				</div><!-- accordeon(2) -->
+				<div class="issues-accordeons__column">
+					<span class="issues-accordeons__num">3</span>
+					<p class="issues-accordeons__column-title">В какой суд подавать иск к застройщику?</p>
+					<p class="issues-accordeons__column-text">Данный пункт не освобождает должника от ответственности, установленной законом. Главное, что бы не было прямого указания, что петензий по срокам сдачи к застройщику вы не имеете. Не вносите в акт никаких изменений от руки, в Росреестре могут возникнуть проблемы с регистрацией права собственности.</p>
+				</div><!-- accordeon(3) -->
+				<div class="issues-accordeons__column">
+					<span class="issues-accordeons__num">4</span>
+					<p class="issues-accordeons__column-title">Сколько времени занимает весь судебный процесс?</p>
+					<p class="issues-accordeons__column-text">Данный пункт не освобождает должника от ответственности, установленной законом. Главное, что бы не было прямого указания, что петензий по срокам сдачи к застройщику вы не имеете. Не вносите в акт никаких изменений от руки, в Росреестре могут возникнуть проблемы с регистрацией права собственности.</p>
+				</div><!-- accordeon(4) -->
+				<div class="issues-accordeons__column">
+					<span class="issues-accordeons__num">5</span>
+					<p class="issues-accordeons__column-title">Подписывать ли дополнительное соглашение о переносе сроков сдачи?</p>
+					<p class="issues-accordeons__column-text">Данный пункт не освобождает должника от ответственности, установленной законом. Главное, что бы не было прямого указания, что петензий по срокам сдачи к застройщику вы не имеете. Не вносите в акт никаких изменений от руки, в Росреестре могут возникнуть проблемы с регистрацией права собственности.</p>
+				</div><!-- accordeon(5) -->
+		</div>
+	</section>
+	<!-- end issues -->
+	<!-- start rate -->
+	<section class="rate" id="rate">
+		<div class="wrapper">
+			<h2 class="section-title rate-title">Выберите удобный вам тариф</h2>
+			<!--<div class="rate-row">
+				<div class="rate-column rate-column__first">
+					<p class="rate-column__text"></p>
+					<p class="rate-column__text">Размер взыскиваемой суммы неустойки на практике</p>
+					<p class="rate-column__text">Исполнение решения суда через банк застройщика</p>
+					<p class="rate-column__text">Подача иска</p>
+					<p class="rate-column__text"></p>
+					<p class="rate-column__text"></p>
+				</div>
+			</div>-->
+		</div>
+	</section>
+	<!-- end rate -->
+	<!-- start contacts -->
+	<section class="contacts section-bg" id="contacts" style="background: url(img/form-bg.png);">
+		<div class="wrapper">
+			<div class="contacts-descr">
+				<h2 class="section-title contacts-title">остались вопросы</h2>
+				<p class="contacts-descr__text">Напишите нам и получите бесплатную консультацию в течение 24 часов</p>
+				<div class="banner-form contacts-form">
+					<form class="callback" method="POST">
+						<div class="success"><span>Спасибо за заявку!</span></div>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Sabline">
+						<input type="hidden" name="admin_email" value="gubacevdima@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
+						<!-- END Hidden Required Fields -->
+						<input type="text" name="name" id="name" required="required" minlength="3" placeholder="Имя">
+						<input type="phone" name="phone" id="phone" required="required" minlength="7" placeholder="Телефон">
+						<button class="btn-primary banner-form__button">Получить консультацию</button>
+					</form>
+				</div><!-- banner-form -->
+			</div>
+		</div>
+	</section>
+	<!-- end contacts -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-info">
+			<h2 class="section-title footer-title">Контакты</h2>
+			<p class="footer-info__name">Ждем вас в офисе:</p>
+			<p class="footer-info__value">г. Москва, ул. Ленинская<br>Свобода, д.19, 4 этаж</p>
+			<p class="footer-info__name">Телефон:</p>
+			<p class="footer-info__value"><a href="tel:+74951090306">+7 (495) 109-03-06</a></p>
+			<p class="footer-info__name">Работаем</p>
+			<p class="footer-info__value">по будням с 9:00 до 20:00</p>
+			<p class="footer-info__name">Социальные сети:</p>
+			<ul class="footer-social about-descr__social">
+				<li class="about-descr__item">
+					<a href="#">
+						<picture>
+						 	<source srcset="img/facebook.svg" type="image/svg+xml">
+						 	<img src="img/facebook.png" alt="Sabline">
+						</picture>
+					</a>
+				</li>
+				<li class="about-descr__item">
+					<a href="#">
+						<picture>
+						 	<source srcset="img/vk.svg" type="image/svg+xml">
+						 	<img src="img/vk.png" alt="Sabline">
+						</picture>
+					</a>
+				</li>
+				<li class="about-descr__item">
+					<a href="#">
+						<picture>
+						 	<source srcset="img/instagram.svg" type="image/svg+xml">
+						 	<img src="img/instagram.png" alt="Sabline">
+						</picture>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="map"></div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);
+		var myMap;
+
+		function init(){    
+	    myMap = new ymaps.Map ("map", {
+	        center: [55.73653158, 37.65894149],
+	        zoom: 16,
+	        controls: []
+	    });
+	    myMap.behaviors.disable([
+			  'scrollZoom'
+			]);
+
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
