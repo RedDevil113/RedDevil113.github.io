@@ -28,18 +28,18 @@
 			<form class="callback" method="POST">
 				<div class="success"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
 				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="Skilltrade">
-				<input type="hidden" name="admin_email" value="info@skilltrade.ru">
-				<input type="hidden" name="form_subject" value="Заявка с сайта Skilltrade">
+				<input type="hidden" name="project_name" value="Sabline">
+				<input type="hidden" name="admin_email" value="gubacevdima@gmail.com">
+				<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
 				<input type="hidden" name="subject" value="">
 
 				<h3 class="modal-content__title">Это попап!</h3>
 				<input type="text" name="name" placeholder="Имя" required minlength="3">
-				<input id="modal-phone" type="text" name="phone" placeholder="Телефон" minlength="8">
+				<input id="modal-phone-1" type="tel" name="phone" placeholder="Телефон" minlength="8">
 				<input type="text" name="text" placeholder="Сообщение" minlength="8">
 				<button class="btn-primary submit">Отправить</button>
 			</form>
-			<p class="modal-text">Copyright © 2017 Sabline. Все права защищены. <a target="_blank" href="http://skilltrade.ru/uploads/policy.pdf">Политика конфенциальности.</a></p>
+			<p class="modal-text">Copyright © 2017 Sabline. Все права защищены. <a class="button-modal" href="#modal-privacy">Политика конфенциальности.</a></p>
 		</div>
 	</div>
 	<!-- modal-form-2 -->
@@ -49,16 +49,17 @@
 			<form class="callback" method="POST">
 				<div class="success"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
 				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="Skilltrade">
-				<input type="hidden" name="admin_email" value="info@skilltrade.ru">
-				<input type="hidden" name="form_subject" value="Заявка с сайта Skilltrade">
-				<input type="hidden" name="subject" value="">
+				<input type="hidden" name="project_name" value="Sabline">
+				<input type="hidden" name="admin_email" value="gubacevdima@gmail.com">
+				<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
+				<input id="info" type="hidden" name="subject" value="">
 
 				<h3 class="modal-content__title">Это попап!</h3>
 				<input type="text" name="name" placeholder="Имя" required minlength="3">
-				<input id="modal-phone" type="text" name="phone" placeholder="Телефон" minlength="8">
+				<input id="modal-phone-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
 				<button class="btn-primary submit">Отправить</button>
 			</form>
+			<p class="modal-text">Copyright © 2017 Sabline. Все права защищены. <a class="button-modal" href="#modal-privacy">Политика конфенциальности.</a></p>
 		</div>
 	</div>
 	<!-- modal-successfully -->
@@ -66,6 +67,18 @@
 		<div class="modal-content">
 			<div class="cancel"></div>
 			<div class="modal-title"><span>Спасибо!</span><br>Мы свяжемся с вами в ближайшее время</div>
+		</div>
+	</div>
+	<!-- modal-privacy -->
+	<div class="modal" id="modal-privacy">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<p>
+				Я согласен(на), что мои персовнальные данные будут обрабатываться способами, соответствующими целям обработки персональных данных, в т.ч. с использованием средств автоматизации или без использования таких средств. А также я согшласен(на) с тем, что согласие данное мной в электронной форме на сайте является согласием, полностью отвечающим требованиям законодательства о персональных данных и позволяющим подтвердить факт его получения нашим агенством.
+			</p>
+			<p>
+				Я согласен(на) получать предложения и информацию на указанные мною контакты в данной заявке.
+			</p>
 		</div>
 	</div>
 	<!-- start header -->
@@ -86,7 +99,7 @@
 							<li class="header-item"><a href="#calculator">Калькулятор неустоек</a></li>
 							<li class="header-item"><a href="#issues">FAQ</a></li>
 							<li class="header-item"><a href="#rate">Тарифы</a></li>
-							<li class="header-item"><a href="#contacts">Контакты</a></li>
+							<li class="header-item"><a href="#footer">Контакты</a></li>
 						</ul>
 					</nav>
 				</div><!-- header-column(2) -->
@@ -113,10 +126,10 @@
 						<input type="hidden" name="admin_email" value="gubacevdima@gmail.com">
 						<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
 						<!-- END Hidden Required Fields -->
-						<input type="text" name="name" id="name" required="required" minlength="3" placeholder="Имя">
-						<input type="phone" name="phone" id="phone" required="required" minlength="7" placeholder="Телефон">
+						<input type="text" name="name" id="name-1" required="required" minlength="3" placeholder="Имя">
+						<input type="tel" name="phone" id="phone-1" required="required" minlength="7" placeholder="Телефон">
 						<button class="btn-primary banner-form__button">Получить консультацию</button>
-						<a class="banner-form__link" href="#">Политика конфиденциальности</a>
+						<a class="banner-form__link button-modal" href="#modal-privacy">Политика конфиденциальности</a>
 					</form>
 				</div><!-- banner-form -->
 			</div>
@@ -415,7 +428,9 @@
 							</a>
 						</li>
 					</ul>
-					<a href="#modal-form" class="button-modal about-descr__button">Задать вопрос</a>
+					<div class="about-descr__link">
+						<a href="#modal-form" class="button-modal about-descr__button">Задать вопрос</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -503,16 +518,16 @@
 			<div class="calculator-row">
 				<div class="calculator-column calculator-column__first">
 					<div class="calculator-column__row">
-						<p>Цена квартиры по договору долевого участия</p>
-						<input type="number" name="sum" id="sum" required="required" minlength="2" placeholder="Введите сумму">
+						<label>Цена квартиры по договору долевого участия</label>
+						<input type="number" name="sum" id="sum" placeholder="Введите сумму">
 					</div>
 					<div class="calculator-column__radio">
-						<input checked="checked" name="day" id="day" type="radio">
-						<p>Расчет на день подписания акта приема-пенредачи или текущая цена</p>
+						<input checked="checked" name="act" id="day" type="radio" value="day">
+						<label for="day">Расчет на день подписания акта приема-пенредачи или текущая цена</label>
 					</div>
 					<div class="calculator-column__radio">
-						<input name="day" id="day" type="radio">
-						<p>Расчет по периодам действия ставок ЦБ РФ</p>
+						<input name="act" id="period" type="radio" value="period">
+						<label for="period">Расчет по периодам действия ставок ЦБ РФ</label>
 					</div>
 					<div class="calculator-column__date">
 						<p>Дата передачи квартиры по условиям ДДУ</p>
@@ -587,21 +602,93 @@
 	<section class="rate" id="rate">
 		<div class="wrapper">
 			<h2 class="section-title rate-title">Выберите удобный вам тариф</h2>
-			<!--<div class="rate-row">
+			<div class="rate-row">
 				<div class="rate-column rate-column__first">
-					<p class="rate-column__text"></p>
-					<p class="rate-column__text">Размер взыскиваемой суммы неустойки на практике</p>
-					<p class="rate-column__text">Исполнение решения суда через банк застройщика</p>
-					<p class="rate-column__text">Подача иска</p>
-					<p class="rate-column__text"></p>
-					<p class="rate-column__text"></p>
-				</div>
-			</div>-->
+					<div class="rate-column__text rate-column__row-1"></div>
+					<div class="rate-column__text rate-column__row-2"><p>Размер взыскиваемой суммы неустойки на практике</p></div>
+					<div class="rate-column__text rate-column__row-3"><p>Исполнение решения суда через банк застройщика</p></div>
+					<div class="rate-column__text rate-column__row-4"><p>Подача иска</p></div>
+					<div class="rate-column__text rate-column__row-5"><p>Срок получения решения суда</p></div>
+					<div class="rate-column__text rate-column__row-6"><p>Стоимость услуг</p></div>
+				</div><!-- col(1) -->
+				<div class="rate-column rate-column__rate rate-column__second">
+					<div class="rate-column__text rate-column__row-1 rate-column__name"><p>Переуступка права требования долга</p></div>
+					<div class="rate-column__text rate-column__row-2">
+						<p class="rate-column__text-mob">Размер взыскиваемой суммы</p>
+						<p>15 000 руб.</p>
+					</div>
+					<div class="rate-column__text rate-column__row-3">
+						<p class="rate-column__text-mob">Исполнение решения суда через банк застройщика</p>
+						<p>+</p>
+					</div>
+					<div class="rate-column__text rate-column__row-4">
+						<p class="rate-column__text-mob">Подача иска</p>
+						<p>+</p>
+					</div>
+					<div class="rate-column__text rate-column__row-5">
+						<p class="rate-column__text-mob">Срок получения решения суда</p>
+						<p>20 дней</p>
+					</div>
+					<div class="rate-column__text rate-column__row-6">
+						<p class="rate-column__text-mob rate-column__text-mob__all">Стоимость услуг</p>
+						<p class="rate-column__allprice">15 000 руб.</p>
+						<a class="rate-column__link button-modal" href="#modal-form-2">Выбрать</a>
+					</div>
+				</div><!-- col(2) -->
+				<div class="rate-column rate-column__rate rate-column__third">
+					<div class="rate-column__text rate-column__row-1 rate-column__name"><p>По факту</p></div>
+					<div class="rate-column__text rate-column__row-2">
+						<p class="rate-column__text-mob">Размер взыскиваемой суммы</p>
+						<p>15 000 руб.</p>
+					</div>
+					<div class="rate-column__text rate-column__row-3">
+						<p class="rate-column__text-mob">Исполнение решения суда через банк застройщика</p>
+						<p>+</p>
+					</div>
+					<div class="rate-column__text rate-column__row-4">
+						<p class="rate-column__text-mob">Подача иска</p>
+						<p>+</p>
+					</div>
+					<div class="rate-column__text rate-column__row-5">
+						<p class="rate-column__text-mob">Срок получения решения суда</p>
+						<p>20 дней</p>
+					</div>
+					<div class="rate-column__text rate-column__row-6">
+						<p class="rate-column__text-mob rate-column__text-mob__all">Стоимость услуг</p>
+						<p class="rate-column__allprice">15 000 руб.</p>
+						<a class="rate-column__link button-modal" href="#modal-form-2">Выбрать</a>
+					</div>
+				</div><!-- col(3) -->
+				<div class="rate-column rate-column__rate rate-column__last">
+					<div class="rate-column__text rate-column__row-1 rate-column__name"><p>Стандарт</p></div>
+					<div class="rate-column__text rate-column__row-2">
+						<p class="rate-column__text-mob">Размер взыскиваемой суммы</p>
+						<p>15 000 руб.</p>
+					</div>
+					<div class="rate-column__text rate-column__row-3">
+						<p class="rate-column__text-mob">Исполнение решения суда через банк застройщика</p>
+						<p>+</p>
+					</div>
+					<div class="rate-column__text rate-column__row-4">
+						<p class="rate-column__text-mob">Подача иска</p>
+						<p>+</p>
+					</div>
+					<div class="rate-column__text rate-column__row-5">
+						<p class="rate-column__text-mob">Срок получения решения суда</p>
+						<p>20 дней</p>
+					</div>
+					<div class="rate-column__text rate-column__row-6">
+						<p class="rate-column__text-mob rate-column__text-mob__all">Стоимость услуг</p>
+						<p class="rate-column__allprice">15 000 руб.</p>
+						<a class="rate-column__link button-modal" href="#modal-form-2">Выбрать</a>
+					</div>
+				</div><!-- col(4) -->
+			</div>
 		</div>
 	</section>
 	<!-- end rate -->
 	<!-- start contacts -->
-	<section class="contacts section-bg" id="contacts" style="background: url(img/form-bg.png);">
+	<section class="contacts section-bg" style="background: url(img/form-bg.png);">
 		<div class="wrapper">
 			<div class="contacts-descr">
 				<h2 class="section-title contacts-title">остались вопросы</h2>
@@ -614,8 +701,8 @@
 						<input type="hidden" name="admin_email" value="gubacevdima@gmail.com">
 						<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
 						<!-- END Hidden Required Fields -->
-						<input type="text" name="name" id="name" required="required" minlength="3" placeholder="Имя">
-						<input type="phone" name="phone" id="phone" required="required" minlength="7" placeholder="Телефон">
+						<input type="text" name="name" id="name-2" required="required" minlength="3" placeholder="Имя">
+						<input type="tel" name="phone" id="phone-2" required="required" minlength="7" placeholder="Телефон">
 						<button class="btn-primary banner-form__button">Получить консультацию</button>
 					</form>
 				</div><!-- banner-form -->
@@ -624,7 +711,7 @@
 	</section>
 	<!-- end contacts -->
 	<!-- start footer -->
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="footer-info">
 			<h2 class="section-title footer-title">Контакты</h2>
 			<p class="footer-info__name">Ждем вас в офисе:</p>
