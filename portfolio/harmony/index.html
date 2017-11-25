@@ -39,13 +39,15 @@
 				<input type="hidden" name="admin_email" value="i@soobwa.ru">
 				<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
 				<div class="contacts-descr__input">
+					<span class="contacts-descr__input-text">Имя</span>
 					<input type="text" name="name" placeholder="Имя" required minlength="3">
 				</div>
 				<div class="contacts-descr__input">
 					<span class="contacts-descr__input-text">Телефон</span>
-					<input id="input-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" minlength="8">
+					<input class="input-phone" type="tel" name="phone" placeholder="Телефон" minlength="8">
 				</div>
 				<div class="contacts-descr__input">
+					<span class="contacts-descr__input-text">E-mai</span>
 					<input type="email" name="email" placeholder="E-mail" required minlength="6">
 				</div>
 				<div class="contacts-descr__input">
@@ -87,9 +89,15 @@
 			</nav>
 			<div class="header-music">
 				<div class="header-music__wrap">
-					<img src="img/music.svg" alt="harmony">
+					<div class="index_anspin__spinner animate-spinner animate-spinner-block">
+            <div class="index_anspin__spinner-item animate-spinner-block__item"></div>
+            <div class="index_anspin__spinner-item animate-spinner-block__item"></div>
+            <div class="index_anspin__spinner-item animate-spinner-block__item"></div>
+            <div class="index_anspin__spinner-item animate-spinner-block__item"></div>
+            <div class="index_anspin__spinner-item animate-spinner-block__item"></div>
+          </div>
 					<span>Музыка включена</span>
-					<audio id="music-main" controls='none' autoplay="true" src="main-music.mp3"></audio>
+					<audio id="music-main" loop="loop" controls='none' autoplay="true" src="main-music.mpga"></audio>
 				</div>
 			</div>
 			<div class="header-phone">
@@ -114,8 +122,8 @@
 	<section class="banner" style="background: url(img/banner-bg.jpg);">
 		<div class="wrapper">
 			<div class="banner-descr">
-				<h1 class="banner-descr__title"><span>Residential complex</span>Harmony</h1>
-				<p class="banner-descr__subtitle">Happy story</p>
+				<h1 class="banner-descr__title"><span>Жилой комплекс</span>Гармония</h1>
+				<p class="banner-descr__subtitle">счастливая история</p>
 				<div class="banner-descr__link">
 					<a href="#" class="btn-primary">Выбрать таунхаус</a>
 				</div>
@@ -396,13 +404,15 @@
 					<input type="hidden" name="admin_email" value="i@soobwa.ru">
 					<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
 					<div class="contacts-descr__input">
+						<span class="contacts-descr__input-text">Имя</span>
 						<input type="text" name="name" placeholder="Имя" required minlength="3">
 					</div>
 					<div class="contacts-descr__input">
 						<span class="contacts-descr__input-text">Телефон</span>
-						<input id="input-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" minlength="8">
+						<input class="input-phone" type="tel" name="phone" placeholder="Телефон" minlength="8">
 					</div>
 					<div class="contacts-descr__input">
+						<span class="contacts-descr__input-text">E-mail</span>
 						<input type="email" name="email" placeholder="E-mail" required minlength="6">
 					</div>
 					<div class="contacts-descr__input">
