@@ -26,7 +26,8 @@
 		<div class="header-row">
 			<div class="header-logo">
 				<a href="#">
-					<img src="img/logo.svg" alt="harmony">
+					<img class="header-logo__1" src="img/logo.svg" alt="harmony">
+					<img class="header-logo__2" src="img/logo-2.svg" alt="harmony">
 				</a>
 			</div>
 			<nav class="header-nav">
@@ -37,21 +38,33 @@
 					<li><a href="#">Расположение</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
+				<div class="header-nav__modal-btn">
+					<a href="#" class="button-modal header-phone__button">Заказать звонок</a>
+					<p>Перезвоним в течение 5 минут</p>
+				</div>
 			</nav>
 			<div class="header-music">
 				<div class="header-music__wrap">
 					<img src="img/music.svg" alt="harmony">
 					<span>Музыка включена</span>
-					<audio controls='none' autoplay>
-					    <source src="main-music.mp3" type="audio/mpeg">
-					</audio>
+					<audio id="music-main" controls='none' autoplay="true" src="main-music.mp3"></audio>
 				</div>
 			</div>
 			<div class="header-phone">
 				<div class="header-phone__flag">
-					<a href="tel+78312136161" class="header-phone__link">+7 (831) <span>213-61-61</span></a>
-					<a href="#" class="button-modal header-phone__button">Заказать звонок</a>
+					<div>
+						<a href="tel+78312136161" class="header-phone__link">+7 (831) <span>213-61-61</span></a>
+						<p class="header-text__mob">Перезвоним в течение 5 минут</p>
+					</div>
+					<div>
+						<a href="#" class="button-modal header-phone__button">Заказать звонок</a>
+					</div>
 					<p>Перезвоним в течение 5 минут</p>
+				</div>
+				<div class="header-nav__mob">
+					<div class="menu-bar">
+						<span></span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -253,12 +266,12 @@
 					<a href="#" class="mortgage-link">Подробнее об ипотеке</a>
 				</div>
 				<div class="mortgage-column mortgage-column__last">
-					<div class="mortgage-column__cat">
-						<p>Военная ипотека</p>
-					</div>
-					<div class="mortgage-column__cat">
-						<p>Материнский капитал</p>
-					</div>
+					<a href="#" class="mortgage-column__cat">
+						<span>Военная ипотека</span>
+					</a>
+					<a href="#" class="mortgage-column__cat">
+						<span>Материнский капитал</span>
+					</a>
 				</div>
 			</div>
 			<div class="mortgage-bottom">
@@ -370,7 +383,89 @@
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
-			.footer-row>.footer-column
+			<div class="footer-top">
+				<div class="footer-top__row">
+					<div class="footer-top__column footer-top__column-logo">
+						<a href="#">
+							<img src="img/logo.svg" alt="harmony">
+						</a>
+						<ul class="footer-social">
+							<li>
+								<a href="#">
+									<img src="img/facebook-white.svg" alt="harmony">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/odnoklassniki-white.svg" alt="harmony">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/youtube-white.svg" alt="harmony">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/vk-white.svg" alt="harmony">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/instagram-white.svg" alt="harmony">
+								</a>
+							</li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="footer-top__column footer-top__column-menu">
+						<nav class="footer-top__column-nav">
+							<ul>
+								<li><a href="#">О комплексе</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Ход строительства</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Выбрать квартиру</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Условия покупки</a></li>
+								<li><a href="#">Ипотека</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Удобное расположение</a></li>
+								<li><a href="#">Инфраструктура</a></li>
+								<li><a href="#">Благоустройство</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div><!--col(2)-->
+					<div class="footer-top__column footer-top__column-info">
+						<div class="footer-top__column-last">
+							<a href="#" class="btn-primary footer-top__link">Документы по проекту<img src="img/doc-white.svg" alt="harmony"></a>
+							<a href="tel:+78312136161" class="footer-top__phone">+7 (831) <span>213-61-61</span></a>
+							<a href="mailto:garmonia52@gmail.com" class="footer-top__mail">garmonia52@gmail.com</a>
+						</div>
+					</div><!--col(3)-->
+				</div>
+			</div><!-- footer-top -->
+			<div class="footer-bottom">
+				<div class="footer-bottom__column">
+					<p>© ЖК «Гармония»</p>
+				</div>
+				<div class="footer-bottom__column">
+					<p>Информация на сайте не является публичной офертой.</p>
+				</div>
+				<div class="footer-bottom__column">
+					<p class="footer-bottom__column-map">Нижегородская область, Кстовский район, дер. Ближнее Борисово, ул. Железнодорожная, д. 5</p>
+				</div>
+				<div class="footer-bottom__column">
+					<a href="#">
+						<img src="img/logo-footer.png" alt="harmony">
+					</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 	<!-- end footer -->
