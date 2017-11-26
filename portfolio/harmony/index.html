@@ -20,24 +20,19 @@
 
 </head>
 <body>
-	<div class="fixed-call" style="background: url(img/phone.png);">
+	<div class="fixed-call">
 		<a href="#feedback" rel="nofollow" class="modalbox"></a>
 	</div>
 	<div class="modal-success">
 		<div class="modal-success__close"></div>
 		<p>Ваши данные успешно отправлены. Презентацию можно получить по <a href="main-music.mp3" download>ссылке</a>.</p>
 	</div><!-- modal-success -->
-	<div class="arrow-top" style="background: url(img/arrow-top.svg);"></div><!-- arrow-top -->
+	<div class="arrow-top" ></div><!-- arrow-top -->
 	<div class="modal-call" id="feedback">
 		<div class="modal-call_wrap">
 			<h2 class="modal-call__title">Заказать обратный звонок</h2>
 			<p class="modal-call__text">Ваш личный менеджер сможет не только ответить на ваши вопросы, но и сделает лучшее предложение</p>
 			<form class="callback" method="POST">
-				<div class="success"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
-				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="Sabline">
-				<input type="hidden" name="admin_email" value="i@soobwa.ru">
-				<input type="hidden" name="form_subject" value="Заявка с сайта Sabline">
 				<div class="contacts-descr__input">
 					<span class="contacts-descr__input-text">Имя</span>
 					<input type="text" name="name" placeholder="Имя" required minlength="3">
@@ -65,7 +60,7 @@
 			</form>
 		</div>
 	</div>
-	<!-- start banner -->
+	<!-- start header -->
 	<header class="header">
 		<div class="header-row">
 			<div class="header-logo">
@@ -119,7 +114,10 @@
 			</div>
 		</div>
 	</header>
-	<section class="banner" style="background: url(img/banner-bg.jpg);">
+	<!-- end header -->
+	<!-- start banner -->
+	<section class="banner">
+		
 		<div class="wrapper">
 			<div class="banner-descr">
 				<h1 class="banner-descr__title"><span>Жилой комплекс</span>Гармония</h1>
@@ -133,7 +131,7 @@
 			<div class="banner-stock__header">
 				<p class="banner-stock__header-text">Кухня в подарок</p>
 			</div>
-			<div class="banner-stock__descr" style="background: url(img/stock.png);">
+			<div class="banner-stock__descr">
 				<h5 class="banner-stock__descr-title">Кухня в подарок при покупке таунхауса</h5>
 				<p class="banner-stock__descr-text">Акция действует до 15 сентября. Здесь описание акции в несколько предложений.</p>
 				<a href="#" class="banner-stock__descr-link">Подробнее</a>
@@ -221,7 +219,7 @@
 	</section>
 	<!-- end advantages -->
 	<!-- start offers -->
-	<section class="offers" style="background: url(img/offers-bg.jpg);">
+	<section class="offers">
 		<div class="wrapper">
 			<h2 class="section-header__title offers-title">Специальные предложения</h2>
 			<div class="offers-row">
@@ -306,7 +304,7 @@
 	</section>
 	<!-- end info -->
 	<!-- start mortgage -->
-	<section class="mortgage" style="background: url(img/mortgage-bg.jpg);">
+	<section class="mortgage">
 		<div class="wrapper">
 			<h2 class="mortgage-title__first mortgage-title__first-mob">Ипотека</h2>
 			<div class="mortgage-row">
@@ -390,7 +388,7 @@
 	</section>
 	<!-- end map -->
 	<!-- start contacts -->
-	<section class="contacts" style="background: url(img/contact-bg.jpg);">
+	<section class="contacts">
 		<div class="wrapper">
 			<div class="contacts-header">
 				<h2 class="section-header__title contacts-header__title">У вас появились вопросы?</h2>
