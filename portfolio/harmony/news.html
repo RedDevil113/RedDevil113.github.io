@@ -20,46 +20,6 @@
 
 </head>
 <body>
-	<div class="fixed-call">
-		<a href="#feedback" rel="nofollow" class="modalbox"></a>
-	</div>
-	<div class="modal-success">
-		<div class="modal-success__close"></div>
-		<p>Ваши данные успешно отправлены. Презентацию можно получить по <a href="main-music.mp3" download>ссылке</a>.</p>
-	</div><!-- modal-success -->
-	<div class="arrow-top" ></div><!-- arrow-top -->
-	<div class="modal-call" id="feedback">
-		<div class="modal-call_wrap">
-			<h2 class="modal-call__title">Заказать обратный звонок</h2>
-			<p class="modal-call__text">Ваш личный менеджер сможет не только ответить на ваши вопросы, но и сделает лучшее предложение</p>
-			<form class="callback" method="POST">
-				<div class="contacts-descr__input">
-					<span class="contacts-descr__input-text">Имя</span>
-					<input type="text" name="name" placeholder="Имя" required minlength="3">
-				</div>
-				<div class="contacts-descr__input">
-					<span class="contacts-descr__input-text">Телефон</span>
-					<input class="input-phone" type="tel" name="phone" placeholder="Телефон" minlength="8">
-				</div>
-				<div class="contacts-descr__input">
-					<span class="contacts-descr__input-text">E-mai</span>
-					<input type="email" name="email" placeholder="E-mail" required minlength="6">
-				</div>
-				<div class="contacts-descr__input">
-					<label class="contacts-descr__input-checkbox">
-						<input type="checkbox" name="compliance">
-						<span class="custom-checkbox"></span>
-						<span class="checkbox-text">Согласие на обработку персональных данных</span>
-					</label>
-				</div>
-				<p class="contacts-descr__notification">Все поля обязательны к заполнению</p>
-				<div class="contacts-descr__link">
-					<button class="btn-primary submit">Получить консультацию</button>
-				</div>
-				<p class="contacts-descr__text">Мы обещаем, что ваши данные не будут переданы третьим лицам.</p>
-			</form>
-		</div>
-	</div>
 	<!-- start header -->
 	<header class="header">
 		<div class="header-row">
@@ -137,6 +97,8 @@
 				<li><a href="#">За все время</a></li>
 				<li><a href="#">2017</a></li>
 				<li><a class="year-active" href="#">2016</a></li>
+				<li><a href="#">2015</a></li>
+				<li><a href="#">остальные</a></li>
 			</ul>
 			<ul class="content-news__month">
 				<li><a href="#" class="month-active">Все месяцы</a></li>
@@ -297,6 +259,43 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<div class="modal-success">
+		<div class="modal-success__close"></div>
+		<p>Ваши данные успешно отправлены. Презентацию можно получить по <a href="main-music.mp3" download>ссылке</a>.</p>
+	</div><!-- modal-success -->
+	<div class="arrow-top" ></div><!-- arrow-top -->
+	<div class="modal-call" id="feedback">
+		<div class="modal-call_wrap">
+			<h2 class="modal-call__title">Заказать обратный звонок</h2>
+			<p class="modal-call__text">Ваш личный менеджер сможет не только ответить на ваши вопросы, но и сделает лучшее предложение</p>
+			<form class="callback" method="POST">
+				<div class="contacts-descr__input">
+					<span class="contacts-descr__input-text">Имя</span>
+					<input type="text" name="name" placeholder="Имя" required minlength="3">
+				</div>
+				<div class="contacts-descr__input">
+					<span class="contacts-descr__input-text">Телефон</span>
+					<input class="input-phone" type="tel" name="phone" placeholder="Телефон" minlength="8">
+				</div>
+				<div class="contacts-descr__input">
+					<span class="contacts-descr__input-text">E-mai</span>
+					<input type="email" name="email" placeholder="E-mail" required minlength="6">
+				</div>
+				<div class="contacts-descr__input">
+					<label class="contacts-descr__input-checkbox">
+						<input checked="checked" type="checkbox" name="compliance">
+						<span class="custom-checkbox"></span>
+						<span class="checkbox-text">Согласие на обработку персональных данных</span>
+					</label>
+				</div>
+				<p class="contacts-descr__notification">Все поля обязательны к заполнению</p>
+				<div class="contacts-descr__link">
+					<button class="btn-primary submit">Получить консультацию</button>
+				</div>
+				<p class="contacts-descr__text">Мы обещаем, что ваши данные не будут переданы третьим лицам.</p>
+			</form>
+		</div>
+	</div>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
