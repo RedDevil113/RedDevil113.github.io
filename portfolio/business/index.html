@@ -39,6 +39,20 @@
 						<li class="header-nav__item header-nav__item-last"><a href="#footer">Связаться с нами</a></li>
 					</ul>
 				</nav>
+				<ul class="header-info">
+					<li>
+						<a href="tel:+74958421926">
+							<img src="img/header-ico/phone.svg" alt="">
+							<span>+7495-842-1926</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailTo:example@gmail.com">
+							<img src="img/header-ico/envelope.svg" alt="">
+							<span>example@gmail.com</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</header>
@@ -274,16 +288,21 @@
 						<h2 class="footer-top__column-title">Напишите нам</h2>
 						<p class="footer-top__column-text">и мы подберем максимальное количество предприятий в вашей сфере</p>
 					</div>
-					<div class="footer-top__column footer-top__column-last">
+					<form class="footer-top__column footer-top__column-last callback" method="POST" action="businessolymp.ru">
+						<div class="success"><span>Спасибо за заявку!</span></div>
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Business Olymp">
+						<input type="hidden" name="admin_email" value="none@email.com">
+						<input type="hidden" name="form_subject" value="Заявка с сайта businessolymp.ru">
 						<div class="footer-top__column-inputs">
 							<div class="required">
-								<input type="text" name="surname" required="required" placeholder="Фамилия">
+								<input type="text" name="surname" required="required" placeholder="Фамилия" min="2">
 							</div>
 							<div class="required">
-								<input type="text" name="name" required="required" placeholder="Имя">
+								<input type="text" name="name" required="required" placeholder="Имя" min="2">
 							</div>
 							<div class="required">
-								<input type="text" name="middle-name" required="required" placeholder="Отчество">
+								<input type="text" name="middle-name" required="required" placeholder="Отчество" min="2">
 							</div>
 							<input type="text" name="organization" placeholder="Организация">
 							<div class="required">
@@ -292,17 +311,34 @@
 						</div>
 						<div class="footer-top__column-textarea">
 							<div class="required">
-								<textarea name="message" required="required" placeholder="Текст"></textarea>
+								<textarea  min="10" name="message" required="required" placeholder="Текст"></textarea>
 							</div>
-							<a href="#" class="primary-btn footer-top__btn">отправить</a>
+							<button href="#" class="primary-btn footer-top__btn">отправить</button>
 						</div>
-					</div>
+						<div class="my-recaptcha">
+							<div class="g-recaptcha" data-sitekey="6LeKaREUAAAAALB6Sgjp5XqHq0Kb_aLEn_KORz6u"></div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div><!-- footer-top -->
 		<div class="footer-bottom">
 			<div class="wrapper">
 				<div class="footer-row">
+					<ul class="footer-info">
+						<li>
+							<a href="tel:+74958421926">
+								<img src="img/header-ico/phone.svg" alt="">
+								<span>+7495-842-1926</span>
+							</a>
+						</li>
+						<li>
+							<a href="mailTo:example@gmail.com">
+								<img src="img/header-ico/envelope.svg" alt="">
+								<span>example@gmail.com</span>
+							</a>
+						</li>
+					</ul>
 					<div class="footer-column footer-logo">
 						<a href="#">
 							<picture>
@@ -325,6 +361,7 @@
 	<!-- end footer -->
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script> 
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
