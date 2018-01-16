@@ -16,10 +16,14 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0e1522">
 
 </head>
-<body style="background-image: url(img/body-head-bg.png);">
+<body>
+	<div class="page-head" style="background-image: url(img/body-head-bg.png);"></div>
 	<!-- start header -->
 	<header class="header">
 		<div class="wrapper">
+			<div class="menu-bar">
+				<span></span>
+			</div>
 			<div class="header-logo">
 				<a href="#">
 					<img src="img/logo.svg" alt="">
@@ -34,10 +38,46 @@
 					<li><a href="#">Школа ставок</a></li>
 					<li><a href="#">Бонусы и акции</a></li>
 				</ul>
+				<ul class="header-social">
+					<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+				</ul>
 			</nav>
 		</div>
 	</header>
 	<!-- end header -->
+	<!-- hide section (mob) -->
+	<div class="sidebar sidebar-popular sidebar-popular__mob" style="background: url(img/banner-mob-bg.png);">
+		<div class="sidebar-head">
+			<p>НОВОСТИ</p>
+			<a href="#"></a>
+		</div>
+		<div class="sidebar-popular__wrap">
+			<div class="sidebar-popular__news">
+				<a class="sidebar-popular__news-category" href="#">Новости</a>
+				<h3 class="sidebar-popular__news-title"><a href="#">Лига чемпионов. Анонс матча</a></h3>
+				<p class="sidebar-popular__news-text">Один из самых захватывающих поединков в рамках 6-го тура группового турнира Лиги чемпионов ожидается в Лондоне. Челси, обеспечивший выход в плей-офф европейского турнира.</p>
+				<p class="sidebar-popular__news-time">2 часа назад</p>
+			</div><!-- col(1) -->
+			<div class="sidebar-popular__news">
+				<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
+				<h3 class="sidebar-popular__news-title"><a href="#">Арсенал — Манчестер</a></h3>
+				<p class="sidebar-popular__news-text">Команды Арсена Венгера и Жозе Моуриньо подходят к принципиальному поединку в прекрасной форме. Это серьезно подогревает интерес.</p>
+				<p class="sidebar-popular__news-time">2 часа назад</p>
+			</div><!-- col(2) -->
+			<div class="sidebar-popular__news">
+				<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
+				<h3 class="sidebar-popular__news-title"><a href="#">Анонс матча Рома — Лацио</a></h3>
+				<p class="sidebar-popular__news-text">«Римское дерби» по праву носит титул самого жесткого противостояния в мировом футболе.</p>
+				<p class="sidebar-popular__news-time">2 часа назад</p>
+			</div><!-- col(3) -->
+		</div>
+		<div class="sidebar-all-news">
+			<a href="#">Все новости</a>
+		</div>
+	</div><!-- end sidebar -->
+	<!-- hide section (mob) -->
 	<!-- start main -->
 	<section class="main">
 		<div class="wrapper">
@@ -52,7 +92,9 @@
 				</div>
 				<div class="news-row">
 					<article class="news-article">
-						<img src="img/post-1.png" alt="">
+						<div class="news-article__img">
+							<img src="img/post-1.png" alt="">
+						</div>
 						<div class="news-article__wrap">
 							<div class="news-article__head">
 								<a class="news-category" href="#">УЕФА</a>
@@ -63,7 +105,9 @@
 						</div>
 					</article><!-- col(1) -->
 					<article class="news-article">
-						<img src="img/post-2.png" alt="">
+						<div class="news-article__img">
+							<img src="img/post-2.png" alt="">
+						</div>
 						<div class="news-article__wrap">
 							<div class="news-article__head">
 								<a class="news-category" href="#">НОВОСТИ</a>
@@ -88,16 +132,7 @@
 								<img src="img/bookmakers-1.png" alt="">
 							</div>
 							<div class="reviewStars-input">
-								<input id="star-4" type="radio" name="reviewStars"/>
-								<label title="gorgeous" for="star-4"></label>
-								<input id="star-3" type="radio" name="reviewStars"/>
-								<label title="good" for="star-3"></label>
-								<input id="star-2" type="radio" name="reviewStars"/>
-								<label title="regular" for="star-2"></label>
-								<input id="star-1" type="radio" name="reviewStars"/>
-								<label title="poor" for="star-1"></label>
-								<input id="star-0" type="radio" name="reviewStars"/>
-								<label title="bad" for="star-0"></label>
+								<img src="img/stars-5.png" alt="">
 							</div>
 						</div>
 						<div>
@@ -111,16 +146,7 @@
 								<img src="img/bookmakers-2.png" alt="">
 							</div>
 							<div class="reviewStars-input">
-								<input id="star-4" type="radio" name="reviewStars"/>
-								<label title="gorgeous" for="star-4"></label>
-								<input id="star-3" type="radio" name="reviewStars"/>
-								<label title="good" for="star-3"></label>
-								<input id="star-2" type="radio" name="reviewStars"/>
-								<label title="regular" for="star-2"></label>
-								<input id="star-1" type="radio" name="reviewStars"/>
-								<label title="poor" for="star-1"></label>
-								<input id="star-0" type="radio" name="reviewStars"/>
-								<label title="bad" for="star-0"></label>
+								<img src="img/stars-5.png" alt="">
 							</div>
 						</div>
 						<div>
@@ -134,16 +160,7 @@
 								<img src="img/bookmakers-3.png" alt="">
 							</div>
 							<div class="reviewStars-input">
-								<input id="star-4" type="radio" name="reviewStars"/>
-								<label title="gorgeous" for="star-4"></label>
-								<input id="star-3" type="radio" name="reviewStars"/>
-								<label title="good" for="star-3"></label>
-								<input id="star-2" type="radio" name="reviewStars"/>
-								<label title="regular" for="star-2"></label>
-								<input id="star-1" type="radio" name="reviewStars"/>
-								<label title="poor" for="star-1"></label>
-								<input id="star-0" type="radio" name="reviewStars"/>
-								<label title="bad" for="star-0"></label>
+								<img src="img/stars-5.png" alt="">
 							</div>
 						</div>
 						<div>
@@ -157,16 +174,7 @@
 								<img src="img/bookmakers-4.png" alt="">
 							</div>
 							<div class="reviewStars-input">
-								<input id="star-4" type="radio" name="reviewStars"/>
-								<label title="gorgeous" for="star-4"></label>
-								<input id="star-3" type="radio" name="reviewStars"/>
-								<label title="good" for="star-3"></label>
-								<input id="star-2" type="radio" name="reviewStars"/>
-								<label title="regular" for="star-2"></label>
-								<input id="star-1" type="radio" name="reviewStars"/>
-								<label title="poor" for="star-1"></label>
-								<input id="star-0" type="radio" name="reviewStars"/>
-								<label title="bad" for="star-0"></label>
+								<img src="img/stars-5.png" alt="">
 							</div>
 						</div>
 						<div>
@@ -180,16 +188,7 @@
 								<img src="img/bookmakers-5.png" alt="">
 							</div>
 							<div class="reviewStars-input">
-								<input id="star-4" type="radio" name="reviewStars"/>
-								<label title="gorgeous" for="star-4"></label>
-								<input id="star-3" type="radio" name="reviewStars"/>
-								<label title="good" for="star-3"></label>
-								<input id="star-2" type="radio" name="reviewStars"/>
-								<label title="regular" for="star-2"></label>
-								<input id="star-1" type="radio" name="reviewStars"/>
-								<label title="poor" for="star-1"></label>
-								<input id="star-0" type="radio" name="reviewStars"/>
-								<label title="bad" for="star-0"></label>
+								<img src="img/stars-5.png" alt="">
 							</div>
 						</div>
 						<div>
@@ -203,16 +202,7 @@
 								<img src="img/bookmakers-6.png" alt="">
 							</div>
 							<div class="reviewStars-input">
-								<input id="star-4" type="radio" name="reviewStars"/>
-								<label title="gorgeous" for="star-4"></label>
-								<input id="star-3" type="radio" name="reviewStars"/>
-								<label title="good" for="star-3"></label>
-								<input id="star-2" type="radio" name="reviewStars"/>
-								<label title="regular" for="star-2"></label>
-								<input id="star-1" type="radio" name="reviewStars"/>
-								<label title="poor" for="star-1"></label>
-								<input id="star-0" type="radio" name="reviewStars"/>
-								<label title="bad" for="star-0"></label>
+								<img src="img/stars-5.png" alt="">
 							</div>
 						</div>
 						<div>
@@ -226,16 +216,7 @@
 								<img src="img/bookmakers-7.png" alt="">
 							</div>
 							<div class="reviewStars-input">
-								<input id="star-4" type="radio" name="reviewStars"/>
-								<label title="gorgeous" for="star-4"></label>
-								<input id="star-3" type="radio" name="reviewStars"/>
-								<label title="good" for="star-3"></label>
-								<input id="star-2" type="radio" name="reviewStars"/>
-								<label title="regular" for="star-2"></label>
-								<input id="star-1" type="radio" name="reviewStars"/>
-								<label title="poor" for="star-1"></label>
-								<input id="star-0" type="radio" name="reviewStars"/>
-								<label title="bad" for="star-0"></label>
+								<img src="img/stars-5.png" alt="">
 							</div>
 						</div>
 						<div>
@@ -280,7 +261,6 @@
 				<div class="content-statistics__forecasts">
 					<div class="statistics-forecasts__head">
 						<div class="statistics-forecasts__head-wrap">
-							<a href="#" class="statistics-forecasts__head-link">Открыть</a>
 							<h3 class="statistics-forecasts__head-title">Прогнозы</h3>
 							<div class="statistics-forecasts__head-menu">
 								<p class="statistics-forecasts__head-menu__1">1</p>
@@ -380,6 +360,9 @@
 				</div>
 			</div><!-- end content -->
 		</div>
+		<div class="sidebar-all-news button-all__center">
+			<a class="#" href="#">Все прогнозы</a>
+		</div>
 	</section>
 	<!-- end main -->
 	<!-- start small-news -->
@@ -472,6 +455,15 @@
 		<div class="wrapper">
 			<h2 class="section-title expert-title">Мнение эксперта</h2>
 			<div class="expert-row">
+				<div class="expert-person">
+					<div class="expert-person__img">
+						<img src="img/person.png" alt="">
+					</div>
+					<div class="expert-person__text">
+						<h3 class="expert-person__name">ВИКТОР ГУСЕВ</h3>
+						<p class="expert-person__position">ЭКСПЕРТ</p>
+					</div>
+				</div><!-- end person -->
 				<div class="expert-info">
 					<a href="#" class="expert-info__category">Футбол</a>
 					<h3 class="expert-info__title">
@@ -486,13 +478,6 @@
 						<a href="#">Смотреть прогноз</a>
 					</div>
 				</div><!-- end info -->
-				<div class="expert-person">
-					<img src="img/person.png" alt="">
-					<div class="expert-person__text">
-						<h3 class="expert-person__name">ВИКТОР ГУСЕВ</h3>
-						<p class="expert-person__position">ЭКСПЕРТ</p>
-					</div>
-				</div><!-- end person -->
 			</div><!-- end row -->
 		</div>
 	</section>
@@ -544,6 +529,9 @@
 					</div>
 				</div><!-- end row -->
 			</div><!-- end content -->
+			<div class="sidebar-all-news button-all__center">
+				<a class="#" href="#">Смотреть все</a>
+			</div>
 		</div>
 	</section>
 	<!-- end bschool -->
@@ -587,6 +575,9 @@
 				</div>
 			</div><!-- end footer-top -->
 			<div class="footer-bottom">
+				<a class="footer-mob" href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
 				<p>18+   © 2017 bookmakerz.ru</p>
 				<a class="app-store" href="#"><img src="img/app-store-footer.png" alt=""></a>
 			</div><!-- end footer-top -->
