@@ -19,7 +19,7 @@
 <body>
 	<div class="page-head" style="background-image: url(img/body-head-bg.png);"></div>
 	<!-- start header -->
-	<header class="header">
+	<header class="header header-mob">
 		<div class="wrapper">
 			<div class="menu-bar">
 				<span></span>
@@ -48,38 +48,40 @@
 	</header>
 	<!-- end header -->
 	<!-- hide section (mob) -->
-	<div class="sidebar sidebar-popular sidebar-popular__mob" style="background: url(img/banner-mob-bg.png);">
-		<div class="sidebar-head">
-			<p>НОВОСТИ</p>
-			<a href="#"></a>
-		</div>
-		<div class="sidebar-popular__wrap">
-			<div class="sidebar-popular__news">
-				<a class="sidebar-popular__news-category" href="#">Новости</a>
-				<h3 class="sidebar-popular__news-title"><a href="#">Лига чемпионов. Анонс матча</a></h3>
-				<p class="sidebar-popular__news-text">Один из самых захватывающих поединков в рамках 6-го тура группового турнира Лиги чемпионов ожидается в Лондоне. Челси, обеспечивший выход в плей-офф европейского турнира.</p>
-				<p class="sidebar-popular__news-time">2 часа назад</p>
-			</div><!-- col(1) -->
-			<div class="sidebar-popular__news">
-				<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
-				<h3 class="sidebar-popular__news-title"><a href="#">Арсенал — Манчестер</a></h3>
-				<p class="sidebar-popular__news-text">Команды Арсена Венгера и Жозе Моуриньо подходят к принципиальному поединку в прекрасной форме. Это серьезно подогревает интерес.</p>
-				<p class="sidebar-popular__news-time">2 часа назад</p>
-			</div><!-- col(2) -->
-			<div class="sidebar-popular__news">
-				<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
-				<h3 class="sidebar-popular__news-title"><a href="#">Анонс матча Рома — Лацио</a></h3>
-				<p class="sidebar-popular__news-text">«Римское дерби» по праву носит титул самого жесткого противостояния в мировом футболе.</p>
-				<p class="sidebar-popular__news-time">2 часа назад</p>
-			</div><!-- col(3) -->
-		</div>
-		<div class="sidebar-all-news">
-			<a href="#">Все новости</a>
+	<div class="sidebar sidebar-popular__mob" style="background: url(img/banner-mob-bg.png);">
+		<div class="sidebar-wrap sidebar-popular">
+			<div class="sidebar-head">
+				<p>НОВОСТИ</p>
+				<a href="#"></a>
+			</div>
+			<div class="sidebar-popular__wrap">
+				<div class="sidebar-popular__news">
+					<a class="sidebar-popular__news-category" href="#">Новости</a>
+					<h3 class="sidebar-popular__news-title"><a href="#">Лига чемпионов. Анонс матча</a></h3>
+					<p class="sidebar-popular__news-text">Один из самых захватывающих поединков в рамках 6-го тура группового турнира Лиги чемпионов ожидается в Лондоне. Челси, обеспечивший выход в плей-офф европейского турнира.</p>
+					<p class="sidebar-popular__news-time">2 часа назад</p>
+				</div><!-- col(1) -->
+				<div class="sidebar-popular__news">
+					<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
+					<h3 class="sidebar-popular__news-title"><a href="#">Арсенал — Манчестер</a></h3>
+					<p class="sidebar-popular__news-text">Команды Арсена Венгера и Жозе Моуриньо подходят к принципиальному поединку в прекрасной форме. Это серьезно подогревает интерес.</p>
+					<p class="sidebar-popular__news-time">2 часа назад</p>
+				</div><!-- col(2) -->
+				<div class="sidebar-popular__news">
+					<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
+					<h3 class="sidebar-popular__news-title"><a href="#">Анонс матча Рома — Лацио</a></h3>
+					<p class="sidebar-popular__news-text">«Римское дерби» по праву носит титул самого жесткого противостояния в мировом футболе.</p>
+					<p class="sidebar-popular__news-time">2 часа назад</p>
+				</div><!-- col(3) -->
+			</div>
+			<div class="sidebar-all-news">
+				<a href="#">Все новости</a>
+			</div>
 		</div>
 	</div><!-- end sidebar -->
 	<!-- hide section (mob) -->
 	<!-- start main -->
-	<section class="main">
+	<section class="main index">
 		<div class="wrapper">
 			<div class="content content-news">
 				<div class="news-big" style="background: url(img/post-1.png);">
@@ -119,110 +121,112 @@
 					</article><!-- col(2) -->
 				</div>
 			</div><!-- end content -->
-			<div class="sidebar sidebar-rating">
-				<div class="sidebar-head">
-					<p>Рейтинг букмекеров</p>
-					<a href="#">Открыть</a>
-				</div>
-				<div class="sidebar-rating__wrap">
-					<div class="sidebar-rating__column">
-						<span>01</span>
-						<div>
-							<div class="sidebar-rating__logo">
-								<img src="img/bookmakers-1.png" alt="">
+			<div class="sidebar">
+				<div class="sidebar-wrap sidebar-popular">
+					<div class="sidebar-head">
+						<p>Рейтинг букмекеров</p>
+						<a href="#">Открыть</a>
+					</div>
+					<div class="sidebar-rating__wrap">
+						<div class="sidebar-rating__column">
+							<span>01</span>
+							<div>
+								<div class="sidebar-rating__logo">
+									<img src="img/bookmakers-1.png" alt="">
+								</div>
+								<div class="reviewStars-input">
+									<img src="img/stars-5.png" alt="">
+								</div>
 							</div>
-							<div class="reviewStars-input">
-								<img src="img/stars-5.png" alt="">
+							<div>
+								<a href="#">Обзор</a>
 							</div>
-						</div>
-						<div>
-							<a href="#">Обзор</a>
-						</div>
-					</div><!-- col(1) -->
-					<div class="sidebar-rating__column">
-						<span>02</span>
-						<div>
-							<div class="sidebar-rating__logo">
-								<img src="img/bookmakers-2.png" alt="">
+						</div><!-- col(1) -->
+						<div class="sidebar-rating__column">
+							<span>02</span>
+							<div>
+								<div class="sidebar-rating__logo">
+									<img src="img/bookmakers-2.png" alt="">
+								</div>
+								<div class="reviewStars-input">
+									<img src="img/stars-5.png" alt="">
+								</div>
 							</div>
-							<div class="reviewStars-input">
-								<img src="img/stars-5.png" alt="">
+							<div>
+								<a href="#">Обзор</a>
 							</div>
-						</div>
-						<div>
-							<a href="#">Обзор</a>
-						</div>
-					</div><!-- col(2) -->
-					<div class="sidebar-rating__column">
-						<span>03</span>
-						<div>
-							<div class="sidebar-rating__logo">
-								<img src="img/bookmakers-3.png" alt="">
+						</div><!-- col(2) -->
+						<div class="sidebar-rating__column">
+							<span>03</span>
+							<div>
+								<div class="sidebar-rating__logo">
+									<img src="img/bookmakers-3.png" alt="">
+								</div>
+								<div class="reviewStars-input">
+									<img src="img/stars-5.png" alt="">
+								</div>
 							</div>
-							<div class="reviewStars-input">
-								<img src="img/stars-5.png" alt="">
+							<div>
+								<a href="#">Обзор</a>
 							</div>
-						</div>
-						<div>
-							<a href="#">Обзор</a>
-						</div>
-					</div><!-- col(3) -->
-					<div class="sidebar-rating__column">
-						<span>04</span>
-						<div>
-							<div class="sidebar-rating__logo">
-								<img src="img/bookmakers-4.png" alt="">
+						</div><!-- col(3) -->
+						<div class="sidebar-rating__column">
+							<span>04</span>
+							<div>
+								<div class="sidebar-rating__logo">
+									<img src="img/bookmakers-4.png" alt="">
+								</div>
+								<div class="reviewStars-input">
+									<img src="img/stars-5.png" alt="">
+								</div>
 							</div>
-							<div class="reviewStars-input">
-								<img src="img/stars-5.png" alt="">
+							<div>
+								<a href="#">Обзор</a>
 							</div>
-						</div>
-						<div>
-							<a href="#">Обзор</a>
-						</div>
-					</div><!-- col(4) -->
-					<div class="sidebar-rating__column">
-						<span>05</span>
-						<div>
-							<div class="sidebar-rating__logo">
-								<img src="img/bookmakers-5.png" alt="">
+						</div><!-- col(4) -->
+						<div class="sidebar-rating__column">
+							<span>05</span>
+							<div>
+								<div class="sidebar-rating__logo">
+									<img src="img/bookmakers-5.png" alt="">
+								</div>
+								<div class="reviewStars-input">
+									<img src="img/stars-5.png" alt="">
+								</div>
 							</div>
-							<div class="reviewStars-input">
-								<img src="img/stars-5.png" alt="">
+							<div>
+								<a href="#">Обзор</a>
 							</div>
-						</div>
-						<div>
-							<a href="#">Обзор</a>
-						</div>
-					</div><!-- col(5) -->
-					<div class="sidebar-rating__column">
-						<span>06</span>
-						<div>
-							<div class="sidebar-rating__logo">
-								<img src="img/bookmakers-6.png" alt="">
+						</div><!-- col(5) -->
+						<div class="sidebar-rating__column">
+							<span>06</span>
+							<div>
+								<div class="sidebar-rating__logo">
+									<img src="img/bookmakers-6.png" alt="">
+								</div>
+								<div class="reviewStars-input">
+									<img src="img/stars-5.png" alt="">
+								</div>
 							</div>
-							<div class="reviewStars-input">
-								<img src="img/stars-5.png" alt="">
+							<div>
+								<a href="#">Обзор</a>
 							</div>
-						</div>
-						<div>
-							<a href="#">Обзор</a>
-						</div>
-					</div><!-- col(6) -->
-					<div class="sidebar-rating__column">
-						<span>07</span>
-						<div>
-							<div class="sidebar-rating__logo">
-								<img src="img/bookmakers-7.png" alt="">
+						</div><!-- col(6) -->
+						<div class="sidebar-rating__column">
+							<span>07</span>
+							<div>
+								<div class="sidebar-rating__logo">
+									<img src="img/bookmakers-7.png" alt="">
+								</div>
+								<div class="reviewStars-input">
+									<img src="img/stars-5.png" alt="">
+								</div>
 							</div>
-							<div class="reviewStars-input">
-								<img src="img/stars-5.png" alt="">
+							<div>
+								<a href="#">Обзор</a>
 							</div>
-						</div>
-						<div>
-							<a href="#">Обзор</a>
-						</div>
-					</div><!-- col(7) -->
+						</div><!-- col(7) -->
+					</div>
 				</div>
 			</div><!-- end sidebar -->
 		</div>
@@ -231,30 +235,34 @@
 	<!-- start main -->
 	<section class="main">
 		<div class="wrapper">
-			<div class="sidebar sidebar-popular">
-				<div class="sidebar-head">
-					<p>Самое популярное</p>
-					<a href="#"></a>
-				</div>
-				<div class="sidebar-popular__wrap">
-					<div class="sidebar-popular__news">
-						<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
-						<h3 class="sidebar-popular__news-title"><a href="#">Лига чемпионов. Анонс матча</a></h3>
-						<p class="sidebar-popular__news-text">Один из самых захватывающих поединков в рамках 6-го тура группового турнира Лиги чемпионов ожидается в Лондоне. Челси, обеспечивший выход в плей-офф европейского турнира.</p>
-						<p class="sidebar-popular__news-time">2 часа назад</p>
-					</div><!-- col(1) -->
-					<div class="sidebar-popular__news">
-						<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
-						<h3 class="sidebar-popular__news-title"><a href="#">Арсенал — Манчестер</a></h3>
-						<p class="sidebar-popular__news-text">Команды Арсена Венгера и Жозе Моуриньо подходят к принципиальному поединку в прекрасной форме. Это серьезно подогревает интерес.</p>
-						<p class="sidebar-popular__news-time">2 часа назад</p>
-					</div><!-- col(2) -->
-					<div class="sidebar-popular__news">
-						<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
-						<h3 class="sidebar-popular__news-title"><a href="#">Анонс матча Рома — Лацио</a></h3>
-						<p class="sidebar-popular__news-text">«Римское дерби» по праву носит титул самого жесткого противостояния в мировом футболе.</p>
-						<p class="sidebar-popular__news-time">2 часа назад</p>
-					</div><!-- col(3) -->
+			<div class="sidebar">
+				<div class="sidebar-wrap sidebar-popular">
+					<div class="sidebar-head">
+						<p>Самое популярное</p>
+						<a class="sidebar-popular__menu" href="#">
+							<img src="img/sidebar-ico.png" alt="">
+						</a>
+					</div>
+					<div class="sidebar-popular__wrap">
+						<div class="sidebar-popular__news">
+							<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
+							<h3 class="sidebar-popular__news-title"><a href="#">Лига чемпионов. Анонс матча</a></h3>
+							<p class="sidebar-popular__news-text">Один из самых захватывающих поединков в рамках 6-го тура группового турнира Лиги чемпионов ожидается в Лондоне. Челси, обеспечивший выход в плей-офф европейского турнира.</p>
+							<p class="sidebar-popular__news-time">2 часа назад</p>
+						</div><!-- col(1) -->
+						<div class="sidebar-popular__news">
+							<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
+							<h3 class="sidebar-popular__news-title"><a href="#">Арсенал — Манчестер</a></h3>
+							<p class="sidebar-popular__news-text">Команды Арсена Венгера и Жозе Моуриньо подходят к принципиальному поединку в прекрасной форме. Это серьезно подогревает интерес.</p>
+							<p class="sidebar-popular__news-time">2 часа назад</p>
+						</div><!-- col(2) -->
+						<div class="sidebar-popular__news">
+							<a class="sidebar-popular__news-category" href="#">НОВОСТИ</a>
+							<h3 class="sidebar-popular__news-title"><a href="#">Анонс матча Рома — Лацио</a></h3>
+							<p class="sidebar-popular__news-text">«Римское дерби» по праву носит титул самого жесткого противостояния в мировом футболе.</p>
+							<p class="sidebar-popular__news-time">2 часа назад</p>
+						</div><!-- col(3) -->
+					</div>
 				</div>
 			</div><!-- end sidebar -->
 			<div class="content content-statistics">
