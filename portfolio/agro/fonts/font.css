@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'agro';
+  src: url('./agro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.ff-a:before { content: "\f000"; font-family: 'agro'; }
+.ff-b:before { content: "\f001"; font-family: 'agro'; }
+.ff-c:before { content: "\f002"; font-family: 'agro'; }
+.ff-d:before { content: "\f003"; font-family: 'agro'; }
+.ff-e:before { content: "\f004"; font-family: 'agro'; }
+.ff-f:before { content: "\f005"; font-family: 'agro'; }
+.ff-g:before { content: "\f006"; font-family: 'agro'; }
