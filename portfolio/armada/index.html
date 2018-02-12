@@ -18,16 +18,42 @@
 
 </head>
 <body>
-	<div class="pagination">
-		<ul>
-			<li class="pagination-active"></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+	<!-- modal -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-call">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<form class="callback" method="POST">
+				<h3>первый час бесплатно</h3>
+				<p>Обеспечим персональной охраной даже на один час!</p>
+				<form action="">
+					<input type="text" name="name" placeholder="Имя">
+					<input type="tel" name="tel" placeholder="Телефон">
+					<input type="submit" value="Заказать телохранителя" class="main-button">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-choice">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<form class="callback" method="POST">
+				<h3>первый час бесплатно</h3>
+				<p>Обеспечим персональной охраной даже на один час!</p>
+				<form action="">
+					<input type="text" name="name" placeholder="Имя">
+					<input type="tel" name="tel" placeholder="Телефон">
+					<div>
+						<select>
+					    <option>Вид охраны</option>
+					    <option value="охрана с машиной">охрана с машиной</option>
+					    <option value="охрана">охрана</option>
+					   </select>
+				 	</div>
+					<input type="submit" value="Заказать телохранителя" class="main-button">
+				</form>
+			</div>
+		</div>
 	</div>
 	<!-- start main -->
 	<section class="main" id="main" style="background: url(img/banner-bg.jpg);">
@@ -45,13 +71,13 @@
 					</div>
 					<div class="header-info">
 						<p class="header-phone"><a href="#">8 800 345 98 98</a></p>
-						<p class="header-button"><a href="#">заказать звонок</a></p>
+						<p class="header-button button-modal"><a href="#modal-call">заказать звонок</a></p>
 					</div>
 				</div>
-				<div class="menu-bar">
-					<span></span>
-				</div>
 				<nav class="header-nav">
+					<div class="menu-bar">
+						<span></span>
+					</div>
 					<ul>
 						<li><a href="#main">главная</a></li>
 						<li><a href="#customers">клиенты</a></li>
@@ -151,7 +177,7 @@
 							</div>
 							<div class="protection-slide__bottom">
 								<p>СТОИМОСТЬ 4 000 РУБЛЕЙ В ЧАС</p>
-								<a class="main-button" href="#">Заказать телохранителя</a>
+								<a class="main-button button-modal" href="#modal-choice">Заказать телохранителя</a>
 							</div>						
 						</div><!-- slide(1) -->
 						<div class="protection-slide">
@@ -161,7 +187,7 @@
 							</div>
 							<div class="protection-slide__bottom">
 								<p>СТОИМОСТЬ 4 000 РУБЛЕЙ В ЧАС</p>
-								<a class="main-button" href="#">Заказать телохранителя</a>
+								<a class="main-button button-modal" href="#modal-choice">Заказать телохранителя</a>
 							</div>		
 						</div><!-- slide(2) -->
 					</div>
