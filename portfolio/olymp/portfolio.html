@@ -20,22 +20,328 @@
 
 </head>
 <body class="portfolioMockup">
+	<!-- modal -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<form method="POST">
+				<h3 class="modal-title">Ваш проект</h3>
+				<div class="modal-info">
+					<p class="modal-info__title">Контактные данные</p>
+					<p class="modal-info__text">Как мы можем связаться с вами?</p>
+					<div class="modal-row modal-row__text">
+						<div>
+							<p>Название / Компания:</p>
+							<input type="text">
+						</div>
+						<div>
+							<p>E-Mail:</p>
+							<input type="email">
+						</div>
+						<div>
+							<p>Телефон (дополнительно):</p>
+							<input type="tel">
+						</div>
+					</div>
+				</div><!-- 1 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Какой проект вы хотели бы выполнить?</p>
+					<p class="modal-info__text">Является ли ваш проект веб-сайтом компании, частным или веб-приложением, которое вы хотели бы создать?</p>
+					<div class="modal-row modal-row__radio">
+						<div>
+							<input id="rad-1" type="radio">
+							<label for="rad-1">Веб-сайт компании</label>
+						</div>
+						<div>
+							<input id="rad-2" type="radio">
+							<label for="rad-2">Частный сайт</label>
+						</div>
+						<div>
+							<input id="rad-3" type="radio">
+							<label for="rad-3">Веб-приложение</label>
+						</div>
+					</div>
+				</div><!-- 2 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Создать новый веб-сайт или пересмотреть существующий веб-сайт? [Отображается на веб-сайте компании / на частном веб-сайте]</p>
+					<p class="modal-info__text">Soll eine neue Website erstellt werden oder verfügen Sie bereits über eine, die bearbeitet werden soll?</p>
+					<div class="modal-row modal-row__radio modal-row__radio-big">
+						<div>
+							<input id="rad-4" type="radio">
+							<label for="rad-4">Я хочу новый сайт</label>
+						</div>
+						<div>
+							<input id="rad-5" type="radio">
+							<label for="rad-5">У меня уже есть веб-сайт, который нуждается в обработке</label>
+						</div>
+					</div>
+				</div><!-- 3 -->
+				<div class="modal-info">
+					<p class="modal-info__title">По какой категории должен быть выполнен дизайн вашего сайта? [показать, если веб-сайт компании / частный веб-сайт]</p>
+					<p class="modal-info__text">Выберите категорию для ориентации дизайна</p>
+					<div class="modal-row modal-row__select">
+						<div>
+							<p>Категория:</p>
+							<select>
+							  <option>Туризм</option>
+							  <option>Туризм 2</option>
+							</select>
+						</div>
+					</div>
+				</div><!-- 4 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Есть ли у вас предпочтения относительно того, как должен выглядеть дизайн вашего нового сайта? [показать, хочу ли я сайт]</p>
+					<p class="modal-info__text">Здесь вы можете отправить нам ссылку или скриншот на веб-сайт, дизайн которого вы считаете привлекательным.</p>
+					<div class="modal-row modal-row__text modal-row__text-2">
+						<div>
+							<p>Ссылка (необязательно):</p>
+							<input type="text">
+						</div>
+						<div>
+							<p>Загрузите снимок экрана (только * .jpg и * .png / необязательно):</p>
+							<input type="file">
+						</div>
+					</div>
+				</div><!-- 5 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Ссылка на ваш сайт, который следует пересмотреть [показать, если у меня уже есть сайт]</p>
+					<p class="modal-info__text">Отправьте нам ссылку на ваш сайт для редактирования.</p>
+					<div class="modal-row modal-row__text modal-row__text-3">
+						<div>
+							<p>Ссылка:</p>
+							<input type="email">
+						</div>
+					</div>
+				</div><!-- 6 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Каков объем вашего проекта?</p>
+					<p class="modal-info__text">Сколько страниц необходимо? Главная, выходные данные и конфиденциальность не учитываются/p>
+					<div class="modal-row modal-row__radio modal-row__radio-big">
+						<div>
+							<input id="rad-5" type="radio">
+							<label for="rad-5">до 10 страниц</label>
+						</div>
+						<div>
+							<input id="rad-6" type="radio">
+							<label for="rad-6">11 - 20 страниц</label>
+						</div>
+						<div>
+							<input id="rad-7" type="radio">
+							<label for="rad-7">21 - 30 страниц</label>
+						</div>
+						<div>
+							<input id="rad-8" type="radio">
+							<label for="rad-8">более 30 страниц</label>
+						</div>
+					</div>
+				</div><!-- 7 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Уже есть содержимое и фотографии?</p>
+					<p class="modal-info__text">Возможно ли предоставить содержимое и изображения, необходимые для создания веб-сайта (с целью оценки продолжительности работ)?</p>
+					<div class="modal-row modal-row__radio modal-row__radio-big">
+						<div>
+							<input id="rad-9" type="radio">
+							<label for="rad-9">Да</label>
+						</div>
+						<div>
+							<input id="rad-10" type="radio">
+							<label for="rad-10">Нет</label>
+						</div>
+					</div>
+				</div><!-- 8 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Информация, относящаяся к базе данных</p>
+					<p class="modal-info__text">Вам нужно:</p>
+					<div class="modal-row modal-row__check">
+						<div>
+							<p>
+								<input id="rad-11" type="checkbox">
+								<label for="rad-11">Регистрация участников и вход в систему</label>
+							</p>
+							<p>
+								<input id="rad-12" type="checkbox">
+								<label for="rad-12">Функция информационного бюллетеня</label>
+							</p>
+							<p>
+								<input id="rad-13" type="checkbox">
+								<label for="rad-13">Блог / Форумы</label>
+							</p>
+						</div>
+						<div>
+							<p>
+								<input id="rad-14" type="checkbox">
+								<label for="rad-14">Передача больших объемов данных в базу данных (каталоги и т. Д.)</label>
+							</p>
+							<p>
+								<input id="rad-15" type="checkbox">
+								<label for="rad-15">Интеграция внешних носителей (видео, аудио и т. Д.)</label>
+							</p>
+						</div>
+					</div>
+				</div><!-- 9 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Вам нужен интернет-магазин? [показать, если сайт компании]</p>
+					<div class="modal-row modal-row__radio modal-row__radio-big">
+						<div>
+							<input id="rad-16" type="radio">
+							<label for="rad-16">Требуется интернет-магазин</label>
+						</div>
+						<div>
+							<input id="rad-17" type="radio">
+							<label for="rad-17">Нет необходимости в интернет-магазине</label>
+						</div>
+					</div>
+					<div class="modal-row modal-row__select modal-row__select-2">
+						<div>
+							<p>Категория интернет-магазина:</p>
+							<select>
+							  <option>Туризм</option>
+							  <option>Туризм 2</option>
+							</select>
+						</div>
+					</div>
+				</div><!-- 10 -->
+				<div class="modal-info">
+					<p class="modal-info__text">Какие варианты оплаты должны быть включены:</p>
+					<div class="modal-row modal-row__check">
+						<div>
+							<p>
+								<input id="rad-18" type="checkbox">
+								<label for="rad-18">PayPal</label>
+							</p>
+							<p>
+								<input id="rad-19" type="checkbox">
+								<label for="rad-19">кредитная карта</label>
+							</p>
+							<p>
+								<input id="rad-20" type="checkbox">
+								<label for="rad-20">срочный перевод</label>
+							</p>
+						</div>
+						<div>
+							<p>
+								<input id="rad-21" type="checkbox">
+								<label for="rad-21">счет</label>
+							</p>
+							<p>
+								<input id="rad-22" type="checkbox">
+								<label for="rad-22">наложенный платеж</label>
+							</p>
+							<p>
+								<input id="rad-23" type="checkbox">
+								<label for="rad-23">предоплата</label>
+							</p>
+						</div>
+					</div>
+				</div><!-- 11 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Вы хотите самостоятельно отредактировать содержимое своего сайта?</p>
+					<p class="modal-info__text">Веб-сайт создан так, что вы можете легко поддерживать контент самостоятельно</p>
+					<div class="modal-row modal-row__radio modal-row__radio-big">
+						<div>
+							<input id="rad-24" type="radio">
+							<label for="rad-24">Да</label>
+						</div>
+						<div>
+							<input id="rad-25" type="radio">
+							<label for="rad-25">Нет</label>
+						</div>
+						<div>
+							<input id="rad-26" type="radio">
+							<label for="rad-26">Затрудняюсь ответить</label>
+						</div>
+					</div>
+				</div><!-- 12 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Сервер и домен</p>
+					<p class="modal-info__text">У вас уже есть домен или сервер?</p>
+					<div class="modal-row modal-row__radio modal-row__radio-big">
+						<div>
+							<input id="rad-27" type="radio">
+							<label for="rad-27">Нет, пожалуйста, предложите</label>
+						</div>
+						<div>
+							<input id="rad-28" type="radio">
+							<label for="rad-28">Да, он доступен</label>
+						</div>
+					</div>
+				</div><!-- 13 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Срок</p>
+					<p class="modal-info__text">Есть ли крайний срок, к которому ваша домашняя страница должна работать:</p>
+					<div class="modal-row modal-row__radio modal-row__radio-big">
+						<div>
+							<input id="rad-29" type="radio">
+							<label for="rad-29">Нет, никаких конкретных сроков</label>
+						</div>
+						<div>
+							<input id="rad-30" type="radio">
+							<label for="rad-30">Да, проект должен быть завершен: </label>
+						</div>
+					</div>
+				</div><!-- 14 -->
+				<div class="modal-info">
+					<p class="modal-info__title">Дополнительная информация [также отображается с веб-приложением]</p>
+					<p class="modal-info__text">Кратко опишите свой проект. Кроме того, используйте это поле, чтобы предоставить нам важную информацию<br>которая не обрабатывалась в форме.</p>
+					<div class="modal-row modal-row__textarea">
+						<textarea name="text"></textarea>
+					</div>
+				</div><!-- 15 -->
+				<div class="modal-info">
+					<p class="modal-info__text">Информация: Все проекты уже оптимизированы в разработке SEO и для мобильных устройств</p>
+				</div><!-- 16 -->
+				<button class="submit">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<div class="modal modal-contact" id="modal-contact">
+		<div class="modal-content">
+			<div class="cancel"></div>
+			<div class="modal-content__row">
+				<div>
+					<p><span>Impressum:</span></p>
+					<p><span>Inhaber:</span></p>
+					<p><span>Firmenwortlaut:</span></p>
+					<p>Excellent Mindwork e.U.</p>
+					<p>IT-Dienstleistungen</p>
+					<p><span>Firmensitz und Büro:</span></p>
+					<p>Goldschlagstraße 101/24</p>
+					<p>A-1150 Wien</p>
+				</div>
+				<div>
+					<p><span>Kontakt:</span></p>
+					<p>Mail: <a href="#">office@excelmind.at</a></p>
+					<p>Tel.: <a href="#">+43 (0) 670 206 3430</a></p>
+					<p><span>Umsatzsteuer-ID:</span> ATU72364737</p>
+					<p><span>Firmenbuch:</span> FN471614a</p>
+					<p><span>Bankverbindung:</span> Erste Bank Der Oesterreichischen Sparkassen AG</p>
+					<p><span>Empfänger:</span> Elmir Alic</p>
+					<p><span>BIC:</span> GIBAATWWXXX</p>
+					<p><span>IBAN:</span> AT30 2011 1829 1009 4777</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- start header -->
 	<div class="wrapper">
 		<header class="header">
 			<div class="header-column">
 				<div class="header-column__logo">
 					<a href="#">
-						<picture>
+						<!--<picture>
 						 	<source srcset="img/logo.svg" type="image/svg+xml">
 						 	<img src="img/logo.png" alt="веб-студии ОЛИМП" class="logo">
-						</picture>
+						</picture>-->
+						<img src="img/logo.png" alt="веб-студии ОЛИМП" class="logo">
 					</a>
 				</div>
 				<nav class="header-column__nav">
 					<ul class="header-column__list">
 						<li class="header-column__item"><a href="#">О компании</a></li>
 						<li class="header-column__item"><a href="#">Портфолио</a></li>
+						<li class="header-column__item"><a class="button-modal" href="#modal-contact">Контакты</a></li>
+						<li class="header-column__item"><a class="button-modal" href="#modal-form">Оставить заявку</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -135,10 +441,13 @@
 			<div class="footer-row">
 				<div class="footer-column">
 					<div class="footer-column__logo">
-						<picture>
-						 	<source srcset="img/logo.svg" type="image/svg+xml">
-						 	<img src="img/logo.png" alt="веб-студии ОЛИМП" class="logo">
-						</picture>
+						<a href="#">
+							<!--<picture>
+							 	<source srcset="img/logo.svg" type="image/svg+xml">
+							 	<img src="img/logo.png" alt="веб-студии ОЛИМП" class="logo">
+							</picture>-->
+							<img src="img/logo.png" alt="веб-студии ОЛИМП" class="logo">
+						</a>
 					</div>
 					<p class="footer-column__copy">Copyright © 2016 All Rights Reserved by <a href="http://digitalolymp.com/">digitalolymp.com</a></p>
 				</div>
