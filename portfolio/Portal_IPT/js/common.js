@@ -22,4 +22,11 @@ $(document).ready(function(){
 		$(this).toggleClass('bar-open');
 	});
 
+	$('.main-menu__wrap, .header-menu__wrap').on('click', function(e){
+		var target = $(e.target);
+		if(target.is('p')){
+			$(this).find('div').toggleClass('open-drop');
+		}
+	});
+
 });
