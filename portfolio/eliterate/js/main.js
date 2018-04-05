@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.offer-drop p').on('click', function(){
+  $('.top-bar .offer-drop p').on('click', function(){
     $(this).parent().parent().toggleClass('offer-drop__open');
   });
 
