@@ -11,6 +11,9 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
 
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -42,8 +45,8 @@
 
 	<div id="fullpage">
 		<!-- start main -->
-		<section class="section main">
-			<div class="main-img" style="background: url(img/banner-bg.jpg);"></div>
+		<section class="section main" id="main">
+			<div id="wave"></div>
 			<header class="header">
 				<div class="wrapper">
 					<div class="header-logo"><a href="#"><img src="img/BrainZ_logo.svg" alt=""></a></div>
@@ -56,7 +59,7 @@
 			</header>
 			<div class="wrapper">
 				<div class="main-descr">
-					<h1 class="main-title">Настоящее будущее</h1>
+					<h1 class="title-big main-title">Настоящее будущее</h1>
 					<p>Пополни ряды учеников<br> и получи реальный опыт работы в IT-индустрии</p>
 					<a href="#modal-form" class="button-modal main-button">регистрация</a>
 				</div>
@@ -191,7 +194,7 @@
 		<!-- start about -->
 		<section class="section about">
 			<div class="wrapper">
-				<h2 class="about-title">Портал BrainZ</h2>
+				<h2 class="title-big about-title">Портал BrainZ</h2>
 				<h2 class="section-title">образование в ногу со временем</h2>
 				<p>Наш портал – нечто большее чем просто сайт для учебы. Это сеть, в которой можно оставаться на связи, завоёвывать новые достижения, отслеживать свой прогресс и находиться в контакте с наставниками. Портал Brainz – учебное приложение нового поколения.</p>
 			</div>
@@ -279,7 +282,7 @@
 		<!-- start register -->
 		<section class="section register">
 			<div class="wrapper">
-				<h2 class="register-title">Регистрируйся сейчас и прокачивай мозг вместе с Brainz</h2>
+				<h2 class="title-big register-title">Регистрируйся сейчас и прокачивай мозг вместе с Brainz</h2>
 				<a href="#modal-form" class="button-modal main-button">регистрация</a>
 			</div>
 		</section>
@@ -315,7 +318,7 @@
 		<!-- start stories -->
 		<section class="section stories">
 			<div class="wrapper">
-				<h2 class="stories-title">BrainZ stories</h2>
+				<h2 class="title-big stories-title">BrainZ stories</h2>
 			</div>
 			<div class="stories-slider">
 				<div class="stories-slide">
@@ -424,9 +427,6 @@
 		</section>
 		<!-- end footer -->
 	</div>
-
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="js/scripts.min.js"></script>
+	<script src="js/waves.js"></script>
 </body>
 </html>
