@@ -12,472 +12,524 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
 
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
 </head>
-<style>
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  -webkit-transition: 1s all ease;
-  transition: 1s all ease;
-  opacity: 1;
-  visibility: visible;
-  background: linear-gradient(to right, rgba(23,7,203,1) 0%, rgba(150,8,251,1) 100%) }
-  .preloader .loader {
-    width: 100%;
-    height: 75px;
-    line-height: 75px;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    font-size: 75px; }
-    .preloader .loader #load_prec {
-      font-size: 70px;
-      font-weight: bold;
-      color: #fff; }
-  .preloader.done {
-    opacity: 0;
-    visibility: hidden; }
-</style>
 <body>
-	<div id="page-preloader" class="preloader">
-		<div class="loader">
-			<span id="load_prec">0%</span>
-		</div>
-	</div>
-	<canvas id="canvas-basic"></canvas>
-	<!-- modal -->
-	<div class="modal-overlay"></div>
-	<div class="modal" id="modal-form">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<form class="callback" method="POST">
-				<div class="success"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
-				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="имя сайта">
-				<input type="hidden" name="admin_email" value="info@gmail.ru">
-				<input type="hidden" name="form_subject" value="Заявка с сайта !!!">
-
-				<h3 class="modal-content__title">регистрация</h3>
-				<input type="text" name="name" placeholder="Имя" required min="3">
-				<input id="modal-phone" type="text" name="phone" placeholder="Телефон">
-				<input type="email" name="email" placeholder="E-mail" min="8">
-				<a href="#goNext" class="button-modal main-button submit open-next">Далее</a>
-				<!--<button class="main-button submit">Отправить</button>-->
-			</form>
-		</div>
-	</div>
-	<div class="modal" id="goNext">
-		<div class="modal-content">
-			<div class="cancel"></div>
-			<form class="callback" method="POST">
-				<div class="success"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
-				<h3 class="modal-content__title">регистрация2</h3>
-				<input type="text" name="name" placeholder="Имя" required min="3">
-				<input id="modal-phone" type="text" name="phone" placeholder="Телефон">
-				<input type="email" name="email" placeholder="E-mail" min="8">
-				<button class="main-button submit">Отправить</button>
-			</form>
-			<p class="modal-text">Copyright © 2017 !!!. Все права защищены. <a target="_blank" href="#">Политика конфенциальности.</a></p>
-		</div>
-	</div>
-
-	<div id="fullpage">
-		<!-- start main -->
-		<section class="section main" id="main" style="background: url(img/banner-bg.png);">
-			<div id="wave"></div>
-			<header class="header">
-				<div class="wrapper">
-					<div class="header-logo"><a href="#"><img src="img/BrainZ_logo.svg" alt=""></a></div>
-					<ul class="header-social">
-						<li class="fb_icon"><a href="#"><img src="img/fb_icon.svg" alt=""></a></li>
-						<li class="vk_icon"><a href="#"><img src="img/vk_icon.svg" alt=""></a></li>
-						<li class="insta_icon"><a href="#"><img src="img/insta_icon.svg" alt=""></a></li>
-					</ul>
+	<!-- start main -->
+	<section class="main">
+		<header class="header">
+			<div class="bar-menu">
+				<img src="img/menu-burger.svg" alt="">
+			</div>
+			<div class="header-mob">
+				<div class="main-top__buttons">
+					<a class="active" href="#">Log in</a>
 				</div>
-			</header>
-			<div class="wrapper">
-				<div class="main-descr">
-					<h1 class="title-big main-title">Настоящее будущее</h1>
-					<p>Пополни ряды учеников<br> и получи реальный опыт работы в IT-индустрии</p>
-					<a href="#modal-form" class="button-modal main-button">регистрация</a>
+				<div class="header-mob__right">
+					<div class="drop">
+						<p>Eng</p>
+						<ul>
+							<li><a href="#">lo1</a></li>
+							<li><a href="#">lo2</a></li>
+							<li><a href="#">lo3</a></li>
+						</ul>
+					</div>
+					<div class="drop">
+						<p>USD</p>
+						<ul>
+							<li><a href="#">lo1</a></li>
+							<li><a href="#">lo2</a></li>
+							<li><a href="#">lo3</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</section>
-		<!-- end main -->
-		<!-- start program -->
-		<section class="section program">
-			<div class="wrapper">
-				<div class="section-descr program-descr">
-					<h2 class="section-title">Brainz by Croc – реальное IT-образование для школьников и студентов</h2>
-					<p>Хочешь стать гуру и работать рука об руку с гигантами индустрии? Хочешь подтянуть скилл и удивиться тому,<br> на что ты по-настоящему способен?  Уверены, ты найдешь что нужно в нашем списке программ. </p>
-				</div>
-			</div>
-			<div class="post-row">
-				<div class="post">
-					<div class="post-img" style="background: url(img/education-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">программа 3</h3>
-						<p class="post-subtitle">студенты</p>
-						<p>краткое описание программы</p>
-						<b>навыки:</b>
-						<ul>
-							<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" fill="#8957fc" y="0px" viewBox="0 0 203.9 362.3" style="enable-background:new 0 0 203.9 362.3;" xml:space="preserve"><path d="M0,180.6c0-48.8,0-97.7,0-146.5C0,13.4,13.4,0,34.1,0c45.5,0,91,0,136.5,0c19.3,0,33.3,13.6,33.3,32.9c0.1,98.7,0.1,197.3,0,296c0,19.8-13.6,33.3-33.4,33.3c-46.2,0.1-92.3,0.1-138.5,0c-18.1,0-31.9-14-31.9-32.1C0,280.3,0,230.4,0,180.6C0,180.6,0,180.6,0,180.6z M181.7,289.5c0-79.6,0-158.6,0-237.8c-53.4,0-106.4,0-159.7,0c0,79.4,0,158.4,0,237.8C75.4,289.5,128.4,289.5,181.7,289.5z M82.9,324.9c0,10.7,8.1,19.2,18.7,19.3c10.7,0.1,19.5-8.5,19.4-19.2c0-10.5-8.5-19-19.1-19C91.3,305.9,82.9,314.3,82.9,324.9z"/></svg></li>
-							<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" fill="#8957fc" y="0px" viewBox="0 0 441.5 441.4" style="enable-background:new 0 0 441.5 441.4;" xml:space="preserve"><g><path d="M220.6,0c121.6-0.1,220.8,98.8,221,220.5c0.2,121.5-98.9,220.7-220.6,220.9C99.3,441.5-0.3,341.9,0,220.3C0.3,98.7,99,0.1,220.6,0z M120.2,104.9c-5,8.7-9.6,16.4-13.8,24.3c-7.5,14-20.8,19.1-35,22.1c-6.2,1.3-10.2-2.3-10.7-8.9c-0.3-4.4,0.1-9,0.6-13.4c0.5-4.1,1.6-8.1,2.7-13.2c-27,30.8-43.2,121.8-26.8,146.7c0.8-4.8,1.3-9.6,2.5-14.3c1.9-7,4-14,6.5-20.9c0.9-2.6,3.2-5.2,6.7-2.9c8.4,5.6,16.7,11.6,25.1,17.2c5.9,3.9,11.9,7.8,18.1,11.1c5.3,2.7,11.1,4.4,16.6,6.8c3.2,1.4,6.3,3.1,9.1,5.1c4.2,3.1,4.3,6.4,0.7,10c-2.5,2.5-5.1,4.8-7.8,7.1c-8.2,6.9-14.3,15.4-18.3,25.2c-4.9,12.2-9.4,24.5-14.4,36.7c-1.3,3.3-0.7,5.3,1.7,7.8c53.5,52.8,116.9,70.7,189.4,50.8c113.4-31,170.2-162.6,116.3-267c-0.6-1.1-1.3-2.1-2-3.1c-0.4,0.1-0.9,0.1-1.3,0.2c0,5.4-0.4,10.9,0.1,16.2c0.8,9.6-2.6,17.6-9.5,23.7c-6.1,5.3-13,9.7-19.7,14.4c-3,2.1-6.3,3.7-9.4,5.7c-5.4,3.5-7.3,8.6-5.8,14.7c1.4,5.5,2.7,11,4.8,16.2c3.6,8.9,3.5,17.9,1.1,26.9c-7.7,28.7-22.7,53.5-40.5,76.8c-3.3,4.4-7.1,8.4-11.1,12.1c-7.4,6.8-13.3,5.5-16.5-4.1c-2.2-6.7-3.6-13.9-4.2-21c-1.1-15.1-1-30.3-2.3-45.4c-1.9-22.4-6.6-43.8-25.4-59c-0.4-0.3-0.6-0.8-1-1.1c-1.2-0.9-2.3-2-3.6-2.5c-17.9-6.3-35.7-12.7-53.7-18.6c-6.2-2-10-5.6-11.3-11.9c-3.8-18.7,11.6-36.6,30.6-35.4c7.6,0.5,8.7-0.4,8.5-8.2c-0.1-5-0.5-10-1-15c-1.8-16.2-10.4-23.7-26.8-23c-5.8,0.2-11.6,1.1-17.4,1.4c-11,0.6-14.6,2.7-17.7,13.3c-3.2,10.7-5.3,21.6-8,32.4c-1,4-2,8.1-3.7,11.8c-1.8,3.9-5.2,4.5-8.8,2.1c-4.8-3.3-8.6-7.5-9.4-13.5C123.1,129.8,121.8,117.9,120.2,104.9z"/></g></svg></li>
-						</ul>
-					</div>
-					<span>сентябрь-март</span>
-				</div><!-- col(1) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/education-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">программа 3</h3>
-						<p class="post-subtitle">студенты</p>
-						<p>краткое описание программы</p>
-						<b>навыки:</b>
-						<ul>
-							<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" fill="#8957fc" y="0px" viewBox="0 0 203.9 362.3" style="enable-background:new 0 0 203.9 362.3;" xml:space="preserve"><path d="M0,180.6c0-48.8,0-97.7,0-146.5C0,13.4,13.4,0,34.1,0c45.5,0,91,0,136.5,0c19.3,0,33.3,13.6,33.3,32.9c0.1,98.7,0.1,197.3,0,296c0,19.8-13.6,33.3-33.4,33.3c-46.2,0.1-92.3,0.1-138.5,0c-18.1,0-31.9-14-31.9-32.1C0,280.3,0,230.4,0,180.6C0,180.6,0,180.6,0,180.6z M181.7,289.5c0-79.6,0-158.6,0-237.8c-53.4,0-106.4,0-159.7,0c0,79.4,0,158.4,0,237.8C75.4,289.5,128.4,289.5,181.7,289.5z M82.9,324.9c0,10.7,8.1,19.2,18.7,19.3c10.7,0.1,19.5-8.5,19.4-19.2c0-10.5-8.5-19-19.1-19C91.3,305.9,82.9,314.3,82.9,324.9z"/></svg></li>
-						</ul>
-					</div>
-					<span>сентябрь-март</span>
-				</div><!-- col(2) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/education-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">программа 3</h3>
-						<p class="post-subtitle">студенты</p>
-						<p>краткое описание программы</p>
-						<b>навыки:</b>
-						<ul>
-							<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" fill="#8957fc" y="0px" viewBox="0 0 203.9 362.3" style="enable-background:new 0 0 203.9 362.3;" xml:space="preserve"><path d="M0,180.6c0-48.8,0-97.7,0-146.5C0,13.4,13.4,0,34.1,0c45.5,0,91,0,136.5,0c19.3,0,33.3,13.6,33.3,32.9c0.1,98.7,0.1,197.3,0,296c0,19.8-13.6,33.3-33.4,33.3c-46.2,0.1-92.3,0.1-138.5,0c-18.1,0-31.9-14-31.9-32.1C0,280.3,0,230.4,0,180.6C0,180.6,0,180.6,0,180.6z M181.7,289.5c0-79.6,0-158.6,0-237.8c-53.4,0-106.4,0-159.7,0c0,79.4,0,158.4,0,237.8C75.4,289.5,128.4,289.5,181.7,289.5z M82.9,324.9c0,10.7,8.1,19.2,18.7,19.3c10.7,0.1,19.5-8.5,19.4-19.2c0-10.5-8.5-19-19.1-19C91.3,305.9,82.9,314.3,82.9,324.9z"/></svg></li>
-						</ul>
-					</div>
-					<span>сентябрь-март</span>
-				</div><!-- col(3) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/education-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">программа 3</h3>
-						<p class="post-subtitle">студенты</p>
-						<p>краткое описание программы</p>
-						<b>навыки:</b>
-						<ul>
-							<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" fill="#8957fc" y="0px" viewBox="0 0 203.9 362.3" style="enable-background:new 0 0 203.9 362.3;" xml:space="preserve"><path d="M0,180.6c0-48.8,0-97.7,0-146.5C0,13.4,13.4,0,34.1,0c45.5,0,91,0,136.5,0c19.3,0,33.3,13.6,33.3,32.9c0.1,98.7,0.1,197.3,0,296c0,19.8-13.6,33.3-33.4,33.3c-46.2,0.1-92.3,0.1-138.5,0c-18.1,0-31.9-14-31.9-32.1C0,280.3,0,230.4,0,180.6C0,180.6,0,180.6,0,180.6z M181.7,289.5c0-79.6,0-158.6,0-237.8c-53.4,0-106.4,0-159.7,0c0,79.4,0,158.4,0,237.8C75.4,289.5,128.4,289.5,181.7,289.5z M82.9,324.9c0,10.7,8.1,19.2,18.7,19.3c10.7,0.1,19.5-8.5,19.4-19.2c0-10.5-8.5-19-19.1-19C91.3,305.9,82.9,314.3,82.9,324.9z"/></svg></li>
-						</ul>
-					</div>
-					<span>сентябрь-март</span>
-				</div><!-- col(4) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/education-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">программа 3</h3>
-						<p class="post-subtitle">студенты</p>
-						<p>краткое описание программы</p>
-						<b>навыки:</b>
-						<ul>
-							<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" fill="#8957fc" y="0px" viewBox="0 0 203.9 362.3" style="enable-background:new 0 0 203.9 362.3;" xml:space="preserve"><path d="M0,180.6c0-48.8,0-97.7,0-146.5C0,13.4,13.4,0,34.1,0c45.5,0,91,0,136.5,0c19.3,0,33.3,13.6,33.3,32.9c0.1,98.7,0.1,197.3,0,296c0,19.8-13.6,33.3-33.4,33.3c-46.2,0.1-92.3,0.1-138.5,0c-18.1,0-31.9-14-31.9-32.1C0,280.3,0,230.4,0,180.6C0,180.6,0,180.6,0,180.6z M181.7,289.5c0-79.6,0-158.6,0-237.8c-53.4,0-106.4,0-159.7,0c0,79.4,0,158.4,0,237.8C75.4,289.5,128.4,289.5,181.7,289.5z M82.9,324.9c0,10.7,8.1,19.2,18.7,19.3c10.7,0.1,19.5-8.5,19.4-19.2c0-10.5-8.5-19-19.1-19C91.3,305.9,82.9,314.3,82.9,324.9z"/></svg></li>
-						</ul>
-					</div>
-					<span>сентябрь-март</span>
-				</div><!-- col(5) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/education-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">программа 3</h3>
-						<p class="post-subtitle">студенты</p>
-						<p>краткое описание программы</p>
-						<b>навыки:</b>
-						<ul>
-							<li><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" fill="#8957fc" y="0px" viewBox="0 0 203.9 362.3" style="enable-background:new 0 0 203.9 362.3;" xml:space="preserve"><path d="M0,180.6c0-48.8,0-97.7,0-146.5C0,13.4,13.4,0,34.1,0c45.5,0,91,0,136.5,0c19.3,0,33.3,13.6,33.3,32.9c0.1,98.7,0.1,197.3,0,296c0,19.8-13.6,33.3-33.4,33.3c-46.2,0.1-92.3,0.1-138.5,0c-18.1,0-31.9-14-31.9-32.1C0,280.3,0,230.4,0,180.6C0,180.6,0,180.6,0,180.6z M181.7,289.5c0-79.6,0-158.6,0-237.8c-53.4,0-106.4,0-159.7,0c0,79.4,0,158.4,0,237.8C75.4,289.5,128.4,289.5,181.7,289.5z M82.9,324.9c0,10.7,8.1,19.2,18.7,19.3c10.7,0.1,19.5-8.5,19.4-19.2c0-10.5-8.5-19-19.1-19C91.3,305.9,82.9,314.3,82.9,324.9z"/></svg></li>
-						</ul>
-					</div>
-					<span>сентябрь-март</span>
-				</div><!-- col(6) -->
-			</div>
-		</section>
-		<!-- end program -->
-		<!-- start experience -->
-		<section class="section experience">
-			<div class="wrapper">
-				<div class="experience-descr">
-					<h2 class="section-title">Настоящий опыт IT вместе с лидером индустрии –<br> Croc Incorporated</h2>
-					<p>Познакомимся? Мы – широкое сообщество<br> профессионалов. За нашими плечами – проекты, которые меняют страну. От МТС до МЧС, <br>от Третьяковской Галереи до Московского Судоходства.</p>
-					<p>Мы помогаем брендам со всех уголков страны шагнуть <br>в мир высоких технологий.</p>
-				</div>
-			</div>
-			<div class="experience-slider">
-				<div class="experience-slide">
-					<div class="experience-slide__img" style="background: url(img/experience-1.jpg);"></div>
-					<a href="#"></a>
-					<h3 class="experience-slide__title">Автоматизация Московского судоходства</h3>
-				</div><!-- slide(1) -->
-				<div class="experience-slide">
-					<div class="experience-slide__img" style="background: url(img/experience-2.jpg);"></div>
-					<a href="#"></a>
-					<h3 class="experience-slide__title">Строительство контакт-центра мтс</h3>
-				</div><!-- slide(2) -->
-				<div class="experience-slide">
-					<div class="experience-slide__img" style="background: url(img/experience-3.jpg);"></div>
-					<a href="#"></a>
-					<h3 class="experience-slide__title">Автоматизация работы службы мчс</h3>
-				</div><!-- slide(3) -->
-			</div>
-		</section>
-		<!-- end experience -->
-		<!-- start about -->
-		<section class="section about">
-			<div class="wrapper">
-				<h2 class="title-big about-title">Портал BrainZ</h2>
-				<h2 class="section-title">образование в ногу со временем</h2>
-				<p>Наш портал – нечто большее чем просто сайт для учебы. Это сеть, в которой можно оставаться на связи, завоёвывать новые достижения, отслеживать свой прогресс и находиться в контакте с наставниками. Портал Brainz – учебное приложение нового поколения.</p>
-			</div>
-			<div class="about-img">
-				<img src="img/imac.png" alt="">
-				<img class="imac-mob" src="img/BrainZ_iMac.png" alt="">
-			</div>
-		</section>
-		<!-- end about -->
-		<!-- start developments -->
-		<section class="section developments">
-			<div class="wrapper">
-				<h2 class="section-title">События в Croc <br>Лучше один раз попробовать</h2>
-			</div>
-			<div class="post-row">
-				<div class="post">
-					<div class="post-img" style="background: url(img/developments-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">событие 1 </h3>
-						<p>краткое описание программы</p>
-						<p>место проведения</p>
-						<b>навыки:</b>
-					</div>
-					<span>15 апреля   |   15:30</span>
-				</div><!-- col(1) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/developments-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">событие 1 </h3>
-						<p>краткое описание программы</p>
-						<p>место проведения</p>
-						<b>навыки:</b>
-					</div>
-					<span>15 апреля   |   15:30</span>
-				</div><!-- col(2) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/developments-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">событие 1 </h3>
-						<p>краткое описание программы</p>
-						<p>место проведения</p>
-						<b>навыки:</b>
-					</div>
-					<span>15 апреля   |   15:30</span>
-				</div><!-- col(3) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/developments-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">событие 1 </h3>
-						<p>краткое описание программы</p>
-						<p>место проведения</p>
-						<b>навыки:</b>
-					</div>
-					<span>15 апреля   |   15:30</span>
-				</div><!-- col(4) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/developments-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">событие 1 </h3>
-						<p>краткое описание программы</p>
-						<p>место проведения</p>
-						<b>навыки:</b>
-					</div>
-					<span>15 апреля   |   15:30</span>
-				</div><!-- col(5) -->
-				<div class="post">
-					<div class="post-img" style="background: url(img/developments-1.jpg);"></div>
-					<a href="#"></a>
-					<div class="post-descr">
-						<h3 class="post-title">событие 1 </h3>
-						<p>краткое описание программы</p>
-						<p>место проведения</p>
-						<b>навыки:</b>
-					</div>
-					<span>15 апреля   |   15:30</span>
-				</div><!-- col(6) -->
-			</div>
-		</section>
-		<!-- end developments -->
-		<!-- start register -->
-		<section class="section register">
-			<div class="wrapper">
-				<h2 class="title-big register-title">Регистрируйся сейчас и прокачивай мозг вместе с Brainz</h2>
-				<a href="#modal-form" class="button-modal main-button">регистрация</a>
-			</div>
-		</section>
-		<!-- end register -->
-		<!-- start partner -->
-		<section class="section partner">
-			<div class="wrapper">
-				<div class="partner-head">
-					<h2 class="section-title">погружение в it вместе <br>Гигантами бизнеса и образования</h2>
-					<div>
+			<nav class="nav">
+				<ul>
+					<li>
 						<a href="#">
-							<img src="img/croclogopng.png" alt="">
-							<span>Автор и идеолог проекта</span>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+						    <defs>
+						        <path id="a" d="M12 28v-2.014a2 2 0 0 1 1.368-1.898L15 23.544V28h-3zm17-17v2.058a2 2 0 0 1-1.368 1.898L26 15.5V14h-8a3 3 0 0 0-3 3v4h-1a2 2 0 0 1-2-2v-3a5 5 0 0 1 5-5h12zm-3 7h1a2 2 0 0 1 2 2v3a5 5 0 0 1-5 5h-6v-3h5a3 3 0 0 0 3-3v-4zm-3-1v4a1 1 0 0 1-1 1h-4v-4a1 1 0 0 1 1-1h4z"/>
+						    </defs>
+						    <g fill="none" fill-rule="evenodd">
+						        <mask id="b" fill="#fff">
+						            <use xlink:href="#a"/>
+						        </mask>
+						        <use fill="#D8D8D8" opacity=".5" xlink:href="#a"/>
+						        <g fill="#FFF" mask="url(#b)">
+						            <path d="M0 0h40v40H0z"/>
+						        </g>
+						    </g>
+						</svg>
+							<span>About us</span>
 						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+						    <defs>
+						        <path id="a" d="M12 28v-2.014a2 2 0 0 1 1.368-1.898L15 23.544V28h-3zm17-17v2.058a2 2 0 0 1-1.368 1.898L26 15.5V14h-8a3 3 0 0 0-3 3v4h-1a2 2 0 0 1-2-2v-3a5 5 0 0 1 5-5h12zm-3 7h1a2 2 0 0 1 2 2v3a5 5 0 0 1-5 5h-6v-3h5a3 3 0 0 0 3-3v-4zm-3-1v4a1 1 0 0 1-1 1h-4v-4a1 1 0 0 1 1-1h4z"/>
+						    </defs>
+						    <g fill="none" fill-rule="evenodd">
+						        <mask id="b" fill="#fff">
+						            <use xlink:href="#a"/>
+						        </mask>
+						        <use fill="#D8D8D8" opacity=".5" xlink:href="#a"/>
+						        <g fill="#FFF" mask="url(#b)">
+						            <path d="M0 0h40v40H0z"/>
+						        </g>
+						    </g>
+						</svg>
+							<span>Help</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+						    <defs>
+						        <path id="a" d="M12 28v-2.014a2 2 0 0 1 1.368-1.898L15 23.544V28h-3zm17-17v2.058a2 2 0 0 1-1.368 1.898L26 15.5V14h-8a3 3 0 0 0-3 3v4h-1a2 2 0 0 1-2-2v-3a5 5 0 0 1 5-5h12zm-3 7h1a2 2 0 0 1 2 2v3a5 5 0 0 1-5 5h-6v-3h5a3 3 0 0 0 3-3v-4zm-3-1v4a1 1 0 0 1-1 1h-4v-4a1 1 0 0 1 1-1h4z"/>
+						    </defs>
+						    <g fill="none" fill-rule="evenodd">
+						        <mask id="b" fill="#fff">
+						            <use xlink:href="#a"/>
+						        </mask>
+						        <use fill="#D8D8D8" opacity=".5" xlink:href="#a"/>
+						        <g fill="#FFF" mask="url(#b)">
+						            <path d="M0 0h40v40H0z"/>
+						        </g>
+						    </g>
+							</svg>
+							<span>Space In</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header-button">
+				<a href="#">Sign up</a>
+			</div>
+			<div class="header-bottom">
+				<img src="img/menu-more.svg" alt="">
+				<p>Privacy Policy, Terms of Service</p>
+			</div>
+		</header>
+		<div class="main-top">
+			<div class="main-top__wrap">
+				<div class="main-top__logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="main-top__text">
+					<p>Be free visit any space</p>
+					<span>for 15$ / month</span>
+				</div>
+				<div class="main-top__right">
+					<div class="drop">
+						<p>Eng</p>
+						<ul>
+							<li><a href="#">lo1</a></li>
+							<li><a href="#">lo2</a></li>
+							<li><a href="#">lo3</a></li>
+						</ul>
+					</div>
+					<div class="drop">
+						<p>USD</p>
+						<ul>
+							<li><a href="#">lo1</a></li>
+							<li><a href="#">lo2</a></li>
+							<li><a href="#">lo3</a></li>
+						</ul>
+					</div>
+					<div class="main-top__buttons">
+						<a class="active" href="#">Log in</a>
+						<a href="#">Sign up</a>
+					</div>
+					<div class="main-top__account" style="display: none;">
+						<ul>
+							<li><a href="#"><img src="img/history.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/heart.svg" alt=""></a></li>
+						</ul>
+						<div class="main-top__human">
+							<img src="img/user.png" alt="">
+						</div>
 					</div>
 				</div>
-				<div class="partner-row">
-					<div class="partner-col"><a href="#"><img src="img/partner-1.png" alt=""></a></div>
-					<div class="partner-col"><a href="#"><img src="img/partner-2.png" alt=""></a></div>
-					<div class="partner-col"><a href="#"><img src="img/partner-3.png" alt=""></a></div>
-					<div class="partner-col"><a href="#"><img src="img/partner-4.png" alt=""></a></div>
-					<div class="partner-col"><a href="#"><img src="img/partner-5.png" alt=""></a></div>
-					<div class="partner-col"><a href="#"><img src="img/partner-6.png" alt=""></a></div>
-					<div class="partner-col"><a href="#"><img src="img/partner-7.png" alt=""></a></div>
-					<div class="partner-col"><a href="#"><img src="img/partner-8.png" alt=""></a></div>
-				</div>
-				<div class="partner-arrow">
-					<a href="#"><img src="img/arrow-right.png" alt=""></a>
-				</div>
-			</div>
-		</section>
-		<!-- end partner -->
-		<!-- start stories -->
-		<section class="section stories">
-			<div class="wrapper">
-				<h2 class="title-big stories-title">BrainZ stories</h2>
-			</div>
-			<div class="stories-slider">
-				<div class="stories-slide">
-					<div class="stories-slide__img" style="background: url(img/stories-1.jpg);"></div>
-					<div class="stories-slide__descr">
-						<div class="stories-slide__descr-top">
-							<p>М.Литвинова, А. Фикс, Н. Янушкевич, Т. Алексеенок</p>
-							<h3>Команда кураторов «Летней IT-Школы»"</h3>
-						</div>
-						<div class="stories-slide__descr-bottom">
-							<p>300 выпускников программы</p>
-							<p>5 лет работы проекта</p>
-						</div>
-					</div>
-				</div><!-- slide(1) -->
-				<div class="stories-slide">
-					<div class="stories-slide__img" style="background: url(img/stories-1.jpg);"></div>
-					<div class="stories-slide__descr">
-						<div class="stories-slide__descr-top">
-							<p>2М.Литвинова, А. Фикс, Н. Янушкевич, Т. Алексеенок</p>
-							<h3>Команда кураторов «Летней IT-Школы»"</h3>
-						</div>
-						<div class="stories-slide__descr-bottom">
-							<p>300 выпускников программы</p>
-							<p>5 лет работы проекта</p>
-						</div>
-					</div>
-				</div><!-- slide(2) -->
-				<div class="stories-slide">
-					<div class="stories-slide__img" style="background: url(img/stories-1.jpg);"></div>
-					<div class="stories-slide__descr">
-						<div class="stories-slide__descr-top">
-							<p>3М.Литвинова, А. Фикс, Н. Янушкевич, Т. Алексеенок</p>
-							<h3>Команда кураторов «Летней IT-Школы»"</h3>
-						</div>
-						<div class="stories-slide__descr-bottom">
-							<p>300 выпускников программы</p>
-							<p>5 лет работы проекта</p>
-						</div>
-					</div>
-				</div><!-- slide(3) -->
-			</div>
-		</section>
-		<!-- end stories -->
-		<!-- start footer -->
-		<section class="section footer">
-			<div class="footer-top">
-				<div class="wrapper">
-					<h2 class="section-title">Любой способ связи</h2>
-					<div class="footer-social">
-						<div class="footer-social__col">
-							<a href="#"></a>
-							<div class="footer-social__col-active">
-								<img src="img/telegram_icon.svg" alt="">
-							</div>
-							<span>чат-бот Telegram</span>
-						</div><!-- col(1) -->
-						<div class="footer-social__col">
-							<a href="#"></a>
-							<div class="footer-social__col-active">
-								<img src="img/vk_icon.svg" alt="">
-							</div>
-							<span>чат-бот вконтакте</span>
-						</div><!-- col(2) -->
-						<div class="footer-social__col">
-							<a href="#"></a>
-							<div>
-								<img src="img/telegram_icon.svg" alt="">
-							</div>
-							<span>Telegram-канал</span>
-						</div><!-- col(3) -->
-						<div class="footer-social__col">
-							<a href="#"></a>
-							<div>
-								<img src="img/telegram_icon.svg" alt="">
-							</div>
-							<span>группа вконтакте</span>
-						</div><!-- col(4) -->
-						<div class="footer-social__col">
-							<a href="#"></a>
-							<div>
-								<img src="img/fb_icon.svg" alt="">
-							</div>
-							<span>группа facebook</span>
-						</div><!-- col(5) -->
-						<div class="footer-social__col">
-							<a href="#"></a>
-							<div>
-								<img src="img/insta_icon.svg" alt="">
-							</div>
-							<span>instagram</span>
-						</div><!-- col(5) -->
+				<div class="main-top__mob">
+					<ul>
+						<li><a href="#"><img src="img/mask.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/heart-o-anticon.svg" alt=""></a></li>
+					</ul>
+					<div class="bar-menu">
+						<img src="img/menu-burger.svg" alt="">
 					</div>
 				</div>
 			</div>
-			<div class="footer-bottom">
-				<div class="wrapper">
+		</div>
+		<div class="search">
+			<ul class="search-tabs">
+				<li><a class="active" href="#">Meeting Room</a></li>
+				<li><a href="#">Workplace</a></li>
+				<li><a href="#">Private Office</a></li>
+			</ul>
+			<div class="search-row">
+				<form action="">
 					<div>
-						<p>ЗАО «КРОК ИНКОРПОРЭЙТЕД» 2018 <br>все права защищены</p>
+						<input type="text" placeholder="Search by area, postcode, or station">
+						<img src="img/search.svg" alt="">
 					</div>
-					<div class="footer-bottom__right">
-						<p>разработано с удовольствием<br>в sky corp.</p>
+					<select name="select">
+						<option>2-6 persons</option>
+						<option>6-12 persons</option>
+						<option>12-18 persons</option>
+					</select>
+					<input class="main-button submit" type="submit" value="Search">
+				</form>
+			</div>
+		</div>
+		<div class="main-slider">
+			<div class="main-slide" style="background: url(img/off-slide-1.jpeg);">
+				<div class="wrapper">
+					<h2 class="main-slide__title">A Cool Title for the First Screen</h2>
+				</div>
+			</div><!-- slide(1) -->
+			<div class="main-slide" style="background: url(img/11.jpeg);">
+				<div class="wrapper">
+					<h2 class="main-slide__title">A Cool Title for the First Screen</h2>
+				</div>
+			</div><!-- slide(2) -->
+			<div class="main-slide" style="background: url(img/22.jpeg);">
+				<div class="wrapper">
+					<h2 class="main-slide__title">A Cool Title for the First Screen</h2>
+				</div>
+			</div><!-- slide(3) -->
+		</div>
+		<div class="main-descr">
+			<div class="main-bottom wrapper">
+				<p>The Best Offices to Work in Your City</p>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start content -->
+	<section class="content">
+		<div class="wrapper">
+			<h2 class="page-title">The Best Offices to Work in Your City</h2>
+		</div>
+		<div class="offices-row">
+			<div class="offices-col">
+				<div class="offices-img" style="background: url(img/2.jpeg);"></div>
+				<div class="offices-like">
+					<a href="#"><img src="img/no-bg.svg" alt=""></a>
+					<a href="#"><img class="hide" src="img/white.svg" alt=""></a>
+				</div>
+				<a class="offices-tag" href="#">Available Now</a>
+				<div class="offices-slider">
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+				</div>
+				<div class="offices-contact">
+					<div class="offices-contact__img">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="offices-contact__descr">
+						<p>Second Home</p>
+						<span>Zarya Katrinskatu, 8</span>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- end footer -->
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="js/scripts.min.js"></script>
+				<div class="offices-descr">
+					<div>
+						<h3 class="offices-name"><a href="#">Upgrading To Microsoft Windows Vista Tips</a></h3>
+						<div>
+							<p><b>379</b> USD / month</p>
+							<span>~ 3 200 rub</span>
+						</div>
+					</div>
+					<div class="offices-right">
+						<ul>
+							<li><span>8</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"><path fill="#FFF" fill-rule="evenodd" d="M17.733 6.857c1.965 0 3.54-1.531 3.54-3.428C21.273 1.53 19.698 0 17.733 0s-3.551 1.531-3.551 3.429c0 1.897 1.586 3.428 3.551 3.428zm-9.454 0c1.965 0 3.54-1.531 3.54-3.428C11.818 1.53 10.243 0 8.278 0S4.727 1.531 4.727 3.429c0 1.897 1.587 3.428 3.552 3.428zm-.006 2.286c-2.754 0-8.273 1.337-8.273 4V16h16.545v-2.857c0-2.663-5.519-4-8.272-4zm9.423 0c-.344 0-.735.023-1.15.057 1.376.96 2.336 2.251 2.336 3.943V16H26v-2.857c0-2.663-5.54-4-8.304-4z"/></svg></li>
+							<li><span>12 m²</span><img class="img-bg" src="img/rectangle.svg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- col(1) -->
+			<div class="offices-col">
+				<div class="offices-img" style="background: url(img/2.jpeg);"></div>
+				<div class="offices-like">
+					<a href="#"><img src="img/no-bg.svg" alt=""></a>
+					<a href="#"><img class="hide" src="img/white.svg" alt=""></a>
+				</div>
+				<a class="offices-tag tag-white" href="#">Available from Apr, 5</a>
+				<div class="offices-slider">
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+				</div>
+				<div class="offices-contact">
+					<div class="offices-contact__img">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="offices-contact__descr">
+						<p>Second Home</p>
+						<span>Zarya Katrinskatu, 8</span>
+					</div>
+				</div>
+				<div class="offices-descr">
+					<div>
+						<h3 class="offices-name"><a href="#">Upgrading To Microsoft Windows Vista Tips</a></h3>
+						<div>
+							<p><b>379</b> USD / month</p>
+							<span>~ 3 200 rub</span>
+						</div>
+					</div>
+					<div class="offices-right">
+						<ul>
+							<li><span>8</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"><path fill="#FFF" fill-rule="evenodd" d="M17.733 6.857c1.965 0 3.54-1.531 3.54-3.428C21.273 1.53 19.698 0 17.733 0s-3.551 1.531-3.551 3.429c0 1.897 1.586 3.428 3.551 3.428zm-9.454 0c1.965 0 3.54-1.531 3.54-3.428C11.818 1.53 10.243 0 8.278 0S4.727 1.531 4.727 3.429c0 1.897 1.587 3.428 3.552 3.428zm-.006 2.286c-2.754 0-8.273 1.337-8.273 4V16h16.545v-2.857c0-2.663-5.519-4-8.272-4zm9.423 0c-.344 0-.735.023-1.15.057 1.376.96 2.336 2.251 2.336 3.943V16H26v-2.857c0-2.663-5.54-4-8.304-4z"/></svg></li>
+							<li><span>12 m²</span><img class="img-bg" src="img/rectangle.svg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- col(2) -->
+			<div class="offices-col offices-col__small">
+				<div class="offices-img" style="background: url(img/2.jpeg);"></div>
+				<div class="offices-like">
+					<a href="#"><img src="img/no-bg.svg" alt=""></a>
+					<a href="#"><img class="hide" src="img/white.svg" alt=""></a>
+				</div>
+				<a class="offices-tag" href="#">Available Now</a>
+				<div class="offices-slider">
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+				</div>
+				<div class="offices-contact">
+					<div class="offices-contact__img">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="offices-contact__descr">
+						<p>Second Home</p>
+						<span>Zarya Katrinskatu, 8</span>
+					</div>
+				</div>
+				<div class="offices-descr">
+					<div>
+						<h3 class="offices-name"><a href="#">Upgrading To Microsoft Windows Vista Tips</a></h3>
+						<div>
+							<p><b>379</b> USD / month</p>
+							<span>~ 3 200 rub</span>
+						</div>
+					</div>
+					<div class="offices-right">
+						<ul>
+							<li><span>8</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"><path fill="#FFF" fill-rule="evenodd" d="M17.733 6.857c1.965 0 3.54-1.531 3.54-3.428C21.273 1.53 19.698 0 17.733 0s-3.551 1.531-3.551 3.429c0 1.897 1.586 3.428 3.551 3.428zm-9.454 0c1.965 0 3.54-1.531 3.54-3.428C11.818 1.53 10.243 0 8.278 0S4.727 1.531 4.727 3.429c0 1.897 1.587 3.428 3.552 3.428zm-.006 2.286c-2.754 0-8.273 1.337-8.273 4V16h16.545v-2.857c0-2.663-5.519-4-8.272-4zm9.423 0c-.344 0-.735.023-1.15.057 1.376.96 2.336 2.251 2.336 3.943V16H26v-2.857c0-2.663-5.54-4-8.304-4z"/></svg></li>
+							<li><span>12 m²</span><img class="img-bg" src="img/rectangle.svg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- col(3) -->
+			<div class="offices-col offices-card">
+				<div class="offices-card__descr">
+					<div>
+						<h3 class="offices-card__title">Info Card Example</h3>
+						<p>Having a baby can be a nerve wracking experience for new parents – not the nine months of pregnancy, I’m talking about after the infant is brought home from the hospital. </p>
+						<a href="#">Learn More</a>
+					</div>
+				</div>
+			</div><!-- col(4) -->
+			<div class="offices-col">
+				<div class="offices-img" style="background: url(img/2.jpeg);"></div>
+				<div class="offices-like">
+					<a href="#"><img src="img/no-bg.svg" alt=""></a>
+					<a href="#"><img class="hide" src="img/white.svg" alt=""></a>
+				</div>
+				<a class="offices-tag" href="#">Available Now</a>
+				<div class="offices-slider">
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+				</div>
+				<div class="offices-contact">
+					<div class="offices-contact__img">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="offices-contact__descr">
+						<p>Second Home</p>
+						<span>Zarya Katrinskatu, 8</span>
+					</div>
+				</div>
+				<div class="offices-descr">
+					<div>
+						<h3 class="offices-name"><a href="#">Upgrading To Microsoft Windows Vista Tips</a></h3>
+						<div>
+							<p><b>379</b> USD / month</p>
+							<span>~ 3 200 rub</span>
+						</div>
+					</div>
+					<div class="offices-right">
+						<ul>
+							<li><span>8</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"><path fill="#FFF" fill-rule="evenodd" d="M17.733 6.857c1.965 0 3.54-1.531 3.54-3.428C21.273 1.53 19.698 0 17.733 0s-3.551 1.531-3.551 3.429c0 1.897 1.586 3.428 3.551 3.428zm-9.454 0c1.965 0 3.54-1.531 3.54-3.428C11.818 1.53 10.243 0 8.278 0S4.727 1.531 4.727 3.429c0 1.897 1.587 3.428 3.552 3.428zm-.006 2.286c-2.754 0-8.273 1.337-8.273 4V16h16.545v-2.857c0-2.663-5.519-4-8.272-4zm9.423 0c-.344 0-.735.023-1.15.057 1.376.96 2.336 2.251 2.336 3.943V16H26v-2.857c0-2.663-5.54-4-8.304-4z"/></svg></li>
+							<li><span>12 m²</span><img class="img-bg" src="img/rectangle.svg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- col(5) -->
+			<div class="offices-col">
+				<div class="offices-img" style="background: url(img/2.jpeg);"></div>
+				<div class="offices-like">
+					<a href="#"><img src="img/no-bg.svg" alt=""></a>
+					<a href="#"><img class="hide" src="img/white.svg" alt=""></a>
+				</div>
+				<a class="offices-tag" href="#">Available Now</a>
+				<div class="offices-slider">
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+				</div>
+				<div class="offices-contact">
+					<div class="offices-contact__img">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="offices-contact__descr">
+						<p>Second Home</p>
+						<span>Zarya Katrinskatu, 8</span>
+					</div>
+				</div>
+				<div class="offices-descr">
+					<div>
+						<h3 class="offices-name"><a href="#">Upgrading To Microsoft Windows Vista Tips</a></h3>
+						<div>
+							<p><b>379</b> USD / month</p>
+							<span>~ 3 200 rub</span>
+						</div>
+					</div>
+					<div class="offices-right">
+						<ul>
+							<li><span>8</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"><path fill="#FFF" fill-rule="evenodd" d="M17.733 6.857c1.965 0 3.54-1.531 3.54-3.428C21.273 1.53 19.698 0 17.733 0s-3.551 1.531-3.551 3.429c0 1.897 1.586 3.428 3.551 3.428zm-9.454 0c1.965 0 3.54-1.531 3.54-3.428C11.818 1.53 10.243 0 8.278 0S4.727 1.531 4.727 3.429c0 1.897 1.587 3.428 3.552 3.428zm-.006 2.286c-2.754 0-8.273 1.337-8.273 4V16h16.545v-2.857c0-2.663-5.519-4-8.272-4zm9.423 0c-.344 0-.735.023-1.15.057 1.376.96 2.336 2.251 2.336 3.943V16H26v-2.857c0-2.663-5.54-4-8.304-4z"/></svg></li>
+							<li><span>12 m²</span><img class="img-bg" src="img/rectangle.svg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- col(6) -->
+			<div class="offices-col offices-col__small">
+				<div class="offices-img" style="background: url(img/2.jpeg);"></div>
+				<div class="offices-like">
+					<a href="#"><img src="img/no-bg.svg" alt=""></a>
+					<a href="#"><img class="hide" src="img/white.svg" alt=""></a>
+				</div>
+				<a class="offices-tag" href="#">Available Now</a>
+				<div class="offices-slider">
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+				</div>
+				<div class="offices-contact">
+					<div class="offices-contact__img">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="offices-contact__descr">
+						<p>Second Home</p>
+						<span>Zarya Katrinskatu, 8</span>
+					</div>
+				</div>
+				<div class="offices-descr">
+					<div>
+						<h3 class="offices-name"><a href="#">Upgrading To Microsoft Windows Vista Tips</a></h3>
+						<div>
+							<p><b>379</b> USD / month</p>
+							<span>~ 3 200 rub</span>
+						</div>
+					</div>
+					<div class="offices-right">
+						<ul>
+							<li><span>8</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"><path fill="#FFF" fill-rule="evenodd" d="M17.733 6.857c1.965 0 3.54-1.531 3.54-3.428C21.273 1.53 19.698 0 17.733 0s-3.551 1.531-3.551 3.429c0 1.897 1.586 3.428 3.551 3.428zm-9.454 0c1.965 0 3.54-1.531 3.54-3.428C11.818 1.53 10.243 0 8.278 0S4.727 1.531 4.727 3.429c0 1.897 1.587 3.428 3.552 3.428zm-.006 2.286c-2.754 0-8.273 1.337-8.273 4V16h16.545v-2.857c0-2.663-5.519-4-8.272-4zm9.423 0c-.344 0-.735.023-1.15.057 1.376.96 2.336 2.251 2.336 3.943V16H26v-2.857c0-2.663-5.54-4-8.304-4z"/></svg></li>
+							<li><span>12 m²</span><img class="img-bg" src="img/rectangle.svg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- col(7) -->
+			<div class="offices-col offices-col__small">
+				<div class="offices-img" style="background: url(img/2.jpeg);"></div>
+				<div class="offices-like">
+					<a href="#"><img src="img/no-bg.svg" alt=""></a>
+					<a href="#"><img class="hide" src="img/white.svg" alt=""></a>
+				</div>
+				<a class="offices-tag" href="#">Available Now</a>
+				<div class="offices-slider">
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+				</div>
+				<div class="offices-contact">
+					<div class="offices-contact__img">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="offices-contact__descr">
+						<p>Second Home</p>
+						<span>Zarya Katrinskatu, 8</span>
+					</div>
+				</div>
+				<div class="offices-descr">
+					<div>
+						<h3 class="offices-name"><a href="#">Upgrading To Microsoft Windows Vista Tips</a></h3>
+						<div>
+							<p><b>379</b> USD / month</p>
+							<span>~ 3 200 rub</span>
+						</div>
+					</div>
+					<div class="offices-right">
+						<ul>
+							<li><span>8</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"><path fill="#FFF" fill-rule="evenodd" d="M17.733 6.857c1.965 0 3.54-1.531 3.54-3.428C21.273 1.53 19.698 0 17.733 0s-3.551 1.531-3.551 3.429c0 1.897 1.586 3.428 3.551 3.428zm-9.454 0c1.965 0 3.54-1.531 3.54-3.428C11.818 1.53 10.243 0 8.278 0S4.727 1.531 4.727 3.429c0 1.897 1.587 3.428 3.552 3.428zm-.006 2.286c-2.754 0-8.273 1.337-8.273 4V16h16.545v-2.857c0-2.663-5.519-4-8.272-4zm9.423 0c-.344 0-.735.023-1.15.057 1.376.96 2.336 2.251 2.336 3.943V16H26v-2.857c0-2.663-5.54-4-8.304-4z"/></svg></li>
+							<li><span>12 m²</span><img class="img-bg" src="img/rectangle.svg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- col(8) -->
+			<div class="offices-col offices-col__small">
+				<div class="offices-img" style="background: url(img/2.jpeg);"></div>
+				<div class="offices-like">
+					<a href="#"><img src="img/no-bg.svg" alt=""></a>
+					<a href="#"><img class="hide" src="img/white.svg" alt=""></a>
+				</div>
+				<a class="offices-tag" href="#">Available Now</a>
+				<div class="offices-slider">
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+					<div class="offices-slide" style="background: url(img/off-slide-1.jpeg);"></div>
+				</div>
+				<div class="offices-contact">
+					<div class="offices-contact__img">
+						<img src="img/11.png" alt="">
+					</div>
+					<div class="offices-contact__descr">
+						<p>Second Home</p>
+						<span>Zarya Katrinskatu, 8</span>
+					</div>
+				</div>
+				<div class="offices-descr">
+					<div>
+						<h3 class="offices-name"><a href="#">Upgrading To Microsoft Windows Vista Tips</a></h3>
+						<div>
+							<p><b>379</b> USD / month</p>
+							<span>~ 3 200 rub</span>
+						</div>
+					</div>
+					<div class="offices-right">
+						<ul>
+							<li><span>8</span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"><path fill="#FFF" fill-rule="evenodd" d="M17.733 6.857c1.965 0 3.54-1.531 3.54-3.428C21.273 1.53 19.698 0 17.733 0s-3.551 1.531-3.551 3.429c0 1.897 1.586 3.428 3.551 3.428zm-9.454 0c1.965 0 3.54-1.531 3.54-3.428C11.818 1.53 10.243 0 8.278 0S4.727 1.531 4.727 3.429c0 1.897 1.587 3.428 3.552 3.428zm-.006 2.286c-2.754 0-8.273 1.337-8.273 4V16h16.545v-2.857c0-2.663-5.519-4-8.272-4zm9.423 0c-.344 0-.735.023-1.15.057 1.376.96 2.336 2.251 2.336 3.943V16H26v-2.857c0-2.663-5.54-4-8.304-4z"/></svg></li>
+							<li><span>12 m²</span><img class="img-bg" src="img/rectangle.svg" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- col(9) -->
+		</div>
+	</section>
+	<!-- end content -->
 </body>
 </html>
