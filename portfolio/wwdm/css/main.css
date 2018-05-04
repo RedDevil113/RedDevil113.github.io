@@ -1077,10 +1077,10 @@ img {
       -webkit-flex-flow: row wrap;
           -ms-flex-flow: row wrap;
               flex-flow: row wrap;
-      -webkit-box-pack: baseline !important;
-      -webkit-justify-content: baseline !important;
-          -ms-flex-pack: baseline !important;
-              justify-content: baseline !important;
+      -webkit-box-pack: normal !important;
+      -webkit-justify-content: normal !important;
+          -ms-flex-pack: normal !important;
+              justify-content: normal !important;
       padding: 5px 12px;
       position: relative; }
       .info-content__user-bottom ul li {
