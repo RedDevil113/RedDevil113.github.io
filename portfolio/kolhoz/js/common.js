@@ -10,7 +10,19 @@ $(document).ready(function(){
     items: 4,
     autoplay: true,
     autoplayTimeout: 5000,
-  	autoplayHoverPause: true
+  	autoplayHoverPause: true,
+  	responsiveClass:true,
+    responsive:{
+      992:{
+          items:4
+      },
+      700:{
+          items:3
+      },
+      300:{
+          items:2
+      },
+    }
 	});
 	
 	$(".offers-slider").owlCarousel({
@@ -26,19 +38,17 @@ $(document).ready(function(){
   	autoplayHoverPause: true
 	});
 
-	//fixed menu
-	$(window).scroll(function(){
-		if($(this).scrollTop() > 500)
-			$('.header').addClass('header-fixed');
-		else
-			$('.header').removeClass('header-fixed');
-	});
-
 	$('.to-map').on('click', function(e){
 		e.preventDefault();
 		var itemId = $(this).attr('href'),
 			blockTop = $(itemId).offset().top;
 		$('html, body').animate({scrollTop : blockTop - $('.header').height()},1000);
+	});
+
+	$('.offers-btn__all').on('click', function(e){
+		e.preventDefault();
+		$(this).css('display', 'none');
+		$('.offers-row .col-md-6').removeClass('offers-hidden');
 	});
 
 	// arrows position
