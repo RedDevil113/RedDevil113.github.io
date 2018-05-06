@@ -376,10 +376,20 @@ img {
 
 /* -- main -- */
 .main {
-  min-height: 750px; }
+  min-height: 750px;
+  margin-top: 91px;
+  position: relative; }
+  .main-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   .main-descr {
     padding-top: 130px;
-    max-width: 610px; }
+    max-width: 610px;
+    position: relative;
+    z-index: 10; }
     .main-descr__tel {
       cursor: pointer;
       max-width: 450px;
@@ -715,7 +725,8 @@ img {
     -webkit-border-radius: 30px;
             border-radius: 30px;
     -webkit-box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.43);
-            box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.43); }
+            box-shadow: 3px 4px 24px 0px rgba(0, 0, 0, 0.43);
+    z-index: 98; }
     .map-descr .main-button {
       max-width: 430px;
       width: 100%; }
@@ -834,6 +845,14 @@ img {
           .footer-descr ul li a:hover {
             color: #fff; }
 
+@media only screen and (max-width: 1910px) {
+  .main {
+    min-height: 100% !important; }
+    .main-img {
+      position: static; }
+    .main .wrapper {
+      display: none; } }
+
 @media only screen and (max-width: 1500px) {
   .offers-slider {
     padding: 0 0 0 50px; }
@@ -927,6 +946,8 @@ img {
     .header-right .main-button {
       font-size: 18px;
       padding: 8px 15px; }
+  .main {
+    margin-top: 86px; }
   .mission-descr p, .mission-descr span {
     font-size: 22px;
     margin-bottom: 30px; }
@@ -1044,7 +1065,8 @@ img {
       font-size: 14px;
       padding: 5px 10px; }
   .main {
-    min-height: 450px; }
+    min-height: 450px;
+    margin-top: 69px; }
     .main-descr {
       max-width: 300px; }
       .main-descr__tel {
@@ -1120,5 +1142,7 @@ img {
     .header-right .main-button {
       font-size: 12px;
       padding: 5px 10px; }
+  .main {
+    margin-top: 61px; }
   .offers-nav__col {
     max-width: 80px; } }
