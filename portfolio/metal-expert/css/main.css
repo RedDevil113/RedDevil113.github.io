@@ -1068,6 +1068,10 @@ img {
     height: 50%; }
   .delivery-card {
     width: 100%; }
+    .delivery-card__wrap {
+      background: #f7f7f7; }
+  .delivery-descr::after {
+    display: none; }
   .card-col__wrap::after {
     left: 15px; }
   .card-col__descr {
@@ -1201,6 +1205,8 @@ img {
     text-align: center; }
   .map {
     height: auto; }
+    .map .section-title {
+      min-height: 450px; }
   #map {
     height: 450px; }
   .contact-row {
@@ -1219,4 +1225,8 @@ img {
 
 @media only screen and (max-width: 500px) {
   .card-col, .delivery-col, .managers-col {
-    width: 100%; } }
+    width: 100%; }
+  #map {
+    height: 310px; }
+  .map .section-title {
+    min-height: 310px; } }
