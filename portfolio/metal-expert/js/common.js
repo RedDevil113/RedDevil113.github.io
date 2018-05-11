@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('#pagepiling').pagepiling({
     direction: 'horizontal',
 		menu: '#menu',
-		anchors: ['page1', 'page2', 'page3', 'page4']
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6']
 	});
 	
 	//mob menu
@@ -24,6 +24,11 @@ $(document).ready(function() {
 				$('.header-wrap').slideToggle();
 		}
 	});
+
+	lightbox.option({
+	  'resizeDuration': 100,
+	  'wrapAround': true
+	})
 
 	//$('.footer').css('top', $('.section.active').outerHeight() - $('.footer').outerHeight() + 'px');
 
