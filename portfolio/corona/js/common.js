@@ -23,24 +23,52 @@ var video = {
 
 $(document).ready(function(){
 
-	$('select').selectize({});
-
-	//mob menu
-	$('.menu-bar,.arrow-mob').on('click', function(){
-		$('.header').toggleClass('open-menu');
-	});
-
-	function titlePadding(){
+	function explode(){
 		var content = $('.article-col__wrap').each(function(i,elem){
 			var hei = $(this).height(),
 					titleH = $(this).find('h3').height();
 			$(this).find('.article-col__descr').css({"top": hei - titleH - 68 + 'px'});
 		});
 	}
-	titlePadding();
+	setTimeout(explode, 300);
 
 	$(window).resize(function(){
-		titlePadding();
+		explode();
+	});
+
+	/*$('select').selectize({});*/
+
+	$('.search-select').selectize({
+    valueField: 'name',
+    labelField: 'name',
+    placeholder: 'Все отели'
+,    options: [{
+        description: 'Nice Guy',
+        name: 'Brian Reavis',
+        imageUrl: 'http://www.fashionspictures.com/wp-content/uploads/2013/11/short-hairstyles-for-a-square-face-42-150x150.jpg'
+    }, {
+        description: 'Other nice guy',
+        name: 'Nikola Tesla',
+        imageUrl: 'http://www.fashionspictures.com/wp-content/uploads/2013/11/short-hairstyles-for-a-square-face-42-150x150.jpg'
+    }],
+    render: {
+        option: function (item, escape) {
+            return '<div class="option">' +
+                    '<div class="image">' +
+                           '<img class="avatar" src="' + item.imageUrl + '" />' +
+                   '</div>' +
+                    '<div class="text">' +
+                        '<span class="name">' + escape(item.name) + '</span>' +
+                        '<p class="description">' + escape(item.description) + '</p>' +
+                   '</div>' +
+                '</div>';
+        }
+    }
+	});
+
+	//mob menu
+	$('.menu-bar,.arrow-mob').on('click', function(){
+		$('.header').toggleClass('open-menu');
 	});
 
 	$(window).scroll(function(){
@@ -53,5 +81,43 @@ $(document).ready(function(){
 	});
 
 	video.init();
+
+	//slider
+	$('.tour-program__slider').slick({
+	  infinite: true,
+	  arrows: true,
+	  dots: true,
+	  nextArrow: '<button class="slick-arrow slick-next"></button>',
+ 	  prevArrow: '<button class="slick-arrow slick-prev"></button>',
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  autoplay:true,
+	  autoplaySpeed:15000,
+	  speed:1000,
+	  responsive: [
+	    {
+	      breakpoint: 1000,
+	      settings: {
+	        slidesToShow: 2
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 1
+	      }
+	    },
+    ]
+	});
+
+	lightbox.option({
+	  'resizeDuration': 100,
+	  'wrapAround': true
+	})
+
+	$('.tour-program__button p').on('click', function(){
+		$('.tour-program__slider').toggleClass('tour-program__slider-close');
+		$('.tour-program__row').toggleClass('tour-program__row-open');
+	});
 
 });
