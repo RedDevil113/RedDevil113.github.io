@@ -36,34 +36,54 @@ $(document).ready(function(){
 		explode();
 	});
 
-	/*$('select').selectize({});*/
+	//search
+	$('.search-menu li').on('click', function(){
+		$('.search-menu li').removeClass('active');
+		$(this).addClass('active');
+		
+		var attr = $(this).attr('data-tab');
+		$('.search-row').removeClass('tab-1 tab-2 tab-3 tab-4');
+		$('.search-row').addClass(attr);
+	});
 
-	$('.search-select').selectize({
-    valueField: 'name',
-    labelField: 'name',
-    placeholder: 'Все отели'
-,    options: [{
-        description: 'Nice Guy',
-        name: 'Brian Reavis',
-        imageUrl: 'http://www.fashionspictures.com/wp-content/uploads/2013/11/short-hairstyles-for-a-square-face-42-150x150.jpg'
-    }, {
-        description: 'Other nice guy',
-        name: 'Nikola Tesla',
-        imageUrl: 'http://www.fashionspictures.com/wp-content/uploads/2013/11/short-hairstyles-for-a-square-face-42-150x150.jpg'
-    }],
-    render: {
-        option: function (item, escape) {
-            return '<div class="option">' +
-                    '<div class="image">' +
-                           '<img class="avatar" src="' + item.imageUrl + '" />' +
-                   '</div>' +
-                    '<div class="text">' +
-                        '<span class="name">' + escape(item.name) + '</span>' +
-                        '<p class="description">' + escape(item.description) + '</p>' +
-                   '</div>' +
-                '</div>';
-        }
-    }
+	$('.search-col').on('click', function(e){
+		if(!$(this).hasClass("search-col__date")){
+			var target = e.target;
+			$(this).addClass('search-col__active');
+			$(this).find('input').focus();
+
+			if($(target).hasClass("search-col__top-wrap"))
+				$(this).removeClass('search-col__active');
+		}
+	});
+
+	$('.people-select').on('click', function(){
+		$(this).toggleClass('people-select__active');
+	});
+
+	$('.search-col__people-scores').on('click', function(e){
+		var target = e.target,
+				value = +$(this).find('b').text();
+
+		if($(target).hasClass('scores-minus')){
+			if(value != 0)
+				$(this).find('b').text(value - 1);
+		}
+		if($(target).hasClass('scores-pluse')){
+			$(this).find('b').text(value + 1);
+		}
+	});
+
+	$('.people-select__bottom p').on('click', function(){
+		$('.people-select__top p').text($(this).text());
+		$('.people-select__bottom p').removeClass('search-text__active');
+		$(this).addClass('search-text__active');
+	});
+
+	$('.search-col__food .search-col__bottom p').on('click', function(){
+		$('.search-col__food .search-col__top p').text($(this).text());
+		$('.search-col__food .search-col__bottom p').removeClass('search-text__active');
+		$(this).addClass('search-text__active');
 	});
 
 	//mob menu
@@ -113,9 +133,27 @@ $(document).ready(function(){
 	lightbox.option({
 	  'resizeDuration': 100,
 	  'wrapAround': true
-	})
+	});
+
+	//scroll menu
+	var head = $('.page-nav ul');
+
+	$(head).on('click', 'a', function(e){
+
+		e.preventDefault();
+		var itemId = $(this).attr('href'),
+			blockTop = $(itemId).offset().top;
+		$('html, body').animate({scrollTop : blockTop - $(head).height()},500);
+
+	});
 
 	$('.tour-program__button p').on('click', function(){
+		$(this).toggleClass('button-active');
+		if($(this).find('span').text() == 'Развернуть')
+			$(this).find('span').text("Свернуть");
+		else
+			$(this).find('span').text("Развернуть");
+
 		$('.tour-program__slider').toggleClass('tour-program__slider-close');
 		$('.tour-program__row').toggleClass('tour-program__row-open');
 	});
