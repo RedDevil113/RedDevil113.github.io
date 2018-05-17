@@ -37,12 +37,46 @@ $(document).ready(function(){
 	});
 
 	//search
-	$('.search-col__date input').daterangepicker({
+	if($('.search-col__date input').length > 0){
+		$('.search-col__date input').daterangepicker({
 	    opens: 'right'
 	  }, function(start, end, label) {
 	    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 	  });
-	
+	}
+
+	$('.search-col').on('click', function(e){
+		$('.search-col').removeClass('search-col__active');
+		var target = e.target;
+		if(!$(this).hasClass("search-col__date") && !$(this).hasClass("search-col__5")){
+			$(this).addClass('search-col__active');
+			$(this).find('input').focus();
+
+			if($(target).hasClass("search-col__top-wrap"))
+				$(this).removeClass('search-col__active');
+		}
+		else if($(this).hasClass("search-col__5")){
+			$(this).addClass('search-col__active');
+
+			if($(target).hasClass("search-col__top-wrap")){
+				$(this).removeClass('search-col__active');
+			}
+			if(target.tagName == 'P' && !$(target).hasClass("food-value")){
+				$(this).removeClass('search-col__active');
+				console.log('ds');
+			}
+		}
+	});
+
+	$('.search-col__date').on('click', function(){
+		$(this).find('p').text($(this).find('input').val());
+	});
+	/*
+	$('.search-col__5').on('click', function(){
+		$(this).toggleClass('search-col__active');
+	});
+*/
+	//tabs
 	$('.search-menu li').on('click', function(){
 		$('.search-menu li').removeClass('active');
 		$(this).addClass('active');
@@ -50,18 +84,8 @@ $(document).ready(function(){
 		var attr = $(this).attr('data-tab');
 		$('.search-row').removeClass('tab-1 tab-2 tab-3 tab-4');
 		$('.search-row').addClass(attr);
-	});
 
-	$('.search-col').on('click', function(e){
 		$('.search-col').removeClass('search-col__active');
-		if(!$(this).hasClass("search-col__date")){
-			var target = e.target;
-			$(this).addClass('search-col__active');
-			$(this).find('input').focus();
-
-			if($(target).hasClass("search-col__top-wrap"))
-				$(this).removeClass('search-col__active');
-		}
 	});
 
 	$('.people-select').on('click', function(){

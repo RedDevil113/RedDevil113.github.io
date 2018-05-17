@@ -1027,6 +1027,14 @@ p.search-text__active, p.search-text__gold {
   p.search-text__active b, p.search-text__gold b {
     color: #b07f2b !important; }
 
+.daterangepicker.show-calendar .drp-buttons {
+  display: none; }
+
+.daterangepicker td.disabled, .daterangepicker option.disabled {
+  color: #c9ccd3;
+  cursor: not-allowed;
+  text-decoration: line-through; }
+
 .tab-1 .search-col__1 {
   display: none; }
 
