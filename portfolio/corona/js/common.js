@@ -37,6 +37,12 @@ $(document).ready(function(){
 	});
 
 	//search
+	$('.search-col__date input').daterangepicker({
+	    opens: 'right'
+	  }, function(start, end, label) {
+	    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+	  });
+	
 	$('.search-menu li').on('click', function(){
 		$('.search-menu li').removeClass('active');
 		$(this).addClass('active');
@@ -47,6 +53,7 @@ $(document).ready(function(){
 	});
 
 	$('.search-col').on('click', function(e){
+		$('.search-col').removeClass('search-col__active');
 		if(!$(this).hasClass("search-col__date")){
 			var target = e.target;
 			$(this).addClass('search-col__active');
@@ -70,8 +77,23 @@ $(document).ready(function(){
 				$(this).find('b').text(value - 1);
 		}
 		if($(target).hasClass('scores-pluse')){
-			$(this).find('b').text(value + 1);
+			if(value != '4')
+				$(this).find('b').text(value + 1);
 		}
+
+		$('.search-col__people-wrap__bg').removeClass('active-1 active-2 active-3 active-4');
+		$('.search-col__people-wrap__bg').addClass('active-' + $('.search-col__people-children b').text());
+
+		var valueAdults = +$('.search-col__people-adults b').text(),
+				valueChildren = +$('.search-col__people-children b').text();
+
+		if(valueChildren != '0' && valueChildren != '4')
+			$('.search-col__people .search-col__top p').text(valueAdults + ' взрослых, ' + valueChildren + ' детей');
+		else if(valueChildren == '4')
+			$('.search-col__people .search-col__top p').text(valueAdults + ' взрослых, 4 детей');
+		else
+			$('.search-col__people .search-col__top p').text(valueAdults + ' взрослых');
+
 	});
 
 	$('.people-select__bottom p').on('click', function(){
@@ -80,7 +102,7 @@ $(document).ready(function(){
 		$(this).addClass('search-text__active');
 	});
 
-	$('.search-col__food .search-col__bottom p').on('click', function(){
+	$('.search-col__food .search-col__bottom p').on('click', function(e){
 		$('.search-col__food .search-col__top p').text($(this).text());
 		$('.search-col__food .search-col__bottom p').removeClass('search-text__active');
 		$(this).addClass('search-text__active');
@@ -156,6 +178,27 @@ $(document).ready(function(){
 
 		$('.tour-program__slider').toggleClass('tour-program__slider-close');
 		$('.tour-program__row').toggleClass('tour-program__row-open');
+	});
+
+	//modal
+	var modalCont = $('.modal'),
+		modalOver = $('.modal-overlay');
+		
+	$('.button-modal').on('click',function(e){
+	  e.preventDefault();
+	  var id = $(this).attr('href');
+	  $(id).addClass('open');
+	  $(modalOver).addClass('open-overlay');
+
+	 });
+
+	$('.cancel').on('click',function(){
+		$(modalCont).removeClass('open');
+		$(modalOver).removeClass('open-overlay');
+	});
+	$(modalOver).on('click',function(){
+		$(modalCont).removeClass('open');
+		$(modalOver).removeClass('open-overlay');
 	});
 
 });

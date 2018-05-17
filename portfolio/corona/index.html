@@ -18,6 +18,33 @@
 
 </head>
 <body>
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-wrap">
+			<div class="modal-logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="modal-content">
+				<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Обратный звонок</h3>
+					<div class="action-form">
+						<div>
+							<label for="input-1">Ваше имя</label>
+							<input type="text" placeholder="Напишите как вас зовут" id="input-1">
+						</div>
+						<div>
+							<label for="input-2">Номер телефона</label>
+							<input type="text" placeholder="+7 ___ ___ __ __" id="input-2">
+						</div>
+					</div>
+					<button class="button-arrow"><span>Получить предложение</span><img src="img/right.svg" alt=""></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- start page-bg -->
 	<div class="page-bg" style="background: url(img/sky-clouds.png);"></div>
 	<!-- start header -->
 	<header class="header">
@@ -61,7 +88,7 @@
 					</ul>
 					<div class="header-bottom__phone">
 						<a href="#">8 800 540-54-17</a>
-						<p><a href="#">Обратный звонок</a></p>
+						<p><a class="button-modal" href="#modal-form">Обратный звонок</a></p>
 					</div>
 				</div>
 			</div>
@@ -224,6 +251,7 @@
 							</div>
 						</div><!-- col(2) -->
 						<div class="search-col search-col__3 search-col__date">
+							<input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
 							<div class="search-col__wrap">
 								<div class="search-col__top">
 									<img src="img/select-ico-3.svg" alt="">
@@ -238,12 +266,12 @@
 									<div class="search-col__top-wrap"></div>
 									<img src="img/select-ico-4.svg" alt="">
 									<span>Количество человек</span>
-									<p>2 взрослых</p>
+									<p>2 взрослых, 3 детей</p>
 								</div>
 								<div class="search-col__bottom">
 									<div class="search-col__people-wrap">
 										<p>Взрослые:</p>
-										<div class="search-col__people-scores">
+										<div class="search-col__people-scores search-col__people-adults">
 											<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
 											<b>2</b>
 											<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
@@ -251,15 +279,15 @@
 									</div>
 									<div class="search-col__people-wrap">
 										<p>Дети:</p>
-										<div class="search-col__people-scores">
+										<div class="search-col__people-scores search-col__people-children">
 											<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
-											<b>5</b>
+											<b>3</b>
 											<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
 										</div>
 									</div>
-									<div class="search-col__people-wrap search-col__people-wrap__bg">
+									<div class="search-col__people-wrap search-col__people-wrap__bg active-3">
 										<p>Возраст детей:</p>
-										<div class="search-col__people-row">
+										<div class="search-col__people-row people-row__1">
 											<p>1:</p>
 											<div class="search-col__people-scores">
 												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
@@ -267,7 +295,7 @@
 												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
 											</div>
 										</div><!-- row(1) -->
-										<div class="search-col__people-row">
+										<div class="search-col__people-row people-row__2">
 											<p>2:</p>
 											<div class="search-col__people-scores">
 												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
@@ -275,7 +303,7 @@
 												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
 											</div>
 										</div><!-- row(2) -->
-										<div class="search-col__people-row">
+										<div class="search-col__people-row people-row__3">
 											<p>3:</p>
 											<div class="search-col__people-scores">
 												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
@@ -283,7 +311,7 @@
 												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
 											</div>
 										</div><!-- row(3) -->
-										<div class="search-col__people-row">
+										<div class="search-col__people-row people-row__4">
 											<p>4:</p>
 											<div class="search-col__people-scores">
 												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
@@ -291,14 +319,6 @@
 												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
 											</div>
 										</div><!-- row(4) -->
-										<div class="search-col__people-row">
-											<p>5:</p>
-											<div class="search-col__people-scores">
-												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
-												<b></b>
-												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
-											</div>
-										</div><!-- row(5) -->
 									</div>
 									<div class="search-col__people-wrap search-col__people-select">
 										<p>Класс перелёта:</p>
@@ -802,12 +822,15 @@
 		</div><!-- footer-bottom -->
 	</footer>
 	<!-- end footer -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="libs/lightbox2/css/lightbox.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOlA2b3wMEPHqs4h7NzXPuCgQtA0gK9zs&callback=initMap" async defer></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="libs/lightbox2/js/lightbox.min.js"></script>
 	<script src="js/common.js"></script>
