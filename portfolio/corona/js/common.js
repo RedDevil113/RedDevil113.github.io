@@ -41,7 +41,7 @@ $(document).ready(function(){
 		$('.search-col__date').daterangepicker({
 	    autoUpdateInput: false,
 	    autoApply: true,
-	    opens: 'left',
+	    opens: 'right',
 	    minDate: moment(),
 	    maxDate: moment().add(24, 'month'),
 	    dateLimit: {
@@ -54,7 +54,7 @@ $(document).ready(function(){
 	      daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
 	      firstDay: 1,
 	      format: 'DD.MM.YYYY'
-	    }
+	    } 
 	  });
 
 		$('.search-col__date').on('apply.daterangepicker', function(ev, picker) {
@@ -76,7 +76,8 @@ $(document).ready(function(){
 	  */
 
 	  $('.search-col__date').on('cancel.daterangepicker', function(ev, picker) {
-	    $(this).html('Выберите даты');
+	    $(this).find('p').html('Выберите даты');
+	    console.log('dfs');
 	  });
 	  
 	}

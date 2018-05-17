@@ -225,7 +225,7 @@ img {
         display: block; }
   .modal .button-arrow {
     max-width: 250px;
-    padding: 0 12px 0 22px; }
+    padding: 19px 12px 18px 22px; }
   .modal.open {
     visibility: visible;
     opacity: 1;
