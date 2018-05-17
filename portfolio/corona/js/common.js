@@ -37,12 +37,48 @@ $(document).ready(function(){
 	});
 
 	//search
-	if($('.search-col__date input').length > 0){
-		$('.search-col__date input').daterangepicker({
-	    opens: 'right'
-	  }, function(start, end, label) {
-	    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+	if($('.search-col__date').length > 0){
+		$('.search-col__date').daterangepicker({
+	    autoUpdateInput: false,
+	    autoApply: true,
+	    opens: 'left',
+	    minDate: moment(),
+	    maxDate: moment().add(24, 'month'),
+	    dateLimit: {
+	      "days": 30
+	    },
+	    locale: {
+	      cancelLabel: 'Отмена',
+	      applyLabel: 'Сохранить',
+	      monthNames: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+	      daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+	      firstDay: 1,
+	      format: 'DD.MM.YYYY'
+	    }
 	  });
+
+		$('.search-col__date').on('apply.daterangepicker', function(ev, picker) {
+	    $(this).find('p').html(picker.startDate.format('c DD.MM') + ' по ' + picker.endDate.format('DD.MM'));
+	    $(this).find('#hidden-start-date').val(picker.startDate.format('DD.MM.YYYY'));
+	    $(this).find('#hidden-end-date').val(picker.endDate.format('DD.MM.YYYY'));
+	  });
+
+		/*
+	  $('.hotel_block #nav-avia .search-col__date p').on('apply.daterangepicker', function(ev, picker) {
+	    var hotel_id;
+	    hotel_id = $("#booking-form").data("hotel-id");
+	    $(".hotel_block #nav-avia form").attr('action', Routes.aviacentr_hotel_flies_path(hotel_id));
+	  });
+
+	  $('.cheap-tour-with-flies .search-col__date p').on('apply.daterangepicker', function(ev, picker) {
+	    $(".cheap-tour-with-flies #nav-avia form").attr('action', Routes.aviacentr_search_flies_path());
+	  });
+	  */
+
+	  $('.search-col__date').on('cancel.daterangepicker', function(ev, picker) {
+	    $(this).html('Выберите даты');
+	  });
+	  
 	}
 
 	$('.search-col').on('click', function(e){
