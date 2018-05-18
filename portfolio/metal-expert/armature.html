@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<!-- modal-form -->
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+			<div class="modal-left" style="background: url(img/modal-2.png);">
+				<div>
+					<h4>Доставка</h4>
+					<p>Доставка по Нижнему Новгороду в день заказа. По России своим транспортом.</p>
+				</div>
+				<div>
+					<h4>Заказ свободного объема</h4>
+					<p>Заказывайте от одной единицы объема</p>
+				</div>
+			</div>
+			<div class="modal-right">
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Получите наш прайс прямо сейчас</h3>
+					<div class="modal-input">
+						<label for="input-1">Ваше имя</label>
+						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
+					</div>
+					<div class="modal-input">
+						<label for="input-2">Телефон</label>
+						<input id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
+					</div>
+					<a class="button-modal submit" href="#modal-thank">Получить прайс</a>
+					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-thank -->
+	<div class="modal" id="modal-thank">
+		<div class="modal-wrap" style="background: url(img/modal-1.png);">
+			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+			<div class="modal-descr">
+				<h3 class="modal-title">Спасибо!</h3>
+				<p>В ближайшее время с Вами свяжется наш менджер</p>
+				<img src="img/logo.svg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- modal-form -->
+	<div class="modal modal-call__back" id="call-back">
+		<div class="modal-content">
+			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+			<div class="modal-call__back-wrap">
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Заказ звонка</h3>
+					<div class="modal-input">
+						<label for="input-1">Ваше имя</label>
+						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
+					</div>
+					<div class="modal-input">
+						<label for="input-2">Телефон</label>
+						<input id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
+					</div>
+					<a class="button-modal submit" href="#modal-thank">заказать</a>
+					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="wrapper">
+			<div class="menu-bar">
+				<span></span>
+			</div>
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header-wrap">
+				<ul id="menu" class="header-menu">
+					<li data-menuanchor="page1" class="active"><a href="http://metalexpert.pro/#page1">Главная</a></li>
+					<li data-menuanchor="page2" class="header-drop">
+						<a href="http://metalexpert.pro/#page2">Металлопрокат</a>
+						<ul>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/armature.html">Арматура</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/beam.html">Балка</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/circle.html">Круг</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/wirerod.html">Катанка</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/sheet.html">Лист</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/band.html">Полоса</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/trumpet.html">Труба</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/angle.html">Угол</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/channel.html">Швеллер</a></li>
+						</ul>
+					</li>
+					<li data-menuanchor="page3" class="header-drop">
+						<a href="http://metalexpert.pro/#page3">Металлообработка</a>
+						<ul>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/deck.html">Рубка стального листа гильотиной</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/manufacturing.html">Изготовление арматурных каркасов (хомутов и скоб) </a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/cutting.html">Резка металла газом, лазером, плазмой</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/metalware.html">Металлоконструкции по чертежам заказчика</a></li>
+							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/drilling.html">Сверление отверстий, сварка, гибка металла</a></li>
+						</ul>
+					</li>
+					<li data-menuanchor="page4"><a href="https://reddevil113.github.io/portfolio/metal-expert/#page4">Доставка</a></li>
+					<li data-menuanchor="page5"><a href="https://reddevil113.github.io/portfolio/metal-expert/#page5">О компании</a></li>
+					<li data-menuanchor="page6"><a href="https://reddevil113.github.io/portfolio/metal-expert/#page6">Контакты</a></li>
+				</ul>
+				<div class="header-phone">
+					<a href="#">+7 831 212-43-16</a>
+					<p>с 8:00 до 18:00</p>
+				</div>
+				<div class="header-modal">
+					<a class="button-modal" href="#call-back">
+						<span>Заказать звонок</span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10">
+					    <defs>
+					        <path id="a" d="M.013.177V10h9.832V.177z"/>
+					    </defs>
+					    <g fill="none" fill-rule="evenodd">
+					        <mask id="b" fill="#fff">
+					            <use xlink:href="#a"/>
+					        </mask>
+					        <path fill="#F3584A" d="M9.624 7.947l-1.52-1.521c-.303-.302-.804-.293-1.118.021l-.766.766a13.453 13.453 0 0 1-.15-.084c-.485-.269-1.147-.635-1.844-1.332-.698-.7-1.066-1.363-1.334-1.847-.03-.05-.057-.1-.083-.147l.514-.513.253-.253c.313-.315.323-.816.02-1.118L2.076.4C1.773.095 1.271.104.957.418L.53.85l.01.012a2.484 2.484 0 0 0-.352.622 2.56 2.56 0 0 0-.156.632c-.202 1.664.56 3.185 2.623 5.25 2.853 2.852 5.152 2.637 5.252 2.626a2.566 2.566 0 0 0 1.253-.51l.01.008.434-.425c.313-.314.322-.815.02-1.118z" mask="url(#b)"/>
+					    </g>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="page">
+		<div class="wrapper">
+			<div class="page-top" style="background: url(img/metalrolling-bg.png);">
+				<div class="page-top__wrap">
+					<div class="wrapper-line">
+						<span></span>
+					</div>
+					<div class="section-nav">
+						<div data-menuanchor="page2" class="section-nav__left">
+							<a href="#page2">
+								<img src="img/arrow-left.svg" alt="">
+							</a>
+						</div>
+						<p><span>3</span>/6</p>
+						<div data-menuanchor="page4" class="section-nav__right">
+							<a href="#page4">
+								<img src="img/arrow-right.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="section-title">
+						<h1>Металлопрокат</h1>
+					</div>
+					<div class="close"><img src="img/close.svg" alt=""></div>
+				</div>
+			</div>
+			<div class="page-content">
+				<div class="page-content__row">
+					<div class="page-content__left">
+						<ul>
+							<li><a class="active" href="http://metalexpert.pro/armature.html">Арматура</a></li>
+							<li><a href="http://metalexpert.pro/beam.html">Балка</a></li>
+							<li><a href="http://metalexpert.pro/circle.html">Круг</a></li>
+							<li><a href="http://metalexpert.pro/wirerod.html">Катанка</a></li>
+							<li><a href="http://metalexpert.pro/sheet.html">Лист</a></li>
+							<li><a href="http://metalexpert.pro/band.html">Полоса</a></li>
+							<li><a href="http://metalexpert.pro/trumpet.html">Труба</a></li>
+							<li><a href="http://metalexpert.pro/angle.html">Угол</a></li>
+							<li><a href="http://metalexpert.pro/channel.html">Швеллер</a></li>
+						</ul>
+					</div>
+					<div class="page-content__center page-content__center-all">
+						<p class="page-content__text">Огромный выбор продукции в наличии. На нашем сайте представлены все виды горячепрокатной и холоднотянутой арматуры всех классов и типов профиля, диаметром от 6 до 90 мм. В нашем прайс-листе среди более 10.000 наименований вы всегда найдете нужное вам изделие, соответствующее всем стандартам ГОСТ.</p>
+						<div class="page-content__table">
+							<div class="page-content__table-top">
+								<p>Диаметр</p>
+								<p>Цена за 1 тонну</p>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>6мм</li>
+								</ul>
+								<div>
+									<p>42 500₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>8мм</li>
+								</ul>
+								<div>
+									<p>44 900₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>10мм</li>
+								</ul>
+								<div>
+									<p class="text-red">40 900₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>12мм</li>
+								</ul>
+								<div>
+									<p class="text-red">43 900₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>14мм</li>
+								</ul>
+								<div>
+									<p>37 500₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>16мм</li>
+								</ul>
+								<div>
+									<p>37 500₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>18мм</li>
+								</ul>
+								<div>
+									<p>37 500₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>20мм</li>
+								</ul>
+								<div>
+									<p>37 700₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>22мм</li>
+								</ul>
+								<div>
+									<p>37 600₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>25мм</li>
+								</ul>
+								<div>
+									<p>37 300₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>28мм</li>
+								</ul>
+								<div>
+									<p>37 300₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>32мм</li>
+								</ul>
+								<div>
+									<p>37 500₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>36мм</li>
+								</ul>
+								<div>
+									<p>37 300₽</p>
+								</div>
+							</div>
+							<div class="page-content__table-col">
+								<ul>
+									<li>40мм</li>
+								</ul>
+								<div>
+									<p>42 100₽</p>
+								</div>
+							</div>
+						</div>
+						<div class="about-gallery">
+							<a class="about-gallery__main example-image-link" href="img/content-main.jpg" data-lightbox="example-set" data-title="Lorem ipsum.">
+							  <img class="example-image" src="img/content-main.jpg" alt="Lorem ipsum.">
+							</a>
+							<div class="about-gallery__row">
+								<a class="example-image-link" href="img/content-main.jpg" data-lightbox="example-set" data-title="Lorem ipsum.22222">
+								  <img class="example-image" src="img/content-main.jpg" alt="Lorem ipsum.">
+								</a>
+								<a class="example-image-link" href="img/content-main.jpg" data-lightbox="example-set" data-title="Lorem ipsum.33333">
+								  <img class="example-image" src="img/content-main.jpg" alt="Lorem ipsum.">
+								</a>
+								<a class="example-image-link" href="img/content-main.jpg" data-lightbox="example-set" data-title="Lorem ipsum.44444">
+								  <img class="example-image" src="img/content-main.jpg" alt="Lorem ipsum.">
+								</a>
+								<a class="example-image-link" href="img/content-main.jpg" data-lightbox="example-set" data-title="Lorem ipsum.55555">
+								  <img class="example-image" src="img/content-main.jpg" alt="Lorem ipsum.">
+								</a>
+								<a class="example-image-link" href="img/content-main.jpg" data-lightbox="example-set" data-title="Lorem ipsum.66666">
+								  <img class="example-image" src="img/content-main.jpg" alt="Lorem ipsum.">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="page-content__right">
+						<div class="page-content__right-col">
+							<div class="page-content__right-img">
+								<img src="img/catalogue.svg" alt="">
+							</div>
+							<div class="page-content__right-descr">
+								<p>Получите прайсы резка плазмой, газом, рубка листа</p>
+								<a class="button-modal button-download" href="#modal-form"><span>Получить</span><img src="img/download.svg" alt=""></a>
+							</div>
+						</div>
+						<div class="page-content__right-col">
+							<div class="page-content__right-img">
+								<img src="img/gallery.svg" alt="">
+							</div>
+							<div class="page-content__right-descr">
+								<p>Фотографии продукции</p>
+								<a href="#modal-form">смотреть</a>
+							</div>
+						</div>
+						<div class="page-content__right-col">
+							<div class="page-content__right-img">
+								<img src="img/delivery.svg" alt="">
+							</div>
+							<div class="page-content__right-descr">
+								<p>Доставка</p>
+								<span>Доставка по Нижнему Новгороду в день заказа. По России – своим транспортом.</span>
+								<a href="#modal-form">рассчитать</a>
+							</div>
+						</div>
+						<div class="page-content__right-col">
+							<div class="page-content__right-img">
+								<img src="img/credit.svg" alt="">
+							</div>
+							<div class="page-content__right-descr">
+								<p>Рассрочка</p>
+								<span>Оплачивайте товар по частям в течении года, или двух.</span>
+							</div>
+						</div>
+						<div class="page-content__right-col">
+							<div class="page-content__right-img">
+								<img src="img/free-order.svg" alt="">
+							</div>
+							<div class="page-content__right-descr">
+								<p>Заказ свободного объема</p>
+								<span>Заказывайте от 1 единицы продукции.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer footer-content">
+		<div class="wrapper">
+			<p>© 2005-2016. ООО «ТД ЭЛПРОКОМ». Все права защищены</p>
+			<p>Made by Riverstart</p>
+		</div>
+	</footer>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="libs/pagePiling/jquery.pagepiling.min.css">
+	<link rel="stylesheet" href="libs/lightbox2/css/lightbox.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="libs/pagePiling/jquery.pagepiling.min.js"></script>
+	<script src="libs/lightbox2/js/lightbox.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

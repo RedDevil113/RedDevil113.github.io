@@ -1123,7 +1123,9 @@ img {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     z-index: 99;
-    padding-top: 60px; }
+    padding: 145px 0 145px 240px; }
+  .map .section-title h1 {
+    margin: 0; }
   .map .section-nav {
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -1188,9 +1190,11 @@ img {
 .about .wrapper {
   height: auto;
   min-height: auto; }
+  .about .wrapper .about-row {
+    padding-bottom: 220px !important; }
 
 .about-top {
-  height: 184px;
+  height: 353px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1753,6 +1757,8 @@ img {
     width: 50%; }
   .delivery .section-bg {
     height: 70%; }
+  .about-top {
+    height: 153px; }
   .about-left {
     width: 100%; }
   .about-content {
