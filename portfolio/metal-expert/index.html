@@ -18,6 +18,31 @@
 
 </head>
 <body>
+	<div class="modal-overlay"></div>
+	<!-- modal-form -->
+	<div class="modal modal-call__back" id="call-back">
+		<div class="modal-content">
+			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+			<div class="modal-call__back-wrap">
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Заказ звонка</h3>
+					<div class="modal-input">
+						<label for="input-1">Ваше имя</label>
+						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
+					</div>
+					<div class="modal-input">
+						<label for="input-2">Телефон</label>
+						<input id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
+					</div>
+					<a class="button-modal submit" href="#modal-thank">заказать</a>
+					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
 	<header class="header">
 		<div class="wrapper">
 			<div class="menu-bar">
@@ -64,7 +89,7 @@
 					<p>с 8:00 до 18:00</p>
 				</div>
 				<div class="header-modal">
-					<a href="#">
+					<a class="button-modal" href="#call-back">
 						<span>Заказать звонок</span>
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10">
 					    <defs>
@@ -168,7 +193,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-1.jpg);"></div>
+								<div class="card-col__img card-col__img-bg" style="background: url(img/card-2.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Балка</h3>
 									<p class="card-col__price">От <span>51 000 ₽</span> за тонну</p>
@@ -178,7 +203,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-1.jpg);"></div>
+								<div class="card-col__img" style="background: url(img/card-3.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Катанка</h3>
 									<p class="card-col__price">От <span>41 000 ₽</span> за тонну</p>
@@ -188,7 +213,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-1.jpg);"></div>
+								<div class="card-col__img" style="background: url(img/card-4.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Лист</h3>
 									<p class="card-col__price">От <span>45 500 ₽</span> за тонну</p>
@@ -198,7 +223,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-1.jpg);"></div>
+								<div class="card-col__img" style="background: url(img/card-5.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Полоса</h3>
 									<p class="card-col__price">От <span>25 000 ₽</span> за тонну</p>
@@ -208,7 +233,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-1.jpg);"></div>
+								<div class="card-col__img" style="background: url(img/card-6.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Труба</h3>
 									<p class="card-col__price">От <span>29 000 ₽</span> за тонну</p>
@@ -218,7 +243,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-1.jpg);"></div>
+								<div class="card-col__img card-col__img-bg" style="background: url(img/card-7.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Угол</h3>
 									<p class="card-col__price">От <span>45 000 ₽</span> за тонну</p>
@@ -228,7 +253,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-1.jpg);"></div>
+								<div class="card-col__img" style="background: url(img/card-8.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Швеллер</h3>
 									<p class="card-col__price">От <span>49 000 ₽</span> за тонну</p>
@@ -267,7 +292,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-2.jpg);"></div>
+								<div class="card-col__img" style="background: url(img/card-9.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Рубка<br> стального листа гильотиной</h3>
 									<p class="card-col__price">От <span>30 ₽</span> за тонну</p>
@@ -278,7 +303,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-2.jpg);"></div>
+								<div class="card-col__img card-col__img-bg" style="background: url(img/card-10.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Изготовление арматурных каркасов (хомутов и скоб)</h3>
 									<p class="card-col__price">От <span>24 000 ₽</span> за тонну</p>
@@ -289,7 +314,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-2.jpg);"></div>
+								<div class="card-col__img" style="background: url(img/card-11.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Резка металла газом, лазером, плазмой</h3>
 									<p class="card-col__price">От <span>1 300 ₽</span> за тонну</p>
@@ -300,7 +325,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-2.jpg);"></div>
+								<div class="card-col__img card-col__img-bg" style="background: url(img/card-12.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Металлоконструкции по чертежам<br> заказчика</h3>
 									<p class="card-col__price">От <span>2000 ₽</span> за тонну</p>
@@ -311,7 +336,7 @@
 						<div class="card-col">
 							<div class="card-col__wrap">
 								<a href="#"></a>
-								<div class="card-col__img" style="background: url(img/card-2.jpg);"></div>
+								<div class="card-col__img" style="background: url(img/card-13.jpg);"></div>
 								<div class="card-col__descr">
 									<h3>Сверление<br> отверстий, сварка, гибка металла</h3>
 									<p class="card-col__price">От <span>50 ₽</span> за тонну</p>

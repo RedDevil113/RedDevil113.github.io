@@ -108,7 +108,8 @@ img {
     display: -ms-flexbox;
     display: flex;
     max-width: 1360px;
-    z-index: 1; }
+    z-index: 1;
+    opacity: 1; }
   .section-img {
     position: absolute;
     top: 50%;
@@ -338,6 +339,14 @@ img {
       color: #000; }
     .modal-descr img {
       max-width: 210px; }
+  .modal-call__back {
+    padding: 66px 105px 47px;
+    max-width: 545px; }
+    .modal-call__back h3 {
+      text-align: center; }
+      .modal-call__back h3 span {
+        display: block;
+        font-size: 17px; }
   .modal.open {
     visibility: visible;
     opacity: 1;
@@ -800,7 +809,7 @@ img {
     transition: .3s linear;
     opacity: 0;
     visibility: hidden; }
-    .card-col__img::after {
+    .card-col__img.card-col__img-bg::after {
       content: '';
       position: absolute;
       top: 0;
@@ -861,6 +870,9 @@ img {
   padding-bottom: 25px; }
   .metalworking .card-col__descr h3 {
     min-height: 78px; }
+
+.metalworking .section-bg {
+  opacity: .4; }
 
 /* -- delivery -- */
 .delivery .wrapper {
@@ -1110,7 +1122,13 @@ img {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    z-index: 99; }
+    z-index: 99;
+    padding-top: 60px; }
+  .map .section-nav {
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
 
 .managers .wrapper {
   padding: 140px 0 0;
@@ -1716,7 +1734,9 @@ img {
   .about-row {
     padding: 40px 25px 60px; }
   .page-top {
-    margin-top: 72px; } }
+    margin-top: 72px; }
+  .map .section-nav {
+    left: 15px; } }
 
 @media only screen and (max-width: 980px) {
   .main .arrow-right {
@@ -1753,7 +1773,11 @@ img {
       padding: 0 25px 0 0; }
   .page-content__table ul {
     overflow-x: auto;
-    max-width: 300px; } }
+    max-width: 300px; }
+  .map .section-descr {
+    padding: 60px 0 60px 240px; }
+    .map .section-descr h1 {
+      margin-bottom: 0; } }
 
 @media only screen and (max-width: 800px) {
   .page-content__row {
@@ -1850,7 +1874,9 @@ img {
   .about-content p {
     margin-bottom: 15px; }
   .page-top__wrap {
-    padding: 60px 0; } }
+    padding: 60px 0; }
+  .map .section-descr {
+    padding: 60px 15px 60px 15px; } }
 
 @media only screen and (max-width: 600px) {
   .wrapper-screen {
@@ -1906,7 +1932,7 @@ img {
                 justify-content: center;
         position: relative; }
         .header-modal a span {
-          margin: 0; }
+          margin: 0 16px 0 0; }
         .header-modal a img {
           position: absolute;
           right: 16px;
@@ -2026,7 +2052,11 @@ img {
     .page-content__table-col ul {
       max-width: 160px; }
     .page-content__table-col div p.text-line {
-      margin-left: 10px; } }
+      margin-left: 10px; }
+  .map .section-descr {
+    padding: 0; }
+    .map .section-descr h1 {
+      margin: auto; } }
 
 @media only screen and (max-width: 500px) {
   .cancel {
@@ -2041,6 +2071,10 @@ img {
     padding: 40px 15px; }
     .modal-wrap .modal-title {
       font-size: 24px; }
+  .modal-call__back {
+    padding: 40px 35px; }
+    .modal-call__back-wrap {
+      margin: 0 auto; }
   .card-col, .delivery-col, .managers-col {
     width: 100%; }
   #map {
