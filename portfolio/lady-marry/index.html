@@ -23,7 +23,7 @@
 	<div class="modal" id="modal-form">
 		<div class="cancel"></div>
 		<form class="callback" method="POST">
-			<div class="success success-black form-active"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
+			<div class="success success-black"><span>Спасибо!<br>Мы свяжемся с вами в ближайшее время</span></div>
 			<!-- Hidden Required Fields -->
 			<input type="hidden" name="project_name" value="Sabline">
 			<input type="hidden" name="admin_email" value="i@soobwa.ru">
@@ -35,6 +35,12 @@
 			<input type="text" placeholder="+7 ___ ___ __ __" required minlength="8">
 			<button class="modal-button">Записаться</button>
 		</form>
+	</div>
+	<!-- terms-use -->
+	<div class="modal" id="terms-use">
+		<div class="cancel"></div>
+		<h3 class="modal-title">Далеко-далеко за словесными.</h3>
+		<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Толку рыбными предложения страну маленький курсивных свою, буквенных своих прямо заголовок диких даже, текстами ipsum вскоре взгляд? Вопроса всеми, на берегу!</p>
 	</div>
 	<!-- start header -->
 	<header class="header">
@@ -417,51 +423,57 @@
 				<div></div>
 				<p>Коррекция фигуры</p>
 			</div>
-			<div class="portfolio-slider">
-				<div class="portfolio-slide portfolio-slide__cat-1 portfolio-slide__active">
-					<figure class="cd-image-container portfolio-slide__descr">
-						<img src="img/before-11.jpeg" alt="Original Image">
-						<span class="cd-image-label" data-type="original">Original</span>
-						<div class="cd-resize-img"> <!-- the resizable image on top -->
+			<div class="portfolio-wrapper portfolio-wrapper__active">
+				<div class="portfolio-slider">
+					<div class="portfolio-slide">
+						<figure class="cd-image-container portfolio-slide__descr">
+							<img src="img/before-11.jpeg" alt="Original Image">
+							<span class="cd-image-label" data-type="original">Original</span>
+							<div class="cd-resize-img"> <!-- the resizable image on top -->
+								<img src="img/after-11.jpeg" alt="Modified Image">
+								<span class="cd-image-label" data-type="modified">Modified</span>
+							</div>
+							<span class="cd-handle"></span>
+						</figure>
+					</div><!-- slide(1) -->
+					<div class="portfolio-slide">
+						<figure class="cd-image-container portfolio-slide__descr">
+							<img src="img/before-11.jpeg" alt="Original Image">
+							<span class="cd-image-label" data-type="original">Original</span>
+							<div class="cd-resize-img"> <!-- the resizable image on top -->
+								<img src="img/after-11.jpeg" alt="Modified Image">
+								<span class="cd-image-label" data-type="modified">Modified</span>
+							</div>
+							<span class="cd-handle"></span>
+						</figure>
+					</div><!-- slide(2) -->
+				</div>
+			</div>
+			<div class="portfolio-wrapper">
+				<div class="portfolio-slider">
+					<div class="portfolio-slide">
+						<figure class="cd-image-container portfolio-slide__descr">
 							<img src="img/after-11.jpeg" alt="Modified Image">
-							<span class="cd-image-label" data-type="modified">Modified</span>
-						</div>
-						<span class="cd-handle"></span>
-					</figure>
-				</div><!-- slide(1) -->
-				<div class="portfolio-slide portfolio-slide__cat-2 portfolio-slide__active">
-					<figure class="cd-image-container portfolio-slide__descr">
-						<img src="img/before-11.jpeg" alt="Original Image">
-						<span class="cd-image-label" data-type="original">Original</span>
-						<div class="cd-resize-img"> <!-- the resizable image on top -->
+							<span class="cd-image-label" data-type="original">Original</span>
+							<div class="cd-resize-img"> <!-- the resizable image on top -->
+								<img src="img/before-11.jpeg" alt="Original Image">
+								<span class="cd-image-label" data-type="modified">Modified</span>
+							</div>
+							<span class="cd-handle"></span>
+						</figure>
+					</div><!-- slide(1) -->
+					<div class="portfolio-slide">
+						<figure class="cd-image-container portfolio-slide__descr">
 							<img src="img/after-11.jpeg" alt="Modified Image">
-							<span class="cd-image-label" data-type="modified">Modified</span>
-						</div>
-						<span class="cd-handle"></span>
-					</figure>
-				</div><!-- slide(2) -->
-				<div class="portfolio-slide portfolio-slide__cat-1 portfolio-slide__active">
-					<figure class="cd-image-container portfolio-slide__descr">
-						<img src="img/before-11.jpeg" alt="Original Image">
-						<span class="cd-image-label" data-type="original">Original</span>
-						<div class="cd-resize-img"> <!-- the resizable image on top -->
-							<img src="img/after-11.jpeg" alt="Modified Image">
-							<span class="cd-image-label" data-type="modified">Modified</span>
-						</div>
-						<span class="cd-handle"></span>
-					</figure>
-				</div><!-- slide(3) -->
-				<div class="portfolio-slide portfolio-slide__cat-2 portfolio-slide__active">
-					<figure class="cd-image-container portfolio-slide__descr">
-						<img src="img/before-11.jpeg" alt="Original Image">
-						<span class="cd-image-label" data-type="original">Original</span>
-						<div class="cd-resize-img"> <!-- the resizable image on top -->
-							<img src="img/after-11.jpeg" alt="Modified Image">
-							<span class="cd-image-label" data-type="modified">Modified</span>
-						</div>
-						<span class="cd-handle"></span>
-					</figure>
-				</div><!-- slide(4) -->
+							<span class="cd-image-label" data-type="original">Original</span>
+							<div class="cd-resize-img"> <!-- the resizable image on top -->
+								<img src="img/before-11.jpeg" alt="Original Image">
+								<span class="cd-image-label" data-type="modified">Modified</span>
+							</div>
+							<span class="cd-handle"></span>
+						</figure>
+					</div><!-- slide(2) -->
+				</div>
 			</div>
 			<div class="center-button">
 				<a class="main-button button-modal" href="#modal-form">Записаться</a>
@@ -494,6 +506,22 @@
 			</div>
 		</div>
 		<div class="reviews-insta">
+			<div class="reviews-insta__slide">
+				<a target="_blank" href="https://www.instagram.com/p/BY0nQ7uBDT4/"></a>
+				<img src="img/insta-1.jpg" alt="">
+			</div>
+			<div class="reviews-insta__slide">
+				<a target="_blank" href="https://www.instagram.com/p/BY0nQ7uBDT4/"></a>
+				<img src="img/insta-1.jpg" alt="">
+			</div>
+			<div class="reviews-insta__slide">
+				<a target="_blank" href="https://www.instagram.com/p/BY0nQ7uBDT4/"></a>
+				<img src="img/insta-1.jpg" alt="">
+			</div>
+			<div class="reviews-insta__slide">
+				<a target="_blank" href="https://www.instagram.com/p/BY0nQ7uBDT4/"></a>
+				<img src="img/insta-1.jpg" alt="">
+			</div>
 			<div class="reviews-insta__slide">
 				<a target="_blank" href="https://www.instagram.com/p/BY0nQ7uBDT4/"></a>
 				<img src="img/insta-1.jpg" alt="">
@@ -695,7 +723,7 @@
 						</svg>
 					</a>
 				</div>
-				<a class="footer-link" href="#">Пользовательское соглашение</a>
+				<a class="footer-link button-modal" href="#terms-use">Пользовательское соглашение</a>
 			</div><!-- col(1) -->
 			<div class="footer-nav">
 				<ul>

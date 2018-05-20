@@ -51,9 +51,10 @@ $(document).ready(function(){
  	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  autoplay:true,
-	  autoplaySpeed:10000,
-	  speed:1000,
-	  draggable: false
+	  autoplaySpeed:3000,
+	  speed:700,
+	  draggable: false,
+	  swipe: false
 	});
 
 	$('.reviews-slider').slick({
@@ -130,9 +131,9 @@ $(document).ready(function(){
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  autoplay:true,
-	  autoplaySpeed:10000,
-	  speed:1000,
-	  draggable: true,
+	  autoplaySpeed:3000,
+	  speed:500,
+	  draggable: false,
 	});
 
 	//mob menu
@@ -171,7 +172,7 @@ $(document).ready(function(){
 
 	$('.portfolio-toggle div').on('click', function(){
 		$(this).toggleClass('toggle-open');
-		$('.portfolio-slider').toggleClass('portfolio-slide__active');
+		$('.portfolio-wrapper').toggleClass('portfolio-wrapper__active');
 	});
 
 	$('.prices-menu p').on('click', function(){

@@ -990,7 +990,9 @@ img {
       height: 30px;
       -webkit-border-radius: 30px;
               border-radius: 30px;
-      border: 1px solid #3f3a4e;
+      border: 1.2px solid #3f3a4e;
+      background: #fff;
+      z-index: 10;
       position: relative;
       cursor: pointer; }
       .portfolio-toggle div::after {
@@ -1423,6 +1425,11 @@ img {
   .reviews-insta__slide img {
     max-height: 292px; }
 
+.portfolio-wrapper {
+  display: none; }
+  .portfolio-wrapper__active {
+    display: block; }
+
 @media only screen and (max-width: 1800px) {
   .main-slider .slick-next {
     right: 100px; }
@@ -1639,7 +1646,7 @@ img {
     background: #fff;
     z-index: 99;
     text-align: center;
-    max-height: 320px;
+    max-height: 360px;
     overflow-y: auto; }
   .header-nav {
     display: block;
@@ -1861,7 +1868,11 @@ img {
       padding: 0 15px;
       text-align: left; }
   .cd-image-container img {
-    max-height: 400px; } }
+    max-height: 400px; }
+  .ymaps-2-1-64-balloon {
+    max-width: 320px; }
+  .ymaps-2-1-64-balloon__content > ymaps {
+    width: 300px !important; } }
 
 @media only screen and (max-width: 500px) {
   .main-slider {
