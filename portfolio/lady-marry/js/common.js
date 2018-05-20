@@ -118,6 +118,23 @@ $(document).ready(function(){
 	  ]
 	});
 
+	$('.reviews-insta').slick({
+	  infinite: true,
+	  arrows: false,
+	  dots: false,
+	  nextArrow: '<button class="slick-arrow slick-next"></button>',
+ 	  prevArrow: '<button class="slick-arrow slick-prev"></button>',
+ 	  slidesToShow: 1,
+	  centerMode: true,
+	  variableWidth: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay:true,
+	  autoplaySpeed:10000,
+	  speed:1000,
+	  draggable: true,
+	});
+
 	//mob menu
 	$('.menu-bar').on('click', function(){
 		$('.header').toggleClass('open-menu');
@@ -154,6 +171,7 @@ $(document).ready(function(){
 
 	$('.portfolio-toggle div').on('click', function(){
 		$(this).toggleClass('toggle-open');
+		$('.portfolio-slider').toggleClass('portfolio-slide__active');
 	});
 
 	$('.prices-menu p').on('click', function(){
@@ -168,10 +186,8 @@ $(document).ready(function(){
 	if($(window).width() <= 700)
 		$('#prices-wrap__1').addClass('open-div');
 
-	//$('#portfolio-slide__descr').beforeAfter();
-
 	//head scroll
-	$('.header-nav ul li').on('click', 'a', function(e){
+	$('.header-nav ul li,.footer-nav ul li').on('click', 'a', function(e){
 
 		e.preventDefault();
 		var itemId = $(this).attr('href'),
