@@ -35,6 +35,21 @@ $(document).ready(function() {
 	  'wrapAround': true
 	})
 
+	if($(window).width() < 1360){
+		$('.contact-card__1').css('left', ($(window).width() - $('.managers-wrap').width()) / 2 + 'px');
+		$('.contact-card__2').css('right', ($(window).width() - $('.managers-wrap').width()) / 2 + 'px');
+	}
+	
+	$(window).resize(function(){
+		if($(this).width() < 1360){
+			var position = ($(this).width() - $('.managers-wrap').width()) / 2;
+			$('.contact-card__1').css('left', position + 'px');
+			$('.contact-card__2').css('right', position + 'px');
+		}
+	});
+
+	$('.m-phone').mask( '+7' + '(999) 999-99-99');
+
 	//modal
 	var modalCont = $('.modal'),
 		modalOver = $('.modal-overlay');

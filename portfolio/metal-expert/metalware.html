@@ -20,6 +20,30 @@
 <body>
 	<div class="modal-overlay"></div>
 	<!-- modal-form -->
+	<div class="modal modal-call__back" id="call-back">
+		<div class="modal-content">
+			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+			<div class="modal-call__back-wrap">
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Заказ звонка</h3>
+					<div class="modal-input">
+						<label for="input-1">Ваше имя</label>
+						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
+					</div>
+					<div class="modal-input">
+						<label for="input-2">Телефон</label>
+						<input class="m-phone" id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
+					</div>
+					<a class="button-modal submit" href="#modal-thank">заказать</a>
+					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
+					  <input checked="checked" type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-form -->
 	<div class="modal" id="modal-form">
 		<div class="modal-content">
 			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
@@ -37,12 +61,12 @@
 				<form class="callback" method="POST">
 					<h3 class="modal-title">Получите наш прайс прямо сейчас</h3>
 					<div class="modal-input">
-						<label for="input-1">Ваше имя</label>
-						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
+						<label for="input-3">Ваше имя</label>
+						<input id="input-3" type="text" name="name" placeholder="Имя" required minlength="3">
 					</div>
 					<div class="modal-input">
-						<label for="input-2">Телефон</label>
-						<input id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
+						<label for="input-4">Телефон</label>
+						<input class="m-phone" id="input-4" type="tel" name="phone" placeholder="Телефон" minlength="8">
 					</div>
 					<a class="button-modal submit" href="#modal-thank">Получить прайс</a>
 					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
@@ -61,30 +85,6 @@
 				<h3 class="modal-title">Спасибо!</h3>
 				<p>В ближайшее время с Вами свяжется наш менджер</p>
 				<img src="img/logo.svg" alt="">
-			</div>
-		</div>
-	</div>
-	<!-- modal-form -->
-	<div class="modal modal-call__back" id="call-back">
-		<div class="modal-content">
-			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
-			<div class="modal-call__back-wrap">
-				<form class="callback" method="POST">
-					<h3 class="modal-title">Заказ звонка</h3>
-					<div class="modal-input">
-						<label for="input-1">Ваше имя</label>
-						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
-					</div>
-					<div class="modal-input">
-						<label for="input-2">Телефон</label>
-						<input id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
-					</div>
-					<a class="button-modal submit" href="#modal-thank">заказать</a>
-					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
-					  <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-				</form>
 			</div>
 		</div>
 	</div>
@@ -376,7 +376,7 @@
 	<footer class="footer footer-content">
 		<div class="wrapper">
 			<p>© 2005-2016. ООО «ТД ЭЛПРОКОМ». Все права защищены</p>
-			<p>Made by Riverstart</p>
+			<p><a href="#"></a></p>
 		</div>
 	</footer>
 
@@ -387,6 +387,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="libs/pagePiling/jquery.pagepiling.min.js"></script>
 	<script src="libs/lightbox2/js/lightbox.min.js"></script>
+	<script src="libs/mask/mask.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

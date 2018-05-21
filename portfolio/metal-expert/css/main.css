@@ -249,7 +249,9 @@ img {
               border-radius: 2px;
       border: 1px solid #e1e1e1;
       display: block;
-      width: 100%; }
+      width: 100%;
+      font-weight: bold;
+      font-size: 13px; }
   .modal .submit {
     margin: 8px 0 24px;
     display: block;
@@ -756,7 +758,22 @@ img {
     font-size: 12px;
     line-height: 1.83;
     font-weight: 500;
-    color: #a8a8a8; }
+    color: #a8a8a8;
+    min-width: 153px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer p a {
+      max-width: 153px;
+      width: 100%;
+      display: inline-block;
+      height: 23px;
+      background: url(../img/footer-logo.svg) no-repeat center; }
 
 /* -- metalrolling -- */
 .card-row {
@@ -1027,36 +1044,18 @@ img {
 .contact .wrapper {
   height: auto; }
 
-.contact-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  left: 50%;
-  bottom: -100px;
-  width: 100%;
-  max-width: 1130px;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  z-index: 99; }
-
 .contact-card {
+  position: absolute;
+  bottom: -100px;
+  z-index: 99;
   max-width: 253px;
   width: 100%;
   background: #fff;
-  padding: 33px 35px 195px 40px;
-  position: relative; }
+  padding: 33px 35px 195px 40px; }
+  .contact-card__1 {
+    left: 115px; }
+  .contact-card__2 {
+    right: 115px; }
   .contact-card h3 {
     margin-bottom: 17px;
     font-size: 16px;
@@ -1114,16 +1113,19 @@ img {
 
 .map {
   position: relative; }
+  .map-wrap {
+    max-width: 1360px;
+    padding: 0; }
   .map .section-descr {
     position: absolute;
-    top: 0;
+    top: 145px;
     width: 100%;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     z-index: 99;
-    padding: 145px 0 145px 240px; }
+    padding: 0 0 0 240px; }
   .map .section-title h1 {
     margin: 0; }
   .map .section-nav {
@@ -1392,6 +1394,19 @@ img {
   opacity: 1;
   width: 40px;
   height: 40px; }
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 55px; }
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 /* -- content -- */
 .close {
@@ -1781,7 +1796,7 @@ img {
     overflow-x: auto;
     max-width: 300px; }
   .map .section-descr {
-    padding: 60px 0 60px 240px; }
+    top: 60px; }
     .map .section-descr h1 {
       margin-bottom: 0; } }
 
@@ -1882,7 +1897,7 @@ img {
   .page-top__wrap {
     padding: 60px 0; }
   .map .section-descr {
-    padding: 60px 15px 60px 15px; } }
+    padding: 0 15px; } }
 
 @media only screen and (max-width: 600px) {
   .wrapper-screen {
@@ -2013,17 +2028,17 @@ img {
   .map {
     height: auto; }
     .map .section-title {
-      min-height: 450px; }
+      min-height: 100%;
+      height: auto;
+      margin: 0; }
   #map {
     height: 450px; }
-  .contact-row {
-    display: block;
+  .contact-card {
     position: static;
     -webkit-transform: translate(0, -30px);
         -ms-transform: translate(0, -30px);
-            transform: translate(0, -30px); }
-  .contact-card {
-    margin: 0 auto 15px;
+            transform: translate(0, -30px);
+    margin: 0 auto 45px;
     max-width: 290px; }
   .managers .wrapper {
     padding-top: 30px; }
@@ -2060,7 +2075,13 @@ img {
     .page-content__table-col div p.text-line {
       margin-left: 10px; }
   .map .section-descr {
-    padding: 0; }
+    padding: 0;
+    top: 225px;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute;
+    max-width: 200px; }
     .map .section-descr h1 {
       margin: auto; } }
 

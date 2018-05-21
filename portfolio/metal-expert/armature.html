@@ -20,6 +20,30 @@
 <body>
 	<div class="modal-overlay"></div>
 	<!-- modal-form -->
+	<div class="modal modal-call__back" id="call-back">
+		<div class="modal-content">
+			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+			<div class="modal-call__back-wrap">
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Заказ звонка</h3>
+					<div class="modal-input">
+						<label for="input-1">Ваше имя</label>
+						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
+					</div>
+					<div class="modal-input">
+						<label for="input-2">Телефон</label>
+						<input class="m-phone" id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
+					</div>
+					<a class="button-modal submit" href="#modal-thank">заказать</a>
+					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
+					  <input checked="checked" type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-form -->
 	<div class="modal" id="modal-form">
 		<div class="modal-content">
 			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
@@ -37,12 +61,12 @@
 				<form class="callback" method="POST">
 					<h3 class="modal-title">Получите наш прайс прямо сейчас</h3>
 					<div class="modal-input">
-						<label for="input-1">Ваше имя</label>
-						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
+						<label for="input-3">Ваше имя</label>
+						<input id="input-3" type="text" name="name" placeholder="Имя" required minlength="3">
 					</div>
 					<div class="modal-input">
-						<label for="input-2">Телефон</label>
-						<input id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
+						<label for="input-4">Телефон</label>
+						<input class="m-phone" id="input-4" type="tel" name="phone" placeholder="Телефон" minlength="8">
 					</div>
 					<a class="button-modal submit" href="#modal-thank">Получить прайс</a>
 					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
@@ -64,30 +88,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- modal-form -->
-	<div class="modal modal-call__back" id="call-back">
-		<div class="modal-content">
-			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
-			<div class="modal-call__back-wrap">
-				<form class="callback" method="POST">
-					<h3 class="modal-title">Заказ звонка</h3>
-					<div class="modal-input">
-						<label for="input-1">Ваше имя</label>
-						<input id="input-1" type="text" name="name" placeholder="Имя" required minlength="3">
-					</div>
-					<div class="modal-input">
-						<label for="input-2">Телефон</label>
-						<input id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
-					</div>
-					<a class="button-modal submit" href="#modal-thank">заказать</a>
-					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
-					  <input type="checkbox">
-					  <span class="checkmark"></span>
-					</label>
-				</form>
-			</div>
-		</div>
-	</div>
 	<header class="header">
 		<div class="wrapper">
 			<div class="menu-bar">
@@ -104,30 +104,30 @@
 					<li data-menuanchor="page2" class="header-drop">
 						<a href="http://metalexpert.pro/#page2">Металлопрокат</a>
 						<ul>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/armature.html">Арматура</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/beam.html">Балка</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/circle.html">Круг</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/wirerod.html">Катанка</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/sheet.html">Лист</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/band.html">Полоса</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/trumpet.html">Труба</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/angle.html">Угол</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/channel.html">Швеллер</a></li>
+							<li><a href="http://metalexpert.pro/armature.html">Арматура</a></li>
+							<li><a href="http://metalexpert.pro/beam.html">Балка</a></li>
+							<li><a href="http://metalexpert.pro/circle.html">Круг</a></li>
+							<li><a href="http://metalexpert.pro/wirerod.html">Катанка</a></li>
+							<li><a href="http://metalexpert.pro/sheet.html">Лист</a></li>
+							<li><a href="http://metalexpert.pro/band.html">Полоса</a></li>
+							<li><a href="http://metalexpert.pro/trumpet.html">Труба</a></li>
+							<li><a href="http://metalexpert.pro/angle.html">Угол</a></li>
+							<li><a href="http://metalexpert.pro/channel.html">Швеллер</a></li>
 						</ul>
 					</li>
 					<li data-menuanchor="page3" class="header-drop">
 						<a href="http://metalexpert.pro/#page3">Металлообработка</a>
 						<ul>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/deck.html">Рубка стального листа гильотиной</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/manufacturing.html">Изготовление арматурных каркасов (хомутов и скоб) </a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/cutting.html">Резка металла газом, лазером, плазмой</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/metalware.html">Металлоконструкции по чертежам заказчика</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/drilling.html">Сверление отверстий, сварка, гибка металла</a></li>
+							<li><a href="http://metalexpert.pro/deck.html">Рубка стального листа гильотиной</a></li>
+							<li><a href="http://metalexpert.pro/manufacturing.html">Изготовление арматурных каркасов (хомутов и скоб) </a></li>
+							<li><a href="http://metalexpert.pro/cutting.html">Резка металла газом, лазером, плазмой</a></li>
+							<li><a href="http://metalexpert.pro/metalware.html">Металлоконструкции по чертежам заказчика</a></li>
+							<li><a href="http://metalexpert.pro/drilling.html">Сверление отверстий, сварка, гибка металла</a></li>
 						</ul>
 					</li>
-					<li data-menuanchor="page4"><a href="https://reddevil113.github.io/portfolio/metal-expert/#page4">Доставка</a></li>
-					<li data-menuanchor="page5"><a href="https://reddevil113.github.io/portfolio/metal-expert/#page5">О компании</a></li>
-					<li data-menuanchor="page6"><a href="https://reddevil113.github.io/portfolio/metal-expert/#page6">Контакты</a></li>
+					<li data-menuanchor="page4"><a href="http://metalexpert.pro/#page4">Доставка</a></li>
+					<li data-menuanchor="page5"><a href="http://metalexpert.pro/#page5">О компании</a></li>
+					<li data-menuanchor="page6"><a href="http://metalexpert.pro/#page6">Контакты</a></li>
 				</ul>
 				<div class="header-phone">
 					<a href="#">+7 831 212-43-16</a>
@@ -391,7 +391,7 @@
 	<footer class="footer footer-content">
 		<div class="wrapper">
 			<p>© 2005-2016. ООО «ТД ЭЛПРОКОМ». Все права защищены</p>
-			<p>Made by Riverstart</p>
+			<p><a href="#"></a></p>
 		</div>
 	</footer>
 
@@ -402,6 +402,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="libs/pagePiling/jquery.pagepiling.min.js"></script>
 	<script src="libs/lightbox2/js/lightbox.min.js"></script>
+	<script src="libs/mask/mask.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

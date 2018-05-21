@@ -19,7 +19,7 @@
 </head>
 <body>
 	<div class="modal-overlay"></div>
-	<!-- modal-form -->
+	<!-- call-back -->
 	<div class="modal modal-call__back" id="call-back">
 		<div class="modal-content">
 			<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
@@ -32,11 +32,11 @@
 					</div>
 					<div class="modal-input">
 						<label for="input-2">Телефон</label>
-						<input id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
+						<input class="m-phone" id="input-2" type="tel" name="phone" placeholder="Телефон" minlength="8">
 					</div>
 					<a class="button-modal submit" href="#modal-thank">заказать</a>
 					<label class="modal-check"><p>Я согласен на <a href="#">обработку персональных данных</a></p>
-					  <input type="checkbox">
+					  <input checked="checked" type="checkbox">
 					  <span class="checkmark"></span>
 					</label>
 				</form>
@@ -59,25 +59,25 @@
 					<li data-menuanchor="page2" class="header-drop">
 						<a href="#page2">Металлопрокат</a>
 						<ul>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/armature.html">Арматура</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/beam.html">Балка</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/circle.html">Круг</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/wirerod.html">Катанка</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/sheet.html">Лист</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/band.html">Полоса</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/trumpet.html">Труба</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/angle.html">Угол</a></li>
-							<li><a href="https://reddevil113.github.io/portfolio/metal-expert/channel.html">Швеллер</a></li>
+							<li><a href="http://metalexpert.pro/armature.html">Арматура</a></li>
+							<li><a href="http://metalexpert.pro/beam.html">Балка</a></li>
+							<li><a href="http://metalexpert.pro/circle.html">Круг</a></li>
+							<li><a href="http://metalexpert.pro/wirerod.html">Катанка</a></li>
+							<li><a href="http://metalexpert.pro/sheet.html">Лист</a></li>
+							<li><a href="http://metalexpert.pro/band.html">Полоса</a></li>
+							<li><a href="http://metalexpert.pro/trumpet.html">Труба</a></li>
+							<li><a href="http://metalexpert.pro/angle.html">Угол</a></li>
+							<li><a href="http://metalexpert.pro/channel.html">Швеллер</a></li>
 						</ul>
 					</li>
 					<li data-menuanchor="page3" class="header-drop">
 						<a href="#page3">Металлообработка</a>
 						<ul>
-							<li><a href="http://metalexpert.pro/">Рубка стального листа гильотиной</a></li>
-							<li><a href="http://metalexpert.pro/">Изготовление арматурных каркасов (хомутов и скоб) </a></li>
-							<li><a href="http://metalexpert.pro/">Резка металла газом, лазером, плазмой</a></li>
-							<li><a href="http://metalexpert.pro/">Металлоконструкции по чертежам заказчика</a></li>
-							<li><a href="http://metalexpert.pro/">Сверление отверстий, сварка, гибка металла</a></li>
+							<li><a href="http://metalexpert.pro/deck.html">Рубка стального листа гильотиной</a></li>
+							<li><a href="http://metalexpert.pro/manufacturing.html">Изготовление арматурных каркасов (хомутов и скоб) </a></li>
+							<li><a href="http://metalexpert.pro/cutting.html">Резка металла газом, лазером, плазмой</a></li>
+							<li><a href="http://metalexpert.pro/metalware.html">Металлоконструкции по чертежам заказчика</a></li>
+							<li><a href="http://metalexpert.pro/drilling.html">Сверление отверстий, сварка, гибка металла</a></li>
 						</ul>
 					</li>
 					<li data-menuanchor="page4"><a href="#page4">Доставка</a></li>
@@ -527,16 +527,20 @@
 							<p>10555233034460</p>
 							<span>ОГРН</span>
 						</div>
+						<a class="about-link" target="_blank" href="№">Скачать реквизиты</a>
 						<h3 class="about-title__last">Надежность компании</h3>
 						<a target="_blank" href="https://basis.myseldon.com/ru">basis.myseldon.com</a>
 						<a target="_blank" href="https://focus.kontur.ru/entity?query=1055233034460">focus.kontur.ru</a>
 					</div>
 					<div class="about-content">
-						<div class="about-content__img">
+						<!--<div class="about-content__img">
 							<img src="img/content-main.jpg" alt="">
 							<div>
 								<p>торговый дом<span>Элпроком</span></p>
 							</div>
+						</div>-->
+						<div class="video">
+		      		<iframe src="https://www.youtube.com/embed/FZ1H12zTm_k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 						</div>
 						<p>Наша компания всегда работает по принципу – максимум качества по минимальным ценам. Наши металлобазы ежедневно обеспечивают различной металлопродукцией сотни организаций, тем самым заставляя нас становиться лучше и предлагать своим клиентам всё более выгодные условия сотрудничества.</p>
 						<p>Мы не ограничиваемся только продажей металла, в спектр наших услуг входит обработка изделий и доставка на собственном транспорте. Для нас важно, чтобы все наши партнеры, сотрудничая с нами, чувствовали уверенность, надежность и удобство. Именно поэтому для постоянных клиентов мы обеспечиваем лучшие варианты приобретения продукции.</p>
@@ -591,7 +595,7 @@
 			</div>
 		</section>
 		<section class="section contact pp-scrollable">
-			<div class="wrapper">
+			<div class="wrapper map-wrap">
 				<div class="map">
 					<div id="map"></div>
 					<div class="section-descr">
@@ -612,8 +616,7 @@
 							<h1>Контакты</h1>
 						</div>
 					</div>
-					<div class="contact-row">
-						<div class="contact-card">
+					<div class="contact-card contact-card__1">
 							<h3>Производственный цех и склад <img src="img/cargo.svg" alt=""></h3>
 							<div>
 								<span>Адрес</span>
@@ -635,8 +638,8 @@
 									<img src="img/zoom.svg" alt="">
 								</div>
 							</div>
-						</div>
-						<div class="contact-card">
+					</div>
+					<div class="contact-card contact-card__2">
 							<h3>Офис продаж <img src="img/cargo.svg" alt=""></h3>
 							<div>
 								<span>Адрес</span>
@@ -656,7 +659,6 @@
 									<img src="img/zoom.svg" alt="">
 								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -792,7 +794,7 @@
 	<footer class="footer">
 		<div class="wrapper">
 			<p>© 2005-2016. ООО «ТД ЭЛПРОКОМ». Все права защищены</p>
-			<p>Made by Riverstart</p>
+			<p><a href="#"></a></p>
 		</div>
 	</footer>
 
@@ -803,6 +805,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="libs/pagePiling/jquery.pagepiling.min.js"></script>
 	<script src="libs/lightbox2/js/lightbox.min.js"></script>
+	<script src="libs/mask/mask.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script>
 		ymaps.ready(init);
