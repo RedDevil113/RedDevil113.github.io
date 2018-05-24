@@ -63,18 +63,6 @@ $(document).ready(function(){
 	    $(this).find('#hidden-end-date').val(picker.endDate.format('DD.MM.YYYY'));
 	  });
 
-		/*
-	  $('.hotel_block #nav-avia .search-col__date p').on('apply.daterangepicker', function(ev, picker) {
-	    var hotel_id;
-	    hotel_id = $("#booking-form").data("hotel-id");
-	    $(".hotel_block #nav-avia form").attr('action', Routes.aviacentr_hotel_flies_path(hotel_id));
-	  });
-
-	  $('.cheap-tour-with-flies .search-col__date p').on('apply.daterangepicker', function(ev, picker) {
-	    $(".cheap-tour-with-flies #nav-avia form").attr('action', Routes.aviacentr_search_flies_path());
-	  });
-	  */
-
 	  $('.search-col__date').on('cancel.daterangepicker', function(ev, picker) {
 	    $(this).find('p').html('Выберите даты');
 	    console.log('dfs');
@@ -85,6 +73,7 @@ $(document).ready(function(){
 	$('.search-col').on('click', function(e){
 		$('.search-col').removeClass('search-col__active');
 		var target = e.target;
+
 		if(!$(this).hasClass("search-col__date") && !$(this).hasClass("search-col__5")){
 			$(this).addClass('search-col__active');
 			$(this).find('input').focus();
@@ -119,7 +108,7 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		
 		var attr = $(this).attr('data-tab');
-		$('.search-row').removeClass('tab-1 tab-2 tab-3 tab-4');
+		$('.search-row').removeClass('tab-1 tab-2 tab-3 tab-4 tab-5 tab-6');
 		$('.search-row').addClass(attr);
 
 		$('.search-col').removeClass('search-col__active');
@@ -164,9 +153,15 @@ $(document).ready(function(){
 	});
 
 	$('.search-col__food .search-col__bottom p').on('click', function(e){
+		if(!$(this).hasClass('search-text__label')){
+			$(this).parent().parent().find('.search-col__top p').text($(this).text());
+			$('.search-col__food .search-col__bottom p').removeClass('search-text__active');
+			$(this).addClass('search-text__active');
+		}
+		/*
 		$('.search-col__food .search-col__top p').text($(this).text());
 		$('.search-col__food .search-col__bottom p').removeClass('search-text__active');
-		$(this).addClass('search-text__active');
+		$(this).addClass('search-text__active');*/
 	});
 
 	//mob menu
@@ -241,6 +236,43 @@ $(document).ready(function(){
 		$('.tour-program__row').toggleClass('tour-program__row-open');
 	});
 
+	$( "#slider-range__1" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 100, 300 ],
+      slide: function( event, ui ) {
+        $(".search-additionally__col-1 .search-additionally__span-1").html( ui.values[ 0 ] + " <b>000</b>" );
+        $(".search-additionally__col-1 .search-additionally__span-2").html( ui.values[ 1 ] + " <b>000</b>" );
+        $("#amount-1").val( ui.values[ 0 ] + "000" + " " + ui.values[ 1 ] + "000" );
+      }
+    });
+    $("#amount-1").val( $( "#slider-range__1" ).slider( "values", 0 ) + "000" + " " + $( "#slider-range__1" ).slider( "values", 1 ) + "000" );
+    $(".search-additionally__col-1 .search-additionally__span-1").html( $( "#slider-range__1" ).slider( "values", 0 ) + " <b>000</b>");
+    $(".search-additionally__col-1 .search-additionally__span-2").html( $( "#slider-range__1" ).slider( "values", 1 ) + " <b>000</b>" );
+
+    $( "#slider-range__2" ).slider({
+      range: true,
+      min: 0,
+      max: 5,
+      values: [ 3, 5 ],
+      slide: function( event, ui ) {
+        $(".search-additionally__col-2 .search-additionally__span-1").html( ui.values[ 0 ]);
+        $(".search-additionally__col-2 .search-additionally__span-2").html( ui.values[ 1 ]);
+        $("#amount-2").val( ui.values[ 0 ] + " " + ui.values[ 1 ] );
+      }
+    });
+    $("#amount-2").val( $( "#slider-range__2" ).slider( "values", 0 )+ " " + $( "#slider-range__2" ).slider( "values", 1 ));
+    $(".search-additionally__col-2 .search-additionally__span-1").html( $( "#slider-range__2" ).slider( "values", 0 ));
+    $(".search-additionally__col-2 .search-additionally__span-2").html( $( "#slider-range__2" ).slider( "values", 1 ));
+
+  $('.search-additionally__filter').on('click', function(){
+  	$(this).toggleClass('open-arrow');
+  	$('.search-additionally__bottom').slideToggle();
+  });
+
+  $('.input-phone').mask( '+7' + '(999) 999-99-99');
+  
 	//modal
 	var modalCont = $('.modal'),
 		modalOver = $('.modal-overlay');
