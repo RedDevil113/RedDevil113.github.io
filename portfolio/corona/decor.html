@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<!-- modal-form -->
+	<div class="modal" id="modal-form">
+		<div class="modal-wrap">
+			<div class="modal-logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="modal-content">
+				<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Обратный звонок</h3>
+					<div class="action-form">
+						<div>
+							<label for="input-1">Ваше имя</label>
+							<input type="text" placeholder="Напишите как вас зовут" id="input-1">
+						</div>
+						<div>
+							<label for="input-2">Номер телефона</label>
+							<input class="input-phone" type="text" placeholder="+7 ___ ___ __ __" id="input-2">
+						</div>
+					</div>
+					<button class="button-arrow"><span>Получить предложение</span><img src="img/right.svg" alt=""></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-form -->
+	<div class="modal modal-flights" id="modal-flights">
+		<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+		<div class="modal-flights__wrap">
+			<div class="modal-flights__col">
+				<div class="modal-flights__head">
+					<div class="modal-flights__logo">
+						<img src="img/carrier-2.png" alt="">
+					</div>
+					<h3 class="modal-flights__title">Москва — Мале: 17 мая, четверг</h3>
+				</div>
+				<div class="modal-flights__row">
+					<div class="row">
+						<div class="modal-flights__row-col modal-flights__row-col__left">
+							<span>Москва</span>
+							<p><b>10:15</b>Domodedovo <i>DME</i></p>
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__center">
+							<span><b>5</b> часов <b>20</b> минут</span>
+							<img src="img/line-slide.svg" alt="">
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__right">
+							<span>Доха</span>
+							<p><b>21:15</b>Doha <i>DOH</i></p>
+						</div>
+					</div>
+					<div class="modal-flights__row-bottom">
+						<div class="modal-flights__row-1">
+							<p><img src="img/avia-gold.svg" alt=""><span>QR-673</span></p>
+						</div>
+						<div class="modal-flights__row-2">
+							<p> Airbus 330-300</p>
+						</div>
+						<div class="modal-flights__row-3">
+							<p>Economy <img src="img/baggage.svg" alt=""> <b>(N)</b></p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-flights__row-center">
+					<p><span>Пересадка: <b>5</b> часов <b>20</b> минут</span></p>
+				</div>
+				<div class="modal-flights__row">
+					<div class="row">
+						<div class="modal-flights__row-col modal-flights__row-col__left">
+							<span>Москва</span>
+							<p><b>10:15</b>Domodedovo <i>DME</i></p>
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__center">
+							<span><b>5</b> часов <b>20</b> минут</span>
+							<img src="img/line-slide.svg" alt="">
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__right">
+							<span>Доха</span>
+							<p><b>21:15</b>Doha <i>DOH</i></p>
+						</div>
+					</div>
+					<div class="modal-flights__row-bottom">
+						<div class="modal-flights__row-1">
+							<p><img src="img/avia-gold.svg" alt=""><span>QR-673</span></p>
+						</div>
+						<div class="modal-flights__row-2">
+							<p> Airbus 330-300</p>
+						</div>
+						<div class="modal-flights__row-3">
+							<p>Economy <img src="img/baggage.svg" alt=""> <b>(N)</b></p>
+						</div>
+					</div>
+				</div>
+				<p class="modal-flights__green">Тариф «economy» Багаж: 30K</p>
+			</div><!-- col(1) -->
+			<div class="modal-flights__col">
+				<div class="modal-flights__head">
+					<div class="modal-flights__logo">
+						<img src="img/carrier-2.png" alt="">
+					</div>
+					<h3 class="modal-flights__title">Москва — Мале: 17 мая, четверг</h3>
+				</div>
+				<div class="modal-flights__row">
+					<div class="row">
+						<div class="modal-flights__row-col modal-flights__row-col__left">
+							<span>Москва</span>
+							<p><b>10:15</b>Domodedovo <i>DME</i></p>
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__center">
+							<span><b>5</b> часов <b>20</b> минут</span>
+							<img src="img/line-slide.svg" alt="">
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__right">
+							<span>Доха</span>
+							<p><b>21:15</b>Doha <i>DOH</i></p>
+						</div>
+					</div>
+					<div class="modal-flights__row-bottom">
+						<div class="modal-flights__row-1">
+							<p><img src="img/avia-gold.svg" alt=""><span>QR-673</span></p>
+						</div>
+						<div class="modal-flights__row-2">
+							<p> Airbus 330-300</p>
+						</div>
+						<div class="modal-flights__row-3">
+							<p>Economy <img src="img/baggage.svg" alt=""> <b>(N)</b></p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-flights__row-center">
+					<p><span>Пересадка: <b>5</b> часов <b>20</b> минут</span></p>
+				</div>
+				<div class="modal-flights__row">
+					<div class="row">
+						<div class="modal-flights__row-col modal-flights__row-col__left">
+							<span>Москва</span>
+							<p><b>10:15</b>Domodedovo <i>DME</i></p>
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__center">
+							<span><b>5</b> часов <b>20</b> минут</span>
+							<img src="img/line-slide.svg" alt="">
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__right">
+							<span>Доха</span>
+							<p><b>21:15</b>Doha <i>DOH</i></p>
+						</div>
+					</div>
+					<div class="modal-flights__row-bottom">
+						<div class="modal-flights__row-1">
+							<p><img src="img/avia-gold.svg" alt=""><span>QR-673</span></p>
+						</div>
+						<div class="modal-flights__row-2">
+							<p> Airbus 330-300</p>
+						</div>
+						<div class="modal-flights__row-3">
+							<p>Economy <img src="img/baggage.svg" alt=""> <b>(N)</b></p>
+						</div>
+					</div>
+				</div>
+				<p class="modal-flights__green">Тариф «economy» Багаж: 30K</p>
+			</div><!-- col(2) -->
+			<div class="modal-flights__bottom">
+				<p class="modal-flights__bottom-text">Cтоимость авиаперелета указана за всех пассажиров, выбирайте вариант и увидите стоимость всех отелей на следующем шаге.</p>
+				<div class="modal-flights__bottom-row">
+					<p><span>76 193 ₽</span><b>от 1 228$</b></p>
+					<a href="#">
+						<b>Бронировать</b>
+						<span><img src="img/faforite.svg" alt=""></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start page-bg -->
+	<div class="page-bg" style="background: url(img/bg-4.png);"></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="arrow-mob">
+				<img src="img/arrow-menu.svg" alt="">
+			</div>
+			<nav class="header-nav">
+				<ul>
+					<li><a href="#">страны</a></li>
+					<li><a href="#">идеи путешествий</a></li>
+					<li><a href="#">о нас</a></li>
+					<li><a href="#">агентствам</a></li>
+					<li><a href="#">отзывы</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-bottom">
+			<div class="header-bottom__wrap">
+				<div class="menu-bar">
+					<span></span>
+				</div>
+				<ul class="header-bottom__menu">
+					<li><a class="active" href="#">Традиционные туры</a></li>
+					<li><a href="#">Медицинские туры</a></li>
+				</ul>
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+					<div class="bread-crumbs bread-crumbs__blue">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Отели</a></li>
+							<li><a href="#">Palm Beach Resort & Spa Maldives</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-bottom__right">
+					<ul>
+						<li><a href="#"><img src="img/user.svg" alt=""><span>Личный кабинет</span></a></li>
+						<li><a href="#"><img src="img/faforite-gold.svg" alt=""><span>Избранное</span></a></li>
+					</ul>
+					<div class="header-bottom__phone">
+						<a href="#">8 800 540-54-17</a>
+						<p><a class="button-modal" href="#modal-form">Обратный звонок</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start head-page -->
+	<section class="head-page">
+		<div class="wrapper">
+			<h1>Оформление тура</h1>
+		</div>
+	</section>
+	<!-- end head-page -->
+	<!-- start design-tour -->
+	<section class="design-tour">
+		<div class="wrapper design-tour__wrapper design-tour__wrapper-2">
+			<div class="design-tour__head design-tour__head-2">
+				<div class="design-tour__descr design-tour__descr-2">
+					<ul class="design-tour__star">
+						<li><img src="img/star-2.svg" alt=""></li>
+						<li><img src="img/star-2.svg" alt=""></li>
+						<li><img src="img/star-2.svg" alt=""></li>
+						<li><img src="img/star-2.svg" alt=""></li>
+						<li><img src="img/star-2.svg" alt=""></li>
+					</ul>
+					<h3 class="design-tour__title">Ellaidhoo Maldives by Cinnamon <span>Reethi Villa, 75 м²</span></h3>
+					<div class="design-tour__inputs">
+						<div class="search-col search-col__3 search-col__date">
+							<div class="search-col__wrap">
+								<div class="search-col__top">
+									<input class="hidden-start-date" name="start_date" type="hidden" value="">
+									<input class="hidden-end-date" name="end_date" type="hidden" value="">
+									<img src="img/select-ico-3.svg" alt="">
+									<span>Даты</span>
+									<p>с __________  по ___________</p>
+								</div>
+							</div>
+						</div>
+						<div class="search-col search-col__4">
+							<div class="search-col__wrap search-col__people">
+								<div class="search-col__top">
+									<div class="search-col__top-wrap"></div>
+									<img src="img/select-ico-4.svg" alt="">
+									<span>Количество человек</span>
+									<p>2 взрослых, 3 детей</p>
+								</div>
+								<div class="search-col__bottom">
+									<div class="search-col__people-wrap">
+										<p>Взрослые:</p>
+										<div class="search-col__people-scores search-col__people-adults">
+											<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
+											<b>2</b>
+											<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
+										</div>
+									</div>
+									<div class="search-col__people-wrap">
+										<p>Дети:</p>
+										<div class="search-col__people-scores search-col__people-children">
+											<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
+											<b>3</b>
+											<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
+										</div>
+									</div>
+									<div class="search-col__people-wrap search-col__people-wrap__bg active-3">
+										<p>Возраст детей:</p>
+										<div class="search-col__people-row people-row__1">
+											<p>1:</p>
+											<div class="search-col__people-scores">
+												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
+												<b>6</b>
+												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
+											</div>
+										</div><!-- row(1) -->
+										<div class="search-col__people-row people-row__2">
+											<p>2:</p>
+											<div class="search-col__people-scores">
+												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
+												<b>2</b>
+												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
+											</div>
+										</div><!-- row(2) -->
+										<div class="search-col__people-row people-row__3">
+											<p>3:</p>
+											<div class="search-col__people-scores">
+												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
+												<b>12</b>
+												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
+											</div>
+										</div><!-- row(3) -->
+										<div class="search-col__people-row people-row__4">
+											<p>4:</p>
+											<div class="search-col__people-scores">
+												<span><img class="scores-minus" src="img/minus.svg" alt=""></span>
+												<b></b>
+												<span><img class="scores-pluse" src="img/plus.svg" alt=""></span>
+											</div>
+										</div><!-- row(4) -->
+									</div>
+									<div class="search-col__people-wrap search-col__people-select">
+										<p>Класс перелёта:</p>
+										<div class="people-select">
+											<div class="people-select__top">
+												<p>Бизнес</p>
+											</div>
+											<div class="people-select__bottom">
+												<p>Эконом</p>
+												<p class="search-text__active">Бизнес</p>
+												<p>Первый</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="design-tour__cost design-tour__cost-bg">
+					<p class="design-tour__cost-1">306 193 ₽</p>
+					<p class="design-tour__cost-2">от 2 979 $</p>
+					<p class="design-tour__cost-3">Завтрак и ужин</p>
+				</div>
+				<div class="design-tour__cost design-tour__cost-mob">
+					<p class="design-tour__cost-1">306 193 ₽</p>
+					<p class="design-tour__cost-2">от 2 979 $</p>
+					<p class="design-tour__cost-3">Завтрак и ужин</p>
+				</div>
+				<div class="design-tour__list design-tour__list-2">
+					<p>Бонусы</p>
+					<ul>
+						<li>Ранее бронирование >60 дней 10% скидка</li>
+						<li>Ранее бронирование >30 дней 5% скидка, Complimentary Half Board</li>
+						<li>Ранее бронирование >30 дней 5% скидка+Complimentary Half Board</li>
+						<li>Ранее бронирование >60 дней 10% скидка+Complimentary Half Board</li>
+					</ul>
+				</div>
+				<div class="design-tour__info">
+					<b>Гидросамолет</b>
+					<p>700 $</p>
+					<span>2 взрослых и без детей</span>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="design-tour__transfer">
+				<div class="transfer-col">
+					<div class="transfer-col__img">
+						<img src="img/transfer-2.png" alt="">
+					</div>
+					<div class="transfer-col__descr">
+						<h4 class="transfer-col__descr-name">Гидросамолет</h4>
+						<p>700 $</p>
+						<span>2 взрослых и без детей</span>
+					</div>
+				</div>
+			</div>
+			<div class="design-tour__tourist">
+				<div class="design-tour__tourist-head">
+					<h3 class="design-tour__tourist-title">1 Турист (заказчик)</h3>
+					<p>На эти данные будет оформлен договор. Пожалуйста внимательно заполняйте поля, как в паспорте.</p>
+				</div>
+				<div class="design-tour__tourist-row">
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Фамилия (*англ. загранпаспорт)</p>
+							<input type="text" placeholder="Например IVANOV">
+						</div>
+					</div><!-- col(1) -->
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Имя (*англ. загранпаспорт)</p>
+							<input type="text" placeholder="Например IVAN">
+						</div>
+					</div><!-- col(2) -->
+					<div class="search-col search-col__3 search-col__date design-tour__tourist-col">
+						<div class="search-col__wrap">
+							<div class="search-col__top">
+								<input class="hidden-start-date" name="start_date" type="hidden" value="">
+								<input class="hidden-end-date" name="end_date" type="hidden" value="">
+								<span>Даты</span>
+								<p class="design-tour__tourist-text">dd/mm/yyyy</p>
+							</div>
+						</div>
+					</div><!-- col(3) -->
+					<div class="design-tour__tourist-col design-tour__tourist-radio">
+							<p>Пол</p>
+						<div class="design-tour__tourist-radio__row">
+							<div>
+								<input type="radio" id="radio-1" name="radio">
+								<span></span>
+								<label for="radio-1">Мужской</label>
+							</div>
+							<div>
+								<input type="radio" id="radio-2" name="radio">
+								<span></span>
+								<label for="radio-2">Женский</label>
+							</div>
+						</div>
+					</div><!-- col(4) -->
+					<div class="search-col search-col__5 design-tour__tourist-col">
+						<div class="search-col__wrap search-col__food">
+							<div class="search-col__top">
+								<div class="search-col__top-wrap"></div>
+								<span>Город проживания</span>
+								<p class="food-value design-tour__tourist-text">Москва</p>
+							</div>
+							<div class="search-col__bottom">
+								<p class="search-text__active">Москваа</p>
+								<p>1Москва</p>
+								<p>2Москва</p>
+								<p>3Москва</p>
+							</div>
+						</div>
+					</div><!-- col(5) -->
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Номер телефона</p>
+							<input class="input-phone" type="tel" placeholder="+7 ___ ___-__-__">
+						</div>
+					</div><!-- col(6) -->
+				</div>
+				<div class="design-tour__tourist-bottom">
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Номер загран паспорта</p>
+							<input type="text" placeholder="451234567">
+						</div>
+					</div><!-- col(7) -->
+					<div class="search-col search-col__3 search-col__date design-tour__tourist-col">
+						<div class="search-col__wrap">
+							<div class="search-col__top">
+								<input class="hidden-start-date" name="start_date" type="hidden" value="">
+								<input class="hidden-end-date" name="end_date" type="hidden" value="">
+								<span>Даты</span>
+								<p class="design-tour__tourist-text">dd/mm/yyyy</p>
+							</div>
+						</div>
+					</div><!-- col(8) -->
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Электронная почта</p>
+							<input type="email" placeholder="Ваш email">
+						</div>
+					</div><!-- col(9) -->
+				</div>
+			</div>
+			<div class="design-tour__tourist design-tour__tourist-last">
+				<div class="design-tour__tourist-head">
+					<h3 class="design-tour__tourist-title">2 Турист</h3>
+				</div>
+				<div class="design-tour__tourist-row">
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Фамилия (*англ. загранпаспорт)</p>
+							<input type="text" placeholder="Например IVANOV">
+						</div>
+					</div><!-- col(1) -->
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Имя (*англ. загранпаспорт)</p>
+							<input type="text" placeholder="Например IVAN">
+						</div>
+					</div><!-- col(2) -->
+					<div class="search-col search-col__3 search-col__date design-tour__tourist-col">
+						<div class="search-col__wrap">
+							<div class="search-col__top">
+								<input class="hidden-start-date" name="start_date" type="hidden" value="">
+								<input class="hidden-end-date" name="end_date" type="hidden" value="">
+								<span>Даты</span>
+								<p class="design-tour__tourist-text">dd/mm/yyyy</p>
+							</div>
+						</div>
+					</div><!-- col(3) -->
+					<div class="design-tour__tourist-col design-tour__tourist-radio">
+							<p>Пол</p>
+						<div class="design-tour__tourist-radio__row">
+							<div>
+								<input type="radio" id="radio-1" name="radio">
+								<span></span>
+								<label for="radio-1">Мужской</label>
+							</div>
+							<div>
+								<input type="radio" id="radio-2" name="radio">
+								<span></span>
+								<label for="radio-2">Женский</label>
+							</div>
+						</div>
+					</div><!-- col(4) -->
+					<div class="search-col search-col__5 design-tour__tourist-col">
+						<div class="search-col__wrap search-col__food">
+							<div class="search-col__top">
+								<div class="search-col__top-wrap"></div>
+								<span>Город проживания</span>
+								<p class="food-value design-tour__tourist-text">Москва</p>
+							</div>
+							<div class="search-col__bottom">
+								<p class="search-text__active">Москваа</p>
+								<p>1Москва</p>
+								<p>2Москва</p>
+								<p>3Москва</p>
+							</div>
+						</div>
+					</div><!-- col(5) -->
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Номер телефона</p>
+							<input class="input-phone" type="tel" placeholder="+7 ___ ___-__-__">
+						</div>
+					</div><!-- col(6) -->
+				</div>
+				<div class="design-tour__tourist-bottom">
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Номер загран паспорта</p>
+							<input type="text" placeholder="451234567">
+						</div>
+					</div><!-- col(7) -->
+					<div class="search-col search-col__3 search-col__date design-tour__tourist-col">
+						<div class="search-col__wrap">
+							<div class="search-col__top">
+								<input class="hidden-start-date" name="start_date" type="hidden" value="">
+								<input class="hidden-end-date" name="end_date" type="hidden" value="">
+								<span>Даты</span>
+								<p class="design-tour__tourist-text">dd/mm/yyyy</p>
+							</div>
+						</div>
+					</div><!-- col(8) -->
+					<div class="design-tour__tourist-col">
+						<div class="design-tour__tourist-input">
+							<p>Электронная почта</p>
+							<input type="email" placeholder="Ваш email">
+						</div>
+					</div><!-- col(9) -->
+				</div>
+			</div>
+			<div class="design-tour__textarea">
+				<div>
+					<p>Дополнительная информация от заказчика</p>
+					<textarea name="text" placeholder="Комментарииии к заказу"></textarea>
+				</div>
+			</div>
+			<p class="design-tour__label">
+				<label class="input-check">
+					<span>Я ознакомлен с <a href="#">договором</a> и принимаю его условия. Договор будет выслан на указанный email после оплаты.</span>
+					<input type="checkbox" checked="checked">
+					<b class="checkmark"></b>
+				</label>
+			</p>
+			<div class="button-center">
+				<a class="design-tour__button" href="#">Заказать тур</a>
+			</div>
+		</div>
+	</section>
+	<!-- end design-tour -->
+	<!-- start managers -->
+	<section class="managers">
+		<div class="wrapper">
+			<div class="about-managers">
+				<h3>Менеджеры</h3>
+				<div class="about-managers__row">
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(1) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(2) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(3) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(4) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(5) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(6) -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end managers -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-wrapper">
+			<div class="footer-top">
+				<div class="footer-top__col footer-top__left">
+					<ul>
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/fb.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+					</ul>
+					<p>Адрес: 119017 Москва, Пятница 43, стр.3</p>
+					<a href="#"><span>Карта проезда</span></a>
+				</div>
+				<div class="footer-top__col footer-top__center">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+						<p>Corona Travel</p>
+						<span>Отдых. Бизнес. Путешествия</span>
+					</div>
+				</div>
+				<div class="footer-top__col footer-top__right">
+					<a href="#">8 800 540-54-17</a>
+					<p><a href="#">Обратный звонок</a></p>
+				</div>
+			</div><!-- footer-top -->
+			<div class="footer-middle">
+				<div class="footer-middle__left">
+					<h3>Традиционные туры</h3>
+					<ul>
+						<li><a href="#">Экскурсии</a></li>
+						<li><a href="#">Горные лыжи</a></li>
+						<li><a href="#">Дайвинг</a></li>
+						<li><a href="#">Стоматологические туры</a></li>
+						<li><a href="#">Коррекция зрения</a></li>
+						<li><a href="#">Лечения онкологических заболеваний</a></li>
+					</ul>
+				</div>
+				<div class="footer-middle__center">
+					<h3>Популярные направления</h3>
+					<ul>
+						<li><a href="#">Израиль, Тель-Авив</a></li>
+						<li><a href="#">Сингапур</a></li>
+						<li><a href="#">Швейцария</a></li>
+						<li><a href="#">Тайланд</a></li>
+						<li><a href="#">Брюсель</a></li>
+						<li><a href="#">Венгрия</a></li>
+					</ul>
+				</div>
+				<div class="footer-middle__right">
+					<h3>Corona Travel</h3>
+					<ul>
+						<li><a href="#">Туроператоры</a></li>
+						<li><a href="#">Отели</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div><!-- footer-middle -->
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<div class="footer-bottom__descr">
+					<ul>
+						<li><img src="img/visa.png" alt=""></li>
+						<li><img src="img/visa-el.png" alt=""></li>
+						<li><img src="img/maestro.png" alt=""></li>
+						<li><img src="img/mastercard.png" alt=""></li>
+						<li><img src="img/mir.png" alt=""></li>
+					</ul>
+					<p>Corona Travel © 2001–2018 | Все права защищены </p>
+				</div>
+			</div>
+		</div><!-- footer-bottom -->
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/lightbox2/css/lightbox.min.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/lightbox2/js/lightbox.min.js"></script>
+	<script src="libs/mask/mask.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

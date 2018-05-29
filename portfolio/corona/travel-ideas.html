@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body>
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-wrap">
+			<div class="modal-logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="modal-content">
+				<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Обратный звонок</h3>
+					<div class="action-form">
+						<div>
+							<label for="input-1">Ваше имя</label>
+							<input type="text" placeholder="Напишите как вас зовут" id="input-1">
+						</div>
+						<div>
+							<label for="input-2">Номер телефона</label>
+							<input class="input-phone" type="text" placeholder="+7 ___ ___ __ __" id="input-2">
+						</div>
+					</div>
+					<button class="button-arrow"><span>Получить предложение</span><img src="img/right.svg" alt=""></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- start page-bg -->
+	<div class="page-bg" style="background: url(img/bg-3.png);"></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="arrow-mob">
+				<img src="img/arrow-menu.svg" alt="">
+			</div>
+			<nav class="header-nav">
+				<ul>
+					<li><a href="#">страны</a></li>
+					<li><a href="#">идеи путешествий</a></li>
+					<li><a href="#">о нас</a></li>
+					<li><a href="#">агентствам</a></li>
+					<li><a href="#">отзывы</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-bottom">
+			<div class="header-bottom__wrap">
+				<div class="menu-bar">
+					<span></span>
+				</div>
+				<ul class="header-bottom__menu">
+					<li><a class="active" href="#">Традиционные туры</a></li>
+					<li><a href="#">Медицинские туры</a></li>
+				</ul>
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+					<div class="bread-crumbs bread-crumbs__blue">
+						<ul>
+							<li><a href="#">Главная</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-bottom__right">
+					<ul>
+						<li><a href="#"><img src="img/user.svg" alt=""><span>Личный кабинет</span></a></li>
+						<li><a href="#"><img src="img/faforite-gold.svg" alt=""><span>Избранное</span></a></li>
+					</ul>
+					<div class="header-bottom__phone">
+						<a href="#">8 800 540-54-17</a>
+						<p><a class="button-modal" href="#modal-form">Обратный звонок</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start head-page -->
+	<section class="head-page head-page__big">
+		<div class="wrapper">
+			<h1>Идеи путешествий</h1>
+		</div>
+	</section>
+	<!-- end head-page -->
+	<!-- start articles -->
+	<section class="articles articles-big">
+		<div class="wrapper">
+			<div class="articles-row">
+				<article class="article-col">
+					<div class="article-col__wrap" style="background: url(img/article-1.jpg);">
+						<a class="article-col__link" href="#"></a>
+						<a class="article-col__like" href="#"><img src="img/faforite.svg" alt=""></a>
+						<div class="article-col__descr">
+							<h3>Новая hhhh Зеландия Земля</h3>
+							<ul>
+								<li>от 31 000 ₽</li>
+								<li>10 дней</li>
+							</ul>
+							<p>Сингапур – это город-государство, будто бы сошедший со страниц научно-фантастического романа.</p>
+							<p><span>Маршрут</span>: Окленд – Вайтомо – Роторуа – Туранги – Мартинборо – Веллингтон – Пиктон – Греймаус – Хааст – Квинстаун – Милфорд – Саунд </p>
+						</div>
+					</div>
+				</article><!-- col(1) -->
+				<article class="article-col">
+					<div class="article-col__wrap" style="background: url(img/article-1.jpg);">
+						<a class="article-col__link" href="#"></a>
+						<a class="article-col__like" href="#"><img src="img/faforite.svg" alt=""></a>
+						<div class="article-col__descr">
+							<h3>Израиль</h3>
+							<ul>
+								<li>от 31 000 ₽</li>
+								<li>10 дней</li>
+							</ul>
+							<p>Сингапур – это город-государство, будто бы сошедший со страниц научно-фантастического романа.</p>
+							<p><span>Маршрут</span>: Окленд – Вайтомо – Роторуа – Туранги – Мартинборо – Веллингтон – Пиктон – Греймаус – Хааст – Квинстаун – Милфорд – Саунд </p>
+						</div>
+					</div>
+				</article><!-- col(2) -->
+				<article class="article-col">
+					<div class="article-col__wrap" style="background: url(img/article-1.jpg);">
+						<a class="article-col__link" href="#"></a>
+						<a class="article-col__like" href="#"><img src="img/faforite.svg" alt=""></a>
+						<div class="article-col__descr">
+							<h3>Израиль</h3>
+							<ul>
+								<li>от 31 000 ₽</li>
+								<li>10 дней</li>
+							</ul>
+							<p>Сингапур – это город-государство, будто бы сошедший со страниц научно-фантастического романа.</p>
+							<p><span>Маршрут</span>: Окленд – Вайтомо – Роторуа – Туранги – Мартинборо – Веллингтон – Пиктон – Греймаус – Хааст – Квинстаун – Милфорд – Саунд </p>
+						</div>
+					</div>
+				</article><!-- col(3) -->
+				<article class="article-col">
+					<div class="article-col__wrap" style="background: url(img/article-1.jpg);">
+						<a class="article-col__link" href="#"></a>
+						<a class="article-col__like" href="#"><img src="img/faforite.svg" alt=""></a>
+						<div class="article-col__descr">
+							<h3>Израиль</h3>
+							<ul>
+								<li>от 31 000 ₽</li>
+								<li>10 дней</li>
+							</ul>
+							<p>Сингапур – это город-государство, будто бы сошедший со страниц научно-фантастического романа.</p>
+							<p><span>Маршрут</span>: Окленд – Вайтомо – Роторуа – Туранги – Мартинборо – Веллингтон – Пиктон – Греймаус – Хааст – Квинстаун – Милфорд – Саунд </p>
+						</div>
+					</div>
+				</article><!-- col(4) -->
+				<article class="article-col">
+					<div class="article-col__wrap" style="background: url(img/article-1.jpg);">
+						<a class="article-col__link" href="#"></a>
+						<a class="article-col__like" href="#"><img src="img/faforite.svg" alt=""></a>
+						<div class="article-col__descr">
+							<h3>Израиль</h3>
+							<ul>
+								<li>от 31 000 ₽</li>
+								<li>10 дней</li>
+							</ul>
+							<p>Сингапур – это город-государство, будто бы сошедший со страниц научно-фантастического романа.</p>
+							<p><span>Маршрут</span>: Окленд – Вайтомо – Роторуа – Туранги – Мартинборо – Веллингтон – Пиктон – Греймаус – Хааст – Квинстаун – Милфорд – Саунд </p>
+						</div>
+					</div>
+				</article><!-- col(5) -->
+				<article class="article-col">
+					<div class="article-col__wrap" style="background: url(img/article-1.jpg);">
+						<a class="article-col__link" href="#"></a>
+						<a class="article-col__like" href="#"><img src="img/faforite.svg" alt=""></a>
+						<div class="article-col__descr">
+							<h3>Израиль</h3>
+							<ul>
+								<li>от 31 000 ₽</li>
+								<li>10 дней</li>
+							</ul>
+							<p>Сингапур – это город-государство, будто бы сошедший со страниц научно-фантастического романа.</p>
+							<p><span>Маршрут</span>: Окленд – Вайтомо – Роторуа – Туранги – Мартинборо – Веллингтон – Пиктон – Греймаус – Хааст – Квинстаун – Милфорд – Саунд </p>
+						</div>
+					</div>
+				</article><!-- col(6) -->
+			</div>
+			<div class="extradition-bottom">
+				<div class="extradition-bottom__arrow extradition-bottom__left">
+					<a href="#"><img src="img/left-gold.svg" alt=""></a>
+				</div>
+				<div class="extradition-bottom__arrow extradition-bottom__right">
+					<a href="#"><img src="img/right-gold__border.svg" alt=""></a>
+				</div>
+				<p>Всего <span>1403</span> объекта по <span>10</span> на странице</p>
+				<ul class="extradition-pagination">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a class="active" href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end articles -->
+	<!-- start managers -->
+	<section class="managers">
+		<div class="wrapper">
+			<div class="about-managers">
+				<h3>Менеджеры</h3>
+				<div class="about-managers__row">
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(1) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(2) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(3) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(4) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(5) -->
+					<div class="about-manager">
+						<div class="about-manager__img">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<div class="about-manager__descr">
+							<p>Кухтина Алена</p>
+							<ul>
+								<li><span>Skype:</span><a href="#"> alena@corona.travel</a></li>
+								<li><span>Phone:</span><a href="#"> +7 (495) 540-54-17</a></li>
+								<li><span>Telegram:</span><a href="#"> Corona Travel</a></li>
+							</ul>
+						</div>
+					</div><!-- col(6) -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end managers -->
+	<!-- start action -->
+	<section class="action action-bottom">
+		<div class="action-wrap" style="background: url(img/individual-bg.jpg);">
+			<h2>Индивидуальное предложение</h2>
+			<p>Заполните заявку и мы подберём для вас предложения по турам</p>
+			<form action="">
+				<div class="action-form">
+					<div>
+						<label for="input-1">Ваше имя</label>
+						<input type="text" placeholder="Напишите как вас зовут" id="input-1">
+					</div>
+					<div>
+						<label for="input-2">Номер телефона</label>
+						<input type="text" placeholder="+7 ___ ___ __ __" id="input-2">
+					</div>
+					<div>
+						<label for="input-3">Цель поездки</label>
+						<input type="text" placeholder="Отдых или лечение" id="input-3">
+					</div>
+				</div>
+				<button class="action-form__button"><span>Получить предложение</span><img src="img/right.svg" alt=""></button>
+			</form>
+		</div>
+	</section>
+	<!-- end action -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-wrapper">
+			<div class="footer-top">
+				<div class="footer-top__col footer-top__left">
+					<ul>
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/fb.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+					</ul>
+					<p>Адрес: 119017 Москва, Пятница 43, стр.3</p>
+					<a href="#"><span>Карта проезда</span></a>
+				</div>
+				<div class="footer-top__col footer-top__center">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+						<p>Corona Travel</p>
+						<span>Отдых. Бизнес. Путешествия</span>
+					</div>
+				</div>
+				<div class="footer-top__col footer-top__right">
+					<a href="#">8 800 540-54-17</a>
+					<p><a href="#">Обратный звонок</a></p>
+				</div>
+			</div><!-- footer-top -->
+			<div class="footer-middle">
+				<div class="footer-middle__left">
+					<h3>Традиционные туры</h3>
+					<ul>
+						<li><a href="#">Экскурсии</a></li>
+						<li><a href="#">Горные лыжи</a></li>
+						<li><a href="#">Дайвинг</a></li>
+						<li><a href="#">Стоматологические туры</a></li>
+						<li><a href="#">Коррекция зрения</a></li>
+						<li><a href="#">Лечения онкологических заболеваний</a></li>
+					</ul>
+				</div>
+				<div class="footer-middle__center">
+					<h3>Популярные направления</h3>
+					<ul>
+						<li><a href="#">Израиль, Тель-Авив</a></li>
+						<li><a href="#">Сингапур</a></li>
+						<li><a href="#">Швейцария</a></li>
+						<li><a href="#">Тайланд</a></li>
+						<li><a href="#">Брюсель</a></li>
+						<li><a href="#">Венгрия</a></li>
+					</ul>
+				</div>
+				<div class="footer-middle__right">
+					<h3>Corona Travel</h3>
+					<ul>
+						<li><a href="#">Туроператоры</a></li>
+						<li><a href="#">Отели</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div><!-- footer-middle -->
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<div class="footer-bottom__descr">
+					<ul>
+						<li><img src="img/visa.png" alt=""></li>
+						<li><img src="img/visa-el.png" alt=""></li>
+						<li><img src="img/maestro.png" alt=""></li>
+						<li><img src="img/mastercard.png" alt=""></li>
+						<li><img src="img/mir.png" alt=""></li>
+					</ul>
+					<p>Corona Travel © 2001–2018 | Все права защищены </p>
+				</div>
+			</div>
+		</div><!-- footer-bottom -->
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/lightbox2/css/lightbox.min.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/lightbox2/js/lightbox.min.js"></script>
+	<script src="libs/mask/mask.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

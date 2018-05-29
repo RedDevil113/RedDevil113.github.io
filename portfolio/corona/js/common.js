@@ -57,15 +57,20 @@ $(document).ready(function(){
 	    } 
 	  });
 
-		$('.search-col__date').on('apply.daterangepicker', function(ev, picker) {
-	    $(this).find('p').html(picker.startDate.format('c DD.MM') + ' по ' + picker.endDate.format('DD.MM'));
-	    $(this).find('#hidden-start-date').val(picker.startDate.format('DD.MM.YYYY'));
-	    $(this).find('#hidden-end-date').val(picker.endDate.format('DD.MM.YYYY'));
-	  });
-
 	  $('.search-col__date').on('cancel.daterangepicker', function(ev, picker) {
 	    $(this).find('p').html('Выберите даты');
-	    console.log('dfs');
+	  });
+
+		$('.search-col__date').on('apply.daterangepicker', function(ev, picker) {
+	    $(this).find('p').html(picker.startDate.format('c DD.MM') + ' по ' + picker.endDate.format('DD.MM'));
+	    $(this).find('.hidden-start-date').val(picker.startDate.format('DD.MM.YYYY'));
+	    $(this).find('.hidden-end-date').val(picker.endDate.format('DD.MM.YYYY'));
+	  });
+
+	  $('.search-col__date').on('click.daterangepicker', function(ev, picker){
+	  	$(this).find('p').html(picker.startDate.format('c DD.MM') + ' по ' + picker.endDate.format('DD.MM'));
+	  	$(this).find('.hidden-start-date').val(picker.startDate.format('DD.MM.YYYY'));
+	    $(this).find('.hidden-end-date').val(picker.endDate.format('DD.MM.YYYY'));
 	  });
 	  
 	}
@@ -208,6 +213,19 @@ $(document).ready(function(){
     ]
 	});
 
+	$('.extradition-col__descr-slider').slick({
+	  infinite: true,
+	  arrows: true,
+	  dots: true,
+	  nextArrow: '<button class="slick-arrow slick-next"></button>',
+ 	  prevArrow: '<button class="slick-arrow slick-prev"></button>',
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay:true,
+	  autoplaySpeed:15000,
+	  speed:1000,
+	});
+
 	lightbox.option({
 	  'resizeDuration': 100,
 	  'wrapAround': true
@@ -272,6 +290,18 @@ $(document).ready(function(){
   });
 
   $('.input-phone').mask( '+7' + '(999) 999-99-99');
+
+  $('.gallery-row div').on('click', function(){
+  	var attr = $(this).attr('style');
+  	
+  	$('.gallery-main__img').attr('style', attr);
+  });
+
+  $('.extradition-col__descr-bottom').css('padding-top', $('.extradition-col__descr-slider').height() + 30 + 'px');
+
+  $(window).resize(function(){
+  	$('.extradition-col__descr-bottom').css('padding-top', $('.extradition-col__descr-slider').height() + 30 + 'px');
+  });
   
 	//modal
 	var modalCont = $('.modal'),

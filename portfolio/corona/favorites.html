@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<!-- modal-form -->
+	<div class="modal" id="modal-form">
+		<div class="modal-wrap">
+			<div class="modal-logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="modal-content">
+				<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+				<form class="callback" method="POST">
+					<h3 class="modal-title">Обратный звонок</h3>
+					<div class="action-form">
+						<div>
+							<label for="input-1">Ваше имя</label>
+							<input type="text" placeholder="Напишите как вас зовут" id="input-1">
+						</div>
+						<div>
+							<label for="input-2">Номер телефона</label>
+							<input class="input-phone" type="text" placeholder="+7 ___ ___ __ __" id="input-2">
+						</div>
+					</div>
+					<button class="button-arrow"><span>Получить предложение</span><img src="img/right.svg" alt=""></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-form -->
+	<div class="modal modal-flights" id="modal-flights">
+		<div class="cancel"><img src="img/close-modal.svg" alt=""></div>
+		<div class="modal-flights__wrap">
+			<div class="modal-flights__col">
+				<div class="modal-flights__head">
+					<div class="modal-flights__logo">
+						<img src="img/carrier-2.png" alt="">
+					</div>
+					<h3 class="modal-flights__title">Москва — Мале: 17 мая, четверг</h3>
+				</div>
+				<div class="modal-flights__row">
+					<div class="row">
+						<div class="modal-flights__row-col modal-flights__row-col__left">
+							<span>Москва</span>
+							<p><b>10:15</b>Domodedovo <i>DME</i></p>
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__center">
+							<span><b>5</b> часов <b>20</b> минут</span>
+							<img src="img/line-slide.svg" alt="">
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__right">
+							<span>Доха</span>
+							<p><b>21:15</b>Doha <i>DOH</i></p>
+						</div>
+					</div>
+					<div class="modal-flights__row-bottom">
+						<div class="modal-flights__row-1">
+							<p><img src="img/avia-gold.svg" alt=""><span>QR-673</span></p>
+						</div>
+						<div class="modal-flights__row-2">
+							<p> Airbus 330-300</p>
+						</div>
+						<div class="modal-flights__row-3">
+							<p>Economy <img src="img/baggage.svg" alt=""> <b>(N)</b></p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-flights__row-center">
+					<p><span>Пересадка: <b>5</b> часов <b>20</b> минут</span></p>
+				</div>
+				<div class="modal-flights__row">
+					<div class="row">
+						<div class="modal-flights__row-col modal-flights__row-col__left">
+							<span>Москва</span>
+							<p><b>10:15</b>Domodedovo <i>DME</i></p>
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__center">
+							<span><b>5</b> часов <b>20</b> минут</span>
+							<img src="img/line-slide.svg" alt="">
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__right">
+							<span>Доха</span>
+							<p><b>21:15</b>Doha <i>DOH</i></p>
+						</div>
+					</div>
+					<div class="modal-flights__row-bottom">
+						<div class="modal-flights__row-1">
+							<p><img src="img/avia-gold.svg" alt=""><span>QR-673</span></p>
+						</div>
+						<div class="modal-flights__row-2">
+							<p> Airbus 330-300</p>
+						</div>
+						<div class="modal-flights__row-3">
+							<p>Economy <img src="img/baggage.svg" alt=""> <b>(N)</b></p>
+						</div>
+					</div>
+				</div>
+				<p class="modal-flights__green">Тариф «economy» Багаж: 30K</p>
+			</div><!-- col(1) -->
+			<div class="modal-flights__col">
+				<div class="modal-flights__head">
+					<div class="modal-flights__logo">
+						<img src="img/carrier-2.png" alt="">
+					</div>
+					<h3 class="modal-flights__title">Москва — Мале: 17 мая, четверг</h3>
+				</div>
+				<div class="modal-flights__row">
+					<div class="row">
+						<div class="modal-flights__row-col modal-flights__row-col__left">
+							<span>Москва</span>
+							<p><b>10:15</b>Domodedovo <i>DME</i></p>
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__center">
+							<span><b>5</b> часов <b>20</b> минут</span>
+							<img src="img/line-slide.svg" alt="">
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__right">
+							<span>Доха</span>
+							<p><b>21:15</b>Doha <i>DOH</i></p>
+						</div>
+					</div>
+					<div class="modal-flights__row-bottom">
+						<div class="modal-flights__row-1">
+							<p><img src="img/avia-gold.svg" alt=""><span>QR-673</span></p>
+						</div>
+						<div class="modal-flights__row-2">
+							<p> Airbus 330-300</p>
+						</div>
+						<div class="modal-flights__row-3">
+							<p>Economy <img src="img/baggage.svg" alt=""> <b>(N)</b></p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-flights__row-center">
+					<p><span>Пересадка: <b>5</b> часов <b>20</b> минут</span></p>
+				</div>
+				<div class="modal-flights__row">
+					<div class="row">
+						<div class="modal-flights__row-col modal-flights__row-col__left">
+							<span>Москва</span>
+							<p><b>10:15</b>Domodedovo <i>DME</i></p>
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__center">
+							<span><b>5</b> часов <b>20</b> минут</span>
+							<img src="img/line-slide.svg" alt="">
+						</div>
+						<div class="modal-flights__row-col modal-flights__row-col__right">
+							<span>Доха</span>
+							<p><b>21:15</b>Doha <i>DOH</i></p>
+						</div>
+					</div>
+					<div class="modal-flights__row-bottom">
+						<div class="modal-flights__row-1">
+							<p><img src="img/avia-gold.svg" alt=""><span>QR-673</span></p>
+						</div>
+						<div class="modal-flights__row-2">
+							<p> Airbus 330-300</p>
+						</div>
+						<div class="modal-flights__row-3">
+							<p>Economy <img src="img/baggage.svg" alt=""> <b>(N)</b></p>
+						</div>
+					</div>
+				</div>
+				<p class="modal-flights__green">Тариф «economy» Багаж: 30K</p>
+			</div><!-- col(2) -->
+			<div class="modal-flights__bottom">
+				<p class="modal-flights__bottom-text">Cтоимость авиаперелета указана за всех пассажиров, выбирайте вариант и увидите стоимость всех отелей на следующем шаге.</p>
+				<div class="modal-flights__bottom-row">
+					<p><span>76 193 ₽</span><b>от 1 228$</b></p>
+					<a href="#">
+						<b>Бронировать</b>
+						<span><img src="img/faforite.svg" alt=""></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start page-bg -->
+	<div class="page-bg" style="background: url(img/bg-4.png);"></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="arrow-mob">
+				<img src="img/arrow-menu.svg" alt="">
+			</div>
+			<nav class="header-nav">
+				<ul>
+					<li><a href="#">страны</a></li>
+					<li><a href="#">идеи путешествий</a></li>
+					<li><a href="#">о нас</a></li>
+					<li><a href="#">агентствам</a></li>
+					<li><a href="#">отзывы</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-bottom">
+			<div class="header-bottom__wrap">
+				<div class="menu-bar">
+					<span></span>
+				</div>
+				<ul class="header-bottom__menu">
+					<li><a class="active" href="#">Традиционные туры</a></li>
+					<li><a href="#">Медицинские туры</a></li>
+				</ul>
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+					<div class="bread-crumbs bread-crumbs__blue">
+						<ul>
+							<li><a href="#">Главная</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-bottom__right">
+					<ul>
+						<li><a href="#"><img src="img/user.svg" alt=""><span>Личный кабинет</span></a></li>
+						<li><a href="#"><img src="img/faforite-gold.svg" alt=""><span>Избранное</span></a></li>
+					</ul>
+					<div class="header-bottom__phone">
+						<a href="#">8 800 540-54-17</a>
+						<p><a class="button-modal" href="#modal-form">Обратный звонок</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start head-page -->
+	<section class="head-page head-page__small">
+		<div class="wrapper">
+			<h1>Избранное</h1>
+		</div>
+	</section>
+	<!-- end head-page -->
+	<!-- start extradition -->
+	<section class="extradition extradition-favorites">
+		<ul class="extradition-menu">
+			<li><a href="#">Направления</a></li>
+			<li><a class="active" href="#">Туры</a></li>
+			<li><a href="#">Отели</a></li>
+			<li><a href="#">Билеты</a></li>
+		</ul>
+		<div class="extradition-bg">
+			<div class="wrapper-small">
+			<div class="extradition-row">
+				<div class="extradition-col extradition-col__big">
+					<span class="extradition-col__status">Эксклюзив</span>
+					<div class="extradition-col__img" style="background: url(img/extradition-2.png);">
+						<span class="extradition-col__number">#21231</span>
+						<div class="extradition-col__descr-wrap">
+							<h3 class="extradition-col__descr-title">Новая Зеландия <span>Земля фьордов и гейзеров</span></h3>
+							<div class="extradition-col__descr-row">
+								<div class="extradition-col__descr-info">
+									<p><span>Маршрут</span>: Окленд – Вайтомо – Роторуа – Туранги – Мартинборо – Веллингтон – Пиктон – Греймаус – Хааст – Квинстаун – Милфорд – Саунд </p>
+								</div>
+								<ul class="extradition-col__descr-list">
+									<li><img src="img/money-3-copy.svg" alt=""><span>Групповые туры, Экскурсионные туры</span></li>
+									<li><img src="img/future.svg" alt=""><span>14 дней / 13 ночей</span></li>
+								</ul>
+							</div>
+							<div class="extradition-col__descr-date">
+								<p><img src="img/calendar.svg" alt=""><span><b>22</b> Март - <b>8</b> Апрель</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="extradition-col__descr">
+						<div class="extradition-col__descr-right">
+							<div class="extradition-col__descr-price">
+								<span>306 193 ₽</span>
+								<p>от 2 979 $</p>
+							</div>
+							<p class="extradition-col__descr-included"><img src="img/avia.svg" alt=""><span>Включая авиаперелёт</span></p>
+							<div class="extradition-col__descr-additionally">
+								<p><span><b>Окленд</b>: Shinjuku Kabukicho … </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+								<p><span><b>Вайтомо</b>: Inn Shin ………………     </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+								<p><span><b>Роторуа</b>: Hilton …………………      </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+								<p><span><b>Туранги</b>: Bahia …………………..     </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+								<p><span><b>Мартинборо</b>: Route Inn ……….   </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+							</div>
+							<a href="#modal-flights" class="extradition-col__descr-button button-modal">
+								<b>Бронировать</b>
+								<span><img src="img/faforite.svg" alt=""></span>
+							</a>
+						</div>
+					</div>
+				</div><!-- col(1) -->
+				<div class="extradition-col extradition-col__big">
+					<span class="extradition-col__status">Эксклюзив</span>
+					<div class="extradition-col__img" style="background: url(img/extradition-2.png);">
+						<span class="extradition-col__number">#21231</span>
+						<div class="extradition-col__descr-wrap">
+							<h3 class="extradition-col__descr-title">Новая Зеландия <span>Земля фьордов и гейзеров</span></h3>
+							<div class="extradition-col__descr-row">
+								<div class="extradition-col__descr-info">
+									<p><span>Маршрут</span>: Окленд – Вайтомо – Роторуа – Туранги – Мартинборо – Веллингтон – Пиктон – Греймаус – Хааст – Квинстаун – Милфорд – Саунд </p>
+								</div>
+								<ul class="extradition-col__descr-list">
+									<li><img src="img/money-3-copy.svg" alt=""><span>Групповые туры, Экскурсионные туры</span></li>
+									<li><img src="img/future.svg" alt=""><span>14 дней / 13 ночей</span></li>
+								</ul>
+							</div>
+							<div class="extradition-col__descr-date">
+								<p><img src="img/calendar.svg" alt=""><span><b>22</b> Март - <b>8</b> Апрель</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="extradition-col__descr">
+						<div class="extradition-col__descr-right">
+							<div class="extradition-col__descr-price">
+								<span>306 193 ₽</span>
+								<p>от 2 979 $</p>
+							</div>
+							<p class="extradition-col__descr-included"><img src="img/avia.svg" alt=""><span>Включая авиаперелёт</span></p>
+							<div class="extradition-col__descr-additionally">
+								<p><span><b>Окленд</b>: Shinjuku Kabukicho … </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+								<p><span><b>Вайтомо</b>: Inn Shin ………………     </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+								<p><span><b>Роторуа</b>: Hilton …………………      </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+								<p><span><b>Туранги</b>: Bahia …………………..     </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+								<p><span><b>Мартинборо</b>: Route Inn ……….   </span><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-2.svg" alt=""><img src="img/star-border.svg" alt=""><img src="img/star-border.svg" alt=""></p>
+							</div>
+							<a href="#modal-flights" class="extradition-col__descr-button button-modal">
+								<b>Бронировать</b>
+								<span><img src="img/faforite.svg" alt=""></span>
+							</a>
+						</div>
+					</div>
+				</div><!-- col(2) -->
+			</div>
+			<div class="extradition-bottom">
+				<div class="extradition-bottom__arrow extradition-bottom__left">
+					<a href="#"><img src="img/left-gold.svg" alt=""></a>
+				</div>
+				<div class="extradition-bottom__arrow extradition-bottom__right">
+					<a href="#"><img src="img/right-gold__border.svg" alt=""></a>
+				</div>
+				<p>Всего <span>1403</span> объекта по <span>10</span> на странице</p>
+				<ul class="extradition-pagination">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a class="active" href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	<!-- end extradition -->
+	<!-- start countries -->
+	<section class="countries">
+		<div class="countries-top">
+			<h2 class="countries-top__title">Страны</h2>
+			<div class="countries-top__bg" style="background: url(img/planet-bg.png);">
+				<div class="countries-top__img"><img src="img/planet.png" alt=""></div>
+			</div>
+		</div>
+		<div class="countries-bottom">
+			<div class="wrapper">
+				<div class="countries-bottom__col">
+					<h3 class="countries-bottom__title">Европа</h3>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Австрия</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Болгария</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Германия</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Греция</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Испания</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Италия</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Кипр</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Мальта</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Португалия</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Франция</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Хорватия</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="countries-bottom__col">
+					<h3 class="countries-bottom__title">Азия</h3>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Бутан</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Вьетнам</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Гонконг</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Индия</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Индонезия</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Иордания</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Камбоджа</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Китай</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Корея</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Лаос</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Малайзия</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="countries-bottom__col">
+					<h3 class="countries-bottom__title">Африка</h3>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Ботсвана</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Египет</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Замбия</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Зимбабве</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Канарские острова</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Кения</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Маврикий</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Мадагаскар</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Мальдивы</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Марокко</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/countries-1.png" alt="">
+								<span>Мозамбик</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end countries -->
+	<!-- start feedback -->
+	<section class="feedback" style="background: url(img/contact-bg.png);">
+		<div class="offer-bg offer-bg-mob" style="background: url(img/offer-bg-mob.png);"></div>
+		<div class="offer-arrow">
+			<img src="img/arrow-right.svg" alt="">
+		</div>
+		<div class="wrapper">
+			<h2 class="feedback-title">ОБРАТНАЯ СВЯЗЬ</h2>
+			<div class="action-wrap">
+				<form action="">
+					<div class="action-form">
+						<div>
+							<label for="input-11">Представьтесь</label>
+							<input type="text" placeholder="Введите Имя и Фамилию" id="input-11">
+						</div>
+						<div>
+							<label for="input-22">Электронная почта</label>
+							<input type="text" placeholder="Введите Ваш email" id="input-22">
+						</div>
+						<div>
+							<label for="input-33">Номер телефона</label>
+							<input class="tel input-phone" type="text" placeholder="+7 ___ ___ __ __" id="input-33">
+						</div>
+					</div>
+					<div class="feedback-textarea">
+						<p>Текст письма</p>
+						<textarea name="text" placeholder="Какой вопрос Вас интересует"></textarea>
+					</div>
+					<button class="button-main"><span>Отправить</span></button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end feedback -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-wrapper">
+			<div class="footer-top">
+				<div class="footer-top__col footer-top__left">
+					<ul>
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/fb.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/insta.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+					</ul>
+					<p>Адрес: 119017 Москва, Пятница 43, стр.3</p>
+					<a href="#"><span>Карта проезда</span></a>
+				</div>
+				<div class="footer-top__col footer-top__center">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+						<p>Corona Travel</p>
+						<span>Отдых. Бизнес. Путешествия</span>
+					</div>
+				</div>
+				<div class="footer-top__col footer-top__right">
+					<a href="#">8 800 540-54-17</a>
+					<p><a href="#">Обратный звонок</a></p>
+				</div>
+			</div><!-- footer-top -->
+			<div class="footer-middle">
+				<div class="footer-middle__left">
+					<h3>Традиционные туры</h3>
+					<ul>
+						<li><a href="#">Экскурсии</a></li>
+						<li><a href="#">Горные лыжи</a></li>
+						<li><a href="#">Дайвинг</a></li>
+						<li><a href="#">Стоматологические туры</a></li>
+						<li><a href="#">Коррекция зрения</a></li>
+						<li><a href="#">Лечения онкологических заболеваний</a></li>
+					</ul>
+				</div>
+				<div class="footer-middle__center">
+					<h3>Популярные направления</h3>
+					<ul>
+						<li><a href="#">Израиль, Тель-Авив</a></li>
+						<li><a href="#">Сингапур</a></li>
+						<li><a href="#">Швейцария</a></li>
+						<li><a href="#">Тайланд</a></li>
+						<li><a href="#">Брюсель</a></li>
+						<li><a href="#">Венгрия</a></li>
+					</ul>
+				</div>
+				<div class="footer-middle__right">
+					<h3>Corona Travel</h3>
+					<ul>
+						<li><a href="#">Туроператоры</a></li>
+						<li><a href="#">Отели</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div><!-- footer-middle -->
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<div class="footer-bottom__descr">
+					<ul>
+						<li><img src="img/visa.png" alt=""></li>
+						<li><img src="img/visa-el.png" alt=""></li>
+						<li><img src="img/maestro.png" alt=""></li>
+						<li><img src="img/mastercard.png" alt=""></li>
+						<li><img src="img/mir.png" alt=""></li>
+					</ul>
+					<p>Corona Travel © 2001–2018 | Все права защищены </p>
+				</div>
+			</div>
+		</div><!-- footer-bottom -->
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/lightbox2/css/lightbox.min.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/lightbox2/js/lightbox.min.js"></script>
+	<script src="libs/mask/mask.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
