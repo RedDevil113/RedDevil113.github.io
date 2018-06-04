@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body style="background: url(img/page-bg.png);">
+	<!-- modal-come -->
+	<div class="modal fade modal-come" id="modal-come" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <img src="img/close.svg" alt="">
+        </button>
+	    	<h3 class="modal-title">Войти</h3>
+	    	<form action="">
+	    		<div class="modal-inputs">
+	    			<input type="tel" placeholder="Телефон">
+	    			<input type="password" placeholder="Пароль">
+	    		</div>
+	    		<div class="modal-link">
+	    			<a href="#">Забыли пароль?</a>
+	    		</div>
+	    		<div class="modal-buttons">
+	    			<a class="button-border" href="#">Зарегистрироваться</a>
+	    			<a class="button-main" href="#">Войти</a>
+	    		</div>
+	    	</form>
+	    </div>
+	  </div>
+	</div>
+	<!-- modal-register -->
+	<div class="modal fade modal-register" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <img src="img/close.svg" alt="">
+        </button>
+	    	<form action="">
+	    		<div class="modal-inputs">
+	    			<input type="text" placeholder="Имя">
+	    			<input type="tel" placeholder="Телефон">
+	    			<input type="email" placeholder="e-mail">
+	    			<input type="password" placeholder="Пароль">
+	    			<input type="password" placeholder="Повторите пароль">
+	    		</div>
+	    		<div class="button-center">
+	    			<a class="button-main" href="#">Зарегистрироваться</a>
+	    		</div>
+	    	</form>
+	    </div>
+	  </div>
+	</div>
+	<!-- modal-product -->
+	<div class="modal fade modal-product" id="modal-product" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <img src="img/close.svg" alt="">
+        </button>
+				<div class="post">
+					<div class="post-img">
+						<img src="img/filadelfiya-big.png" alt="">
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<div class="post-descr__row">
+							<p>250 ₽</p>
+							<a class="add-to-cart" href="#">в корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-bottom">
+					<p>Возможно, Вас заинтересует:</p>
+					<span>Филадельфия с крабом, Филадельфия с крабом, Филадельфия с крабом,</span>
+				</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- start header -->
+	<header class="header" style="background: url(img/page-bg.png);">
+		<div class="wrapper">
+			<div class="header-left">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-location">
+					<p><img src="img/location.svg" alt=""><span>Тольятти</span></p>
+				</div>
+			</div>
+			<nav class="header-nav">
+				<ul class="header-menu">
+					<li class="header-nav__drop"><a href="#">Роллы</a>
+						<ul class="header-nav__list">
+							<li>
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="29" viewBox="0 0 30 29">
+								    <defs>
+								        <path id="a1" d="M0 28.51h30V.036H0z"/>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path fill="#000" d="M15 3.987c5.988 0 9.961 2.274 9.961 3.779s-3.973 3.78-9.961 3.78-9.961-2.275-9.961-3.78S9.012 3.986 15 3.986m0 8.567c5.837 0 10.957-2.237 10.957-4.787S20.837 2.979 15 2.979c-5.837 0-10.957 2.237-10.957 4.787S9.163 12.553 15 12.553"/>
+								        <g>
+								            <mask id="b" fill="#fff">
+								                <use xlink:href="#a1"/>
+								            </mask>
+								            <path fill="#000" d="M29 13.024c0 2.097-3.33 4.108-8.285 5.004a.5.5 0 1 0 .178.983c3.846-.695 6.693-1.99 8.107-3.597v.284c0 2.457-4.437 4.695-10.55 5.322a.5.5 0 1 0 .102.994c4.97-.51 8.745-1.99 10.448-3.937v.942c0 2.978-6.411 5.495-14 5.495a.5.5 0 1 0 0 1c6.468 0 11.855-1.689 14-4.124v.626c0 2.979-6.411 5.496-14 5.496S1 24.995 1 22.016v-1.258c1.52 1.731 4.693 3.108 8.923 3.75a.5.5 0 1 0 .15-.987C4.732 22.709 1 20.598 1 18.386v-.737c1.252 1.427 3.634 2.613 6.888 3.356a.5.5 0 0 0 .222-.975C3.791 19.044 1 17.174 1 15.266v-.49c1.043 1.184 2.872 2.206 5.355 2.95a.5.5 0 0 0 .287-.957C3.11 15.711 1 14.074 1 12.391v-1.438c.016.022.035.043.052.065.114.155.234.308.366.457l.03.036a7.978 7.978 0 0 0 .568.574c.164.151.335.301.518.446l.01.008a10.688 10.688 0 0 0 .708.511c.203.136.412.269.63.397.022.012.044.023.065.036.205.118.417.232.635.343l.154.077c.237.118.48.232.732.34.037.017.076.032.113.048.228.097.461.19.7.28l.162.06c.267.097.54.19.82.279l.16.048c.25.077.506.15.767.219.053.014.105.029.158.042.294.076.594.147.9.213l.197.04c.276.057.557.11.842.16l.139.024c.318.053.642.099.969.14l.229.028c.308.036.618.069.934.095l.094.009a28.565 28.565 0 0 0 1.28.072c.353.013.708.021 1.068.021a29.738 29.738 0 0 0 1.317-.03c.347-.016.692-.036 1.031-.063l.094-.009c.316-.026.627-.059.934-.095l.23-.028c.327-.041.65-.087.968-.14.047-.008.093-.017.14-.024.284-.05.565-.102.841-.16l.197-.04c.305-.066.605-.137.9-.213.053-.013.106-.028.158-.042.26-.07.516-.142.767-.22.053-.015.107-.03.16-.047.28-.088.553-.181.82-.279l.162-.06c.239-.09.472-.183.7-.28l.113-.047c.252-.11.495-.223.732-.34l.154-.078c.218-.111.43-.225.635-.343.021-.013.043-.024.064-.036a12.316 12.316 0 0 0 1.339-.908l.01-.008a9.24 9.24 0 0 0 1.087-1.02l.03-.036c.13-.15.251-.302.366-.458.016-.021.035-.042.051-.064v2.07zM15 1.034c7.72 0 14 3.138 14 6.994 0 3.857-6.28 6.994-14 6.994S1 11.885 1 8.028c0-3.856 6.28-6.994 14-6.994zm0-.999C6.589.035 0 3.546 0 8.028v13.988c0 3.642 6.589 6.495 15 6.495s15-2.853 15-6.495V8.028C30 3.546 23.411.035 15 .035z" mask="url(#b)"/>
+								        </g>
+								        <path fill="#000" d="M15 6.112c4.517 0 6.981 1.163 6.981 1.76 0 .598-2.464 1.76-6.981 1.76-4.517 0-6.981-1.162-6.981-1.76 0-.597 2.464-1.76 6.981-1.76m0 4.526c3.965 0 7.979-.95 7.979-2.766S18.965 5.106 15 5.106s-7.979.95-7.979 2.766 4.014 2.766 7.979 2.766"/>
+								    </g>
+									</svg>
+									<span>Роллы</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="42" viewBox="0 0 30 42">
+								    <defs>
+								        <path id="a2" d="M30 28.535H0V.035h30z"/>
+								        <path id="c2" d="M.008.05h22.746v14.11H.008z"/>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path fill="#000" d="M14.999 17.169c6.012 0 10 2.257 10 3.75 0 1.492-3.988 3.75-10 3.75-6.012 0-10-2.258-10-3.75 0-1.493 3.988-3.75 10-3.75m0 8.5c5.86 0 11-2.22 11-4.75s-5.14-4.75-11-4.75-11 2.22-11 4.75 5.14 4.75 11 4.75"/>
+								        <g transform="translate(0 13.133)">
+								            <mask id="b2" fill="#fff">
+								                <use xlink:href="#a2"/>
+								            </mask>
+								            <path fill="#000" d="M29 13.035c0 2.099-3.33 4.111-8.285 5.008a.5.5 0 1 0 .178.984c3.846-.696 6.693-1.992 8.107-3.6v.284c0 2.46-4.437 4.7-10.55 5.327a.5.5 0 1 0 .102.994c4.97-.51 8.745-1.99 10.448-3.94v.943c0 2.981-6.411 5.5-14 5.5a.5.5 0 0 0 0 1c6.468 0 11.855-1.69 14-4.127v.627c0 2.981-6.411 5.5-14 5.5s-14-2.519-14-5.5v-1.26c1.52 1.734 4.693 3.111 8.923 3.755a.5.5 0 1 0 .15-.99C4.732 22.729 1 20.616 1 18.403v-.737c1.252 1.427 3.634 2.614 6.888 3.358a.5.5 0 0 0 .222-.975C3.791 19.06 1 17.188 1 15.28v-.491c1.043 1.185 2.872 2.208 5.355 2.953a.5.5 0 0 0 .287-.958C3.11 15.724 1 14.086 1 12.402v-1.44c.016.023.035.043.052.065.114.155.234.308.366.458l.03.036a7.963 7.963 0 0 0 .568.574c.164.152.335.302.518.447l.01.008a10.689 10.689 0 0 0 .708.512c.203.135.412.268.63.396l.065.036c.205.118.417.232.635.344l.154.077c.237.118.48.232.732.341l.113.047c.228.097.461.19.7.28l.162.06c.267.098.54.191.82.28l.16.048c.25.077.506.15.767.219l.158.043c.294.076.594.146.9.212l.197.04c.276.058.557.111.842.16l.139.025c.318.052.641.098.969.14.076.01.152.018.229.027.308.037.618.07.934.096l.094.008a28.552 28.552 0 0 0 1.28.073c.353.012.708.021 1.068.021a29.714 29.714 0 0 0 1.317-.031c.347-.015.692-.035 1.031-.063l.094-.008c.316-.027.626-.06.934-.096l.23-.027c.327-.042.65-.088.968-.14l.14-.025c.284-.049.565-.102.841-.16l.197-.04c.305-.066.605-.137.9-.212l.158-.043c.26-.07.516-.142.767-.22.053-.015.107-.03.16-.047.28-.089.553-.182.82-.28l.162-.06c.239-.09.472-.183.7-.28.037-.016.076-.03.113-.047a15.8 15.8 0 0 0 .732-.34l.154-.078c.218-.112.43-.226.635-.344l.064-.036a12.291 12.291 0 0 0 1.339-.908l.01-.008a9.242 9.242 0 0 0 1.087-1.021l.03-.036a6.94 6.94 0 0 0 .366-.458c.016-.022.035-.043.051-.064v2.072zm-14-12c7.72 0 14 3.14 14 7s-6.28 7-14 7-14-3.14-14-7 6.28-7 14-7zm0-1c-8.411 0-15 3.514-15 8v14c0 3.645 6.589 6.5 15 6.5s15-2.855 15-6.5v-14c0-4.486-6.589-8-15-8z" mask="url(#b)"/>
+								        </g>
+								        <path fill="#000" d="M14.999 19.169c4.53 0 7 1.156 7 1.75 0 .594-2.47 1.75-7 1.75-4.53 0-7-1.156-7-1.75 0-.594 2.47-1.75 7-1.75m0 4.5c3.976 0 8-.945 8-2.75 0-1.806-4.024-2.75-8-2.75s-8 .944-8 2.75c0 1.805 4.024 2.75 8 2.75"/>
+								        <g transform="translate(4.16 .008)">
+								            <mask id="d2" fill="#fff">
+								                <use xlink:href="#c2"/>
+								            </mask>
+								            <path fill="#000" d="M.391 13.468a.471.471 0 0 0 .551-.374c.248-1.31.888-2.302 1.565-3.353C3.18 8.694 3.875 7.616 4.26 6.15c.649.273 1.854.88 2.938 1.968a.47.47 0 0 0 .687-.02c.106-.12 2.419-2.786 2.582-6.683.48.37 1.168.967 1.93 1.849 2.411 2.791 3.697 6.228 4.351 8.62a.47.47 0 0 0 .875.089l1.498-2.95c.743.723 2.224 2.416 2.7 4.76.052.256.3.42.556.369l.011-.003a.47.47 0 0 0 .357-.553c-.71-3.495-3.361-5.617-3.474-5.706a.471.471 0 0 0-.711.157l-1.241 2.443c-1.235-3.88-2.963-6.41-4.248-7.887C11.525.825 10.27.136 10.218.107a.47.47 0 0 0-.694.436c.147 3.152-1.38 5.624-2.045 6.543C5.847 5.622 4.135 5.09 4.058 5.067a.472.472 0 0 0-.6.36C3.152 7 2.42 8.136 1.715 9.232 1.018 10.31.3 11.429.016 12.918a.471.471 0 0 0 .375.55" mask="url(#d)"/>
+								        </g>
+								    </g>
+									</svg>
+									<span>Жареные роллы</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42">
+								    <g fill="#000" fill-rule="evenodd">
+								        <path d="M14.999 16.992c6.012 0 10 2.257 10 3.75 0 1.493-3.988 3.75-10 3.75-6.012 0-10-2.257-10-3.75 0-1.493 3.988-3.75 10-3.75m0 8.5c5.86 0 11-2.22 11-4.75s-5.14-4.75-11-4.75-11 2.22-11 4.75 5.14 4.75 11 4.75"/>
+								        <path d="M29 25.992c0 2.099-3.33 4.112-8.285 5.008a.5.5 0 1 0 .178.984c3.846-.696 6.693-1.992 8.107-3.6v.284c0 2.46-4.437 4.7-10.55 5.327a.5.5 0 1 0 .102.995c4.97-.51 8.745-1.991 10.448-3.94v.942c0 2.981-6.411 5.5-14 5.5a.5.5 0 0 0 0 1c6.468 0 11.855-1.69 14-4.127v.627c0 2.981-6.411 5.5-14 5.5s-14-2.519-14-5.5v-1.26c1.52 1.734 4.693 3.111 8.923 3.755a.5.5 0 0 0 .15-.99C4.732 35.687 1 33.573 1 31.36v-.737c1.252 1.427 3.634 2.614 6.888 3.358a.5.5 0 0 0 .222-.975C3.791 32.018 1 30.145 1 28.237v-.491c1.043 1.185 2.872 2.208 5.355 2.953a.5.5 0 0 0 .287-.958C3.11 28.68 1 27.043 1 25.359v-1.44c.016.023.035.043.052.065.114.155.234.308.366.458l.03.036a7.964 7.964 0 0 0 .568.574c.164.152.335.302.518.447l.01.008a10.712 10.712 0 0 0 .708.512c.203.135.412.268.63.396l.065.036c.205.118.417.232.635.344l.154.077c.237.118.48.232.732.341l.113.048c.228.096.461.19.7.279l.162.06c.267.098.541.191.82.28l.16.048c.25.077.506.15.767.219l.158.043c.294.076.594.146.9.212l.197.04c.276.058.557.111.842.16l.139.025c.318.052.641.098.969.14.076.01.152.018.229.027.308.037.618.07.934.096l.094.008a28.54 28.54 0 0 0 1.28.073c.353.012.708.021 1.068.021a29.713 29.713 0 0 0 1.317-.031c.347-.015.692-.035 1.031-.063l.094-.008c.316-.027.627-.06.934-.096l.23-.027c.327-.042.65-.088.968-.14l.14-.025c.284-.049.565-.102.841-.16l.197-.04c.305-.066.605-.137.9-.212l.158-.043c.26-.07.516-.142.767-.22.053-.015.107-.03.16-.047.28-.089.553-.182.82-.28l.162-.06c.239-.09.472-.183.7-.28.037-.015.076-.03.113-.047.252-.109.495-.223.732-.34l.154-.078c.218-.112.43-.226.635-.344.021-.012.043-.023.064-.036a12.315 12.315 0 0 0 1.339-.908l.01-.008a9.242 9.242 0 0 0 1.087-1.021l.03-.036a6.92 6.92 0 0 0 .366-.458c.016-.022.035-.042.051-.064v2.072zm-14-12c7.72 0 14 3.14 14 7s-6.28 7-14 7-14-3.14-14-7 6.28-7 14-7zm0-1c-8.411 0-15 3.514-15 8v14c0 3.645 6.589 6.5 15 6.5s15-2.855 15-6.5v-14c0-4.486-6.589-8-15-8z"/>
+								        <path d="M14.999 18.992c4.53 0 7 1.156 7 1.75 0 .594-2.47 1.75-7 1.75-4.53 0-7-1.156-7-1.75 0-.594 2.47-1.75 7-1.75m0 4.5c3.976 0 8-.944 8-2.75 0-1.805-4.024-2.75-8-2.75s-8 .945-8 2.75c0 1.806 4.024 2.75 8 2.75M9.737 8.201c0 1.098.43 2.133 1.211 2.914a.483.483 0 0 0 .69 0 .483.483 0 0 0 0-.69 3.136 3.136 0 0 1-.923-2.224c0-.839.328-1.63.922-2.227a4.086 4.086 0 0 0 1.212-2.915A4.1 4.1 0 0 0 11.637.142a.485.485 0 0 0-.689 0 .491.491 0 0 0 0 .693c.595.594.922 1.384.922 2.224 0 .837-.327 1.627-.922 2.225A4.102 4.102 0 0 0 9.738 8.2M17.154 8.201c0 1.098.43 2.133 1.21 2.914a.483.483 0 0 0 .69 0 .483.483 0 0 0 0-.69 3.136 3.136 0 0 1-.922-2.224c0-.839.328-1.63.922-2.227a4.085 4.085 0 0 0 1.209-2.915c0-1.101-.43-2.137-1.209-2.917a.486.486 0 0 0-.69 0 .491.491 0 0 0 .001.693c.594.594.922 1.384.922 2.224 0 .837-.328 1.627-.922 2.225a4.102 4.102 0 0 0-1.21 2.917M13.447 8.201c0 1.098.43 2.133 1.211 2.914a.483.483 0 0 0 .69 0 .483.483 0 0 0 0-.69 3.136 3.136 0 0 1-.923-2.224c0-.839.328-1.63.922-2.227a4.085 4.085 0 0 0 1.209-2.915c0-1.101-.43-2.137-1.209-2.917a.486.486 0 0 0-.69 0 .491.491 0 0 0 .001.693c.595.594.922 1.384.922 2.224 0 .837-.327 1.627-.922 2.225a4.102 4.102 0 0 0-1.21 2.917"/>
+								    </g>
+									</svg>
+									<span>Запеченные роллы</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">Сеты</a></li>
+					<li><a href="#">Суши</a></li>
+					<li><a href="#">Закуски и салаты</a></li>
+					<li><a href="#">Супы</a></li>
+					<li><a href="#">Вок</a></li>
+					<li><a href="#">Пицца</a></li>
+					<li><a href="#">Напитки</a></li>
+				</ul>
+			</nav>
+			<div class="header-right">
+				<div class="header-phones">
+					<p><a href="#">+7 (917) 120-43-43;</a></p>
+					<p><a href="#">+7 (927) 797-43-43</a></p>
+				</div>
+				<div class="header-basket">
+					<a href="#">
+						<p>2</p>
+						<img src="img/basket.svg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="menu-bar">
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start catalog -->
+	<section class="catalog">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/alaska.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<a class="add-to-cart" data-toggle="modal" data-target="#modal-register" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(1) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/chukka-roll.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Чукка ролл</h3>
+						<p>Состав: Чукка ролл 8 шт.  130 г.</p>
+						<a class="add-to-cart" data-toggle="modal" data-target="#modal-product" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(2) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/filadelfiya-lite.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(3) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/alaska.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(4) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/chukka-roll.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Чукка ролл</h3>
+						<p>Состав: Чукка ролл 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(5) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/filadelfiya-lite.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(6) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/alaska.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(7) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/chukka-roll.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Чукка ролл</h3>
+						<p>Состав: Чукка ролл 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(8) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/filadelfiya-lite.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(9) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/alaska.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(10) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/chukka-roll.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Чукка ролл</h3>
+						<p>Состав: Чукка ролл 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(11) -->
+			<div class="col-lg-4 col-md-6 col-xs-12">
+				<div class="post">
+					<div class="post-img">
+						<img src="img/filadelfiya-lite.png" alt="">
+						<p>250 ₽</p>
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<a class="add-to-cart" href="#">в корзину</a>
+					</div>
+				</div>
+			</div><!-- col(12) -->
+		</div>
+	</section>
+	<!-- end catalog -->
+	<!-- start footer -->
+	<footer class="footer" style="background: url(img/page-bg.png);">
+		<div class="row">
+			<div class="col-md-2 col-sm-6 footer-social">
+				<ul>
+					<li><a href="#"><img src="img/vk-social-network-logo.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/instagram-logo.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/odnoklassniki-logo.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-6 footer-menu">
+				<ul>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-sm-12  footer-text">
+				<div>
+					<p>Скачивай наше мобильное приложение:</p>
+					<ul>
+						<li><img src="img/android-logo.svg" alt=""></li>
+						<li><img src="img/apple.svg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

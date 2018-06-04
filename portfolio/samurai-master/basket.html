@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body style="background: url(img/page-bg.png);">
+	<!-- modal-come -->
+	<div class="modal fade modal-come" id="modal-come" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <img src="img/close.svg" alt="">
+        </button>
+	    	<h3 class="modal-title">Войти</h3>
+	    	<form action="">
+	    		<div class="modal-inputs">
+	    			<input type="tel" placeholder="Телефон">
+	    			<input type="password" placeholder="Пароль">
+	    		</div>
+	    		<div class="modal-link">
+	    			<a href="#">Забыли пароль?</a>
+	    		</div>
+	    		<div class="modal-buttons">
+	    			<a class="button-border" href="#">Зарегистрироваться</a>
+	    			<a class="button-main" href="#">Войти</a>
+	    		</div>
+	    	</form>
+	    </div>
+	  </div>
+	</div>
+	<!-- modal-register -->
+	<div class="modal fade modal-register" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <img src="img/close.svg" alt="">
+        </button>
+	    	<form action="">
+	    		<div class="modal-inputs">
+	    			<input type="text" placeholder="Имя">
+	    			<input type="tel" placeholder="Телефон">
+	    			<input type="email" placeholder="e-mail">
+	    			<input type="password" placeholder="Пароль">
+	    			<input type="password" placeholder="Повторите пароль">
+	    		</div>
+	    		<div class="button-center">
+	    			<a class="button-main" href="#">Зарегистрироваться</a>
+	    		</div>
+	    	</form>
+	    </div>
+	  </div>
+	</div>
+	<!-- modal-product -->
+	<div class="modal fade modal-product" id="modal-product" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <img src="img/close.svg" alt="">
+        </button>
+				<div class="post">
+					<div class="post-img">
+						<img src="img/filadelfiya-big.png" alt="">
+					</div>
+					<div class="post-descr">
+						<h3 class="post-title">Филадельфия с крабом</h3>
+						<p>Состав: Снежный краб, лосось, сливочный сыр 8 шт.  130 г.</p>
+						<div class="post-descr__row">
+							<p>250 ₽</p>
+							<a class="add-to-cart" href="#">в корзину</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-bottom">
+					<p>Возможно, Вас заинтересует:</p>
+					<span>Филадельфия с крабом, Филадельфия с крабом, Филадельфия с крабом,</span>
+				</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- start header -->
+	<header class="header header-second" style="background: url(img/page-bg.png);">
+		<div class="wrapper">
+			<div class="header-left">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-location">
+					<p><img src="img/location.svg" alt=""><span>Тольятти</span></p>
+				</div>
+			</div>
+			<div class="header-text">
+				<span>10:00-22:30</span>
+				<p>10:00-22:15 предварительный заказ</p>
+			</div>
+			<div class="header-right">
+				<div class="header-phones">
+					<p><a href="#">+7 (917) 120-43-43;</a></p>
+					<p><a href="#">+7 (927) 797-43-43</a></p>
+				</div>
+				<div class="header-basket">
+					<p class="header-button"><a data-toggle="modal" data-target="#modal-come" href="#">Войти</a></p>
+					<a href="#">
+						<img src="img/basket.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start basket -->
+	<section class="basket">
+		<div class="wrapper">
+			<div class="basket-wrap">
+				<div class="basket-header">
+					<div class="basket-header__top">
+						<p class="basket-header__title">Доставка</p>
+						<span>120 ₽</span>
+					</div>
+					<a href="#" class="basket-header__link">Условия доставки</a>
+					<div class="basket-header__buttons">
+						<a class="button-main" href="#">Курьер</a>
+	    			<a class="button-border" href="#">Самовывоз</a>
+					</div>
+					<p class="basket-header__text">Для бесплатной доставки <a href="#">пополните</a> корзину на <b>262 ₽</b></p>
+				</div>
+				<div class="basket-col">
+					<div class="basket-colse">
+						<img src="img/close.svg" alt="">
+					</div>
+					<div class="basket-col__row">
+						<div class="basket-col__product">
+							<div class="basket-col__product-img">
+								<img src="img/filadelfiya-lite.png" alt="">
+							</div>
+							<div class="basket-col__product-descr">
+								<p>Филадельфия с крабом</p>
+								<span>250 ₽</span>
+							</div>
+						</div>
+						<div class="basket-col__option">
+							<div class="basket-col__option-row">
+								<div>
+									<img src="img/minus.svg" alt="">
+								</div>
+								<span>2</span>
+								<div>
+									<img src="img/plus.svg" alt="">
+								</div>
+							</div>
+							<p>500 ₽</p>
+						</div>
+					</div>
+				</div>
+				<div class="basket-col">
+					<div class="basket-colse">
+						<img src="img/close.svg" alt="">
+					</div>
+					<div class="basket-col__row">
+						<div class="basket-col__product">
+							<div class="basket-col__product-img">
+								<img src="img/sticks.png" alt="">
+							</div>
+							<div class="basket-col__product-descr">
+								<p>Палочки</p>
+								<span>0 ₽</span>
+							</div>
+						</div>
+						<div class="basket-col__option">
+							<div class="basket-col__option-row">
+								<div>
+									<img src="img/minus.svg" alt="">
+								</div>
+								<span>2</span>
+								<div>
+									<img src="img/plus.svg" alt="">
+								</div>
+							</div>
+							<p>0 ₽</p>
+						</div>
+					</div>
+				</div>
+				<div class="basket-col">
+					<div class="basket-colse">
+						<img src="img/close.svg" alt="">
+					</div>
+					<div class="basket-col__row">
+						<div class="basket-col__product">
+							<div class="basket-col__product-img">
+								<img src="img/sauce.png" alt="">
+							</div>
+							<div class="basket-col__product-descr">
+								<p>Соевый соус</p>
+								<span>0 ₽</span>
+							</div>
+						</div>
+						<div class="basket-col__option">
+							<div class="basket-col__option-row">
+								<div>
+									<img src="img/minus.svg" alt="">
+								</div>
+								<span>2</span>
+								<div>
+									<img src="img/plus.svg" alt="">
+								</div>
+							</div>
+							<p>0 ₽</p>
+						</div>
+					</div>
+				</div>
+				<div class="basket-bottom">
+					<span class="basket-bottom__text">При оформлении Вы принимаете <a href="#">пользовательское соглашение</a> и <a href="#">политику обработки персональных данных</a></span>
+					<div class="basket-bottom__button">
+						<a class="button-main" href="#">Оформить заказ</a>
+					</div>
+					<p>Итого: <span>500 ₽</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end basket -->
+	<!-- start footer -->
+	<footer class="footer" style="background: url(img/page-bg.png);">
+		<div class="row">
+			<div class="col-md-2 col-sm-6 footer-social">
+				<ul>
+					<li><a href="#"><img src="img/vk-social-network-logo.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/instagram-logo.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/odnoklassniki-logo.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-sm-6 footer-menu">
+				<ul>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-sm-12  footer-text">
+				<div>
+					<p>Скачивай наше мобильное приложение:</p>
+					<ul>
+						<li><img src="img/android-logo.svg" alt=""></li>
+						<li><img src="img/apple.svg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
