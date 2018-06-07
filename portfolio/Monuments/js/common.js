@@ -40,7 +40,7 @@ $(document).ready(function(){
 	  speed:1000,
 	  customPaging : function(slider, i) {
     	var thumb = $(slider.$slides[i]).data();
-    	return '<a>'+ i +'</a>';
+    	return '<a>'+ (i + 1) +'</a>';
     },
 	});
 
