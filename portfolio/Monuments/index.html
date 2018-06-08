@@ -20,13 +20,31 @@
 
 </head>
 <body>
-	<!-- modal-form -->
 	<div class="modal-overlay"></div>
+	<!-- modal-form -->
 	<div class="modal" id="modal-form">
 		<div class="cancel"><img src="img/close.svg" alt=""></div>
 		<div class="modal-wrap">
 			<form action="">
 				<h3 class="modal-title">Выезд менеджера бесплатно!</h3>
+				<div>
+					<input type="tel" placeholder="Ваш телефон">
+					<textarea name="text" placeholder="Ваше имя и адрес для вызова менеджера"></textarea>
+					<label class="order-check"><p>Согласие на обработку персональных данных</p>
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+					<button class="main-button"><b>ОТПРАВИТЬ</b><img src="img/arrow_.svg" alt=""></button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- modal-call -->
+	<div class="modal" id="modal-call">
+		<div class="cancel"><img src="img/close.svg" alt=""></div>
+		<div class="modal-wrap">
+			<form action="">
+				<h3 class="modal-title">Перезвоним и обсудим детали</h3>
 				<div>
 					<input type="tel" placeholder="Ваш телефон">
 					<textarea name="text" placeholder="Ваше имя и адрес для вызова менеджера"></textarea>
@@ -241,7 +259,7 @@
 						<span>Артикул: 001</span>
 						<p class="catalog-col__descr-price">Ваша цена: <b>11 500 руб.</b></p>
 						<p class="catalog-col__descr-new">Цена без скидки: <span>13 800</span> руб. </p>
-						<a href="#">ЗАКАЗАТЬ В 1 КЛИК</a>
+						<a class="button-modal" href="#modal-call">ЗАКАЗАТЬ В 1 КЛИК</a>
 					</div>
 				</div><!-- col(1) -->
 				<div class="catalog-col">
@@ -293,7 +311,7 @@
 						<span>Артикул: 001</span>
 						<p class="catalog-col__descr-price">Ваша цена: <b>11 500 руб.</b></p>
 						<p class="catalog-col__descr-new">Цена без скидки: <span>13 800</span> руб. </p>
-						<a href="#">ЗАКАЗАТЬ В 1 КЛИК</a>
+						<a class="button-modal" href="#modal-call">ЗАКАЗАТЬ В 1 КЛИК</a>
 					</div>
 				</div><!-- col(2) -->
 				<div class="catalog-col">
@@ -345,7 +363,7 @@
 						<span>Артикул: 001</span>
 						<p class="catalog-col__descr-price">Ваша цена: <b>11 500 руб.</b></p>
 						<p class="catalog-col__descr-new">Цена без скидки: <span>13 800</span> руб. </p>
-						<a href="#">ЗАКАЗАТЬ В 1 КЛИК</a>
+						<a class="button-modal" href="#modal-call">ЗАКАЗАТЬ В 1 КЛИК</a>
 					</div>
 				</div><!-- col(3) -->
 				<div class="catalog-col">
