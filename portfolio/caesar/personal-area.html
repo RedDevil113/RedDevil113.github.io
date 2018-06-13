@@ -86,7 +86,7 @@
 			</div>
 		</div>
 		<nav class="header-nav">
-			<div class="row">
+			<div class="row header-nav__row">
 				<ul>
 					<li><a href="#">Охрана квартиры</a></li>
 					<li><a href="#">Охрана коттеджа</a></li>
@@ -98,84 +98,194 @@
 		</nav>
 	</header>
 	<!-- end header -->
-	<!-- start page-head -->
-	<section class="page-head">
+	<!-- start personal-area -->
+	<section class="personal-area">
 		<div class="wrapper">
-			<h1 class="page-head__title">Журнал</h1>
-			<ul>
-				<li><a href="#">Все новости</a></li>
-				<li><a href="#">Советы по безопасности</a></li>
-				<li><a href="#">Оперативные сводки</a></li>
-				<li class="drop"><a href="#">Еще</a></li>
-			</ul>
-		</div>
-	</section>
-	<!-- end page-head -->
-	<!-- start post -->
-	<section class="post">
-		<div class="wrapper">
-			<a href="#" class="post-back"><img src="img/arrow-left-blue.png" alt=""><span>к списку новостей</span></a>
-			<ul>
-				<li><a href="#">16 апреля 2018</a></li>
-				<li><a href="#">оперативные сводки</a></li>
-			</ul>
-			<h1 class="post-title">«Цезарь Сателлит» вывел полицейских на след угонщиков</h1>
-		</div>
-		<div class="row">
-			<div class="col-md-8 post-content">
-				<h3 class="post-content__title">Начало 2018 года выдалось неспокойным для специалистов «Цезарь Сателлит», инспекторов ГИБДД и владельца BMW 5 серии из Волгоградской области. Хозяин автомобиля был в гостях, а когда вернулся, обнаружил, что у него дома побывали воры.</h3>
-				<p>Начало 2018 года выдалось неспокойным для специалистов «Цезарь Сателлит», инспекторов ГИБДД и владельца BMW 5 серии из Волгоградской области. Хозяин автомобиля был в гостях, а когда вернулся, обнаружил, что у него дома побывали воры. Вместе с сейфом, украшениями и деньгами злоумышленники похитили и ключи с меткой от автомобиля. Все украденное домушники сложили в салон иномарки и попытались скрыться.</p>
-				<img src="img/post-img.png" alt="">
-				<p>В BMW была установлена спутниковая сигнализация, и поэтому владелец иномарки обратился в «Цезарь Сателлит». Специалисты запросили сигнал от поискового блока и уже через три минуты получили координаты автомобиля. Машина двигалась по трассе Е-40. Эту информацию сотрудники передали полицейским.</p>
-				<p>Началась погоня, но остановить автомобиль удалось только на посту ГИБДД. Для этого пришлось перекрыть трассу. Задержаны и подозреваемые в краже - двое мужчин 25 и 43 лет.</p>
+			<div class="personal-area__head">
+				<h1 class="personal-area__title">Личный кабинет</h1>
+				<p>Баланс: <span>23 015</span> руб</p>
 			</div>
-			<div class="col-md-4 post-sidebar">
-				<div class="post-sidebar__row">
-					<div class="post-sidebar__col">
-						<div class="post-sidebar__col-img">
-							<img src="img/post-img-2.jpg" alt="">
-						</div>
-						<div class="post-sidebar__col-descr">
-							<h3 class="post-sidebar__col-title">Защита от угона</h3>
-							<p>от <b>825</b> руб/мес</p>
-							<span>Абоненсткая плата</span>
-							<a href="#" class="post-sidebar__col-button"><img src="img/arrow-right.png" alt=""></a>
-						</div>
+		</div>
+		<div class="personal-area__row">
+			<div class="personal-area__sidebar">
+				<ul>
+					<li><a href="#"><div><img src="img/personal-area/panel.png" alt=""></div><span>Панель управления</span></a></li>
+					<li><a href="#"><div><img src="img/personal-area/comment.png" alt=""></div><span>Личный помощник<b>5</b></span></a></li>
+					<li><a href="#"><div><img src="img/personal-area/ball.png" alt=""></div><span>Уведомления<b>1</b></span></a></li>
+					<li><a href="#"><div><img src="img/personal-area/object.png" alt=""></div><span>Объекты</span></a></li>
+					<li><a href="#"><div><img src="img/personal-area/balance.png" alt=""></div><span>Баланс</span></a></li>
+					<li><a href="#"><div><img src="img/personal-area/bonus.png" alt=""></div><span>Бонусы</span></a></li>
+					<li><a href="#"><div><img src="img/personal-area/users.png" alt=""></div><span>Пользователи</span></a></li>
+					<li><a href="#"><div><img src="img/personal-area/user-ico.png" alt=""></div><span>Персональные предложения</span></a></li>
+					<li><a href="#"><div><img src="img/personal-area/user-plus.png" alt=""></div><span>Приведи друга</span></a></li>
+					<li class="personal-area__sidebar-li">
+						<a href="#">
+							<div class="personal-area__sidebar-row">
+								<div><img src="img/personal-area/house-2-menu.png" alt=""></div>
+								<span>Моя квартира</span>
+							</div>
+							<div class="personal-area__sidebar-row"><img src="img/personal-area/protection.png" alt=""><span>под охраной</span></div>
+						</a>
+					</li>
+					<li class="personal-area__sidebar-li">
+						<a href="#">
+							<div class="personal-area__sidebar-row">
+								<div><img src="img/personal-area/house-1-menu.png" alt=""></div>
+								<span>Мой коттедж</span>
+							</div>
+							<div class="personal-area__sidebar-row"><img src="img/personal-area/disarmed.png" alt=""><span>снят с охраны</span></div>
+						</a>
+					</li>
+					<li class="personal-area__sidebar-li">
+						<a href="#">
+							<div class="personal-area__sidebar-row">
+								<div><img src="img/personal-area/car.png" alt=""></div>
+								<span>Мой BMW X5</span>
+							</div>
+							<div class="personal-area__sidebar-row"><img src="img/personal-area/night.png" alt=""><span>ночной режим</span></div>
+						</a>
+					</li>
+					<li><a href="#"><div><img src="img/personal-area/plus-ico.png" alt=""></div><span>Добавить объект</span></a></li>
+				</ul>
+			</div>
+			<div class="personal-area__content">
+				<div class="personal-area__content-wrap">
+					<div class="personal-area__top">
+						<div class="personal-area__col">
+							<div class="personal-area__col-top">
+								<h5 class="personal-area__col-title">Моя квартира</h5>
+								<div class="personal-area__col-price">
+									<p>12 160 <span>руб</span></p>
+								</div>
+								<p class="personal-area__col-date"><span>до</span>17.08.2018</p>
+							</div>
+							<ul>
+								<li>
+									<img src="img/personal-area/disarmed-gray.png" alt="">
+									<span>Снят с охраны</span>
+								</li>
+								<li class="personal-area__col-active">
+									<img src="img/personal-area/protection.png" alt="">
+									<span>Под охраной</span>
+								</li>
+								<li>
+									<img src="img/personal-area/night-gray.png" alt="">
+									<span>Ночной режим</span>
+								</li>
+							</ul>
+							<div class="personal-area__col-row">
+								<a class="personal-area__col-button" href="#"><span>Подробнее</span><img src="img/personal-area/arrow-right-gray.png" alt=""></a>
+								<a class="main-button" href="#"><span>оплатить</span></a>
+							</div>
+						</div><!-- col(1) -->
+						<div class="personal-area__col">
+							<div class="personal-area__col-top">
+								<h5 class="personal-area__col-title">Моя коттедж</h5>
+								<div class="personal-area__col-price">
+									<p>2 990 <span>руб</span></p>
+								</div>
+								<p class="personal-area__col-date"><span>до</span>21.07.2018</p>
+							</div>
+							<ul>
+								<li class="personal-area__col-active">
+									<img src="img/personal-area/disarmed.png" alt="">
+									<span>Снят с охраны</span>
+								</li>
+								<li>
+									<img src="img/personal-area/protection-gray.png" alt="">
+									<span>Под охраной</span>
+								</li>
+								<li>
+									<img src="img/personal-area/night-gray.png" alt="">
+									<span>Ночной режим</span>
+								</li>
+							</ul>
+							<div class="personal-area__col-row">
+								<a class="personal-area__col-button" href="#"><span>Подробнее</span><img src="img/personal-area/arrow-right-gray.png" alt=""></a>
+								<a class="main-button" href="#"><span>оплатить</span></a>
+							</div>
+						</div><!-- col(2) -->
+						<div class="personal-area__col">
+							<div class="personal-area__col-top">
+								<h5 class="personal-area__col-title">Мой BMW X5</h5>
+								<div class="personal-area__col-price">
+									<p>11 160 <span>руб</span></p>
+								</div>
+								<p class="personal-area__col-date"><span>до</span>17.08.2018</p>
+							</div>
+							<ul>
+								<li>
+									<img src="img/personal-area/disarmed-gray.png" alt="">
+									<span>Снят с охраны</span>
+								</li>
+								<li>
+									<img src="img/personal-area/protection-gray.png" alt="">
+									<span>Под охраной</span>
+								</li>
+								<li class="personal-area__col-active">
+									<img src="img/personal-area/night.png" alt="">
+									<span>Ночной режим</span>
+								</li>
+							</ul>
+							<div class="personal-area__col-row">
+								<a class="personal-area__col-button" href="#"><span>Подробнее</span><img src="img/personal-area/arrow-right-gray.png" alt=""></a>
+								<a class="main-button" href="#"><span>оплатить</span></a>
+							</div>
+						</div><!-- col(3) -->
+						<div class="personal-area__col personal-area__col-add">
+							<div>
+								<img src="img/personal-area/plus.png" alt="">
+								<p>Добавить объект</p>
+							</div>
+						</div><!-- col(4) -->
 					</div>
-					<div class="post-sidebar__col post-sidebar__col-right">
-						<div class="post-sidebar__col-img">
-							<img src="img/post-img-3.jpg" alt="">
+					<div class="personal-area__bottom">
+						<h3 class="personal-area__bottom-title">Уведомления</h3>
+						<div class="row">
+							<div class="col-md-4 personal-area__bottom-col personal-area__bottom-col__1">
+								<p>Объект</p>
+								<ul>
+									<li><b><img src="img/personal-area/house.png" alt=""></b><span>Дом</span></li>
+									<li><b><img src="img/personal-area/house-2.png" alt=""></b><span>Квартира</span></li>
+									<li><b><img src="img/personal-area/house.png" alt=""></b><span>Дом</span></li>
+									<li><b><img src="img/personal-area/house.png" alt=""></b><span>Дом</span></li>
+								</ul>
+							</div>
+							<div class="col-md-4 personal-area__bottom-col personal-area__bottom-col__2">
+								<p>Событие</p>
+								<ul>
+									<li>Взлом двери</li>
+									<li>Пожарная сигнализация</li>
+									<li>Утечка воды</li>
+									<li>Взлом двери</li>
+								</ul>
+							</div>
+							<div class="col-md-2 personal-area__bottom-col personal-area__bottom-col__3">
+								<p>Дата</p>
+								<ul>
+									<li>02.04.2018</li>
+									<li>17.02.2018</li>
+									<li>31.12.2018</li>
+									<li>05.03.2017</li>
+								</ul>
+							</div>
+							<div class="col-md-2 personal-area__bottom-col personal-area__bottom-col__4">
+								<p>Время</p>
+								<ul>
+									<li>19:07</li>
+									<li>06:43</li>
+									<li>23:51</li>
+									<li>15:38</li>
+								</ul>
+							</div>
 						</div>
-						<div class="post-sidebar__col-descr">
-							<h3 class="post-sidebar__col-title">Защита от угона мототехники</h3>
-							<p>от <b>675</b> руб/мес</p>
-							<span>Защита от угона мототехники</span>
-							<a href="#" class="post-sidebar__col-button"><img src="img/arrow-right.png" alt=""></a>
-						</div>
+						<a class="personal-area__col-button" href="#"><span>Посмотреть все события</span><img src="img/personal-area/arrow-right-gray.png" alt=""></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end post -->
-	<!-- start dispatch -->
-	<section class="dispatch">
-		<div class="dispatch-row wrapper">
-			<div class="dispatch-descr">
-				<h3 class="dispatch-title">Будь в курсе</h3>
-				<p>Подпишись на рассылку новостей</p>
-			</div>
-			<div class="dispatch-form">
-				<form action="">
-					<div>
-						<input type="text" placeholder="Введите ваш E-mail">
-						<button class="main-button dispatch-button">подписаться</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>
-	<!-- end dispatch -->
+	<!-- end personal-area -->
 	<!-- start action -->
 	<section class="action">
 		<div class="row">
@@ -294,8 +404,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="js/scripts.min.js"></script>
