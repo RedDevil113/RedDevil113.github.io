@@ -43,7 +43,7 @@
 		</div>
 	</div>
 	<!-- start main -->
-	<section class="main main-catalog">
+	<section class="main main-catalog main-pages">
 		<!-- start header -->
 		<header class="header">
 			<div class="wrapper">
@@ -144,144 +144,118 @@
 				<li><a href="#"><div><img src="img/delivery-2.svg" alt=""></div><span>доставка</span></a></li>
 			</ul>
 		</nav>
-		<ul class="categories">
-			<li><a href="#" class="categories-active">Классические</a></li>
-			<li><a href="#">Запеченые</a></li>
-			<li><a href="#">острые</a></li>
-			<li><a href="#">с угрем</a></li>
-			<li><a href="#">сладкие</a></li>
-		</ul>
 	</section>
 	<!-- end main -->
-	<!-- start catalog -->
-	<section class="catalog">
+	<!-- start order-adress -->
+	<section class="order-adress">
 		<div class="wrapper">
-			<p class="section-name">Меню Роллы</p>
-			<div class="catalog-row row">
-				<div class="catalog-col">
-					<div class="catalog-col__block">
-						<div class="catalog-col__wrap">
-							<a href="#modal-product" class="catalog-modal__link button-modal"></a>
-							<div class="catalog-col__wrap-img">
-								<img src="img/22.png" alt="" class="catalog-col__img">
-								<img src="img/stub.png" alt="" class="catalog-col__img-hover">
+			<div class="order-progress">
+				<div class="order-progress__col order-progress__active">
+					<span>1</span>
+					<p>Корзина</p>
+				</div>
+				<div class="order-progress__line order-progress__line-1 order-progress__line-active"></div>
+				<div class="order-progress__col order-progress__active">
+					<span>2</span>
+					<p>Оформление заказа</p>
+				</div>
+				<div class="order-progress__line order-progress__line-2 order-progress__line-active__d"></div>
+				<div class="order-progress__col">
+					<span>3</span>
+					<p>Доставка</p>
+				</div>
+			</div>
+			<h2 class="order-title">Оформление заказа</h2>
+			<div class="order-adress__form">
+				<form action="">
+					<div class="order-adress__form-wrap">
+						<div class="order-adress__form-col">
+							<label for="order-1" class="order-input__sure">Ваше имя</label>
+							<input id="order-1" type="text" placeholder="Никодим">
+						</div>
+						<div class="order-adress__form-col">
+							<label for="order-2" class="order-input__sure">Номер телефона</label>
+							<input id="order-2" type="text" placeholder="+ 7 907 807 07 77">
+						</div>
+						<div class="order-adress__form-col">
+							<label for="order-3" class="order-input__sure">Населенный пункт</label>
+							<input id="order-3" type="text" placeholder="Балашиха">
+						</div>
+						<div class="order-adress__form-col">
+							<label for="order-4" class="order-input__sure">Улица</label>
+							<input id="order-4" type="text" placeholder="3-я Строителей">
+						</div>
+						<div class="order-adress__form-col order-adress__form-col__all">
+							<div>
+								<label for="order-5a" class="order-input__sure">Дом</label>
+								<input id="order-5a" type="text" placeholder="8">
 							</div>
-							<div class="catalog-col__descr">
-								<h3 class="catalog-col__title">Филадельфия со снежным крабом</h3>
-								<p>Рис, лосось, микс краб, огурец, нори, лосось, микс краб, огурец, нори, лосось, микс краб, огурец, нори</p>
-								<ul>
-									<li>259 ₽</li>
-									<li>300 г.</li>
-								</ul>
+							<div>
+								<label for="order-5b">Корпус</label>
+								<input id="order-5b" type="text" placeholder="3">
 							</div>
-							<a href="#" class="catalog-col__link"><img src="img/basket.png" alt=""><span>в корзину</span></a>
+							<div>
+								<label for="order-5c">подъезд</label>
+								<input id="order-5c" type="text" placeholder="8">
+							</div>
+							<div>
+								<label for="order-5d">этаж</label>
+								<input id="order-5d" type="text" placeholder="3">
+							</div>
+							<div>
+								<label for="order-5f">Квартира</label>
+								<input id="order-5f" type="text" placeholder="25">
+							</div>
+						</div>
+						<div class="order-adress__form-col">
+							<label for="order-6">Комментарий к заказу</label>
+							<input id="order-6" type="text" placeholder="Не звоните, спит ребенок">
+						</div>
+						<div class="order-adress__form-radio">
+							<span>Оплата:</span>
+							<div class="order-adress__form-radio__wrap">
+								<label class="radio-container">наличные
+								  <input type="radio" checked="checked" name="radio">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="radio-container">онлайн
+								  <input type="radio" name="radio">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="radio-container">картой при получении
+								  <input type="radio" name="radio">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+						<div class="order-adress__form-col order-adress__form-col__price">
+							<label for="order-7">Нужна сдача с</label>
+							<input id="order-7" type="text" placeholder="5 000 ₽">
+						</div>
+						<button class="order-adress__form-button">Заказать</button>
+					</div>
+				</form>
+			</div>
+			<div class="main-top contacts-mob">
+				<div class="wrapper">
+					<div class="main-top__left">
+						<p>Минимальный заказ 450 ₽</p>
+						<p>работаем с 11:00 до 23:00</p>
+					</div>
+					<div class="main-top__right">
+						<div class="main-top__right-bg">
+							<div>
+								<img src="img/phone.svg" alt="">
+							</div>
+							<p>Телефон доставки</p>
+							<a href="#">+7 (495) 234-24-24</a>
 						</div>
 					</div>
-				</div><!-- col(1) -->
-				<div class="catalog-col">
-					<div class="catalog-col__block">
-						<div class="catalog-col__wrap">
-							<a href="#modal-product" class="catalog-modal__link button-modal"></a>
-							<div class="catalog-col__wrap-img">
-								<img src="img/22.png" alt="" class="catalog-col__img">
-								<img src="img/stub.png" alt="" class="catalog-col__img-hover">
-							</div>
-							<div class="catalog-col__descr">
-								<h3 class="catalog-col__title">Калифорния White</h3>
-								<p>Рис, лосось, микс краб, огурец, нори, </p>
-								<ul>
-									<li>350 ₽</li>
-									<li>300 г.</li>
-								</ul>
-							</div>
-							<a href="#" class="catalog-col__link"><img src="img/basket.png" alt=""><span>в корзину</span></a>
-						</div>
-					</div>
-				</div><!-- col2 -->
-				<div class="catalog-col">
-					<div class="catalog-col__block">
-						<div class="catalog-col__wrap">
-							<a href="#modal-product" class="catalog-modal__link button-modal"></a>
-							<div class="catalog-col__wrap-img">
-								<img src="img/22.png" alt="" class="catalog-col__img">
-								<img src="img/stub.png" alt="" class="catalog-col__img-hover">
-							</div>
-							<div class="catalog-col__descr">
-								<h3 class="catalog-col__title">Нью йорк классический</h3>
-								<p>Рис, лосось, микс краб, огурец, нори, </p>
-								<ul>
-									<li>60 ₽</li>
-									<li>300 г.</li>
-								</ul>
-							</div>
-							<a href="#" class="catalog-col__link"><img src="img/basket.png" alt=""><span>в корзину</span></a>
-						</div>
-					</div>
-				</div><!-- col(3) -->
-				<div class="catalog-col">
-					<div class="catalog-col__block">
-						<div class="catalog-col__wrap">
-							<a href="#modal-product" class="catalog-modal__link button-modal"></a>
-							<div class="catalog-col__wrap-img">
-								<img src="img/22.png" alt="" class="catalog-col__img">
-								<img src="img/stub.png" alt="" class="catalog-col__img-hover">
-							</div>
-							<div class="catalog-col__descr">
-								<h3 class="catalog-col__title">Ролл Аляска</h3>
-								<p>Рис, лосось, микс краб, огурец, нори, </p>
-								<ul>
-									<li>190 ₽</li>
-									<li>300 г.</li>
-								</ul>
-							</div>
-							<a href="#" class="catalog-col__link"><img src="img/basket.png" alt=""><span>в корзину</span></a>
-						</div>
-					</div>
-				</div><!-- col(4) -->
-				<div class="catalog-col">
-					<div class="catalog-col__block">
-						<div class="catalog-col__wrap">
-							<a href="#modal-product" class="catalog-modal__link button-modal"></a>
-							<div class="catalog-col__wrap-img">
-								<img src="img/22.png" alt="" class="catalog-col__img">
-								<img src="img/stub.png" alt="" class="catalog-col__img-hover">
-							</div>
-							<div class="catalog-col__descr">
-								<h3 class="catalog-col__title">Ролл сырный цыпленок</h3>
-								<p>Рис, лосось, микс краб, огурец, нори, </p>
-								<ul>
-									<li>200 ₽</li>
-									<li>300 г.</li>
-								</ul>
-							</div>
-							<a href="#" class="catalog-col__link"><img src="img/basket.png" alt=""><span>в корзину</span></a>
-						</div>
-					</div>
-				</div><!-- col(5) -->
-				<div class="catalog-col">
-					<div class="catalog-col__block">
-						<div class="catalog-col__wrap">
-							<a href="#modal-product" class="catalog-modal__link button-modal"></a>
-							<div class="catalog-col__wrap-img">
-								<img src="img/22.png" alt="" class="catalog-col__img">
-								<img src="img/stub.png" alt="" class="catalog-col__img-hover">
-							</div>
-							<div class="catalog-col__descr">
-								<h3 class="catalog-col__title">Филадельфия со снежным крабом</h3>
-								<p>Рис, лосось, микс краб, огурец, нори, </p>
-								<ul>
-									<li>380 ₽</li>
-									<li>300 г.</li>
-								</ul>
-							</div>
-							<a href="#" class="catalog-col__link"><img src="img/basket.png" alt=""><span>в корзину</span></a>
-						</div>
-					</div>
-				</div><!-- col(6) -->
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end catalog -->
+	<!-- end order-adress -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="footer-top">
