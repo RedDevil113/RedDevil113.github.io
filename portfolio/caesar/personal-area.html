@@ -22,7 +22,22 @@
 	<header class="header">
 		<div class="header-top">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-6 header-top__first">
+					<div class="header-top__drop drop-click">
+						<p>
+							<span>Частным лицам</span>
+							<div class="drop-descr">
+								<ul>
+									<li><a href="#"><b>Панель упраления</b><span>1</span></a></li>
+									<li><a href="#"><b>Личный помощник</b><span>5</span></a></li>
+									<li><a href="#">Настройки</a></li>
+									<li><a href="#">Выйти</a></li>
+								</ul>
+							</div>
+						</p>
+					</div>
+				</div>
+				<div class="col-6 header-top__center">
 					<div class="header-top__drop drop-click">
 						<p><img src="img/header/ico-header.png" alt="">
 							<span>Набережные челны</span>
@@ -37,7 +52,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-6 header-top__last">
 					<div class="header-top__phone drop-click">
 						<p><a href="#">8 800 700-70-00</a></p>
 						<div class="drop-descr drop-descr__right">
@@ -53,20 +68,23 @@
 			</div>
 		</div>
 		<div class="header-middle">
+			<div class="menu-bar">
+				<span></span>
+			</div>
 			<div class="row">
-				<div class="col-md-2 header-middle__logo">
+				<div class="col-lg-2 col-sm-4 col-7 header-middle__logo">
 					<a href="#">
 						<img src="img/header/logo.png" alt="">
 					</a>
 				</div>
-				<div class="col-md-7 header-middle__menu">
+				<div class="col-lg-7 col-sm-5 header-middle__menu">
 					<ul>
-						<li><a href="#">Для жизни</a></li>
-						<li><a class="header-middle__center" href="#">Для бизнеса</a></li>
-						<li><a class="header-middle__active" href="#">Пополнить баланс</a></li>
+						<li><a class="header-middle__first" href="#">Частным лицам</a></li>
+						<li><a href="#">Бизнесу</a></li>
+						<li><a class="header-middle__active" href="#"><img src="img/balance-ico.png" alt=""><span>Пополнить баланс</span></a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-sm-3 col-5">
 					<div class="header-middle__user drop-click">
 						<div class="header-middle__ico">
 							<img src="img/header/header-human.png" alt="">
@@ -107,6 +125,10 @@
 			</div>
 		</div>
 		<div class="personal-area__row">
+			<div class="personal-area__menu">
+				<img src="img/menu-mob.png" alt="">
+				<p>Меню</p>
+			</div>
 			<div class="personal-area__sidebar">
 				<ul>
 					<li><a href="#"><div><img src="img/personal-area/panel.png" alt=""></div><span>Панель управления</span></a></li>
@@ -154,10 +176,12 @@
 						<div class="personal-area__col">
 							<div class="personal-area__col-top">
 								<h5 class="personal-area__col-title">Моя квартира</h5>
-								<div class="personal-area__col-price">
-									<p>12 160 <span>руб</span></p>
+								<div class="personal-area__col-wrap">
+									<div class="personal-area__col-price">
+										<p>12 160 <span>руб</span></p>
+									</div>
+									<p class="personal-area__col-date"><span>до</span>17.08.2018</p>
 								</div>
-								<p class="personal-area__col-date"><span>до</span>17.08.2018</p>
 							</div>
 							<ul>
 								<li>
@@ -181,10 +205,12 @@
 						<div class="personal-area__col">
 							<div class="personal-area__col-top">
 								<h5 class="personal-area__col-title">Моя коттедж</h5>
-								<div class="personal-area__col-price">
-									<p>2 990 <span>руб</span></p>
+								<div class="personal-area__col-wrap">
+									<div class="personal-area__col-price">
+										<p>2 990 <span>руб</span></p>
+									</div>
+									<p class="personal-area__col-date"><span>до</span>21.07.2018</p>
 								</div>
-								<p class="personal-area__col-date"><span>до</span>21.07.2018</p>
 							</div>
 							<ul>
 								<li class="personal-area__col-active">
@@ -208,10 +234,12 @@
 						<div class="personal-area__col">
 							<div class="personal-area__col-top">
 								<h5 class="personal-area__col-title">Мой BMW X5</h5>
-								<div class="personal-area__col-price">
-									<p>11 160 <span>руб</span></p>
+								<div class="personal-area__col-wrap">
+									<div class="personal-area__col-price">
+										<p>11 160 <span>руб</span></p>
+									</div>
+									<p class="personal-area__col-date"><span>до</span>17.08.2018</p>
 								</div>
-								<p class="personal-area__col-date"><span>до</span>17.08.2018</p>
 							</div>
 							<ul>
 								<li>
@@ -242,7 +270,7 @@
 					<div class="personal-area__bottom">
 						<h3 class="personal-area__bottom-title">Уведомления</h3>
 						<div class="row">
-							<div class="col-md-4 personal-area__bottom-col personal-area__bottom-col__1">
+							<div class="col-md-4 col-sm-3 col-5 personal-area__bottom-col personal-area__bottom-col__1">
 								<p>Объект</p>
 								<ul>
 									<li><b><img src="img/personal-area/house.png" alt=""></b><span>Дом</span></li>
@@ -251,31 +279,22 @@
 									<li><b><img src="img/personal-area/house.png" alt=""></b><span>Дом</span></li>
 								</ul>
 							</div>
-							<div class="col-md-4 personal-area__bottom-col personal-area__bottom-col__2">
+							<div class="col-md-4 col-sm-5 col-7 personal-area__bottom-col personal-area__bottom-col__2">
 								<p>Событие</p>
 								<ul>
-									<li>Взлом двери</li>
-									<li>Пожарная сигнализация</li>
-									<li>Утечка воды</li>
-									<li>Взлом двери</li>
+									<li>Взлом двери<span><b>02.04.2018</b> 19:07</span></li>
+									<li>Пожарная сигнализация<span><b>17.02.2018</b> 19:07</span></li>
+									<li>Утечка воды<span><b>31.12.2018</b> 19:07</span></li>
+									<li>Взлом двери<span><b>05.03.2017</b> 19:07</span></li>
 								</ul>
 							</div>
-							<div class="col-md-2 personal-area__bottom-col personal-area__bottom-col__3">
-								<p>Дата</p>
+							<div class="col-md-4 col-sm-4 col-4 personal-area__bottom-col personal-area__bottom-col__3">
+								<p>Дата / Время</p>
 								<ul>
-									<li>02.04.2018</li>
-									<li>17.02.2018</li>
-									<li>31.12.2018</li>
-									<li>05.03.2017</li>
-								</ul>
-							</div>
-							<div class="col-md-2 personal-area__bottom-col personal-area__bottom-col__4">
-								<p>Время</p>
-								<ul>
-									<li>19:07</li>
-									<li>06:43</li>
-									<li>23:51</li>
-									<li>15:38</li>
+									<li>02.04.2018 <span>19:07</span></li>
+									<li>17.02.2018 <span>19:07</span></li>
+									<li>31.12.2018 <span>19:07</span></li>
+									<li>05.03.2017 <span>19:07</span></li>
 								</ul>
 							</div>
 						</div>
@@ -289,16 +308,16 @@
 	<!-- start action -->
 	<section class="action">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-12">
 				<a href="#">
 					<img src="img/header/logo.png" alt="">
 				</a>
 			</div>
-			<div class="col-md-4 action-phone">
+			<div class="col-md-4 col-12 action-phone">
 				<p><a href="#">8 800 700-70-00</a></p>
 				<span>Бесплатные звонки по РФ</span>
 			</div>
-			<div class="col-md-4 action-button">
+			<div class="col-md-4 col-12 action-button">
 				<a href="#"><span>обратный звонок</span></a>
 			</div>
 		</div>
@@ -308,7 +327,7 @@
 	<footer class="footer">
 		<div class="footer-top">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">О компании</h3>
 					<ul>
 						<li><a href="#">Новости</a></li>
@@ -320,7 +339,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для жизни</h3>
 					<ul>
 						<li><a href="#">Охрана квартиры</a></li>
@@ -332,7 +351,7 @@
 						<li><a href="#">Конфигуратор</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для бизнеса</h3>
 					<ul>
 						<li><a href="#">Охранно-пожарная сигнализация</a></li>
@@ -344,7 +363,7 @@
 						<li><a href="#">Корпорациям</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для клиентов</h3>
 					<ul>
 						<li><a href="#">Документы и инструкции</a></li>
@@ -361,7 +380,7 @@
 		</div>
 		<div class="footer-middle">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-12">
 					<div class="footer-middle__app">
 						<h3 class="footer-title">скачать приложение</h3>
 						<ul>
@@ -370,7 +389,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="footer-middle__social">
 						<h3 class="footer-title">Мы в соцсетях</h3>
 						<ul>
@@ -381,13 +400,13 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="footer-middle__email">
 						<h3 class="footer-title">Рассылка новостей</h3>
 						<form action="">
 							<div>
 								<input type="text" placeholder="Введите ваш email">
-								<button class="footer-button"><img src="img/header/arrow-right.png" alt=""></button>
+								<button class="footer-button"><span>Подписаться</span><img src="img/header/arrow-right.png" alt=""></button>
 							</div>
 						</form>
 					</div>

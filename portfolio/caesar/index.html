@@ -22,7 +22,22 @@
 	<header class="header">
 		<div class="header-top">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-6 header-top__first">
+					<div class="header-top__drop drop-click">
+						<p>
+							<span>Частным лицам</span>
+							<div class="drop-descr">
+								<ul>
+									<li><a href="#"><b>Панель упраления</b><span>1</span></a></li>
+									<li><a href="#"><b>Личный помощник</b><span>5</span></a></li>
+									<li><a href="#">Настройки</a></li>
+									<li><a href="#">Выйти</a></li>
+								</ul>
+							</div>
+						</p>
+					</div>
+				</div>
+				<div class="col-6 header-top__center">
 					<div class="header-top__drop drop-click">
 						<p><img src="img/header/ico-header.png" alt="">
 							<span>Набережные челны</span>
@@ -37,7 +52,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-6 header-top__last">
 					<div class="header-top__phone drop-click">
 						<p><a href="#">8 800 700-70-00</a></p>
 						<div class="drop-descr drop-descr__right">
@@ -53,20 +68,23 @@
 			</div>
 		</div>
 		<div class="header-middle">
+			<div class="menu-bar">
+				<span></span>
+			</div>
 			<div class="row">
-				<div class="col-md-2 header-middle__logo">
+				<div class="col-lg-2 col-sm-4 col-7 header-middle__logo">
 					<a href="#">
 						<img src="img/header/logo.png" alt="">
 					</a>
 				</div>
-				<div class="col-md-7 header-middle__menu">
+				<div class="col-lg-7 col-sm-5 header-middle__menu">
 					<ul>
-						<li><a href="#">Для жизни</a></li>
-						<li><a class="header-middle__center" href="#">Для бизнеса</a></li>
-						<li><a class="header-middle__active" href="#">Пополнить баланс</a></li>
+						<li><a class="header-middle__first" href="#">Частным лицам</a></li>
+						<li><a href="#">Бизнесу</a></li>
+						<li><a class="header-middle__active" href="#"><img src="img/balance-ico.png" alt=""><span>Пополнить баланс</span></a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-sm-3 col-5">
 					<div class="header-middle__user drop-click">
 						<div class="header-middle__ico">
 							<img src="img/header/header-human.png" alt="">
@@ -86,15 +104,13 @@
 			</div>
 		</div>
 		<nav class="header-nav">
-			<div class="row">
+			<div class="row header-nav__row">
 				<ul>
-					<li><a href="#">Охранно-пожарная Сигнализация</a></li>
-					<li><a href="#">Тревожная кнопка</a></li>
+					<li><a href="#">Охрана квартиры</a></li>
+					<li><a href="#">Охрана коттеджа</a></li>
 					<li><a href="#">Видеонаблюдение</a></li>
-					<li><a href="#">Мониторинг транспорта</a></li>
-					<li><a href="#">Физическая охрана</a></li>
-					<li><a href="#">Защита от угона</a></li>
-					<li><a href="#">Корпорациям</a></li>
+					<li><a href="#">Защита от угона автомобиля</a></li>
+					<li><a href="#">Защита от угона мототехники</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -268,25 +284,25 @@
 	<!-- start journal -->
 	<section class="journal">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-6">
 				<h2 class="section-title">Журнал</h2>
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-8 col-6">
 				<div class="journal-all">
 					<a href="#"><span>все материалы</span><img src="img/arrow-blue-right.png" alt=""></a>
 				</div>
 			</div>
 		</div>
 		<div class="row journal-row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6 col-12 journal-col">
 				<h3 class="journal-title">Новые тарифы<br> смс-информаирования</h3>
 				<p>16 апреля / Новости</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6 col-12 journal-col">
 				<h3 class="journal-title">Подготовка автомобиля<br> к весне</h3>
 				<p>13 апреля / оперативные сводки</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 col-sm-6 col-12 journal-col journal-col__last">
 				<h3 class="journal-title">Актуальные номера телефонов «Цезарь Сателлит»</h3>
 				<p>28 марта / Новости</p>
 			</div>
@@ -296,6 +312,10 @@
 	<!-- start mobile-app -->
 	<section class="mobile-app">
 		<div class="row">
+			<ul class="mobile-app__mob">
+				<li><a href="#"><img src="img/footer/app-store.png" alt=""></a></li>
+				<li><a href="#"><img src="img/footer/google-pay.png" alt=""></a></li>
+			</ul>
 			<div class="mobile-app__descr col-md-4">
 				<h3 class="mobile-app__descr-title">Скачайте мобильное приложение</h3>
 				<p>Управляйте Вашим автомобилем с помощью Cesar Car – бесплатного приложения для смартфонов.</p>
@@ -305,7 +325,7 @@
 					<li><a href="#"><img src="img/footer/google-pay.png" alt=""></a></li>
 				</ul>
 			</div>
-			<div class="mobile-app__right col-md-8">
+			<div class="mobile-app__right col-md-8 col-12">
 				<div class="mobile-app__slider owl-carousel">
 					<div class="mobile-app__slide">
 						<div class="mobile-app__slide-row">
@@ -337,16 +357,16 @@
 	<!-- start action -->
 	<section class="action">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-12">
 				<a href="#">
 					<img src="img/header/logo.png" alt="">
 				</a>
 			</div>
-			<div class="col-md-4 action-phone">
+			<div class="col-md-4 col-12 action-phone">
 				<p><a href="#">8 800 700-70-00</a></p>
 				<span>Бесплатные звонки по РФ</span>
 			</div>
-			<div class="col-md-4 action-button">
+			<div class="col-md-4 col-12 action-button">
 				<a href="#"><span>обратный звонок</span></a>
 			</div>
 		</div>
@@ -356,7 +376,7 @@
 	<footer class="footer">
 		<div class="footer-top">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">О компании</h3>
 					<ul>
 						<li><a href="#">Новости</a></li>
@@ -368,7 +388,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для жизни</h3>
 					<ul>
 						<li><a href="#">Охрана квартиры</a></li>
@@ -380,7 +400,7 @@
 						<li><a href="#">Конфигуратор</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для бизнеса</h3>
 					<ul>
 						<li><a href="#">Охранно-пожарная сигнализация</a></li>
@@ -392,7 +412,7 @@
 						<li><a href="#">Корпорациям</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для клиентов</h3>
 					<ul>
 						<li><a href="#">Документы и инструкции</a></li>
@@ -409,7 +429,7 @@
 		</div>
 		<div class="footer-middle">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-12">
 					<div class="footer-middle__app">
 						<h3 class="footer-title">скачать приложение</h3>
 						<ul>
@@ -418,7 +438,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="footer-middle__social">
 						<h3 class="footer-title">Мы в соцсетях</h3>
 						<ul>
@@ -429,13 +449,13 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="footer-middle__email">
 						<h3 class="footer-title">Рассылка новостей</h3>
 						<form action="">
 							<div>
 								<input type="text" placeholder="Введите ваш email">
-								<button class="footer-button"><img src="img/header/arrow-right.png" alt=""></button>
+								<button class="footer-button"><span>Подписаться</span><img src="img/header/arrow-right.png" alt=""></button>
 							</div>
 						</form>
 					</div>

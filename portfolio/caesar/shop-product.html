@@ -22,7 +22,22 @@
 	<header class="header">
 		<div class="header-top">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-6 header-top__first">
+					<div class="header-top__drop drop-click">
+						<p>
+							<span>Частным лицам</span>
+							<div class="drop-descr">
+								<ul>
+									<li><a href="#"><b>Панель упраления</b><span>1</span></a></li>
+									<li><a href="#"><b>Личный помощник</b><span>5</span></a></li>
+									<li><a href="#">Настройки</a></li>
+									<li><a href="#">Выйти</a></li>
+								</ul>
+							</div>
+						</p>
+					</div>
+				</div>
+				<div class="col-6 header-top__center">
 					<div class="header-top__drop drop-click">
 						<p><img src="img/header/ico-header.png" alt="">
 							<span>Набережные челны</span>
@@ -37,7 +52,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-6 header-top__last">
 					<div class="header-top__phone drop-click">
 						<p><a href="#">8 800 700-70-00</a></p>
 						<div class="drop-descr drop-descr__right">
@@ -53,20 +68,23 @@
 			</div>
 		</div>
 		<div class="header-middle">
+			<div class="menu-bar">
+				<span></span>
+			</div>
 			<div class="row">
-				<div class="col-md-2 header-middle__logo">
+				<div class="col-lg-2 col-sm-4 col-7 header-middle__logo">
 					<a href="#">
 						<img src="img/header/logo.png" alt="">
 					</a>
 				</div>
-				<div class="col-md-7 header-middle__menu">
+				<div class="col-lg-7 col-sm-5 header-middle__menu">
 					<ul>
-						<li><a href="#">Для жизни</a></li>
-						<li><a class="header-middle__center" href="#">Для бизнеса</a></li>
-						<li><a class="header-middle__active" href="#">Пополнить баланс</a></li>
+						<li><a class="header-middle__first" href="#">Частным лицам</a></li>
+						<li><a href="#">Бизнесу</a></li>
+						<li><a class="header-middle__active" href="#"><img src="img/balance-ico.png" alt=""><span>Пополнить баланс</span></a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-sm-3 col-5">
 					<div class="header-middle__user drop-click">
 						<div class="header-middle__ico">
 							<img src="img/header/header-human.png" alt="">
@@ -86,7 +104,7 @@
 			</div>
 		</div>
 		<nav class="header-nav">
-			<div class="row">
+			<div class="row header-nav__row">
 				<ul>
 					<li><a href="#">Охрана квартиры</a></li>
 					<li><a href="#">Охрана коттеджа</a></li>
@@ -104,10 +122,10 @@
 			<div class="product-head__top page-head">
 				<h1 class="page-head__title">Охрана <b>квартиры</b><span> / коттеджа</span></h1>
 				<ul>
-					<li><a class="active" href="#">Обзор</a></li>
-					<li><a href="#">Как это работает?</a></li>
-					<li><a href="#">Оборудование</a></li>
-					<li><a href="#">Тарифы</a></li>
+					<li class="page-head__hide"><a href="#">Обзор</a></li>
+					<li class="page-head__hide"><a href="#">Как это работает?</a></li>
+					<li class="page-head__hide-mob"><a class="active" href="#">Оборудование</a></li>
+					<li class="page-head__hide"><a href="#">Тарифы</a></li>
 					<li class="drop"><a href="#">Еще</a></li>
 				</ul>
 			</div>
@@ -140,15 +158,18 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<div id="sync1" class="owl-carousel product-slider-1">
-				  <div class="item" style="background: url(img/bis-slide-1.png);"></div>
-				  <div class="item" style="background: url(img/min-slide-2.png);"></div>
-				  <div class="item" style="background: url(img/min-slide-3.png);"></div>
-				</div>
-				<div id="sync2" class="owl-carousel product-slider-2">
-				  <div class="item"><img src="img/min-slide-1.png" alt=""></div>
-				  <div class="item"><img src="img/min-slide-2.png" alt=""></div>
-				  <div class="item"><img src="img/min-slide-3.png" alt=""></div>
+				<h3 class="main-product__descr-title main-product__descr-title__mob">Проводная уличная монофокальная камера Tecsar AHDW-40F2M (000006387) </h3>
+				<div class="main-product__sliders">
+					<div id="sync1" class="owl-carousel product-slider-1">
+					  <div class="item" style="background: url(img/bis-slide-1.png);"></div>
+					  <div class="item" style="background: url(img/min-slide-2.png);"></div>
+					  <div class="item" style="background: url(img/min-slide-3.png);"></div>
+					</div>
+					<div id="sync2" class="owl-carousel product-slider-2">
+					  <div class="item"><img src="img/min-slide-1.png" alt=""></div>
+					  <div class="item"><img src="img/min-slide-2.png" alt=""></div>
+					  <div class="item"><img src="img/min-slide-3.png" alt=""></div>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-6 main-product__descr">
@@ -171,9 +192,9 @@
 	<!-- end main-product -->
 	<!-- start catalog -->
 	<section class="catalog">
-		<div class="wrapper">
+		<div class="wrapper catalog-wrap">
 			<div class="row">
-				<div class="col-md-9">
+				<div class="col-lg-9 col-12 catalog-first">
 					<div class="product-content">
 						<ul class="product-tabs">
 							<li data-tab="tab-1">Описание</li>
@@ -262,48 +283,50 @@
 						</div>
 					</div>
 				</div><!-- content -->
-				<div class="col-md-3">
+				<div class="col-lg-3 col-12 with-product">
 					<div class="sidebar-catalog">
 						<h3 class="sidebar-catalog__title">С этим товаром покупают</h3>
-						<div class="catalog-col">
-							<b>Камера</b>
-							<div class="catalog-col__img">
-								<img src="img/product-1.png" alt="">
-							</div>
-							<div class="catalog-col__descr">
-								<span>HD-CVI Dahua HDW1000M</span>
-								<p><span>7 200 </span>руб</p>
-								<div class="catalog-col__buttons">
-									<a href="#" class="main-button"><span>в корзину</span></a>
-									<a href="#" class="catalog-col__button"><img src="img/arrow-2.png" alt=""></a>
+						<div class="with-product__wrap">
+							<div class="catalog-col">
+								<b>Камера</b>
+								<div class="catalog-col__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<div class="catalog-col__descr">
+									<span>HD-CVI Dahua HDW1000M</span>
+									<p><span>7 200 </span>руб</p>
+									<div class="catalog-col__buttons">
+										<a href="#" class="main-button"><span>в корзину</span></a>
+										<a href="#" class="catalog-col__button"><img src="img/arrow-2.png" alt=""></a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="catalog-col">
-							<b>Камера</b>
-							<div class="catalog-col__img">
-								<img src="img/product-2.png" alt="">
-							</div>
-							<div class="catalog-col__descr">
-								<span>Tecsar AHDD-20F3M-light</span>
-								<p><span>5 199 </span>руб</p>
-								<div class="catalog-col__buttons">
-									<a href="#" class="main-button"><span>в корзину</span></a>
-									<a href="#" class="catalog-col__button"><img src="img/arrow-2.png" alt=""></a>
+							<div class="catalog-col">
+								<b>Камера</b>
+								<div class="catalog-col__img">
+									<img src="img/product-2.png" alt="">
+								</div>
+								<div class="catalog-col__descr">
+									<span>Tecsar AHDD-20F3M-light</span>
+									<p><span>5 199 </span>руб</p>
+									<div class="catalog-col__buttons">
+										<a href="#" class="main-button"><span>в корзину</span></a>
+										<a href="#" class="catalog-col__button"><img src="img/arrow-2.png" alt=""></a>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="catalog-col">
-							<b>Камера</b>
-							<div class="catalog-col__img">
-								<img src="img/product-3.png" alt="">
-							</div>
-							<div class="catalog-col__descr">
-								<span>Sony Handycam AX33</span>
-								<p><span>27 800 </span>руб</p>
-								<div class="catalog-col__buttons">
-									<a href="#" class="main-button"><span>в корзину</span></a>
-									<a href="#" class="catalog-col__button"><img src="img/arrow-2.png" alt=""></a>
+							<div class="catalog-col catalog-col__last">
+								<b>Камера</b>
+								<div class="catalog-col__img">
+									<img src="img/product-3.png" alt="">
+								</div>
+								<div class="catalog-col__descr">
+									<span>Sony Handycam AX33</span>
+									<p><span>27 800 </span>руб</p>
+									<div class="catalog-col__buttons">
+										<a href="#" class="main-button"><span>в корзину</span></a>
+										<a href="#" class="catalog-col__button"><img src="img/arrow-2.png" alt=""></a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -316,16 +339,16 @@
 	<!-- start action -->
 	<section class="action">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-12">
 				<a href="#">
 					<img src="img/header/logo.png" alt="">
 				</a>
 			</div>
-			<div class="col-md-4 action-phone">
+			<div class="col-md-4 col-12 action-phone">
 				<p><a href="#">8 800 700-70-00</a></p>
 				<span>Бесплатные звонки по РФ</span>
 			</div>
-			<div class="col-md-4 action-button">
+			<div class="col-md-4 col-12 action-button">
 				<a href="#"><span>обратный звонок</span></a>
 			</div>
 		</div>
@@ -335,7 +358,7 @@
 	<footer class="footer">
 		<div class="footer-top">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">О компании</h3>
 					<ul>
 						<li><a href="#">Новости</a></li>
@@ -347,7 +370,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для жизни</h3>
 					<ul>
 						<li><a href="#">Охрана квартиры</a></li>
@@ -359,7 +382,7 @@
 						<li><a href="#">Конфигуратор</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для бизнеса</h3>
 					<ul>
 						<li><a href="#">Охранно-пожарная сигнализация</a></li>
@@ -371,7 +394,7 @@
 						<li><a href="#">Корпорациям</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-6">
 					<h3 class="footer-title">Для клиентов</h3>
 					<ul>
 						<li><a href="#">Документы и инструкции</a></li>
@@ -388,7 +411,7 @@
 		</div>
 		<div class="footer-middle">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-12">
 					<div class="footer-middle__app">
 						<h3 class="footer-title">скачать приложение</h3>
 						<ul>
@@ -397,7 +420,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="footer-middle__social">
 						<h3 class="footer-title">Мы в соцсетях</h3>
 						<ul>
@@ -408,13 +431,13 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-12">
 					<div class="footer-middle__email">
 						<h3 class="footer-title">Рассылка новостей</h3>
 						<form action="">
 							<div>
 								<input type="text" placeholder="Введите ваш email">
-								<button class="footer-button"><img src="img/header/arrow-right.png" alt=""></button>
+								<button class="footer-button"><span>Подписаться</span><img src="img/header/arrow-right.png" alt=""></button>
 							</div>
 						</form>
 					</div>
