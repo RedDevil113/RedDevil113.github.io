@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".modal");$(".button-modal").on("click",function(n){n.preventDefault();var e=$(this).attr("data-modal");$("#"+e).addClass("open")}),$(".cancel").on("click",function(n){n.preventDefault(),$(".modal").removeClass("open")}),$(".footer-menu").on("click",function(n){n.preventDefault(),$("#modal-menu").toggleClass("open")})});
