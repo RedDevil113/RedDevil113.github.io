@@ -66,6 +66,25 @@ $(document).ready(function(){
 
 	$('.catalog-sidebar__button').on('click', function(){
 		$('.catalog-sidebar__filter').toggleClass('catalog-sidebar__filter-open');
+		$('.overlay-bg').toggleClass('overlay-bg__open');
+		$(this).toggleClass('catalog-sidebar__button-open');
+	});
+
+	$('.catalog-sidebar__close').on('click', function(){
+		$('.catalog-sidebar__filter').toggleClass('catalog-sidebar__filter-open');
+		$('.overlay-bg').toggleClass('overlay-bg__open');
+		$('.catalog-sidebar__button').toggleClass('catalog-sidebar__button-open');
+	});
+
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 168){
+			$('.CCTV-header').addClass('CCTV-header__fixed');
+			$('.CCTV-header__block').addClass('CCTV-header__block-open');
+		}
+		else{
+			$('.CCTV-header').removeClass('CCTV-header__fixed');
+			$('.CCTV-header__block').removeClass('CCTV-header__block-open');
+		}
 	});
 
 });
