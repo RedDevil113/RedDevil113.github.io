@@ -1940,6 +1940,8 @@ img {
       font-size: 16px;
       color: #7C8287;
       border-bottom: 1px dashed #7C8287; }
+      .CCTV-choice__link-last:hover {
+        border-bottom-color: transparent; }
 
 .CCTV-product {
   height: 600px;
@@ -2573,6 +2575,12 @@ img {
     .CCTV-choice__link {
       max-width: 290px; } }
 
+@media only screen and (max-width: 580px) {
+  .CCTV-header__title {
+    font-size: 21px; }
+  .CCTV-header__link {
+    max-width: 190px; } }
+
 @media only screen and (max-width: 530px) {
   .main-content {
     padding: 30px 10px; }
@@ -2634,16 +2642,6 @@ img {
       margin-bottom: 20px; }
   .catalog-header__title {
     display: none; }
-  .CCTV-header {
-    padding: 30px 15px; }
-    .CCTV-header__block-open {
-      height: 176px; }
-    .CCTV-header__wrap {
-      display: block; }
-    .CCTV-header__title {
-      padding-bottom: 20px; }
-    .CCTV-header__link {
-      max-width: 290px; }
   .CCTV-camera__bg {
     background-position: center !important; }
   .CCTV-camera__img {
@@ -2764,6 +2762,9 @@ img {
     padding: 15px; }
     .CCTV-smart__descr {
       width: 100%; }
+      .CCTV-smart__descr .CCTV-descr__col {
+        max-width: 300px;
+        margin: 0 auto; }
     .CCTV-smart__bg-table {
       display: none; }
     .CCTV-smart__bg-mob {
@@ -2927,6 +2928,17 @@ img {
       max-width: 100%; }
   .catalog-row .product {
     width: 100%; }
+  .CCTV-header {
+    padding: 30px 15px; }
+    .CCTV-header__block-open {
+      height: 176px; }
+    .CCTV-header__wrap {
+      display: block; }
+    .CCTV-header__title {
+      padding-bottom: 20px;
+      font-size: 27px; }
+    .CCTV-header__link {
+      max-width: 290px; }
   .CCTV-home__bg {
     display: none; }
     .CCTV-home__bg-mob {
