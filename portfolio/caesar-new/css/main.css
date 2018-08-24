@@ -601,6 +601,8 @@ img {
 
 .footer-middle__pay li {
   margin-right: 20px; }
+  .footer-middle__pay li img {
+    max-width: 146px; }
   .footer-middle__pay li:last-child {
     margin-right: 0; }
 
@@ -1056,7 +1058,8 @@ img {
             justify-content: space-between; }
   .CCTV-header__title {
     font-size: 28px;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1; }
   .CCTV-header__link {
     max-width: 240px;
     line-height: 60px; }
@@ -1665,6 +1668,359 @@ img {
             .score-col__list li a.score-col__second:hover svg path {
               fill: #fff !important; }
 
+.CCTV-descr__row {
+  padding-top: 40px; }
+
+.CCTV-descr__col {
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .CCTV-descr__col div {
+    width: 35px;
+    min-width: 35px;
+    margin-right: 20px; }
+  .CCTV-descr__col p {
+    max-width: 280px;
+    font-size: 18px; }
+
+.CCTV-alarm {
+  height: 700px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 310px 110px 0 0; }
+  .CCTV-alarm__bg {
+    background-position: top right !important; }
+  .CCTV-alarm__descr .CCTV-descr__title {
+    font-size: 64px;
+    font-weight: bold;
+    padding-bottom: 0; }
+
+.CCTV-smart {
+  height: 600px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 30px 175px 0 0; }
+  .CCTV-smart__bg {
+    background-position: top right !important; }
+    .CCTV-smart__bg-table {
+      display: none; }
+    .CCTV-smart__bg-mob {
+      display: none; }
+  .CCTV-smart__descr .CCTV-descr__col p {
+    max-width: 220px; }
+
+.CCTV-smoke {
+  height: 600px;
+  padding: 125px 0 0 170px; }
+  .CCTV-smoke__bg {
+    background-position: top right !important; }
+    .CCTV-smoke__bg-mob {
+      display: none; }
+  .CCTV-smoke__descr p {
+    max-width: 380px; }
+
+.CCTV-detector {
+  height: 700px;
+  padding: 85px 15px;
+  text-align: center; }
+  .CCTV-detector__bg-mob {
+    display: none; }
+  .CCTV-detector .CCTV-descr__row-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 800px;
+    margin: 0 auto; }
+    .CCTV-detector .CCTV-descr__row-wrap .CCTV-descr__col {
+      display: block;
+      padding: 0 15px;
+      width: 33.333%; }
+      .CCTV-detector .CCTV-descr__row-wrap .CCTV-descr__col div {
+        margin: 0 auto 20px; }
+
+.CCTV-water__bg-mob {
+  display: none; }
+
+.CCTV-attack {
+  height: 700px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 175px 30px 30px; }
+  .CCTV-attack__descr {
+    max-width: 375px;
+    width: 100%; }
+  .CCTV-attack__bg {
+    background-position: top right !important; }
+    .CCTV-attack__bg-mob {
+      display: none; }
+
+.CCTV-care {
+  height: 800px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 30px 0 190px 0;
+  margin-top: -5px;
+  text-align: center; }
+  .CCTV-care__descr {
+    width: 100%; }
+    .CCTV-care__descr .CCTV-descr__title {
+      color: #fff; }
+    .CCTV-care__descr .CCTV-descr__row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row nowrap;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      max-width: 850px;
+      margin: 0 auto; }
+    .CCTV-care__descr .CCTV-descr__col {
+      display: block;
+      width: 33.333%;
+      padding: 0 15px; }
+      .CCTV-care__descr .CCTV-descr__col div {
+        margin: 0 auto 20px; }
+      .CCTV-care__descr .CCTV-descr__col p {
+        color: #fff;
+        max-width: 100%; }
+  .CCTV-care__bg {
+    background-position: top center !important; }
+    .CCTV-care__bg-mob {
+      display: none; }
+
+.CCTV-control {
+  height: 722px; }
+  .CCTV-control__bg {
+    background-position: bottom center !important; }
+
+.CCTV-benefit {
+  padding: 30px 145px 30px 30px; }
+  .CCTV-benefit .CCTV-descr {
+    max-width: 410px;
+    width: 100%; }
+  .CCTV-benefit .CCTV-descr__col {
+    padding: 0 0 25px 30px;
+    display: block; }
+    .CCTV-benefit .CCTV-descr__col-title {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: normal; }
+    .CCTV-benefit .CCTV-descr__col p {
+      font-size: 18px; }
+
+.CCTV-gifts {
+  height: 640px;
+  padding: 190px 0 90px 180px; }
+  .CCTV-gifts__img {
+    position: absolute;
+    bottom: 0;
+    right: 110px; }
+  .CCTV-gifts__text {
+    position: absolute;
+    bottom: 50px;
+    left: 180px;
+    font-size: 16px;
+    color: #7C8287;
+    z-index: 2; }
+    .CCTV-gifts__text-mob {
+      display: none; }
+  .CCTV-gifts .CCTV-smoke__bg {
+    background-position: top right !important; }
+
+.CCTV-choice {
+  height: 400px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #F2F4F6; }
+  .CCTV-choice__title {
+    padding-bottom: 43px;
+    font-size: 40px;
+    line-height: normal;
+    font-weight: normal; }
+  .CCTV-choice__link {
+    margin-bottom: 30px;
+    max-width: 240px;
+    line-height: 60px; }
+    .CCTV-choice__link-last {
+      display: inline-block;
+      padding-bottom: 5px;
+      font-size: 16px;
+      color: #7C8287;
+      border-bottom: 1px dashed #7C8287; }
+
+.CCTV-product {
+  height: 600px;
+  padding: 100px 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .CCTV-product__descr {
+    max-width: 478px;
+    width: 100%;
+    margin-left: 45px; }
+    .CCTV-product__descr a {
+      display: inline-block;
+      line-height: 60px;
+      max-width: 240px;
+      width: 100%;
+      background: #FFD800;
+      text-align: center;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      font-size: 16px;
+      color: #212121; }
+  .CCTV-product__title {
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: normal; }
+  .CCTV-product__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 20px;
+    max-width: 372px;
+    width: 100%; }
+  .CCTV-product__col {
+    padding-bottom: 30px; }
+    .CCTV-product__col span {
+      font-size: 18px;
+      line-height: 1;
+      color: #7C8287;
+      display: block;
+      padding-bottom: 5px; }
+    .CCTV-product__col p {
+      font-size: 24px;
+      line-height: 1; }
+
+.CCTV-descr__col-row ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  .CCTV-descr__col-row ul li {
+    padding-right: 20px; }
+    .CCTV-descr__col-row ul li img {
+      max-width: 146px; }
+
 /* -- footer -- */
 /* -- footer -- */
 /* -- footer -- */
@@ -1723,11 +2079,21 @@ img {
   .news-slide__novelty {
     min-width: 450px; }
   .CCTV-app__img {
-    right: -160px; } }
+    right: -160px; }
+  .CCTV-gifts {
+    padding: 190px 0 30px 30px; }
+    .CCTV-gifts__text {
+      left: 30px; }
+    .CCTV-gifts__img {
+      right: 40px; } }
 
 @media only screen and (max-width: 1050px) {
   .categories-col__wrap {
     padding: 0 30px;
+    background-position: 40% 0% !important; }
+  .CCTV-smart__bg {
+    background-position: 90% 0% !important; }
+  .CCTV-smoke__bg {
     background-position: 40% 0% !important; } }
 
 @media only screen and (max-width: 950px) {
@@ -1792,7 +2158,24 @@ img {
   .CCTV-app__img {
     right: -150px; }
     .CCTV-app__img img {
-      max-width: 600px; } }
+      max-width: 600px; }
+  .CCTV-attack .CCTV-attack__bg {
+    background-position: 80% 0% !important; }
+  .CCTV-gifts {
+    height: 700px; }
+    .CCTV-gifts .CCTV-smoke__bg {
+      background-position: 60% 0% !important; }
+  .CCTV-product {
+    display: block;
+    padding: 80px 15px;
+    height: auto; }
+    .CCTV-product__img {
+      margin-bottom: 50px;
+      text-align: center; }
+    .CCTV-product__descr {
+      margin: 0 auto; }
+  .CCTV-gifts__img {
+    right: 0; } }
 
 @media only screen and (max-width: 820px) {
   .header-middle__info ul li:first-child {
@@ -1896,7 +2279,25 @@ img {
           -ms-flex-pack: justify;
               justify-content: space-between; }
     .reviews-top__row-list li:last-child {
-      padding-right: 0; } }
+      padding-right: 0; }
+  .CCTV-smart {
+    padding: 30px; }
+    .CCTV-smart__bg {
+      background-position: 40% 0% !important;
+      display: none; }
+      .CCTV-smart__bg-table {
+        display: block; }
+  .CCTV-smoke {
+    padding: 125px 30px; }
+    .CCTV-smoke__bg {
+      background-position: 50% 0% !important; }
+  .CCTV-gifts {
+    height: 500px;
+    padding: 60px 30px; }
+    .CCTV-gifts__img {
+      right: -30px; }
+      .CCTV-gifts__img img {
+        max-width: 350px; } }
 
 @media only screen and (max-width: 767px) {
   .header {
@@ -2001,7 +2402,16 @@ img {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex; }
+  .CCTV-smart .CCTV-descr .CCTV-descr__title {
+    font-size: 24px; }
+  .CCTV-smart .CCTV-descr p {
+    font-size: 18px; }
+  .CCTV-attack {
+    height: 550px;
+    padding: 30px; }
+    .CCTV-attack .CCTV-attack__bg {
+      background-position: 80% 0% !important; } }
 
 @media only screen and (max-width: 720px) {
   .categories-col {
@@ -2019,7 +2429,11 @@ img {
   .CCTV-camera {
     height: 500px; }
     .CCTV-camera__img {
-      display: none; } }
+      display: none; }
+  .CCTV-alarm {
+    padding: 310px 50px 0 0; }
+    .CCTV-alarm__bg {
+      background-position: 70% 0% !important; } }
 
 @media only screen and (max-width: 650px) {
   .wrapper {
@@ -2146,7 +2560,18 @@ img {
   .score-row .product {
     width: 50%; }
   .score .wrapper {
-    padding: 0 5px; } }
+    padding: 0 5px; }
+  .CCTV-detector .CCTV-descr__row-wrap .CCTV-descr__col p {
+    font-size: 14px; }
+  .CCTV-care .CCTV-descr__title {
+    font-size: 30px; }
+  .CCTV-choice {
+    height: 310px; }
+    .CCTV-choice__title {
+      font-size: 24px;
+      padding-bottom: 30px; }
+    .CCTV-choice__link {
+      max-width: 290px; } }
 
 @media only screen and (max-width: 530px) {
   .main-content {
@@ -2278,7 +2703,211 @@ img {
         -ms-flex-pack: center;
             justify-content: center; }
   .score-row .product {
-    width: 100%; } }
+    width: 100%; }
+  .CCTV-alarm {
+    padding: 160px 15px 0 0;
+    height: 360px; }
+    .CCTV-alarm__bg {
+      background-position: 100% !important; }
+    .CCTV-alarm__descr .CCTV-descr__title {
+      font-size: 48px; }
+    .CCTV-alarm__descr p {
+      max-width: 240px; }
+  .CCTV-smoke {
+    text-align: center;
+    height: 670px;
+    padding: 15px 15px 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .CCTV-smoke p {
+      max-width: 100%; }
+    .CCTV-smoke__descr {
+      width: 100%; }
+      .CCTV-smoke__descr .CCTV-descr__col {
+        margin: 0 auto;
+        max-width: 255px; }
+        .CCTV-smoke__descr .CCTV-descr__col p {
+          max-width: 210px; }
+    .CCTV-smoke__bg {
+      display: none; }
+      .CCTV-smoke__bg-mob {
+        display: block;
+        background-position: top center !important; }
+  .CCTV-smart {
+    height: 918px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background-position: top center !important;
+    text-align: center;
+    padding: 15px; }
+    .CCTV-smart__descr {
+      width: 100%; }
+    .CCTV-smart__bg-table {
+      display: none; }
+    .CCTV-smart__bg-mob {
+      display: block; }
+  .CCTV-descr__col {
+    padding-bottom: 30px; }
+    .CCTV-descr__col p {
+      font-size: 14px;
+      text-align: left; }
+  .CCTV-detector {
+    padding: 50px 30px;
+    height: 590px; }
+    .CCTV-detector__bg {
+      display: none; }
+      .CCTV-detector__bg-mob {
+        display: block; }
+    .CCTV-detector .CCTV-descr__row-wrap {
+      display: block; }
+      .CCTV-detector .CCTV-descr__row-wrap .CCTV-descr__col {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row nowrap;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 0 30px;
+        max-width: 260px;
+        margin: 0 auto; }
+        .CCTV-detector .CCTV-descr__row-wrap .CCTV-descr__col div {
+          margin: 0 20px 0 0; }
+  .CCTV-water {
+    height: 500px; }
+    .CCTV-water__bg {
+      display: none; }
+      .CCTV-water__bg-mob {
+        display: block; }
+  .CCTV-attack {
+    height: 680px;
+    padding: 15px;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .CCTV-attack .CCTV-attack__bg {
+      background-position: top center !important; }
+    .CCTV-attack__descr {
+      max-width: 100%; }
+    .CCTV-attack__bg {
+      display: none; }
+      .CCTV-attack__bg-mob {
+        display: block; }
+  .CCTV-care {
+    padding: 0 15px 55px; }
+    .CCTV-care .CCTV-descr__title {
+      font-size: 24px; }
+    .CCTV-care__bg {
+      display: none; }
+      .CCTV-care__bg-mob {
+        display: block; }
+    .CCTV-care .CCTV-descr__row {
+      display: block; }
+    .CCTV-care .CCTV-descr__col {
+      width: 100%;
+      padding: 0 0 35px;
+      max-width: 260px;
+      margin: 0 auto; }
+      .CCTV-care .CCTV-descr__col p {
+        text-align: center; }
+  .CCTV-controls {
+    height: 700px;
+    padding: 0; }
+    .CCTV-controls .CCTV-smoke__bg {
+      display: block;
+      background-position: bottom center !important; }
+    .CCTV-controls .CCTV-smoke__bg-mob {
+      display: none; }
+    .CCTV-controls .CCTV-smoke__descr {
+      text-align: left;
+      padding: 15px; }
+    .CCTV-controls .CCTV-descr__col {
+      margin: 0; }
+      .CCTV-controls .CCTV-descr__col-row ul li {
+        margin: 0 0 20px; }
+        .CCTV-controls .CCTV-descr__col-row ul li:last-child {
+          margin: 0; }
+  .CCTV-benefit {
+    height: 400px; }
+    .CCTV-benefit .CCTV-descr {
+      max-width: 300px; }
+    .CCTV-benefit .CCTV-attack__bg {
+      display: block;
+      background-position: 80% 10% !important; }
+      .CCTV-benefit .CCTV-attack__bg-mob {
+        display: none; }
+  .CCTV-product {
+    padding: 54px 15px 40px; }
+    .CCTV-product__title {
+      font-size: 24px; }
+    .CCTV-product__row {
+      display: block;
+      padding-bottom: 0; }
+    .CCTV-product__descr a {
+      max-width: 290px; }
+  .CCTV-gifts {
+    height: 570px;
+    padding: 30px 15px; }
+    .CCTV-gifts::after {
+      content: '';
+      position: absolute;
+      top: 260px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(6.64%, rgba(247, 249, 250, 0)), color-stop(50%, rgba(247, 249, 250, 0.9)));
+      background: -webkit-linear-gradient(top, rgba(247, 249, 250, 0) 6.64%, rgba(247, 249, 250, 0.9) 50%);
+      background: -o-linear-gradient(top, rgba(247, 249, 250, 0) 6.64%, rgba(247, 249, 250, 0.9) 50%);
+      background: linear-gradient(180deg, rgba(247, 249, 250, 0) 6.64%, rgba(247, 249, 250, 0.9) 50%); }
+    .CCTV-gifts .CCTV-smoke__descr {
+      padding: 0; }
+    .CCTV-gifts .CCTV-descr__col {
+      padding-bottom: 20px; }
+    .CCTV-gifts .CCTV-descr__row {
+      padding-top: 20px; }
+    .CCTV-gifts p {
+      font-size: 14px; }
+    .CCTV-gifts__text {
+      display: none; }
+      .CCTV-gifts__text-mob {
+        display: block; }
+    .CCTV-gifts__img {
+      right: auto;
+      left: 110px;
+      bottom: auto;
+      top: -40px; }
+      .CCTV-gifts__img img {
+        max-width: 200px; } }
 
 @media only screen and (max-width: 450px) {
   .main-content {
@@ -2314,4 +2943,39 @@ img {
   .CCTV-control__row {
     display: block; }
   .CCTV-app__img {
-    right: -30px; } }
+    right: -30px; }
+  .CCTV-controls {
+    height: 1170px; }
+    .CCTV-controls .CCTV-smoke__descr {
+      max-width: 255px;
+      margin: 0 auto; }
+    .CCTV-controls .CCTV-smoke__bg {
+      display: none;
+      background-position: center !important; }
+      .CCTV-controls .CCTV-smoke__bg-mob {
+        display: block; }
+  .CCTV-gifts {
+    height: 570px; }
+    .CCTV-gifts .CCTV-smoke__descr {
+      margin: 0;
+      max-width: 100%; } }
+
+@media only screen and (max-width: 400px) {
+  .CCTV-benefit {
+    height: 856px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .CCTV-benefit .CCTV-attack__bg {
+      display: none; }
+      .CCTV-benefit .CCTV-attack__bg-mob {
+        display: block; } }
+
+@media only screen and (max-width: 365px) {
+  .CCTV-smart__descr {
+    padding-bottom: 120px; } }
+
+@media only screen and (max-width: 330px) {
+  .CCTV-alarm__bg {
+    background-position: 96% !important; } }

@@ -80,10 +80,12 @@ $(document).ready(function(){
 		if($(this).scrollTop() > 168){
 			$('.CCTV-header').addClass('CCTV-header__fixed');
 			$('.CCTV-header__block').addClass('CCTV-header__block-open');
+			//$('.CCTV-header__block-open').css('height',$('.CCTV-header').outerHeight() + 'px');
 		}
 		else{
 			$('.CCTV-header').removeClass('CCTV-header__fixed');
 			$('.CCTV-header__block').removeClass('CCTV-header__block-open');
+			//$('.CCTV-header__block').css('height',0 + 'px');
 		}
 	});
 
