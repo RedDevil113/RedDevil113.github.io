@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body>
+	<div class="top-arrow">
+		<img src="img/top-arrow.svg" alt="">
+	</div>
+	<div class="modal-overlay"></div>
+	<div class="modal-overlay__sidebar"></div>
+	<div class="modal" id="modal-call">
+		<div class="cancel">
+			<img src="img/close.svg" alt="">
+		</div>
+		<div class="modal-top">
+			<p>Здравствуйте! <br>Хотите получить специальные цены напрямую от производителя? Заполните форму и отправьте нам. Ваш персональный менеджер предложит вам отличные условия и активизирует персональную скидку на нашем сайте. Спасибо.</p>
+		</div>
+		<form action="">
+			<div class="modal-form">
+				<input type="text" placeholder="Введите ваше имя">
+				<input type="text" placeholder="Введите ваш телефон">
+				<input type="text" placeholder="Введите ваш email">
+				<div class="modal-form__row">
+					<button class="modal-form__button">Отправить</button>
+					<p>Нажимая на кнопку “отправить” вы даете согласие на обработку персональных данных</p>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-top__left">
+					<a href="#"><img src="img/Vector.svg" alt=""><span>Набережные челны</span></a>
+				</div>
+				<div class="header-top__right">
+					<a class="header-top__call button-modal" href="#modal-call">Позвоните мне</a>
+					<a class="header-top__phone" href="#">8 (495) 980-01-05</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="wrapper">
+				<div class="header-logo">
+					<div class="menu-bar">
+						<img src="img/bar.svg" alt="">
+					</div>
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-form">
+					<form action="">
+						<div>
+							<input type="text" placeholder="Поиск в каталоге">
+							<button class="header-button"><span>Найти</span><img src="img/magnifying-glass.svg" alt=""></button>
+						</div>
+					</form>
+				</div>
+				<div class="header-middle__list">
+					<ul>
+						<li><a href="#"><img src="img/viewer.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/balance-scale.svg" alt=""></a></li>
+						<li>
+							<a class="header-button__drop button-drop" href="#"><img src="img/user.svg" alt=""></a>
+							<div class="drop">
+								<h3 class="drop-title">Личный кабинет</h3>
+								<form action="">
+									<input type="text" placeholder="Введите адрес электронной почты">
+									<input type="text" placeholder="Введите пароль">
+									<div class="drop-row">
+										<a class="drop-button" href="#">Войти</a>
+										<a class="drop-button__text" href="#">Забыли пароль?</a>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li><a href="#"><img src="img/shopping-cart.svg" alt=""><span>Корзина<b>2</b></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<div class="header-categories">
+					<a class="header-categories__link button-drop" href="#"><img src="img/list.svg" alt=""><span>Каталог товаров</span></a>
+					<div class="header-categories__wrap">
+						<div class="header-categories__row">
+							<div class="header-categories__col">
+								<h3 class="header-categories__col-title">ABSOLUT Doors System</h3>
+								<ul class="header-categories__col-list">
+									<li><a href="#">Декоративные панели ABSOLUT</a></li>
+									<li>
+										<a href="#">Алюминиевая система для шкафов-купе</a>
+										<ul>
+											<li><a href="#">Профиль Koral</a></li>
+											<li><a href="#">Профиль Laguna</a></li>
+											<li><a href="#">Профиль Classic</a></li>
+											<li><a href="#">Профиль Quadro</a></li>
+											<li><a href="#">Декоры</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">МДФ профиль</a>
+										<ul>
+											<li><a href="#">Рамочный профиль</a></li>
+											<li><a href="#">Накладки</a></li>
+											<li><a href="#">Вставки</a></li>
+											<li><a href="#">Карнизы</a></li>
+											<li><a href="#">Декоры</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Алюминиевый рамочный профиль Compact</a></li>
+									<li><a href="#">Гардеробная система ABSOLUT</a></li>
+									<li><a href="#">Подвесная система COSMOS</a></li>
+									<li><a href="#">Шкафная стальная система Absolut-Eco</a></li>
+									<li><a href="#">Инструкции по сборке систем ABSOLUT</a></li>
+								</ul>
+								<h3 class="header-categories__col-title">Эко-плиты TSS CLEAF</h3>
+								<ul class="header-categories__col-list">
+									<li><a href="#">Мебельные фасады CLEAF</a></li>
+									<li><a href="#">Эко-плиты CLEAF</a></li>
+								</ul>
+							</div>
+							<div class="header-categories__col">
+								<h3 class="header-categories__col-title">Плитные материалы</h3>
+								<ul class="header-categories__col-list">
+									<li><a href="#">ЛДСП</a></li>
+									<ul>
+										<li><a href="#">ЛДСП EGGER</a></li>
+									</ul>
+									<li><a href="#">ХДФ</a></li>
+									<li><a href="#">Ротанг</a></li>
+									<li><a href="#">Бамбук</a></li>
+								</ul>
+								<h3 class="header-categories__col-title">Кромочный материал</h3>
+								<ul class="header-categories__col-list">
+									<li><a href="#">Кромка Rehau</a></li>
+									<li><a href="#">Кромка Egger</a></li>
+									<li><a href="#">Кромка ПВХ</a></li>
+									<li><a href="#">Бамбук</a></li>
+								</ul>
+								<h3 class="header-categories__col-title">Зеркала, Стекла, Акрил</h3>
+								<ul class="header-categories__col-list">
+									<li>
+										<a href="#">Стекло</a>
+										<ul>
+											<li><a href="#">Самоклеящиеся пленки ПВХ</a></li>
+											<li><a href="#">Пленка Oracal</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Фотопечать</a></li>
+									<li><a href="#">Зеркало</a></li>
+									<li><a href="#">Акриловое стекло</a></li>
+								</ul>
+							</div>
+							<div class="header-categories__col">
+								<h3 class="header-categories__col-title">Мебельная фурнитура</h3>
+								<ul class="header-categories__col-list">
+									<li><a href="#">Фурнитура DORWELL</a></li>
+									<li><a href="#">Фурнитура GRASS</a></li>
+									<li><a href="#">Щёточный уплотнитель</a></li>
+									<li><a href="#">Вешала</a></li>
+									<li><a href="#">Выдвижные корзины для шкафов купе</a></li>
+									<li><a href="#">Крепежи</a></li>
+									<li><a href="#">Роликовые и шариковые направляющие</a></li>
+									<li><a href="#">Мебельная труба</a></li>
+									<li><a href="#">Газ-лифты</a></li>
+									<li><a href="#">Мебельные ролики</a></li>
+									<li><a href="#">Накладные мебельные петли </a></li>
+									<li><a href="#">Заглушки</a></li>
+									<li><a href="#">Ручки для мебели</a></li>
+									<li><a href="#">Пеликаны и держатели полок</a></li>
+									<li><a href="#">Уголки мебельные</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-categories__bottom" style="background: url(img/categories-bg.png);">
+							<a href="#"></a>
+							<h3 class="header-categories__bottom-title">Собственное производство</h3>
+						</div>
+					</div>
+				</div>
+				<nav class="header-nav">
+					<ul>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Мебельное производство</a></li>
+						<li><a href="#">Дизайнерам</a></li>
+						<li><a href="#">Застройщикам</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start products -->
+	<section class="products">
+		<!-- start page-name -->
+		<section class="page-name">
+			<div class="wrapper">
+				<ul class="bread-crumbs">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Мебельные фасады</a></li>
+				</ul>
+				<h1 class="page-name__title">Мебельные фасады</h1>
+				<p class="page-name__text">5300 товаров</p>
+			</div>
+		</section>
+		<!-- end page-name -->
+		<div class="products-top">
+			<div class="wrapper">
+				<div class="products-sidebar">
+					<div class="products-sidebar__top">
+						<h3 class="products-sidebar__top-title">Фильтр</h3>
+						<div class="products-sidebar__cancel"><img src="img/close.svg" alt=""></div>
+						<p>Подобрано 235 товаров</p>
+						<a href="#" class="products-sidebar__filter">Сбросить фильтр</a>
+					</div>
+					<div class="products-sidebar__block accordeon accordeon-open">
+						<h3 class="products-sidebar__title">Цена ₽</h3>
+						<div class="products-sidebar__block-descr accordeon-descr">
+							<div class="accordeon-descr__price">
+								<div class="products-sidebar__row">
+									<div class="products-sidebar__row-col">
+										<p>от</p>
+										<input type="text" id="search-price__1">
+									</div>
+									<div class="products-sidebar__row-col">
+										<p>до</p>
+										<input type="text" id="search-price__2">
+									</div>
+								</div>
+								<div id="slider-range__1"></div>
+							</div>
+						</div>
+					</div><!-- block(1) -->
+					<div class="products-sidebar__block accordeon accordeon-open">
+						<h3 class="products-sidebar__title">Производитель</h3>
+						<div class="products-sidebar__block-descr accordeon-descr">
+							<div class="accordeon-descr__category">
+								<ul>
+									<li><a href="#">CLEAF <span>115</span></a></li>
+									<li><a href="#">Ладос Мебель <span>21</span></a></li>
+									<li><a href="#">АРТиКА <span>935</span></a></li>
+									<li><a href="#">Midel <span>37</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- block(2) -->
+					<div class="products-sidebar__block accordeon">
+						<h3 class="products-sidebar__title">Тип панелей</h3>
+						<div class="products-sidebar__block-descr accordeon-descr">
+							<div class="accordeon-descr__category">
+								<ul>
+									<li><a href="#">CLEAF <span>115</span></a></li>
+									<li><a href="#">Ладос Мебель <span>21</span></a></li>
+									<li><a href="#">АРТиКА <span>935</span></a></li>
+									<li><a href="#">Midel <span>37</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- block(3) -->
+					<div class="products-sidebar__block accordeon">
+						<h3 class="products-sidebar__title">Размер панелей</h3>
+						<div class="products-sidebar__block-descr accordeon-descr">
+							<div class="accordeon-descr__category">
+								<ul>
+									<li><a href="#">CLEAF <span>115</span></a></li>
+									<li><a href="#">Ладос Мебель <span>21</span></a></li>
+									<li><a href="#">АРТиКА <span>935</span></a></li>
+									<li><a href="#">Midel <span>37</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- block(4) -->
+					<div class="products-sidebar__block accordeon">
+						<h3 class="products-sidebar__title">Наличие и доставка</h3>
+						<div class="products-sidebar__block-descr accordeon-descr">
+							<div class="accordeon-descr__category">
+								<ul>
+									<li><a href="#">Доставка курьером <span>346</span></a></li>
+									<li><a href="#">Самовывоз из магазина <span>21</span></a></li>
+									<li><a href="#">Забрать сегодня <span>7</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- block(5) -->
+					<div class="products-sidebar__bottom">
+						<a href="#" class="products-sidebar__filter">Сбросить фильтр</a>
+					</div>
+				</div>
+				<div class="products-content">
+					<a href="#" class="products-sidebar__button"><img src="img/settings.svg" alt=""></a>
+					<div class="products-head">
+						<ul>
+							<li><a href="#">По цене<img src="img/price.svg" alt=""></a></li>
+							<li><a href="#">По популярности</a></li>
+							<li><a href="#">По новизне</a></li>
+						</ul>
+					</div>
+					<div class="products-row">
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(1) -->
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(2) -->
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(3) -->
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(4) -->
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(5) -->
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(6) -->
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(7) -->
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(8) -->
+						<div class="product-card">
+							<a href="#" class="product-card__link"></a>
+							<div class="product-card__top">
+								<img src="img/new-1.png" alt="">
+							</div>
+							<div class="product-card__descr">
+								<h3 class="product-card__title">Мебельные фасады CLEAF <span>Pembroke S121</span></h3>
+								<p class="product-card__price">Рекомендованая цена <span>7 150 ₽ </span></p>
+								<p class="product-card__price-your">Ваша цена<span>5 020 ₽ </span></p>
+								<div class="product-card__links">
+									<a class="product-card__add" href="#"><b><img src="img/plus.svg" alt=""></b><span>В корзину</span></a>
+									<a href="#" class="product-card__statistics"><img src="img/Union.svg" alt=""></a>
+								</div>
+							</div>
+						</div><!-- col(9) -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="products-bottom">
+			<div class="wrapper">
+				<div class="products-bottom__wrap">
+					<div class="pagination">
+						<a href="#" class="pagination-more"><span>показать еще</span><img src="img/more.svg" alt=""></a>
+						<ul>
+							<li><a class="pagination-active" href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#"><img src="img/vector-right.svg" alt=""></a></li>
+							<li><a href="#">60</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end products -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper">
+				<div class="footer-col footer-col__first">
+					<div class="logo">
+						<a href="#">
+							<img src="img/logo.svg" alt="">
+						</a>
+					</div>
+					<div class="footer-col__phone">
+						<p><a href="#">8 (495) 980-01-05</a></p>
+						<span>Центральный офис</span>
+					</div>
+						<div class="footer-col__phone">
+						<p><a href="#">8 800 980-01-05</a></p>
+						<span>Центральный офис</span>
+					</div>
+					<ul class="footer-col__social">
+						<li><a href="#"><img src="img/facebook-logo.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/odnoklassniki-logo.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h3 class="footer-col__title">О компании</h3>
+					<ul>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Филиалы и представительства</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h3 class="footer-col__title">Помощь покупателю</h3>
+					<ul>
+						<li><a href="#">Адреса магазинов</a></li>
+						<li><a href="#">Обмен, возврат и ремонт</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Адреса сервисных центров</a></li>
+						<li><a href="#">Дополнительные услуги и сервис</a></li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col__last">
+					<h3 class="footer-col__title">Пресс-центр</h3>
+					<ul>
+						<li><a href="#">История</a></li>
+						<li><a href="#">Миссия и ценности</a></li>
+						<li><a href="#">Пресс-релизы</a></li>
+						<li><a href="#">СМИ о нас</a></li>
+						<li><a href="#">Фотографии</a></li>
+						<li><a href="#">Контакты для прессы</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<p>© «ТОТАЛ» — лдсп кроностар 2003 - 2018. Все права защищены. </p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
