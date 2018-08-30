@@ -46,6 +46,18 @@ $(document).ready(function(){
 		$('.modal-overlay').toggleClass('open-overlay');
 		$(this).toggleClass('menu-active');
 		$(this).next().toggleClass('drop-open');
+		$('.header').toggleClass('header-open');
+		$('.details-header__bg').toggleClass('details-header__bg-open');
+	});
+
+	$('.details-menu__bar').on('click', function(){
+		$('.modal-overlay').toggleClass('open-overlay');
+		$('.header').toggleClass('header-open');
+		$('.details-sidebar').toggleClass('details-sidebar__open');
+	});
+
+	$('.details-header__bg').on('click', function(e){
+		$(this).toggleClass('details-header__bg-open');
 	});
 
 	//drop
@@ -255,7 +267,7 @@ $(document).ready(function(){
 		var id = $(this).attr('href');
 		$(id).addClass('open');
 		$(modalOver).addClass('open-overlay');
-
+		$('.header').toggleClass('header-open');
 		if($(this).hasClass('post-gallery__photo')){
 			$('html,body').toggleClass('overflow-hidden')
 		}
@@ -264,12 +276,17 @@ $(document).ready(function(){
 	$('.cancel').on('click',function(){
 		$(modalCont).removeClass('open');
 		$(modalOver).removeClass('open-overlay');
+		$('.header').toggleClass('header-open');
 	});
+
 	$(modalOver).on('click',function(){
 		$(modalCont).removeClass('open');
 		$(modalOver).removeClass('open-overlay');
 		$('.menu-active').toggleClass('menu-active');
 		$('.drop-open').toggleClass('drop-open');
+		$('.header').toggleClass('header-open');
+		$('.details-sidebar__open').removeClass('details-sidebar__open');
+		$('.details-header__bg').removeClass('details-header__bg-open');
 	});
 
 
