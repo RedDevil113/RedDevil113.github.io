@@ -2984,7 +2984,7 @@ img {
   .CCTV-attack {
     height: 710px; }
   .CCTV-benefit {
-    height: 856px;
+    height: 900px;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
@@ -2998,7 +2998,9 @@ img {
   .CCTV-attack {
     height: 680px; }
   .CCTV-smart__descr {
-    padding-bottom: 120px; } }
+    padding-bottom: 120px; }
+  .CCTV-benefit {
+    height: 856px; } }
 
 @media only screen and (max-width: 340px) {
   .CCTV-header {
