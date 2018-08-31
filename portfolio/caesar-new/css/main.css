@@ -2112,7 +2112,8 @@ img {
     width: 100%;
     background: #fff;
     padding: 0;
-    display: none; }
+    display: none;
+    z-index: 99; }
     .header-menu ul {
       display: block;
       padding: 20px 30px; }
@@ -2120,7 +2121,9 @@ img {
         padding: 0; }
         .header-menu ul li a {
           font-size: 18px;
-          line-height: 2; }
+          line-height: 2;
+          padding: 3px 0;
+          display: block; }
   .header-bottom {
     position: relative; }
     .header-bottom .wrapper {
@@ -2152,7 +2155,10 @@ img {
     padding: 100px 30px; }
   .CCTV-clever__descr {
     padding: 60px 30px;
-    max-width: 420px; }
+    max-width: 420px;
+    margin: 0 auto; }
+    .CCTV-clever__descr .CCTV-descr__title {
+      text-align: center; }
   .CCTV-monitor__descr {
     padding: 70px 30px; }
   .CCTV-control .CCTV-wrap__bg {
@@ -2529,6 +2535,9 @@ img {
         font-size: 14px; }
   .CCTV-app {
     padding: 50px 15px 340px; }
+    .CCTV-app__descr {
+      max-width: 320px;
+      margin: 0 auto; }
     .CCTV-app__img {
       right: 50px; }
       .CCTV-app__img img {
@@ -2563,6 +2572,8 @@ img {
     width: 50%; }
   .score .wrapper {
     padding: 0 5px; }
+  .CCTV-smart__descr .CCTV-descr__col p {
+    font-size: 14px; }
   .CCTV-detector .CCTV-descr__row-wrap .CCTV-descr__col p {
     font-size: 14px; }
   .CCTV-care .CCTV-descr__title {
@@ -2731,7 +2742,9 @@ img {
     .CCTV-smoke p {
       max-width: 100%; }
     .CCTV-smoke__descr {
-      width: 100%; }
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto; }
       .CCTV-smoke__descr .CCTV-descr__col {
         margin: 0 auto;
         max-width: 255px; }
@@ -2810,7 +2823,7 @@ img {
       .CCTV-water__bg-mob {
         display: block; }
   .CCTV-attack {
-    height: 680px;
+    height: 840px;
     padding: 15px;
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
@@ -2862,6 +2875,8 @@ img {
     height: 400px; }
     .CCTV-benefit .CCTV-descr {
       max-width: 300px; }
+      .CCTV-benefit .CCTV-descr__col p {
+        font-size: 16px; }
     .CCTV-benefit .CCTV-attack__bg {
       display: block;
       background-position: 80% 10% !important; }
@@ -2928,17 +2943,10 @@ img {
       max-width: 100%; }
   .catalog-row .product {
     width: 100%; }
-  .CCTV-header {
-    padding: 30px 15px; }
-    .CCTV-header__block-open {
-      height: 176px; }
-    .CCTV-header__wrap {
-      display: block; }
-    .CCTV-header__title {
-      padding-bottom: 20px;
-      font-size: 27px; }
-    .CCTV-header__link {
-      max-width: 290px; }
+  .CCTV-header__title {
+    font-size: 18px; }
+  .CCTV-header__link {
+    max-width: 150px; }
   .CCTV-home__bg {
     display: none; }
     .CCTV-home__bg-mob {
@@ -2973,6 +2981,8 @@ img {
       max-width: 100%; } }
 
 @media only screen and (max-width: 400px) {
+  .CCTV-attack {
+    height: 710px; }
   .CCTV-benefit {
     height: 856px;
     -webkit-box-pack: start;
@@ -2985,8 +2995,23 @@ img {
         display: block; } }
 
 @media only screen and (max-width: 365px) {
+  .CCTV-attack {
+    height: 680px; }
   .CCTV-smart__descr {
     padding-bottom: 120px; } }
+
+@media only screen and (max-width: 340px) {
+  .CCTV-header {
+    padding: 30px 15px; }
+    .CCTV-header__block-open {
+      height: 176px; }
+    .CCTV-header__wrap {
+      display: block; }
+    .CCTV-header__title {
+      padding-bottom: 20px;
+      font-size: 27px; }
+    .CCTV-header__link {
+      max-width: 290px; } }
 
 @media only screen and (max-width: 330px) {
   .CCTV-alarm__bg {
