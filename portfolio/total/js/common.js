@@ -289,5 +289,23 @@ $(document).ready(function(){
 		$('.details-header__bg').removeClass('details-header__bg-open');
 	});
 
+	$("span.pie").peity("pie");
+
+	$(".pie-colours-2").peity("pie", {
+    fill: ["#80C458", "#F2F4F6", "#E31E24"],
+    max: null,
+    width: 160,
+    height: 160
+  })
+
+  $('.details-tasks__title-acc').on('click', function(e){
+		$(this).toggleClass('title-active');
+		$('.details-tasks').slideToggle();
+	});
+
+	$('.details-tasks__slide').on('click', function(e){
+		$(this).toggleClass('title-active');
+		$('.details-information__acc').slideToggle();
+	});
 
 });
