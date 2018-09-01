@@ -308,4 +308,10 @@ $(document).ready(function(){
 		$('.details-information__acc').slideToggle();
 	});
 
+	$('.details-information__accordion-top').on('click', function(e){
+		$(this).next().slideToggle();
+		$(this).parents('.details-information__accordion-wrap').toggleClass('details-information__accordion-active');
+		console.log($(this).prev());
+	});
+
 });

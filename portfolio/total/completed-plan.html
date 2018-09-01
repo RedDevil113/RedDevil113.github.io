@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body class="room">
+	<div class="modal-overlay"></div>
+	<!-- start header -->
+	<header class="details-header">
+		<div class="details-header__bg"></div>
+		<div class="wrapper-2">
+			<div class="details-header__logo">
+				<div class="details-menu__bar">
+					<img src="img/bar.svg" alt="">
+				</div>
+				<a href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="details-header__right">
+				<div class="details-header__bell">
+					<div class="details-header__bell-btn button-drop bg-red">
+						<div>
+							<img src="img/bell.svg" alt="">
+							<span></span>
+						</div>
+					</div>
+					<div class="details-header__bell-list drop">
+						<ul>
+							<li><a class="bell-list__active" href="#"><span></span>Только что, кто-то, что-то продал</a></li>
+							<li><a class="bell-list__active" href="#"><span></span>Новое сообщение от Иванов Л. С.</a></li>
+							<li><a href="#"><span></span>Новое сообщение от Петров Е. И.</a></li>
+							<li><a href="#"><span></span>Только что, кто-то, что-то продал</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="details-header__user">
+					<div class="button-drop">
+						<p><img src="img/human.svg" alt=""><span>Алексей Васильев</span></p>
+					</div>
+					<ul class="details-header__user-list drop">
+						<li><a href="#">Lorem. 1</a></li>
+						<li><a href="#">Lorem. 2</a></li>
+						<li><a href="#">Lorem. 3</a></li>
+					</ul>
+				</div>
+				<a href="#" class="details-header__out"><img src="img/out.svg" alt=""><span>Выйти</span></a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start details -->
+	<section class="details">
+		<div class="wrapper-2">
+			<div class="details-sidebar">
+				<ul>
+					<li><a href="#">Рабочий стол</a></li>
+					<li><a href="#">Управление</a></li>
+					<li><a href="#">Сообщения<span>2</span></a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Менеджеры</a></li>
+					<li><a href="#">Заказы</a></li>
+					<li><a href="#">Задачи</a></li>
+					<li><a href="#">Аналитика</a></li>
+					<li><a href="#">Настройки</a></li>
+				</ul>
+			</div>
+			<div class="details-content details-content__p">
+				<div class="details-information details-information__second">
+					<div class="details-information__row">
+						<h2 class="details-title">Менеджеры</h2>
+						<div class="details-information__top">
+							<ul class="details-information__top-list">
+								<li><a href="#">Выполнение плана</a></li>
+								<li><a class="list-active" href="#"><span>Количество заказов</span><img src="img/Union-1.svg" alt=""></a></li>
+								<li><a href="#">Сумма продаж</a></li>
+								<li><a href="#">Средний чек</a></li>
+							</ul>
+							<div class="details-information__top-search">
+								<form action="">
+									<div>
+										<input type="text" placeholder="Введите имя">
+										<button><img src="img/search-gray.svg" alt=""></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="details-information__accordion">
+							<div class="details-information__accordion-wrap details-information__accordion-active">
+								<div class="details-information__accordion-top">
+									<div class="details-information__accordion-top__col details-information__accordion-info">
+										<div>
+											<span>ИК</span>
+										</div>
+										<p>Иван Коломойский</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-place">
+										<p>1 место</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-percent">
+										<p><b>56%</b> выполнения плана</p>
+									</div>
+								</div>
+								<div class="details-information__accordion-descr">
+									<div class="details-information__accordion-descr__wrap">
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-first"></div>
+										<div class="details-information__accordion-descr__col">
+											<ul>
+												<li>18 клиентов</li>
+												<li>510 заказов</li>
+												<li>83 315 776 ₽ рублей</li>
+												<li>средний чек 15 776 ₽</li>
+											</ul>
+										</div>
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-last">
+											<p><span>56%</span>выполнения плана</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details-information__col details-information__col-big">
+							<div class="details-information__col-wrap">
+								<h3 class="details-information__col-t">Мой план продаж</h3>
+								<div class="details-information__col-bar">
+									<div class="details-information__col-row">
+										<p>План</p>
+										<span>150 000 ₽</span>
+									</div>
+									<div class="details-information__col-div">
+										<span style="width: 100%; background: #3C92CA;"></span>
+									</div>
+								</div>
+								<div class="details-information__col-bar">
+									<div class="details-information__col-row">
+										<p>Факт</p>
+										<span>47 000 ₽</span>
+									</div>
+									<div class="details-information__col-div">
+										<span style="width: 20%; background: #E31E24;"></span>
+									</div>
+								</div>
+								<p class="details-information__col-text">На сегодня 43% выполнено</p>
+							</div>
+						</div><!-- col(1) -->
+						<div class="details-information__col details-information__col-big">
+							<div class="details-information__col-wrap">
+								<h3 class="details-information__col-t">Фот отдела продаж</h3>
+								<div class="details-information__col-bar">
+									<div class="details-information__col-row">
+										<p>План</p>
+										<span>65 000 ₽</span>
+									</div>
+									<div class="details-information__col-div">
+										<span style="width: 25%; background: #E31E24;"></span>
+									</div>
+								</div>
+								<p class="details-information__col-text">З/П на сегодня: <b>48 000 ₽</b></p>
+								<p class="details-information__col-text">Осталось продать на сумму: <b>600 000 ₽</b></p>
+							</div>
+						</div><!-- col(2) -->
+						<div class="details-information__col details-information__col-big">
+							<div class="details-information__col-wrap">
+								<h3 class="details-information__col-t">Эффективность отдела продаж</h3>
+								<div class="details-information__col-bar">
+									<div class="details-information__col-row">
+										<p>Принято заявок</p>
+										<span>301</span>
+									</div>
+									<div class="details-information__col-div">
+										<span style="width: 40%; background: #FFD600;"></span>
+									</div>
+								</div>
+								<div class="details-information__col-bar">
+									<div class="details-information__col-row">
+										<p>Сделано расчетов</p>
+										<span>216</span>
+									</div>
+									<div class="details-information__col-div">
+										<span style="width: 35%; background: #FF7A00;"></span>
+									</div>
+								</div>
+								<div class="details-information__col-bar">
+									<div class="details-information__col-row">
+										<p>Выставлено счетов</p>
+										<span>115</span>
+									</div>
+									<div class="details-information__col-div">
+										<span style="width: 30%; background: #3C92CA;"></span>
+									</div>
+								</div>
+								<div class="details-information__col-bar">
+									<div class="details-information__col-row">
+										<p>Оплачено</p>
+										<span>87</span>
+									</div>
+									<div class="details-information__col-div">
+										<span style="width: 25%; background: #80C458;"</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details-information__statistics">
+							<div class="details-information__statistics-wrap">
+								<h3 class="details-information__statistics-title">Статистика</h3>
+								<div class="details-information__statistics-row">
+									<div class="details-information__statistics-col">
+										<p><b>112 заказов</b> от <b>11 клиентов</b></p>
+										<p>на сумму: <b>5 000 000 рублей</b></p>
+										<p>Ср. чек заказа: <b>43 860 рублей</b></p>
+									</div>
+									<div class="details-information__statistics-col details-information__statistics-col__center">
+										<span class="pie-colours-2">5,3,2</span>
+									</div>
+									<div class="details-information__statistics-col">
+										<ul>
+											<li><a class="black" href="#">12 000 000 руб план</a></li>
+											<li><a class="green" href="#">5 000 000 руб оплачено</a></li>
+											<li><a class="gray" href="#">4 000 000 руб в работе</a></li>
+											<li><a class="red" href="#">1 000 000 руб упущено</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details-information__accordion">
+							<div class="details-information__accordion-wrap">
+								<div class="details-information__accordion-top">
+									<div class="details-information__accordion-top__col details-information__accordion-info">
+										<div>
+											<span>ИК</span>
+										</div>
+										<p>Иван Коломойский</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-place">
+										<p>1 место</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-percent">
+										<p><b>56%</b> выполнения плана</p>
+									</div>
+								</div>
+								<div class="details-information__accordion-descr">
+									<div class="details-information__accordion-descr__wrap">
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-first"></div>
+										<div class="details-information__accordion-descr__col">
+											<ul>
+												<li>18 клиентов</li>
+												<li>510 заказов</li>
+												<li>83 315 776 ₽ рублей</li>
+												<li>средний чек 15 776 ₽</li>
+											</ul>
+										</div>
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-last">
+											<p><span>56%</span>выполнения плана</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details-information__accordion">
+							<div class="details-information__accordion-wrap">
+								<div class="details-information__accordion-top">
+									<div class="details-information__accordion-top__col details-information__accordion-info">
+										<div>
+											<span>ИК</span>
+										</div>
+										<p>Иван Коломойский</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-place">
+										<p>1 место</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-percent">
+										<p><b>56%</b> выполнения плана</p>
+									</div>
+								</div>
+								<div class="details-information__accordion-descr">
+									<div class="details-information__accordion-descr__wrap">
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-first"></div>
+										<div class="details-information__accordion-descr__col">
+											<ul>
+												<li>18 клиентов</li>
+												<li>510 заказов</li>
+												<li>83 315 776 ₽ рублей</li>
+												<li>средний чек 15 776 ₽</li>
+											</ul>
+										</div>
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-last">
+											<p><span>56%</span>выполнения плана</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details-information__accordion">
+							<div class="details-information__accordion-wrap">
+								<div class="details-information__accordion-top">
+									<div class="details-information__accordion-top__col details-information__accordion-info">
+										<div>
+											<span>ИК</span>
+										</div>
+										<p>Иван Коломойский</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-place">
+										<p>1 место</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-percent">
+										<p><b>56%</b> выполнения плана</p>
+									</div>
+								</div>
+								<div class="details-information__accordion-descr">
+									<div class="details-information__accordion-descr__wrap">
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-first"></div>
+										<div class="details-information__accordion-descr__col">
+											<ul>
+												<li>18 клиентов</li>
+												<li>510 заказов</li>
+												<li>83 315 776 ₽ рублей</li>
+												<li>средний чек 15 776 ₽</li>
+											</ul>
+										</div>
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-last">
+											<p><span>56%</span>выполнения плана</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="details-information__accordion">
+							<div class="details-information__accordion-wrap">
+								<div class="details-information__accordion-top">
+									<div class="details-information__accordion-top__col details-information__accordion-info">
+										<div>
+											<span>ИК</span>
+										</div>
+										<p>Иван Коломойский</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-place">
+										<p>1 место</p>
+									</div>
+									<div class="details-information__accordion-top__col details-information__accordion-percent">
+										<p><b>56%</b> выполнения плана</p>
+									</div>
+								</div>
+								<div class="details-information__accordion-descr">
+									<div class="details-information__accordion-descr__wrap">
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-first"></div>
+										<div class="details-information__accordion-descr__col">
+											<ul>
+												<li>18 клиентов</li>
+												<li>510 заказов</li>
+												<li>83 315 776 ₽ рублей</li>
+												<li>средний чек 15 776 ₽</li>
+											</ul>
+										</div>
+										<div class="details-information__accordion-descr__col details-information__accordion-descr__col-last">
+											<p><span>56%</span>выполнения плана</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-bottom__wrap details-pagination">
+							<div class="pagination">
+								<a href="#" class="pagination-more"><span>показать еще</span><img src="img/more.svg" alt=""></a>
+								<ul>
+									<li><a class="pagination-active" href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#"><img src="img/vector-right.svg" alt=""></a></li>
+									<li><a href="#">60</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end details -->
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/peity/jquery.peity.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
