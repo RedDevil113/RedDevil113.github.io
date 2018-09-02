@@ -94,6 +94,9 @@ $(document).ready(function(){
 		$('.main-slider__nav-line').css('width', 0);
 	});
 
+	$('.main-slider .slick-prev').css('left', ($(window).width() - $('.wrapper').width())/2 + 'px');
+	$('.main-slider .slick-next').css('right', ($(window).width() - $('.wrapper').width())/2 + 'px');
+
 	$(window).resize(function(){
 		$('.main-slider .slick-prev').css('left', ($(window).width() - $('.wrapper').width())/2 + 'px');
 		$('.main-slider .slick-next').css('right', ($(window).width() - $('.wrapper').width())/2 + 'px');
