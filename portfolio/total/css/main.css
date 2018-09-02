@@ -1009,7 +1009,7 @@ img {
       position: absolute;
       top: 0;
       left: 0;
-      height: 5px;
+      height: 3px;
       background: #E31E24;
       opacity: 0;
       visibility: hidden;
@@ -1053,7 +1053,9 @@ img {
         -webkit-transition: .3s linear;
         -o-transition: .3s linear;
         transition: .3s linear; }
-      .main-slider__nav-slide.slick-current::after {
+      .main-slider__nav-slide.slick-active .main-slider__nav-img::after {
+        opacity: 0; }
+      .main-slider__nav-slide.slick-current .main-slider__nav-slide__img::after {
         opacity: 0;
         visibility: hidden; }
       .main-slider__nav-slide.slick-current .main-slider__nav-line {
