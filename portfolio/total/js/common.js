@@ -69,7 +69,7 @@ $(document).ready(function(){
 	});*/
 
 	$('.main-slider').slick({
-	  arrows: false,
+	  arrows: true,
 	  dots: false,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
@@ -91,9 +91,12 @@ $(document).ready(function(){
 	});
 
 	$('.main-slider .main-slider__nav-slide').on('click', function(){
-		//$('.main-slider__nav-slide').removeClass('animation-line');
-		//$('.main-slider__nav-slide').delay(2000).addClass('animation-line');
 		$('.main-slider__nav-line').css('width', 0);
+	});
+
+	$(window).resize(function(){
+		$('.main-slider .slick-prev').css('left', ($(window).width() - $('.wrapper').width())/2 + 'px');
+		$('.main-slider .slick-next').css('right', ($(window).width() - $('.wrapper').width())/2 + 'px');
 	});
 
 	$('.main-product__slider').slick({
