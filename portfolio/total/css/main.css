@@ -4970,6 +4970,111 @@ img {
   display: -ms-flexbox;
   display: flex; }
 
+.details-information__accordion-clients .details-information__accordion-wrap {
+  border-right: 10px solid transparent; }
+  .details-information__accordion-clients .details-information__accordion-wrap.border-blue {
+    border-color: #5880C4; }
+  .details-information__accordion-clients .details-information__accordion-wrap.border-yellow {
+    border-color: #FFD600; }
+  .details-information__accordion-clients .details-information__accordion-wrap.border-orange {
+    border-color: #FF7A00; }
+
+.details-information__accordion-clients .details-information__accordion-descr__wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+
+.details-information__accordion-clients .details-information__accordion-descr__col {
+  width: 38%; }
+  .details-information__accordion-clients .details-information__accordion-descr__col-last {
+    padding-left: 10px; }
+  .details-information__accordion-clients .details-information__accordion-descr__col-first {
+    width: 30%; }
+  .details-information__accordion-clients .details-information__accordion-descr__col ul li {
+    color: #909090;
+    font-size: 14px; }
+    .details-information__accordion-clients .details-information__accordion-descr__col ul li a {
+      color: #909090; }
+    .details-information__accordion-clients .details-information__accordion-descr__col ul li b {
+      font-weight: normal;
+      color: #212121; }
+  .details-information__accordion-clients .details-information__accordion-descr__col-last {
+    padding-right: 0;
+    width: 32%; }
+    .details-information__accordion-clients .details-information__accordion-descr__col-last ul {
+      max-width: 100%;
+      width: 100%; }
+
+.details-information__accordion-clients .details-information__accordion-place {
+  width: 38%; }
+  .details-information__accordion-clients .details-information__accordion-place p {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .details-information__accordion-clients .details-information__accordion-place p img {
+      margin-right: 5px;
+      min-width: 14px;
+      max-height: 16px; }
+    .details-information__accordion-clients .details-information__accordion-place p.orange {
+      color: #FF7A00; }
+    .details-information__accordion-clients .details-information__accordion-place p.green {
+      color: #80C458; }
+    .details-information__accordion-clients .details-information__accordion-place p.purple {
+      color: #A03686; }
+    .details-information__accordion-clients .details-information__accordion-place p.gray {
+      color: #909090; }
+
+.details-information__accordion-clients .details-information__accordion-percent {
+  width: 32%;
+  padding: 0 0 0 10px;
+  min-width: auto; }
+  .details-information__accordion-clients .details-information__accordion-percent p {
+    max-width: 100%; }
+
+.details-information__accordion-clients.details-information__accordion-active .details-information__accordion-percent p {
+  display: block;
+  max-width: 100%; }
+
+.details-information__accordion-clients.details-information__accordion-active .details-information__accordion-last {
+  padding: 0; }
+  .details-information__accordion-clients.details-information__accordion-active .details-information__accordion-last ul {
+    width: 100%; }
+
+.details-info__tab {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px 20px 0; }
+  .details-info__tab li {
+    font-size: 14px;
+    line-height: 1;
+    color: #909090; }
+    .details-info__tab li a {
+      color: #909090; }
+
 @media only screen and (min-width: 1442px) {
   .details-sidebar ul li a {
     -webkit-border-radius: 10px;
@@ -5053,6 +5158,8 @@ img {
 @media only screen and (max-width: 964px) {
   .customers-product .slider-scroll .slick-arrow {
     top: -135px; }
+  .details-info__tab {
+    padding-left: 20px; }
   .details-header {
     margin-bottom: 30px; }
     .details-header__logo {
@@ -5545,6 +5652,8 @@ img {
     width: 50%; }
     .details-information__accordion-descr__col-first {
       display: none; }
+  .details-info__tab {
+    display: none; }
   .details-select {
     display: block;
     margin-left: 5px; }
@@ -5586,7 +5695,32 @@ img {
         .details-table__col-wrap div.details-table__col-list, .details-table__col-wrap div:first-child {
           width: 100%; }
         .details-table__col-wrap div.details-table__col-list {
-          padding-top: 8px; } }
+          padding-top: 8px; }
+  .details-information__accordion-clients .details-information__accordion {
+    position: relative; }
+    .details-information__accordion-clients .details-information__accordion-top {
+      padding-bottom: 20px; }
+      .details-information__accordion-clients .details-information__accordion-top__col {
+        width: 50%; }
+    .details-information__accordion-clients .details-information__accordion-info {
+      width: 100%;
+      padding-bottom: 20px; }
+    .details-information__accordion-clients .details-information__accordion-descr__wrap {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+    .details-information__accordion-clients .details-information__accordion-descr__col {
+      width: 50%; }
+      .details-information__accordion-clients .details-information__accordion-descr__col-first {
+        display: none;
+        position: absolute;
+        top: 80px; }
+  .details-information__accordion-clients.details-information__accordion-active .details-information__accordion-info {
+    padding-bottom: 90px; }
+  .details-information__accordion-clients.details-information__accordion-active .details-information__accordion-descr__col-first {
+    display: block; } }
 
 @media only screen and (max-width: 650px) {
   .leaders-sells .featured-slide {
