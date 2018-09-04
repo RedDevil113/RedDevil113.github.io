@@ -3210,7 +3210,14 @@ img {
       margin: 0 auto; }
     .CCTV-reliable__title {
       padding-bottom: 20px;
-      font-size: 24px; } }
+      font-size: 24px; }
+  .reviews-title {
+    text-align: center; }
+  .reviews-top__row-link {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); } }
 
 @media only screen and (max-width: 530px) {
   .main-content {
