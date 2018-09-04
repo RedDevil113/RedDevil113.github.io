@@ -1106,19 +1106,20 @@ img {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 150px 120px;
+  padding: 75px 120px;
   position: relative;
   overflow: hidden; }
   .CCTV-camera__bg {
     background-position: left bottom !important; }
-    .CCTV-camera__bg-mob {
+    .CCTV-camera__bg-mob, .CCTV-camera__bg-table {
       display: none; }
   .CCTV-camera__img {
     position: absolute;
-    left: 210px;
+    left: -105px;
     bottom: -10px; }
-  .CCTV-camera__descr p {
-    max-width: 310px; }
+  .CCTV-camera__text {
+    max-width: 310px;
+    padding-bottom: 30px; }
   .CCTV-camera .CCTV-descr__title {
     max-width: 426px;
     padding-bottom: 30px; }
@@ -2511,6 +2512,9 @@ img {
       font-size: 23px;
       color: #E6ECEE; }
 
+.CCTV-camera .CCTV-clever__descr-bottom p {
+  color: #212121; }
+
 /* -- product -- */
 /* -- product -- */
 /* -- product -- */
@@ -2560,11 +2564,6 @@ img {
     padding: 20px 30px; }
   .CCTV-camera {
     padding: 60px 20px; }
-    .CCTV-camera__img {
-      left: auto;
-      right: -100px; }
-      .CCTV-camera__img img {
-        max-width: 550px; }
     .CCTV-camera__bg {
       display: none; }
       .CCTV-camera__bg-mob {
@@ -2648,6 +2647,15 @@ img {
       min-height: 432px; }
   .catalog-row .product {
     width: 50%; }
+  .CCTV-camera__img {
+    left: -150px; }
+    .CCTV-camera__img img {
+      max-width: 600px; }
+  .CCTV-camera__bg {
+    display: none; }
+    .CCTV-camera__bg-table {
+      display: block;
+      background-position: center bottom !important; }
   .CCTV-home__descr {
     padding: 100px 30px; }
   .CCTV-clever__descr {
@@ -2749,9 +2757,6 @@ img {
     max-height: 50px; }
   .footer-middle__wrap {
     display: block; }
-  .CCTV-camera {
-    display: block;
-    padding: 50px 30px; }
   .CCTV-app__descr-row {
     display: block;
     padding: 0; }
@@ -2971,10 +2976,10 @@ img {
     max-width: 500px; }
     .footer-top__col-middle {
       padding: 30px 0; }
-  .CCTV-camera {
-    height: 500px; }
-    .CCTV-camera__img {
-      display: none; }
+  .CCTV-camera__img {
+    left: -170px; }
+    .CCTV-camera__img img {
+      max-width: 500px; }
   .CCTV-alarm {
     padding: 310px 50px 0 0; }
     .CCTV-alarm__bg {
@@ -3167,6 +3172,23 @@ img {
       margin: 0 auto; } }
 
 @media only screen and (max-width: 580px) {
+  .CCTV-camera {
+    height: 930px; }
+    .CCTV-camera__descr {
+      margin: 0 auto; }
+    .CCTV-camera__bg {
+      background-position: center bottom !important;
+      height: 416px; }
+      .CCTV-camera__bg-table {
+        dispaly: none; }
+      .CCTV-camera__bg-mob {
+        display: block; }
+    .CCTV-camera__img {
+      bottom: -10px;
+      left: auto;
+      right: -120px; }
+      .CCTV-camera__img img {
+        max-width: 410px; }
   .CCTV-header__title {
     font-size: 21px; }
   .CCTV-header__link {
@@ -3251,14 +3273,6 @@ img {
       margin-bottom: 20px; }
   .catalog-header__title {
     display: none; }
-  .CCTV-camera__bg {
-    background-position: center !important; }
-  .CCTV-camera__img {
-    display: block;
-    bottom: 0px;
-    right: -120px; }
-    .CCTV-camera__img img {
-      max-width: 410px; }
   .CCTV-clever {
     height: 824px;
     display: block; }
