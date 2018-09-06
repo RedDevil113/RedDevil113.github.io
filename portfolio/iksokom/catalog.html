@@ -6,11 +6,11 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--<meta property="og:image" content="path/to/image.jpg">
+	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -153,7 +153,7 @@
 				<div class="header-bottom__search">
 					<form action="">
 						<div>
-							<input type="text" placeholder="Найти икс-комое" minlength="3">
+							<input type="text" placeholder="Найти икс-комое">
 							<button class="header-bottom__search-button"><img src="img/search.svg" alt=""></button>
 						</div>
 					</form>
@@ -193,19 +193,19 @@
 							<li><a href="#">и осушители воздуха</a></li>
 							<li><a href="#">Сушилки для рук электрические</a></li>
 						</ul>
-						<div class="sidebar-filter__block sidebar-filter__price accordeon accordeon-open">
+						<div class="sidebar-filter__block sidebar-filter__price accordeon accordeon-active">
 							<h3 class="products-sidebar__title">Цена, руб.</h3>
 							<div class="products-sidebar__block-descr accordeon-descr">
 								<div class="accordeon-descr__wrap accordeon-descr__price">
 									<div class="products-sidebar__row">
-										<input type="text" id="search-price__1" plasceholder="от">
-										<input type="text" id="search-price__2" plasceholder="до">
+										<input type="text" id="search-price__1" plasceholder="от" value="800">
+										<input type="text" id="search-price__2" plasceholder="до" value="28000">
 									</div>
 									<div id="slider-range__1"></div>
 								</div>
 							</div>
 						</div>
-						<div class="sidebar-filter__block accordeon accordeon-open">
+						<div class="sidebar-filter__block accordeon accordeon-active">
 							<h3 class="products-sidebar__title">Параметр выбора</h3>
 							<div class="products-sidebar__block-descr accordeon-descr">
 								<div class="accordeon-descr__wrap">
@@ -410,7 +410,7 @@
 								<p>Сортировать:</p>
 								<ul>
 									<li>
-										<a href="#"><span>По цене</span></a>
+										<a class="sorting-active" href="#"><span>По цене</span></a>
 									</li>
 									<li>
 										<a href="#"><span>По популярности</span></a>
@@ -431,6 +431,7 @@
 					<div class="content-row">
 						<div class="product">
 							<div class="product-wrap">
+								<a href="#" class="product-wrap__button"></a>
 								<div class="product-img">
 									<img src="img/product-1.png" alt="">
 								</div>
@@ -459,6 +460,7 @@
 						</div><!-- product(1) -->
 						<div class="product">
 							<div class="product-wrap">
+								<a href="#" class="product-wrap__button"></a>
 								<div class="product-img">
 									<img src="img/product-1.png" alt="">
 								</div>
@@ -497,6 +499,7 @@
 						</div><!-- product(3) -->
 						<div class="product">
 							<div class="product-wrap">
+								<a href="#" class="product-wrap__button"></a>
 								<div class="product-img">
 									<img src="img/product-1.png" alt="">
 								</div>
@@ -525,6 +528,7 @@
 						</div><!-- product(4) -->
 						<div class="product">
 							<div class="product-wrap">
+								<a href="#" class="product-wrap__button"></a>
 								<div class="product-img">
 									<img src="img/product-1.png" alt="">
 								</div>
@@ -553,6 +557,7 @@
 						</div><!-- product(5) -->
 						<div class="product">
 							<div class="product-wrap">
+								<a href="#" class="product-wrap__button"></a>
 								<div class="product-img">
 									<img src="img/product-1.png" alt="">
 								</div>
@@ -605,7 +610,7 @@
 							</div>
 						</div>
 						<div class="sidebar-basket__products">
-							<p class="sidebar-basket__products-name">Вентилятор настольный First FA-5550-BA</p>
+							<p class="sidebar-basket__products-name"><a href="#">Вентилятор настольный First FA-5550-BA</a></p>
 							<div class="sidebar-basket__products-block">
 								<div class="sidebar-basket__products-input">
 									<span class="products-input__minus"><img src="img/minus.png" alt=""></span>
@@ -614,7 +619,7 @@
 								</div>
 								<p>2 180 руб.</p>
 								<div class="sidebar-basket__products-close">
-									<img src="img/close-basket.svg" alt="">
+									<a href="#"><img src="img/close-basket.svg" alt=""></a>
 								</div>
 							</div>
 						</div>
@@ -624,24 +629,24 @@
 								<label for="i1">Регион</label>
 								<select name="" id="i1">
 									<option value="">Москва и Моск. обл.</option>
-									<option value="">Москва и Моск. обл.</option>
-									<option value="">Москва и Моск. обл.</option>
+									<option value="">1Москва и Моск. обл.</option>
+									<option value="">2Москва и Моск. обл.</option>
 								</select>
 							</div>
 							<div class="sidebar-basket__delivery-row">
 								<label for="i2">Доставка</label>
 								<select name="" id="i2">
 									<option value="">Курьером лично в рук</option>
-									<option value="">Курьером лично в рук</option>
-									<option value="">Курьером лично в рук</option>
+									<option value="">1Курьером лично в рук</option>
+									<option value="">2Курьером лично в рук</option>
 								</select>
 							</div>
 							<div class="sidebar-basket__delivery-row">
 								<label for="i3">Оплата</label>
 								<select name="" id="i3">
 									<option value="">Наличные курьеру</option>
-									<option value="">Наличные курьеру</option>
-									<option value="">Наличные курьеру</option>
+									<option value="">1Наличные курьеру</option>
+									<option value="">2Наличные курьеру</option>
 								</select>
 							</div>
 							<p class="sidebar-basket__delivery-text">Стоимость доставки: <span>2 180 руб.</span></p>
@@ -746,10 +751,8 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
