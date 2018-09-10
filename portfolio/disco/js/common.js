@@ -8,7 +8,7 @@ var Share = {
                   url:        location.href,  // РєР°РєСѓСЋ СЃСЃС‹Р»РєСѓ С€Р°СЂРёРј
                   count_url:  location.href,  // РґР»СЏ РєР°РєРѕР№ СЃСЃС‹Р»РєРё РєСЂСѓС‚РёРј СЃС‡С‘С‚С‡РёРє
                   title:      "Диско, бохо, советский шик: 70-е в коллекции Reserved нового сезона", // Р·Р°РіРѕР»РѕРІРѕРє С€Р°СЂРёРЅРіР°
-                  image:      "http://braschi.elle.ru/img/banner-person.jpg",             // РєР°СЂС‚РёРЅРєР° С€Р°СЂРёРЅРіР°
+                  image:      "https://reserved.elle.ru/img/share.jpg",             // РєР°СЂС‚РёРЅРєР° С€Р°СЂРёРЅРіР°
                   text:       "lorem",             // С‚РµРєСЃС‚ С€Р°СЂРёРЅРіР°
               },
               $(_element).data(), // Р•СЃР»Рё РїР°СЂР°РјРµС‚СЂС‹ Р·Р°РґР°РЅС‹ РІ data, С‚Рѕ С‡РёС‚Р°РµРј РёС…
@@ -39,7 +39,7 @@ var Share = {
         var options = $.extend({
             url:    location.href,
             title:  "Диско, бохо, советский шик: 70-е в коллекции Reserved нового сезона",
-            image:  "http://braschi.elle.ru/img/banner-person.jpg",
+            image:      "https://reserved.elle.ru/img/share.jpg",
             text:   "lorem",
         }, _options);
 
@@ -68,7 +68,7 @@ var Share = {
         var options = $.extend({
             url:    location.href,
             title:  "Диско, бохо, советский шик: 70-е в коллекции Reserved нового сезона",
-            image:  "http://braschi.elle.ru/img/banner-person.jpg",
+            image:  "https://reserved.elle.ru/img/share.jpg",
             text:   "lorem",
         }, _options);
 
@@ -134,38 +134,38 @@ $(document).on('click', '.social__link', function(e){
 
 $(document).ready(function(){
 
-	$('.main-slider__1,.main-slider__2,.main-slider__3,.main-slider__4').slick({
-	  infinite: true,
-	  arrows: false,
-	  dots: true,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  autoplay:false,
-	  speed:1000
-	});
+  $('.main-slider__1,.main-slider__2,.main-slider__3,.main-slider__4').slick({
+    infinite: true,
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay:false,
+    speed:1000
+  });
 
-	//animation
-	if ($(window).width() > 768) {
+  //animation
+  if ($(window).width() > 768) {
    (function($) {
-			$.fn.animated = function(inEffect) {
-				$(this).each(function() {
-					var ths = $(this);
-					ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
-						if (dir === "down") {
-							ths.addClass(inEffect).css("opacity", "1");
-						};
-					}, {
-						offset: "95%"
-					});
+      $.fn.animated = function(inEffect) {
+        $(this).each(function() {
+          var ths = $(this);
+          ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
+            if (dir === "down") {
+              ths.addClass(inEffect).css("opacity", "1");
+            };
+          }, {
+            offset: "95%"
+          });
 
-				});
-			};
-		})(jQuery);
-		$("h1, h2, h3, h4, h5, p, a,.main-slider").animated("fadeIn", "fadeOutDown");
+        });
+      };
+    })(jQuery);
+    $("h1, h2, h3, h4, h5, p, a,.main-slider").animated("fadeIn", "fadeOutDown");
     $(".main-square__anim").animated("fadeInUp", "fadeOutDown");
     $(".main-flower").animated("zoomIn", "fadeOutDown");
     $(".main-square__4").animated("fadeIn", "fadeOutDown");
-	}
+  }
 
 
 });
