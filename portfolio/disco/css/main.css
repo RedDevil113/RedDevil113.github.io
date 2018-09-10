@@ -159,7 +159,8 @@ img {
       text-transform: uppercase; }
   .main-title {
     font-size: 35px;
-    font-weight: normal; }
+    font-weight: normal;
+    font-family: "Elle Man", sans-serif; }
   .main-video {
     position: relative;
     width: 100%;
@@ -176,15 +177,10 @@ img {
     position: relative;
     padding-bottom: 50px; }
     .main-info p {
-      font-family: "Futura", sans-serif;
+      font-family: "PT Sans", sans-serif;
       font-size: 24px;
       padding: 0 160px 20px 35px;
       line-height: 1.25; }
-      .main-info p:first-letter {
-        font-family: "Elle Man", sans-serif;
-        font-size: 60px;
-        padding-left: 20px;
-        line-height: .5; }
     .main-info__social {
       position: absolute;
       top: -15px;
@@ -463,8 +459,6 @@ img {
       max-width: 600px;
       margin: 0 auto;
       font-size: 30px; }
-      .main-info p:first-letter {
-        font-size: 100px; }
       .main-info p:last-child {
         padding: 0 15px 15px; }
   .main-content {
