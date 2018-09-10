@@ -11,7 +11,11 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/header/css/header.css">
+	<link rel="stylesheet" href="css/main.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
@@ -26,24 +30,62 @@
 	</div>
 	<!-- start main -->
 	<section class="main">
-		<div class="wrapper">
+		<div class="main-mob">
+			<ul>
+				<li><a href="#"><img src="img/elle-logo.png" alt=""></a></li>
+				<li><a href="#"><img src="img/reserved_logo.png" alt=""></a></li>
+			</ul>
+		</div>
+		<div class="wrapper main-wrap">
+			<noindex>
+				<div class="header">
+					<div class="topAnons block-js" data-block="45">
+						<a href="http://www.elle.ru/elledecoration/" class="topAnons__Decoration"></a>
+						<div class="topAnons__scrollWrapper">
+							<div class="topAnons__item" data-ga="yes" data-name="round announcements"><a href="http://www.elle.ru/tag/moskva/" class="topAnons__item__link"><img class="topAnons__previewImg" src="https://n1s1.elle.ru/10/7e/d6/107ed6df3848b8a539f468dbff796b58/40x40_21_22fbc367060e8aca729b7bd6bd1a24a1@600x600_0xc0a839a4_12920609671486477171.jpeg"><span class="topAnons__title"><b class="topAnons__category">Москва, я люблю тебя!&nbsp;</b>гид по столице</span></a></div>
+							<div class="topAnons__item" data-ga="yes" data-name="round announcements"><a href="http://www.elle.ru/tag/baby-blog/" class="topAnons__item__link" rel="noopener" target="_blank"><img class="topAnons__previewImg" src="http://n1s1.hsmedia.ru/c0/b0/42/c0b042aaf627609ff167686a5d6bf991/40x40_21_11f689053d9602a06abe036247569ef8@4716x3144_0xc0a839a4_1894469931468334180.jpeg"><span class="topAnons__title"><b class="topAnons__category">Baby Blog&nbsp;</b>c Галиной Юдашкиной</span></a></div>
+						</div>
+					</div>
+
+					<div class="logoOuter" data-place="52">
+						<a href="http://www.elle.ru/" class="logoElle block-js " data-block="52" rel="noopener" target="_blank">
+			            
+			  		</a>
+					</div>
+					<div class="topMainMenu__wrapper">
+			  		<ul class="topMainMenu__itemsList" data-ga="yes" data-name="main menu">
+			  			<li class="topMainMenu__item"><a class="topMainMenu__link" href="http://www.elle.ru/moda/" rel="noopener" target="_blank">Мода</a></li>
+							<li class="topMainMenu__item"><a class="topMainMenu__link" href="http://www.elle.ru/krasota/" rel="noopener" target="_blank">Красота</a></li>
+							<li class="topMainMenu__item"><a class="topMainMenu__link" href="http://www.elle.ru/celebrities/" rel="noopener" target="_blank">Звезды</a></li>
+							<li class="topMainMenu__item hideOnSizeDouble"><a class="topMainMenu__link" href="http://www.elle.ru/otnosheniya/" rel="noopener" target="_blank">Отношения</a></li>
+							<li class="topMainMenu__item hideOnSizeDouble"><a class="topMainMenu__link" href="http://www.elle.ru/stil-zhizni/" rel="noopener" target="_blank">Стиль жизни</a></li>
+							<li class="topMainMenu__item"><a class="topMainMenu__link" href="http://www.elle.ru/astro/" rel="noopener" target="_blank">Гороскопы</a></li>
+							<li class="topMainMenu__item"><a class="topMainMenu__link" href="http://www.elle.ru/tests/" rel="noopener" target="_blank">Тесты</a></li>
+							<li class="topMainMenu__item hideOnSizeDouble" rel="noopener" target="_blank"><a class="topMainMenu__link" href="http://www.elle.ru/competition/" rel="noopener" target="_blank">Конкурсы</a></li>
+							<li class="topMainMenu__item"><a class="topMainMenu__link topMainMenu__link_video" href="http://www.elle.ru/tag/video/" rel="noopener" target="_blank">Видео</a></li>
+						</ul>
+					</div>
+				</div>
+			</noindex>
 			<div class="main-top">
 				<div class="main-tag"><a href="#">#выбор_недели</a></div>
 				<h1 class="main-title">Диско, бохо, советский шик: <br>70-е в коллекции Reserved нового сезона</h1>
 			</div>
 			<div class="main-video">
-				<iframe src="https://www.youtube.com/embed/wFzjXGetfqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/pHZvlERqElY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 			<div class="main-info">
 				<ul class="main-info__social">
-					<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
-					<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
-					<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+					<li><a class="social__link" target="_blank" data-type="fb" onclick="ga('send', 'event', 'link', 'click', 'facebook');" href="#"><img src="img/facebook.svg" alt=""></a></li>
+					<li><a class="social__link" target="_blank" data-type="vk" onclick="ga('send', 'event', 'link', 'click', 'Vkontakte');" href="#"><img src="img/vk.svg" alt=""></a></li>
+					<li><a class="social__link" target="_blank" data-type="tw" onclick="ga('send', 'event', 'link', 'click', 'twitter');" href="#"><img src="img/twitter.svg" alt=""></a></li>
 				</ul>
 				<p>Стив Рубелл говорит: «Добро пожаловать», и вы попадаете внутрь. Вот Бьянка Джаггер вплывает в зал в струящемся шелковом платье Halston, убрав волосы под роскошную чалму. В углу — Марго Хемингуэй в бессменных расклешенных джинсах и свободной рубашке. Все оборачиваются, провожая взглядами Анжелику Хьюстон в объемной шубе с огромным отложным воротником. По кадрам из «Студии 54» можно создать самый подробный сториборд моды 1970-х, которые в этом сезоне снова вернулись на подиумы.</p>
 				<p>В 2018-м повторяем образы гламурных див самого цитируемого модного десятилетия с поправкой на то, что этой осенью 70-е — про цветовую гамму (насыщенные глиняные и охровые оттенки), силуэт (клеш, графичная плиссировка и подвижные рюши), материалы (шелк, пайетки и ламе) и принты (клетка и цветы). Плюс — социальная ответственность, о которой в «Студии» не было и речи: роскошную лису и соболя заменяем на экологичный и демократичный искусственный мех!</p>
 			</div>
-			<div class="main-row">
+		</div>
+		<div class="wrapper main-content">
+			<div class="main-row main-row__1">
 				<div class="main-img__row">
 					<div class="main-square main-square__1 main-square__anim"></div>
 					<div class="main-square main-square__2 main-square__anim"></div>
@@ -59,12 +101,13 @@
 							</div>
 						</div>
 					</div>
+					<div class="main-mob__link"><a href="#">купить</a></div>
 				</div>
 				<div class="main-descr">
 					<h2 class="main-descr__title">Образ  №1</h2>
 					<h3 class="main-descr__subtitle">юбка Миди, блуза с бантом, серьги </h3>
 					<p>К плиссированной юбке длины миди и блузе с романтичным бантом добавляем сияющие серьги из нескольких рядов стразов — такими ослепляли на танцполе главные дивы эры диско.</p>
-					<a href="#" class="main-descr__link">купить</a>
+					<a href="https://www.elle.ru/" target="_blank" class="main-descr__link">купить</a>
 				</div>
 			</div><!-- row(1) -->
 			<div class="main-row main-row__2">
@@ -72,7 +115,7 @@
 					<h2 class="main-descr__title">Образ  №2</h2>
 					<h3 class="main-descr__subtitle">Платье-рубашка, замшевые сапоги</h3>
 					<p>Ностальгия по 1970-м не обошла стороной и советскую эстетику: создаем модный образ в духе Людмилы Прокофьевны из «Служебного романа». К платью-сорочке подбираем хорошие сапоги — надо брать с круглым мысом на устойчивом каблуке.</p>
-					<a href="#" class="main-descr__link">купить</a>
+					<a href="https://www.elle.ru/" target="_blank" class="main-descr__link">купить</a>
 				</div>
 				<div class="main-img__row">
 					<div class="main-flower main-flower__1">
@@ -93,15 +136,19 @@
 							</div>
 						</div>
 					</div>
+					<div class="main-mob__link"><a href="#">купить</a></div>
 				</div>
 			</div><!-- row(2) -->
-			<div class="main-row">
+			<div class="main-row main-row__3">
 				<div class="main-img__row">
 					<div class="main-flower main-flower__3">
 						<img src="img/flower-3.png" alt="">
 					</div>
 					<div class="main-flower main-flower__4">
 						<img src="img/flower-4.png" alt="">
+					</div>
+					<div class="main-flower main-flower__5">
+						<img src="img/flower-mob.png" alt="">
 					</div>
 					<div class="main-slider main-slider__3">
 						<div class="main-slide">
@@ -111,16 +158,17 @@
 						</div>
 						<div class="main-slide">
 							<div>
-								<img src="img/slide-5.png" alt="">
+								<img src="img/slide-6.png" alt="">
 							</div>
 						</div>
 					</div>
+					<div class="main-mob__link"><a href="#">купить</a></div>
 				</div>
 				<div class="main-descr">
 					<h2 class="main-descr__title">Образ №3</h2>
 					<h3 class="main-descr__subtitle">Платье с цветочным принтом, платок</h3>
 					<p>Жизнерадостные яркие бутоны убираем до следующего лета. Осенняя версия цветочного принта — семидесятнические арт-иллюстрации на подолах платьев и юбок и еще один реверанс в сторону СССР — шелковые платки, повязанные точь-в-точь как у наших бабушек.</p>
-					<a href="#" class="main-descr__link">купить</a>
+					<a href="https://www.elle.ru/" target="_blank" class="main-descr__link">купить</a>
 				</div>
 			</div><!-- row(3) -->
 			<div class="main-row main-row__4">
@@ -128,7 +176,7 @@
 					<h2 class="main-descr__title">Образ №4</h2>
 					<h3 class="main-descr__subtitle">Брюки, олимпийка, шуба из экомеха</h3>
 					<p>Модную шубу из экомеха надеваем поверх спортивного костюма в ретростиле. В поисках идеального мехового пальто держим в уме эталон — образ Марго Тенненбаум из кино Уэса Андерсона.</p>
-					<a href="#" class="main-descr__link">купить</a>
+					<a href="https://www.elle.ru/" target="_blank" class="main-descr__link">купить</a>
 				</div>
 				<div class="main-img__row">
 					<div class="main-square main-square__3 main-square__anim"></div>
@@ -145,6 +193,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="main-mob__link"><a href="#">купить</a></div>
 				</div>
 			</div><!-- row(4) -->
 		</div>
@@ -153,11 +202,23 @@
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
-			<p>© 2018, Hearst Shkulev Media, Special projects departament</p>
+			<div class="footer-top">
+				<p>© 2018, Hearst Shkulev Media, Special projects departament</p>
+			</div>
+			<div class="footer-mob">
+				<p>Поделиться проектом <br>в социальных сетях: </p>
+				<ul>
+					<li><a target="_blank" data-type="fb" onclick="ga('send', 'event', 'link', 'click', 'facebook');"  href="#"><img src="img/facebook-black.svg" alt=""></a></li>
+					<li><a target="_blank" data-type="vk" onclick="ga('send', 'event', 'link', 'click', 'Vkontakte');"  href="#"><img src="img/vk-black.svg" alt=""></a></li>
+					<li><a target="_blank" data-type="tw" onclick="ga('send', 'event', 'link', 'click', 'twitter');"  href="#"><img src="img/twitter-black.svg" alt=""></a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 	<!-- end footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="js/scripts.min.js"></script>
+	<script src="libs/waypoints/waypoints.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 </html>
