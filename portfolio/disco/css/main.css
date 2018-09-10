@@ -66,6 +66,9 @@ a, a:hover, a:focus, a:active, a:visited {
 li {
   list-style: none; }
 
+html {
+  overflow-x: hidden; }
+
 body {
   font-size: 18px;
   line-height: 1.3;
