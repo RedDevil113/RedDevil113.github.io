@@ -2,20 +2,22 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>title</title>
+	<title>Catalog</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--<meta property="og:image" content="path/to/image.jpg">
+	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	
 </head>
 <body>
 	<div class="modal-overlay"></div>
@@ -28,7 +30,7 @@
 				</div>
 				<div class="header-top__logo">
 					<a href="#">
-						<img src="img/logo.png" alt="">
+						<img src="img/logo.svg" alt="">
 					</a>
 				</div>
 				<div class="header-top__descr">
@@ -37,35 +39,126 @@
 						<li><a href="#"><span>г. Санкт-Петербург</span></a></li>
 					</ul>
 					<div>
-						<p class="header-top__descr-phone"><a href="#"><img src="img/phone.png" alt=""><span>+7 495 357-05-70</span></a></p>
+						<p class="header-top__descr-phone"><a href="#"><img src="img/phone.svg" alt=""><span>+7 495 357-05-70</span></a></p>
 						<p class="header-top__descr-text">График работы: <br>c 9:00 - 21:00</p>
 					</div>
 					<p class="header-top__descr-user"><img src="img/user-ico.png" alt=""><span>Вход на сайт</span></p>
 				</div>
 				<div class="header-top__info">
 					<ul>
-						<li><a href="#"><img src="img/bar.png" alt=""><span>2</span></a></li>
-						<li><a href="#"><img src="img/love.png" alt=""></a></li>
-						<li><a href="#"><img src="img/user.png" alt=""></a></li>
-						<li><a href="#"><img src="img/basket.png" alt=""><span>1</span></a></li>
+						<li><a class="gray-active" href="#"><img src="img/bar.svg" alt=""><span>2</span></a></li>
+						<li><a class="none-active" href="#"><img src="img/love.svg" alt=""></a></li>
+						<li><a class="header-active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17px" viewBox="0 0 17 19.4"><g><g data-name="Layer 1"><path fill="#1b1b1b" d="M16.3,19.4a.68.68,0,0,1-.7-.7c0-3.3-2.1-6-4.7-6H6.1c-2.6,0-4.7,2.7-4.7,6a.68.68,0,0,1-.7.7.68.68,0,0,1-.7-.7c0-4.1,2.7-7.5,6.1-7.5h4.8c3.4,0,6.1,3.4,6.1,7.5A.75.75,0,0,1,16.3,19.4Z"/><path class="cls-1" d="M8.5,10.6A5.25,5.25,0,0,1,3.3,5.3,5.25,5.25,0,0,1,8.5,0a5.25,5.25,0,0,1,5.2,5.3A5.19,5.19,0,0,1,8.5,10.6Zm0-9.2A3.82,3.82,0,0,0,4.7,5.3,3.88,3.88,0,0,0,8.5,9.2a3.82,3.82,0,0,0,3.8-3.9A3.82,3.82,0,0,0,8.5,1.4Z"/></g></g></svg></a></li>
+						<li class="basket-active">
+							<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 23.06 17.95"><g><g data-name="Layer 1"><path fill="#1b1b1b" d="M23,4l-2.7,8.4a1.41,1.41,0,0,1-1.4,1H8.6a1.57,1.57,0,0,1-1.4-.9L3.3,2H1A1,1,0,0,1,0,1,1.17,1.17,0,0,1,1,0H4a1,1,0,0,1,.9.7L9,11.5h9.5l2.1-6.7H5.8a1,1,0,0,1-1-1,1.17,1.17,0,0,1,1-1H21.9a1.23,1.23,0,0,1,.8.4A.58.58,0,0,1,23,4Z"/><path class="cls-1" d="M9.2,14.7a1.61,1.61,0,0,0-1.1.5,1.63,1.63,0,1,0,2.3,2.3h0a1.69,1.69,0,0,0,0-2.3A2.08,2.08,0,0,0,9.2,14.7Z"/><path class="cls-1" d="M18.1,14.7a1.61,1.61,0,0,0-1.1.5,1.63,1.63,0,1,0,2.3,2.3h0a1.69,1.69,0,0,0,0-2.3,1.66,1.66,0,0,0-1.2-.5Z"/></g></g></svg><span>1</span></a>
+							<p class="header-top__info-price">2 180 р.</p>
+						</li>
 					</ul>
-					<p class="header-top__info-price">2 180 р.</p>
 				</div>
 			</div>
 		</div>
 		<div class="header-bottom">
 			<div class="wrapper">
 				<div class="header-bottom__category">
-					<div>
-						<img src="img/bar-catalog.png" alt="">
+					<div class="header-bottom__category-button">
+						<p><img src="img/close-white.png" alt=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15"><g data-name="1"><g data-name="2"><path fill="#3a393b" d="M18.5,3H1.5A1.54,1.54,0,0,1,0,1.5H0A1.54,1.54,0,0,1,1.5,0h17A1.54,1.54,0,0,1,20,1.5h0A1.54,1.54,0,0,1,18.5,3Z"/><path d="M18.5,9H1.5A1.54,1.54,0,0,1,0,7.5H0A1.54,1.54,0,0,1,1.5,6h17A1.54,1.54,0,0,1,20,7.5h0A1.54,1.54,0,0,1,18.5,9Z"/><path d="M18.5,15H1.5A1.54,1.54,0,0,1,0,13.5H0A1.54,1.54,0,0,1,1.5,12h17A1.54,1.54,0,0,1,20,13.5h0A1.54,1.54,0,0,1,18.5,15Z"/></g></g></svg>Каталог товаров</p>
 					</div>
-					<p><a href="#">Каталог товаров</a></p>
+					<div class="category-block">
+						<div class="category-block__col category-block__col-first">
+							<div class="category-block__col-close"><img src="img/cancel.png" alt=""></div>
+							<h3 class="category-block__col-title">Каталог товаров</h3>
+							<ul>
+								<li><a href="#category-1">Компьютеры и ноутбуки</a></li>
+								<li><a href="#category-2">Компьютерные комплектующие</a></li>
+								<li><a href="#category-3">Серверы и СХД</a></li>
+								<li><a href="#category-4">Периферия</a></li>
+								<li><a href="#category-5">Оргтехника</a></li>
+								<li><a href="#category-6">ИБП</a></li>
+								<li><a href="#category-7">Расходные материалы</a></li>
+								<li><a href="#category-8">Сетевое оборудование</a></li>
+								<li><a href="#category-9">Программное обеспечение</a></li>
+								<li><a href="#category-10">СКС</a></li>
+								<li><a href="#category-11">Системы безопасности</a></li>
+								<li><a href="#category-12">Средства защиты информации</a></li>
+								<li><a href="#category-13">Электрика и системы электропитания</a></li>
+								<li><a href="#category-14">Торговое оборудование</a></li>
+								<li><a href="#category-15">Телефония</a></li>
+								<li><a href="#category-16">Товары для геймеров</a></li>
+								<li><a href="#category-17">Аpple</a></li>
+								<li><a href="#category-18">Климатическое оборудование</a></li>
+								<li><a href="#category-19">Телевизоры и проекторы</a></li>
+								<li><a href="#category-20">Портативная техника</a></li>
+							</ul>
+						</div>
+						<div id="category-18" class="category-block__col category-block__col-next category-block__col-second">
+							<ul>
+								<li><a href="#200">Вентиляторы</a></li>
+								<li><a class="category-active" href="#200">Вентиляционное оборудование</a></li>
+								<li><a href="#200">Водоснабжение</a></li>
+								<li><a href="#200">Кондиционеры</a></li>
+								<li><a href="#200">Обогреватели</a></li>
+								<li><a href="#200">Отопительное оборудование</a></li>
+								<li><a href="#200">Очистители, увлажнители и осушители воздуха</a></li>
+								<li><a href="#200">Сушилки для рук электрические</a></li>
+							</ul>
+						</div>
+						<div id="category-10" class="category-block__col category-block__col-next category-block__col-second">
+							<ul>
+								<li><a href="#200">Вентиляторы</a></li>
+								<li><a href="#200">Вентиляционное оборудование</a></li>
+								<li><a href="#200">Водоснабжение</a></li>
+								<li><a href="#200">Кондиционеры</a></li>
+								<li><a href="#200">Обогреватели</a></li>
+								<li><a href="#200">Отопительное оборудование</a></li>
+								<li><a href="#200">Очистители, увлажнители и осушители воздуха</a></li>
+								<li><a href="#200">Сушилки для рук электрические</a></li>
+								<li><a href="#200">Водоснабжение</a></li>
+								<li><a href="#200">Кондиционеры</a></li>
+								<li><a href="#200">Обогреватели</a></li>
+							</ul>
+						</div>
+						<div id="category-20" class="category-block__col category-block__col-next category-block__col-second">
+							<ul>
+								<li><a href="#200">Вентиляторы</a></li>
+								<li><a class="category-active" href="#200">Вентиляционное оборудование</a></li>
+								<li><a href="#200">Водоснабжение</a></li>
+								<li><a href="#200">Кондиционеры</a></li>
+								<li><a href="#200">Обогреватели</a></li>
+								<li><a href="#200">Водоснабжение</a></li>
+								<li><a href="#200">Кондиционеры</a></li>
+								<li><a href="#200">Обогреватели</a></li>
+								<li><a href="#200">Отопительное оборудование</a></li>
+								<li><a href="#200">Очистители, увлажнители и осушители воздуха</a></li>
+								<li><a href="#200">Сушилки для рук электрические</a></li>
+							</ul>
+						</div>
+						<div id="200" class="category-block__col category-block__col-next category-block__col-last">
+							<div class="category-block__col-wrap">
+								<ul>
+									<li><a href="#">Автоматика для систем вентиляции</a></li>
+									<li><a href="#">Вентиляторы вытяжные</a></li>
+									<li><a href="#">Нагреватели канальные</a></li>
+									<li><a href="#">Приточно-вытяжные установки</a></li>
+								</ul>
+								<div class="product product-bg">
+									<div class="product-bg__wrap" style="background: url(img/product-bg.png);">
+										<a href="#" class="product-bg__link"></a>
+										<span class="product-bg__new">НОВИНКА 2018</span>
+										<div class="product-bg__descr">
+											<p class="product-bg__descr-name">Напольный<br>вентилятор MSF-2433</p>
+											<p class="product-bg__descr-price"><span>35 800 р.</span><img src="img/arrow-gold.svg" alt=""></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="header-bottom__search">
 					<form action="">
 						<div>
 							<input type="text" placeholder="Найти икс-комое">
-							<button class="header-bottom__search-button"><img src="img/search.png" alt=""></button>
+							<button class="header-bottom__search-button"><img src="img/search.svg" alt=""></button>
 						</div>
 					</form>
 				</div>
@@ -74,7 +167,7 @@
 	</header>
 	<!-- end header -->
 	<!-- start content -->
-	<section class="content">
+	<section class="content content-product">
 		<div class="content-top">
 			<div class="wrapper">
 				<ul class="bread-crumbs">
@@ -82,203 +175,137 @@
 					<li><a href="#">Климатическое оборудование</a></li>
 					<li><a href="#">Вентиляторы</a></li>
 					<li><a href="#">Настольные</a></li>
-					<li><a href="#">Вентилятор настольный First FA-5550-BA</a></li>
+					<li>Вентилятор настольный First FA-5550-BA</li>
 				</ul>
 				<h1 class="content-title">Вентилятор настольный First FA-5550-BA</h1>
+				<div class="content-top__info">
+					<div class="content-top__info-row">
+						<a href="#" class="content-top__info-art">Артикул: 579634</a>
+						<a href="#" class="content-top__info-art">Производство: Китай</a>
+						<a href="#"><img src="img/stars.png" alt=""></a>
+						<a href="#" class="content-top__info-text">2 отзыва</a>
+					</div>
+					<div class="content-top__info-right">
+						<ul>
+							<li><a class="active-r" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13px" viewBox="0 0 13 16"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#1b1b1b" d="M1.5,16h0A1.54,1.54,0,0,1,0,14.5v-5A1.54,1.54,0,0,1,1.5,8h0A1.54,1.54,0,0,1,3,9.5v5A1.54,1.54,0,0,1,1.5,16Z"/><path class="cls-1" d="M6.5,16h0A1.54,1.54,0,0,1,5,14.5V1.5A1.54,1.54,0,0,1,6.5,0h0A1.54,1.54,0,0,1,8,1.5v13A1.54,1.54,0,0,1,6.5,16Z"/><path class="cls-1" d="M11.5,16h0A1.54,1.54,0,0,1,10,14.5v-9A1.54,1.54,0,0,1,11.5,4h0A1.54,1.54,0,0,1,13,5.5v9A1.54,1.54,0,0,1,11.5,16Z"/></g></g></svg><span>Сравить</span></a></li>
+							<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17px" viewBox="0 0 17.8 16"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#a8a8a8" d="M17.8,4.8V4.7A4.94,4.94,0,0,0,12.9,0a5.37,5.37,0,0,0-4,1.8A5.18,5.18,0,0,0,4.9,0H4.8A4.8,4.8,0,0,0,0,4.8c0,3.3,3.1,6,7.7,10.1L9,16l1.3-1.1h0C14.7,10.7,17.8,8,17.8,4.8ZM8.9,13.6h0l-.2-.1C4.4,9.7,1.6,7.3,1.6,4.8V4.6A3,3,0,0,1,4.8,1.7,3.39,3.39,0,0,1,8,3.8H9.7a3.35,3.35,0,0,1,3.1-2.1h.1a3,3,0,0,1,3,3.1C16,7.3,13.2,9.8,8.9,13.6Z"/></g></g></svg><span>В избранное</span></a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="content-wrap">
 			<div class="wrapper">
-				<div class="content-main">
-					<div class="content-main__top">
-						<div class="content-main__top-filter">
-							<a href="#"><img src="img/filter.png" alt=""><span>Фильтры</span></a>
+				<div class="content-main content-main__product">
+					<div class="content-main__product-top">
+						<div class="content-main__product-wrap">
+							<div class="content-main__product-slider">
+								<div class="content-main__product-slide">
+									<div><img src="img/main-product-1.png" alt=""></div>
+								</div>
+								<div class="content-main__product-slide">
+									<div><img src="img/main-product-1.png" alt=""></div>
+								</div>
+								<div class="content-main__product-slide">
+									<div><img src="img/main-product-1.png" alt=""></div>
+								</div>
+							</div>
+							<div class="content-main__product-slider__nav">
+								<div class="content-main__product-slider__nav-s">
+									<div><img src="img/prduct-nav-1.png" alt=""></div>
+								</div>
+								<div class="content-main__product-slider__nav-s">
+									<div><img src="img/prduct-nav-1.png" alt=""></div>
+								</div>
+								<div class="content-main__product-slider__nav-s">
+									<div><img src="img/prduct-nav-1.png" alt=""></div>
+								</div>
+							</div>
 						</div>
-						<div class="content-main__top-wrap">
-							<div class="content-main__top-sorting">
-								<p>Сортировать:</p>
+						<div class="content-main__product-info">
+							<div class="content-main__product-info__top">
+								<div class="content-main__product-info__col">
+									<p class="content-main__product-info__col-line">1 230 руб.</p>
+									<p class="content-main__product-info__col-price">1 090<span>руб.</span></p>
+								</div>
+								<div class="content-main__product-info__col">
+									<a class="content-main__product-info__link" href="#">В корзину</a>
+									<p class="sidebar-basket__text"><span>+ 100</span> <b>Бонусных баллов</b><a href="#">?</a></p>
+								</div>
+							</div>
+							<div class="content-main__product-info__block">
+								<img src="img/car_1.svg" alt="">
+								<h3 class="content-main__product-info__block-title">Доставка</h3>
 								<ul>
-									<li>
-										<a href="#"><span>По цене</span></a>
-									</li>
-									<li>
-										<a href="#"><span>По популярности</span></a>
-									</li>
-									<li>
-										<a href="#"><span>По доступности</span></a>
-									</li>
+									<li><span>Самовывоз</span><b>Сегодня</b></li>
+									<li><span>Москва и МО</span><b>Завтра</b></li>
+									<li><span>Россия</span><b>12.02.2018</b></li>
 								</ul>
 							</div>
-							<div class="content-main__top-tile">
-								<ul>
-									<li><a href="#"><img src="img/plit-cat.png" alt=""></a></li>
-									<li><a href="#"><img src="img/list-cat.png" alt=""></a></li>
-								</ul>
+							<div class="content-main__product-info__block">
+								<img src="img/certificate.svg" alt="">
+								<p>Гарантия 12 мес. В сервисном центре производителя при предъявлении гарантийного талона</p>
 							</div>
 						</div>
 					</div>
-					<div class="content-row">
-						<div class="product">
-							<div class="product-wrap">
-								<div class="product-img">
-									<img src="img/product-1.png" alt="">
-								</div>
-								<div class="product-descr">
-									<span class="product-descr__code">Артикул: 579634</span>
-									<span class="product-descr__name">Mystery MSF-2433</span>
-									<span class="product-descr__category">Вентилятор настольный</span>
-									<div class="product-descr__row">
-										<div>
-											<p class="product-descr__price-line">35 800 р.</p>
-											<p class="product-descr__price">35 800 р.</p>
-										</div>
-										<div>
-											<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-								<div class="product-bottom">
-									<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
-									<ul>
-										<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-										<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
-									</ul>
-								</div>
-							</div>
-						</div><!-- product(1) -->
-						<div class="product">
-							<div class="product-wrap">
-								<div class="product-img">
-									<img src="img/product-1.png" alt="">
-								</div>
-								<div class="product-descr">
-									<span class="product-descr__code">Артикул: 579634</span>
-									<span class="product-descr__name">Mystery MSF-2433</span>
-									<span class="product-descr__category">Вентилятор настольный</span>
-									<div class="product-descr__row">
-										<div>
-											<p class="product-descr__price-line">35 800 р.</p>
-											<p class="product-descr__price">35 800 р.</p>
-										</div>
-										<div>
-											<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-								<div class="product-bottom">
-									<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
-									<ul>
-										<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-										<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
-									</ul>
-								</div>
-							</div>
-						</div><!-- product(2) -->
-						<div class="product product-bg">
-							<div class="product-bg__wrap" style="background: url(img/product-bg.png);">
-								<a href="#" class="product-bg__link"></a>
-								<span class="product-bg__new">НОВИНКА 2018</span>
-								<div class="product-bg__descr">
-									<p class="product-bg__descr-name">Напольный<br>вентилятор MSF-2433</p>
-									<p class="product-bg__descr-price"><span>35 800 р.</span><img src="img/arrow-gold.png" alt=""></p>
-								</div>
-							</div>
-						</div><!-- product(3) -->
-						<div class="product">
-							<div class="product-wrap">
-								<div class="product-img">
-									<img src="img/product-1.png" alt="">
-								</div>
-								<div class="product-descr">
-									<span class="product-descr__code">Артикул: 579634</span>
-									<span class="product-descr__name">Mystery MSF-2433</span>
-									<span class="product-descr__category">Вентилятор настольный</span>
-									<div class="product-descr__row">
-										<div>
-											<p class="product-descr__price-line">35 800 р.</p>
-											<p class="product-descr__price">35 800 р.</p>
-										</div>
-										<div>
-											<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-								<div class="product-bottom">
-									<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
-									<ul>
-										<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-										<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
-									</ul>
-								</div>
-							</div>
-						</div><!-- product(4) -->
-						<div class="product">
-							<div class="product-wrap">
-								<div class="product-img">
-									<img src="img/product-1.png" alt="">
-								</div>
-								<div class="product-descr">
-									<span class="product-descr__code">Артикул: 579634</span>
-									<span class="product-descr__name">Mystery MSF-2433</span>
-									<span class="product-descr__category">Вентилятор настольный</span>
-									<div class="product-descr__row">
-										<div>
-											<p class="product-descr__price-line">35 800 р.</p>
-											<p class="product-descr__price">35 800 р.</p>
-										</div>
-										<div>
-											<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-								<div class="product-bottom">
-									<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
-									<ul>
-										<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-										<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
-									</ul>
-								</div>
-							</div>
-						</div><!-- product(5) -->
-						<div class="product">
-							<div class="product-wrap">
-								<div class="product-img">
-									<img src="img/product-1.png" alt="">
-								</div>
-								<div class="product-descr">
-									<span class="product-descr__code">Артикул: 579634</span>
-									<span class="product-descr__name">Mystery MSF-2433</span>
-									<span class="product-descr__category">Вентилятор настольный</span>
-									<div class="product-descr__row">
-										<div>
-											<p class="product-descr__price-line">35 800 р.</p>
-											<p class="product-descr__price">35 800 р.</p>
-										</div>
-										<div>
-											<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
-										</div>
-									</div>
-								</div>
-								<div class="product-bottom">
-									<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
-									<ul>
-										<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-										<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
-									</ul>
-								</div>
-							</div>
-						</div><!-- product(6) -->
-					</div>
-					<div class="pagination">
-						<a href="#" class="pagination-link"><<  НАЗАД</a>
-						<ul>
-							<li><a class="pagination-active" href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<p>.  .  .</p>
-							<li><a href="#">17</a></li>
+					<div class="content-main__info">
+						<ul class="content-main__info-tab">
+							<li><a class="tab-active" href="#block-1">Описание и характеристики</a></li>
+							<li><a href="#block-2">Отзывы(2)</a></li>
+							<li><a href="#block-3">Акции</a></li>
 						</ul>
-						<a href="#" class="pagination-link">ВПЕРЕД >></a>
+						<p class="content-main__product-info__block-text">Настольный вентилятор First FA-5550-BA равномерно распределяет потоки воздуха и создавая комфортные условия. Доступно 2 режима работы с различной скоростью вращения лопастей. Крупные пластиковые лопасти при вращении не создают громких звуков.</p>
+						<div class="content-main__info-block block-active" id="block-1">
+							<h3 class="content-main__info-block__title acc-active">Описание и характеристики</h3>
+							<div class="content-main__info-block__wrap content-main__info-block__wrap-first">
+								<div class="content-main__info-row">
+									<div class="content-main__info-col">
+										<h3 class="content-main__info-title">Основные характеристики</h3>
+										<ul>
+											<li><b>Тип</b><span>Насaтольный</span></li>
+											<li><b>Решетка</b><span>Есть</span></li>
+											<li><b>Механизм</b><span>Осевой</span></li>
+											<li><b>Мощность</b><span>25 Вт</span></li>
+											<li><b>Функция наклона</b><span>Есть</span></li>
+											<li><b>Функция поворота</b><span>Есть</span></li>
+											<li><b>Диаметр лопастей</b><span>23 см</span></li>
+										</ul>
+										<h3 class="content-main__info-title">Возможности и управление</h3>
+										<ul>
+											<li><b>Тип управления</b><span>Механическое</span></li>
+											<li><b>Таймер</b><span>Нет</span></li>
+											<li><b>Увлажнитель</b><span>Нет</span></li>
+											<li><b>Ионизация</b><span>Нет</span></li>
+										</ul>
+									</div>
+									<div class="content-main__info-col">
+										<h3 class="content-main__info-title">Характеристики питания</h3>
+										<ul>
+											<li><b>Питание</b><span>От сети</span></li>
+										</ul>
+										<h3 class="content-main__info-title">Дополнительные характеристики</h3>
+										<ul>
+											<li><b>Материал</b><span>Пластик</span></li>
+											<li><b>Цвет</b><span>Черный</span></li>
+											<li><b>Вес брутто</b><span>1.455 кг</span></li>
+										</ul>
+										<p class="all-characteristics"><a href="#">Все характеристики</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-main__info-block" id="block-2">
+							<h3 class="content-main__info-block__title">Отзывы(2)</h3>
+							<div class="content-main__info-block__wrap">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, tenetur eaque laborum ullam dolorem nulla deleniti. Deserunt odit cum nemo ipsa quos aspernatur recusandae laborum numquam quas omnis accusantium, eaque sint molestiae consectetur optio! Accusamus porro pariatur, iste quaerat assumenda.</p>
+							</div>
+						</div>
+						<div class="content-main__info-block" id="block-3">
+							<h3 class="content-main__info-block__title">Акции</h3>
+							<div class="content-main__info-block__wrap">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus, temporibus, ea enim odit necessitatibus animi ab accusantium esse maiores reprehenderit omnis, voluptas ex nisi labore iure, eligendi sint dolore.</p>
+							</div>
+						</div>
 					</div>
 				</div><!-- content-main -->
 				<div class="sidebar-basket">
@@ -289,21 +316,21 @@
 								<p>В корзине 2 шт.</p>
 							</div>
 							<div>
-								<img src="img/basket.png" alt="">
+								<img src="img/basket.svg" alt="">
 								<p><a href="#">Очистить</a></p>
 							</div>
 						</div>
 						<div class="sidebar-basket__products">
-							<p class="sidebar-basket__products-name">Вентилятор настольный First FA-5550-BA</p>
+							<p class="sidebar-basket__products-name"><a href="#">Вентилятор настольный First FA-5550-BA</a></p>
 							<div class="sidebar-basket__products-block">
 								<div class="sidebar-basket__products-input">
-									<span><img src="img/minus.png" alt=""></span>
+									<span class="products-input__minus"><img src="img/minus.png" alt=""></span>
 									<input type="text" value="2">
-									<span><img src="img/plus.png" alt=""></span>
+									<span class="products-input__plus"><img src="img/plus.png" alt=""></span>
 								</div>
 								<p>2 180 руб.</p>
 								<div class="sidebar-basket__products-close">
-									<img src="img/close-basket.png" alt="">
+									<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#959595" d="M9,0a9,9,0,1,0,9,9A9,9,0,0,0,9,0Zm4.4,12.1-1.3,1.3L9,10.2,5.9,13.4,4.6,12.1,7.7,9,4.6,5.8,5.9,4.5,9,7.6l3.1-3.1,1.3,1.3L10.3,9Z"/></g></g></svg></a>
 								</div>
 							</div>
 						</div>
@@ -313,24 +340,33 @@
 								<label for="i1">Регион</label>
 								<select name="" id="i1">
 									<option value="">Москва и Моск. обл.</option>
+									<option value="">1Москва и Моск. обл.</option>
+									<option value="">2Москва и Моск. обл.</option>
 									<option value="">Москва и Моск. обл.</option>
+									<option value="">1Москва и Моск. обл.</option>
+									<option value="">2Москва и Моск. обл.</option>
 									<option value="">Москва и Моск. обл.</option>
+									<option value="">1Москва и Моск. обл.</option>
+									<option value="">2Москва и Моск. обл.</option>
+									<option value="">Москва и Моск. обл.</option>
+									<option value="">1Москва и Моск. обл.</option>
+									<option value="">2Москва и Моск. обл.</option>
 								</select>
 							</div>
 							<div class="sidebar-basket__delivery-row">
 								<label for="i2">Доставка</label>
 								<select name="" id="i2">
 									<option value="">Курьером лично в рук</option>
-									<option value="">Курьером лично в рук</option>
-									<option value="">Курьером лично в рук</option>
+									<option value="">1Курьером лично в рук</option>
+									<option value="">2Курьером лично в рук</option>
 								</select>
 							</div>
 							<div class="sidebar-basket__delivery-row">
 								<label for="i3">Оплата</label>
 								<select name="" id="i3">
 									<option value="">Наличные курьеру</option>
-									<option value="">Наличные курьеру</option>
-									<option value="">Наличные курьеру</option>
+									<option value="">1Наличные курьеру</option>
+									<option value="">2Наличные курьеру</option>
 								</select>
 							</div>
 							<p class="sidebar-basket__delivery-text">Стоимость доставки: <span>2 180 руб.</span></p>
@@ -354,12 +390,13 @@
 				<div class="accessories-slide">
 					<div class="product">
 						<div class="product-wrap">
+							<a href="#" class="product-wrap__button"></a>
 							<div class="product-img">
 								<img src="img/product-1.png" alt="">
 							</div>
 							<div class="product-descr">
 								<span class="product-descr__code">Артикул: 579634</span>
-								<span class="product-descr__name">Mystery MSF-2433</span>
+								<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
 								<span class="product-descr__category">Вентилятор настольный</span>
 								<div class="product-descr__row">
 									<div>
@@ -367,15 +404,15 @@
 										<p class="product-descr__price">35 800 р.</p>
 									</div>
 									<div>
-										<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
+										<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
 									</div>
 								</div>
 							</div>
 							<div class="product-bottom">
-								<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
+								<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
 								<ul>
-									<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-									<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="12px" viewBox="0 0 12 10"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M12,3h0A3.15,3.15,0,0,0,8.7,0,3.86,3.86,0,0,0,6,1.1,3.86,3.86,0,0,0,3.3,0H3.2A3.12,3.12,0,0,0,0,3C0,5.1,2,6.8,5.2,9.3L6,10l.8-.7h0C9.9,6.7,12,5,12,3ZM6.1,8.5h0L6,8.4C3.1,6,1.3,4.5,1.3,2.9V2.8A1.93,1.93,0,0,1,3.4,1,2.48,2.48,0,0,1,5.6,2.3H6.7A2.33,2.33,0,0,1,8.8,1h.1a2,2,0,0,1,2,1.9C10.8,4.6,9,6.1,6.1,8.5Z"/></g></g></svg></span><b>В избранное</b></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
 								</ul>
 							</div>
 						</div>
@@ -384,12 +421,13 @@
 				<div class="accessories-slide">
 					<div class="product">
 						<div class="product-wrap">
+							<a href="#" class="product-wrap__button"></a>
 							<div class="product-img">
 								<img src="img/product-1.png" alt="">
 							</div>
 							<div class="product-descr">
 								<span class="product-descr__code">Артикул: 579634</span>
-								<span class="product-descr__name">Mystery MSF-2433</span>
+								<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
 								<span class="product-descr__category">Вентилятор настольный</span>
 								<div class="product-descr__row">
 									<div>
@@ -397,15 +435,15 @@
 										<p class="product-descr__price">35 800 р.</p>
 									</div>
 									<div>
-										<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
+										<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
 									</div>
 								</div>
 							</div>
 							<div class="product-bottom">
-								<p><img src="img/car.png" alt=""><b>Доставим:</b> <span>Завтра</span></p>
+								<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
 								<ul>
-									<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-									<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="12px" viewBox="0 0 12 10"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M12,3h0A3.15,3.15,0,0,0,8.7,0,3.86,3.86,0,0,0,6,1.1,3.86,3.86,0,0,0,3.3,0H3.2A3.12,3.12,0,0,0,0,3C0,5.1,2,6.8,5.2,9.3L6,10l.8-.7h0C9.9,6.7,12,5,12,3ZM6.1,8.5h0L6,8.4C3.1,6,1.3,4.5,1.3,2.9V2.8A1.93,1.93,0,0,1,3.4,1,2.48,2.48,0,0,1,5.6,2.3H6.7A2.33,2.33,0,0,1,8.8,1h.1a2,2,0,0,1,2,1.9C10.8,4.6,9,6.1,6.1,8.5Z"/></g></g></svg></span><b>В избранное</b></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
 								</ul>
 							</div>
 						</div>
@@ -414,12 +452,13 @@
 				<div class="accessories-slide">
 					<div class="product">
 						<div class="product-wrap">
+							<a href="#" class="product-wrap__button"></a>
 							<div class="product-img">
 								<img src="img/product-1.png" alt="">
 							</div>
 							<div class="product-descr">
 								<span class="product-descr__code">Артикул: 579634</span>
-								<span class="product-descr__name">Mystery MSF-2433</span>
+								<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
 								<span class="product-descr__category">Вентилятор настольный</span>
 								<div class="product-descr__row">
 									<div>
@@ -427,15 +466,15 @@
 										<p class="product-descr__price">35 800 р.</p>
 									</div>
 									<div>
-										<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
+										<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
 									</div>
 								</div>
 							</div>
 							<div class="product-bottom">
-								<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
+								<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
 								<ul>
-									<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-									<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="12px" viewBox="0 0 12 10"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M12,3h0A3.15,3.15,0,0,0,8.7,0,3.86,3.86,0,0,0,6,1.1,3.86,3.86,0,0,0,3.3,0H3.2A3.12,3.12,0,0,0,0,3C0,5.1,2,6.8,5.2,9.3L6,10l.8-.7h0C9.9,6.7,12,5,12,3ZM6.1,8.5h0L6,8.4C3.1,6,1.3,4.5,1.3,2.9V2.8A1.93,1.93,0,0,1,3.4,1,2.48,2.48,0,0,1,5.6,2.3H6.7A2.33,2.33,0,0,1,8.8,1h.1a2,2,0,0,1,2,1.9C10.8,4.6,9,6.1,6.1,8.5Z"/></g></g></svg></span><b>В избранное</b></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
 								</ul>
 							</div>
 						</div>
@@ -444,12 +483,13 @@
 				<div class="accessories-slide">
 					<div class="product">
 						<div class="product-wrap">
+							<a href="#" class="product-wrap__button"></a>
 							<div class="product-img">
 								<img src="img/product-1.png" alt="">
 							</div>
 							<div class="product-descr">
 								<span class="product-descr__code">Артикул: 579634</span>
-								<span class="product-descr__name">Mystery MSF-2433</span>
+								<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
 								<span class="product-descr__category">Вентилятор настольный</span>
 								<div class="product-descr__row">
 									<div>
@@ -457,15 +497,15 @@
 										<p class="product-descr__price">35 800 р.</p>
 									</div>
 									<div>
-										<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
+										<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
 									</div>
 								</div>
 							</div>
 							<div class="product-bottom">
-								<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
+								<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
 								<ul>
-									<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-									<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="12px" viewBox="0 0 12 10"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M12,3h0A3.15,3.15,0,0,0,8.7,0,3.86,3.86,0,0,0,6,1.1,3.86,3.86,0,0,0,3.3,0H3.2A3.12,3.12,0,0,0,0,3C0,5.1,2,6.8,5.2,9.3L6,10l.8-.7h0C9.9,6.7,12,5,12,3ZM6.1,8.5h0L6,8.4C3.1,6,1.3,4.5,1.3,2.9V2.8A1.93,1.93,0,0,1,3.4,1,2.48,2.48,0,0,1,5.6,2.3H6.7A2.33,2.33,0,0,1,8.8,1h.1a2,2,0,0,1,2,1.9C10.8,4.6,9,6.1,6.1,8.5Z"/></g></g></svg></span><b>В избранное</b></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
 								</ul>
 							</div>
 						</div>
@@ -474,12 +514,13 @@
 				<div class="accessories-slide">
 					<div class="product">
 						<div class="product-wrap">
+							<a href="#" class="product-wrap__button"></a>
 							<div class="product-img">
 								<img src="img/product-1.png" alt="">
 							</div>
 							<div class="product-descr">
 								<span class="product-descr__code">Артикул: 579634</span>
-								<span class="product-descr__name">Mystery MSF-2433</span>
+								<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
 								<span class="product-descr__category">Вентилятор настольный</span>
 								<div class="product-descr__row">
 									<div>
@@ -487,15 +528,15 @@
 										<p class="product-descr__price">35 800 р.</p>
 									</div>
 									<div>
-										<a class="product-descr__link" href="#"><img src="img/basket-white.png" alt=""></a>
+										<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
 									</div>
 								</div>
 							</div>
 							<div class="product-bottom">
-								<p><img src="img/car.png" alt="">Доставим: <span>Завтра</span></p>
+								<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
 								<ul>
-									<li><a href="#"><img src="img/love-blue.png" alt=""></a></li>
-									<li><a href="#"><img src="img/bar-blue.png" alt=""></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="12px" viewBox="0 0 12 10"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M12,3h0A3.15,3.15,0,0,0,8.7,0,3.86,3.86,0,0,0,6,1.1,3.86,3.86,0,0,0,3.3,0H3.2A3.12,3.12,0,0,0,0,3C0,5.1,2,6.8,5.2,9.3L6,10l.8-.7h0C9.9,6.7,12,5,12,3ZM6.1,8.5h0L6,8.4C3.1,6,1.3,4.5,1.3,2.9V2.8A1.93,1.93,0,0,1,3.4,1,2.48,2.48,0,0,1,5.6,2.3H6.7A2.33,2.33,0,0,1,8.8,1h.1a2,2,0,0,1,2,1.9C10.8,4.6,9,6.1,6.1,8.5Z"/></g></g></svg></span><b>В избранное</b></a></li>
+									<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
 								</ul>
 							</div>
 						</div>
@@ -516,7 +557,7 @@
 		<div class="footer-middle">
 			<div class="wrapper">
 				<div class="footer-middle__col">
-					<h3 class="footer-middle__col-title">ИКСКОМ ДОМ</h3>
+					<h3 class="footer-middle__col-title"><a href="#">ИКСКОМ ДОМ</a></h3>
 					<ul>
 						<li><a href="#">О компании</a></li>
 						<li><a href="#">Партнеры</a></li>
@@ -525,7 +566,7 @@
 					</ul>
 				</div><!-- col(1) -->
 				<div class="footer-middle__col">
-					<h3 class="footer-middle__col-title">Интернет-магазин</h3>
+					<h3 class="footer-middle__col-title"><a href="#">Интернет-магазин</a></h3>
 					<ul>
 						<li><a href="#">Каталог товаров</a></li>
 						<li><a href="#">Методы оплаты</a></li>
@@ -534,7 +575,7 @@
 					</ul>
 				</div><!-- col(2) -->
 				<div class="footer-middle__col">
-					<h3 class="footer-middle__col-title">Услуги</h3>
+					<h3 class="footer-middle__col-title"><a href="#">Услуги</a></h3>
 					<ul>
 						<li><a href="#">установка сплит-систем</a></li>
 						<li><a href="#">техническая поддержка</a></li>
@@ -543,7 +584,7 @@
 					</ul>
 				</div><!-- col(3) -->
 				<div class="footer-middle__col">
-					<h3 class="footer-middle__col-title">контакты</h3>
+					<h3 class="footer-middle__col-title"><a href="#">контакты</a></h3>
 					<ul>
 						<li><a href="#">М. Водный стадион</a></li>
 						<li><a href="#">Оформление заказа</a></li>
@@ -582,20 +623,19 @@
 				<div class="footer-bottom__col footer-bottom__col-social">
 					<p>Мы в соц.сетях:</p>
 					<ul>
-						<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
-						<li><a href="#"><img src="img/vk.png" alt=""></a></li>
-						<li><a href="#"><img src="img/insta.png" alt=""></a></li>
-						<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
-						<li><a href="#"><img src="img/odnok.png" alt=""></a></li>
-						<li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+						<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><g data-name="Layer 2"><g data-name="Layer 1"><circle fill="#fff" stroke="#e3e3e3" stroke-miterlimit="10" cx="18" cy="18" r="17.5"/><path fill="#a8a8a8" d="M21.6,15.4H19.2V13.8a.62.62,0,0,1,.7-.7h1.7V10.5H19.3a3,3,0,0,0-3.2,3.2v1.7H14.6v2.7h1.5v7.5h3.1V18.1h2.1Z"/></g></g></svg></a></li>
+						<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><g data-name="Layer 2"><g data-name="Layer 1"><circle fill="#fff" stroke="#e3e3e3" stroke-miterlimit="10" cx="18" cy="18" r="17.5"/><g><path fill="#a8a8a8" d="M9.5,13.3c-.1-.7,3.3-.3,3.3-.3s2,5,2.8,5,.4-4.2.4-4.2-1-.3-1-.6,1-.7,1-.7h2.9c.3,0,.5.6.5.9v4.5h.8a17.28,17.28,0,0,0,1.2-2.3c.5-1.2,1.2-2.7,1.2-2.7h3.3s.6,0,.5.5c-.1.7-2.3,4-2.8,5.1-.3.8,1.5,2,2.2,3.2a3.58,3.58,0,0,1,.5,1.7H22.4l-2-2.3a.63.63,0,0,0-.7.1.94.94,0,0,0-.3.7v1.5H16.3s-2.4-.8-4.4-4.4C10,15.7,9.6,14,9.5,13.3Z"/></g></g></g></svg></a></li>
+						<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><g data-name="Layer 2"><g data-name="Layer 1"><circle fill="#fff" stroke="#e3e3e3" stroke-miterlimit="10" cx="18" cy="18" r="17.5"/><g data-name="Layer 2"><g data-name="Layer 1-2"><path fill="#a8a8a8" d="M17.8,22.1a4.46,4.46,0,0,1-4.4-4.5,4.6,4.6,0,0,1,4.5-4.4,4.37,4.37,0,0,1,4.4,4.4,4.48,4.48,0,0,1-4.5,4.5Zm0-6.9a2.6,2.6,0,1,0,2.6,2.6,2.65,2.65,0,0,0-2.6-2.6Z"/><path fill="#a8a8a8" d="M22.2,15.1a1.45,1.45,0,0,1-.1-2.9,1.52,1.52,0,0,1,1.5,1.4h0A1.45,1.45,0,0,1,22.2,15.1Zm0-1.8c-.3,0-.4.1-.4.4s.1.4.4.4.4-.1.4-.4h0C22.6,13.4,22.5,13.3,22.2,13.3Z"/><path fill="#a8a8a8" d="M21.7,26.1H13.8a4.37,4.37,0,0,1-4.4-4.4V13.8a4.37,4.37,0,0,1,4.4-4.4h7.9a4.37,4.37,0,0,1,4.4,4.4v7.9A4.31,4.31,0,0,1,21.7,26.1ZM13.8,11.2a2.65,2.65,0,0,0-2.6,2.6v7.9a2.65,2.65,0,0,0,2.6,2.6h7.9a2.65,2.65,0,0,0,2.6-2.6V13.8a2.65,2.65,0,0,0-2.6-2.6Z"/></g></g></g></g></svg></a></li>
+						<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><g data-name="Layer 2"><g data-name="Layer 1"><circle fill="#fff" stroke="#e3e3e3" stroke-miterlimit="10" cx="18" cy="18" r="17.5"/><path fill="#a8a8a8" d="M26,13.1a5.92,5.92,0,0,1-1.9.5,2.83,2.83,0,0,0,1.4-1.8,6.56,6.56,0,0,1-2.1.8,3.32,3.32,0,0,0-5.7,2.3,1.48,1.48,0,0,0,.1.7A9.38,9.38,0,0,1,11,12.2a2.93,2.93,0,0,0-.4,1.6,3.28,3.28,0,0,0,1.5,2.7,4.19,4.19,0,0,1-1.5-.4h0a3.23,3.23,0,0,0,2.6,3.2,2.77,2.77,0,0,1-.9.1,1.27,1.27,0,0,1-.6-.1,3.24,3.24,0,0,0,3.1,2.3A6.36,6.36,0,0,1,10.7,23H9.9a9.76,9.76,0,0,0,5,1.5,9.26,9.26,0,0,0,9.3-9.3v-.4A5.92,5.92,0,0,0,26,13.1Z"/></g></g></svg></a></li>
+						<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><g data-name="Layer 2"><g data-name="Layer 1"><circle fill="#fff" stroke="#e3e3e3" stroke-miterlimit="10" cx="18" cy="18" r="17.5"/><g><path fill="#a8a8a8" d="M18,12.4a1.7,1.7,0,1,1-1.7,1.7A1.69,1.69,0,0,1,18,12.4Zm0,5.9a4.2,4.2,0,1,0-4.2-4.2A4.23,4.23,0,0,0,18,18.3Zm1.7,3.4a6.43,6.43,0,0,0,2.4-1,1.23,1.23,0,0,0-1.3-2.1,5.33,5.33,0,0,1-5.7,0,1.23,1.23,0,0,0-1.3,2.1,8.18,8.18,0,0,0,2.4,1L13.9,24a1.15,1.15,0,0,0,0,1.7,1.49,1.49,0,0,0,.9.4,1.22,1.22,0,0,0,.9-.4L18,23.4l2.3,2.3A1.2,1.2,0,0,0,22,24l-2.3-2.3Z"/></g></g></g></svg></a></li>
+						<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><g data-name="Layer 2"><g data-name="Layer 1"><circle fill="#fff" stroke="#e3e3e3" stroke-miterlimit="10" cx="18" cy="18" r="17.5"/><path fill="#a8a8a8" d="M22.9,12.9H13.2a2.48,2.48,0,0,0-2.5,2.5v5.2a2.48,2.48,0,0,0,2.5,2.5h9.7a2.48,2.48,0,0,0,2.5-2.5V15.4A2.48,2.48,0,0,0,22.9,12.9Zm-2,5.2-4.4,2.3h-.2V15.8a.1.1,0,0,1,.1-.1h.1L20.9,18c.1-.1.1,0,0,.1Z"/></g></g></svg></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
+	<!-- 2. При выборе вида отображения товаров Таблица/список логичнее черным выделить активный вид, а не серым, как сейчас -->
 	<!-- end footer -->
-	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
-	<link rel="stylesheet" href="css/main.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/scripts.min.js"></script>
