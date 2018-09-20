@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<div class="modal modal-authorization" id="modal-authorization">
+		<div class="cancel">
+			<img src="img/cancel.svg" alt="">
+		</div>
+		<h3 class="modal-authorization__title">Авторизация</h3>
+		<form action="">
+			<div class="modal-form">
+				<div class="modal-form__input">
+					<label for="i-1">Логин</label>
+					<input id="i-1" type="text">
+				</div>
+				<div class="modal-form__input">
+					<label for="i-2">Пароль </label>
+					<input id="i-2" type="text">
+				</div>
+				<div class="modal-form__input">
+					<label for="i-3">Выберите ДЦ</label>
+					<select name="" id="i-3">
+						<option value=""></option>
+						<option value="">1</option>
+						<option value="">2</option>
+					</select>
+				</div>
+				<div class="modal-form__bottom">
+					<a href="#" class="main-button">Войти</a>
+					<ul>
+						<li><a href="#">Забыли пароль?</a></li>
+						<li><a class="phone" href="#">8 800 770 7000</a></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-top">
+				<div class="header-logo">
+					<a href="#"></a>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="header-bottom__logo">
+				</div>
+				<div class="header-bottom__phone">
+					<a href="#"><img src="img/icon.svg" alt=""><span>8 (800) 770 -70-00</span></a>
+				</div>
+				<div class="header-bottom__right">
+					<a class="header-bottom__link button-modal" href="#modal-authorization">Вход для дилера</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start content -->
+	<section class="content">
+		<div class="wrapper">
+			<div class="content-wrap">
+				<div class="content-wrap__block content-wrap__block-active">
+					<div class="content-wrap__main">
+						<p class="content-wrap__main-top">Добро пожаловать на сайт регистрации новых клиентов Цезарь Сателлит. Для регистрации нажмите кнопку Далее.</p>
+						<a href="#" class="main-button button-block__next">Далее</a>
+						<p class="content-wrap__main-bottom">Если Вы уже являетесь клиентом ЦС, пожалуйста, используйте <a href="#">Личный Кабинет</a> для подключения новых услуг.</p>
+						<p class="content-wrap__main-bottom">Если Вы забыли свой логин или пароль для доступа в <a href="#">Личный Кабинет</a>, пожалуйста, <a href="#">воспользуйтесь формой восстановления пароля</a>.</p>
+					</div>
+				</div><!-- block(1) -->
+				<div class="content-wrap__block">
+					<div class="content-wrap__tab">
+						<ul class="content-wrap__tab-list">
+							<li><a class="active-tab" href="#tab-1">Пакеты услуг</a></li>
+							<li><a href="#tab-2">Статистика и отчеты</a></li>
+							<li><a href="#tab-3">Редактирование данных</a></li>
+						</ul>
+						<div class="content-wrap__tab-wrap">
+							<div class="content-wrap__tab-bl content-wrap__tab-active" id="tab-1">
+								<div class="content-wrap__tab-row">
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul>
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(1) -->
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul class="list-open">
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more content-wrap__tab-more__active"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(2) -->
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul>
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(3) -->
+								</div>
+							</div>
+							<div class="content-wrap__tab-bl" id="tab-2">
+								<div class="content-wrap__tab-row">
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul>
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(1) -->
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul class="list-open">
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more content-wrap__tab-more__active"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(2) -->
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul>
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(3) -->
+								</div>
+							</div>
+							<div class="content-wrap__tab-bl" id="tab-3">
+								<div class="content-wrap__tab-row">
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul>
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(1) -->
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul class="list-open">
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more content-wrap__tab-more__active"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(2) -->
+									<div class="content-wrap__tab-block">
+										<div class="content-wrap__tab-block__wrap">
+											<a href="#" class="content-wrap__tab-tag">Comfrot</a>
+											<p class="content-wrap__tab-name">Абонентская плата</p>
+											<p class="content-wrap__tab-price">4 900 руб/мес</p>
+											<a href="#" class="main-button button-block__next">Выбрать</a>
+											<ul>
+												<li>Юридическая консультация<span>Без ограничений</span></li>
+												<li>Вызов экстренных служб<span>Без ограничений</span></li>
+												<li>Помощь при ДТП (консультации по Европротоколу, удаленное урегулирование)<span>Без ограничений</span></li>
+												<li>Экстренный вызов ЧОП/ГБР<span>1 раз в год</span></li>
+												<li>"ДТП под ключ"<span>1 раз в год</span></li>
+												<li>Консьерж сервис<span>Без ограничений</span></li>
+												<li>Техпомощь<span>2 раз в год</span></li>
+												<li>Проведение независимой экспертизы<span>1 раз в год</span></li>
+												<li>Вызов эвакуатора<span>1 раз в год</span></li>
+											</ul>
+											<p class="content-wrap__tab-more"><span>Подробнее</span></p>
+										</div>
+									</div><!-- block(3) -->
+								</div>
+							</div>
+							<div class="content-wrap__tab-bottom">
+								<p>Нажимая на кнопку “Заказать” вы соглашаетесь с <a href="#">условием оферты</a></p>
+								<p>Более подробно ознакомиться с описанием Пакетов услуг вы можете <a href="#">на сайте</a></p>
+							</div>
+						</div>
+					</div>
+				</div><!-- block(2) -->
+				<div class="content-wrap__block">
+					<h2 class="content-wrap__title">Регистрация</h2>
+					<div class="content-wrap__check">
+						<h3 class="content-wrap__check-title">Контактные данные</h3>
+						<form action="">
+							<div class="content-wrap__input">
+								<label for="ii-1">Ваша фамилия</label>
+								<input id="ii-1" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-2">Ваше имя</label>
+								<input id="ii-2" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-3">Ваше отчество</label>
+								<input id="ii-3" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-4">Введите дату рождения</label>
+								<input id="ii-4" type="date" class="input-date">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-5">Выберите пол</label>
+								<select name="" id="ii-5">
+									<option value=""></option>
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-6">Ваш телефон</label>
+								<input id="ii-6" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-7">Ваш email<p>(опционально)</p></label>
+								<input id="ii-7" type="text">
+								<p>(опционально)</p>
+							</div>
+							<h3 class="content-wrap__check-title">Паспортные данные</h3>
+							<div class="content-wrap__input">
+								<label for="ii-8">Введите номер паспорта</label>
+								<input id="ii-8" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-9">Введите дату выдачи</label>
+								<input id="ii-9" type="date" class="input-date">
+							</div>
+							<a href="#" class="content-wrap__input-add">+ Добавить контактное лицо</a>
+							<div class="content-wrap__input">
+								<label for="i-10">Звонить по оплате</label>
+								<select name="" id="i-10">
+									<option value="">1. Пономарев</option>
+									<option value="">1. Пономарев</option>
+									<option value="">1. Пономарев</option>
+								</select>
+							</div>
+							<div class="content-wrap__buttons">
+								<a href="#" class="main-button button-block__next">Далее</a>
+							</div>
+						</form>
+					</div>
+				</div><!-- block(3) -->
+				<div class="content-wrap__block">
+					<h2 class="content-wrap__title">Регистрация транспортного средства</h2>
+					<div class="content-wrap__check">
+						<div class="content-wrap__input">
+							<label for="ii-11">Регион эксплуатации ТС</label>
+							<input id="ii-11" type="text">
+						</div>
+						<h3 class="content-wrap__check-title">Автомобиль</h3>
+						<form action="">
+							<div class="content-wrap__input">
+								<label for="ii-12">VIN ТС</label>
+								<input id="ii-12" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-13">Госномер ТС</label>
+								<input id="ii-13" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-14">Марка ТС</label>
+								<select name="" id="ii-14">
+									<option value=""></option>
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-15">Модель ТС</label>
+								<select name="" id="ii-15">
+									<option value=""></option>
+									<option value="">1</option>
+									<option value="">2</option>
+								</select>
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-16">Цвет</label>
+								<input id="ii-16" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-17">Год выпуска</label>
+								<input id="ii-17" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-18">Автосалон, в котором приобреталось ТС<p>(опционально)</p></label>
+								<input id="ii-18" type="text">
+								<p>(опционально)</p>
+							</div>
+							<h3 class="content-wrap__check-title">Данные о страховке</h3>
+							<div class="content-wrap__input">
+								<label for="ii-19">Номер страхового полиса ОСАГО</label>
+								<input id="ii-19" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-20">Назначение СК ОСАГО</label>
+								<input id="ii-20" type="text">
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-21">Дата окончания действия полиса ОСАГО</label>
+								<input id="ii-21" type="date" class="input-date">
+							</div>
+							<div class="content-wrap__checkbox">
+								<input type="checkbox" checked>
+								<span></span>
+								<p>Имеется полис КАСКО?</p>
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-22">Номер страхового полиса КАСКО<p>(опционально)</p></label>
+								<input id="ii-22" type="text">
+								<p>(опционально)</p>
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-23">Наименование СК КАСКО<p>(опционально)</p></label>
+								<input id="ii-23" type="text">
+								<p>(опционально)</p>
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-24">Дата окончания действия полиса КАСКО<p>(опционально)</p></label>
+								<input id="ii-24" type="date" class="input-date">
+								<p>(опционально)</p>
+							</div>
+							<div class="content-wrap__checkbox">
+								<input type="checkbox" checked>
+								<span></span>
+								<p>Имеется франшиза</p>
+							</div>
+							<div class="content-wrap__input">
+								<label for="ii-25">Сумма франшизы<p>(опционально)</p></label>
+								<input id="ii-25" type="date" class="input-date">
+								<p>(опционально)</p>
+							</div>
+							<div class="content-wrap__buttons">
+								<a href="#" class="main-second button-block__prev">Назад</a>
+								<a href="#" class="main-button button-block__next">Далее</a>
+							</div>
+						</form>
+					</div>
+				</div><!-- block(4) -->
+				<div class="content-wrap__block">
+					<h2 class="content-wrap__title">Подтверждение регистраци</h2>
+					<div class="content-wrap__check">
+						<p class="content-wrap__check-text">На указанный Вами при регистрации номер телефона владельца договора отправлено сообщение с кодом, введите полученный код в форму ниже</p>
+						<div class="content-wrap__input content-wrap__input-small">
+							<label for="ii-26">Код полученный в СМС</label>
+							<input id="ii-26" type="text">
+						</div>
+						<div class="content-wrap__buttons">
+							<a href="#" class="main-second button-block__prev">Назад</a>
+							<a href="#" class="main-button button-block__next">Далее</a>
+						</div>
+					</div>
+				</div><!-- block(5) -->
+				<div class="content-wrap__block">
+					<h2 class="content-wrap__title">Подтверждение регистраци</h2>
+					<div class="content-wrap__check">
+						<ul class="content-wrap__check-list">
+							<li>Регистрация прошла успешно!</li>
+							<li>Ваш номер договора (ПИН): <span>5356216</span></li>
+							<li>Рекомендуемая сумма к оплате: <span>9 900 ₽</span></li>
+							<li>Для перехода к оплате услуг нажмите кнопку “Далее”</li>
+						</ul>
+						<div class="content-wrap__buttons">
+							<a href="#" class="main-button">Далее</a>
+						</div>
+					</div>
+				</div><!-- block(6) -->
+			</div>
+		</div>
+	</section>
+	<!-- end content -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<a href="#"><img src="img/icon.svg" alt=""><span>8 (800) 770 -70-00</span></a>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
