@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Main</title>
+	<title>Cards</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -49,10 +49,10 @@
 			</div>
 		</div>
 	</div>
-	<!-- start main -->
-	<section class="main">
+	<!-- start page-main -->
+	<section class="page-main" style="background-image: url(img/aqua-bg.png);">
 		<!-- start header -->
-		<header class="header">
+		<header class="header header-static header-static__second">
 			<div class="header-bar">
 				<img src="img/icons/burger.svg" alt="" class="header-bar__1">
 				<img src="img/icons/close.svg" alt="" class="header-bar__2">
@@ -74,11 +74,12 @@
 						<li><a href="#">Фитнес</a></li>
 						<li><a href="#">SPA</a></li>
 						<li><a href="#">Аква-Зона</a></li>
-						<li><a href="#">Клубные карты</a></li>
+						<li><a class="page-active" href="#">Клубные карты</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					<div class="header-middle__bottom">
 						<ul>
+							<li><a href="#">Процедуры</a></li>
 							<li><a href="#">Продукция</a></li>
 							<li><a href="#">Расписание занятий</a></li>
 							<li><a href="#">Акции</a></li>
@@ -94,40 +95,17 @@
 			</div>
 		</header>
 		<!-- end header -->
-		<div class="main-slider">
-			<div class="main-slide" style="background-image: url(img/main-slide-1.jpg);">
-				<div class="main-slide__info">
-				<h3 class="main-slide__info-title">Клуб Riviera Fitness & SPA, Николино</h3>
-				<a class="main-slide__info-vs" href="#">Внешний вид</a>
+		<div class="page-main__wrap page-main__wrap-pos">
+			<div class="page-main__info">
+				<h1 class="page-main__title">Riviera</h1>
+				<div class="page-main__scroll">
+					<p>прокрутите вниз</p>
+					<img src="img/icons/mouse.svg" alt="">
+				</div>
 			</div>
-			</div><!-- slide(1) -->
-			<div class="main-slide" style="background-image: url(img/main-slide-1.jpg);">
-				<div class="main-slide__info">
-				<h3 class="main-slide__info-title">Клуб Riviera Fitness & SPA, Николино</h3>
-				<a class="main-slide__info-vs" href="#">Внешний вид</a>
-			</div>
-			</div><!-- slide(2) -->
-			<div class="main-slide" style="background-image: url(img/main-slide-1.jpg);">
-				<div class="main-slide__info">
-				<h3 class="main-slide__info-title">Клуб Riviera Fitness & SPA, Николино</h3>
-				<a class="main-slide__info-vs" href="#">Внешний вид</a>
-			</div>
-			</div><!-- slide(3) -->
-			<div class="main-slide" style="background-image: url(img/main-slide-1.jpg);">
-				<div class="main-slide__info">
-				<h3 class="main-slide__info-title">Клуб Riviera Fitness & SPA, Николино</h3>
-				<a class="main-slide__info-vs" href="#">Внешний вид</a>
-			</div>
-			</div><!-- slide(4) -->
-			<div class="main-slide" style="background-image: url(img/main-slide-1.jpg);">
-				<div class="main-slide__info">
-				<h3 class="main-slide__info-title">Клуб Riviera Fitness & SPA, Николино</h3>
-				<a class="main-slide__info-vs" href="#">Внешний вид</a>
-			</div>
-			</div><!-- slide(5) -->
 		</div>
 	</section>
-	<!-- end main -->
+	<!-- end page-main -->
 	<!-- start video -->
 	<section class="video">
 		<div class="video-wrap">
@@ -140,125 +118,219 @@
 			<div class="video-right">
 				<div class="video-wrap__info">
 					<p class="video-wrap__info-subtitle">Fitness&SPA</p>
-					<h3 class="video-wrap__info-title">Клуб «Ривьера»</h3>
+					<h3 class="video-wrap__info-title">О клубе</h3>
 					<p>Клуб Riviera расположен на 2-м Успенском шоссе на территории поселка «Николино» внутри природного лесного массива.</p>
 					<p>Наша философия опирается на поиск гармонии между физическим и ментальным состоянием человека.</p>
 					<p>Благополучие давно не измеряется деньгами, а зависит лишь от уверенности во внешнем и внутреннем комфорте.</p>
-					<a href="#" class="main-button video-wrap__info-button">Узнать О клубе</a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- end video -->
-	<!-- start news -->
-	<section class="news">
-		<div class="wrapper">
-			<h3 class="title-mob">Новости</h3>
-			<div class="news-row news-row__slider">
-				<div class="news-col">
-					<a href="#" class="news-col__link"></a>
-					<div class="news-col__img" style="background-image: url(img/news-1.jpg);"></div>
-					<div class="news-col__descr">
-						<h3 class="news-col__descr-title">Усадьба JAZZ</h3>
-						<p class="news-col__descr-date">8 июня 2018</p>
+	<!-- start gallery -->
+	<section class="gallery">
+		<div class="section-info">
+			<h4 class="section-info__subtitle">интерьер</h4>
+			<h2 class="section-info__title">Фотогалерея</h2>
+		</div>
+		<div class="gallery-row">
+			<div class="gallery-col gallery-col__main">
+				<img src="img/photo-big.png" alt="">
+			</div>
+			<div class="gallery-col gallery-col__row">
+				<div class="gallery-col__small">
+					<img src="img/photo-small.png" alt="">
+				</div>
+				<div class="gallery-col__small">
+					<img src="img/photo-small.png" alt="">
+				</div>
+				<div class="gallery-col__small">
+					<img src="img/photo-small.png" alt="">
+				</div>
+				<div class="gallery-col__small">
+					<img src="img/photo-small.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="gallery-bottom">
+			<a href="#" class="main-button video-wrap__info-button">еще 20 фото</a>
+		</div>
+	</section>
+	<!-- end gallery -->
+	<!-- start command -->
+	<section class="command">
+		<div class="section-info">
+			<h4 class="section-info__subtitle">Профессиональная</h4>
+			<h2 class="section-info__title">Команда</h2>
+		</div>
+		<div class="command-wrap">
+			<div class="command-top">
+				<div class="command-top__col command-top__col-active" data-tab="tab-1">
+					<div>
+						<img src="img/icons/fitness.svg" alt="">
 					</div>
-				</div><!-- col(1) -->
-				<div class="news-col">
-					<a href="#" class="news-col__link"></a>
-					<div class="news-col__img" style="background-image: url(img/news-1.jpg);"></div>
-					<div class="news-col__descr">
-						<h3 class="news-col__descr-title">Акция 1+1 вторая карта в подарок!</h3>
-						<p class="news-col__descr-date">26 апреля 2018</p>
+					<p>Фитнес</p>
+				</div>
+				<div class="command-top__col" data-tab="tab-2">
+					<div>
+						<img src="img/icons/meditation.svg" alt="">
 					</div>
-				</div><!-- col(2) -->
-				<div class="news-col news-col__info">
-					<a href="#" class="news-col__link"></a>
-					<div class="news-col__descr">
-						<h3 class="news-col__descr-title">Программа Men's power</h3>
-						<p class="news-col__descr-date">24 апреля 2018</p>
+					<p>Пилатес и йога</p>
+				</div>
+				<div class="command-top__col" data-tab="tab-3">
+					<div>
+						<img src="img/icons/swimming.svg" alt="">
 					</div>
-				</div><!-- col(3) -->
-				<div class="news-col">
-					<a href="#" class="news-col__link"></a>
-					<div class="news-col__img" style="background-image: url(img/news-1.jpg);"></div>
-					<div class="news-col__descr">
-						<h3 class="news-col__descr-title">Программа AQUA SLIM</h3>
-						<p class="news-col__descr-date">7 января 2018</p>
+					<p>Бассейн</p>
+				</div>
+				<div class="command-top__col" data-tab="tab-4">
+					<div>
+						<img src="img/icons/skincare.svg" alt="">
 					</div>
-				</div><!-- col(4) -->
+					<p>SPA</p>
+				</div>
+				<div class="command-top__col" data-tab="tab-5">
+					<div>
+						<img src="img/icons/wellness-tourism.svg" alt="">
+					</div>
+					<p>Администрация</p>
+				</div>
+			</div>
+			<div class="content-block__select">
+				<div class="content-block__select-top">
+					<p>Фитнес</p>
+				</div>
+				<div class="content-block__select-wrap">
+					<p data-tab="tab-1">Фитнес</p>
+					<p data-tab="tab-2">Пилатес и йога</p>
+					<p data-tab="tab-3">Бассейн</p>
+					<p data-tab="tab-4">SPA</p>
+					<p data-tab="tab-5">Администрация</p>
+				</div>
+			</div>
+			<div class="cards-wrap command-row">
+				<div class="command-tab command-tab__open" id="tab-1">
+					<div class="cards-col">
+						<div class="cards-col__descr">
+							<h3 class="cards-col__title">Сергей Кузьмин</h3>
+							<div class="cards-col__descr-wrap">
+								<div class="cards-col__descr-img">
+									<img src="img/human-1.png" alt="">
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Профессиональная категория</p>
+									<span>Элит тренер по бодибилдингу и фитнесу</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Спортивная категория</p>
+									<span>КМС по дзю-до, КМС по футболу</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Специализация</p>
+									<span>Индивидуальный контроль и организация тренировочного процесса по установленным целям</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Опыт работы</p>
+									<span>Более 15 лет</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(1) -->
+					<div class="cards-col cards-col__second">
+						<div class="cards-col__descr">
+							<h3 class="cards-col__title">Александр Колышкин</h3>
+							<div class="cards-col__descr-wrap">
+								<div class="cards-col__descr-img">
+									<img src="img/human-1.png" alt="">
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Профессиональная категория</p>
+									<span>Элит тренер по бодибилдингу и фитнесу</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Спортивная категория</p>
+									<span>КМС по дзю-до, КМС по футболу</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Специализация</p>
+									<span>Индивидуальный контроль и организация тренировочного процесса по установленным целям</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Опыт работы</p>
+									<span>Более 15 лет</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(2) -->
+					<div class="cards-col">
+						<div class="cards-col__descr">
+							<h3 class="cards-col__title">Сергей Кузьмин</h3>
+							<div class="cards-col__descr-wrap">
+								<div class="cards-col__descr-img">
+									<img src="img/human-1.png" alt="">
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Профессиональная категория</p>
+									<span>Элит тренер по бодибилдингу и фитнесу</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Спортивная категория</p>
+									<span>КМС по дзю-до, КМС по футболу</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Специализация</p>
+									<span>Индивидуальный контроль и организация тренировочного процесса по установленным целям</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Опыт работы</p>
+									<span>Более 15 лет</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(3) -->
+					<div class="cards-col cards-col__second">
+						<div class="cards-col__descr">
+							<h3 class="cards-col__title">Александр Колышкин</h3>
+							<div class="cards-col__descr-wrap">
+								<div class="cards-col__descr-img">
+									<img src="img/human-1.png" alt="">
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Профессиональная категория</p>
+									<span>Элит тренер по бодибилдингу и фитнесу</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Спортивная категория</p>
+									<span>КМС по дзю-до, КМС по футболу</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Специализация</p>
+									<span>Индивидуальный контроль и организация тренировочного процесса по установленным целям</span>
+								</div>
+								<div class="cards-col__descr-block">
+									<p>Опыт работы</p>
+									<span>Более 15 лет</span>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(4) -->
+				</div>
+				<div class="command-tab" id="tab-2">
+					<p>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi non, ab cupiditate laborum eveniet neque ullam repellendus aspernatur officiis illo.</p>
+				</div>
+				<div class="command-tab" id="tab-3">
+					<p>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi non, ab cupiditate laborum eveniet neque ullam repellendus aspernatur officiis illo.</p>
+				</div>
+				<div class="command-tab" id="tab-4">
+					<p>3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi non, ab cupiditate laborum eveniet neque ullam repellendus aspernatur officiis illo.</p>
+				</div>
+				<div class="command-tab" id="tab-5">
+					<p>4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi non, ab cupiditate laborum eveniet neque ullam repellendus aspernatur officiis illo.</p>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end news -->
-	<!-- start services -->
-	<section class="services">
-		<div class="services-col__full" id="services-col-1" style="background-image: url(img/full-bg-1.jpg);"></div>
-		<div class="services-col__full" id="services-col-2" style="background-image: url(img/full-bg-2.jpg);"></div>
-		<div class="services-col__full" id="services-col-3" style="background-image: url(img/full-bg-3.jpg);"></div>
-		<div class="services-col__full" id="services-col-4" style="background-image: url(img/full-bg-4.jpg);"></div>
-		<div class="services-row services-slider">
-			<div class="services-col services-col__first" data-img='services-col-1'>
-				<a href="#" class="services-col__link"></a>
-				<div class="services-col__wrap">
-					<div class="services-col__img" style="background-image: url(img/bg-1.jpg);"></div>
-					<h3 class="services-col__title">Фитнес</h3>
-					<div class="services-col__descr">
-						<p>Зал для фитнеса расположен в мансардном этаже здания</p>
-						<a class="main-button" href="#">подробнее</a>
-					</div>
-				</div>
-			</div><!-- col(1) -->
-			<div class="services-col" data-img='services-col-2'>
-				<a href="#" class="services-col__link"></a>
-				<div class="services-col__wrap">
-					<div class="services-col__img" style="background-image: url(img/bg-2.jpg);"></div>
-					<h3 class="services-col__title">Фитнес</h3>
-					<div class="services-col__descr">
-						<p>Зал для фитнеса расположен в мансардном этаже здания</p>
-						<a class="main-button" href="#">подробнее</a>
-					</div>
-				</div>
-			</div><!-- col(2) -->
-			<div class="services-col" data-img='services-col-3'>
-				<a href="#" class="services-col__link"></a>
-				<div class="services-col__wrap">
-					<div class="services-col__img" style="background-image: url(img/bg-3.jpg);"></div>
-					<h3 class="services-col__title">Фитнес</h3>
-					<div class="services-col__descr">
-						<p>Зал для фитнеса расположен в мансардном этаже здания</p>
-						<a class="main-button" href="#">подробнее</a>
-					</div>
-				</div>
-			</div><!-- col(3) -->
-			<div class="services-col" data-img='services-col-4'>
-				<a href="#" class="services-col__link"></a>
-				<div class="services-col__wrap">
-					<div class="services-col__img" style="background-image: url(img/bg-4.jpg);"></div>
-					<h3 class="services-col__title">Фитнес</h3>
-					<div class="services-col__descr">
-						<p>Зал для фитнеса расположен в мансардном этаже здания</p>
-						<a class="main-button" href="#">подробнее</a>
-					</div>
-				</div>
-			</div><!-- col(4) -->
-		</div>
-	</section>
-	<!-- end services -->
-	<!-- start contacts -->
-	<section class="contacts">
-		<div id="map"></div>
-		<div class="contacts-wrap">
-			<div class="contacts-info">
-				<p class="contacts-info__subtitle">мы здесь</p>
-				<h3 class="contacts-info__title">Контактная информация</h3>
-				<div class="contacts-info__phone"><img src="img/icons/phone.svg" alt=""></div>
-				<a href="#" class="contacts-info__phone-link">+7 495 925 08 30</a>
-				<p class="contacts-info__text">Московская область, Одинцовский район,<br> 2-е Успенское шоссе, 23 км, пос. Николино</p>
-				<a href="#" class="main-button contacts-info__button">Схема проезда</a>
-			</div>
-		</div>
-	</section>
-	<!-- end contacts -->
+	<!-- end command -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="footer-wrap">
@@ -319,32 +391,6 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script>
-		ymaps.ready(init);
-		var myMap,
-		    myPlacemark;
-
-		function init(){    
-	    myMap = new ymaps.Map ("map", {
-	        center: [55.73653158, 37.65894151],
-	        zoom: 16,
-	        controls: []
-	    });
-	    myMap.behaviors.disable([
-			  'scrollZoom'
-			]);
-
-	    var myPlacemark = new ymaps.Placemark([55.7375, 37.6620], {}, {
-	        iconLayout: 'default#image',
-	        iconImageHref: 'img/map-ico.png',
-	        iconImageSize: [105, 30],
-	        iconImageOffset: [-52.5, -15]
-	    });
-
-		  myMap.geoObjects.add(myPlacemark);
-		}
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
