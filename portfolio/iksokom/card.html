@@ -21,6 +21,35 @@
 </head>
 <body>
 	<div class="modal-overlay"></div>
+	<div class="modal modal-reviews" id="modal-reviews">
+		<div class="cancel">
+			<img src="img/close.svg" alt="">
+		</div>
+		<div class="modal-reviews__top">
+			<h3 class="modal-reviews__title">Оставить отзыв</h3>
+			<p>на Вентилятор настольный First FA-5550-BA</p>
+		</div>
+		<form action="">
+			<div class="modal-reviews__middle">
+				<div class="modal-reviews__middle-input">
+					<label for="o-1">Представтесь *</label>
+					<input type="text" id="o-1">
+					<span></span>
+				</div>
+				<div class="modal-reviews__middle-textarea">
+					<label for="o-2">Ваш отзыв *</label>
+					<textarea id="o-2"></textarea>
+					<span></span>
+				</div>
+			</div>
+			<div class="modal-reviews__middle-rate">
+				<p>Рейтинг: *</p>
+			</div>
+			<div class="modal-reviews__bottom">
+				<button class="modal-reviews__button">Отправить</button>
+			</div>
+		</form>
+	</div>
 	<!-- start header -->
 	<header class="header">
 		<div class="header-top">
@@ -254,9 +283,9 @@
 							<li><a href="#block-2">Отзывы(2)</a></li>
 							<li><a href="#block-3">Акции</a></li>
 						</ul>
-						<p class="content-main__product-info__block-text">Настольный вентилятор First FA-5550-BA равномерно распределяет потоки воздуха и создавая комфортные условия. Доступно 2 режима работы с различной скоростью вращения лопастей. Крупные пластиковые лопасти при вращении не создают громких звуков.</p>
 						<div class="content-main__info-block block-active" id="block-1">
 							<h3 class="content-main__info-block__title acc-active">Описание и характеристики</h3>
+							<p class="content-main__product-info__block-text">Настольный вентилятор First FA-5550-BA равномерно распределяет потоки воздуха и создавая комфортные условия. Доступно 2 режима работы с различной скоростью вращения лопастей. Крупные пластиковые лопасти при вращении не создают громких звуков.</p>
 							<div class="content-main__info-block__wrap content-main__info-block__wrap-first">
 								<div class="content-main__info-row">
 									<div class="content-main__info-col">
@@ -297,13 +326,59 @@
 						<div class="content-main__info-block" id="block-2">
 							<h3 class="content-main__info-block__title">Отзывы(2)</h3>
 							<div class="content-main__info-block__wrap">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, tenetur eaque laborum ullam dolorem nulla deleniti. Deserunt odit cum nemo ipsa quos aspernatur recusandae laborum numquam quas omnis accusantium, eaque sint molestiae consectetur optio! Accusamus porro pariatur, iste quaerat assumenda.</p>
+								<div class="content-main__info-block__reviews">
+									<div class="content-main__info-block__reviews-info">
+										<h4 class="content-main__info-block__reviews-name">Николай Смирнов</h4>
+										<span>29.08.2018</span>
+										<img src="img/stars.png" alt="">
+									</div>
+									<div class="content-main__info-block__reviews-text">
+										<p>Приятный дизайн, удобная клавиатура. Крышка легко закрывается и открывается, при этом не болтается. Мощный, с производительностью полный порядок. Удобный. Отличный дисплей! Цвета сочные и насыщенные, сам экран четкий. Со звуком проблем нет. Конечно, при наличии колонок все вообще прекрасно, но я могу смотреть фильмы или слушать музыку даже без них.</p>
+										<p>Ноутбук мне очень понравился лазию в интернете и играю в игры и пока что всё радует. Акамулятор держит нормально 5-4 часа.Советую купить</p>
+									</div>
+								</div>
+								<div class="content-main__info-block__reviews">
+									<div class="content-main__info-block__reviews-info">
+										<h4 class="content-main__info-block__reviews-name">Николай Смирнов</h4>
+										<span>29.08.2018</span>
+										<img src="img/stars.png" alt="">
+									</div>
+									<div class="content-main__info-block__reviews-text">
+										<p>Приятный дизайн, удобная клавиатура. Крышка легко закрывается и открывается, при этом не болтается. Мощный, с производительностью полный порядок. Удобный. Отличный дисплей! Цвета сочные и насыщенные, сам экран четкий. Со звуком проблем нет. Конечно, при наличии колонок все вообще прекрасно, но я могу смотреть фильмы или слушать музыку даже без них.</p>
+										<p>Ноутбук мне очень понравился лазию в интернете и играю в игры и пока что всё радует. Акамулятор держит нормально 5-4 часа.Советую купить</p>
+									</div>
+								</div>
+								<div class="content-main__info-block__reviews-bottom">
+									<a class="button-modal" href="#modal-reviews">ОСтавить отзыв</a>
+									<p>Мы рады любым отзывам, которе оставляют наши клиенты, ведь они помогают всем выбрать качественный товар!</p>
+								</div>
 							</div>
 						</div>
 						<div class="content-main__info-block" id="block-3">
 							<h3 class="content-main__info-block__title">Акции</h3>
 							<div class="content-main__info-block__wrap">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus, temporibus, ea enim odit necessitatibus animi ab accusantium esse maiores reprehenderit omnis, voluptas ex nisi labore iure, eligendi sint dolore.</p>
+								<div class="content-main__info-block__wrap-row">
+									<div class="product product-bg">
+										<div class="product-bg__wrap" style="background: url(img/ac-bg.png);">
+											<a href="#" class="product-bg__link"></a>
+											<div class="product-bg__descr">
+												<h3 class="product-bg__descr-title">Соверменная акустика, качественный звук</h3>
+												<p class="product-bg__descr-text">Наушники Audio-Technica</p>
+												<a href="#" class="product-bg__descr-link">подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="product product-bg">
+										<div class="product-bg__wrap" style="background: url(img/ac-bg.png);">
+											<a href="#" class="product-bg__link"></a>
+											<div class="product-bg__descr">
+												<h3 class="product-bg__descr-title">Бесплатная доставка по Москве</h3>
+												<p class="product-bg__descr-text">При заказе от 1 500 руб.</p>
+												<a href="#" class="product-bg__descr-link">подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
