@@ -20,6 +20,117 @@
 	
 </head>
 <body>
+	<style>
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 100;
+			background-color: #1d1f20;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.sk-folding-cube {
+		  width: 100px;
+		  height: 100px;
+		  position: relative;
+		  margin: auto;
+		  -webkit-transform: rotateZ(45deg);
+		          transform: rotateZ(45deg);
+		}
+		.sk-folding-cube .sk-cube {
+		  float: left;
+		  width: 50%;
+		  height: 50%;
+		  position: relative;
+		  -webkit-transform: scale(1.1);
+		          transform: scale(1.1);
+		}
+		.sk-folding-cube .sk-cube:before {
+		  content: '';
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-color: #337ab7;
+		  -webkit-animation: sk-folding-cube-angle 2.4s infinite linear both;
+		          animation: sk-folding-cube-angle 2.4s infinite linear both;
+		  -webkit-transform-origin: 100% 100%;
+		          transform-origin: 100% 100%;
+		}
+		.sk-folding-cube .sk-cube-2 {
+		  -webkit-transform: scale(1.1) rotateZ(90deg);
+		          transform: scale(1.1) rotateZ(90deg);
+		}
+		.sk-folding-cube .sk-cube-3 {
+		  -webkit-transform: scale(1.1) rotateZ(180deg);
+		          transform: scale(1.1) rotateZ(180deg);
+		}
+		.sk-folding-cube .sk-cube-4 {
+		  -webkit-transform: scale(1.1) rotateZ(270deg);
+		          transform: scale(1.1) rotateZ(270deg);
+		}
+		.sk-folding-cube .sk-cube-2:before {
+		  -webkit-animation-delay: 0.3s;
+		          animation-delay: 0.3s;
+		}
+		.sk-folding-cube .sk-cube-3:before {
+		  -webkit-animation-delay: 0.6s;
+		          animation-delay: 0.6s;
+		}
+		.sk-folding-cube .sk-cube-4:before {
+		  -webkit-animation-delay: 0.9s;
+		          animation-delay: 0.9s;
+		}
+
+		@-webkit-keyframes sk-folding-cube-angle {
+		  0%, 10% {
+		    -webkit-transform: perspective(140px) rotateX(-180deg);
+		            transform: perspective(140px) rotateX(-180deg);
+		    opacity: 0;
+		  }
+		  25%, 75% {
+		    -webkit-transform: perspective(140px) rotateX(0deg);
+		            transform: perspective(140px) rotateX(0deg);
+		    opacity: 1;
+		  }
+		  90%, 100% {
+		    -webkit-transform: perspective(140px) rotateY(180deg);
+		            transform: perspective(140px) rotateY(180deg);
+		    opacity: 0;
+		  }
+		}
+
+		@keyframes sk-folding-cube-angle {
+		  0%, 10% {
+		    -webkit-transform: perspective(140px) rotateX(-180deg);
+		            transform: perspective(140px) rotateX(-180deg);
+		    opacity: 0;
+		  }
+		  25%, 75% {
+		    -webkit-transform: perspective(140px) rotateX(0deg);
+		            transform: perspective(140px) rotateX(0deg);
+		    opacity: 1;
+		  }
+		  90%, 100% {
+		    -webkit-transform: perspective(140px) rotateY(180deg);
+		            transform: perspective(140px) rotateY(180deg);
+		    opacity: 0;
+		  }
+		}
+	</style>
+	<div class="preloader" id="preloader">
+		<div class="sk-folding-cube">
+			<div class="sk-cube sk-cube-1"></div>
+			<div class="sk-cube sk-cube-2"></div>
+			<div class="sk-cube sk-cube-4"></div>
+			<div class="sk-cube sk-cube-3"></div>
+		</div>
+	</div>
 	<div class="modal-overlay"></div>
 	<div class="modal modal-reviews" id="modal-reviews">
 		<div class="cancel"></div>
@@ -206,6 +317,8 @@
 							</div>
 						</div>
 						<div id="category-10" class="category-block__col category-block__col-next category-block__col-second">
+							<div class="category-block__col-close"></div>
+							<h3 class="category-block__col-second__title">СКС</h3>
 							<ul>
 								<li><a href="#" data-block="#200">Вентиляторы</a></li>
 								<li><a href="#" data-block="#200">Вентиляционное оборудование</a></li>
@@ -219,8 +332,14 @@
 								<li><a href="#" data-block="#200">Кондиционеры</a></li>
 								<li><a href="#" data-block="#200">Обогреватели</a></li>
 							</ul>
+							<div class="category-block__col-second__bottom">
+								<p class="category-block__col-second__back">Вернуться назад</p>
+								<span class="category-block__col-second__close">Закрыть</span>
+							</div>
 						</div>
 						<div id="category-20" class="category-block__col category-block__col-next category-block__col-second">
+							<div class="category-block__col-close"></div>
+							<h3 class="category-block__col-second__title">Портативная техника</h3>
 							<ul>
 								<li><a href="#" data-block="#200">Вентиляторы</a></li>
 								<li><a href="#" data-block="#200">Вентиляционное оборудование</a></li>
@@ -234,15 +353,25 @@
 								<li><a href="#" data-block="#200">Очистители, увлажнители и осушители воздуха</a></li>
 								<li><a href="#" data-block="#200">Сушилки для рук электрические</a></li>
 							</ul>
+							<div class="category-block__col-second__bottom">
+								<p class="category-block__col-second__back">Вернуться назад</p>
+								<span class="category-block__col-second__close">Закрыть</span>
+							</div>
 						</div>
 						<div id="200" class="category-block__col category-block__col-next category-block__col-last">
 							<div class="category-block__col-wrap">
+								<div class="category-block__col-close"></div>
+								<h3 class="category-block__col-second__title">Кондиционеры</h3>
 								<ul>
 									<li><a href="#">Автоматика для систем вентиляции</a></li>
 									<li><a href="https://www.youtube.com/">Вентиляторы вытяжные</a></li>
 									<li><a href="#">Нагреватели канальные</a></li>
 									<li><a href="#">Приточно-вытяжные установки</a></li>
 								</ul>
+								<div class="category-block__col-second__bottom">
+									<p class="category-block__col-second__back">Вернуться назад</p>
+									<span class="category-block__col-second__close">Закрыть</span>
+								</div>
 								<div class="product product-bg">
 									<div class="product-bg__wrap" style="background: url(img/product-bg.png);">
 										<a href="#" class="product-bg__link"></a>
@@ -286,7 +415,7 @@
 						<a href="#" class="content-top__info-art">Артикул: 579634</a>
 						<a href="#" class="content-top__info-art">Производство: Китай</a>
 						<a href="#"><img src="img/stars.png" alt=""></a>
-						<a href="#block-2" class="content-top__info-text">2 отзыва</a>
+						<a href="#block-2" data-menu="info-tab" class="content-top__info-text">2 отзыва</a>
 					</div>
 					<div class="content-top__info-right">
 						<ul>
@@ -351,7 +480,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="content-main__info">
+					<div class="content-main__info" id="info-tab">
 						<ul class="content-main__info-tab">
 							<li><a class="tab-active" href="#block-1">Описание и характеристики</a></li>
 							<li><a href="#block-2">Отзывы(2)</a></li>
@@ -363,36 +492,67 @@
 								<p class="content-main__product-info__block-text">Настольный вентилятор First FA-5550-BA равномерно распределяет потоки воздуха и создавая комфортные условия. Доступно 2 режима работы с различной скоростью вращения лопастей. Крупные пластиковые лопасти при вращении не создают громких звуков.</p>
 								<div class="content-main__info-row">
 									<div class="content-main__info-col">
-										<h3 class="content-main__info-title">Основные характеристики</h3>
-										<ul>
-											<li><b>Тип</b><span>Насaтольный</span></li>
-											<li><b>Решетка</b><span>Есть</span></li>
-											<li><b>Механизм</b><span>Осевой</span></li>
-											<li><b>Мощность</b><span>25 Вт</span></li>
-											<li><b>Функция наклона</b><span>Есть</span></li>
-											<li><b>Функция поворота</b><span>Есть</span></li>
-											<li><b>Диаметр лопастей</b><span>23 см</span></li>
-										</ul>
-										<h3 class="content-main__info-title">Возможности и управление</h3>
-										<ul>
-											<li><b>Тип управления</b><span>Механическое</span></li>
-											<li><b>Таймер</b><span>Нет</span></li>
-											<li><b>Увлажнитель</b><span>Нет</span></li>
-											<li><b>Ионизация</b><span>Нет</span></li>
-										</ul>
+										<div class="content-main__info-col__wrap">
+											<h3 class="content-main__info-title">Основные характеристики</h3>
+											<ul>
+												<li><b>Тип</b><span>Насaтольный</span></li>
+												<li><b>Решетка</b><span>Есть</span></li>
+												<li><b>Механизм</b><span>Осевой</span></li>
+												<li><b>Мощность</b><span>25 Вт</span></li>
+												<li><b>Функция наклона</b><span>Есть</span></li>
+												<li><b>Функция поворота</b><span>Есть</span></li>
+												<li><b>Диаметр лопастей</b><span>23 см</span></li>
+											</ul>
+										</div>
+										<div class="content-main__info-col__wrap">
+											<h3 class="content-main__info-title">Возможности и управление</h3>
+											<ul>
+												<li><b>Тип управления</b><span>Механическое</span></li>
+												<li><b>Таймер</b><span>Нет</span></li>
+												<li><b>Увлажнитель</b><span>Нет</span></li>
+												<li><b>Ионизация</b><span>Нет</span></li>
+											</ul>
+										</div>
+										<div class="content-main__info-col__wrap content-main__info-col__wrap-none">
+											<h3 class="content-main__info-title">Возможности и управление</h3>
+											<ul>
+												<li><b>Тип управления</b><span>Механическое</span></li>
+												<li><b>Таймер</b><span>Нет</span></li>
+												<li><b>Увлажнитель</b><span>Нет</span></li>
+												<li><b>Ионизация</b><span>Нет</span></li>
+											</ul>
+										</div>
 									</div>
 									<div class="content-main__info-col">
-										<h3 class="content-main__info-title">Характеристики питания</h3>
-										<ul>
-											<li><b>Питание</b><span>От сети</span></li>
-										</ul>
-										<h3 class="content-main__info-title">Дополнительные характеристики</h3>
-										<ul>
-											<li><b>Материал</b><span>Пластик</span></li>
-											<li><b>Цвет</b><span>Черный</span></li>
-											<li><b>Вес брутто</b><span>1.455 кг</span></li>
-										</ul>
+										<div class="content-main__info-col__wrap">
+											<h3 class="content-main__info-title">Характеристики питания</h3>
+											<ul>
+												<li><b>Питание</b><span>От сети</span></li>
+											</ul>
+										</div>
+										<div class="content-main__info-col__wrap">
+											<h3 class="content-main__info-title">Дополнительные характеристики</h3>
+											<ul>
+												<li><b>Материал</b><span>Пластик</span></li>
+												<li><b>Цвет</b><span>Черный</span></li>
+												<li><b>Вес брутто</b><span>1.455 кг</span></li>
+											</ul>
+										</div>
 										<p class="all-characteristics"><a href="#">Все характеристики</a></p>
+										<div class="content-main__info-col__wrap content-main__info-col__wrap-none">
+											<h3 class="content-main__info-title">Характеристики питания</h3>
+											<ul>
+												<li><b>Питание</b><span>От сети</span></li>
+											</ul>
+										</div>
+										<div class="content-main__info-col__wrap content-main__info-col__wrap-none">
+											<h3 class="content-main__info-title">Дополнительные характеристики</h3>
+											<ul>
+												<li><b>Материал</b><span>Пластик</span></li>
+												<li><b>Цвет</b><span>Черный</span></li>
+												<li><b>Вес брутто</b><span>1.455 кг</span></li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -432,23 +592,265 @@
 							<h3 class="content-main__info-block__title">Акции</h3>
 							<div class="content-main__info-block__wrap">
 								<div class="content-main__info-block__wrap-row">
+									<div class="product">
+										<div class="product-wrap">
+											<div class="product-bg__wrap" style="background: url(img/ac-bg.png);">
+												<a href="#" class="product-bg__link"></a>
+												<div class="product-wrap__descr">
+													<div class="product-wrap__img"><img src="img/car-white.png" alt=""></div>
+													<h3 class="product-wrap__title">Соверменная акустика, качественный звук</h3>
+													<p>Наушники Audio-Technica</p>
+												</div>
+												<a href="#" class="main-button product-wrap__link">подробнее</a>
+											</div>
+										</div>
+									</div><!-- col(1) -->
+									<div class="product">
+										<div class="product-wrap">
+											<div class="product-bg__wrap" style="background: url(img/ac-bg.png);">
+												<a href="#" class="product-bg__link"></a>
+												<div class="product-wrap__descr">
+													<div class="product-wrap__img"><img src="img/car-white.png" alt=""></div>
+													<h3 class="product-wrap__title product-wrap__title-green">Бесплатная доставка по Москве</h3>
+													<p>При заказе от 1 500 руб.</p>
+												</div>
+												<a href="#" class="main-button product-wrap__link">подробнее</a>
+											</div>
+										</div>
+									</div><!-- col(2) -->
 									<div class="product product-bg">
-										<div class="product-bg__wrap" style="background: url(img/ac-bg.png);">
+										<div class="product-bg__wrap" style="background: url(img/product-bg.png);">
 											<a href="#" class="product-bg__link"></a>
+											<span class="product-bg__new">НОВИНКА 2018</span>
 											<div class="product-bg__descr">
-												<h3 class="product-bg__descr-title">Соверменная акустика, качественный звук</h3>
-												<p class="product-bg__descr-text">Наушники Audio-Technica</p>
-												<a href="#" class="product-bg__descr-link">подробнее</a>
+												<p class="product-bg__descr-name">Напольный<br>вентилятор MSF-2433</p>
+												<p class="product-bg__descr-price"><span>35 800 р.</span><img src="img/arrow-gold.svg" alt=""></p>
+											</div>
+										</div>
+									</div><!-- col(3) -->
+									<div class="product">
+										<div class="product-wrap product-wrap__big">
+											<div class="product-bg__wrap" style="background: url(img/ac-bg.png);">
+												<a href="#" class="product-bg__link"></a>
+												<span class="product-bg__new product-bg__new-green">Акция до 20 сентября</span>
+												<div class="product-wrap__descr">
+													<h3 class="product-wrap__title">Бесплатная доставка по Москве</h3>
+													<p>При заказе от 1 500 руб.</p>
+												</div>
+												<a href="#" class="main-button product-wrap__link">подробнее</a>
+											</div>
+										</div>
+									</div><!-- col(4) -->
+								</div>
+								<div class="content-main__info-components">
+									<h3 class="content-main__info-components__title">Выгодные комплекты</h3>
+									<div class="content-main__info-components__row">
+										<div class="product">
+											<span class="components-plus">+</span>
+											<div class="product-wrap">
+												<a href="#" class="product-wrap__button"></a>
+												<a href="#" class="product-wrap__close"></a>
+												<div class="product-img">
+													<img src="img/product-1.png" alt="">
+												</div>
+												<div class="product-descr">
+													<span class="product-descr__code">Артикул: 579634</span>
+													<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
+													<span class="product-descr__category">Вентилятор настольный</span>
+													<div class="product-descr__row">
+														<div>
+															<p class="product-descr__price-line">35 800 р.</p>
+															<p class="product-descr__price">35 800 р.</p>
+														</div>
+														<div>
+															<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
+														</div>
+													</div>
+												</div>
+												<div class="product-bottom">
+													<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
+													<ul>
+														<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
+													</ul>
+												</div>
+											</div>
+										</div><!-- col(1) -->
+										<div class="product">
+											<span class="components-plus">+</span>
+											<div class="product-wrap">
+												<a href="#" class="product-wrap__button"></a>
+												<a href="#" class="product-wrap__close"></a>
+												<div class="product-img">
+													<img src="img/product-1.png" alt="">
+												</div>
+												<div class="product-descr">
+													<span class="product-descr__code">Артикул: 579634</span>
+													<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
+													<span class="product-descr__category">Вентилятор настольный</span>
+													<div class="product-descr__row">
+														<div>
+															<p class="product-descr__price-line">35 800 р.</p>
+															<p class="product-descr__price">35 800 р.</p>
+														</div>
+														<div>
+															<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
+														</div>
+													</div>
+												</div>
+												<div class="product-bottom">
+													<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
+													<ul>
+														<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
+													</ul>
+												</div>
+											</div>
+										</div><!-- col(2) -->
+										<div class="product">
+											<span class="components-plus components-equally">=</span>
+											<div class="product-wrap">
+												<a href="#" class="product-wrap__button"></a>
+												<a href="#" class="product-wrap__close"></a>
+												<div class="product-img">
+													<img src="img/product-1.png" alt="">
+												</div>
+												<div class="product-descr">
+													<span class="product-descr__code">Артикул: 579634</span>
+													<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
+													<span class="product-descr__category">Вентилятор настольный</span>
+													<div class="product-descr__row">
+														<div>
+															<p class="product-descr__price-line">35 800 р.</p>
+															<p class="product-descr__price">35 800 р.</p>
+														</div>
+														<div>
+															<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
+														</div>
+													</div>
+												</div>
+												<div class="product-bottom">
+													<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
+													<ul>
+														<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
+													</ul>
+												</div>
+											</div>
+										</div><!-- col(3) -->
+										<div class="content-main__info-components__col">
+											<div class="content-main__info-components__col-descr">
+												<h3 class="content-main__info-components__col-title">Стоимость комплекта из трех товаров:</h3>
+												<span>38 230 руб.</span>
+												<p>35 800 р.</p>
+											</div>
+											<div class="sidebar-basket__bottom">
+												<a href="#" class="sidebar-basket__link">Купить комплект</a>
+												<p class="sidebar-basket__text">За данный заказ Вы получите <span>+ 100</span> <b>Бонусных баллов</b><a href="#">?</a></p>
 											</div>
 										</div>
 									</div>
-									<div class="product product-bg">
-										<div class="product-bg__wrap" style="background: url(img/ac-bg.png);">
-											<a href="#" class="product-bg__link"></a>
-											<div class="product-bg__descr">
-												<h3 class="product-bg__descr-title">Бесплатная доставка по Москве</h3>
-												<p class="product-bg__descr-text">При заказе от 1 500 руб.</p>
-												<a href="#" class="product-bg__descr-link">подробнее</a>
+									<div class="content-main__info-components__all"><p>Показать еще комплекты</p></div>
+									<div class="content-main__info-components__block">
+										<h3 class="content-main__info-components__title">Выгодные комплекты</h3>
+										<div class="content-main__info-components__row">
+											<div class="product">
+												<span class="components-plus">+</span>
+												<div class="product-wrap">
+													<a href="#" class="product-wrap__button"></a>
+													<a href="#" class="product-wrap__close"></a>
+													<div class="product-img">
+														<img src="img/product-1.png" alt="">
+													</div>
+													<div class="product-descr">
+														<span class="product-descr__code">Артикул: 579634</span>
+														<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
+														<span class="product-descr__category">Вентилятор настольный</span>
+														<div class="product-descr__row">
+															<div>
+																<p class="product-descr__price-line">35 800 р.</p>
+																<p class="product-descr__price">35 800 р.</p>
+															</div>
+															<div>
+																<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+													<div class="product-bottom">
+														<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
+														<ul>
+															<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div><!-- col(1) -->
+											<div class="product">
+												<span class="components-plus">+</span>
+												<div class="product-wrap">
+													<a href="#" class="product-wrap__button"></a>
+													<a href="#" class="product-wrap__close"></a>
+													<div class="product-img">
+														<img src="img/product-1.png" alt="">
+													</div>
+													<div class="product-descr">
+														<span class="product-descr__code">Артикул: 579634</span>
+														<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
+														<span class="product-descr__category">Вентилятор настольный</span>
+														<div class="product-descr__row">
+															<div>
+																<p class="product-descr__price-line">35 800 р.</p>
+																<p class="product-descr__price">35 800 р.</p>
+															</div>
+															<div>
+																<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+													<div class="product-bottom">
+														<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
+														<ul>
+															<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div><!-- col(2) -->
+											<div class="product">
+												<span class="components-plus components-equally">=</span>
+												<div class="product-wrap">
+													<a href="#" class="product-wrap__button"></a>
+													<a href="#" class="product-wrap__close"></a>
+													<div class="product-img">
+														<img src="img/product-1.png" alt="">
+													</div>
+													<div class="product-descr">
+														<span class="product-descr__code">Артикул: 579634</span>
+														<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
+														<span class="product-descr__category">Вентилятор настольный</span>
+														<div class="product-descr__row">
+															<div>
+																<p class="product-descr__price-line">35 800 р.</p>
+																<p class="product-descr__price">35 800 р.</p>
+															</div>
+															<div>
+																<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
+															</div>
+														</div>
+													</div>
+													<div class="product-bottom">
+														<p><img src="img/car.svg" alt="">Доставим: <span>Завтра</span></p>
+														<ul>
+															<li><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="8px" viewBox="0 0 8 9"><g data-name="Layer 2"><g data-name="Layer 1"><path fill="#4774ec" d="M.9,9h0A.9.9,0,0,1,0,8.1V5.4a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,.9,9Z"/><path fill="#4774ec" d="M4,9H4a.9.9,0,0,1-.9-.9V.9A.9.9,0,0,1,4,0H4a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,4,9Z"/><path fill="#4774ec" d="M7.1,9h0a.9.9,0,0,1-.9-.9V3.2a.9.9,0,0,1,.9-.9h0a.9.9,0,0,1,.9.9V8.1A.9.9,0,0,1,7.1,9Z"/></g></g></svg></span><b>Сравить</b></a></li>
+														</ul>
+													</div>
+												</div>
+											</div><!-- col(3) -->
+											<div class="content-main__info-components__col">
+												<div class="content-main__info-components__col-descr">
+													<h3 class="content-main__info-components__col-title">Стоимость комплекта из трех товаров:</h3>
+													<span>38 230 руб.</span>
+													<p>35 800 р.</p>
+												</div>
+												<div class="sidebar-basket__bottom">
+													<a href="#" class="sidebar-basket__link">Купить комплект</a>
+													<p class="sidebar-basket__text">За данный заказ Вы получите <span>+ 100</span> <b>Бонусных баллов</b><a href="#">?</a></p>
+												</div>
 											</div>
 										</div>
 									</div>

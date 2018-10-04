@@ -21,6 +21,45 @@
 </head>
 <body>
 	<div class="modal-overlay"></div>
+	<div class="modal modal-entrance" id="modal-entrance">
+		<div class="cancel"></div>
+		<h2 class="modal-entrance__title">Вход в личный кабинет</h2>
+		<div class="modal-entrance__middle">
+			<div class="modal-entrance__middle-wrap">
+				<form action="">
+					<div class="modal-entrance__middle-input">
+						<label for="id-1">Ваше e-mail *</label>
+						<input type="text" id="id-1" value="mumijo@mail.ru" minlength="6" required>
+					</div>
+					<div class="modal-entrance__middle-input">
+						<label for="id-2">Пароль *</label>
+						<div class="password-eye">
+							<img src="img/eye.png" alt="">
+						</div>
+						<input type="password" id="id-2" value="1111" minlength="3" required>
+					</div>
+					<button class="main-button modal-entrance__middle-btn">вход</button>
+					<a href="#" class="second-button modal-entrance__middle-link">Регистрация</a>
+					<div class="modal-entrance__middle-bottom">
+						<div class="checkbox">
+							<input type="checkbox" checked="">
+							<span></span>
+							<p>Запомнить меня</p>
+						</div>
+						<p class="modal-entrance__middle-text"><a href="#">Напомнить пароль</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-entrance__bottom">
+			<p>Войти через социальные сети</p>
+			<ul>
+				<li><a class="soc-1" href="#"><img src="img/vk.svg" alt=""></a></li>
+				<li><a class="soc-2" href="#"><img src="img/facebook.svg" alt=""></a></li>
+				<li><a class="soc-3" href="#"><img src="img/odnoklassniki.svg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
 	<!-- start header -->
 	<header class="header">
 		<div class="header-top">
@@ -42,7 +81,7 @@
 						<p class="header-top__descr-phone"><a href="#"><img src="img/phone.svg" alt=""><span>+7 495 357-05-70</span></a></p>
 						<p class="header-top__descr-text">График работы: <br>c 9:00 - 21:00</p>
 					</div>
-					<p class="header-top__descr-user"><img src="img/user-ico.png" alt=""><span>Вход на сайт</span></p>
+					<a href="#modal-entrance" class="button-modal header-top__descr-user"><img src="img/user-ico.png" alt=""><span>Вход на сайт</span></a>
 				</div>
 				<div class="header-top__info">
 					<ul>
@@ -65,81 +104,105 @@
 					</div>
 					<div class="category-block">
 						<div class="category-block__col category-block__col-first">
-							<div class="category-block__col-close"><img src="img/cancel.png" alt=""></div>
+							<div class="category-block__col-close"></div>
 							<h3 class="category-block__col-title">Каталог товаров</h3>
 							<ul>
-								<li><a href="#category-1">Компьютеры и ноутбуки</a></li>
-								<li><a href="#category-2">Компьютерные комплектующие</a></li>
-								<li><a href="#category-3">Серверы и СХД</a></li>
-								<li><a href="#category-4">Периферия</a></li>
-								<li><a href="#category-5">Оргтехника</a></li>
-								<li><a href="#category-6">ИБП</a></li>
-								<li><a href="#category-7">Расходные материалы</a></li>
-								<li><a href="#category-8">Сетевое оборудование</a></li>
-								<li><a href="#category-9">Программное обеспечение</a></li>
-								<li><a href="#category-10">СКС</a></li>
-								<li><a href="#category-11">Системы безопасности</a></li>
-								<li><a href="#category-12">Средства защиты информации</a></li>
-								<li><a href="#category-13">Электрика и системы электропитания</a></li>
-								<li><a href="#category-14">Торговое оборудование</a></li>
-								<li><a href="#category-15">Телефония</a></li>
-								<li><a href="#category-16">Товары для геймеров</a></li>
-								<li><a href="#category-17">Аpple</a></li>
-								<li><a href="#category-18">Климатическое оборудование</a></li>
-								<li><a href="#category-19">Телевизоры и проекторы</a></li>
-								<li><a href="#category-20">Портативная техника</a></li>
+								<li><a href="#" data-block="#category-1">Компьютеры и ноутбуки</a></li>
+								<li><a href="#" data-block="#category-2">Компьютерные комплектующие</a></li>
+								<li><a href="#" data-block="#category-3">Серверы и СХД</a></li>
+								<li><a href="#" data-block="#category-4">Периферия</a></li>
+								<li><a href="#" data-block="#category-5">Оргтехника</a></li>
+								<li><a href="#" data-block="#category-6">ИБП</a></li>
+								<li><a href="#" data-block="#category-7">Расходные материалы</a></li>
+								<li><a href="#" data-block="#category-8">Сетевое оборудование</a></li>
+								<li><a href="#" data-block="#category-9">Программное обеспечение</a></li>
+								<li><a href="#" data-block="#category-10">СКС</a></li>
+								<li><a href="#" data-block="#category-11">Системы безопасности</a></li>
+								<li><a href="#" data-block="#category-12">Средства защиты информации</a></li>
+								<li><a href="#" data-block="#category-13">Электрика и системы электропитания</a></li>
+								<li><a href="#" data-block="#category-14">Торговое оборудование</a></li>
+								<li><a href="#" data-block="#category-15">Телефония</a></li>
+								<li><a href="#" data-block="#category-16">Товары для геймеров</a></li>
+								<li><a href="#" data-block="#category-17">Аpple</a></li>
+								<li><a href="#" data-block="#category-18">Климатическое оборудование</a></li>
+								<li><a href="#" data-block="#category-19">Телевизоры и проекторы</a></li>
+								<li><a href="#" data-block="#category-20">Портативная техника</a></li>
 							</ul>
 						</div>
 						<div id="category-18" class="category-block__col category-block__col-next category-block__col-second">
+							<div class="category-block__col-close"></div>
+							<h3 class="category-block__col-second__title">Климатическое оборудование</h3>
 							<ul>
-								<li><a href="#200">Вентиляторы</a></li>
-								<li><a class="category-active" href="#200">Вентиляционное оборудование</a></li>
-								<li><a href="#200">Водоснабжение</a></li>
-								<li><a href="#200">Кондиционеры</a></li>
-								<li><a href="#200">Обогреватели</a></li>
-								<li><a href="#200">Отопительное оборудование</a></li>
-								<li><a href="#200">Очистители, увлажнители и осушители воздуха</a></li>
-								<li><a href="#200">Сушилки для рук электрические</a></li>
+								<li><a data-block="#200" href="https://www.youtube.com/">Вентиляторы</a></li>
+								<li><a href="#" data-block="#200">Вентиляционное оборудование</a></li>
+								<li><a href="#" data-block="#200">Водоснабжение</a></li>
+								<li><a href="#" data-block="#200">Кондиционеры</a></li>
+								<li><a href="#" data-block="#200">Обогреватели</a></li>
+								<li><a href="#" data-block="#200">Отопительное оборудование</a></li>
+								<li><a href="#" data-block="#200">Очистители, увлажнители и осушители воздуха</a></li>
+								<li><a href="#" data-block="#200">Сушилки для рук электрические</a></li>
 							</ul>
+							<div class="category-block__col-second__bottom">
+								<p class="category-block__col-second__back">Вернуться назад</p>
+								<span class="category-block__col-second__close">Закрыть</span>
+							</div>
 						</div>
 						<div id="category-10" class="category-block__col category-block__col-next category-block__col-second">
+							<div class="category-block__col-close"></div>
+							<h3 class="category-block__col-second__title">СКС</h3>
 							<ul>
-								<li><a href="#200">Вентиляторы</a></li>
-								<li><a href="#200">Вентиляционное оборудование</a></li>
-								<li><a href="#200">Водоснабжение</a></li>
-								<li><a href="#200">Кондиционеры</a></li>
-								<li><a href="#200">Обогреватели</a></li>
-								<li><a href="#200">Отопительное оборудование</a></li>
-								<li><a href="#200">Очистители, увлажнители и осушители воздуха</a></li>
-								<li><a href="#200">Сушилки для рук электрические</a></li>
-								<li><a href="#200">Водоснабжение</a></li>
-								<li><a href="#200">Кондиционеры</a></li>
-								<li><a href="#200">Обогреватели</a></li>
+								<li><a href="#" data-block="#200">Вентиляторы</a></li>
+								<li><a href="#" data-block="#200">Вентиляционное оборудование</a></li>
+								<li><a href="#" data-block="#200">Водоснабжение</a></li>
+								<li><a href="#" data-block="#200">Кондиционеры</a></li>
+								<li><a href="#" data-block="#200">Обогреватели</a></li>
+								<li><a href="#" data-block="#200">Отопительное оборудование</a></li>
+								<li><a href="#" data-block="#200">Очистители, увлажнители и осушители воздуха</a></li>
+								<li><a href="#" data-block="#200">Сушилки для рук электрические</a></li>
+								<li><a href="#" data-block="#200">Водоснабжение</a></li>
+								<li><a href="#" data-block="#200">Кондиционеры</a></li>
+								<li><a href="#" data-block="#200">Обогреватели</a></li>
 							</ul>
+							<div class="category-block__col-second__bottom">
+								<p class="category-block__col-second__back">Вернуться назад</p>
+								<span class="category-block__col-second__close">Закрыть</span>
+							</div>
 						</div>
 						<div id="category-20" class="category-block__col category-block__col-next category-block__col-second">
+							<div class="category-block__col-close"></div>
+							<h3 class="category-block__col-second__title">Портативная техника</h3>
 							<ul>
-								<li><a href="#200">Вентиляторы</a></li>
-								<li><a class="category-active" href="#200">Вентиляционное оборудование</a></li>
-								<li><a href="#200">Водоснабжение</a></li>
-								<li><a href="#200">Кондиционеры</a></li>
-								<li><a href="#200">Обогреватели</a></li>
-								<li><a href="#200">Водоснабжение</a></li>
-								<li><a href="#200">Кондиционеры</a></li>
-								<li><a href="#200">Обогреватели</a></li>
-								<li><a href="#200">Отопительное оборудование</a></li>
-								<li><a href="#200">Очистители, увлажнители и осушители воздуха</a></li>
-								<li><a href="#200">Сушилки для рук электрические</a></li>
+								<li><a href="#" data-block="#200">Вентиляторы</a></li>
+								<li><a href="#" data-block="#200">Вентиляционное оборудование</a></li>
+								<li><a href="#" data-block="#200">Водоснабжение</a></li>
+								<li><a href="#" data-block="#200">Кондиционеры</a></li>
+								<li><a href="#" data-block="#200">Обогреватели</a></li>
+								<li><a href="#" data-block="#200">Водоснабжение</a></li>
+								<li><a href="#" data-block="#200">Кондиционеры</a></li>
+								<li><a href="#" data-block="#200">Обогреватели</a></li>
+								<li><a href="#" data-block="#200">Отопительное оборудование</a></li>
+								<li><a href="#" data-block="#200">Очистители, увлажнители и осушители воздуха</a></li>
+								<li><a href="#" data-block="#200">Сушилки для рук электрические</a></li>
 							</ul>
+							<div class="category-block__col-second__bottom">
+								<p class="category-block__col-second__back">Вернуться назад</p>
+								<span class="category-block__col-second__close">Закрыть</span>
+							</div>
 						</div>
 						<div id="200" class="category-block__col category-block__col-next category-block__col-last">
 							<div class="category-block__col-wrap">
+								<div class="category-block__col-close"></div>
+								<h3 class="category-block__col-second__title">Кондиционеры</h3>
 								<ul>
 									<li><a href="#">Автоматика для систем вентиляции</a></li>
-									<li><a href="#">Вентиляторы вытяжные</a></li>
+									<li><a href="https://www.youtube.com/">Вентиляторы вытяжные</a></li>
 									<li><a href="#">Нагреватели канальные</a></li>
 									<li><a href="#">Приточно-вытяжные установки</a></li>
 								</ul>
+								<div class="category-block__col-second__bottom">
+									<p class="category-block__col-second__back">Вернуться назад</p>
+									<span class="category-block__col-second__close">Закрыть</span>
+								</div>
 								<div class="product product-bg">
 									<div class="product-bg__wrap" style="background: url(img/product-bg.png);">
 										<a href="#" class="product-bg__link"></a>
@@ -217,9 +280,58 @@
 							<img src="img/box.png" alt="">
 						</div>
 					</div>
+					<div class="sidebar-characteristics">
+						<div class="sidebar-characteristics__block">
+							<h3 class="characteristics-title">Основные характеристики</h3>
+							<ul>
+								<li>Тип </li>
+								<li>Решетка</li>
+								<li>Тип решетки</li>
+								<li>Мощность</li>
+								<li>Воздухообмнен</li>
+							</ul>
+						</div>
+						<div class="sidebar-characteristics__block">
+							<h3 class="characteristics-title">Возможности и управление</h3>
+							<ul>
+								<li>Вид управления</li>
+								<li>Дисплей</li>
+								<li>Таймер</li>
+							</ul>
+						</div>
+						<div class="sidebar-characteristics__block">
+							<h3 class="characteristics-title">Характеристики питания</h3>
+							<ul>
+								<li>Напряжение</li>
+								<li>Частота</li>
+							</ul>
+						</div>
+					</div>
 				</div><!-- sidebar-filter -->
-				<div class="content-main">
-					<div class="content-main__slider">
+				<div class="content-main content-main__two">
+					<div class="content-main__slider comparison-slider">
+						<div class="product">
+							<div class="product-wrap">
+								<a href="#" class="product-wrap__button"></a>
+								<a href="#" class="product-wrap__close"></a>
+								<div class="product-img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<div class="product-descr">
+									<span class="product-descr__code">Артикул: 579634</span>
+									<span class="product-descr__name"><a href="#">Mystery MSF-2433</a></span>
+									<span class="product-descr__category">Вентилятор настольный</span>
+									<div class="product-descr__row">
+										<div>
+											<p class="product-descr__price">35 800 р.</p>
+										</div>
+										<div>
+											<a class="product-descr__link" href="#"><b>В корзину</b><img src="img/basket-white.svg" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- product(1) -->
 						<div class="product">
 							<div class="product-wrap">
 								<a href="#" class="product-wrap__button"></a>
@@ -309,188 +421,129 @@
 							</div>
 						</div><!-- product(4) -->
 					</div>
+					<div class="characteristics-table comparison-slider">
+						<div class="comparison-slide">
+							<div class="comparison-slide__block">
+								<ul>
+									<li>Напольный</li>
+									<li>Eсть</li>
+									<li>WEB</li>
+									<li>6000 куб.м/час</li>
+									<li>50 м²</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>—</li>
+									<li>Eсть</li>
+									<li>Нет</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>220 В</li>
+									<li>50 Гц</li>
+								</ul>
+							</div>
+						</div><!-- slide(1) -->
+						<div class="comparison-slide">
+							<div class="comparison-slide__block">
+								<ul>
+									<li>Напольный</li>
+									<li>Eсть</li>
+									<li>WEB</li>
+									<li>6000 куб.м/час</li>
+									<li>50 м²</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>—</li>
+									<li>Eсть</li>
+									<li>Нет</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>220 В</li>
+									<li>50 Гц</li>
+								</ul>
+							</div>
+						</div><!-- slide(1) -->
+						<div class="comparison-slide">
+							<div class="comparison-slide__block">
+								<ul>
+									<li>Напольный</li>
+									<li>Eсть</li>
+									<li>WEB</li>
+									<li>6000 куб.м/час</li>
+									<li>50 м²</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>—</li>
+									<li>Eсть</li>
+									<li>Нет</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>220 В</li>
+									<li>50 Гц</li>
+								</ul>
+							</div>
+						</div><!-- slide(2) -->
+						<div class="comparison-slide">
+							<div class="comparison-slide__block">
+								<ul>
+									<li>Напольный</li>
+									<li>Eсть</li>
+									<li>WEB</li>
+									<li>6000 куб.м/час</li>
+									<li>50 м²</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>—</li>
+									<li>Eсть</li>
+									<li>Нет</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>220 В</li>
+									<li>50 Гц</li>
+								</ul>
+							</div>
+						</div><!-- slide(3) -->
+						<div class="comparison-slide">
+							<div class="comparison-slide__block">
+								<ul>
+									<li>Напольный</li>
+									<li>Eсть</li>
+									<li>WEB</li>
+									<li>6000 куб.м/час</li>
+									<li>50 м²</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>—</li>
+									<li>Eсть</li>
+									<li>Нет</li>
+								</ul>
+							</div>
+							<div class="comparison-slide__block">
+								<ul>
+									<li>220 В</li>
+									<li>50 Гц</li>
+								</ul>
+							</div>
+						</div><!-- slide(4) -->
+					</div>
 				</div><!-- content-main -->
-			</div>
-		</div>
-		<div class="wrapper content-characteristics">
-			<h3 class="characteristics-title">Основные характеристики</h3>
-			<div class="characteristics-table characteristics-table__wrap">
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Тип </p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>Напольный</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>Напольный</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>Напольный</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>Напольный</p>
-					</div>
-				</div><!-- row(1) -->
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Решетка</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>Eсть</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>Eсть</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>Eсть</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>Eсть</p>
-					</div>
-				</div><!-- row(2) -->
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Тип решетки</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>WEB</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>WEB</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>WEB</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>WEB</p>
-					</div>
-				</div><!-- row(3) -->
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Мощность</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>6000 куб.м/час</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>6000 куб.м/час</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>6000 куб.м/час</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>6000 куб.м/час</p>
-					</div>
-				</div><!-- row(4) -->
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Воздухообмнен</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>50 м²</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>50 м²</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>50 м²</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>50 м²</p>
-					</div>
-				</div><!-- row(5) -->
-			</div>
-			<h3 class="characteristics-title">Вид управления</h3>
-			<div class="characteristics-table characteristics-table__wrap">
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Тип </p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>—</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>—</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>—</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>—</p>
-					</div>
-				</div><!-- row(1) -->
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Дисплей</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>Eсть</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>Eсть</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>Eсть</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>Eсть</p>
-					</div>
-				</div><!-- row(2) -->
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Таймер</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>Нет</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>Нет</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>Нет</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>Нет</p>
-					</div>
-				</div><!-- row(3) -->
-			</div>
-			<h3 class="characteristics-title">Характеристики питания</h3>
-			<div class="characteristics-table characteristics-table__wrap">
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Напряжение</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>220 В</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>220 В</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>220 В</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>220 В</p>
-					</div>
-				</div><!-- row(1) -->
-				<div class="characteristics-table__row">
-					<div class="characteristics-table__col characteristics-table__col-1">
-						<p>Частота</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-2">
-						<p>50 Гц</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-3">
-						<p>50 Гц</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-4">
-						<p>50 Гц</p>
-					</div>
-					<div class="characteristics-table__col characteristics-table__col-5">
-						<p>50 Гц</p>
-					</div>
-				</div><!-- row(2) -->
 			</div>
 		</div>
 	</section>
@@ -581,7 +634,6 @@
 			</div>
 		</div>
 	</footer>
-	<!-- 2. При выборе вида отображения товаров Таблица/список логичнее черным выделить активный вид, а не серым, как сейчас -->
 	<!-- end footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
