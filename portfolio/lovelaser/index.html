@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<div class="modal modal-call" id="modal-call">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-scheme" id="modal-scheme">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-city" id="modal-city">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-salons" id="modal-salons">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-sign-up" id="modal-sign-up">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="header-menu">
+		<div class="header-menu__top">
+			<p><img src="img/close.png" alt=""><span>Меню сайта</span></p>
+		</div>
+		<div class="header-menu__bottom">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Мастера</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li>
+					<a class="header-drop" href="#">Мужчины</a>
+					<div class="header-menu__wrap">
+						<div class="header-menu__row">
+							<div>
+								<p class="header-menu__title">Голова и лицо</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Ноги</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Ноги</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Голова и лицо</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a class="header-drop" href="#">Женщинам</a>
+					<div class="header-menu__wrap">
+						<div class="header-menu__row">
+							<div>
+								<p class="header-menu__title">Голова и лицо</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Ноги</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Ноги</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Голова и лицо</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="header-menu__button">
+				<a href="#modal-call" class="btn-main button-modal">Заказать звонок</a>
+			</div>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-bar">
+					<img src="img/bar.png" alt="">
+				</div>
+				<div class="header-mob">
+					<ul>
+						<li><a href="#">Адреса 7 салонов</a></li>
+						<li><a href="#">+7 495 987-65-43</a></li>
+					</ul>
+				</div>
+				<ul class="bread-crumbs">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Блог</a></li>
+				</ul>
+				<div class="header-top__right">
+					<div class="header-top__from">
+						<form action="">
+							<div>
+								<button class="header-top__from-button"><img src="img/search.svg" alt=""></button>
+								<input type="text" placeholder="Поиск по сайту">
+							</div>
+						</form>
+					</div>
+					<ul class="header-top__social">
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/ok.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="wrapper">
+				<div class="header-middle__row">
+					<div class="header-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="header-middle__wrap">
+						<div class="header-middle__col">
+							<span>Ваш город:</span>
+							<a href="#modal-city" class="button-modal header-middle__link"><span>Москва</span></a>
+						</div>
+						<div class="header-middle__col">
+							<span>Ближайшие салоны:</span>
+							<div>
+								<p><img src="img/gg.png" alt=""><span>Смоленская</span></p>
+								<p><img src="img/gg.png" alt=""><span>Китай–Город</span></p>
+								<a href="#modal-salons" class="button-modal header-middle__link"><span>Все салоны</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-middle__right">
+					<div>
+						<span>Доступно с 10:00 до 23:00</span>
+						<p><a href="#">+7 495 987-65-43</a></p>
+					</div>
+					<a href="#modal-call" class="button-modal btn-main">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<nav class="header-nav">
+					<ul>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Подарочные карты</a></li>
+						<li><a href="#">Мастера</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Вопросы и ответы</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main-img">
+			<img src="img/main_header_legs.png" alt="">
+		</div>
+		<div class="wrapper">
+			<div class="main-descr">
+				<h1 class="main-title">Лазерная эпиляция в Москве от 990 ₽</h1>
+				<p>Начните строить бизнес от чистого сердца! Получените знания в области создания, управления и развития социальных проектов</p>
+				<div class="main-row">
+					<div class="main-col">
+						<div></div>
+						<p>Преимущество с иконкой</p>
+					</div>
+					<div class="main-col">
+						<div></div>
+						<p>Преимущество с иконкой</p>
+					</div>
+					<div class="main-col">
+						<div></div>
+						<p>Преимущество с иконкой</p>
+					</div>
+				</div>
+			</div>
+			<div class="main-form">
+				<h3 class="main-form__title">Онлайн–запись</h3>
+				<p class="main-form__text">Введите Ваши контактные данные мы свяжемся с Вами в течении 5 минут</p>
+				<form action="">
+					<div class="main-form__wrap">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Контактный телефон">
+						<div class="main-form__wrap-row">
+							<div>
+								<select class="select" name="" id="">
+									<option value="">02.04</option>
+									<option value="">lorem-2</option>
+									<option value="">lorem-3</option>
+								</select>
+							</div>
+							<div>
+								<select class="select" name="" id="">
+									<option value="">10:00</option>
+									<option value="">lorem-2</option>
+									<option value="">lorem-3</option>
+								</select>
+							</div>
+						</div>
+						<div class="checkbox">
+							<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+							<input type="checkbox" checked>
+							<span></span>
+						</div>
+						<button class="btn-main main-form__button">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start services -->
+	<section class="services services-pt">
+		<div class="wrapper">
+			<div class="services-top">
+				<h2 class="section-title">Эпиляция отдельных зон</h2>
+				<div class="services-top__tabs">
+					<p>Показать:</p>
+					<ul>
+						<li><a class="services-active" href="#services-1">Схемой</a></li>
+						<li><a class="services-list__link" href="#services-2">Списком</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="services-menu__wrap">
+				<div class="services-menu__wrap-col">
+					<p>Выберите пол:</p>
+					<ul>
+						<li><a href="#">Мужской</a></li>
+						<li><a class="services-active" href="#">Женский</a></li>
+					</ul>
+				</div>
+				<div class="services-select">
+					<select class="select" name="" id="">
+						<option value="">lorem-1</option>
+						<option value="">lorem-2</option>
+						<option value="">lorem-3</option>
+					</select>
+				</div>
+				<div class="services-menu__wrap-col services-menu__wrap-col__last">
+					<p>Выберите часть тела:</p>
+					<ul>
+						<li><a class="services-active" href="#">Голова и лицо</a></li>
+						<li><a href="#">Тело</a></li>
+						<li><a href="#">Руки</a></li>
+						<li><a href="#">Ноги</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="services-block services-wrap block-active" id="services-1">
+				<div class="services-wrap__row">
+					<div class="services-wrap__img">
+						<img src="img/Woman.png" alt="">
+					</div>
+					<div class="services-wrap__info">
+						<h3 class="services-wrap__info-title">Выберите услугу:</h3>
+						<div class="services-wrap__info-slider">
+							<div class="services-wrap__info-slide">
+								<div class="services-wrap__info-slide__row">
+									<div class="checkbox">
+										<p><b>Верхняя губа, межбровье или подбородок</b><span>1 200 ₽</span></p>
+										<input type="checkbox" checked>
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox" checked>
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</div>
+							</div><!-- slide(1) -->
+							<div class="services-wrap__info-slide">
+								<div class="services-wrap__info-slide__row">
+									<div class="checkbox">
+										<p><b>Верхняя губа, межбровье или подбородок</b><span>1 200 ₽</span></p>
+										<input type="checkbox" checked>
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox" checked>
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</div>
+							</div><!-- slide(2) -->
+						</div>
+						<a href="#" class="btn-border services-wrap__info-button">Показать еще</a>
+					</div>
+				</div>
+			</div>
+			<div class="services-block services-list" id="services-2">
+				<div class="services-list__row">
+					<div class="services-list__col">
+						<h3 class="services-list__col-title">Голова и лицо</h3>
+						<ul>
+							<li><a href="#">Виски</a></li>
+							<li><a href="#">Шея</a></li>
+							<li><a href="#">Межбровье</a></li>
+							<li><a href="#">Бакенбарды</a></li>
+							<li><a href="#">Щеки</a></li>
+							<li><a href="#">Верхняя губа</a></li>
+							<li><a href="#">Подбородок</a></li>
+							<li><a href="#">Лоб</a></li>
+							<li><a href="#">Скулы</a></li>
+						</ul>
+					</div>
+					<div class="services-list__col">
+						<h3 class="services-list__col-title">Тело</h3>
+						<ul>
+							<li><a href="#">Декольте</a></li>
+							<li><a href="#">Спина</a></li>
+							<li><a href="#">Живот</a></li>
+							<li><a href="#">Грудь</a></li>
+							<li><a href="#">Глубокое бикини</a></li>
+						</ul>
+					</div>
+					<div class="services-list__col">
+						<h3 class="services-list__col-title">Руки</h3>
+						<ul>
+							<li><a href="#">Пальцы</a></li>
+							<li><a href="#">Руки полностью</a></li>
+							<li><a href="#">Руки ниже локтя</a></li>
+							<li><a href="#">Подмышки</a></li>
+						</ul>
+					</div>
+					<div class="services-list__col">
+						<h3 class="services-list__col-title">Ноги</h3>
+						<ul>
+							<li><a href="#">Бедра</a></li>
+							<li><a href="#">Голень</a></li>
+							<li><a href="#">Пальцы ног</a></li>
+							<li><a href="#">Ноги полностью</a></li>
+							<li><a href="#">Ягодицы</a></li>
+							<li><a href="#">Зона бикини</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end services -->
+	<!-- start subscriptions -->
+	<section class="subscriptions">
+		<div class="wrapper">
+			<h2 class="section-title">Абонементы</h2>
+		</div>
+		<div class="subscriptions-slider">
+			<div class="subscriptions-slide">
+				<div class="subscriptions-slide__wrap">
+					<p class="subscriptions-slide__price">1 400 ₽</p>
+					<div class="subscriptions-slide__img">
+						<img src="img/bigIcon_01.png" alt="">
+					</div>
+					<h3 class="subscriptions-slide__title">3 зоны плюс</h3>
+					<div class="subscriptions-slide__buttons">
+						<a href="#" class="btn-main">Записаться</a>
+						<a href="#" class="btn-more">Узнать больше</a>
+					</div>
+				</div>
+			</div><!-- col(1) -->
+			<div class="subscriptions-slide">
+				<div class="subscriptions-slide__wrap">
+					<p class="subscriptions-slide__price">11 900 ₽</p>
+					<div class="subscriptions-slide__img">
+						<img src="img/bigIcon_02.png" alt="">
+					</div>
+					<h3 class="subscriptions-slide__title">Глубокое бикини</h3>
+					<p class="subscriptions-slide__text">Предложение для тех, кто максимально ценит свое время</p>
+				</div>
+			</div><!-- col(2) -->
+			<div class="subscriptions-slide">
+				<div class="subscriptions-slide__wrap">
+					<p class="subscriptions-slide__price">1 900 ₽</p>
+					<div class="subscriptions-slide__img">
+						<img src="img/bigIcon_03.png" alt="">
+					</div>
+					<h3 class="subscriptions-slide__title">Полный курс</h3>
+					<p class="subscriptions-slide__text">Эпиляция всего тела с оплатой за результат</p>
+				</div>
+			</div><!-- col(3) -->
+			<div class="subscriptions-slide">
+				<div class="subscriptions-slide__wrap">
+					<p class="subscriptions-slide__price">1 900 ₽</p>
+					<div class="subscriptions-slide__img">
+						<img src="img/bigIcon_01.png" alt="">
+					</div>
+					<h3 class="subscriptions-slide__title">Полный курс</h3>
+					<p class="subscriptions-slide__text">Эпиляция всего тела с оплатой за результат</p>
+				</div>
+			</div><!-- col(4) -->
+		</div>
+	</section>
+	<!-- end subscriptions -->
+	<!-- start procedure -->
+	<section class="procedure">
+		<div class="procedure-img procedure-img__1">
+			<img src="img/002.png" alt="">
+		</div>
+		<div class="procedure-img procedure-img__2">
+			<img src="img/0001.png" alt="">
+		</div>
+		<div class="wrapper">
+			<div class="procedure-img procedure-img__3">
+				<img src="img/00004.png" alt="">
+			</div>
+			<div class="procedure-img procedure-img__4">
+				<img src="img/procedure-img.png" alt="">
+			</div>
+			<div class="procedure-top">
+				<h2 class="section-title">Что включает в себя процедура?</h2>
+				<p>Начните строить бизнес от чистого сердца! Получените знания в области создания, управления и развития социальных проектов</p>
+			</div>
+			<div class="procedure-center">
+				<div class="procedure-center__col-block procedure-center__col-block__left">
+					<span>01</span>
+					<h3 class="procedure-center__col-title">Дезинфекция</h3>
+					<p>Небольшое описание сотрудника с инфой о стаже, сертификатах и прочей истории</p>
+				</div>
+				<div class="procedure-center__col-block">
+					<span>02</span>
+					<h3 class="procedure-center__col-title">Защита</h3>
+					<p>И мастер, и клиент надевают темные очки, чтобы уберечь роговицу от лазерного излучения</p>
+				</div>
+				<div class="procedure-center__col-block procedure-center__col-block__left">
+					<span>03</span>
+					<h3 class="procedure-center__col-title">Подготовка поверхности</h3>
+					<p>Нанесение контактного геля — это охлаждающий проводник между лазером и кожей</p>
+				</div>
+				<div class="procedure-center__col-block">
+					<span>04</span>
+					<h3 class="procedure-center__col-title">Процесс эпиляции</h3>
+					<p>Обработка лазером каждой зоны. Между световыми вспышками кожа охлаждается, что исключает ожоги</p>
+				</div>
+			</div>
+			<div class="procedure-bottom">
+				<h2 class="section-title">Механизм воздействия</h2>
+				<p>Принцип действия диодной лазерной эпиляции основан на тепловом эффекте. Луч лазера нагревает каждый волосок, а содержащийся в волосяных стержнях пигмент меланин поглощает световую энергию.</p>
+				<p>При такой эпиляции уничтожаются и волосяной фолликул, и сосуд, который его питает. Таким образом, структура нежелательных волосков разрушается, совсем не затрагивая кожу.</p>
+			</div>
+		</div>
+	</section>
+	<!-- end procedure -->
+	<!-- start questions -->
+	<section class="questions">
+		<div class="wrapper">
+			<h2 class="section-title">Вопросы и ответы</h2>
+			<div class="questions-row">
+				<div class="questions-content">
+					<div class="questions-accordeon accordeon">
+						<div class="questions-accordeon__top">
+							<h3 class="questions-accordeon__title">После первой процедуры виден результат?</h3>
+						</div>
+						<div class="questions-accordeon__descr accordeon-descr">
+							<div class="questions-accordeon__descr-wrap">
+								<p>Число процедур подбирается индивидуально.  Среднее число сеансов для подмышек - 7 процедур, на голенях – 8 сеансов, на лице – 5 сеансов.</p>
+								<p>Интервал между походами в клинику составляет в среднем 4 недели.</p>
+								<div class="questions-accordeon__descr-bottom">
+									<div class="questions-accordeon__descr-user">
+										<img src="img/user.png" alt="">
+									</div>
+									<div class="questions-accordeon__descr-info">
+										<h4 class="questions-accordeon__descr-name">Константинопольская Аделина</h4>
+										<span>Специалист лазерной эпиляции</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(1) -->
+					<div class="questions-accordeon accordeon accordeon-active">
+						<div class="questions-accordeon__top">
+							<h3 class="questions-accordeon__title">Давно хочу записаться на процедуру, но никак не решусь из-за боли. Как быть?</h3>
+						</div>
+						<div class="questions-accordeon__descr accordeon-descr">
+							<div class="questions-accordeon__descr-wrap">
+								<p>Число процедур подбирается индивидуально.  Среднее число сеансов для подмышек - 7 процедур, на голенях – 8 сеансов, на лице – 5 сеансов.</p>
+								<p>Интервал между походами в клинику составляет в среднем 4 недели.</p>
+								<div class="questions-accordeon__descr-bottom">
+									<div class="questions-accordeon__descr-user">
+										<img src="img/user.png" alt="">
+									</div>
+									<div class="questions-accordeon__descr-info">
+										<h4 class="questions-accordeon__descr-name">Константинопольская Аделина</h4>
+										<span>Специалист лазерной эпиляции</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(2) -->
+					<div class="questions-accordeon accordeon">
+						<div class="questions-accordeon__top">
+							<h3 class="questions-accordeon__title">После первой процедуры виден результат?</h3>
+						</div>
+						<div class="questions-accordeon__descr accordeon-descr">
+							<div class="questions-accordeon__descr-wrap">
+								<p>Число процедур подбирается индивидуально.  Среднее число сеансов для подмышек - 7 процедур, на голенях – 8 сеансов, на лице – 5 сеансов.</p>
+								<p>Интервал между походами в клинику составляет в среднем 4 недели.</p>
+								<div class="questions-accordeon__descr-bottom">
+									<div class="questions-accordeon__descr-user">
+										<img src="img/user.png" alt="">
+									</div>
+									<div class="questions-accordeon__descr-info">
+										<h4 class="questions-accordeon__descr-name">Константинопольская Аделина</h4>
+										<span>Специалист лазерной эпиляции</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(3) -->
+					<div class="questions-accordeon accordeon">
+						<div class="questions-accordeon__top">
+							<h3 class="questions-accordeon__title">После первой процедуры виден результат?</h3>
+						</div>
+						<div class="questions-accordeon__descr accordeon-descr">
+							<div class="questions-accordeon__descr-wrap">
+								<p>Число процедур подбирается индивидуально.  Среднее число сеансов для подмышек - 7 процедур, на голенях – 8 сеансов, на лице – 5 сеансов.</p>
+								<p>Интервал между походами в клинику составляет в среднем 4 недели.</p>
+								<div class="questions-accordeon__descr-bottom">
+									<div class="questions-accordeon__descr-user">
+										<img src="img/user.png" alt="">
+									</div>
+									<div class="questions-accordeon__descr-info">
+										<h4 class="questions-accordeon__descr-name">Константинопольская Аделина</h4>
+										<span>Специалист лазерной эпиляции</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(4) -->
+					<div class="questions-accordeon accordeon">
+						<div class="questions-accordeon__top">
+							<h3 class="questions-accordeon__title">После первой процедуры виден результат?</h3>
+						</div>
+						<div class="questions-accordeon__descr accordeon-descr">
+							<div class="questions-accordeon__descr-wrap">
+								<p>Число процедур подбирается индивидуально.  Среднее число сеансов для подмышек - 7 процедур, на голенях – 8 сеансов, на лице – 5 сеансов.</p>
+								<p>Интервал между походами в клинику составляет в среднем 4 недели.</p>
+								<div class="questions-accordeon__descr-bottom">
+									<div class="questions-accordeon__descr-user">
+										<img src="img/user.png" alt="">
+									</div>
+									<div class="questions-accordeon__descr-info">
+										<h4 class="questions-accordeon__descr-name">Константинопольская Аделина</h4>
+										<span>Специалист лазерной эпиляции</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(5) -->
+					<div class="questions-accordeon accordeon">
+						<div class="questions-accordeon__top">
+							<h3 class="questions-accordeon__title">После первой процедуры виден результат?</h3>
+						</div>
+						<div class="questions-accordeon__descr accordeon-descr">
+							<div class="questions-accordeon__descr-wrap">
+								<p>Число процедур подбирается индивидуально.  Среднее число сеансов для подмышек - 7 процедур, на голенях – 8 сеансов, на лице – 5 сеансов.</p>
+								<p>Интервал между походами в клинику составляет в среднем 4 недели.</p>
+								<div class="questions-accordeon__descr-bottom">
+									<div class="questions-accordeon__descr-user">
+										<img src="img/user.png" alt="">
+									</div>
+									<div class="questions-accordeon__descr-info">
+										<h4 class="questions-accordeon__descr-name">Константинопольская Аделина</h4>
+										<span>Специалист лазерной эпиляции</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(6) -->
+					<div class="questions-accordeon accordeon">
+						<div class="questions-accordeon__top">
+							<h3 class="questions-accordeon__title">После первой процедуры виден результат</h3>
+						</div>
+						<div class="questions-accordeon__descr accordeon-descr">
+							<div class="questions-accordeon__descr-wrap">
+								<p>Число процедур подбирается индивидуально.  Среднее число сеансов для подмышек - 7 процедур, на голенях – 8 сеансов, на лице – 5 сеансов.</p>
+								<p>Интервал между походами в клинику составляет в среднем 4 недели.</p>
+								<div class="questions-accordeon__descr-bottom">
+									<div class="questions-accordeon__descr-user">
+										<img src="img/user.png" alt="">
+									</div>
+									<div class="questions-accordeon__descr-info">
+										<h4 class="questions-accordeon__descr-name">Константинопольская Аделина</h4>
+										<span>Специалист лазерной эпиляции</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- col(7) -->
+					<div class="questions-button">
+						<a class="btn-border" href="#">Показать еще</a>
+					</div>
+				</div>
+				<div class="questions-sidebar">
+					<div class="questions-sidebar__img">
+						<img src="img/questions-human.png" alt="">
+					</div>
+					<h3 class="questions-sidebar__title">Задайте вопрос мастеру</h3>
+					<p class="questions-sidebar__text">Вы получите уведомление на указанный E-mail после того, как специалист на него ответит</p>
+					<form action="">
+						<div class="questions-sidebar__form">
+							<input type="text" placeholder="Ваше имя">
+							<input type="text" placeholder="E-mail для ответа">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+							<div class="checkbox">
+								<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+								<input type="checkbox" checked>
+								<span></span>
+							</div>
+							<button class="btn-main questions-sidebar__form-button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end questions -->
+	<!-- start results -->
+	<section class="results">
+		<div class="wrapper">
+			<div class="results-top">
+				<h2 class="section-title">Результаты после лазерной эпиляции</h2>
+				<p>Начните строить бизнес от чистого сердца! Получените знания в области создания, управления и развития социальных проектов</p>
+			</div>
+		</div>
+		<div class="results-wrap wrapper">
+			<div class="results-slider">
+				<div class="results-slide">
+					<img src="img/before_after.png" alt="">
+					<p class="results-slide__text results-slide__text-left">До</p>
+					<p class="results-slide__text results-slide__text-right">После</p>
+					<a href="#" class="results-slide__link">4 процедуры</a>
+				</div>
+				<div class="results-slide">
+					<img src="img/before_after.png" alt="">
+					<p class="results-slide__text results-slide__text-left">До</p>
+					<p class="results-slide__text results-slide__text-right">После</p>
+					<a href="#" class="results-slide__link">4 процедуры</a>
+				</div>
+				<div class="results-slide">
+					<img src="img/before_after.png" alt="">
+					<p class="results-slide__text results-slide__text-left">До</p>
+					<p class="results-slide__text results-slide__text-right">После</p>
+					<a href="#" class="results-slide__link">4 процедуры</a>
+				</div>
+				<div class="results-slide">
+					<img src="img/before_after.png" alt="">
+					<p class="results-slide__text results-slide__text-left">До</p>
+					<p class="results-slide__text results-slide__text-right">После</p>
+					<a href="#" class="results-slide__link">4 процедуры</a>
+				</div>
+				<div class="results-slide">
+					<img src="img/before_after.png" alt="">
+					<p class="results-slide__text results-slide__text-left">До</p>
+					<p class="results-slide__text results-slide__text-right">После</p>
+					<a href="#" class="results-slide__link">4 процедуры</a>
+				</div>
+			</div>
+			<div class="results-slider__nav">
+				<div class="results-slide__nav-sl">
+					<div class="results-slide__nav-sl__wrap">
+						<img src="img/sl.png" alt="">
+					</div>
+				</div>
+				<div class="results-slide__nav-sl">
+					<div class="results-slide__nav-sl__wrap">
+						<img src="img/sl.png" alt="">
+					</div>
+				</div>
+				<div class="results-slide__nav-sl">
+					<div class="results-slide__nav-sl__wrap">
+						<img src="img/sl.png" alt="">
+					</div>
+				</div>
+				<div class="results-slide__nav-sl">
+					<div class="results-slide__nav-sl__wrap">
+						<img src="img/sl.png" alt="">
+					</div>
+				</div>
+				<div class="results-slide__nav-sl">
+					<div class="results-slide__nav-sl__wrap">
+						<img src="img/sl.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end results -->
+	<!-- start reviews -->
+	<section class="reviews">
+		<div class="reviews-img">
+			<img src="img/laser.png" alt="">
+		</div>
+		<div class="wrapper">
+			<div class="masters-top">
+				<h2 class="section-title">Отзывы</h2>
+				<a href="#" class="masters-top__link"><span>Все отзывы</span><img src="img/arrow-right.png" alt=""></a>
+			</div>
+			<div class="reviews-row">
+				<div class="reviews-col">
+					<div class="reviews-col__block">
+						<a href="#" class="reviews-col__block-link"></a>
+						<img src="img/reviews.png" alt="">
+					</div>
+					<div class="reviews-col__block reviews-col__block-video">
+						<div class="reviews-col__block-wrap">
+							<iframe src="https://www.youtube.com/embed/fOObHORDImY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="reviews-col__block">
+						<a href="#" class="reviews-col__block-link"></a>
+						<img src="img/reviews.png" alt="">
+					</div>
+					<div class="reviews-col__block">
+						<a href="#" class="reviews-col__block-link"></a>
+						<img src="img/reviews.png" alt="">
+					</div>
+				</div>
+				<div class="reviews-col">
+					<div class="reviews-col__block reviews-col__block-video">
+						<div class="reviews-col__block-wrap">
+							<iframe src="https://www.youtube.com/embed/fOObHORDImY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="reviews-col__block">
+						<a href="#" class="reviews-col__block-link"></a>
+						<img src="img/reviews.png" alt="">
+					</div>
+					<div class="reviews-col__block">
+						<a href="#" class="reviews-col__block-link"></a>
+						<img src="img/reviews.png" alt="">
+					</div>
+					<div class="reviews-col__block reviews-col__block-video">
+						<div class="reviews-col__block-wrap">
+							<iframe src="https://www.youtube.com/embed/fOObHORDImY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="reviews-col">
+					<div class="reviews-col__block">
+						<a href="#" class="reviews-col__block-link"></a>
+						<img src="img/reviews.png" alt="">
+					</div>
+					<div class="reviews-col__block reviews-col__block-video">
+						<div class="reviews-col__block-wrap">
+							<iframe src="https://www.youtube.com/embed/fOObHORDImY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="reviews-col__block">
+						<a href="#" class="reviews-col__block-link"></a>
+						<img src="img/reviews.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="reviews-button">
+				<a href="#" class="btn-border">Показать еще</a>
+			</div>
+		</div>
+	</section>
+	<!-- end reviews -->
+	<!-- start masters -->
+	<section class="masters">
+		<div class="wrapper">
+			<div class="masters-top">
+				<h2 class="section-title">Наши мастера</h2>
+				<a href="#" class="masters-top__link"><span>Все<b> мастера</b></span><img src="img/arrow-right.png" alt=""></a>
+			</div>
+			<div class="masters-content">
+				<div class="masters-col">
+					<div class="masters-col__img">
+						<img src="img/doc_01.png" alt="">
+					</div>
+					<div class="masters-col__descr">
+						<a href="#" class="masters-col__descr-place"><img src="img/gg.png" alt=""><span>Китай–Город</span></a>
+						<h3 class="masters-col__descr-title">Константинопольская Аделина (1 вариант карточки)</h3>
+						<p class="masters-col__descr-text">Специалист лазерной эпиляции. Имеет среднее медицинское образование. Опыт работы в аппаратной косметологии — около 5 лет. Мастерство подтверждено сертификатами.</p>
+						<div class="masters-col__descr-row">
+							<div class="masters-col__descr-block">
+								<p>Популярность:</p>
+								<img src="img/star.png" alt="">
+							</div>
+							<div class="masters-col__descr-block">
+								<p>Загруженность:</p>
+								<img src="img/star.png" alt="">
+							</div>
+							<div class="masters-col__descr-block">
+								<p>Резервный параметр:</p>
+								<a href="#">Описание</a>
+							</div>
+						</div>
+						<div class="masters-col__descr-buttons">
+							<a href="#modal-sign-up" class="button-modal btn-main">Записаться на прием</a>
+							<a href="#" class="btn-more">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- masters-col(1) -->
+				<div class="masters-col">
+					<div class="masters-col__img">
+						<img src="img/doc_02.png" alt="">
+					</div>
+					<div class="masters-col__descr">
+						<a href="#" class="masters-col__descr-place"><img src="img/gg.png" alt=""><span>Китай–Город</span></a>
+						<h3 class="masters-col__descr-title">Константинопольская Аделина (1 вариант карточки)</h3>
+						<p class="masters-col__descr-text">Специалист лазерной эпиляции. Имеет среднее медицинское образование. Опыт работы в аппаратной косметологии — около 5 лет. Мастерство подтверждено сертификатами.</p>
+						<div class="masters-col__descr-row">
+							<div class="masters-col__descr-block">
+								<p>Популярность:</p>
+								<img src="img/star.png" alt="">
+							</div>
+							<div class="masters-col__descr-block">
+								<p>Загруженность:</p>
+								<span>Специалист лазерной эпиляции</span>
+							</div>
+							<div class="masters-col__descr-block">
+								<p>Резервный параметр:</p>
+								<span>5 лет</span>
+							</div>
+						</div>
+						<div class="masters-col__descr-buttons">
+							<a href="#modal-sign-up" class="button-modal btn-main">Записаться на прием</a>
+							<a href="#" class="btn-more">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- masters-col(2) -->
+				<div class="masters-col">
+					<div class="masters-col__img">
+						<img src="img/doc_03.png" alt="">
+					</div>
+					<div class="masters-col__descr">
+						<a href="#" class="masters-col__descr-place"><img src="img/gg.png" alt=""><span>Китай–Город</span></a>
+						<h3 class="masters-col__descr-title">Константинопольская Аделина</h3>
+						<p class="masters-col__descr-text">Специалист лазерной эпиляции. Имеет среднее медицинское образование. Опыт работы в аппаратной косметологии — около 5 лет. Мастерство подтверждено сертификатами.</p>
+						<div class="masters-col__descr-row">
+							<div class="masters-col__descr-block">
+								<p>Популярность:</p>
+								<img src="img/star.png" alt="">
+							</div>
+							<div class="masters-col__descr-block">
+								<p>Загруженность:</p>
+								<img src="img/star.png" alt="">
+							</div>
+							<div class="masters-col__descr-block">
+								<p>Резервный параметр:</p>
+								<a href="#">Описание</a>
+							</div>
+						</div>
+						<div class="masters-col__descr-buttons">
+							<a href="#modal-sign-up" class="button-modal btn-main">Записаться на прием</a>
+							<a href="#" class="btn-more">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- masters-col(3) -->
+				<div class="masters-col">
+					<div class="masters-col__img">
+						<img src="img/doc_04.png" alt="">
+					</div>
+					<div class="masters-col__descr">
+						<a href="#" class="masters-col__descr-place"><img src="img/gg.png" alt=""><span>Чистые пруды</span></a>
+						<h3 class="masters-col__descr-title">Можельникова Ирина</h3>
+						<p class="masters-col__descr-text">Специалист лазерной эпиляции. Имеет среднее медицинское образование. Опыт работы в аппаратной косметологии — около 5 лет. Мастерство подтверждено сертификатами.</p>
+						<div class="masters-col__descr-row">
+							<div class="masters-col__descr-block">
+								<p>Популярность:</p>
+								<img src="img/star.png" alt="">
+							</div>
+							<div class="masters-col__descr-block">
+								<p>Загруженность:</p>
+								<img src="img/star.png" alt="">
+							</div>
+							<div class="masters-col__descr-block">
+								<p>Резервный параметр:</p>
+								<a href="#">Описание</a>
+							</div>
+						</div>
+						<div class="masters-col__descr-buttons">
+							<a href="#modal-sign-up" class="button-modal btn-main">Записаться на прием</a>
+							<a href="#" class="btn-more">Подробнее</a>
+						</div>
+					</div>
+				</div><!-- masters-col(4) -->
+			</div>
+			<div class="masters-button">
+				<a href="#" class="btn-border">Показать еще</a>
+			</div>
+		</div>
+	</section>
+	<!-- end masters -->
+	<!-- start stock -->
+	<section class="stock">
+		<div class="wrapper">
+			<div class="masters-top">
+				<h2 class="section-title"><b>Акции прямо сейчас</b><span>Текущие акции</span></h2>
+				<a href="#" class="masters-top__link"><span>Все</span><img src="img/arrow-right.png" alt=""></a>
+			</div>
+		</div>
+		<div class="stock-slider">
+	  	<div class="stock-slide">
+	  		<div class="stock-slide__wrap" style="background-image: url(img/Card_01.png);">
+	  			<a href="#" class="stock-slide__link"></a>
+	  			<div class="stock-slide__descr">
+	  				<h3 class="stock-slide__descr-title">Подарок любимому</h3>
+	  				<p>Комплексный набор, включающий в себя зону бикини, брови и бедра</p>
+	  				<a href="#">с 10.09 до 19.10</a>
+	  			</div>
+	  		</div>
+	  	</div><!-- slide(1) -->
+	  	<div class="stock-slide">
+	  		<div class="stock-slide__wrap" style="background-image: url(img/Card_02.png);">
+	  			<a href="#" class="stock-slide__link"></a>
+	  			<div class="stock-slide__descr">
+	  				<h3 class="stock-slide__descr-title">Подарок любимому</h3>
+	  				<p>Комплексный набор, включающий в себя зону бикини, брови и бедра</p>
+	  				<a href="#">с 10.09 до 19.10</a>
+	  			</div>
+	  		</div>
+	  	</div><!-- slide(2) -->
+	  	<div class="stock-slide">
+	  		<div class="stock-slide__wrap" style="background-image: url(img/Card_01.png);">
+	  			<a href="#" class="stock-slide__link"></a>
+	  			<div class="stock-slide__descr">
+	  				<h3 class="stock-slide__descr-title">Подарок любимому</h3>
+	  				<p>Комплексный набор, включающий в себя зону бикини, брови и бедра</p>
+	  				<a href="#">с 10.09 до 19.10</a>
+	  			</div>
+	  		</div>
+	  	</div><!-- slide(3) -->
+	  	<div class="stock-slide">
+	  		<div class="stock-slide__wrap" style="background-image: url(img/Card_02.png);">
+	  			<a href="#" class="stock-slide__link"></a>
+	  			<div class="stock-slide__descr">
+	  				<h3 class="stock-slide__descr-title">Подарок любимому</h3>
+	  				<p>Комплексный набор, включающий в себя зону бикини, брови и бедра</p>
+	  				<a href="#">с 10.09 до 19.10</a>
+	  			</div>
+	  		</div>
+	  	</div><!-- slide(4) -->
+		</div>
+		<div class="wrapper">
+			<div class="stock-button">
+				<a href="#" class="btn-border">Смотреть все акции</a>
+			</div>
+		</div>
+	</section>
+	<!-- end stock -->
+	<!-- start questions-remained -->
+	<section class="questions-remained">
+		<div class="wrapper">
+			<h2 class="questions-remained__title">Остались вопросы?</h2>
+			<p class="questions-remained__text">Позвоните по номеру <a href="#">+7 495 123-45-67</a> или оставьте заявку на консультацию</p>
+			<form action="">
+				<div class="questions-remained__form">
+					<div class="questions-remained__form-input">
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="questions-remained__form-input">
+						<input type="text" placeholder="Телефон для связи">
+					</div>
+					<button class="btn-main questions-remained__form-button">Получить консультацию</button>
+					<div class="checkbox">
+						<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+						<input type="checkbox" checked>
+						<span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- end questions-remained -->
+	<!-- start contacts -->
+	<section class="contacts">
+		<div class="wrapper">
+			<div class="contacts-top">
+				<h2 class="section-title">Контакты</h2>
+				<div class="contacts-top__drop">
+					<p>Выберите город</p>
+					<select class="select" name="" id="">
+						<option value="">lorem-1</option>
+						<option value="">lorem-2</option>
+						<option value="">lorem-3</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="contacts-wrap">
+			<div id="map"></div>
+			<div class="contacts-info">
+				<div class="contacts-info__top">
+					<form action="">
+						<div class="contacts-info__form">
+							<input type="text" placeholder="Введите адрес или станцию метро">
+							<button class="contacts-info__form-button"><img src="img/search.svg" alt=""></button>
+						</div>
+					</form>
+				</div>
+				<div class="contacts-info__wrap mCustomScrollbar">
+					<div class="contacts-info__wrap-scroll">
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon accordeon-active">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-info__accordion accordeon">
+							<div class="contacts-info__accordion-top accordeon-title">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr accordeon-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-info__slider">
+					<div class="contacts-info__slide">
+						<div class="contacts-info__accordion">
+							<div class="contacts-info__accordion-top">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide(1) -->
+					<div class="contacts-info__slide">
+						<div class="contacts-info__accordion">
+							<div class="contacts-info__accordion-top">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide(2) -->
+					<div class="contacts-info__slide">
+						<div class="contacts-info__accordion">
+							<div class="contacts-info__accordion-top">
+								<h3 class="contacts-info__accordion-title"><img src="img/gg.png" alt=""><span>Китай-город</span></h3>
+							</div>
+							<div class="contacts-info__accordion-descr">
+								<div class="contacts-info__accordion-descr__row">
+									<span>Адрес:</span>
+									<p>ул. Феклы Пчелкиной, д.14. стр 18, корп. 3</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Режим работы:</span>
+									<p>с 10:00 до 23:00</p>
+								</div>
+								<div class="contacts-info__accordion-descr__row">
+									<span>Телефон:</span>
+									<p><a href="#">+7 495 123–45–67</a></p>
+								</div>
+								<div class="contacts-info__accordion-descr__bottom">
+									<a href="#modal-scheme" class="button-modal btn-border">Схема проезда</a>
+									<a href="#modal-call" class="button-modal btn-main">Заказать звонок</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide(3) -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contacts -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper">
+				<div class="footer-top__menu">
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Подарочные карты</a></li>
+							<li><a href="#">Мастера</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Кабинеты</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Вакансии</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Форум</a></li>
+							<li><a href="#">Академия</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top__news">
+					<h3 class="footer-top__news-title">Получайте новости об акциях</h3>
+					<form action="">
+						<div class="footer-top__news-form">
+							<input type="text" placeholder="Укажите Ваш E–mail">
+							<button class="footer-top__news-button"><img src="img/sent.svg" alt=""></button>
+						</div>
+					</form>
+					<div class="checkbox">
+						<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+						<input type="checkbox" checked>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<ul class="footer-bottom__list">
+					<li><a href="#">Политика конфиденциальности</a></li>
+					<li><a href="#">Публичная оферта</a></li>
+					<li><a href="#">Карта сайта</a></li>
+				</ul>
+				<ul class="footer-bottom__social">
+					<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/ok.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);
+		var myMap;
+
+		function init(){    
+	    myMap = new ymaps.Map ("map", {
+	        center: [55.75734971466011,37.62232662925426],
+	        zoom: 10,
+	        controls: []
+	    });
+
+	    myMap.behaviors.disable([
+			  'scrollZoom'
+			]);
+
+			myPin = new ymaps.GeoObjectCollection({}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/pin.png',
+        iconImageSize: [48, 66],
+        iconImageOffset: [-48, -66]
+      });
+
+			myPlacemark1 = new ymaps.Placemark([55.843985514275985,37.74592282066051], {
+        balloonContentHeader: '<p class="bal-text">Магазин “Дикси”<br />Москва <br />Нахиловский 23<a href="#">8 911 082 15 33</a></p>',
+        balloonContentBody: '<p class="bal-time">9:00 - 20:00</p>'
+      });
+
+      myPlacemark2 = new ymaps.Placemark([55.76122151324889,37.71021725425427], {
+        balloonContentHeader: '<p class="bal-text">Магазин “Дикси”<br />Москва <br />Нахиловский 23<a href="#">8 911 082 15 33</a></p>',
+        balloonContentBody: '<p class="bal-time">9:00 - 20:00</p>'
+      });
+
+      myPlacemark3 = new ymaps.Placemark([55.732561061120784,37.51520993003553], {
+        balloonContentHeader: '<p class="bal-text">Магазин “Дикси”<br />Москва <br />Нахиловский 23<a href="#">8 911 082 15 33</a></p>',
+        balloonContentBody: '<p class="bal-time">9:00 - 20:00</p>'
+      });
+
+      myPlacemark4 = new ymaps.Placemark([55.80798127490955,37.5388683429077], {
+        balloonContentHeader: '<p class="bal-text">Магазин “Дикси”<br />Москва <br />Нахиловский 23<a href="#">8 911 082 15 33</a></p>',
+        balloonContentBody: '<p class="bal-time">9:00 - 20:00</p>'
+      });
+
+      myPin.add(myPlacemark1).add(myPlacemark2).add(myPlacemark3).add(myPlacemark4);
+
+		  myMap.geoObjects.add(myPin);
+		}
+	</script>
+</body>
+</html>
