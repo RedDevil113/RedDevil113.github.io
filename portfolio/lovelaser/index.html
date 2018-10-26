@@ -19,25 +19,216 @@
 </head>
 <body>
 	<div class="modal-overlay"></div>
-	<div class="modal modal-call" id="modal-call">
-		<div class="cancel"></div>
-		
-	</div>
-	<div class="modal modal-scheme" id="modal-scheme">
-		<div class="cancel"></div>
-		
-	</div>
-	<div class="modal modal-city" id="modal-city">
-		<div class="cancel"></div>
-		
-	</div>
 	<div class="modal modal-salons" id="modal-salons">
 		<div class="cancel"></div>
 		
 	</div>
+	<div class="modal modal-call" id="modal-call">
+		<div class="cancel"></div>
+		<div class="modal-body">
+			<div class="modal-call__wrap">
+				<div class="modal-call__bg" style="background-image: url(img/md-1.png)"></div>
+				<div class="modal-call__descr">
+					<h3 class="modal-call__title">Заказать звонок</h3>
+					<div class="modal-call__info">
+						<p class="modal-call__text">Для записи на прием заполните все обязательные поля. Наш оператор свяжется с Вами для подтверждения заявки.</p>
+						<form action="">
+							<div class="modal-call__form">
+								<input type="text" placeholder="Антонина">
+								<input type="text" placeholder="+7 925 123 45 67">
+								<div class="checkbox">
+									<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+									<input type="checkbox" checked>
+									<span></span>
+								</div>
+								<button class="btn-main modal-call__form-button">Отправить заявку</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-scheme" id="modal-scheme">
+		<div class="cancel"></div>
+		<div class="modal-scheme__top">
+			<div class="page-top">
+				<div class="wrapper">
+					<div class="page-top__row">
+						<h2 class="section-title modal-call__title">Схема проезда</h2>
+						<ul class="page-top__menu">
+							<li><a class="active" href="#">Пешком</a></li>
+							<li><a href="#">На автомобиле</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-scheme__img">
+			<img src="img/map-img.png" alt="">
+		</div>
+		<div class="modal-scheme__info">
+			<div class="modal-scheme__info-row">
+				<div class="modal-scheme__info-col">
+					<span>Адрес:</span>
+					<p>ул. Феклы Пчелкиной, д.4, стр.2, 5 подъезд, офис 4166</p>
+				</div>
+				<div class="modal-scheme__info-col">
+					<span>Режим работы:</span>
+					<p><span>с 10:00 до 23:00</span></p>
+				</div>
+				<div class="modal-scheme__info-col">
+					<span>Телефон:</span>
+					<p><span><a href="#">+7 495 123–45–67</a></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-scheme__descr">
+			<div class="modal-scheme__descr-col">
+				<h3 class="modal-scheme__descr-title">От метро «Багратионовская»</h3>
+				<p>Обратите внимание, что в данный момент в сторону центра нет выхода из последнего вагона поезда, а из центра — нет выхода из первого вагона. Поднявшись из метро на улицу Барклая, поверните налево и идите прямо и вниз до первого перекрестка. Перейдя дорогу, поверните налево в «Багратионовский проезд», после чего идите всё время прямо. Проходите «Горбушку», «Сбербанк», кафе «Якитория» и банк «Русский стандарт», арку (сворачивать в нее не нужно). Сразу после арки вы увидите вращающуюся стеклянную дверь — вход в офисный центр «Конвент-Плюс». На проходной скажите охраннику, что вы в офис 324, возьмите пропуск. Наш офис находится на 3 этаже — в конце коридора, с правой стороны от лестницы.</p>
+			</div>
+			<div class="modal-scheme__descr-col">
+				<h3 class="modal-scheme__descr-title">От метро «Фили»</h3>
+				<p>Вам нужно выйти из первого вагона из центра (в сторону области — из последнего вагона), выход на Багратионовский проезд. Поднявшись из метро на улицу, поверните налево, перейдите дорогу на пешеходном переходе, потом направо и идите прямо вдоль дороги. Проходите мимо торгового центра «Филион» и в следующем после него здании вы увидите вращающуюся стеклянную дверь — вход в офисный центр «Конвент-Плюс».</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-city" id="modal-city">
+		<div class="cancel"></div>
+		<div class="modal-city__wrap">
+			<h3 class="modal-call__title">Выберите город из списка</h3>
+			<div class="modal-call__info">
+				<p class="modal-call__text">Если по какой-то причине Вы не нашли нужный город <a href="#">напишите нам</a> об этом.</p>
+				<div class="modal-city__row">
+					<div class="modal-city__col">
+						<ul>
+							<li><a href="#">Архангельск</a></li>
+							<li><a href="#">Астрахань</a></li>
+							<li><a href="#">Барнаул</a></li>
+							<li><a href="#">Белгород</a></li>
+							<li><a href="#">Владивосток</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Воронеж</a></li>
+							<li><a href="#">Грозный</a></li>
+						</ul>
+					</div>
+					<div class="modal-city__col">
+						<ul>
+							<li><a href="#">Дзержинск</a></li>
+							<li><a href="#">Екатеринбург</a></li>
+							<li><a href="#">Казань</a></li>
+							<li><a href="#">Краснодар</a></li>
+							<li><a href="#">Красноярск</a></li>
+							<li><a href="#">Москва</a></li>
+							<li><a href="#">Мурманск</a></li>
+							<li><a href="#">Набережные Челны</a></li>
+						</ul>
+					</div>
+					<div class="modal-city__col">
+						<ul>
+							<li><a href="#">Омск</a></li>
+							<li><a href="#">Орел</a></li>
+							<li><a href="#">Оренбург</a></li>
+							<li><a href="#">Пермь</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+							<li><a href="#">Санкт-Петербург</a></li>
+							<li><a href="#">Тверь</a></li>
+							<li><a href="#">Уфа</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="modal modal-sign-up" id="modal-sign-up">
 		<div class="cancel"></div>
-		
+		<div class="modal-body">
+			<div class="modal-call__wrap">
+				<div class="modal-call__bg" style="background-image: url(img/md-2.png)"></div>
+				<div class="modal-call__descr">
+					<h3 class="modal-call__title">Записаться на прием</h3>
+					<div class="modal-call__info">
+						<p class="modal-call__text">Для записи на прием заполните все обязательные поля. Наш оператор свяжется с Вами для подтверждения заявки.</p>
+						<form action="">
+							<div class="modal-call__form">
+								<input type="text" placeholder="Антонина">
+								<input type="text" placeholder="+7 925 123 45 67">
+								<input type="text" placeholder="Example@gmail.com">
+								<select class="select" name="" id="">
+									<option value="">Выберите салон из списка</option>
+									<option value="">lorem-2</option>
+									<option value="">lorem-3</option>
+								</select>
+								<div class="modal-call__form-row">
+									<div class="modal-call__form-date">
+										<div class="modal-call__form-calendar">
+											<input type="text" class="datepicker">
+											<img src="img/calendar.png" alt="">
+										</div>
+									</div>
+									<div class="modal-call__form-select">
+										<select class="select" name="" id="">
+											<option value="">18:30</option>
+											<option value="">lorem-2</option>
+											<option value="">lorem-3</option>
+										</select>
+									</div>
+								</div>
+								<div class="checkbox">
+									<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+									<input type="checkbox" checked>
+									<span></span>
+								</div>
+								<button class="btn-main modal-call__form-button">Отправить заявку</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-more" id="modal-more">
+		<div class="cancel"></div>
+		<div class="modal-body">
+			<div class="modal-call__wrap">
+				<div class="modal-call__bg" style="background-image: url(img/md-3.png)"></div>
+				<div class="modal-call__descr">
+					<h3 class="modal-call__title">Записаться к Аделине</h3>
+					<div class="modal-call__info">
+						<p class="modal-call__text">Для записи на прием заполните все обязательные поля. Наш оператор свяжется с Вами для подтверждения заявки.</p>
+						<form action="">
+							<div class="modal-call__form">
+								<input type="text" placeholder="Антонина">
+								<input type="text" placeholder="+7 925 123 45 67">
+								<input type="text" placeholder="Example@gmail.com">
+								<div class="modal-call__form-row">
+									<div class="modal-call__form-date">
+										<div class="modal-call__form-calendar">
+											<input type="text" class="datepicker">
+											<img src="img/calendar.png" alt="">
+										</div>
+									</div>
+									<div class="modal-call__form-select">
+										<select class="select" name="" id="">
+											<option value="">18:30</option>
+											<option value="">lorem-2</option>
+											<option value="">lorem-3</option>
+										</select>
+									</div>
+								</div>
+								<div class="checkbox">
+									<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+									<input type="checkbox" checked>
+									<span></span>
+								</div>
+								<button class="btn-main modal-call__form-button">Отправить заявку</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="header-menu">
 		<div class="header-menu__top">
@@ -1013,7 +1204,7 @@
 						</div>
 						<div class="masters-col__descr-buttons">
 							<a href="#modal-sign-up" class="button-modal btn-main">Записаться на прием</a>
-							<a href="#" class="btn-more">Подробнее</a>
+							<a href="#modal-more" class="button-modal btn-more">Подробнее</a>
 						</div>
 					</div>
 				</div><!-- masters-col(3) -->
@@ -1067,7 +1258,7 @@
 	  			<div class="stock-slide__descr">
 	  				<h3 class="stock-slide__descr-title">Подарок любимому</h3>
 	  				<p>Комплексный набор, включающий в себя зону бикини, брови и бедра</p>
-	  				<a href="#">с 10.09 до 19.10</a>
+	  				<a href="#"><b>с 10.09 до 19.10</b><span>Узнать больше об акции</span></a>
 	  			</div>
 	  		</div>
 	  	</div><!-- slide(1) -->
@@ -1077,7 +1268,7 @@
 	  			<div class="stock-slide__descr">
 	  				<h3 class="stock-slide__descr-title">Подарок любимому</h3>
 	  				<p>Комплексный набор, включающий в себя зону бикини, брови и бедра</p>
-	  				<a href="#">с 10.09 до 19.10</a>
+	  				<a href="#"><b>с 10.09 до 19.10</b><span>Узнать больше об акции</span></a>
 	  			</div>
 	  		</div>
 	  	</div><!-- slide(2) -->
@@ -1087,7 +1278,7 @@
 	  			<div class="stock-slide__descr">
 	  				<h3 class="stock-slide__descr-title">Подарок любимому</h3>
 	  				<p>Комплексный набор, включающий в себя зону бикини, брови и бедра</p>
-	  				<a href="#">с 10.09 до 19.10</a>
+	  				<a href="#"><b>с 10.09 до 19.10</b><span>Узнать больше об акции</span></a>
 	  			</div>
 	  		</div>
 	  	</div><!-- slide(3) -->
@@ -1097,7 +1288,7 @@
 	  			<div class="stock-slide__descr">
 	  				<h3 class="stock-slide__descr-title">Подарок любимому</h3>
 	  				<p>Комплексный набор, включающий в себя зону бикини, брови и бедра</p>
-	  				<a href="#">с 10.09 до 19.10</a>
+	  				<a href="#"><b>с 10.09 до 19.10</b><span>Узнать больше об акции</span></a>
 	  			</div>
 	  		</div>
 	  	</div><!-- slide(4) -->

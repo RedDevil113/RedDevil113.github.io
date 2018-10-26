@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<div class="modal modal-call" id="modal-call">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-scheme" id="modal-scheme">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-city" id="modal-city">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-salons" id="modal-salons">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-sign-up" id="modal-sign-up">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="header-menu">
+		<div class="header-menu__top">
+			<p><img src="img/close.png" alt=""><span>Меню сайта</span></p>
+		</div>
+		<div class="header-menu__bottom">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Мастера</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li>
+					<a class="header-drop" href="#">Мужчины</a>
+					<div class="header-menu__wrap">
+						<div class="header-menu__row">
+							<div>
+								<p class="header-menu__title">Голова и лицо</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Ноги</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Ноги</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Голова и лицо</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a class="header-drop" href="#">Женщинам</a>
+					<div class="header-menu__wrap">
+						<div class="header-menu__row">
+							<div>
+								<p class="header-menu__title">Голова и лицо</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Ноги</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Ноги</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+							<div>
+								<p class="header-menu__title">Голова и лицо</p>
+								<ul>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Шея</a></li>
+									<li><a href="#">Межбровье</a></li>
+									<li><a href="#">Бакенбарды</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+									<li><a href="#">Виски</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<div class="header-menu__button">
+				<a href="#modal-call" class="btn-main button-modal">Заказать звонок</a>
+			</div>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header header-second">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-bar">
+					<img src="img/bar.png" alt="">
+				</div>
+				<div class="header-mob">
+					<ul>
+						<li><a href="#">Адреса 7 салонов</a></li>
+						<li><a href="#">+7 495 987-65-43</a></li>
+					</ul>
+				</div>
+				<ul class="bread-crumbs">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Блог</a></li>
+				</ul>
+				<div class="header-top__right">
+					<div class="header-top__from">
+						<form action="">
+							<div>
+								<button class="header-top__from-button"><img src="img/search.svg" alt=""></button>
+								<input type="text" placeholder="Поиск по сайту">
+							</div>
+						</form>
+					</div>
+					<ul class="header-top__social">
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/ok.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="wrapper">
+				<div class="header-middle__row">
+					<div class="header-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="header-middle__wrap">
+						<div class="header-middle__col">
+							<span>Ваш город:</span>
+							<a href="#modal-city" class="button-modal header-middle__link"><span>Москва</span></a>
+						</div>
+						<div class="header-middle__col">
+							<span>Ближайшие салоны:</span>
+							<div>
+								<p><img src="img/gg.png" alt=""><span>Смоленская</span></p>
+								<p><img src="img/gg.png" alt=""><span>Китай–Город</span></p>
+								<a href="#modal-salons" class="button-modal header-middle__link"><span>Все салоны</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-middle__right">
+					<div>
+						<span>Доступно с 10:00 до 23:00</span>
+						<p><a href="#">+7 495 987-65-43</a></p>
+					</div>
+					<a href="#modal-call" class="button-modal btn-main">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<nav class="header-nav">
+					<ul>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Подарочные карты</a></li>
+						<li><a href="#">Мастера</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Вопросы и ответы</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start services -->
+	<section class="services services-second">
+		<div class="services-head">
+			<div class="wrapper">
+				<ul class="crumbs">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Услуги</a></li>
+				</ul>
+				<div class="services-top">
+					<h2 class="section-title">Все услуги</h2>
+					<div class="services-top__tabs">
+						<p>Показать:</p>
+						<ul>
+							<li><a class="services-active" href="#services-1">Схемой</a></li>
+							<li><a class="services-list__link" href="#services-2">Списком</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="services-menu__wrap">
+				<div class="services-menu__wrap-col">
+					<p>Выберите пол:</p>
+					<ul>
+						<li><a href="#">Мужской</a></li>
+						<li><a class="services-active" href="#">Женский</a></li>
+					</ul>
+				</div>
+				<div class="services-select">
+					<select class="select" name="" id="">
+						<option value="">lorem-1</option>
+						<option value="">lorem-2</option>
+						<option value="">lorem-3</option>
+					</select>
+				</div>
+				<div class="services-menu__wrap-col services-menu__wrap-col__last">
+					<p>Выберите часть тела:</p>
+					<ul>
+						<li><a class="services-active" href="#">Голова и лицо</a></li>
+						<li><a href="#">Тело</a></li>
+						<li><a href="#">Руки</a></li>
+						<li><a href="#">Ноги</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="services-block services-wrap block-active" id="services-1">
+				<div class="services-wrap__row">
+					<div class="services-wrap__img">
+						<img src="img/Woman.png" alt="">
+					</div>
+					<div class="services-wrap__info">
+						<h3 class="services-wrap__info-title">Выберите услугу:</h3>
+						<div class="services-wrap__info-slider">
+							<div class="services-wrap__info-slide">
+								<div class="services-wrap__info-slide__row">
+									<div class="checkbox">
+										<p><b>Верхняя губа, межбровье или подбородок</b><span>1 200 ₽</span></p>
+										<input type="checkbox" checked>
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox" checked>
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</div>
+							</div><!-- slide(1) -->
+							<div class="services-wrap__info-slide">
+								<div class="services-wrap__info-slide__row">
+									<div class="checkbox">
+										<p><b>Верхняя губа, межбровье или подбородок</b><span>1 200 ₽</span></p>
+										<input type="checkbox" checked>
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox" checked>
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+									<div class="checkbox">
+										<p><b>Верхняя губа</b><span>1 200 ₽</span></p>
+										<input type="checkbox">
+										<span></span>
+									</div>
+								</div>
+							</div><!-- slide(2) -->
+						</div>
+						<a href="#" class="btn-border services-wrap__info-button">Показать еще</a>
+					</div>
+				</div>
+			</div>
+			<div class="services-block services-list" id="services-2">
+				<div class="services-list__row">
+					<div class="services-list__col">
+						<h3 class="services-list__col-title">Голова и лицо</h3>
+						<ul>
+							<li><a href="#">Виски</a></li>
+							<li><a href="#">Шея</a></li>
+							<li><a href="#">Межбровье</a></li>
+							<li><a href="#">Бакенбарды</a></li>
+							<li><a href="#">Щеки</a></li>
+							<li><a href="#">Верхняя губа</a></li>
+							<li><a href="#">Подбородок</a></li>
+							<li><a href="#">Лоб</a></li>
+							<li><a href="#">Скулы</a></li>
+						</ul>
+					</div>
+					<div class="services-list__col">
+						<h3 class="services-list__col-title">Тело</h3>
+						<ul>
+							<li><a href="#">Декольте</a></li>
+							<li><a href="#">Спина</a></li>
+							<li><a href="#">Живот</a></li>
+							<li><a href="#">Грудь</a></li>
+							<li><a href="#">Глубокое бикини</a></li>
+						</ul>
+					</div>
+					<div class="services-list__col">
+						<h3 class="services-list__col-title">Руки</h3>
+						<ul>
+							<li><a href="#">Пальцы</a></li>
+							<li><a href="#">Руки полностью</a></li>
+							<li><a href="#">Руки ниже локтя</a></li>
+							<li><a href="#">Подмышки</a></li>
+						</ul>
+					</div>
+					<div class="services-list__col">
+						<h3 class="services-list__col-title">Ноги</h3>
+						<ul>
+							<li><a href="#">Бедра</a></li>
+							<li><a href="#">Голень</a></li>
+							<li><a href="#">Пальцы ног</a></li>
+							<li><a href="#">Ноги полностью</a></li>
+							<li><a href="#">Ягодицы</a></li>
+							<li><a href="#">Зона бикини</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end services -->
+	<!-- start services-descr -->
+	<section class="services-descr">
+		<div class="wrapper">
+			<h2 class="section-title">Заголовок для СЕО</h2>
+			<div class="services-descr__wrap">
+				<div class="services-descr__info">
+					<p>Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Равным образом реализация намеченных плановых заданий позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности требуют от нас анализа направлений прогрессивного развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке новых предложений.</p>
+					<p>Не следует, однако забывать, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание новых предложений. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового участия. Разнообразный и богатый опыт рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений.</p>
+					<p>Разнообразный и богатый опыт консультация с широким активом требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение соответствующий условий активизации. Не следует, однако забывать, что укрепление и развитие структуры в значительной степени обуславливает создание систем массового участия. Повседневная практика показывает, что консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание систем массового участия.</p>
+					<p>Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения дальнейших направлений развития. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции позволяет оценить значение форм развития. Разнообразный и богатый опыт рамки и место обучения кадров позволяет выполнять важные задания по разработке соответствующий условий активизации. Задача организации, в особенности же начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что консультация с широким активом влечет за собой процесс внедрения и модернизации форм развития.</p>
+				</div>
+				<div class="services-descr__sidebar">
+					<div class="services-descr__sidebar-wrap">
+						<h3 class="services-descr__sidebar-title">Рекомендуем ознакомиться</h3>
+						<ul>
+							<li><a href="#">Что такое эпиляция</a></li>
+							<li><a href="#">Альтернативные способы эпиляции помимо лазерной</a></li>
+							<li><a href="#">Как можно избавиться от волос?</a></li>
+							<li><a href="#">Зачему коту подушечки на лапках</a></li>
+							<li><a href="#">Что следует знать, прежде чем выбирать салон?</a></li>
+							<li><a href="#">Что делать, если волосы снова растут после полного курса</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end services-descr -->
+	<!-- start questions-remained -->
+	<section class="questions-remained">
+		<div class="wrapper">
+			<h2 class="questions-remained__title">Остались вопросы?</h2>
+			<p class="questions-remained__text">Позвоните по номеру <a href="#">+7 495 123-45-67</a> или оставьте заявку на консультацию</p>
+			<form action="">
+				<div class="questions-remained__form">
+					<div class="questions-remained__form-input">
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="questions-remained__form-input">
+						<input type="text" placeholder="Телефон для связи">
+					</div>
+					<button class="btn-main questions-remained__form-button">Получить консультацию</button>
+					<div class="checkbox">
+						<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+						<input type="checkbox" checked>
+						<span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- end questions-remained -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper">
+				<div class="footer-top__menu">
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Подарочные карты</a></li>
+							<li><a href="#">Мастера</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Кабинеты</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Вакансии</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Форум</a></li>
+							<li><a href="#">Академия</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top__news">
+					<h3 class="footer-top__news-title">Получайте новости об акциях</h3>
+					<form action="">
+						<div class="footer-top__news-form">
+							<input type="text" placeholder="Укажите Ваш E–mail">
+							<button class="footer-top__news-button"><img src="img/sent.svg" alt=""></button>
+						</div>
+					</form>
+					<div class="checkbox">
+						<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+						<input type="checkbox" checked>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<ul class="footer-bottom__list">
+					<li><a href="#">Политика конфиденциальности</a></li>
+					<li><a href="#">Публичная оферта</a></li>
+					<li><a href="#">Карта сайта</a></li>
+				</ul>
+				<ul class="footer-bottom__social">
+					<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/ok.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
