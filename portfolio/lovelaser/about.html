@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body class="basement-open">
+	<div class="wrapper"></div>
+	<div class="modal-overlay"></div>
+	<div class="modal modal-call" id="modal-call">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-scheme" id="modal-scheme">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-city" id="modal-city">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-salons" id="modal-salons">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="modal modal-sign-up" id="modal-sign-up">
+		<div class="cancel"></div>
+		
+	</div>
+	<div class="header-menu">
+		<div class="header-menu__top">
+			<div class="wrapper">
+				<p><img src="img/close.png" alt=""><span>Меню сайта</span></p>
+			</div>
+		</div>
+		<div class="header-menu__bottom">
+			<div class="wrapper">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Мастера</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li>
+						<a class="header-drop" href="#">Мужчины</a>
+						<div class="header-menu__wrap">
+							<div class="header-menu__row">
+								<div>
+									<p class="header-menu__title">Голова и лицо</p>
+									<ul>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Шея</a></li>
+										<li><a href="#">Межбровье</a></li>
+										<li><a href="#">Бакенбарды</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+									</ul>
+								</div>
+								<div>
+									<p class="header-menu__title">Ноги</p>
+									<ul>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Шея</a></li>
+										<li><a href="#">Межбровье</a></li>
+										<li><a href="#">Бакенбарды</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+									</ul>
+								</div>
+								<div>
+									<p class="header-menu__title">Ноги</p>
+									<ul>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Шея</a></li>
+										<li><a href="#">Межбровье</a></li>
+										<li><a href="#">Бакенбарды</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+									</ul>
+								</div>
+								<div>
+									<p class="header-menu__title">Голова и лицо</p>
+									<ul>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Шея</a></li>
+										<li><a href="#">Межбровье</a></li>
+										<li><a href="#">Бакенбарды</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a class="header-drop" href="#">Женщинам</a>
+						<div class="header-menu__wrap">
+							<div class="header-menu__row">
+								<div>
+									<p class="header-menu__title">Голова и лицо</p>
+									<ul>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Шея</a></li>
+										<li><a href="#">Межбровье</a></li>
+										<li><a href="#">Бакенбарды</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+									</ul>
+								</div>
+								<div>
+									<p class="header-menu__title">Ноги</p>
+									<ul>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Шея</a></li>
+										<li><a href="#">Межбровье</a></li>
+										<li><a href="#">Бакенбарды</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+									</ul>
+								</div>
+								<div>
+									<p class="header-menu__title">Ноги</p>
+									<ul>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Шея</a></li>
+										<li><a href="#">Межбровье</a></li>
+										<li><a href="#">Бакенбарды</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+									</ul>
+								</div>
+								<div>
+									<p class="header-menu__title">Голова и лицо</p>
+									<ul>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Шея</a></li>
+										<li><a href="#">Межбровье</a></li>
+										<li><a href="#">Бакенбарды</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+										<li><a href="#">Виски</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="header-menu__button">
+					<a href="#modal-call" class="btn-main button-modal">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header header-second">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-bar">
+					<img src="img/bar.png" alt="">
+				</div>
+				<div class="header-mob">
+					<ul>
+						<li><a href="#">Адреса 7 салонов</a></li>
+						<li><a href="#">+7 495 987-65-43</a></li>
+					</ul>
+				</div>
+				<ul class="bread-crumbs">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Блог</a></li>
+				</ul>
+				<div class="header-top__right">
+					<div class="header-top__from">
+						<form action="">
+							<div>
+								<button class="header-top__from-button"><img src="img/search.svg" alt=""></button>
+								<input type="text" placeholder="Поиск по сайту">
+							</div>
+						</form>
+					</div>
+					<ul class="header-top__social">
+						<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/ok.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="wrapper">
+				<div class="header-middle__row">
+					<div class="header-logo">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="header-middle__wrap">
+						<div class="header-middle__col">
+							<span>Ваш город:</span>
+							<a href="#modal-city" class="button-modal header-middle__link"><span>Москва</span></a>
+						</div>
+						<div class="header-middle__col">
+							<span>Ближайшие салоны:</span>
+							<div>
+								<p><img src="img/gg.png" alt=""><span>Смоленская</span></p>
+								<p><img src="img/gg.png" alt=""><span>Китай–Город</span></p>
+								<a href="#modal-salons" class="button-modal header-middle__link"><span>Все салоны</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-middle__right">
+					<div>
+						<span>Доступно с 10:00 до 23:00</span>
+						<p><a href="#">+7 495 987-65-43</a></p>
+					</div>
+					<a href="#modal-call" class="button-modal btn-main">Обратный звонок</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<nav class="header-nav">
+					<ul>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Подарочные карты</a></li>
+						<li><a href="#">Мастера</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Вопросы и ответы</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start page-top -->
+	<section class="page-top about-page__top">
+		<div class="wrapper">
+			<ul class="crumbs">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О нас</a></li>
+			</ul>
+			<div class="page-top__row">
+				<h2 class="section-title">О нас</h2>
+				<ul class="page-top__menu">
+					<li><a class="active" href="#">Главное о нас</a></li>
+					<li><a href="#">Люди</a></li>
+					<li><a href="#">Миссия и принципы</a></li>
+					<li><a href="#">Оплата и гарантии</a></li>
+					<li><a href="#">Реквизиты</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end page-top -->
+	<!-- start about -->
+	<section class="about">
+		<div class="about-slider">
+			<div class="about-slide">
+				<div class="wrapper">
+					<div class="about-slide__descr">
+						<h2 class="about-slide__descr-title">Самое передовое  оборудование</h2>
+						<p>Наш принцип- подарить Вам возможность наслаждаться своей внешностью и чувствовать на себе восхищённые взгляды окружающих.</p>
+					</div>
+					<div class="about-slide__img">
+						<img src="img/0111.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="about-slide">
+				<div class="wrapper">
+					<div class="about-slide__descr">
+						<h2 class="about-slide__descr-title">Самое передовое  оборудование</h2>
+						<p>Наш принцип- подарить Вам возможность наслаждаться своей внешностью и чувствовать на себе восхищённые взгляды окружающих.</p>
+					</div>
+					<div class="about-slide__img">
+						<img src="img/0111.png" alt="">
+					</div>
+				</div>
+			</div>
+				<div class="about-slide">
+				<div class="wrapper">
+					<div class="about-slide__descr">
+						<h2 class="about-slide__descr-title">Самое передовое  оборудование</h2>
+						<p>Наш принцип- подарить Вам возможность наслаждаться своей внешностью и чувствовать на себе восхищённые взгляды окружающих.</p>
+					</div>
+					<div class="about-slide__img">
+						<img src="img/0111.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="about-slide">
+				<div class="wrapper">
+					<div class="about-slide__descr">
+						<h2 class="about-slide__descr-title">Самое передовое  оборудование</h2>
+						<p>Наш принцип- подарить Вам возможность наслаждаться своей внешностью и чувствовать на себе восхищённые взгляды окружающих.</p>
+					</div>
+					<div class="about-slide__img">
+						<img src="img/0111.png" alt="">
+					</div>
+				</div>
+			</div>
+				<div class="about-slide">
+				<div class="wrapper">
+					<div class="about-slide__descr">
+						<h2 class="about-slide__descr-title">Самое передовое  оборудование</h2>
+						<p>Наш принцип- подарить Вам возможность наслаждаться своей внешностью и чувствовать на себе восхищённые взгляды окружающих.</p>
+					</div>
+					<div class="about-slide__img">
+						<img src="img/0111.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="about-slide">
+				<div class="wrapper">
+					<div class="about-slide__descr">
+						<h2 class="about-slide__descr-title">Самое передовое  оборудование</h2>
+						<p>Наш принцип- подарить Вам возможность наслаждаться своей внешностью и чувствовать на себе восхищённые взгляды окружающих.</p>
+					</div>
+					<div class="about-slide__img">
+						<img src="img/0111.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start about-info -->
+	<section class="about-info">
+		<div class="wrapper">
+			<div class="about-info__row">
+				<div class="about-info__col">
+					<span>12</span>
+					<p><a href="#">Профессиональных  мастеров</a></p>
+				</div>
+				<div class="about-info__col">
+					<span>9000</span>
+					<p><a href="#">Довольных  посетителей</a></p>
+				</div>
+				<div class="about-info__col">
+					<span>8640</span>
+					<p><a href="#">Положительных  отзывов</a></p>
+				</div>
+				<div class="about-info__col">
+					<span>11423</span>
+					<p><a href="#">Завершенных  сеансов</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about-info -->
+	<!-- start human -->
+	<section class="human">
+		<div class="wrapper">
+			<div class="human-descr">
+				<h2 class="section-title">Люди</h2>
+				<p>Начните строить бизнес от чистого сердца! Получените знания в области создания, управления и развития социальных проектов</p>
+			</div>
+			<div class="human-row">
+				<div class="human-col">
+					<a href="#" class="human-col__link"></a>
+					<div class="human-col__img">
+						<img src="img/human-1.png" alt="">
+					</div>
+					<h4 class="human-col__name">Владимир Владимирович Семернин</h4>
+					<p>Председатель совета директоров</p>
+				</div>
+				<div class="human-col">
+					<a href="#" class="human-col__link"></a>
+					<div class="human-col__img">
+						<img src="img/human-1.png" alt="">
+					</div>
+					<h4 class="human-col__name">Владимир Владимирович Семернин</h4>
+					<p>Председатель совета директоров</p>
+				</div>
+				<div class="human-col">
+					<a href="#" class="human-col__link"></a>
+					<div class="human-col__img">
+						<img src="img/human-1.png" alt="">
+					</div>
+					<h4 class="human-col__name">Владимир Владимирович Семернин</h4>
+					<p>Председатель совета директоров</p>
+				</div>
+				<div class="human-col">
+					<a href="#" class="human-col__link"></a>
+					<div class="human-col__img">
+						<img src="img/human-1.png" alt="">
+					</div>
+					<h4 class="human-col__name">Владимир Владимирович Семернин</h4>
+					<p>Председатель совета директоров</p>
+				</div>
+				<div class="human-col">
+					<a href="#" class="human-col__link"></a>
+					<div class="human-col__img">
+						<img src="img/human-1.png" alt="">
+					</div>
+					<h4 class="human-col__name">Владимир Владимирович Семернин</h4>
+					<p>Председатель совета директоров</p>
+				</div>
+				<div class="human-col">
+					<a href="#" class="human-col__link"></a>
+					<div class="human-col__img">
+						<img src="img/human-1.png" alt="">
+					</div>
+					<h4 class="human-col__name">Владимир Владимирович Семернин</h4>
+					<p>Председатель совета директоров</p>
+				</div>
+			</div>
+			<div class="human-join">
+				<h3 class="human-join__title">Присоединяйся к команде профессионалов</h3>
+				<p><span>Небольшой текст объемом в 2/3 основного блока, описывающий преимущества работы в данной организации</span><a href="#" class="btn-main">Ознакомиться с вакансиями</a></p>
+			</div>
+			<div class="human-mission">
+				<div class="human-mission__img">
+					<img src="img/22.png" alt="">
+				</div>
+				<div class="human-mission__descr">
+					<h2 class="section-title">Миссия и принципы</h2>
+					<span class="human-mission__descr-title">Наш принцип — подарить Вам возможность наслаждаться своей внешностью и чувствовать на себе восхищённые взгляды окружающих.</span>
+					<p>По мнению современных философов, женская красота имеет две составляющие: уникальность, данная от природы и вклад, который осуществляет сама женщина, должным образом ухаживая за собственным телом. Задача сети клиник «Красотка» заключается в доведении до идеала второго компонента женской красоты. Мы совершенствуем наши возможности, чтобы преподнести Вам самый высокий уровень ухода за телом. Несомненной гордостью Нашей сети клиник является первоклассная команда врачей-косметологов, для которых на первом месте стоит достижение блестящего результата. Лучшие специалисты клиник «Красотка» ежедневно работают над тем, чтобы покинув стены наших салонов, вы были довольны состоянием своей внешности и ощущали непревзойдённый эффект после проведённых процедур. Мы с трепетом относимся к каждому клиенту и ищем наиболее подходящий, безболезненный и полезный способ усовершенствовать Ваш образ.</p>
+				</div>
+			</div>
+			<div class="human-bottom">
+				<div class="human-bottom__col">
+					<img src="img/receipt.svg" alt="">
+					<h3 class="human-bottom__col-title">Оплата</h3>
+					<p>Специалист лазерной эпиляции. Имеет среднее медицинское образование. Опыт работы в аппаратной косметологии — около 5 лет. Мастерство подтверждено сертификатами.</p>
+				</div>
+				<div class="human-bottom__col">
+					<img src="img/receipt.svg" alt="">
+					<h3 class="human-bottom__col-title">Гарантии</h3>
+					<p>Специалист лазерной эпиляции. Имеет среднее медицинское образование. Опыт работы в аппаратной косметологии — около 5 лет. Мастерство подтверждено сертификатами.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end human -->
+	<!-- start requisites -->
+	<section class="requisites">
+		<div class="wrapper">
+			<h2 class="section-title">Реквизиты</h2>
+			<div class="requisites-row">
+				<ul>
+					<li><span>Название организации:</span>Производственно-внедренческое общество с ограниченной ответственностью «Фирма «Техноавиа»</li>
+					<li><span>Юридический адрес:</span>125476, г. Москва, ул. Василия Петушкова, д. 7</li>
+					<li><span>Фактический адрес:</span>125476, г. Москва, ул. Василия Петушкова, д. 7</li>
+					<li><span>ИНН:</span>7724152603</li>
+					<li><span>КПП:</span>7724152603</li>
+				</ul>
+				<ul>
+					<li><span>Расчетный счет:</span>40702810038210100536</li>
+					<li><span>Банк:</span>ПАО Сбербанк, г. Москва</li>
+					<li><span>Кор. счет:</span>30101810400000000225</li>
+					<li><span>БИК:</span>044525225</li>
+					<li><span>Генеральный директор:</span>Попов Андрей Степанович</li>
+					<li><span>Контактный телефон:</span>8 (495) 787-90-30</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end requisites -->
+	<!-- start documents -->
+	<section class="documents">
+		<div class="wrapper">
+			<h2 class="section-title">Документы</h2>
+			<div class="documents-row">
+				<div class="documents-col">
+					<a href="#" class="documents-col__link"></a>
+					<div class="documents-col__img">
+						<img src="img/word.svg" alt="">
+					</div>
+					<div class="documents-col__descr">
+						<p>Пример отображения блока с информацией на странице  «О компании» с перечнем необходимой документации, требуемой на странице</p>
+						<span>DOC 1.8Мб</span>
+					</div>
+				</div>
+				<div class="documents-col">
+					<a href="#" class="documents-col__link"></a>
+					<div class="documents-col__img">
+						<img src="img/word.svg" alt="">
+					</div>
+					<div class="documents-col__descr">
+						<p>Пример отображения блока с информацией на странице  «О компании» с перечнем необходимой документации, требуемой на странице</p>
+						<span>DOC 1.8Мб</span>
+					</div>
+				</div>
+				<div class="documents-col">
+					<a href="#" class="documents-col__link"></a>
+					<div class="documents-col__img">
+						<img src="img/word.svg" alt="">
+					</div>
+					<div class="documents-col__descr">
+						<p>Пример отображения блока с информацией на странице  «О компании» с перечнем необходимой документации, требуемой на странице</p>
+						<span>DOC 1.8Мб</span>
+					</div>
+				</div>
+				<div class="documents-col">
+					<a href="#" class="documents-col__link"></a>
+					<div class="documents-col__img">
+						<img src="img/word.svg" alt="">
+					</div>
+					<div class="documents-col__descr">
+						<p>Пример отображения блока с информацией на странице  «О компании» с перечнем необходимой документации, требуемой на странице</p>
+						<span>DOC 1.8Мб</span>
+					</div>
+				</div>
+				<div class="documents-col">
+					<a href="#" class="documents-col__link"></a>
+					<div class="documents-col__img">
+						<img src="img/word.svg" alt="">
+					</div>
+					<div class="documents-col__descr">
+						<p>Пример отображения блока с информацией на странице  «О компании» с перечнем необходимой документации, требуемой на странице</p>
+						<span>DOC 1.8Мб</span>
+					</div>
+				</div>
+				<div class="documents-col">
+					<a href="#" class="documents-col__link"></a>
+					<div class="documents-col__img">
+						<img src="img/word.svg" alt="">
+					</div>
+					<div class="documents-col__descr">
+						<p>Пример отображения блока с информацией на странице  «О компании» с перечнем необходимой документации, требуемой на странице</p>
+						<span>DOC 1.8Мб</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end documents -->
+	<!-- start questions-remained -->
+	<section class="questions-remained">
+		<div class="wrapper">
+			<h2 class="questions-remained__title">Остались вопросы?</h2>
+			<p class="questions-remained__text">Позвоните по номеру <a href="#">+7 495 123-45-67</a> или оставьте заявку на консультацию</p>
+			<form action="">
+				<div class="questions-remained__form">
+					<div class="questions-remained__form-input">
+						<input type="text" placeholder="Ваше имя">
+					</div>
+					<div class="questions-remained__form-input">
+						<input type="text" placeholder="Телефон для связи">
+					</div>
+					<button class="btn-main questions-remained__form-button">Получить консультацию</button>
+					<div class="checkbox">
+						<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+						<input type="checkbox" checked>
+						<span></span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
+	<!-- end questions-remained -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper">
+				<div class="footer-top__menu">
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Подарочные карты</a></li>
+							<li><a href="#">Мастера</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Кабинеты</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Вопросы и ответы</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Вакансии</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__col">
+						<ul>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Форум</a></li>
+							<li><a href="#">Академия</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-top__news">
+					<h3 class="footer-top__news-title">Получайте новости об акциях</h3>
+					<form action="">
+						<div class="footer-top__news-form">
+							<input type="text" placeholder="Укажите Ваш E–mail">
+							<button class="footer-top__news-button"><img src="img/sent.svg" alt=""></button>
+						</div>
+					</form>
+					<div class="checkbox">
+						<p>Подтверждаю свое согласие на обработку <a href="#">персональных данных</a></p>
+						<input type="checkbox" checked>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<ul class="footer-bottom__list">
+					<li><a href="#">Политика конфиденциальности</a></li>
+					<li><a href="#">Публичная оферта</a></li>
+					<li><a href="#">Карта сайта</a></li>
+				</ul>
+				<ul class="footer-bottom__social">
+					<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/ok.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
