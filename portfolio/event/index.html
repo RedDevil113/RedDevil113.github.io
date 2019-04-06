@@ -24,17 +24,24 @@
 			<h3 class="modal-content__title">Свяжитесь с нами</h3>
 			<form action="">
 				<div class="modal-content__form footer-col__form">
-					<input type="text" placeholder="Эл. почта">
-					<input type="text" placeholder="телефон">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Эл. почта или телефон">
+					<textarea name="mes" id="" placeholder="Сообщение"></textarea>
 					<div class="checkbox-button">
 						<input type="checkbox">
 						<span></span>
 						<p>Согласен на обработку персональных данных</p>
-						<b>(имя, телефон, ваши данные не будут переданы третьим лицам)</b>
 					</div>
 					<button class="footer-col__form-btn">Отправить</button>
 				</div>
 			</form>
+		</div>
+	</div>
+	<div class="modal modal-info" id="modal-info-1">
+		<div class="cancel"></div>
+		<div class="modal-content">
+			<h3 class="modal-content__title">Информация</h3>
+			<p>логотип можно размещать на главном экране, это максимально увеличит запоминаемость бренда. А, активные ссылки в разделе «Расписание» с переходом на конкурсы или промо-информацию, то же будут способствовать росту интереса к информации партнеров.</p>
 		</div>
 	</div>
 	<!-- start header -->
@@ -49,12 +56,11 @@
 				<span></span>
 			</div>
 			<ul class="header-menu">
-				<li><a href="#">О нас</a></li>
-				<li><a href="#">Функции</a></li>
-				<li><a href="#">Тарифы</a></li>
-				<li><a href="#">Организаторам</a></li>
-				<li><a href="#">Участникам </a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="#event">Функции</a></li>
+				<li><a href="#proposal">Тарифы</a></li>
+				<li><a href="#organizers">Организаторам</a></li>
+				<li><a href="#advice">Участникам </a></li>
+				<li><a href="#footer">Контакты</a></li>
 			</ul>
 		</div>
 	</header>
@@ -143,7 +149,7 @@
 	</section>
 	<!-- end advantages -->
 	<!-- start event -->
-	<section class="event" style="background-image: url(img/section-bg-3.svg);">
+	<section id="event" class="event" style="background-image: url(img/section-bg-3.svg);">
 		<div class="wrapper">
 			<h2 class="section-title event-title">Вне зависимости от формата мероприятия приложение  <span>Ивент ДНК</span>  </h2>
 			<div class="event-phone">
@@ -252,47 +258,54 @@
 			</div>
 			<div class="functions-wrap">
 				<div class="functions-phone">
-					<img src="img/iPhone-x.png" alt="">
+					<img class="function-active functions-phone__main" src="img/iPhone-x.png" alt="">
+					<img class="function-ico__1" src="img/functions-1.svg" alt="">
+					<img class="function-ico__2" src="img/functions-2.svg" alt="">
+					<img class="function-ico__3" src="img/functions-3.svg" alt="">
+					<img class="function-ico__4" src="img/functions-4.svg" alt="">
+					<img class="function-ico__5" src="img/functions-5.svg" alt="">
+					<img class="function-ico__6" src="img/functions-6.svg" alt="">
+					<img class="function-ico__7" src="img/functions-7.svg" alt="">
 				</div>
 				<div class="functions-row row">
 					<div class="functions-col">
-						<div>
+						<div data-f="function-ico__1">
 							<img src="img/functions-1.svg" alt="">
 						</div>
 						<p>Интеграция с социальными сетями</p>
 					</div><!-- col(1) -->
 					<div class="functions-col">
-						<div>
+						<div data-f="function-ico__2">
 							<img src="img/functions-2.svg" alt="">
 						</div>
 						<p>Планировщик</p>
 					</div><!-- col(2) -->
 					<div class="functions-col">
-						<div>
+						<div data-f="function-ico__3">
 							<img src="img/functions-3.svg" alt="">
 						</div>
 						<p>Запись на конкретный доклад, мастер-класс, экскурсию</p>
 					</div><!-- col(3) -->
 					<div class="functions-col">
-						<div>
+						<div data-f="function-ico__4">
 							<img src="img/functions-4.svg" alt="">
 						</div>
 						<p>Геолокация</p>
 					</div><!-- col(4) -->
 					<div class="functions-col">
-						<div>
+						<div data-f="function-ico__5">
 							<img src="img/functions-5.svg" alt="">
 						</div>
 						<p>Работа с бейджами</p>
 					</div><!-- col(5) -->
 					<div class="functions-col">
-						<div>
+						<div data-f="function-ico__6">
 							<img src="img/functions-6.svg" alt="">
 						</div>
 						<p>Синхронизация<br> с сайтом</p>
 					</div><!-- col(6) -->
 					<div class="functions-col functions-col__last">
-						<div>
+						<div data-f="function-ico__7">
 							<img src="img/functions-7.svg" alt="">
 						</div>
 						<p>Сборы средств <br>на благотворительность</p>
@@ -303,7 +316,7 @@
 	</section>
 	<!-- end functions -->
 	<!-- start proposal -->
-	<section class="proposal">
+	<section id="proposal" class="proposal">
 		<div class="wrapper">
 			<div class="section-info">
 				<h2 class="section-info__name">Мы ценим Ваше время и деньги!</h2>
@@ -326,8 +339,23 @@
 						<div class="proposal-card__info-block">
 							<p>Программа мероприятия —<br> расписание по дням, по залам</p>
 						</div>
-						<div class="proposal-card__accordion">
+						<div class="proposal-card__accordion accordion">
 							<p>Развернуть все функции<img src="img/acco.svg" alt=""></p>
+							<div class="accordion-info">
+								<b>Программа мероприятия — расписание по дням, по залам</b>
+								<ul>
+									<li>Онлайн-помощник (чат с организатором);</li>
+									<li>Список участников, поиск по участникам (по имени, по компании, по интересам и др.);</li>
+									<li>Список спикеров – фото, описание;</li>
+									<li>Карта места проведения мероприятия</li>
+									<li>Схемы залов с локациями;</li>
+									<li>Лента новостей;</li>
+									<li>Материалы (pdf, презентации);</li>
+									<li>Каталог / рубрикатор;</li>
+									<li>Фотогалерея;</li>
+									<li>Партнеры / спонсоры</li>
+								</ul>
+							</div>
 						</div>
 						<div class="proposal-card__button">
 							<a class="button-modal" href="#modal-call">Заказать</a>
@@ -350,8 +378,26 @@
 						<div class="proposal-card__info-block">
 							<p>Функции по запросу</p>
 						</div>
-						<div class="proposal-card__accordion">
+						<div class="proposal-card__accordion accordion">
 							<p>Развернуть все функции<img src="img/acco.svg" alt=""></p>
+							<div class="accordion-info">
+								<b>Программа мероприятия — расписание по дням, по залам</b>
+								<ul>
+									<li>Онлайн-помощник (чат с организатором);</li>
+									<li>Список участников, поиск по участникам (по имени, по компании, по интересам и др.);</li>
+									<li>Список спикеров – фото, описание;</li>
+									<li>Карта места проведения мероприятия</li>
+									<li>Схемы залов с локациями;</li>
+									<li>Лента новостей;</li>
+									<li>Материалы (pdf, презентации);</li>
+									<li>Каталог / рубрикатор;</li>
+									<li>Фотогалерея;</li>
+									<li>Партнеры / спонсоры</li>
+									<li>Общий чат и групповые обсуждения (по темам, по группам);</li>
+									<li>Вопросы спикерам</li>
+									<li>Опросы и голосование</li>
+								</ul>
+							</div>
 						</div>
 						<div class="proposal-card__button">
 							<a class="button-modal" href="#modal-call">Заказать</a>
@@ -363,7 +409,7 @@
 	</section>
 	<!-- end proposal -->
 	<!-- start organizers -->
-	<section class="organizers">
+	<section id="organizers" class="organizers">
 		<div class="wrapper wrapper-big">
 			<div class="section-info">
 				<h2 class="section-info__name">Организаторы мероприятий получают максимально современное и интересное приложение,</h2>
@@ -399,36 +445,32 @@
 						<img src="img/block-ico-1.svg" alt="">
 						<h3 class="attachment-col__title">Информация<br> о спонсорах</h3>
 						<p>Масса возможностей для размещения логотипов спонсоров и генерального партнера.</p>
-						<div class="attachment-col__accordion accordion">
-							<span>Пример</span>
-							<p class="accordion-info"> логотип можно размещать на главном экране, это максимально увеличит запоминаемость бренда. А, активные ссылки в разделе «Расписание» с переходом на конкурсы или промо-информацию, то же будут способствовать росту интереса к информации партнеров.</p>
+						<div class="attachment-col__accordion">
+							<a class="button-modal" href="#modal-info-1">Пример</a>
 						</div>
 					</div><!-- col(1) -->
 					<div class="attachment-col">
 						<img src="img/block-ico-2.svg" alt="">
 						<h3 class="attachment-col__title">Статистика<br> знает всё</h3>
 						<p>«…В жизни, как правило, преуспевает больше других тот, кто располагает лучшей информацией»,— писал Бенджамин Дизраэли. </p>
-						<div class="attachment-col__accordion accordion">
-							<span>Пример</span>
-							<p class="accordion-info"> логотип можно размещать на главном экране, это максимально увеличит запоминаемость бренда. А, активные ссылки в разделе «Расписание» с переходом на конкурсы или промо-информацию, то же будут способствовать росту интереса к информации партнеров.</p>
+						<div class="attachment-col__accordion">
+							<a class="button-modal" href="#modal-info-1">Пример</a>
 						</div>
 					</div><!-- col(2) -->
 					<div class="attachment-col">
 						<img src="img/block-ico-3.svg" alt="">
 						<h3 class="attachment-col__title">Моментальные уведомления</h3>
 						<p>Вы всегда сможете оперативно предупредить гостей мероприятия об изменениях.</p>
-						<div class="attachment-col__accordion accordion">
-							<span>Пример</span>
-							<p class="accordion-info"> логотип можно размещать на главном экране, это максимально увеличит запоминаемость бренда. А, активные ссылки в разделе «Расписание» с переходом на конкурсы или промо-информацию, то же будут способствовать росту интереса к информации партнеров.</p>
+						<div class="attachment-col__accordion">
+							<a class="button-modal" href="#modal-info-1">Пример</a>
 						</div>
 					</div><!-- col(3) -->
 					<div class="attachment-col">
 						<img src="img/block-ico-4.svg" alt="">
 						<h3 class="attachment-col__title">Замена бумажной продукции</h3>
 						<p>Ивент ДНК шагает в ногу со временем, поэтому Вы сможете отказаться от использования бумажных раздаточных материалов на мероприятии и оптимизировать затраты компании</p>
-						<div class="attachment-col__accordion accordion">
-							<span>Пример</span>
-							<p class="accordion-info"> логотип можно размещать на главном экране, это максимально увеличит запоминаемость бренда. А, активные ссылки в разделе «Расписание» с переходом на конкурсы или промо-информацию, то же будут способствовать росту интереса к информации партнеров.</p>
+						<div class="attachment-col__accordion">
+							<a class="button-modal" href="#modal-info-1">Пример</a>
 						</div>
 					</div><!-- col(4) -->
 				</div>
@@ -456,7 +498,7 @@
 	</section>
 	<!-- end attachment -->
 	<!-- start advice -->
-	<section class="advice">
+	<section id="advice" class="advice">
 		<div class="wrapper row">
 			<div class="advice-col">
 				<div>
@@ -534,7 +576,7 @@
 	</section>
 	<!-- end team -->
 	<!-- start footer -->
-	<footer class="footer">
+	<footer id="footer" class="footer">
 		<div class="wrapper row">
 			<p class="footer-copyright">Соглашение о использовании сервиса</p>
 			<div class="footer-col">
@@ -542,7 +584,7 @@
 				<p>© 2019 Ивент ДНК</p>
 				<ul class="footer-col__menu">
 					<li><a href="#">Скачать бриф</a></li>
-					<li><a href="#">Заказать звонок</a></li>
+					<li><a class="button-modal" href="#modal-call">Заказать звонок</a></li>
 				</ul>
 				<ul class="footer-col__social">
 					<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
@@ -570,8 +612,9 @@
 					<h4 class="footer-col__title">Свяжитесь с НАМи</h4>
 					<form action="">
 						<div class="footer-col__form">
-							<input type="text" placeholder="Эл. почта">
-							<input type="text" placeholder="телефон">
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Эл. почта или телефон">
+							<textarea name="mes" id="" placeholder="Сообщение"></textarea>
 							<div class="checkbox-button">
 								<input type="checkbox">
 								<span></span>
