@@ -2,15 +2,15 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>title</title>
+	<title>Безлимит</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--<meta property="og:image" content="path/to/image.jpg">
+	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" type="text/css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
@@ -19,22 +19,22 @@
 
 </head>
 <body>
-	<div class="modal-overlay open-overlay"></div>
-	<div class="modal modal-call open" id="modal-call">
+	<div class="modal-overlay"></div>
+	<div class="modal modal-call" id="modal-call">
 		<div class="cancel"></div>
 		<div class="modal-content">
-			<form action="">
+			<form class="callback" action="">
 				<div>
-					<label for="i-1">ФИО*:</label>
-					<input id="i-1" name="name" pattern="[A-Za-zА-Яа-яЁё]" type="text" placeholder="Фамилия Имя Отчество">
+					<label for="cyr">ФИО*:</label>
+					<input min="5" id="cyr" name="name" type="text" placeholder="Фамилия Имя Отчество" required>
 				</div>
 				<div>
 					<label for="phone-c">Контактный номер:</label>
-					<input name="phone" type="tel" id="phone-c" type="text" placeholder="Ваш номер">
+					<input name="phone" type="tel" id="phone-c" type="text" placeholder="Ваш номер" required>
 				</div>
 				<button class="modal-btn">Хочу</button>
 				<div class="checkbox-button">
-					<input type="checkbox">
+					<input type="checkbox" required>
 					<span></span>
 					<p>Согласен на обработку персональных данных</p>
 				</div>
