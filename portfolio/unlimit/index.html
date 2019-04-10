@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<div class="modal modal-call" id="modal-call">
+		<div class="cancel"></div>
+		<div class="modal-content">
+			<form action="">
+				<div>
+					<label for="i-1">ФИО*:</label>
+					<input id="i-1" type="text" placeholder="Александр Смирнов">
+				</div>
+				<div>
+					<label for="i-2">Контактный номер:</label>
+					<input id="i-2" type="text" placeholder="+7 (903) 584 •• ••">
+				</div>
+				<button class="modal-btn">Хочу</button>
+				<p>* Нажимая на кнопку, вы даёте <a href="#">согласие</a> на обработку персональных данных.</p>
+			</form>
+		</div>
+	</div>
+	<div class="modal modal-done" id="modal-done">
+		<div class="cancel"></div>
+		<div class="modal-content">
+			<h3 class="modal-done__title">Спасибо!</h3>
+			<p>Ваша заявка принята. <br>Скоро с вами свяжется ваш персональный менеджер <br>и ответит на любые вопросы. <br>Желаем удачи!</p>
+			<span class="modal-done__btn">Закрыть</span>
+		</div>
+	</div>
+	<section class="main">
+		<div class="main-top">
+			<div class="main-logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div id="back" style="background-image: url(img/back.jpg);"></div>
+			<div id="numbers">
+				<div id="number_01" class="number">966 4444444</div>
+				<div id="number_02" class="number">994 2222222</div>
+				<div id="number_03" class="number">933 0008000</div>
+				<div id="number_04" class="number">996 8887777</div>
+				<div id="number_05" class="number">993 5550505</div>
+				<div id="number_06" class="number">933 7775777</div>
+				<div id="number_07" class="number">969 1999666</div>
+				<div id="number_08" class="number">965 7511111</div>
+				<div id="number_09" class="number">967 5950000</div>
+				<div id="number_10" class="number">933 6669999</div>
+				<div id="number_11" class="number">994 4448888</div>
+				<div id="number_12" class="number">986 5559595</div>
+				<div id="number_13" class="number">969 1999666</div>
+				<div id="number_14" class="number">993 7777070</div>
+				<div id="number_15" class="number">992 9999699</div>
+				<div id="number_16" class="number">995 6666666</div>
+				<div id="number_17" class="number">984 9990000</div>
+				<div id="number_18" class="number">993 3333332</div>
+				<div id="number_19" class="number">984 7770777</div>
+				<div id="number_20" class="number">984 9999995</div>
+			</div>
+		</div>
+		<div class="main-bottom">
+			<div class="wrapper">
+				<div class="main-bottom__logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="main-bottom__row">
+					<div class="main-bottom__col main-bottom__col-left">
+						<div class="main-bottom__col-info">
+							<h3 class="main-bottom__col-title">Никогда не слышали <br>про красивые номера?</h3>
+						</div>
+						<div class="main-bottom__col-video">
+							<iframe src="https://www.youtube.com/embed/Wtncdn83cEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="main-bottom__col main-bottom__col-right">
+						<div class="main-bottom__col-info">
+							<h3 class="main-bottom__col-title">Хотите заработать?</h3>
+						</div>
+						<div class="main-bottom__col-video">
+							<iframe src="https://www.youtube.com/embed/Wtncdn83cEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="main-bottom__wrap">
+					<p>Нажмите на кнопку:</p>
+					<a href="#modal-call" class="button-modal main-bottom__btn">Хочу попробовать!</a>
+					<span>Ваш персональный менеджер свяжется с вами!</span>
+				</div>
+			</div>
+		</div>
+		<div id="overlay"></div>
+	</section>
+	<!-- start footer -->
+	<!-- end footer -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" type="text/css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!-- GreenSock -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<!-- PrefixFree -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!-- Main -->
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
