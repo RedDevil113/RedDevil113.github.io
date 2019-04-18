@@ -11,6 +11,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -18,6 +19,7 @@
 </head>
 <body>
 	<div class="modal-overlay"></div>
+	<div class="blot blot-1"><img src="img/3-c.png" alt=""></div>
 	<!--<div class="main-bg" style="background-image: url(img/back.svg);"></div>-->
 	<!-- start menu-mob -->
 	<div class="menu-mob">
@@ -86,39 +88,90 @@
 		</div>
 	</header>
 	<!-- end header -->
-	<!-- start thank -->
-	<section class="thank">
+	<!-- start section-top -->
+	<section class="section-top">
 		<div class="wrapper">
-			<div class="thank-wrap">
-				<div class="thank-wrap__info">
-					<h3 class="thank-wrap__info-title">Спасибо за регистрацию</h3>
-					<p>На Вашу почту отправлено письмо с инструкциями по активации аккаунта. А пока оно летит по проводам, посмотрите короткое видео и поделитесь с друзьями ссылкой на социально-значимый проект.</p>
-					<a href="#" class="main-btn">Войти</a>
+			<h1 class="section-name">Помощь</h1>
+		</div>
+	</section>
+	<!-- end section-top -->
+	<!-- start filling -->
+	<section class="filling">
+		<div class="wrapper">
+			<div class="filling-row">
+				<div class="filling-wrap">
+					<h2 class="filling-title">Все поля с <span>*</span> обазательны для заполнения</h2>
+					<form action="">
+						<div class="filling-input">
+							<label for="i-1"><span>*</span>Имя</label>
+							<div class="filling-input__row">
+								<input name="name" type="text" id="i-1">
+								<p>Ваше имя в миру</p>
+							</div>
+						</div><!-- row(1) -->
+						<div class="filling-input">
+							<label for="i-2"><span>*</span>E-mail</label>
+							<div class="filling-input__row">
+								<input name="name" type="text" id="i-2">
+								<p>Укажите свой e-mail</p>
+							</div>
+						</div><!-- row(2) -->
+						<div class="filling-input">
+							<label for="i-3"><span>*</span>Тема</label>
+							<div class="filling-input__row">
+								<input name="name" type="text" id="i-3">
+								<p>Укажите тему</p>
+							</div>
+						</div><!-- row(3) -->
+						<div class="filling-input">
+							<label for="i-4"><span>*</span>Сообщение</label>
+							<div class="filling-input__row">
+								<textarea id="i-4" name="text" id="" cols="30" rows="10"></textarea>
+							</div>
+						</div><!-- row(4) -->
+						<div class="filling-buttons">
+							<button class="main-btn">Отправить</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end thank -->
+	<!-- end filling -->
 	<!-- start tips -->
 	<section class="tips">
 		<div class="wrapper">
 			<div class="tips-info">
-				<h2 class="tips-info__title">Узнай как работает поиск!</h2>
-				<ul class="tips-info__list">
-					<li>Как обменяться путевкой в детский сад?</li>
-					<li>Как найти няню или репетитора?</li>
-					<li>Где ближайшая спортивная секция?</li>
-					<li>Как узнать, что в соседнем доме открылась студия танцев?</li>
-					<li>Где провести детский праздник?</li>
-				</ul>
-				<div class="tips-info__social">
-					<p>Поделиться</p>
-					<ul class="social">
-						<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
-						<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
-						<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
-					</ul>
-				</div>
+				<h2 class="tips-info__title">Подсказки</h2>
+				<div class="tips-info__accordeon accordeon">
+					<span>1</span>
+					<h3 class="tips-info__accordeon-title">Как поучаствовать в социально-значимом проекте?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(1) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>2</span>
+					<h3 class="tips-info__accordeon-title">Что такое Премиум-аккаунт?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+						<p>Скоро мы расширим функционал для Премиум-аккаунта.</p>
+					</div>
+				</div><!-- accordeon(2) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>3</span>
+					<h3 class="tips-info__accordeon-title">Как воспользоваться поиском вариантов обмена детскими садами?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(3) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>4</span>
+					<h3 class="tips-info__accordeon-title">Как найти нужную услугу (секцию, репетитора, сайт для мам и т.п.)?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(4) -->
 			</div>
 			<div class="tips-video">
 				<a class="button-modal" href="#modal-video"><img src="img/play-frame.png" alt=""></a>
@@ -162,6 +215,7 @@
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
