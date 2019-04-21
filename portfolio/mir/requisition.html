@@ -19,18 +19,11 @@
 </head>
 <body>
 	<div class="modal-overlay"></div>
-	<!--<div class="main-bg" style="background-image: url(img/back.svg);"></div>-->
 	<!-- start menu-mob -->
 	<div class="menu-mob">
 		<div class="menu-mob__close"></div>
 		<div class="menu-mob__top">
 			<p><a href="#">Мой мир</a></p>
-			<ul>
-				<li><a href="#">Поиск обмена</a></li>
-				<li><a href="#">Профиль</a></li>
-				<li><a href="#">История платежей</a></li>
-				<li><a href="#">Оплата</a></li>
-			</ul>
 		</div>
 		<div class="menu-mob__middle">
 			<div class="menu-mob__middle-user">
@@ -84,85 +77,87 @@
 	<!-- start section-top -->
 	<section class="section-top">
 		<div class="wrapper">
-			<h1 class="section-name">Аккаунт</h1>
+			<h1 class="section-name">Создание заявки</h1>
 		</div>
 	</section>
 	<!-- end section-top -->
-	<!-- start partner -->
-	<section class="partner partner-story">
+	<!-- start requisition -->
+	<section class="requisition">
 		<div class="wrapper">
-			<h2 class="partner-title">Действует до 30.05.2019</h2>
-			<div class="partner-table">
-				<div class="partner-table__top">
-					<div class="partner-table__top-col partner-table__top-col__num">
-						<p>№</p>
+			<div class="requisition-row">
+				<div class="requisition-info">
+					<div class="requisition-bar">
+						<p>прогресс 3 из 4</p>
+						<div class="requisition-bar__wrap">
+							<span style="width: 75%"></span>
+						</div>
 					</div>
-					<div class="partner-table__top-col partner-table__top-col__1">
-						<p>Дата</p>
-					</div><!-- col(1) -->
-					<div class="partner-table__top-col partner-table__top-col__2">
-						<p>Сумма</p>
-					</div><!-- col(2) -->
-					<div class="partner-table__top-col partner-table__top-col__3">
-						<p>Название платежа</p>
-					</div><!-- col(3) -->
-					<div class="partner-table__top-col partner-table__top-col__4">
-						<p>Статус</p>
-					</div><!-- col(4) -->
+					<div class="requisition-info__wrap">
+						<div class="requisition-info__row">
+							<div class="requisition-info__num">1</div>
+							<div class="requisition-info__text">
+								<h3 class="requisition-info__title">Выберите город для поиска</h3>
+							</div>
+							<div class="requisition-info__right">
+								<select name="" id="">
+									<option value="">Москва</option>
+									<option value="">Москва</option>
+									<option value="">Москва</option>
+									<option value="">Москва</option>
+								</select>
+							</div>
+						</div><!-- row(1) -->
+						<div class="requisition-info__row">
+							<div class="requisition-info__num">2</div>
+							<div class="requisition-info__text">
+								<h3 class="requisition-info__title">Укажите свой садик</h3>
+								<p>Выберите на карте или укажите в поле поиска садик, из которого вы хотите уехать</p>
+							</div>
+							<div class="requisition-info__right">
+								<input type="text">
+								<div class="requisition-info__choice">
+									<h3 class="requisition-info__choice-name"><a href="#">Садик №1234 «Сонечка»</a></h3>
+									<p>ул. Огоревб, д. 34, стр 12<img src="img/pin-small.svg" alt=""></p>
+								</div>
+							</div>
+						</div><!-- row(2) -->
+						<div class="requisition-info__row">
+							<div class="requisition-info__num">3</div>
+							<div class="requisition-info__text">
+								<h3 class="requisition-info__title">Укажите целевой садик</h3>
+								<p>Выберите на карте или укажите в поле поиска садик, куда вы хотите приехать</p>
+							</div>
+							<div class="requisition-info__right">
+								<input type="text">
+								<div class="requisition-info__choice">
+									<h3 class="requisition-info__choice-name"><a href="#">Садик №1234 «Сонечка»</a></h3>
+									<p>ул. Лодочная, 12<img src="img/pin-small.svg" alt=""></p>
+								</div>
+							</div>
+						</div><!-- row(3) -->
+						<div class="requisition-info__row requisition-active">
+							<div class="requisition-info__num">4</div>
+							<div class="requisition-info__text">
+								<h3 class="requisition-info__title">Укажите группу ребенка</h3>
+								<p>Выберите из списка группу вашего ребенка</p>
+							</div>
+							<div class="requisition-info__right">
+								<input type="text">
+							</div>
+						</div><!-- row(4) -->
+					</div>
+					<div class="requisition-bottom">
+						<a href="#" class="main-btn">Сохранить</a>
+						<a href="#" class="second-btn">Отменить</a>
+					</div>
 				</div>
-				<div class="partner-table__row">
-					<div class="partner-table__col partner-table__col-num">
-						<p>1</p>
-					</div>
-					<div class="partner-table__col partner-table__col-1">
-						<b>Дата</b>
-						<p>30.05.2019</p>
-					</div><!-- col(1) -->
-					<div class="partner-table__col partner-table__col-2">
-						<b>Сумма</b>
-						<p>150руб</p>
-					</div><!-- col(2) -->
-					<div class="partner-table__col partner-table__col-3">
-						<b>Название платежа</b>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div><!-- col(3) -->
-					<div class="partner-table__col partner-table__col-4">
-						<b>Статус</b>
-						<p>принят</p>
-					</div><!-- col(4) -->
-				</div><!-- row(1) -->
-				<div class="partner-table__row">
-					<div class="partner-table__col partner-table__col-num">
-						<p>2</p>
-					</div>
-					<div class="partner-table__col partner-table__col-1">
-						<b>Дата</b>
-						<p>30.05.2019</p>
-					</div><!-- col(1) -->
-					<div class="partner-table__col partner-table__col-2">
-						<b>Сумма</b>
-						<p>150руб</p>
-					</div><!-- col(2) -->
-					<div class="partner-table__col partner-table__col-3">
-						<b>Название платежа</b>
-						<p>Lorem ipsum dolor sit amet.</p>
-					</div><!-- col(3) -->
-					<div class="partner-table__col partner-table__col-4">
-						<b>Статус</b>
-						<p>принят</p>
-					</div><!-- col(4) -->
-				</div><!-- row(2) -->
-				<div class="partner-table__row partner-table__row-text">
-					<p>Платежей нет</p>
+				<div class="requisition-map">
+					<div id="map"></div>
 				</div>
-			</div>
-			<div class="partner-info">
-				<a href="#" class="main-btn">Оплатить</a>
-				<a href="#" class="second-btn">Поддержка</a>
 			</div>
 		</div>
 	</section>
-	<!-- end partner -->
+	<!-- end requisition -->
 	<!-- start tips -->
 	<section class="tips">
 		<div class="wrapper">
@@ -239,6 +234,44 @@
 			<iframe src="https://www.youtube.com/embed/iYi-hO7PZYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-xMAsTSZzfRgyhJMxuXXF8fQl9mU-2s0&callback=initMap"></script>
+	<script>
+		function initMap() {
+				var pos = {lat: 51.687843, lng: -0.224920};
+				var opt = {
+					center: pos,
+					zoom: 10,
+				};
+        var map = new google.maps.Map(document.getElementById('map'), opt);
+
+        var marker1 = new google.maps.Marker({
+        	position: {lat: 51.687842, lng: -0.224919},
+        	map: map,
+        	icon: 'img/pin-orange.svg'
+        });
+        var marker2 = new google.maps.Marker({
+        	position: {lat: 51.787830, lng: -0.224918},
+        	map: map,
+        	icon: 'img/pin-orange.svg'
+        });
+
+        var info1 = new google.maps.InfoWindow({
+        	content: '<div class="pin-info"><h3><a href="#">Садик №65 «Аистенок»</a></h3><p>ул. Лодочная, 12</p></div>'
+        });
+
+        var info2 = new google.maps.InfoWindow({
+        	content: '<div class="pin-info"><h3><a href="#">Садик №65 «Аистенок»</a></h3><p>ул. Лодочная, 12</p></div>'
+        });
+
+        marker1.addListener('click', function(){
+        	info1.open(map, marker1);
+        });
+        marker2.addListener('click', function(){
+        	info2.open(map, marker2);
+        });
+
+      }
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/scripts.min.js"></script>
