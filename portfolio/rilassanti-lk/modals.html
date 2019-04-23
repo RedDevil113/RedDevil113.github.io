@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="modal-overlay open-overlay"></div>
+	<!-- start modal-1 -->
+	<div class="modal" id="modal-1">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Изменение номера</h3>
+			<form action="">
+				<label for="i-1">Введите новый номер телефона</label>
+				<input id="i-1" type="text">
+				<button class="second-btn">Подтвердить</button>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-2 -->
+	<div class="modal" id="modal-2">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Изменение номера</h3>
+			<p>Введите проверочный код из СМС, которое мы Вам прислали на номер +7 (911) 123 45 67</p>
+			<form action="">
+				<label for="i-2">Код*</label>
+				<input id="i-2" type="text">
+				<p class="modal-min">Через <span>00:00:28</span> можно будет повторно выслать код по СМС</p>
+				<button class="second-btn">Подтвердить</button>
+				<a href="#" class="modal-back"><img src="img/arrow-left.svg" alt="">Назад</a>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-3 -->
+	<div class="modal" id="modal-3">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Изменение номера</h3>
+			<p>Введите проверочный код из СМС, которое мы Вам прислали на номер +7 (911) 123 45 67</p>
+			<form action="">
+				<label for="i-3">Код*</label>
+				<input id="i-3" type="text">
+				<p class="modal-min"><a href="#">Повторно выслать код по СМС</a></p>
+				<button class="second-btn">Подтвердить</button>
+				<a href="#" class="modal-back"><img src="img/arrow-left.svg" alt="">Назад</a>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-4 -->
+	<div class="modal" id="modal-4">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Изменение электронной почты</h3>
+			<form action="">
+				<label for="i-4">Новый адрес электронной почты</label>
+				<input id="i-4" type="text">
+				<button class="second-btn">Подтвердить</button>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-5 -->
+	<div class="modal" id="modal-5">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-done">
+				<img src="img/work-done.svg" alt="">
+			</div>
+			<h3 class="modal-title title-min">Номер подтверждён!</h3>
+		</div>
+	</div>
+	<!-- start modal-6 -->
+	<div class="modal" id="modal-6">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title title-min">На Ваш электронный адрес отправлена ссылка для подтверждения</h3>
+		</div>
+	</div>
+	<!-- start modal-7 -->
+	<div class="modal" id="modal-7">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-done">
+				<img src="img/work-done.svg" alt="">
+			</div>
+			<h3 class="modal-title title-min">Ваш электронный адрес подтверждён!</h3>
+		</div>
+	</div>
+	<!-- start modal-8 -->
+	<div class="modal" id="modal-8">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-done">
+				<img src="img/work-done.svg" alt="">
+			</div>
+			<h3 class="modal-title">Карта успешно привязана</h3>
+			<p class="text-center">Через минуту Ваша карта появится в личном кабинете - Вы увидите ее в разделе <a href="#">“Привязанные карты”</a>. Платить можно сразу, повторно указывать данные не придется.</p>
+			<a href="#" class="second-btn">Перейти в личный кабинет</a>
+		</div>
+	</div>
+	<!-- start modal-9 -->
+	<div class="modal" id="modal-9">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-done">
+				<img src="img/work-done.svg" alt="">
+			</div>
+			<h3 class="modal-title title-min">Заказ отменён!</h3>
+		</div>
+	</div>
+	<!-- start modal-10 -->
+	<div class="modal" id="modal-10">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title title-min">Мы рады, что массаж Вам понравился!</h3>
+			<a href="#" class="second-btn">Ок</a>
+		</div>
+	</div>
+	<!-- start modal-11 -->
+	<div class="modal" id="modal-11">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title title-min">Спасибо за оценку!</h3>
+			<a href="#" class="second-btn">Ок</a>
+		</div>
+	</div>
+	<!-- start modal-12 -->
+	<div class="modal" id="modal-12">
+		<div class="close"></div>
+		<div class="modal-content">
+			<p class="text-center">Мы приносим свои извинения за то, что сегодня мы не соответствовали заявленным стандартам качества, мы примем меры чтобы исправиться.</p>
+			<a href="#" class="second-btn">Ок</a>
+		</div>
+	</div>
+	<!-- start modal-13 -->
+	<div class="modal" id="modal-13">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-done">
+				<img src="img/forbidden.svg" alt="">
+			</div>
+			<p>Приносим свои извинения за то, что мастер не соответствовал нашим высоким стандартам качества.</p>
+			<p>Мы примем меры, чтобы исправиться. Мы гарантируем, что этот мастер больше никогда не приедет к Вам!</p>
+			<a href="#" class="second-btn">Ок</a>
+		</div>
+	</div>
+	<!-- start modal-14 -->
+	<div class="modal" id="modal-14">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-done">
+				<img src="img/mark.svg" alt="">
+			</div>
+			<h3 class="modal-title">Хотите ли Вы, чтобы етот мастер больше не приезжал к Вам</h3>
+			<ul class="modal-list">
+				<li><a class="main-btn" href="#">Да</a></li>
+				<li><a class="second-btn" href="#">Нет</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- start modal-15 -->
+	<div class="modal" id="modal-15">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Вы уверены, что хотите отменить заказ?</h3>
+			<p class="text-center text-link">При отмене заказа, Вы будете обязаны оплатить штраф. <a href="#">Подробнее о штрафных санкциях</a></p>
+			<ul class="modal-list">
+				<li><a class="main-btn" href="#">Да</a></li>
+				<li><a class="second-btn" href="#">Нет</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- start modal-16 -->
+	<div class="modal" id="modal-16">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Пожалуйста, укажите причину отмены заказа</h3>
+			<form action="">
+				<div class="radio-button">
+					<input type="radio" name="cause">
+					<span></span>
+					<p>Поменялись планы</p>
+				</div>
+				<div class="radio-button">
+					<input type="radio" name="cause">
+					<span></span>
+					<p>Слишком сильно устал</p>
+				</div>
+				<div class="radio-button">
+					<input type="radio" name="cause">
+					<span></span>
+					<p>Передумал заказывать массаж</p>
+				</div>
+				<div class="radio-button">
+					<input type="radio" name="cause" checked>
+					<span></span>
+					<p>Другое</p>
+				</div>
+				<textarea name="text"></textarea>
+				<button class="second-btn">Подтвердить</button>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-17 -->
+	<div class="modal" id="modal-17">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Оцените выполненый заказ</h3>
+			<div class="modal-info">
+				<p>1 апреля (понедельник) 2017 в 1830</p>
+				<p class="text-bold">Индивидуальный расслабляющий</p>
+			</div>
+			<div class="modal-human">
+				<div class="modal-human__col">
+					<img src="img/human-1.png" alt="">
+					<p>Валентин</p>
+					<ul class="modal-human__star">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<form action="">
+				<textarea name="text" placeholder="Коментарий к заказу"></textarea>
+				<ul class="modal-list">
+					<li><button class="second-btn">Оценить</button></li>
+					<li><button class="main-btn">Оценить позже</button></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-18 -->
+	<div class="modal" id="modal-18">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Оцените выполненый заказ</h3>
+			<div class="modal-info">
+				<p>1 апреля (понедельник) 2017 в 1830</p>
+				<p class="text-bold">Офисный Успокаивающий</p>
+			</div>
+			<div class="modal-human">
+				<div class="modal-human__col">
+					<img src="img/human-1.png" alt="">
+					<p>Валентин</p>
+					<ul class="modal-human__star">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<form action="">
+				<textarea name="text" placeholder="Коментарий к заказу"></textarea>
+				<ul class="modal-list">
+					<li><button class="second-btn">Оценить</button></li>
+					<li><button class="main-btn">Оценить позже</button></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-19 -->
+	<div class="modal" id="modal-19">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Оцените выполненый заказ</h3>
+			<div class="modal-info">
+				<p>1 апреля (понедельник) 2017 в 1830</p>
+				<p class="text-bold">Королевский росслабляющий</p>
+			</div>
+			<div class="modal-human modal-human__all">
+				<div class="modal-human__col">
+					<img src="img/human-1.png" alt="">
+					<p>Валентин</p>
+					<ul class="modal-human__star">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="modal-human__col">
+					<img src="img/human-1.png" alt="">
+					<p>Валентин</p>
+					<ul class="modal-human__star">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<form action="">
+				<textarea name="text" placeholder="Коментарий к заказу"></textarea>
+				<ul class="modal-list">
+					<li><button class="second-btn">Оценить</button></li>
+					<li><button class="main-btn">Оценить позже</button></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start modal-20 -->
+	<div class="modal open" id="modal-20">
+		<div class="close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Оцените выполненый заказ</h3>
+			<div class="modal-info">
+				<p>1 апреля (понедельник) 2017 в 1830</p>
+				<p class="text-bold">Для двоих</p>
+			</div>
+			<div class="modal-human modal-human__all">
+				<div class="modal-human__col">
+					<img src="img/human-1.png" alt="">
+					<p>Валентин</p>
+					<ul class="modal-human__star">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="modal-human__col">
+					<img src="img/human-1.png" alt="">
+					<p>Валентин</p>
+					<ul class="modal-human__star">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<form action="">
+				<textarea name="text" placeholder="Коментарий к заказу"></textarea>
+				<ul class="modal-list">
+					<li><button class="second-btn">Оценить</button></li>
+					<li><button class="main-btn">Оценить позже</button></li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="menu-bar">
+				<span></span>
+			</div>
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+			</div>
+			<nav class="header-nav">
+				<ul>
+					<li><a href="#">Услуги</a></li>
+ 					<li><a href="#">Стоимость</a></li>
+  				<li><a href="#">Курс массажа</a></li>
+   				<li><a href="#">Сертификат</a></li>
+   				<li><a class="active" href="#">Заказать массаж</a></li>
+				</ul>
+			</nav>
+			<div class="header-drop">
+				<div class="header-drop__text">
+					<p><img src="img/human-ico.svg" alt="">Владимир</p>
+				</div>
+				<div class="header-drop__wrap">
+					<ul>
+						<li><a href="#">lorem</a></li>
+						<li><a href="#">Заказать массаж</a></li>
+						<li><a href="#">lorem</a></li>
+						<li><a href="#">Заказать массаж</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="wrapper">
+			<div class="main-row">
+				<div class="main-sidebar">
+					<div class="main-sidebar__wrap">
+						<div class="main-sidebar__col">
+							<h3 class="main-sidebar__col-title">Профиль</h3>
+							<ul>
+								<li><a class="active" href="#"><span><img src="img/ico-1.svg" alt=""></span><b>Личные данные</b></a></li>
+								<li><a href="#"><span><img src="img/ico-2.svg" alt=""></span><b>Смена пароля</b></a></li>
+								<li><a href="#"><span><img src="img/ico-3.svg" alt=""></span><b>Промокоды</b></a></li>
+								<li><a href="#"><span><img src="img/ico-4.svg" alt=""></span><b>Привязанные карты</b></a></li>
+								<li><a href="#"><span><img src="img/ico-5.svg" alt=""></span><b>Любимые адреса</b></a></li>
+							</ul>
+						</div>
+						<div class="main-sidebar__col">
+							<h3 class="main-sidebar__col-title">Мои заказы</h3>
+							<ul>
+								<li><a href="#"><span><img src="img/ico-6.svg" alt=""></span><b>Актуальные</b></a></li>
+								<li><a href="#"><span><img src="img/ico-7.svg" alt=""></span><b>История заказов</b></a></li>
+								<li class="main-sidebar__col-mob"><a href="#"><img src="img/ico-8.svg" alt=""></a></li>
+								<li class="main-sidebar__col-mob"><a href="#"><img src="img/ico-9.svg" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="main-sidebar__bottom">
+							<a href="#">Обратиться в поддержку</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-content main-content-mod">
+					<a href="#modal-1" class="second-btn button-modal">lorem-1</a>
+					<a href="#modal-2" class="second-btn button-modal">lorem-2</a>
+					<a href="#modal-3" class="second-btn button-modal">lorem-3</a>
+					<a href="#modal-4" class="second-btn button-modal">lorem-4</a>
+					<a href="#modal-5" class="second-btn button-modal">lorem-5</a>
+					<a href="#modal-6" class="second-btn button-modal">lorem-6</a>
+					<a href="#modal-7" class="second-btn button-modal">lorem-7</a>
+					<a href="#modal-8" class="second-btn button-modal">lorem-8</a>
+					<a href="#modal-9" class="second-btn button-modal">lorem-9</a>
+					<a href="#modal-10" class="second-btn button-modal">lorem-10</a>
+					<a href="#modal-11" class="second-btn button-modal">lorem-11</a>
+					<a href="#modal-12" class="second-btn button-modal">lorem-12</a>
+					<a href="#modal-13" class="second-btn button-modal">lorem-13</a>
+					<a href="#modal-14" class="second-btn button-modal">lorem-14</a>
+					<a href="#modal-15" class="second-btn button-modal">lorem-15</a>
+					<a href="#modal-16" class="second-btn button-modal">lorem-16</a>
+					<a href="#modal-17" class="second-btn button-modal">lorem-17</a>
+					<a href="#modal-18" class="second-btn button-modal">lorem-18</a>
+					<a href="#modal-19" class="second-btn button-modal">lorem-19</a>
+					<a href="#modal-20" class="second-btn button-modal">lorem-20</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-col">
+					<div class="footer-col__logo">
+						<a href="#">
+							<img src="img/logo-f.svg" alt="">
+							<span>©</span>
+						</a>
+					</div>
+				</div><!-- col(1) -->
+				<div class="footer-wrap">
+					<div class="footer-col">
+						<ul>
+							<li><a href="#">О сервисе</a></li>
+							<li><a href="#">Часто задаваемые вопросы</a></li>
+							<li><a href="#">Для мастеров</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="footer-col">
+						<ul>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Условия использования</a></li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="footer-col">
+						<ul>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Корпоративным клиентам</a></li>
+						</ul>
+					</div><!-- col(4) -->
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
