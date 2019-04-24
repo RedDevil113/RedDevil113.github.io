@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<div class="blot blot-2-2"><img src="img/2-c.png" alt=""></div>
+	<!--<div class="main-bg" style="background-image: url(img/back.svg);"></div>-->
+	<!-- start menu-mob -->
+	<div class="menu-mob">
+		<div class="menu-mob__close"></div>
+		<div class="menu-mob__top">
+			<p><a href="#">Мой мир</a></p>
+			<ul>
+				<li><a href="#">Поиск обмена</a></li>
+				<li><a href="#">Профиль</a></li>
+				<li><a href="#">История платежей</a></li>
+				<li><a href="#">Оплата</a></li>
+			</ul>
+		</div>
+		<div class="menu-mob__middle">
+			<div class="menu-mob__middle-user">
+				<p class="menu-mob__middle-name">Привет, Виктория!</p>
+				<p>Премиум активен до <a href="#">5 ноября 2019</a></p>
+				<a href="#" class="second-btn">Выйти</a>
+			</div>
+		</div>
+		<div class="menu-mob__bottom">
+			<ul class="menu-mob__social social">
+				<li><a href="#"><img src="img/Youtube.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
+			</ul>
+			<p>Copyright by Gorin&Co © 2018 </p>
+			<p>Техническая реализация <a href="#">Sybirex</a></p>
+		</div>
+	</div>
+	<!-- end menu-mob -->
+	<!-- start header -->
+	<header class="header header-user">
+		<div class="header-top">
+			<div class="wrapper">
+				<p class="header-top__info">Премиум активен до <a href="#">5 ноября 2019</a></p>
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<div class="header-top__list">
+					<p><span>Привет, Виктория! <img src="img/i-o.svg" alt=""></span><a href="#">Выйти</a></p>
+				</div>
+				<div class="bar-menu">
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<nav class="header-nav">
+					<ul>
+						<li><a class="active" href="#">Мой мир </a></li>
+						<li><a href="#">Поиск по карте</a></li>
+						<li><a href="#">Поиск по списку</a></li>
+						<li><a href="#">Полезные ссылки</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start section-top -->
+	<section class="section-top">
+		<div class="wrapper">
+			<h1 class="section-name">Профиль</h1>
+			<ul class="section-top__list">
+				<li><a href="#">Поиск обмена <img src="img/i-o.svg" alt=""></a></li>
+				<li><a class="active" href="#">Профиль</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">История платежей</a></li>
+			</ul>
+		</div>
+	</section>
+	<!-- end section-top -->
+	<!-- start filling -->
+	<section class="filling">
+		<div class="wrapper">
+			<div class="filling-row">
+				<div class="filling-block">
+					<h2 class="filling-title">Аккаунт оплачен до <a href="#">5 ноября 2019 года</a></h2>
+					<a href="#" class="main-btn">Продлить</a>
+				</div>
+				<div class="filling-wrap">
+					<h2 class="filling-title">Все поля с <span>*</span> обазательны для заполнения</h2>
+					<form action="">
+						<div class="filling-input">
+							<label for="i-1"><span>*</span>Имя</label>
+							<div class="filling-input__row">
+								<input name="name" type="text" id="i-1">
+								<p>Ваше имя в миру</p>
+							</div>
+						</div><!-- row(1) -->
+						<div class="filling-input">
+							<label for="i-2"><span>*</span>Логин</label>
+							<div class="filling-input__row">
+								<input class="input-error" name="name" type="text" id="i-2">
+								<p>Ваш никнейм</p>
+							</div>
+							<div class="filling-input__error">
+								<p>поле заполнено некорректно</p>
+							</div>
+						</div><!-- row(2) -->
+						<div class="filling-input">
+							<label for="i-3"><span>*</span>Пароль</label>
+							<a href="#" class="filling-input__btn btn-x">изменить</a>
+						</div><!-- row(3) -->
+						<div class="filling-input">
+							<label for="i-4"><span>*</span>E-mail</label>
+							<div class="filling-input__row">
+								<input name="name" type="text" id="i-4">
+								<p>Системные уведомления об успешныхзаявках будут приходить всегда независимо от данной галочки</p>
+							</div>
+							<div class="filling-input__checkbox">
+								<div class="checkbox-button">
+									<input type="checkbox" checked="checked">
+									<span></span>
+									<p>Уведомления</p>
+								</div>
+							</div>
+						</div><!-- row(4) -->
+						<div class="filling-input">
+							<label for="i-5">Телефон</label>
+							<div class="filling-input__row">
+								<input name="name" type="text" id="i-5">
+								<p>Укажите правильный телефон</p>
+							</div>
+							<div class="filling-input__checkbox">
+								<div class="checkbox-button">
+									<input type="checkbox" checked="checked">
+									<span></span>
+									<p>Whatsapp</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox" checked="checked">
+									<span></span>
+									<p>Viber</p>
+								</div>
+							</div>
+						</div><!-- row(5) -->
+						<div class="filling-input">
+							<label for="i-6">Город</label>
+							<select name="" id="i-6">
+								<option value="">Москва</option>
+								<option value="">Москва1</option>
+								<option value="">Москва2</option>
+								<option value="">Москва3</option>
+							</select>
+						</div><!-- row(6) -->
+						<div class="filling-input">
+							<label>Пол</label>
+							<div class="filling-input__checkbox">
+								<div class="checkbox-button">
+									<input type="checkbox" checked="checked">
+									<span></span>
+									<p>Мужской</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox" checked="checked">
+									<span></span>
+									<p>Женский</p>
+								</div>
+							</div>
+						</div><!-- row(7) -->
+						<div class="filling-input filling-num">
+							<div class="filling-num__col filling-num__col-date">
+								<label for="date">Дата рождения</label>
+								<div>
+									<input type="text" id="date">
+								</div>
+							</div>
+							<div class="filling-num__col">
+								<label for="i-8">Кол-во детей</label>
+								<select name="" id="i-8">
+									<option value="">Москва</option>
+									<option value="">Москва1</option>
+									<option value="">Москва2</option>
+									<option value="">Москва3</option>
+								</select>
+							</div>
+						</div>
+						<div class="filling-buttons">
+							<button class="main-btn">Сохранить</button>
+							<a href="#" class="second-btn">Отмена</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end filling -->
+	<!-- start bottom-bg -->
+	<section class="bottom-bg" style="background-image: url(img/bottom-bg.png);"></section>
+	<!-- end bottom-bg -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper">
+				<ul class="footer-top__menu">
+					<li><a href="#">Условия использования</a></li>
+					<li><a href="#">Условия для партнеров</a></li>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Обратная связь</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper w-row">
+				<p>Copyright by Gorin&Co © 2018 </p>
+				<ul class="footer-bottom__social social">
+					<li><a href="#"><img src="img/Youtube.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
+				</ul>
+				<p>Техническая реализация <a href="#">Sybirex</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<div class="modal modal-video" id="modal-video">
+		<div class="modal-video__wrap">
+			<span class="modal-video__wrap-link">https://www.youtube.com/embed/iYi-hO7PZYA</span>
+			<iframe src="https://www.youtube.com/embed/iYi-hO7PZYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

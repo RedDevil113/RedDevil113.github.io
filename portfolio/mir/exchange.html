@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="modal-overlay open-overlay"></div>
+	<!-- start menu-mob -->
+	<div class="menu-mob">
+		<div class="menu-mob__close"></div>
+		<div class="menu-mob__top">
+			<p><a href="#">Мой мир</a></p>
+			<ul>
+				<li><a href="#">Поиск обмена</a></li>
+				<li><a href="#">Профиль</a></li>
+				<li><a href="#">История платежей</a></li>
+				<li><a href="#">Оплата</a></li>
+			</ul>
+			<p><a href="#">Поиск по карте</a></p>
+			<p><a href="#">Поиск по списку</a></p>
+			<p><a href="#">Полезные ссылки</a></p>
+			<ul class="menu-mob__list">
+				<li><a href="#">Условия использования</a></li>
+				<li><a href="#">Условия для партнеров</a></li>
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Обратная связь</a></li>
+			</ul>
+		</div>
+		<div class="menu-mob__middle">
+			<a href="#" class="main-btn">Зарегистрироваться</a>
+			<span>или</span>
+			<a href="#" class="second-btn">Войти</a>
+		</div>
+		<div class="menu-mob__bottom">
+			<ul class="menu-mob__social social">
+				<li><a href="#"><img src="img/Youtube.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
+			</ul>
+			<p>Copyright by Gorin&Co © 2018 </p>
+			<p>Техническая реализация <a href="#">Sybirex</a></p>
+		</div>
+	</div>
+	<!-- end menu-mob -->
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<div class="header-top__list">
+					<p><a href="#">Войти</a><span>или</span><a href="#">Зарегистрироваться</a></p>
+				</div>
+				<div class="bar-menu">
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<nav class="header-nav">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Поиск по карте</a></li>
+						<li><a href="#">Партнеры</a></li>
+						<li><a href="#">Полезное</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start section-top -->
+	<section class="section-top">
+		<div class="wrapper">
+			<h1 class="section-name">Поиск обмена д/с</h1>
+			<ul class="section-top__list">
+				<li><a class="active" href="#">Поиск обмена <img src="img/i-o.svg" alt=""></a></li>
+				<li><a href="#">Профиль</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">История платежей</a></li>
+			</ul>
+			<a href="#" class="main-btn section-top__link-fix">Создать заявку</a>
+		</div>
+	</section>
+	<!-- end section-top -->
+	<!-- start exchange -->
+	<section class="exchange">
+		<div class="wrapper">
+			<div class="exchange-wrap">
+				<div class="exchange-top">
+					<div class="exchange-top__col exchange-top__col-1">
+						<p>Номер заявки</p>
+					</div><!-- col(1) -->
+					<div class="exchange-top__col exchange-top__col-2">
+						<p>Из какого сада</p>
+					</div><!-- col(2) -->
+					<div class="exchange-top__col exchange-top__col-3">
+						<p>В какой сад</p>
+					</div><!-- col(3) -->
+					<div class="exchange-top__col exchange-top__col-4">
+						<p>Возрастная группа</p>
+					</div><!-- col(4) -->
+					<div class="exchange-top__col exchange-top__col-5">
+						<p>Статус</p>
+					</div><!-- col(5) -->
+				</div>
+				<div class="exchange-row">
+					<div class="exchange-row__acc"></div>
+					<ul class="exchange-row__list">
+						<li class="exchange-row__edit"><a href="#"></a></li>
+						<li class="exchange-row__delet"><a href="#"></a></li>
+					</ul>
+					<div class="exchange-col exchange-col__1">
+						<b>Номер заявки</b>
+						<p><span>1</span><i>2345767</i></p>
+					</div><!-- col(1) -->
+					<div class="exchange-col__row">
+						<div class="exchange-col exchange-col__2">
+							<b>Из какого сада</b>
+							<h3 class="exchange-col__title"><a href="#">Садик №20 «Солнышко»</a></h3>
+							<p>ул. Хорошевское шоссе 67</p>
+						</div><!-- col(2) -->
+						<div class="exchange-col exchange-col__3">
+							<b>В какой сад</b>
+							<h3 class="exchange-col__title"><a href="#">Садик №20 «Солнышко»</a></h3>
+							<p>ул. Хорошевское шоссе 67</p>
+						</div><!-- col(3) -->
+						<div class="exchange-col exchange-col__4">
+							<b>Возрастная группа</b>
+							<p>Ясли и/или ГКП</p>
+						</div><!-- col(4) -->
+					</div>
+					<div class="exchange-col exchange-col__5">
+						<b>Статус</b>
+						<div class="exchange-col__coming">
+							<p>идет поиск</p>
+						</div>
+					</div><!-- col(5) -->
+				</div><!-- row(1) -->
+				<div class="exchange-row">
+					<div class="exchange-row__acc"></div>
+					<ul class="exchange-row__list">
+						<li class="exchange-row__edit"><a href="#"></a></li>
+						<li class="exchange-row__delet"><a href="#"></a></li>
+					</ul>
+					<div class="exchange-col exchange-col__1">
+						<b>Номер заявки</b>
+						<p><span>2</span><i>2345767</i></p>
+					</div><!-- col(1) -->
+					<div class="exchange-col__row">
+						<div class="exchange-col exchange-col__2">
+							<b>Из какого сада</b>
+							<h3 class="exchange-col__title"><a href="#">Садик №20 «Солнышко»</a></h3>
+							<p>ул. Хорошевское шоссе 67</p>
+						</div><!-- col(2) -->
+						<div class="exchange-col exchange-col__3">
+							<b>В какой сад</b>
+							<h3 class="exchange-col__title"><a href="#">Садик №20 «Солнышко»</a></h3>
+							<p>ул. Хорошевское шоссе 67</p>
+						</div><!-- col(3) -->
+						<div class="exchange-col exchange-col__4">
+							<b>Возрастная группа</b>
+							<p>Ясли и/или ГКП</p>
+						</div><!-- col(4) -->
+					</div>
+					<div class="exchange-col exchange-col__5">
+						<b>Статус</b>
+						<div class="exchange-col__activate">
+							<a class="btn-x" href="#">активировать</a>
+						</div>
+					</div><!-- col(5) -->
+				</div><!-- row(2) -->
+				<div class="exchange-row">
+					<div class="exchange-row__acc"></div>
+					<ul class="exchange-row__list">
+						<li class="exchange-row__edit"><a href="#"></a></li>
+						<li class="exchange-row__delet"><a href="#"></a></li>
+					</ul>
+					<div class="exchange-col exchange-col__1">
+						<b>Номер заявки</b>
+						<p><span>3</span><i>2345767</i></p>
+					</div><!-- col(1) -->
+					<div class="exchange-col__row">
+						<div class="exchange-col exchange-col__2">
+							<b>Из какого сада</b>
+							<h3 class="exchange-col__title"><a href="#">Садик №20 «Солнышко»</a></h3>
+							<p>ул. Хорошевское шоссе 67</p>
+						</div><!-- col(2) -->
+						<div class="exchange-col exchange-col__3">
+							<b>В какой сад</b>
+							<h3 class="exchange-col__title"><a href="#">Садик №20 «Солнышко»</a></h3>
+							<p>ул. Хорошевское шоссе 67</p>
+						</div><!-- col(3) -->
+						<div class="exchange-col exchange-col__4">
+							<b>Возрастная группа</b>
+							<p>Ясли и/или ГКП</p>
+						</div><!-- col(4) -->
+					</div>
+					<div class="exchange-col exchange-col__5">
+						<b>Статус</b>
+						<div class="exchange-col__coincidence">
+							<p><img src="img/i-o.svg" alt=""><span>найдены совпадения</span></p>
+							<a class="btn-x" href="#">активировать</a>
+						</div>
+					</div><!-- col(5) -->
+				</div><!-- row(3) -->
+				<div class="exchange-row">
+					<div class="exchange-row__acc"></div>
+					<ul class="exchange-row__list">
+						<li class="exchange-row__edit"><a href="#"></a></li>
+						<li class="exchange-row__delet"><a href="#"></a></li>
+					</ul>
+					<div class="exchange-col exchange-col__1">
+						<b>Номер заявки</b>
+						<p><span>4</span><i>2345767</i></p>
+					</div><!-- col(1) -->
+					<div class="exchange-col__row">
+						<div class="exchange-col exchange-col__2">
+							<b>Из какого сада</b>
+							<h3 class="exchange-col__title"><a href="#">Садик №20 «Солнышко»</a></h3>
+							<p>ул. Хорошевское шоссе 67</p>
+						</div><!-- col(2) -->
+						<div class="exchange-col exchange-col__3">
+							<b>В какой сад</b>
+							<h3 class="exchange-col__title"><a href="#">Садик №20 «Солнышко»</a></h3>
+							<p>ул. Хорошевское шоссе 67</p>
+						</div><!-- col(3) -->
+						<div class="exchange-col exchange-col__4">
+							<b>Возрастная группа</b>
+							<p>Ясли и/или ГКП</p>
+						</div><!-- col(4) -->
+					</div>
+					<div class="exchange-col exchange-col__5">
+						<b>Статус</b>
+						<div class="exchange-col__coming">
+							<p>идет поиск</p>
+						</div>
+					</div><!-- col(5) -->
+				</div><!-- row(4) -->
+			</div>
+		</div>
+	</section>
+	<!-- end exchange -->
+	<!-- start tips -->
+	<section class="tips">
+		<div class="wrapper">
+			<div class="tips-info">
+				<h2 class="tips-info__title">Подсказки</h2>
+				<div class="tips-info__accordeon accordeon">
+					<span>1</span>
+					<h3 class="tips-info__accordeon-title">Как поучаствовать в социально-значимом проекте?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(1) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>2</span>
+					<h3 class="tips-info__accordeon-title">Что такое Премиум-аккаунт?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+						<p>Скоро мы расширим функционал для Премиум-аккаунта.</p>
+					</div>
+				</div><!-- accordeon(2) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>3</span>
+					<h3 class="tips-info__accordeon-title">Как воспользоваться поиском вариантов обмена детскими садами?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(3) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>4</span>
+					<h3 class="tips-info__accordeon-title">Как найти нужную услугу (секцию, репетитора, сайт для мам и т.п.)?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(4) -->
+			</div>
+			<div class="tips-video">
+				<a class="button-modal" href="#modal-video"><img src="img/play-frame.png" alt=""></a>
+			</div>
+		</div>
+	</section>
+	<!-- end tips -->
+	<!-- start statistics -->
+	<section class="statistics project-statistics project-bg" style="background-image: url(img/bottom-bg.png);">
+		<div class="wrapper">
+			<div class="statistics-slider">
+				<div class="statistics-slide statistics-slide__1">
+					<div class="statistics-slide__wrap">
+						<div class="statistics-slide__wrap-ico">
+							<img src="img/statistics-1.svg" alt="">
+						</div>
+						<span>53 тыс</span>
+						<p>человек в проекте</p>
+					</div>
+				</div><!-- slide(1) -->
+				<div class="statistics-slide statistics-slide__2">
+					<div class="statistics-slide__wrap">
+						<div class="statistics-slide__wrap-ico">
+							<img src="img/statistics-2.svg" alt="">
+						</div>
+						<span>1,2 млн</span>
+						<p>активных заявок</p>
+					</div>
+				</div><!-- slide(2) -->
+				<div class="statistics-slide statistics-slide__3">
+					<div class="statistics-slide__wrap">
+						<div class="statistics-slide__wrap-ico">
+							<img src="img/statistics-3.svg" alt="">
+						</div>
+						<span>412</span>
+						<p>удачных обменов</p>
+					</div>
+				</div><!-- slide(3) -->
+				<div class="statistics-slide statistics-slide__4">
+					<div class="statistics-slide__wrap">
+						<div class="statistics-slide__wrap-ico">
+							<img src="img/statistics-4.svg" alt="">
+						</div>
+						<span>85</span>
+						<p>партнеров</p>
+					</div>
+				</div><!-- slide(4) -->
+			</div>
+		</div>
+	</section>
+	<!-- end statistics -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper">
+				<ul class="footer-top__menu">
+					<li><a href="#">Условия использования</a></li>
+					<li><a href="#">Условия для партнеров</a></li>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Обратная связь</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper w-row">
+				<p>Copyright by Gorin&Co © 2018 </p>
+				<ul class="footer-bottom__social social">
+					<li><a href="#"><img src="img/Youtube.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
+				</ul>
+				<p>Техническая реализация <a href="#">Sybirex</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<div class="modal modal-ok open" id="modal-ok">
+		<div class="cancel"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Внимание</h3>
+			<p>При активации заявки, она вновь будет участвовать в поиске, текущая цепочка будет разорвана</p>
+			<ul class="modal-list">
+				<li><span class="main-btn cancel-modal">Подтвердить</span></li>
+				<li><a class="second-btn" href="#">Отменить</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="modal modal-video" id="modal-video">
+		<div class="modal-video__wrap">
+			<span class="modal-video__wrap-link">https://www.youtube.com/embed/iYi-hO7PZYA</span>
+			<iframe src="https://www.youtube.com/embed/iYi-hO7PZYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

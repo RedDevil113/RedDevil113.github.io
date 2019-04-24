@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="modal-overlay"></div>
+	<div class="blot blot-1-2"><img src="img/1-c.png" alt=""></div>
+	<div class="blot blot-3-3"><img src="img/3-c.png" alt=""></div>
+	<!--<div class="main-bg" style="background-image: url(img/back.svg);"></div>-->
+	<!-- start menu-mob -->
+	<div class="menu-mob">
+		<div class="menu-mob__close"></div>
+		<div class="menu-mob__top">
+			<p><a href="#">Мой мир</a></p>
+			<ul>
+				<li><a href="#">Поиск обмена</a></li>
+				<li><a href="#">Профиль</a></li>
+				<li><a href="#">История платежей</a></li>
+				<li><a href="#">Оплата</a></li>
+			</ul>
+			<p><a href="#">Поиск по карте</a></p>
+			<p><a href="#">Поиск по списку</a></p>
+			<p><a href="#">Полезные ссылки</a></p>
+			<ul class="menu-mob__list">
+				<li><a href="#">Условия использования</a></li>
+				<li><a href="#">Условия для партнеров</a></li>
+				<li><a href="#">О проекте</a></li>
+				<li><a href="#">Обратная связь</a></li>
+			</ul>
+		</div>
+		<div class="menu-mob__middle">
+			<a href="#" class="main-btn">Зарегистрироваться</a>
+			<span>или</span>
+			<a href="#" class="second-btn">Войти</a>
+		</div>
+		<div class="menu-mob__bottom">
+			<ul class="menu-mob__social social">
+				<li><a href="#"><img src="img/Youtube.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
+			</ul>
+			<p>Copyright by Gorin&Co © 2018 </p>
+			<p>Техническая реализация <a href="#">Sybirex</a></p>
+		</div>
+	</div>
+	<!-- end menu-mob -->
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-logo">
+					<a href="#"><img src="img/logo.svg" alt=""></a>
+				</div>
+				<div class="header-top__list">
+					<p><a href="#">Войти</a><span>или</span><a href="#">Зарегистрироваться</a></p>
+				</div>
+				<div class="bar-menu">
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<nav class="header-nav">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Поиск по карте</a></li>
+						<li><a href="#">Партнеры</a></li>
+						<li><a class="active" href="#">Полезное</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start section-top -->
+	<section class="section-top">
+		<div class="wrapper">
+			<h1 class="section-name">Полезные ресурсы</h1>
+			<div class="section-select">
+				<div class="section-select__wrap section-select__wrap-b">
+					<p class="section-select__wrap-text">Задайте параметры</p>
+					<div class="section-select__wrap-row">
+						<div class="drop section-select__drop">
+							<p class="section-select__drop-text drop-text">Возраст</p>
+							<div class="section-select__drop-wrap">
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Беременность</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>0-3 года</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>3-7 лет</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>7-11 лет</p>
+								</div>
+							</div>
+						</div><!-- drop(1) -->
+						<div class="drop section-select__drop">
+							<p class="section-select__drop-text drop-text">Места</p>
+							<div class="section-select__drop-wrap">
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p><b><img src="img/Instagram.svg" alt=""></b>Беременность</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p><b><img src="img/VK.svg" alt=""></b>Беременность</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p><b><img src="img/Facebook.svg" alt=""></b>Беременность</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p><b><img src="img/Youtube.svg" alt=""></b>Беременность</p>
+								</div>
+							</div>
+						</div><!-- drop(2) -->
+					</div>
+				</div>
+				<div class="section-select__buttons">
+					<a href="#" class="main-btn">Найти</a>
+					<a href="#" class="second-btn">Найти к карте</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end section-top -->
+	<!-- start partner -->
+	<section class="partner partner-resources">
+		<div class="wrapper">
+			<div class="partner-table">
+				<div class="partner-table__top">
+					<div class="partner-table__top-col partner-table__top-col__1">
+						<p>Наименование</p>
+					</div><!-- col(1) -->
+					<div class="partner-table__top-col partner-table__top-col__2">
+						<p>Описание</p>
+					</div><!-- col(2) -->
+				</div>
+				<div class="partner-table__row">
+					<div class="partner-table__col partner-table__col-1">
+						<b>Наименование</b>
+						<div class="partner-table__col-logo">
+							<img src="img/log-small.svg" alt="">
+						</div>
+						<h4 class="partner-table__col-title"><a href="#">Группа «Смышленыши»</a></h4>
+						<p>Facebook</p>
+					</div><!-- col(1) -->
+					<div class="partner-table__col partner-table__col-2">
+						<b>Возраст</b>
+						<p>Обратите также внимание на функционал и направленность площадки. Например, сообщество ВКонтакте идеально подходит для создания некого подобия интернет-магазина.</p>
+					</div><!-- col(2) -->
+				</div><!-- row(1) -->
+				<div class="partner-table__row">
+					<div class="partner-table__col partner-table__col-1">
+						<b>Наименование</b>
+						<div class="partner-table__col-logo">
+							<img src="img/log-small.svg" alt="">
+						</div>
+						<h4 class="partner-table__col-title"><a href="#">Группа «Смышленыши»</a></h4>
+						<p>Facebook</p>
+					</div><!-- col(1) -->
+					<div class="partner-table__col partner-table__col-2">
+						<b>Возраст</b>
+						<p>Обратите также внимание на функционал и направленность площадки. Например, сообщество ВКонтакте идеально подходит для создания некого подобия интернет-магазина.</p>
+					</div><!-- col(2) -->
+				</div><!-- row(2) -->
+				<div class="partner-table__row">
+					<div class="partner-table__col partner-table__col-1">
+						<b>Наименование</b>
+						<div class="partner-table__col-logo">
+							<img src="img/log-small.svg" alt="">
+						</div>
+						<h4 class="partner-table__col-title"><a href="#">Группа «Смышленыши»</a></h4>
+						<p>Facebook</p>
+					</div><!-- col(1) -->
+					<div class="partner-table__col partner-table__col-2">
+						<b>Возраст</b>
+						<p>Обратите также внимание на функционал и направленность площадки. Например, сообщество ВКонтакте идеально подходит для создания некого подобия интернет-магазина.</p>
+					</div><!-- col(2) -->
+				</div><!-- row(3) -->
+				<div class="partner-table__row">
+					<div class="partner-table__col partner-table__col-1">
+						<b>Наименование</b>
+						<div class="partner-table__col-logo">
+							<img src="img/log-small.svg" alt="">
+						</div>
+						<h4 class="partner-table__col-title"><a href="#">Группа «Смышленыши»</a></h4>
+						<p>Facebook</p>
+					</div><!-- col(1) -->
+					<div class="partner-table__col partner-table__col-2">
+						<b>Возраст</b>
+						<p>Обратите также внимание на функционал и направленность площадки. Например, сообщество ВКонтакте идеально подходит для создания некого подобия интернет-магазина.</p>
+					</div><!-- col(2) -->
+				</div><!-- row(4) -->
+				<div class="partner-table__row">
+					<div class="partner-table__col partner-table__col-1">
+						<b>Наименование</b>
+						<div class="partner-table__col-logo">
+							<img src="img/log-small.svg" alt="">
+						</div>
+						<h4 class="partner-table__col-title"><a href="#">Группа «Смышленыши»</a></h4>
+						<p>Facebook</p>
+					</div><!-- col(1) -->
+					<div class="partner-table__col partner-table__col-2">
+						<b>Возраст</b>
+						<p>Обратите также внимание на функционал и направленность площадки. Например, сообщество ВКонтакте идеально подходит для создания некого подобия интернет-магазина.</p>
+					</div><!-- col(2) -->
+				</div><!-- row(5) -->
+			</div>
+			<div class="pagination">
+				<div class="pagination-main">
+					<ul>
+						<li><a class="active" href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>...</li>
+						<li><a href="#">15</a></li>
+						<li><a href="#">Вперед</a></li>
+					</ul>
+				</div>
+				<div class="pagination-all">
+					<p>Показать</p>
+					<ul>
+						<li><a class="active" href="#">20</a></li>
+						<li><a href="#">50</a></li>
+						<li><a href="#">100</a></li>
+						<li><a href="#">200</a></li>
+						<li><a href="#">Все</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end partner -->
+	<!-- start not-available -->
+	<section class="not-available">
+		<div class="wrapper">
+			<div class="not-available__wrap">
+				<img src="img/hourglass.svg" alt="">
+				<h3 class="not-available__title">Сервис пока не работает в вашем городе. Нажмите на кнопку, чтобы мы заработали.</h3>
+				<a href="#" class="main-btn">Заработать</a>
+			</div>
+		</div>
+	</section>
+	<!-- end not-available -->
+	<!-- start tips -->
+	<section class="tips">
+		<div class="wrapper">
+			<div class="tips-info">
+				<h2 class="tips-info__title">Подсказки</h2>
+				<div class="tips-info__accordeon accordeon">
+					<span>1</span>
+					<h3 class="tips-info__accordeon-title">Как поучаствовать в социально-значимом проекте?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(1) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>2</span>
+					<h3 class="tips-info__accordeon-title">Что такое Премиум-аккаунт?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+						<p>Скоро мы расширим функционал для Премиум-аккаунта.</p>
+					</div>
+				</div><!-- accordeon(2) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>3</span>
+					<h3 class="tips-info__accordeon-title">Как воспользоваться поиском вариантов обмена детскими садами?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(3) -->
+				<div class="tips-info__accordeon accordeon">
+					<span>4</span>
+					<h3 class="tips-info__accordeon-title">Как найти нужную услугу (секцию, репетитора, сайт для мам и т.п.)?</h3>
+					<div>
+						<p>Премиум доступ (или Премиум-аккаунт) дает возможность создавать заявки на поиск вариантов обмена местами в детских садах. Доступ платный (100-150 руб. в месяц). Оплата осуществляется через защищенную систему платежей внешнего сервиса Яндекс.Касса.</p>
+					</div>
+				</div><!-- accordeon(4) -->
+			</div>
+			<div class="tips-video">
+				<a class="button-modal" href="#modal-video"><img src="img/play-frame.png" alt=""></a>
+			</div>
+		</div>
+	</section>
+	<!-- end tips -->
+	<!-- start bottom-bg -->
+	<section class="bottom-bg" style="background-image: url(img/bottom-bg.png);"></section>
+	<!-- end bottom-bg -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper">
+				<ul class="footer-top__menu">
+					<li><a href="#">Условия использования</a></li>
+					<li><a href="#">Условия для партнеров</a></li>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Обратная связь</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper w-row">
+				<p>Copyright by Gorin&Co © 2018 </p>
+				<ul class="footer-bottom__social social">
+					<li><a href="#"><img src="img/Youtube.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
+				</ul>
+				<p>Техническая реализация <a href="#">Sybirex</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<div class="modal modal-video" id="modal-video">
+		<div class="modal-video__wrap">
+			<span class="modal-video__wrap-link">https://www.youtube.com/embed/iYi-hO7PZYA</span>
+			<iframe src="https://www.youtube.com/embed/iYi-hO7PZYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
