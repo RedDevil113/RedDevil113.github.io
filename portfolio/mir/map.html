@@ -18,6 +18,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
+	<div class="modal-overlay"></div>
 	<div class="wrapper wrapper-ok"></div><!-- do not touch -->
 	<!-- start menu-mob -->
 	<div class="menu-mob">
@@ -86,13 +87,13 @@
 					<option value="">Москва</option>
 				</select>
 			</div>
-			<a href="#" class="main-btn section-top__link">Создать заявку</a>
+			<a href="#" class="main-btn section-top__link disabled">Создать заявку</a>
 		</div>
 	</section>
 	<!-- end section-top -->
 	<!-- start by-map -->
 	<div class="byMap-top">
-		<a href="#modal-filter" class="second-btn button-modal">Детские сады и партнеры</a>
+		<a href="#modal-filter" class="second-btn button-modal btn-mob">Детские сады и партнеры</a>
 	</div>
 	<section class="byMap">
 		<div class="byMap-wrap">
@@ -113,319 +114,378 @@
 						</div>
 					</div>
 					<div class="byMap-sidebar__head-last">
+						<div class="byMap-drop drop">
+							<p class="byMap-drop__text drop-text">Фильтры</p>
+							<div class="byMap-drop__wrap">
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Бассейн</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Ясли и/или ГКП </p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Увеличенное время пребывания</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Психолог</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Специализированные группы</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Логопед</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--
+					<div class="byMap-menu__wrap">
+						<h3 class="byMap-sidebar__head-title">Партнеры</h3>
+						<div class="checkbox-button">
+							<input type="checkbox" checked="checked">
+							<span></span>
+							<p>Отображать</p>
+						</div>
+						<div class="checkbox-button">
+							<input type="checkbox">
+							<span></span>
+							<p>С вариантами обмена</p>
+						</div>
+					</div>
+					<div class="byMap-sidebar__head-last">
 						<a href="#" class="byMap-sidebar__head-link">Расширенный поиск</a>
 					</div>
+					-->
+					<!--
+					<div class="byMap-menu__service">
+						<p><img src="img/i-o.svg" alt=""><span>Сервис пока не работает в вашем городе. Нажмите на кнопку, чтобы мы заработали.</span></p>
+					</div>
+					-->
 				</div>
 			</div>
 			<div id="modal-filter" class="byMap-sidebar modal">
-				<div class="cancel"></div>
-				<div class="byMap-sidebar__head byMap-sidebar__head-open">
-					<h3 class="byMap-sidebar__head-title">Партнеры</h3>
-					<h3 class="byMap-sidebar__head-title byMap-sidebar__head-mob">Детские сады и партнеры</h3>
-					<div class="checkbox-button">
-						<input type="checkbox" checked="checked">
-						<span></span>
-						<p>Отображать</p>
-					</div>
-				</div>
-				<div class="byMap-sidebar__content">
-					<div class="byMap-sidebar__content-age byMap-sidebar__content-block">
+				<div class="byMap-sidebar__mob">
+					<div class="cancel"></div>
+					<div class="byMap-sidebar__head byMap-sidebar__head-open">
 						<h3 class="byMap-sidebar__head-title">Партнеры</h3>
-						<p class="byMap-sidebar__content-subtitle">Возраст</p>
+						<h3 class="byMap-sidebar__head-title byMap-sidebar__head-mob">Детские сады и партнеры</h3>
 						<div class="checkbox-button">
-							<input type="checkbox">
+							<input type="checkbox" checked="checked">
 							<span></span>
-							<p>Беременность</p>
-						</div>
-						<div class="checkbox-button">
-							<input type="checkbox">
-							<span></span>
-							<p>0-3 года</p>
-						</div>
-						<div class="checkbox-button">
-							<input type="checkbox">
-							<span></span>
-							<p>3-7 лет</p>
-						</div>
-						<div class="checkbox-button">
-							<input type="checkbox">
-							<span></span>
-							<p>7-11 лет</p>
+							<p>Отображать</p>
 						</div>
 					</div>
-					<div class="byMap-sidebar__content-over scrollbar byMap-sidebar__content-block">
-						<div class="byMapmn">
+					<div class="byMap-sidebar__content">
+						<div class="byMap-sidebar__content-age byMap-sidebar__content-block">
 							<h3 class="byMap-sidebar__head-title">Партнеры</h3>
+							<p class="byMap-sidebar__content-subtitle">Возраст</p>
 							<div class="checkbox-button">
 								<input type="checkbox">
 								<span></span>
-								<p>Кафе</p>
-							</div>
-							<div class="byMap-sidebar__drop">
-								<p class="byMap-sidebar__drop-text">Частные сады</p>
-								<div class="byMap-sidebar__drop-wrap scrollbar">
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Чебурашка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Красная шапочка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Эрудит”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-								</div>
+								<p>Беременность</p>
 							</div>
 							<div class="checkbox-button">
 								<input type="checkbox">
 								<span></span>
-								<p>Детские студии</p>
+								<p>0-3 года</p>
 							</div>
 							<div class="checkbox-button">
 								<input type="checkbox">
 								<span></span>
-								<p>Школы</p>
-							</div>
-							<div class="byMap-sidebar__drop">
-								<p class="byMap-sidebar__drop-text">Интеллектуальное развитие</p>
-								<div class="byMap-sidebar__drop-wrap scrollbar">
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Чебурашка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Красная шапочка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Эрудит”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-								</div>
+								<p>3-7 лет</p>
 							</div>
 							<div class="checkbox-button">
 								<input type="checkbox">
 								<span></span>
-								<p>Кафе</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="byMap-sidebar__drop">
-								<p class="byMap-sidebar__drop-text">Школы</p>
-								<div class="byMap-sidebar__drop-wrap scrollbar">
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Чебурашка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Красная шапочка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Эрудит”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-								</div>
-							</div>
-							<div class="byMap-sidebar__drop">
-								<p class="byMap-sidebar__drop-text">Частные сады</p>
-								<div class="byMap-sidebar__drop-wrap scrollbar">
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Чебурашка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Красная шапочка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Эрудит”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-								</div>
-							</div>
-							<div class="byMap-sidebar__drop">
-								<p class="byMap-sidebar__drop-text">Детские студии</p>
-								<div class="byMap-sidebar__drop-wrap scrollbar">
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Чебурашка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Красная шапочка”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Эрудит”</p>
-									</div>
-									<div class="checkbox-button">
-										<input type="checkbox">
-										<span></span>
-										<p>Детский сад “Самсон”</p>
-									</div>
-								</div>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
-							</div>
-							<div class="checkbox-button">
-								<input type="checkbox">
-								<span></span>
-								<p>Детские студии</p>
+								<p>7-11 лет</p>
 							</div>
 						</div>
-					</div>
-					<div class="byMap-sidebar__bottom">
-						<a href="#" class="main-btn">Найти</a>
-						<a href="#" class="second-btn">Сбросить</a>
+						<div class="byMap-sidebar__content-over scrollbar byMap-sidebar__content-block">
+							<div class="byMapmn">
+								<h3 class="byMap-sidebar__head-title">Партнеры</h3>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Кафе</p>
+								</div>
+								<div class="byMap-sidebar__drop">
+									<p class="byMap-sidebar__drop-text">Частные сады</p>
+									<div class="byMap-sidebar__drop-wrap">
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Чебурашка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Красная шапочка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Эрудит”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+									</div>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Школы</p>
+								</div>
+								<div class="byMap-sidebar__drop">
+									<p class="byMap-sidebar__drop-text">Интеллектуальное развитие</p>
+									<div class="byMap-sidebar__drop-wrap scrollbar">
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Чебурашка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Красная шапочка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Эрудит”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+									</div>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Кафе</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="byMap-sidebar__drop">
+									<p class="byMap-sidebar__drop-text">Школы</p>
+									<div class="byMap-sidebar__drop-wrap scrollbar">
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Чебурашка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Красная шапочка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Эрудит”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+									</div>
+								</div>
+								<div class="byMap-sidebar__drop">
+									<p class="byMap-sidebar__drop-text">Частные сады</p>
+									<div class="byMap-sidebar__drop-wrap scrollbar">
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Чебурашка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Красная шапочка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Эрудит”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+									</div>
+								</div>
+								<div class="byMap-sidebar__drop">
+									<p class="byMap-sidebar__drop-text">Детские студии</p>
+									<div class="byMap-sidebar__drop-wrap scrollbar">
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “ВОЛШЕБНЫЙ ЗАМОК”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Чебурашка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Красная шапочка”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Эрудит”</p>
+										</div>
+										<div class="checkbox-button">
+											<input type="checkbox">
+											<span></span>
+											<p>Детский сад “Самсон”</p>
+										</div>
+									</div>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Детские студии</p>
+								</div>
+							</div>
+						</div>
+						<div class="byMap-sidebar__bottom">
+							<a href="#" class="main-btn">Найти</a>
+							<a href="#" class="second-btn">Сбросить</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -493,7 +553,7 @@
 				<p>Copyright by Gorin&Co © 2018 </p>
 				<ul class="footer-bottom__social social">
 					<li><a href="#"><img src="img/Youtube.svg" alt=""></a></li>
-					<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+					<li><a class="disabled" href="#"><img src="img/Facebook.svg" alt=""></a></li>
 					<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
 					<li><a href="#"><img src="img/VK.svg" alt=""></a></li>
 				</ul>
@@ -521,7 +581,7 @@
         var marker1 = new google.maps.Marker({
         	position: {lat: 51.687842, lng: -0.224919},
         	map: map,
-        	icon: 'img/pin-orange.svg'
+        	icon: 'img/pin-green.svg'
         });
         var marker2 = new google.maps.Marker({
         	position: {lat: 51.787830, lng: -0.224918},
@@ -530,11 +590,11 @@
         });
 
         var info1 = new google.maps.InfoWindow({
-        	content: '<div class="pin-info"><h3><a href="#">Садик №65 «Аистенок»</a></h3><p>ул. Лодочная, 12</p></div>'
+        	content: '<div class="pin-map pin-map__green"><h3><a href="#">Садик №1234 «Сонечка»</a></h3><p>ул. Маршала Жукова, 15, стр. 3</p><div class="pin-map__info"><ul></ul><a href="#" class="pin-map__link">подробнее</a></div></div>'
         });
 
         var info2 = new google.maps.InfoWindow({
-        	content: '<div class="pin-info"><h3><a href="#">Садик №65 «Аистенок»</a></h3><p>ул. Лодочная, 12</p></div>'
+        	content: '<div class="pin-map pin-map__orange"><h3><a href="#">Садик №1234 «Сонечка»</a></h3><p>ул. Маршала Жукова, 15, стр. 3</p><div class="pin-map__info"><ul><li class="pin-map__i"><a href="#">6</a></li><li><a href="#">8</a></li></ul><a href="#" class="pin-map__link">подробнее</a></div></div>'
         });
 
         marker1.addListener('click', function(){
