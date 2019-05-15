@@ -15,6 +15,7 @@
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -88,7 +89,13 @@
 	<!-- start check-in -->
 	<section class="mod">
 		<div class="wrapper">
-			<a href="#" class="main-btn">modal-1</a>
+			<ul class="mod-list">
+				<li><a href="#modal-1" class="button-modal">modal-1</a></li>
+				<li><a href="#modal-2" class="button-modal">modal-2</a></li>
+				<li><a href="#modal-3" class="button-modal">modal-3</a></li>
+				<li><a href="#modal-4" class="button-modal">modal-4</a></li>
+				<li><a href="#modal-5" class="button-modal">modal-5</a></li>
+			</ul>
 		</div>
 	</section>
 	<!-- end check-in -->
@@ -133,7 +140,396 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<div class="modal-overlay open-overlay"></div>
+	<div class="modal" id="modal-1">
+		<div class="cancel"></div>
+		<div class="modal-head">
+			<h3 class="modal-head__title">Park9</h3>
+			<div class="modal-head__price"><b>$</b>50<span>/hour</span></div>
+			<div class="modal-head__bread">
+				<div class="modal-head__text">
+					<p>Toronto</p>
+				</div>
+				<div class="modal-head__bread-wrap">
+					<div class="modal-head__text drop-head">
+						<p>Dog Boarding</p>
+					</div>
+					<ul class="drop-list">
+						<li><a href="#">My Page</a></li>
+						<li><a class="list-active" href="#">Account</a></li>
+						<li><a href="#">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal-head__list">
+				<li><a class="active" href="#modal-tab__1">Choose Pet</a></li>
+				<li><a href="#modal-tab__2">Choose Time</a></li>
+				<li><a href="#modal-tab__3">Payment</a></li>
+			</ul>
+		</div>
+		<div class="modal-body">
+			<div class="modal-body__wrap modal-tab modal-tab__active" id="modal-tab__1">
+				<h3 class="modal-body__title">For whom?</h3>
+				<div class="modal-body__pet">
+					<div class="modal-body__pet-card">
+						<a href="#" class="modal-body__pet-card__link"></a>
+						<div class="modal-body__pet-new"><img src="img/plus.svg" alt=""></div>
+						<p>New pet</p>
+					</div>
+					<div class="modal-body__pet-card">
+						<a href="#" class="modal-body__pet-card__link"></a>
+						<img src="img/human-1.png" alt="">
+						<p>Vasya</p>
+					</div>
+					<div class="modal-body__pet-card">
+						<a href="#" class="modal-body__pet-card__link"></a>
+						<img src="img/human-1.png" alt="">
+						<p>Santia</p>
+					</div>
+				</div>
+			</div>
+			<div class="modal-body__wrap modal-tab" id="modal-tab__2">
+				<div class="modal-body__time">
+					<div id="datepicker"></div>
+					<div class="modal-body__time-col">
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time" checked="checked">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button radio-button__none">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button radio-button__none">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button radio-button__none">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+						<div class="modal-body__time-col__r">
+							<div class="radio-button">
+								<input type="radio" name="time">
+								<p>12:00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-body__wrap modal-tab" id="modal-tab__3">
+				<h3 class="modal-body__title">Payment methods</h3>
+				<div class="modal-body__methods">
+					<div class="modal-body__methods-col modal-body__methods-add">
+						<a href="#" class="modal-body__methods-col__link"></a>
+						<div>
+							<img src="img/plus.svg" alt="">
+						</div>
+						<p>Add payment method</p>
+					</div>
+					<div class="modal-body__methods-col">
+						<a href="#" class="modal-body__methods-col__link"></a>
+						<div><img src="img/visa.svg" alt=""></div>
+						<p>4532 6423 3720 1972</p>
+						<span>02/2023</span>
+					</div>
+					<div class="modal-body__methods-col">
+						<a href="#" class="modal-body__methods-col__link"></a>
+						<div><img src="img/visa.svg" alt=""></div>
+						<p>4532 6423 3720 1972</p>
+						<span>02/2023</span>
+					</div>
+					<p class="modal-body__by">By clicking «Pay» button you agree with  <a href="#">Privacy Policy</a> and <a href="#">User Agreement</a> of this website</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal-bottom">
+			<a href="#" class="main-btn">Choose time</a>
+		</div>
+	</div>
+	<div class="modal" id="modal-2">
+		<div class="cancel"></div>
+		<div class="modal-head">
+			<h3 class="modal-head__title">Park9</h3>
+			<div class="modal-head__price"><b>$</b>50<span>/hour</span></div>
+			<div class="modal-head__bread">
+				<div class="modal-head__text">
+					<p>Toronto</p>
+				</div>
+				<div class="modal-head__bread-wrap">
+					<div class="modal-head__text drop-head">
+						<p>Dog Boarding</p>
+					</div>
+					<ul class="drop-list">
+						<li><a href="#">My Page</a></li>
+						<li><a class="list-active" href="#">Account</a></li>
+						<li><a href="#">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal-head__list">
+				<li><a class="active" href="#modal-tab__1">Choose Pet</a></li>
+				<li><a href="#modal-tab__2">Choose Time</a></li>
+				<li><a href="#modal-tab__3">Payment</a></li>
+			</ul>
+		</div>
+		<div class="modal-body">
+			<a href="#" class="modal-body__back"><img src="img/arrow-right-2.svg" alt=""></a>
+			<h3 class="modal-body__title">New payment method</h3>
+			<div class="modal-body__card">
+				<div class="modal-body__card-input">
+					<input type="text" placeholder="Card number">
+					<img src="img/visa.svg" alt="">
+				</div>
+				<div class="modal-body__card-input modal-body__card-input__m">
+					<input type="text" placeholder="Name on card">
+				</div>
+				<div class="modal-body__card-row">
+					<input type="text" placeholder="Exp. date">
+					<input type="text" placeholder="CVV">
+				</div>
+			</div>
+		</div>
+		<div class="modal-bottom">
+			<a href="#" class="main-btn main-btn__red main-btn__arrow-none">Save &Book</a>
+		</div>
+	</div>
+	<div class="modal" id="modal-3">
+		<div class="cancel"></div>
+		<div class="modal-head">
+			<h3 class="modal-head__title">Park9</h3>
+			<div class="modal-head__price"><b>$</b>50<span>/hour</span></div>
+			<div class="modal-head__bread">
+				<div class="modal-head__text">
+					<p>Toronto</p>
+				</div>
+				<div class="modal-head__bread-wrap">
+					<div class="modal-head__text drop-head">
+						<p>Dog Boarding</p>
+					</div>
+					<ul class="drop-list">
+						<li><a href="#">My Page</a></li>
+						<li><a class="list-active" href="#">Account</a></li>
+						<li><a href="#">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="modal-body">
+			<h3 class="modal-body__title modal-body__title-red">Thank you!</h3>
+			<div class="modal-body__thank">
+				<img src="img/illustration.svg" alt="">
+				<h3 class="modal-body__thank-title">Your booking is waiting for confirmation. </h3>
+				<p>Seller will confirm it within 24 hours.</p>
+			</div>
+		</div>
+		<div class="modal-bottom">
+			<a href="#" class="main-btn main-btn__red main-btn__arrow-none">Save &Book</a>
+		</div>
+	</div>
+	<div class="modal" id="modal-4">
+		<div class="cancel"></div>
+		<div class="modal-head">
+			<h3 class="modal-head__title">Park9</h3>
+			<div class="modal-head__price"><b>$</b>50<span>/hour</span></div>
+			<div class="modal-head__bread">
+				<div class="modal-head__text">
+					<p>Toronto</p>
+				</div>
+				<div class="modal-head__bread-wrap">
+					<div class="modal-head__text drop-head">
+						<p>Dog Boarding</p>
+					</div>
+					<ul class="drop-list">
+						<li><a href="#">My Page</a></li>
+						<li><a class="list-active" href="#">Account</a></li>
+						<li><a href="#">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal-head__list">
+				<li><a class="active" href="#modal-tab__1">Choose Pet</a></li>
+				<li><a href="#modal-tab__2">Choose Time</a></li>
+				<li><a href="#modal-tab__3">Payment</a></li>
+			</ul>
+		</div>
+		<div class="modal-body">
+			<div class="modal-body__sign">
+				<a href="#" class="modal-body__link">Sign up by email</a>
+				<h3 class="modal-body__title">Sign in</h3>
+				<ul class="check-in__list">
+					<li class="check-in__li-blue"><a href="#"><span><img src="img/face-w.svg" alt=""></span>Facebook</a></li>
+					<li class="check-in__li-red"><a href="#"><span><img src="img/gog-w.svg" alt=""></span>Google</a></li>
+				</ul>
+				<div class="modal-body__sign-input">
+					<input type="text" placeholder="email">
+				</div>
+				<div class="modal-body__sign-input">
+					<input type="text" placeholder="Password">
+				</div>
+			</div>
+		</div>
+		<div class="modal-bottom">
+			<a href="#" class="main-btn">SIgn in</a>
+			<a href="#" class="modal-bottom__btn">Password recovery</a>
+		</div>
+	</div>
+	<div class="modal open" id="modal-5">
+		<div class="cancel"></div>
+		<div class="modal-head">
+			<h3 class="modal-head__title">Park9</h3>
+			<div class="modal-head__price"><b>$</b>50<span>/hour</span></div>
+			<div class="modal-head__bread">
+				<div class="modal-head__text">
+					<p>Toronto</p>
+				</div>
+				<div class="modal-head__bread-wrap">
+					<div class="modal-head__text drop-head">
+						<p>Dog Boarding</p>
+					</div>
+					<ul class="drop-list">
+						<li><a href="#">My Page</a></li>
+						<li><a class="list-active" href="#">Account</a></li>
+						<li><a href="#">Log out</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal-head__list">
+				<li><a class="active" href="#modal-tab__1">Choose Pet</a></li>
+				<li><a href="#modal-tab__2">Choose Time</a></li>
+				<li><a href="#modal-tab__3">Payment</a></li>
+			</ul>
+		</div>
+		<div class="modal-body">
+			<a href="#" class="modal-body__back"><img src="img/arrow-right-2.svg" alt=""></a>
+			<div class="modal-body__new-pet">
+				<div class="modal-body__new-pet__head">
+					<h3 class="modal-body__title">New pet</h3>
+					<div class="modal-body__new-pet__head-row">
+						<div class="radio-button">
+							<input type="radio" name="type" checked="checked">
+							<p>Dog</p>
+						</div>
+						<div class="radio-button">
+							<input type="radio" name="type">
+							<p>Cat</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-body__new-pet__row">
+					<div class="modal-body__new-pet__logo">
+						<input type="file">
+						<div class="modal-body__new-pet__logo-img">
+							<img src="img/plus.svg" alt="">
+						</div>
+						<p>Add Photo</p>
+					</div>
+					<div class="modal-body__new-pet__info">
+						<div class="modal-body__new-pet__info-input">
+							<input type="text" placeholder="Name">
+						</div>
+						<div class="modal-body__new-pet__info-input">
+							<input type="text" placeholder="Birth date">
+						</div>
+						<div class="modal-body__new-pet__info-row modal-body__new-pet__info-row__2">
+							<div class="radio-button">
+								<input type="radio" name="gender" checked="checked">
+								<p>Male</p>
+							</div>
+							<div class="radio-button">
+								<input type="radio" name="gender">
+								<p>Female</p>
+							</div>
+							<div class="checkbox-button">
+								<input type="checkbox" checked="checked">
+								<span></span>
+								<p>Sterilized</p>
+							</div>
+						</div>
+						<div class="modal-body__new-pet__info-input">
+							<input type="text" placeholder="Breed">
+						</div>
+						<div class="modal-body__new-pet__info-row">
+							<div class="radio-button">
+								<input type="radio" name="size" checked="checked">
+								<p>Small</p>
+							</div>
+							<div class="radio-button">
+								<input type="radio" name="size">
+								<p>Medium</p>
+							</div>
+							<div class="radio-button">
+								<input type="radio" name="size">
+								<p>Large</p>
+							</div>
+							<div class="radio-button">
+								<input type="radio" name="size">
+								<p>Giant</p>
+							</div>
+						</div>
+						<div class="modal-body__new-pet__info-input">
+							<textarea name="text" placeholder="Recomendations: food, feeding, walks, "></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-bottom">
+			<a href="#" class="main-btn">Save & Choose time</a>
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
