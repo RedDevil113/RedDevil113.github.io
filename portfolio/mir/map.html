@@ -640,6 +640,11 @@
         	map: map,
         	icon: 'img/pin-orange.svg'
         });
+        var marker3 = new google.maps.Marker({
+        	position: {lat: 51.787830, lng: -0.004918},
+        	map: map,
+        	icon: 'img/pin-orange.svg'
+        });
 
         var info1 = new google.maps.InfoWindow({
         	content: '<div class="pin-map pin-map__green"><h3><a href="#">Садик №1234 «Сонечка»</a></h3><p>ул. Маршала Жукова, 15, стр. 3</p><div class="pin-map__info"><ul></ul><a href="#" class="pin-map__link">подробнее</a></div></div>'
@@ -649,11 +654,18 @@
         	content: '<div class="pin-map pin-map__orange"><h3><a href="#">Садик №1234 «Сонечка»</a></h3><p>ул. Маршала Жукова, 15, стр. 3</p><div class="pin-map__info"><ul><li class="pin-map__i"><a href="#">6</a></li><li><a href="#">8</a></li></ul><a href="#" class="pin-map__link">подробнее</a></div></div>'
         });
 
+        var info3 = new google.maps.InfoWindow({
+        	content: '<div class="pin-map pin-map__orange"><h3><a href="#">Садик №1234 «Сонечка»</a></h3><p>ул. Маршала Жукова, 15, стр. 3</p><div class="pin-map__info"><ul><li class="pin-map__i"><a href="#">6</a></li><li><a href="#">8</a></li></ul><a href="#" class="pin-map__link">подробнее</a></div></div>'
+        });
+
         marker1.addListener('click', function(){
         	info1.open(map, marker1);
         });
         marker2.addListener('click', function(){
         	info2.open(map, marker2);
+        });
+         marker3.addListener('click', function(){
+        	info3.open(map, marker3);
         });
 
       }
