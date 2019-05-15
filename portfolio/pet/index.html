@@ -15,6 +15,7 @@
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -70,13 +71,78 @@
 	<section class="main" style="background-image: url(img/main-bg.jpg);">
 		<div class="wrapper">
 			<div class="main-wrap">
-				<div class="main-wrap__info">
-					<h3 class="main-wrap__title">Take care of your pet. <span>Professionally.</span></h3>
-					<ul class="main-wrap__categories">
-						<li><a href="#">Boarding</a></li>
-						<li><a href="#">Daycare</a></li>
-						<li><a href="#">Grooming</a></li>
-					</ul>
+				<p class="main-wrap__steps">2/3</p>
+				<a href="#" class="main-wrap__arrow"><img src="img/arrow-right-2.svg" alt=""></a>
+				<div class="main-wrap__step main-wrap__step-1 main-wrap__step-active">
+					<div class="main-wrap__info">
+						<h3 class="main-wrap__title">Take care of your pet. <span>Professionally.</span></h3>
+						<ul class="main-wrap__categories">
+							<li><a href="#">Boarding</a></li>
+							<li><a href="#">Daycare</a></li>
+							<li><a href="#">Grooming</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main-wrap__step main-wrap__step-2">
+					<div class="main-wrap__info">
+						<h3 class="main-wrap__title"><span>Choose your pet size</span></h3>
+						<ul class="main-wrap__categories main-wrap__categories-2">
+							<li><a href="#"><b>Small</b> <span>0–15 lbs</span></a></li>
+							<li><a href="#"><b>Medium</b> <span>16–40 lbs</span></a></li>
+							<li><a href="#"><b>Large</b> <span>41–100 lbs</span></a></li>
+							<li><a href="#"><b>Giant</b> <span>101+ lbs</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main-wrap__step main-wrap__step-3">
+					<h3 class="main-wrap__title"><span>Provide your pet info</span></h3>
+					<form action="">
+						<div class="main-wrap__step-row">
+							<label for="">Breed</label>
+							<div class="main-wrap__step-row__col main-wrap__step-row__input">
+								<input type="text" placeholder="American Staffordshire Terrier">
+								<button class="search"><img src="img/search.svg" alt=""></button>
+							</div>
+						</div>
+						<div class="main-wrap__step-row">
+							<label for="">Age</label>
+							<div class="main-wrap__step-row__col">
+								<div class="radio-button">
+									<input type="radio" name="age">
+									<p>15 years</p>
+								</div>
+								<div class="radio-button">
+									<input type="radio" name="age">
+									<p>7 months</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-wrap__step-row main-wrap__step-row__2">
+							<label for="">Sex</label>
+							<div class="main-wrap__step-row__col">
+								<div class="radio-button">
+									<input type="radio" name="gender" checked="checked">
+									<p>Male</p>
+								</div>
+								<div class="radio-button">
+									<input type="radio" name="gender">
+									<p>Female</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-wrap__step-bottom">
+							<div class="checkbox-button">
+								<input type="checkbox" checked="checked">
+								<span></span>
+								<p>Sterilized</p>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="main-wrap__step main-wrap__step-4">
+					<h3 class="main-wrap__title"><span>Choose date</span></h3>
+					<div id="datepicker"></div>
+					<a href="#" class="main-btn main-btn__red">Find place</a>
 				</div>
 				<ul class="main-wrap__list">
 					<li class="active">Service</li>
@@ -265,6 +331,7 @@
 	</footer>
 	<!-- end footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
