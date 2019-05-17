@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="menu-mob">
+		<div class="menu-mob__head">
+			<div class="menu-mob__head-row">
+				<div class="menu-mob__close"></div>
+				<div class="menu-mob__head-logo">
+					<a href="#">Pet Service Booking</a>
+				</div>
+				<ul>
+					<li><a href="#">Log in</a></li>
+					<li><a class="sign-up" href="#">Sign up</a></li>
+				</ul>
+			</div>
+			<form action="">
+				<input type="text" placeholder="Search keywords">
+			</form>
+		</div>
+		<ul class="menu-mob__list">
+			<li><a href="#">Safety Center</a></li>
+			<li><a href="#">FAQ & Support</a></li>
+			<li><a class="active" href="#">Our Team</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Partners Log in <img src="img/ico-1.svg" alt=""></a></li>
+		</ul>
+	</div>
+	<!-- start header -->
+	<header class="header header-main header-acc">
+		<div class="wrapper">
+			<div class="menu-bar menu-bar__blue">
+				<span></span>
+			</div>
+			<div class="header-logo">
+				<a href="#">Pet Service <span>Booking</span></a>
+			</div>
+			<div class="header-form">
+				<form action="">
+					<div class="header-form__row">
+						<div class="header-form__input">
+							<input type="text" placeholder="Search service">
+						</div>
+						<button class="header-form__btn">Find</button>
+					</div>
+				</form>
+			</div>
+			<div class="header-right">
+				<div class="header-right__row">
+					<div class="header-bell">
+						<a href="#">
+							<img src="img/bell.svg" alt="">
+							<span class="bell-active"></span>
+						</a>
+					</div>
+					<div class="header-user">
+						<div class="header-user__human drop-head">
+							<img src="img/human-1.png" alt="">
+						</div>
+						<ul class="header-user__list drop-list">
+							<li><a href="#">My Page</a></li>
+							<li><a class="list-active" href="#">Account</a></li>
+							<li><a href="#">Log out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start map -->
+	<section class="map">
+		<ul class="map-list">
+			<li><a class="active" href="#map-tab__block-1">Filters</a></li>
+			<li><a href="#map-tab__block-2">Results</a></li>
+			<li><a href="#map">Map</a></li>
+		</ul>
+		<div id="map" class="card-map map-tab__block" style="background-image: url(img/map.png);"></div>
+		<div class="map-sidebar">
+			<div id="map-tab__block-1" class="map-sidebar__main map-tab__block map-tab__block-active">
+				<div class="map-sidebar__m">
+					<div class="map-sidebar__mob">
+						<p><a href="#">Price, $</a></p>
+						<p><a href="#">10 000 — 20 000</a></p>
+					</div>
+					<div class="map-sidebar__features">
+						<h3 class="map-sidebar__features-title">Hotel features <a href="#">All</a></h3>
+						<div class="checkbox-button">
+							<input type="checkbox" checked="checked">
+							<span></span>
+							<p>Video monitoring</p>
+							<b>8 234</b>
+						</div>
+						<div class="checkbox-button">
+							<input type="checkbox" checked="checked">
+							<span></span>
+							<p>Separate rooms</p>
+							<b>8 234</b>
+						</div>
+						<div class="checkbox-button checkbox-button__active">
+							<input type="checkbox">
+							<span></span>
+							<p>Pet Pool</p>
+							<b>8 234</b>
+						</div>
+						<div class="checkbox-button">
+							<input type="checkbox">
+							<span></span>
+							<p>Playground area</p>
+							<b>8 234</b>
+						</div>
+					</div>
+					<div class="map-sidebar__search">
+						<div class="map-sidebar__head">
+							<ul class="map-sidebar__sort">
+								<li>Price:
+									<span class="drop-head">Low First</span>
+									<ul class="drop-list">
+										<li><a href="#">My Page</a></li>
+										<li><a class="list-active" href="#">Account</a></li>
+										<li><a href="#">Log out</a></li>
+									</ul>
+								</li>
+								<li>Sort by:
+									<span class="drop-head">Google Rating</span>
+									<ul class="drop-list">
+										<li><a href="#">My Page</a></li>
+										<li><a class="list-active" href="#">Account</a></li>
+										<li><a href="#">Log out</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="map-sidebar__info">
+							<div class="map-sidebar__info-wrap">
+								<a href="#" class="map-sidebar__info-link"></a><!-- link-all-block -->
+								<h3 class="map-sidebar__info-title">Park9</h3>
+								<div class="map-sidebar__info-row">
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Playground</h4>
+										<ul>
+											<li><span><img src="img/ico-6.svg" alt=""></span><b>40m/20 pets</b></li>
+											<li><span><img src="img/ico-8.svg" alt=""></span><b>Medical care</b></li>
+										</ul>
+									</div>
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Staff</h4>
+										<ul>
+											<li><span><img src="img/ico-7.svg" alt=""></span><b>1/10 pets</b></li>
+											<li class="color-green"><span><img src="img/ico-9.svg" alt=""></span><b>Food included</b></li>
+										</ul>
+									</div>
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Working hours</h4>
+										<p>8:00–20:00, Monday–Saturday</p>
+									</div>
+								</div>
+							</div>
+							<div class="map-sidebar__info-wrap">
+								<a href="#" class="map-sidebar__info-link"></a><!-- link-all-block -->
+								<h3 class="map-sidebar__info-title">Hotel Hover</h3>
+								<div class="map-sidebar__info-row">
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Playground</h4>
+										<ul>
+											<li><span><img src="img/ico-6.svg" alt=""></span><b>40m/20 pets</b></li>
+											<li><span><img src="img/ico-8.svg" alt=""></span><b>Medical care</b></li>
+										</ul>
+									</div>
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Staff</h4>
+										<ul>
+											<li><span><img src="img/ico-7.svg" alt=""></span><b>1/10 pets</b></li>
+										</ul>
+									</div>
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Working hours</h4>
+										<p>24/7</p>
+									</div>
+								</div>
+							</div>
+							<div class="map-sidebar__info-wrap map-sidebar__info-wrap__active">
+								<a href="#" class="map-sidebar__info-link"></a><!-- link-all-block -->
+								<h3 class="map-sidebar__info-title">Hotel Hover</h3>
+								<div class="map-sidebar__info-row">
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Playground</h4>
+										<ul>
+											<li><span><img src="img/ico-6.svg" alt=""></span><b>40m/20 pets</b></li>
+											<li><span><img src="img/ico-8.svg" alt=""></span><b>Medical care</b></li>
+										</ul>
+									</div>
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Staff</h4>
+										<ul>
+											<li><span><img src="img/ico-7.svg" alt=""></span><b>1/10 pets</b></li>
+										</ul>
+									</div>
+									<div class="map-sidebar__info-col">
+										<h4 class="map-sidebar__info-col__title">Working hours</h4>
+										<p>24/7</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="map-sidebar__bottom-mob">
+						<ul class="account-list">
+							<li><a href="#">Cancel</a></li>
+							<li class="account-list__save"><a href="#">Save</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="map-tab__block-2" class="map-sidebar__result map-tab__block" style="display: none;">
+				<div class="map-sidebar__result-head">
+					<ul class="map-sidebar__sort">
+						<li>Price:
+							<span class="drop-head">Low First</span>
+							<ul class="drop-list">
+								<li><a href="#">My Page</a></li>
+								<li><a class="list-active" href="#">Account</a></li>
+								<li><a href="#">Log out</a></li>
+							</ul>
+						</li>
+						<li>Sort by:
+							<span class="drop-head">Google Rating</span>
+							<ul class="drop-list">
+								<li><a href="#">My Page</a></li>
+								<li><a class="list-active" href="#">Account</a></li>
+								<li><a href="#">Log out</a></li>
+							</ul>
+						</li>
+					</ul>
+					<a href="#" class="map-sidebar__result-fit"><span>Hide filters</span><img src="img/filter.svg" alt=""></a>
+				</div>
+				<div class="map-sidebar__result-filter">
+					<div class="checkbox-button">
+						<input type="checkbox" checked="checked">
+						<span></span>
+						<p>Video monitoring</p>
+						<b>8 234</b>
+					</div>
+					<div class="checkbox-button checkbox-button__active">
+						<input type="checkbox">
+						<span></span>
+						<p>Pet Pool</p>
+						<b>8 234</b>
+					</div>
+					<div class="checkbox-button">
+						<input type="checkbox" checked="checked">
+						<span></span>
+						<p>Separate rooms</p>
+						<b>8 234</b>
+					</div>
+					<div class="checkbox-button">
+						<input type="checkbox">
+						<span></span>
+						<p>Playground area</p>
+						<b>8 234</b>
+					</div>
+				</div>
+				<div class="map-sidebar__result-wrap">
+					<div class="map-sidebar__result-row">
+						<div class="map-sidebar__result-row__head">
+							<h3 class="map-sidebar__result-row__head-title"><a href="#">Dog Boarding Service Name</a></h3>
+							<p>Unfortunately, feline guests with signs of fleas and/or ticks will not be permitted to check-in at PetsHotel.</p>
+							<p class="map-sidebar__result-row__head-price"><b>$</b>150<span>/hour</span></p>
+						</div>
+						<div class="map-sidebar__result-row__body">
+							<div class="map-sidebar__result-row__body-top">
+								<div class="map-col">
+									<p>Playground</p>
+									<div><span><img src="img/ico-6.svg" alt=""></span><b>40m/20 pets</b></div>
+								</div>
+								<div class="map-col">
+									<p>Staff</p>
+									<div><span><img src="img/ico-7.svg" alt=""></span><b>1/10 pets</b></div>
+								</div>
+								<div class="map-col">
+									<div><span><img src="img/ico-8.svg" alt=""></span><b>Medical care</b></div>
+								</div>
+								<div class="map-col">
+									<div><span><img src="img/ico-9.svg" alt=""></span><b>Food included</b></div>
+								</div>
+							</div>
+							<div class="map-sidebar__result-row__body-photo">
+								<div class="map-col__photo">
+									<img src="img/main-bg.jpg" alt="">
+								</div>
+								<div class="map-col__photo">
+									<img src="img/main-bg.jpg" alt="">
+								</div>
+								<div class="map-col__photo">
+									<img src="img/main-bg.jpg" alt="">
+								</div>
+								<div class="map-col__photo map-col__photo-plus">
+									<a href="#" class="all-link"></a>
+									<p>+10 <span>photos</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="map-sidebar__result-row__bottom">
+							<div class="map-sidebar__result-row__bottom-info">
+								<h3 class="map-sidebar__result-row__bottom-title">Park9</h3>
+								<p>1010 EASY ST, Ottawa, 58704 – 1253</p>
+							</div>
+							<div class="map-sidebar__result-row__bottom-right">
+								<p>8:00–20:00, Monday–Saturday</p>
+							</div>
+						</div>
+					</div><!-- row(1) -->
+					<div class="map-sidebar__result-row">
+						<div class="map-sidebar__result-row__head">
+							<h3 class="map-sidebar__result-row__head-title"><a href="#">Dog Boarding Service Name</a></h3>
+							<p>Unfortunately, feline guests with signs of fleas and/or ticks will not be permitted to check-in at PetsHotel.</p>
+							<p class="map-sidebar__result-row__head-price"><b>$</b>150<span>/hour</span></p>
+						</div>
+						<div class="map-sidebar__result-row__body">
+							<div class="map-sidebar__result-row__body-top map-sidebar__result-row__body-top__2">
+								<div class="map-col__photo">
+									<img src="img/main-bg.jpg" alt="">
+								</div>
+								<div class="map-col__row">
+									<div class="map-col">
+										<p>Playground</p>
+										<div><span><img src="img/ico-6.svg" alt=""></span><b>40m/20 pets</b></div>
+									</div>
+									<div class="map-col">
+										<p>Staff</p>
+										<div><span><img src="img/ico-7.svg" alt=""></span><b>1/10 pets</b></div>
+									</div>
+									<div class="map-col">
+										<div><span><img src="img/ico-8.svg" alt=""></span><b>Medical care</b></div>
+									</div>
+									<div class="map-col">
+										<div><span><img src="img/ico-9.svg" alt=""></span><b>Food included</b></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="map-sidebar__result-row__bottom">
+							<div class="map-sidebar__result-row__bottom-info">
+								<h3 class="map-sidebar__result-row__bottom-title">Park9</h3>
+								<p>1010 EASY ST, Ottawa, 58704 – 1253</p>
+							</div>
+							<div class="map-sidebar__result-row__bottom-right">
+								<p>8:00–20:00, Monday–Saturday</p>
+							</div>
+						</div>
+					</div><!-- row(2) -->
+					<div class="map-sidebar__result-row">
+						<div class="map-sidebar__result-row__head">
+							<h3 class="map-sidebar__result-row__head-title"><a href="#">Dog Boarding Service Name</a></h3>
+							<p class="map-sidebar__result-row__head-star"><img src="img/stars-2.svg" alt=""><span>2 591</span></p>
+							<p class="map-sidebar__result-row__head-price"><b>$</b>50<span>/hour</span></p>
+						</div>
+						<div class="map-sidebar__result-row__body">
+							<div class="map-sidebar__result-row__body-top">
+								<div class="map-col">
+									<p>Playground</p>
+									<div><span><img src="img/ico-6.svg" alt=""></span><b>40m/20 pets</b></div>
+								</div>
+								<div class="map-col">
+									<p>Staff</p>
+									<div><span><img src="img/ico-7.svg" alt=""></span><b>1/10 pets</b></div>
+								</div>
+								<div class="map-col">
+									<div><span><img src="img/ico-8.svg" alt=""></span><b>Medical care</b></div>
+								</div>
+								<div class="map-col">
+									<div><span><img src="img/ico-9.svg" alt=""></span><b>Food included</b></div>
+								</div>
+							</div>
+						</div>
+						<div class="map-sidebar__result-row__bottom">
+							<div class="map-sidebar__result-row__bottom-info">
+								<h3 class="map-sidebar__result-row__bottom-title">Park9</h3>
+								<p>1010 EASY ST, Ottawa, 58704 – 1253</p>
+							</div>
+							<div class="map-sidebar__result-row__bottom-right">
+								<p>8:00–20:00, Monday–Saturday</p>
+							</div>
+						</div>
+					</div><!-- row(3) -->
+					<div class="map-sidebar__result-row map-sidebar__result-row__active">
+						<div class="map-sidebar__result-row__head">
+							<h3 class="map-sidebar__result-row__head-title"><a href="#">Dog Boarding Service Name</a></h3>
+							<p class="map-sidebar__result-row__head-star"><img src="img/stars-white.svg" alt=""><span>2 591</span></p>
+							<p>Unfortunately, feline guests with signs of fleas and/or ticks will not be permitted to check-in at PetsHotel.</p>
+							<p class="map-sidebar__result-row__head-price"><b>$</b>150<span>/hour</span></p>
+							<p class="map-sidebar__result-row__head-offer">Special Offer</p>
+						</div>
+						<div class="map-sidebar__result-row__body">
+							<div class="map-sidebar__result-row__body-top">
+								<div class="map-col">
+									<p>Playground</p>
+									<div><span><img src="img/ico-6.svg" alt=""></span><b>40m/20 pets</b></div>
+								</div>
+								<div class="map-col">
+									<p>Staff</p>
+									<div><span><img src="img/ico-7.svg" alt=""></span><b>1/10 pets</b></div>
+								</div>
+								<div class="map-col">
+									<div><span><img src="img/ico-8.svg" alt=""></span><b>Medical care</b></div>
+								</div>
+								<div class="map-col">
+									<div><span><img src="img/ico-9.svg" alt=""></span><b>Food included</b></div>
+								</div>
+							</div>
+							<div class="map-sidebar__result-row__body-photo">
+								<div class="map-col__photo">
+									<img src="img/main-bg.jpg" alt="">
+								</div>
+								<div class="map-col__photo">
+									<img src="img/main-bg.jpg" alt="">
+								</div>
+								<div class="map-col__photo">
+									<img src="img/main-bg.jpg" alt="">
+								</div>
+								<div class="map-col__photo map-col__photo-plus">
+									<a href="#" class="all-link"></a>
+									<p>+10 <span>photos</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="map-sidebar__result-row__bottom">
+							<div class="map-sidebar__result-row__bottom-info">
+								<h3 class="map-sidebar__result-row__bottom-title">Park9</h3>
+								<p>1010 EASY ST, Ottawa, 58704 – 1253</p>
+							</div>
+							<div class="map-sidebar__result-row__bottom-right">
+								<p>8:00–20:00, Monday–Saturday</p>
+							</div>
+						</div>
+					</div><!-- row(4) -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end map -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-col">
+				<ul>
+					<li><a href="#">Safety Center</a></li>
+					<li><a href="#">FAQ & Support</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div><!-- col(1) -->
+			<div class="footer-col">
+				<ul>
+					<li><a href="#">Special Offers</a></li>
+					<li><a href="#">Weekly Deals</a></li>
+					<li><a href="#">Something Else?</a></li>
+					<li class="footer-col__mob"><a href="#">For Partners</a></li>
+					<li class="footer-col__mob"><a href="#"><span><img src="img/ico-1.svg" alt=""></span>Partners Log in</a></li>
+				</ul>
+			</div><!-- col(2) -->
+			<div class="footer-col footer-col__3">
+				<ul>
+					<li><a href="#">For Partners</a></li>
+					<li><a href="#"><span><img src="img/ico-1.svg" alt=""></span>Partners Log in</a></li>
+				</ul>
+			</div><!-- col(3) -->
+			<div class="footer-col">
+				<ul>
+					<li><a href="#"><span><img src="img/ico-2.svg" alt=""></span>Facebook</a></li>
+					<li><a href="#"><span><img src="img/ico-3.svg" alt=""></span>Instagram</a></li>
+					<li><a href="#"><span><img src="img/ico-4.svg" alt=""></span>Youtube</a></li>
+					<li><a href="#"><span><img src="img/ico-5.svg" alt=""></span>Twitter</a></li>
+				</ul>
+			</div><!-- col(4) -->
+			<div class="footer-col">
+				<img src="img/footer-img.svg" alt="">
+			</div><!-- col(5) -->
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

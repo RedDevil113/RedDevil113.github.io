@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="menu-mob">
+		<div class="menu-mob__head">
+			<div class="menu-mob__head-row">
+				<div class="menu-mob__close"></div>
+				<div class="menu-mob__head-logo">
+					<a href="#">Pet Service Booking</a>
+				</div>
+				<ul>
+					<li><a href="#">Log in</a></li>
+					<li><a class="sign-up" href="#">Sign up</a></li>
+				</ul>
+			</div>
+			<form action="">
+				<input type="text" placeholder="Search keywords">
+			</form>
+		</div>
+		<ul class="menu-mob__list">
+			<li><a href="#">Safety Center</a></li>
+			<li><a href="#">FAQ & Support</a></li>
+			<li><a class="active" href="#">Our Team</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Partners Log in <img src="img/ico-1.svg" alt=""></a></li>
+		</ul>
+	</div>
+	<!-- start header -->
+	<header class="header header-main header-pos">
+		<div class="wrapper">
+			<div class="menu-bar">
+				<span></span>
+			</div>
+			<div class="header-logo">
+				<a href="#">Pet Service <span>Booking</span></a>
+			</div>
+			<div class="header-form">
+				<form action="">
+					<div class="header-form__row">
+						<div class="header-form__input">
+							<input type="text" placeholder="Search service">
+						</div>
+						<button class="header-form__btn">Find</button>
+					</div>
+				</form>
+			</div>
+			<div class="header-right">
+				<ul>
+					<li><a class="sign-up" href="#">Sign up</a></li>
+					<li><a href="#">Log in</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start check-in -->
+	<section class="organization">
+		<div class="organization-bg" style="background-image: url(img/main-bg.jpg);"></div>
+		<div class="wrapper">
+			<div class="organization-wrap">
+				<div class="organization-head">
+					<h2 class="organization-head__title">New organization</h2>
+					<div class="organization-head__step"><span>1</span>/3</div>
+					<ul class="organization-head__list tab-head">
+						<li><a class="active" href="#step-1">Main info</a></li>
+						<li><a href="#step-2">Features</a></li>
+						<li><a href="#step-3">Media content</a></li>
+					</ul>
+				</div>
+				<form action="">
+					<div class="organization-body">
+						<div id="step-1" class="organization-step organization-step__1 tab-active tab-block">
+							<h2 class="organization-step__title">1. Main info</h2>
+							<div class="new-pet__wrap">
+								<div class="add-photo">
+									<input type="file">
+									<div class="add-photo__wrap"></div>
+									<p>Add Logo</p>
+								</div>
+								<div class="form-input organization-star">
+									<input type="text" placeholder="Company name">
+									<span class="form-input__fix">160</span>
+								</div>
+								<div class="form-input">
+									<input type="text" placeholder="Website — if exist">
+								</div>
+								<div class="form-input organization-form__input organization-star">
+									<input type="text" placeholder="Address">
+									<button class="form-input__search form-input__fix"><img src="img/search.svg" alt=""></button>
+								</div>
+								<div class="form-input organization-form__input-m organization-star">
+									<input type="text" placeholder="Exact coordinates on google maps">
+									<button class="form-input__search form-input__fix"><img src="img/search.svg" alt=""></button>
+									<a href="#" class="show-map">Show map</a>
+								</div>
+								<div class="form-input organization-star">
+									<input type="text" placeholder="Contact phone">
+								</div>
+								<div class="form-input organization-star">
+									<input type="text" placeholder="Contact email">
+								</div>
+								<div class="form-input organization-form__input-small">
+									<input type="text" placeholder="Foundation year">
+								</div>
+							</div>
+						</div>
+						<div id="step-2" class="organization-step organization-step__2 tab-block">
+							<h2 class="organization-step__title">2. Working hours & Services</h2>
+							<h3 class="organization-step__subtitle organization-star">Working hours</h3>
+							<div class="organization-step__time">
+								<div class="organization-step__time-row">
+									<div class="checkbox-button">
+										<input type="checkbox" checked="checked">
+										<span></span>
+										<p>Sunday</p>
+									</div>
+									<div class="organization-step__time-hours">
+										<input type="text" value="08:00">
+										<span>—</span>
+										<input type="text" value="19:00">
+									</div>
+								</div><!-- row(1) -->
+								<div class="organization-step__time-row">
+									<div class="checkbox-button">
+										<input type="checkbox" checked="checked">
+										<span></span>
+										<p>Monday</p>
+									</div>
+									<div class="organization-step__time-hours">
+										<input type="text" value="08:00">
+										<span>—</span>
+										<input type="text" value="19:00">
+									</div>
+								</div><!-- row(2) -->
+								<div class="organization-step__time-row">
+									<div class="checkbox-button">
+										<input type="checkbox" checked="checked">
+										<span></span>
+										<p>Tuesday</p>
+									</div>
+									<div class="organization-step__time-hours">
+										<input type="text" value="08:00">
+										<span>—</span>
+										<input type="text" value="19:00">
+									</div>
+								</div><!-- row(3) -->
+								<div class="organization-step__time-row">
+									<div class="checkbox-button">
+										<input type="checkbox" checked="checked">
+										<span></span>
+										<p>Wednesday</p>
+									</div>
+									<div class="organization-step__time-hours">
+										<input type="text" value="08:00">
+										<span>—</span>
+										<input type="text" value="19:00">
+									</div>
+								</div><!-- row(4) -->
+								<div class="organization-step__time-row">
+									<div class="checkbox-button">
+										<input type="checkbox" checked="checked">
+										<span></span>
+										<p>Thursday</p>
+									</div>
+									<div class="organization-step__time-hours">
+										<input type="text" value="08:00">
+										<span>—</span>
+										<input type="text" value="19:00">
+									</div>
+								</div><!-- row(5) -->
+								<div class="organization-step__time-row organization-step__time-set">
+									<div class="checkbox-button">
+										<input type="checkbox">
+										<span></span>
+										<p>Friday</p>
+									</div>
+									<div class="organization-step__time-hours">
+										<p class="set-time">Set time</p>
+									</div>
+								</div><!-- row(6) -->
+								<div class="organization-step__time-row organization-step__time-none">
+									<div class="checkbox-button">
+										<input type="checkbox">
+										<span></span>
+										<p>Saturday</p>
+									</div>
+									<div class="organization-step__time-hours">
+										<input type="text" value="08:00">
+										<span>—</span>
+										<input type="text" value="19:00">
+									</div>
+								</div><!-- row(7) -->
+							</div>
+							<h3 class="organization-step__subtitle">Services</h3>
+							<div class="organization-step__services">
+								<div class="checkbox-button">
+									<input type="checkbox" checked="checked">
+									<span></span>
+									<p>Daycare</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox" checked="checked">
+									<span></span>
+									<p>Boarding</p>
+								</div>
+								<div class="checkbox-button">
+									<input type="checkbox">
+									<span></span>
+									<p>Grooming</p>
+								</div>
+								<div class="checkbox-button checkbox-button__none">
+									<input type="checkbox">
+									<span></span>
+									<p>Training (soon)</p>
+								</div>
+							</div>
+							<h3 class="organization-step__subtitle">Conditions & Agreements</h3>
+							<div class="organization-step__conditions">
+								<label for="i-1">Canceling & refund conditions</label>
+								<textarea id="i-1" name="text"></textarea>
+								<label for="i-2">Accommodation conditions</label>
+								<textarea id="i-2" name="text"></textarea>
+								<label for="i-3">Agreement</label>
+								<textarea id="i-3" name="text"></textarea>
+								<div class="organization-step__drop">
+									<label for="i-4">Form</label>
+									<div>
+										<span>Choose file…</span>
+										<p>PDF or JPG up to 2Mb</p>
+									</div>
+									<input id="i-4" type="file">
+								</div>
+							</div>
+						</div>
+						<div id="step-3" class="organization-step organization-step__3 tab-block">
+							<h2 class="organization-step__title organization-star">3. Company representative</h2>
+							<div class="form-input">
+								<input type="text" placeholder="Name">
+							</div>
+							<div class="form-input">
+								<input type="text" placeholder="E-mail">
+							</div>
+							<div class="form-input">
+								<input type="text" placeholder="Phone">
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="organization-bottom">
+					<a href="#" class="main-btn">Next — <span>Features</span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end check-in -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-col">
+				<ul>
+					<li><a href="#">Safety Center</a></li>
+					<li><a href="#">FAQ & Support</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div><!-- col(1) -->
+			<div class="footer-col">
+				<ul>
+					<li><a href="#">Special Offers</a></li>
+					<li><a href="#">Weekly Deals</a></li>
+					<li><a href="#">Something Else?</a></li>
+					<li class="footer-col__mob"><a href="#">For Partners</a></li>
+					<li class="footer-col__mob"><a href="#"><span><img src="img/ico-1.svg" alt=""></span>Partners Log in</a></li>
+				</ul>
+			</div><!-- col(2) -->
+			<div class="footer-col footer-col__3">
+				<ul>
+					<li><a href="#">For Partners</a></li>
+					<li><a href="#"><span><img src="img/ico-1.svg" alt=""></span>Partners Log in</a></li>
+				</ul>
+			</div><!-- col(3) -->
+			<div class="footer-col">
+				<ul>
+					<li><a href="#"><span><img src="img/ico-2.svg" alt=""></span>Facebook</a></li>
+					<li><a href="#"><span><img src="img/ico-3.svg" alt=""></span>Instagram</a></li>
+					<li><a href="#"><span><img src="img/ico-4.svg" alt=""></span>Youtube</a></li>
+					<li><a href="#"><span><img src="img/ico-5.svg" alt=""></span>Twitter</a></li>
+				</ul>
+			</div><!-- col(4) -->
+			<div class="footer-col">
+				<img src="img/footer-img.svg" alt="">
+			</div><!-- col(5) -->
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
