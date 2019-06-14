@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-main">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-search">
+					<form action="">
+						<span class="header-search__btn"></span>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<div class="header-catalog">
+					<p>Каталог товаров</p>
+				</div>
+			</div>
+			<div class="header-menu"></div>
+			<div class="header-info">
+				<div class="header-phone">
+					<p>8 800 212-19-01</p>
+				</div>
+				<div class="header-statistics"></div>
+				<div class="header-basket">
+					<p>Корзина</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="basket">
+		<!--<div class="basket-empty">
+			<p>Корзина пуста</p>
+			<a href="#" class="main-btn">Войти</a>
+			<a href="#" class="link-text">Создать аккаунт</a>
+		</div>-->
+		<!--<div class="basket-empty basket-empty__logged-in">
+			<h3 class="basket-empty__name">Добрый день, <span>Александр</span></h3>
+			<p>Корзина пуста</p>
+			<a href="#" class="main-btn">В каталог</a>
+			<ul class="basket-list">
+				<li><a href="#">Мои заказы</a></li>
+				<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+			</ul>
+		</div>-->
+		<!--<div class="basket-logged">
+			<a href="#" class="basket-back">В корзину</a>
+			<div class="basket-products">
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+			</div>
+			<div class="basket-total">
+				<p>Итого<b>89 100 <span>₽</span></b></p>
+			</div>
+			<a href="#" class="main-btn">Оформить</a>
+			<ul class="basket-list">
+				<li><a href="#">Мои заказы</a></li>
+				<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+			</ul>
+		</div>-->
+		<!--<div class="basket-entered">
+			<a href="#" class="basket-back">В корзину</a>
+			<div class="basket-products">
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+			</div>
+			<div class="basket-total">
+				<p>Итого<b>89 100 <span>₽</span></b></p>
+			</div>
+			<a href="#" class="main-btn">Оформить</a>
+			<div class="basket-come">
+				<a href="#">+ Войти</a>
+			</div>
+		</div>-->
+		<div class="basket-login">
+			<div class="basket-login__top">
+				<h3 class="basket-login__top-title">Войти</h3>
+				<a href="#" class="basket-login__top-link">Забыли пароль?</a>
+			</div>
+			<div class="basket-login__form">
+				<form action="">
+					<input type="text" placeholder="E-mail">
+					<input type="text" placeholder="Пароль">
+					<button class="main-btn">Войти</button>
+				</form>
+			</div>
+			<div class="basket-login__bottom">
+				<div class="basket-login__top">
+					<h3 class="basket-login__top-title">Создать аккаунт</h3>
+					<a href="#" class="basket-login__top-link">Зачем?</a>
+				</div>
+				<div class="basket-login__bottom-col">
+					<a href="#"></a>
+					<p>Для партнеров</p>
+					<span>Оптовый кабинет</span>
+				</div>
+				<div class="basket-login__bottom-col">
+					<a href="#"></a>
+					<p>Для монтажников</p>
+					<span>Сотрудничество</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-menu">
+		<div class="wrapper">
+			<div class="main-menu__wrap">
+				<div class="main-menu__wrap-search">
+					<form action="">
+						<span class="header-search__btn"></span>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<div class="main-menu__wrap-info">
+					<a href="#" class="main-menu__logo">info@zhirafe.ru</a>
+					<div class="main-menu__phone drop-info">
+						<p class="drop-info__head">8 800 212-19-01</p>
+						<div>
+							<p>Ежедневно с 9:00 до 18:00 Москва</p>
+							<a href="#" class="main-btn">Перезвоните мне</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-menu__wrap-row">
+					<div class="main-menu__wrap-col__mob">
+						<h3 class="main-menu__wrap-title"><a href="#">Каталог товаров</a></h3>
+					</div>
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Покупателю</a></h3>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Гарантии</a></li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Услуги</a></h3>
+						<ul>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">О нас</a></h3>
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Объекты</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Блог</a></h3>
+						<ul>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- col(4) -->
+					<div class="main-menu__wrap-col__mob">
+						<h3 class="main-menu__wrap-title"><a href="#">Личный кабинет</a></h3>
+						<h3 class="main-menu__wrap-title"><a href="#">Контакты</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="catalog-sidebar">
+		<ul>
+			<li><a href="#"><img src="img/img-1.png" alt="">Акции</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Котлы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Водонагреватели</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Насосы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Радиаторы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Трубы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Кондиционеры</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Комплектующие</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Запчасти</a></li>
+		</ul>
+	</div>
+	<div class="phone-drop">
+		<div class="wrapper">
+			<a href="#" class="phone-drop__logo">info@zhirafe.ru</a>
+			<div class="phone-drop__wrap">
+				<form action="">
+					<div class="phone-drop__form">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="+7  (            )">
+						<button class="main-btn">Перезвоните мне</button>
+						<p>Ежедневно с 9:00 до 18:00 Москва</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- start catalog -->
+	<section class="catalog">
+		<div class="page-name">
+			<a href="#" class="page-name__plus"></a>
+			<div class="wrapper">
+				<h1 class="page-name__title">Котлы</h1>
+				<div class="page-name__text">
+					<p>Настенные котлы выигрывают у напольных благодаря компактным размерам, что позволяет устанавливать их в квартирах при поквартирном отоплении. Для подавляющего большинства жилых помещений настенный котел удовлетворяет требованием по количеству отдаваемого тепла и количеству производимой горячей воды.</p>
+				</div>
+			</div>
+		</div>
+		<div class="catalog-main">
+			<div class="wrapper">
+				<div class="catalog-filter" id="catalog-filter">
+					<div class="catalog-filter__header">
+						<p>Готово</p>
+					</div>
+					<div class="catalog-filter__col catalog-filter__col-open">
+						<div class="cancel"></div>
+						<h3 class="catalog-filter__title">Тип продукта</h3>
+						<div class="catalog-filter__info">
+							<ul>
+								<li><a href="#">все</a></li>
+								<li><a href="#">Конденсационный</a></li>
+								<li><a href="#">Напольный</a></li>
+								<li><a href="#">Настенный</a></li>
+								<li><a href="#">Электрический</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-filter__col catalog-filter__col-open">
+						<div class="cancel"></div>
+						<h3 class="catalog-filter__title">Бренды</h3>
+						<div class="catalog-filter__info">
+							<ul>
+								<li><a href="#">Все</a></li>
+								<li><a href="#">BAXI</a></li>
+								<li><a href="#">VAILLANT</a></li>
+								<li><a href="#">NAVIEN</a></li>
+								<li><a href="#">PROTHERM</a></li>
+								<li><a href="#">BUDERUS</a></li>
+								<li><a href="#">VIESSMANN</a></li>
+								<li><a href="#">FERROLI</a></li>
+								<li><a href="#">ЭВАН</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-filter__col catalog-filter__col-price catalog-filter__col-open">
+						<div class="cancel"></div>
+						<h3 class="catalog-filter__title">Цена</h3>
+						<div class="catalog-filter__info">
+							<div id="slider-range__1"></div>
+							<div class="catalog-filter__row">
+								<div id="search-price__1" class="catalog-filter__row-col"></div>
+								<div id="search-price__2" class="catalog-filter__row-col"></div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-filter__col">
+						<div class="cancel"></div>
+						<h3 class="catalog-filter__title">Бренды</h3>
+						<div class="catalog-filter__info">
+							<ul>
+								<li><a href="#">Все</a></li>
+								<li><a href="#">BAXI</a></li>
+								<li><a href="#">VAILLANT</a></li>
+								<li><a href="#">NAVIEN</a></li>
+								<li><a href="#">PROTHERM</a></li>
+								<li><a href="#">BUDERUS</a></li>
+								<li><a href="#">VIESSMANN</a></li>
+								<li><a href="#">FERROLI</a></li>
+								<li><a href="#">ЭВАН</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-filter__col">
+						<div class="cancel"></div>
+						<h3 class="catalog-filter__title">Бренды</h3>
+						<div class="catalog-filter__info">
+							<ul>
+								<li><a href="#">Все</a></li>
+								<li><a href="#">BAXI</a></li>
+								<li><a href="#">VAILLANT</a></li>
+								<li><a href="#">NAVIEN</a></li>
+								<li><a href="#">PROTHERM</a></li>
+								<li><a href="#">BUDERUS</a></li>
+								<li><a href="#">VIESSMANN</a></li>
+								<li><a href="#">FERROLI</a></li>
+								<li><a href="#">ЭВАН</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-filter__col">
+						<div class="cancel"></div>
+						<h3 class="catalog-filter__title">Бренды</h3>
+						<div class="catalog-filter__info">
+							<ul>
+								<li><a href="#">Все</a></li>
+								<li><a href="#">BAXI</a></li>
+								<li><a href="#">VAILLANT</a></li>
+								<li><a href="#">NAVIEN</a></li>
+								<li><a href="#">PROTHERM</a></li>
+								<li><a href="#">BUDERUS</a></li>
+								<li><a href="#">VIESSMANN</a></li>
+								<li><a href="#">FERROLI</a></li>
+								<li><a href="#">ЭВАН</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-filter__col">
+						<div class="cancel"></div>
+						<h3 class="catalog-filter__title">Бренды</h3>
+						<div class="catalog-filter__info">
+							<ul>
+								<li><a href="#">Все</a></li>
+								<li><a href="#">BAXI</a></li>
+								<li><a href="#">VAILLANT</a></li>
+								<li><a href="#">NAVIEN</a></li>
+								<li><a href="#">PROTHERM</a></li>
+								<li><a href="#">BUDERUS</a></li>
+								<li><a href="#">VIESSMANN</a></li>
+								<li><a href="#">FERROLI</a></li>
+								<li><a href="#">ЭВАН</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="catalog-filter__col">
+						<div class="cancel"></div>
+						<h3 class="catalog-filter__title">Бренды</h3>
+						<div class="catalog-filter__info">
+							<ul>
+								<li><a href="#">Все</a></li>
+								<li><a href="#">BAXI</a></li>
+								<li><a href="#">VAILLANT</a></li>
+								<li><a href="#">NAVIEN</a></li>
+								<li><a href="#">PROTHERM</a></li>
+								<li><a href="#">BUDERUS</a></li>
+								<li><a href="#">VIESSMANN</a></li>
+								<li><a href="#">FERROLI</a></li>
+								<li><a href="#">ЭВАН</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="reset">Сбросить фильтры</a>
+					<div class="catalog-filter__done">
+						<a href="#" class="main-btn">Готово</a>
+					</div>
+				</div>
+				<div class="catalog-content">
+					<div class="catalog-header">
+						<p class="catalog-header__filter">+ Фильтры</p>
+						<p class="catalog-header__mob">Показывать <span>12</span></p>
+						<p>Сортировать <span>по популярности</span></p>
+					</div>
+					<div class="catalog-row">
+						<div class="catalog-col">
+							<a href="#" class="catalog-col__compare"></a>
+							<a href="#" class="catalog-col__link"></a>
+							<img src="img/art-1.png" alt="">
+							<div class="catalog-col__info">
+								<p class="catalog-col__info-cat">Котел настенный</p>
+								<p class="catalog-col__info-art">Gree BORA GWH07AAA-K3NNA2A</p>
+								<p class="catalog-col__info-price"><span>124 310 ₽</span><a href="#">В наличии</a></p>
+								<ul>
+									<li><span>Cтрана: <a href="#">Италия</a>, Артикул: <a href="#">7659669</a></span><b>18кВт</b></li>
+									<li><span>730 x 400 x 299 мм</span><b>130 Вт</b></li>
+								</ul>
+								<a href="#" class="catalog-col__info-btn"><b></b><span>Подробнее</span></a>
+							</div>
+						</div><!-- col(1) -->
+						<div class="catalog-col">
+							<a href="#" class="catalog-col__compare"></a>
+							<a href="#" class="catalog-col__link"></a>
+							<img src="img/art-1.png" alt="">
+							<div class="catalog-col__info">
+								<p class="catalog-col__info-cat">Котел настенный</p>
+								<p class="catalog-col__info-art">Gree BORA GWH07AAA-K3NNA2A</p>
+								<p class="catalog-col__info-price">
+									<span class="red">88 200 ₽</span>
+									<b>88 200 ₽</b>
+									<i>-25%</i>
+									<a href="#">В наличии</a>
+								</p>
+								<ul>
+									<li><span>Cтрана: <a href="#">Италия</a>, Артикул: <a href="#">7659669</a></span><b>18кВт</b></li>
+									<li><span>730 x 400 x 299 мм</span><b>130 Вт</b></li>
+								</ul>
+								<a href="#" class="catalog-col__info-btn"><b></b><span>Подробнее</span></a>
+							</div>
+						</div><!-- col(2) -->
+						<div class="catalog-col">
+							<a href="#" class="catalog-col__compare"></a>
+							<a href="#" class="catalog-col__link"></a>
+							<img src="img/art-1.png" alt="">
+							<div class="catalog-col__info">
+								<p class="catalog-col__info-cat">Котел настенный</p>
+								<p class="catalog-col__info-art">Gree BORA GWH07AAA-K3NNA2A</p>
+								<p class="catalog-col__info-price"><span>124 310 ₽</span><a href="#">В наличии</a></p>
+								<ul>
+									<li><span>Cтрана: <a href="#">Италия</a>, Артикул: <a href="#">7659669</a></span><b>18кВт</b></li>
+									<li><span>730 x 400 x 299 мм</span><b>130 Вт</b></li>
+								</ul>
+								<a href="#" class="catalog-col__info-btn"><b></b><span>Подробнее</span></a>
+							</div>
+						</div><!-- col(3) -->
+						<div class="catalog-col">
+							<a href="#" class="catalog-col__compare"></a>
+							<a href="#" class="catalog-col__link"></a>
+							<img src="img/art-1.png" alt="">
+							<div class="catalog-col__info">
+								<p class="catalog-col__info-cat">Котел настенный</p>
+								<p class="catalog-col__info-art">Gree BORA GWH07AAA-K3NNA2A</p>
+								<p class="catalog-col__info-price"><span>124 310 ₽</span><a href="#">В наличии</a></p>
+								<ul>
+									<li><span>Cтрана: <a href="#">Италия</a>, Артикул: <a href="#">7659669</a></span><b>18кВт</b></li>
+									<li><span>730 x 400 x 299 мм</span><b>130 Вт</b></li>
+								</ul>
+								<a href="#" class="catalog-col__info-btn"><b></b><span>Подробнее</span></a>
+							</div>
+						</div><!-- col(4) -->
+						<div class="catalog-col">
+							<a href="#" class="catalog-col__compare"></a>
+							<a href="#" class="catalog-col__link"></a>
+							<img src="img/art-1.png" alt="">
+							<div class="catalog-col__info">
+								<p class="catalog-col__info-cat">Котел настенный</p>
+								<p class="catalog-col__info-art">Gree BORA GWH07AAA-K3NNA2A</p>
+								<p class="catalog-col__info-price"><span>124 310 ₽</span><a href="#">В наличии</a></p>
+								<ul>
+									<li><span>Cтрана: <a href="#">Италия</a>, Артикул: <a href="#">7659669</a></span><b>18кВт</b></li>
+									<li><span>730 x 400 x 299 мм</span><b>130 Вт</b></li>
+								</ul>
+								<a href="#" class="catalog-col__info-btn"><b></b><span>Подробнее</span></a>
+							</div>
+						</div><!-- col(5) -->
+						<div class="catalog-col">
+							<a href="#" class="catalog-col__compare"></a>
+							<a href="#" class="catalog-col__link"></a>
+							<img src="img/art-1.png" alt="">
+							<div class="catalog-col__info">
+								<p class="catalog-col__info-cat">Котел настенный</p>
+								<p class="catalog-col__info-art">Gree BORA GWH07AAA-K3NNA2A</p>
+								<p class="catalog-col__info-price"><span>124 310 ₽</span><a href="#">В наличии</a></p>
+								<ul>
+									<li><span>Cтрана: <a href="#">Италия</a>, Артикул: <a href="#">7659669</a></span><b>18кВт</b></li>
+									<li><span>730 x 400 x 299 мм</span><b>130 Вт</b></li>
+								</ul>
+								<a href="#" class="catalog-col__info-btn"><b></b><span>Подробнее</span></a>
+							</div>
+						</div><!-- col(6) -->
+					</div>
+					<div class="catalog-pagination">
+						<a href="#" class="catalog-pagination__add">Загрузить еще</a>
+						<div class="catalog-pagination__wrap">
+							<ul>
+								<li class="active">1</li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li>...</li>
+								<li><a href="#">30</a></li>
+							</ul>
+							<a href="#" class="pagination-next"></a>
+						</div>
+					</div>
+					<div class="help">
+						<h3 class="help-title">Не нашли<span>что искали?</span></h3>
+						<p>Оставьте свой номер телефона и мы перезвоним в течении 10 минут</p>
+						<form action="">
+							<div class="help-form">
+								<input type="text" placeholder="+ 7 (.         )">
+								<button class="main-btn"><img src="img/arrow-white.svg" alt=""></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end catalog -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-top__info">
+					<div class="footer-top__logo">
+						<a href="#">info@zhirafe.ru</a>
+					</div>
+					<div class="footer-top__call">
+						<p>Перезвоните мне</p>
+					</div>
+				</div>
+				<div class="footer-top__menu">
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Покупателю</h3>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Гарантии</a></li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Услуги</h3>
+						<ul>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">О нас</h3>
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Объекты</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Блог</h3>
+						<ul>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- col(4) -->
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="footer-bottom__ways">
+					<li><a href="#"><img src="img/pay.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/visa.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/master.svg" alt=""></a></li>
+				</ul>
+				<ul class="footer-bottom__text">
+					<li><a href="#">Правила и условия</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
