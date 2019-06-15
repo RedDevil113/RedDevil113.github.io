@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="wrapper"></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-main">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-search">
+					<form action="">
+						<span class="header-search__btn"></span>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<div class="header-catalog">
+					<p>Каталог товаров</p>
+				</div>
+			</div>
+			<div class="header-menu"></div>
+			<div class="header-info">
+				<div class="header-phone">
+					<p>8 800 212-19-01</p>
+				</div>
+				<div class="header-statistics"></div>
+				<div class="header-basket">
+					<p>Корзина</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="basket">
+		<div class="basket-empty">
+			<p>Корзина пуста</p>
+			<a href="#" class="main-btn">Войти</a>
+			<a href="#" class="link-text">Создать аккаунт</a>
+		</div>
+		<!--<div class="basket-empty basket-empty__logged-in">
+			<h3 class="basket-empty__name">Добрый день, <span>Александр</span></h3>
+			<p>Корзина пуста</p>
+			<a href="#" class="main-btn">В каталог</a>
+			<ul class="basket-list">
+				<li><a href="#">Мои заказы</a></li>
+				<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+			</ul>
+		</div>-->
+		<!--<div class="basket-logged">
+			<a href="#" class="basket-back">В корзину</a>
+			<div class="basket-products">
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+			</div>
+			<div class="basket-total">
+				<p>Итого<b>89 100 <span>₽</span></b></p>
+			</div>
+			<a href="#" class="main-btn">Оформить</a>
+			<ul class="basket-list">
+				<li><a href="#">Мои заказы</a></li>
+				<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+			</ul>
+		</div>-->
+		<!--<div class="basket-entered">
+			<a href="#" class="basket-back">В корзину</a>
+			<div class="basket-products">
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+			</div>
+			<div class="basket-total">
+				<p>Итого<b>89 100 <span>₽</span></b></p>
+			</div>
+			<a href="#" class="main-btn">Оформить</a>
+			<div class="basket-come">
+				<a href="#">+ Войти</a>
+			</div>
+		</div>-->
+		<!--<div class="basket-login">
+			<div class="basket-login__top">
+				<h3 class="basket-login__top-title">Войти</h3>
+				<a href="#" class="basket-login__top-link">Забыли пароль?</a>
+			</div>
+			<div class="basket-login__form">
+				<form action="">
+					<input type="text" placeholder="E-mail">
+					<input type="text" placeholder="Пароль">
+					<button class="main-btn">Войти</button>
+				</form>
+			</div>
+			<div class="basket-login__bottom">
+				<div class="basket-login__top">
+					<h3 class="basket-login__top-title">Создать аккаунт</h3>
+					<a href="#" class="basket-login__top-link">Зачем?</a>
+				</div>
+				<div class="basket-login__bottom-col">
+					<a href="#"></a>
+					<p>Для партнеров</p>
+					<span>Оптовый кабинет</span>
+				</div>
+				<div class="basket-login__bottom-col">
+					<a href="#"></a>
+					<p>Для монтажников</p>
+					<span>Сотрудничество</span>
+				</div>
+			</div>
+		</div>-->
+	</div>
+	<div class="main-menu">
+		<div class="wrapper">
+			<div class="main-menu__wrap">
+				<div class="main-menu__wrap-search">
+					<form action="">
+						<span class="header-search__btn"></span>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<div class="main-menu__wrap-info">
+					<a href="#" class="main-menu__logo">info@zhirafe.ru</a>
+					<div class="main-menu__phone drop-info">
+						<p class="drop-info__head">8 800 212-19-01</p>
+						<div>
+							<p>Ежедневно с 9:00 до 18:00 Москва</p>
+							<a href="#" class="main-btn">Перезвоните мне</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-menu__wrap-row">
+					<div class="main-menu__wrap-col__mob">
+						<h3 class="main-menu__wrap-title"><a href="#">Каталог товаров</a></h3>
+					</div>
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Покупателю</a></h3>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Гарантии</a></li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Услуги</a></h3>
+						<ul>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">О нас</a></h3>
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Объекты</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Блог</a></h3>
+						<ul>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- col(4) -->
+					<div class="main-menu__wrap-col__mob">
+						<h3 class="main-menu__wrap-title"><a href="#">Личный кабинет</a></h3>
+						<h3 class="main-menu__wrap-title"><a href="#">Контакты</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="catalog-sidebar">
+		<ul>
+			<li><a href="#"><img src="img/img-1.png" alt="">Акции</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Котлы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Водонагреватели</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Насосы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Радиаторы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Трубы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Кондиционеры</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Комплектующие</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Запчасти</a></li>
+		</ul>
+	</div>
+	<div class="phone-drop">
+		<div class="wrapper">
+			<a href="#" class="phone-drop__logo">info@zhirafe.ru</a>
+			<div class="phone-drop__wrap">
+				<form action="">
+					<div class="phone-drop__form">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="+7  (            )">
+						<button class="main-btn">Перезвоните мне</button>
+						<p>Ежедневно с 9:00 до 18:00 Москва</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- start article -->
+	<section class="article">
+		<div class="article-top__img" style="background-image: url(img/article-1.png);"></div>
+		<div class="wrapper">
+			<a href="#" class="article-top__link">Все статьи</a>
+			<div class="article-top">
+				<div class="article-top__col">
+					<div class="article-top__col-wrap">
+						<h1 class="article-top__col-title">Жизнь до эпохи <b>кондиционеров</b></h1>
+						<p>Пользуясь изо дня в день многими давно привычными нам вещами, мы мало задумываемся, откуда эти вещи появились, кто их изобрел, кто первый начал использовать, как давно это было и как до этого обходились без них.</p>
+						<ul>
+							<li><a href="#">31 мая 2018</a></li>
+							<li><a href="#">Полезно знать</a></li>
+							<li><a href="#">11 мин чтения</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="article-top__col article-top__col-last">
+					<p>Торговец льдом. Техас, 1939 год.</p>
+				</div>
+			</div>
+		</div>
+		<div class="article-content">
+			<div class="wrapper">
+				<div class="article-wrap">
+					<div class="article-center">
+						<ul class="article-center__social">
+							<li><a href="#"><img src="img/vk.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/fb.svg" alt=""></a></li>
+							<li><a href="#"><img src="img/g.svg" alt=""></a></li>
+						</ul>
+						<div class="article-center__info">
+							<span>!</span>
+							<h3 class="article-center__info-title">Кондиционеры</h3>
+							<p>Какая-то информация о товарах в магазине и ссылка в каталог категории.</p>
+						</div>
+						<p>Возьмем к примеру кондиционер. Людям живущим на большей части территории России этот бытовой прибор может показаться этакой роскошью – с <b>кондиционером</b> конечно комфортнее, но можно вполне обойтись и без него. Но для Америки кондиционер стал прибором изменившим страну. О кондиционерах принято говорить, как о устройствах охлаждающих воздух, но эффект от их появления простирается гораздо шире температурных графиков. Благодаря кондиционерам изменилась архитектура зданий, места обитания людей и то, как они они живут. Можно сказать, что кондиционер создал современный американский образ жизни.</p>
+						<p>До появления механических охлаждающих устройств люди постоянно изобретали различные варианты того, как снизить температуру в своем жилище. К сожалению, большинство из них были либо малоэффективны, либо очень затратны. Активно использовался лед, но его, как вы понимаете, надо было регулярно закупать, что было далеко не всем по карману. Лед в зимний период добывали на замерзших водоемах Новой Англии и поставляли по всем Соединенным штатам, а так же в страны Карибского бассейна и даже Индию! До определенного момента спасала низкая плотность населения, большое количество зеленых насаждений и то, что многие городки находились на берегу больших водоемов. К тому же люди не особенно торопились переселяться в жаркие южные штаты. В том числе и поэтому почти все большие американские города строились на относительно комфортной для проживания северной части Америки.</p>
+						<div class="article-center__img">
+							<img src="img/article-1.png" alt="">
+							<span>Торговец льдом. Техас, 1939 год.</span>
+						</div>
+						<div class="article-center__position">
+							<p>Кондиционер изменил американскую <span>архитектуру</span>. Особенно это коснулось частного домостроения. До его появления в строительстве активно применяли такие материалы, как камень и кирпич, которые дольше держали и тепло и холод. Потолки в помещениях делали выше, чтобы горячий воздух собирался над головой, оставляя обитателям относительную прохладу внизу. Появившиеся позже потолочные вентиляторы помогали поднимать теплый воздух вверх летом и опускать его вниз во время зимы.</p>
+							<div class="article-center__position-side">
+								<span>Архитектура</span>
+								<p>искусство и наука строить, проектировать здания и сооружения (включая их комплексы), а также сама совокупность зданий и сооружений, создающих пространственную среду для жизни и деятельности человека.</p>
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="article-center__img">
+							<img src="img/article-1.png" alt="">
+							<span>Офисный планктон в 1912 году. Из приборов для охлаждения лишь вентиляторы на стенах.</span>
+						</div>
+						<p>С южной стороны дома всегда высаживали деревья создававшие тень. Причем летом они служили преградой для солнечных лучей, а зимой, когда листья опадали, наоборот пропускали их в помещение. Тоже самое касалось и повсеместного озеленения городских улиц, которые засаживали деревьями с раскидистыми кронами, </p>
+						<div class="article-center__slider">
+							<div class="article-center__slide">
+								<img src="img/article-1.png" alt="">
+								<span>Жилые дома в Вашингтоне, округ Колумбия. 1920 год.</span>
+							</div>
+							<div class="article-center__slide">
+								<img src="img/article-1.png" alt="">
+								<span>111Жилые дома в Вашингтоне, округ Колумбия. 1920 год.</span>
+							</div>
+						</div>
+						<p>Первое устройство для охлаждения частного дома появилось в 1914 году. Компактным его тоже назвать было нельзя. Создал его тот же Кэрриер, а установили первый домашний кондиционер в особняке Чарльза Гейтса, сына магната Джона Гейтса, сделавшего состояние на колючей проволоке. Забавно было лишь то, что особняк Гейтса находился в столице штата Миннесота – Миннеаполисе – городе на севере США с далеко не самым жарким климатом. Долгое время из-за высокой стоимости и огромных габаритов кондиционеры были уделом исключительно большого бизнеса. Их устанавливали в универмагах, кинотеатрах, отелях и тому подобных местах. В частных же домах они еще очень долгое время встречались довольно редко.</p>
+					</div>
+				</div>
+				<div class="article-content__bottom">
+					<a href="#" class="article-content__bottom-link"><span>Все статьи</span></a>
+					<a href="#" class="article-content__bottom-btn"><span>Теплый пол в Древнем Риме</span><img src="img/arrow-right-big.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end article -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-top__info">
+					<div class="footer-top__logo">
+						<a href="#">info@zhirafe.ru</a>
+					</div>
+					<div class="footer-top__call">
+						<p>Перезвоните мне</p>
+					</div>
+				</div>
+				<div class="footer-top__menu">
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Покупателю</h3>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Гарантии</a></li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Услуги</h3>
+						<ul>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">О нас</h3>
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Объекты</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Блог</h3>
+						<ul>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- col(4) -->
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="footer-bottom__ways">
+					<li><a href="#"><img src="img/pay.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/visa.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/master.svg" alt=""></a></li>
+				</ul>
+				<ul class="footer-bottom__text">
+					<li><a href="#">Правила и условия</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
