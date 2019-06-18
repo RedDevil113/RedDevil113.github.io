@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-main">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-search">
+					<form action="">
+						<span class="header-search__btn"></span>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<div class="header-catalog">
+					<p>Каталог товаров</p>
+				</div>
+			</div>
+			<div class="header-menu"></div>
+			<div class="header-info">
+				<div class="header-phone">
+					<p>8 800 212-19-01</p>
+				</div>
+				<div class="header-statistics"></div>
+				<div class="header-basket">
+					<p>Корзина</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="basket">
+		<!--<div class="basket-empty">
+			<p>Корзина пуста</p>
+			<a href="#" class="main-btn">Войти</a>
+			<a href="#" class="link-text">Создать аккаунт</a>
+		</div>-->
+		<!--<div class="basket-empty basket-empty__logged-in">
+			<h3 class="basket-empty__name">Добрый день, <span>Александр</span></h3>
+			<p>Корзина пуста</p>
+			<a href="#" class="main-btn">В каталог</a>
+			<ul class="basket-list">
+				<li><a href="#">Корзина</a></li>
+				<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+			</ul>
+		</div>-->
+		<div class="basket-logged">
+			<a href="#" class="basket-back">В корзину</a>
+			<div class="basket-products">
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+			</div>
+			<div class="basket-total">
+				<p>Итого<b>89 100 <span>₽</span></b></p>
+			</div>
+			<a href="#" class="main-btn">Оформить</a>
+			<ul class="basket-list">
+				<li><a href="#">Мои заказы</a></li>
+				<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+			</ul>
+		</div>
+		<!--<div class="basket-entered">
+			<a href="#" class="basket-back">В корзину</a>
+			<div class="basket-products">
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+			</div>
+			<div class="basket-total">
+				<p>Итого<b>89 100 <span>₽</span></b></p>
+			</div>
+			<a href="#" class="main-btn">Оформить</a>
+			<div class="basket-come">
+				<a href="#">+ Войти</a>
+			</div>
+		</div>-->
+		<!--<div class="basket-login">
+			<div class="basket-login__top">
+				<h3 class="basket-login__top-title">Войти</h3>
+				<a href="#" class="basket-login__top-link">Забыли пароль?</a>
+			</div>
+			<div class="basket-login__form">
+				<form action="">
+					<input type="text" placeholder="E-mail">
+					<input type="text" placeholder="Пароль">
+					<button class="main-btn">Войти</button>
+				</form>
+			</div>
+			<div class="basket-login__bottom">
+				<div class="basket-login__top">
+					<h3 class="basket-login__top-title">Создать аккаунт</h3>
+					<a href="#" class="basket-login__top-link">Зачем?</a>
+				</div>
+				<div class="basket-login__bottom-col">
+					<a href="#"></a>
+					<p>Для партнеров</p>
+					<span>Оптовый кабинет</span>
+				</div>
+				<div class="basket-login__bottom-col">
+					<a href="#"></a>
+					<p>Для монтажников</p>
+					<span>Сотрудничество</span>
+				</div>
+			</div>
+		</div>-->
+	</div>
+	<div class="main-menu">
+		<div class="wrapper">
+			<div class="main-menu__wrap">
+				<div class="main-menu__wrap-search">
+					<form action="">
+						<span class="header-search__btn"></span>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<div class="main-menu__wrap-info">
+					<a href="#" class="main-menu__logo">info@zhirafe.ru</a>
+					<div class="main-menu__phone drop-info">
+						<p class="drop-info__head">8 800 212-19-01</p>
+						<div>
+							<p>Ежедневно с 9:00 до 18:00 Москва</p>
+							<a href="#" class="main-btn">Перезвоните мне</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-menu__wrap-row">
+					<div class="main-menu__wrap-col__mob">
+						<h3 class="main-menu__wrap-title"><a href="#">Каталог товаров</a></h3>
+					</div>
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Покупателю</a></h3>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Гарантии</a></li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Услуги</a></h3>
+						<ul>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">О нас</a></h3>
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Объекты</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Блог</a></h3>
+						<ul>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- col(4) -->
+					<div class="main-menu__wrap-col__mob">
+						<h3 class="main-menu__wrap-title"><a href="#">Личный кабинет</a></h3>
+						<h3 class="main-menu__wrap-title"><a href="#">Контакты</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="catalog-sidebar">
+		<ul>
+			<li><a href="#"><img src="img/img-1.png" alt="">Акции</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Котлы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Водонагреватели</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Насосы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Радиаторы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Трубы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Кондиционеры</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Комплектующие</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Запчасти</a></li>
+		</ul>
+	</div>
+	<div class="phone-drop">
+		<div class="wrapper">
+			<a href="#" class="phone-drop__logo">info@zhirafe.ru</a>
+			<div class="phone-drop__wrap">
+				<form action="">
+					<div class="phone-drop__form">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="+7  (            )">
+						<button class="main-btn">Перезвоните мне</button>
+						<p>Ежедневно с 9:00 до 18:00 Москва</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- start orders -->
+	<section class="orders">
+		<div class="wrapper">
+			<div class="orders-content">
+				<div class="orders-content__center">
+					<h1 class="orders-content__title orders-content__title-small">Оформить заказ</h1>
+					<a href="#" class="orders-link">Есть аккаунт?</a>
+					<div class="orders-block">
+						<div class="orders-data orders-data__main">
+							<p class="orders-data__title">Данные</p>
+							<div class="orders-data__col">
+								<p>Иван Иванов</p>
+								<span>Москва, ул. Центральная 25 / 13</span>
+							</div>
+						</div>
+						<div class="orders-block__wrap">
+							<form action="">
+								<input type="text" placeholder="Полное имя">
+								<input type="text" placeholder="e-mail">
+								<input type="text" placeholder="Телефон">
+							</form>
+						</div>
+					</div>
+					<div class="orders-block">
+						<div class="orders-data orders-data__main">
+							<p class="orders-data__title">Доставка</p>
+							<div class="orders-data__col">
+								<p>Пн, 21 Декабря  <b>500 ₽</b></p>
+								<span>Доставка в пределах МКАД</span>
+							</div>
+						</div>
+						<div class="orders-block__wrap">
+							<p class="orders-data__title">Доставка</p>
+							<div class="orders-block__row">
+								<div class="orders-block__drop orders-block__drop-map">
+									<p><img src="img/map-ico.svg" alt="">Москва</p>
+									<ul>
+										<li><a href="#">lorem-1</a></li>
+										<li><a href="#">lorem-2</a></li>
+										<li><a href="#">lorem-3</a></li>
+										<li><a href="#">lorem-4</a></li>
+									</ul>
+								</div>
+								<div class="orders-block__drop">
+									<div>
+										<span>Время доставки</span>
+										<p>9:00 - 13:00</p>
+									</div>
+									<ul>
+										<li><a href="#">lorem-1</a></li>
+										<li><a href="#">lorem-2</a></li>
+										<li><a href="#">lorem-3</a></li>
+										<li><a href="#">lorem-4</a></li>
+									</ul>
+								</div>
+							</div>
+							<form action="">
+								<input type="text" placeholder="e-mail">
+								<input type="text" placeholder="Дополнительно">
+							</form>
+						</div>
+					</div>
+					<div class="orders-block">
+						<div class="orders-data orders-data__main">
+							<p class="orders-data__title">Оплата</p>
+							<div class="orders-data__col">
+								<p>Картой онлайн</p>
+								<span>Комиссия  2%</span>
+							</div>
+						</div>
+						<div class="orders-block__wrap">
+							<p class="orders-data__title">Оплата</p>
+							<div class="orders-data">
+								<div class="orders-data__col orders-data__col-active">
+									<p>Картой онлайн</p>
+									<span>Комиссия  2%</span>
+								</div>
+							</div>
+							<div class="orders-data">
+								<div class="orders-data__col">
+									<p>Перевод</p>
+									<span>Комиссия от 0 до 1000 руб</span>
+								</div>
+							</div>
+							<div class="orders-data">
+								<div class="orders-data__col">
+									<p>Наличными</p>
+									<span>Только при самовывозе</span>
+								</div>
+							</div>
+							<div class="orders-data">
+								<div class="orders-data__col">
+									<p>Счет</p>
+									<span>Для юридических лица и ИП</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="orders-sidebar">
+			<div class="orders-sidebar__wrap">
+				<h2 class="orders-sidebar__title">Ваш заказ</h2>
+				<div class="orders-sidebar__col">
+					<div class="orders-sidebar__col-row">
+						<p>2 товара</p>
+						<p>90 600 ₽</p>
+					</div>
+					<a href="#">Редактировать</a>
+				</div>
+				<div class="orders-sidebar__promo">
+					<p>Промо код</p>
+				</div>
+				<div class="basket-total">
+					<p>Итого<b>89 100 <span>₽</span></b></p>
+				</div>
+				<a href="#" class="main-btn">Оформить</a>
+				<ul class="basket-list">
+					<li><a href="#">Мои заказы</a></li>
+					<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- end orders -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-top__info">
+					<div class="footer-top__logo">
+						<a href="#">info@zhirafe.ru</a>
+					</div>
+					<div class="footer-top__call">
+						<p>Перезвоните мне</p>
+					</div>
+				</div>
+				<div class="footer-top__menu">
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Покупателю</h3>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Гарантии</a></li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Услуги</h3>
+						<ul>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">О нас</h3>
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Объекты</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Блог</h3>
+						<ul>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- col(4) -->
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="footer-bottom__ways">
+					<li><a href="#"><img src="img/pay.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/visa.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/master.svg" alt=""></a></li>
+				</ul>
+				<ul class="footer-bottom__text">
+					<li><a href="#">Правила и условия</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

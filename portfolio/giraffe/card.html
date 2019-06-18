@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-main">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-search">
+					<form action="">
+						<span class="header-search__btn"></span>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<div class="header-catalog">
+					<p>Каталог товаров</p>
+				</div>
+			</div>
+			<div class="header-menu"></div>
+			<div class="header-info">
+				<div class="header-phone">
+					<p>8 800 212-19-01</p>
+				</div>
+				<div class="header-statistics"></div>
+				<div class="header-basket">
+					<span class="active">1</span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="basket">
+		<!--<div class="basket-empty">
+			<p>Корзина пуста</p>
+			<a href="#" class="main-btn">Войти</a>
+			<a href="#" class="link-text">Создать аккаунт</a>
+		</div>-->
+		<!--<div class="basket-empty basket-empty__logged-in">
+			<h3 class="basket-empty__name">Добрый день, <span>Александр</span></h3>
+			<p>Корзина пуста</p>
+			<a href="#" class="main-btn">В каталог</a>
+			<ul class="basket-list">
+				<li><a href="#">Корзина</a></li>
+				<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+			</ul>
+		</div>-->
+		<div class="basket-logged">
+			<a href="#" class="basket-back">В корзину</a>
+			<div class="basket-products">
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+			</div>
+			<div class="basket-total">
+				<p>Итого<b>89 100 <span>₽</span></b></p>
+			</div>
+			<a href="#" class="main-btn">Оформить</a>
+			<ul class="basket-list">
+				<li><a href="#">Мои заказы</a></li>
+				<li><a href="#">Профиль</a><a href="#" class="basket-out">- Выйти</a></li>
+			</ul>
+		</div>
+		<!--<div class="basket-entered">
+			<a href="#" class="basket-back">В корзину</a>
+			<div class="basket-products">
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+				<div class="basket-products__row">
+					<p class="category">Котел настенный</p>
+					<p class="name">Gree BORA GWH07AAA-K3NNA2A</p>
+					<p class="price">1  х  88 200 ₽</p>
+				</div>
+			</div>
+			<div class="basket-total">
+				<p>Итого<b>89 100 <span>₽</span></b></p>
+			</div>
+			<a href="#" class="main-btn">Оформить</a>
+			<div class="basket-come">
+				<a href="#">+ Войти</a>
+			</div>
+		</div>-->
+		<!--<div class="basket-login">
+			<div class="basket-login__top">
+				<h3 class="basket-login__top-title">Войти</h3>
+				<a href="#" class="basket-login__top-link">Забыли пароль?</a>
+			</div>
+			<div class="basket-login__form">
+				<form action="">
+					<input type="text" placeholder="E-mail">
+					<input type="text" placeholder="Пароль">
+					<button class="main-btn">Войти</button>
+				</form>
+			</div>
+			<div class="basket-login__bottom">
+				<div class="basket-login__top">
+					<h3 class="basket-login__top-title">Создать аккаунт</h3>
+					<a href="#" class="basket-login__top-link">Зачем?</a>
+				</div>
+				<div class="basket-login__bottom-col">
+					<a href="#"></a>
+					<p>Для партнеров</p>
+					<span>Оптовый кабинет</span>
+				</div>
+				<div class="basket-login__bottom-col">
+					<a href="#"></a>
+					<p>Для монтажников</p>
+					<span>Сотрудничество</span>
+				</div>
+			</div>
+		</div>-->
+	</div>
+	<div class="main-menu">
+		<div class="wrapper">
+			<div class="main-menu__wrap">
+				<div class="main-menu__wrap-search">
+					<form action="">
+						<span class="header-search__btn"></span>
+						<input type="text" placeholder="Поиск">
+					</form>
+				</div>
+				<div class="main-menu__wrap-info">
+					<a href="#" class="main-menu__logo">info@zhirafe.ru</a>
+					<div class="main-menu__phone drop-info">
+						<p class="drop-info__head">8 800 212-19-01</p>
+						<div>
+							<p>Ежедневно с 9:00 до 18:00 Москва</p>
+							<a href="#" class="main-btn">Перезвоните мне</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-menu__wrap-row">
+					<div class="main-menu__wrap-col__mob">
+						<h3 class="main-menu__wrap-title"><a href="#">Каталог товаров</a></h3>
+					</div>
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Покупателю</a></h3>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Гарантии</a></li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Услуги</a></h3>
+						<ul>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">О нас</a></h3>
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Объекты</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="main-menu__wrap-col">
+						<h3 class="main-menu__wrap-title"><a href="#">Блог</a></h3>
+						<ul>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- col(4) -->
+					<div class="main-menu__wrap-col__mob">
+						<h3 class="main-menu__wrap-title"><a href="#">Личный кабинет</a></h3>
+						<h3 class="main-menu__wrap-title"><a href="#">Контакты</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="catalog-sidebar">
+		<ul>
+			<li><a href="#"><img src="img/img-1.png" alt="">Акции</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Котлы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Водонагреватели</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Насосы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Радиаторы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Трубы</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Кондиционеры</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Комплектующие</a></li>
+			<li><a href="#"><img src="img/img-1.png" alt="">Запчасти</a></li>
+		</ul>
+	</div>
+	<div class="phone-drop">
+		<div class="wrapper">
+			<a href="#" class="phone-drop__logo">info@zhirafe.ru</a>
+			<div class="phone-drop__wrap">
+				<form action="">
+					<div class="phone-drop__form">
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="+7  (            )">
+						<button class="main-btn">Перезвоните мне</button>
+						<p>Ежедневно с 9:00 до 18:00 Москва</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- start card -->
+	<section class="card">
+		<div class="wrapper">
+			<div class="card-top">
+				<a href="#" class="card-top__link card-top__back">Котлы</a>
+				<a href="#" class="card-top__link card-top__next">Все товары бренда</a>
+				<div class="card-top__row">
+					<div class="card-top__slider">
+						<div class="fotorama"data-width="100%" data-ratio="800/600" data-caption="true" data-thumbBorderColor="transparent" data-background="#FFFFFF" data-thumbBorderWidth="0" data-vertical="true" data-fullscreenIcon="true" data-navPosition="left">
+							<img src="img/article-1.png" alt="">
+							<img src="img/article-1.png" alt="">
+							<img src="img/article-1.png" alt="">
+							<img src="img/article-1.png" alt="">
+							<img src="img/article-1.png" alt="">
+						</div>
+					</div>
+					<div class="card-top__info">
+						<div class="card-top__info-main">
+							<a href="#" class="card-top__official">
+								<img src="img/logo-1.svg" alt="">
+								<span>Официальный поставщик</span>
+							</a>
+							<a href="#" class="card-top__info-category">Котел настенный</a>
+							<h1 class="card-top__info-title">Gree BORA <span>GWH07AAA-K3NNA2A</span></h1>
+						</div>
+						<ul>
+							<li><a href="#">24 кВт</a></li>
+							<li><a href="#">Артикул: 0010008953</a></li>
+							<li><a href="#">Словакия</a></li>
+						</ul>
+						<div class="card-top__info-center">
+							<div class="card-top__info-price">
+								<p>88 200 ₽</p>
+								<span>В наличии</span>
+							</div>
+							<div class="card-top__info-links">
+								<a href="#" class="main-btn">В корзину</a>
+								<a href="#" class="card-emply"><span>В сравнение</span></a>
+							</div>
+						</div>
+						<div class="card-top__info-last">
+							<div class="card-top__info-discount">
+								<span>-5%</span>
+								<p><b>Скидка</b>по промокоду <a href="#">Zhirafe5</a></p>
+							</div>
+							<div class="card-top__info-discount">
+								<div class="card-top__info-discount__img">
+									<img src="img/box.svg" alt="">
+								</div>
+								<p><b>Доставка </b>Расчитать стоимость</p>
+							</div>
+						</div>
+						<a href="#" class="card-top__official card-top__official-mob">
+							<img src="img/logo-1.svg" alt="">
+							<span>Официальный поставщик</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="card-tabs">
+				<div class="card-tabs__head">
+					<ul>
+						<li class="tabs-block tabs-active"><a href="#tab-1" class="tab-link">Описание</a></li>
+						<li class="tabs-block"><a href="#tab-2" class="tab-link"> Характеристики</a></li>
+						<li class="tabs-block"><a href="#tab-3" class="tab-link">Документация</a></li>
+						<li class="tabs-block"><a href="#tab-4" class="tab-link">Доставка и оплата</a></li>
+					</ul>
+				</div>
+				<div class="card-tabs__wrap">
+					<div class="card-tabs__info tab-block tab-active" id="tab-1">
+						<h3 class="card-tabs__info-title">Описание</h3>
+						<div class="card-tabs__info-row">
+							<div class="card-tabs__info-col">
+								<h3 class="card-tabs__info-col__title">Конструктивные особенности</h3>
+								<ul class="card-tabs__info-col__text">
+									<li>медный теплообменник</li>
+									<li>циркуляционный насос WILO/CHIARI (3-х скоростной)</li>
+									<li>плата управления устойчивая к перепадам напряжения</li>
+									<li>встроенный обводной контур (by-pass) в системе отопления</li>
+									<li>патрубки для раздельной системы дымоудаления</li>
+									<li>цвет: белый</li>
+								</ul>
+							</div>
+							<div class="card-tabs__info-col">
+								<h3 class="card-tabs__info-col__title">Особенности эксплуатации</h3>
+								<ul class="card-tabs__info-col__text">
+									<li>адаптирован к условиям эксплуатации в России</li>
+									<li>пониженное потребление газа</li>
+									<li>ЖК-дисплей с поочередным отображением параметров эксплуатации, сервисного меню и кодов ошибок</li>
+									<li>режим «ECO»</li>
+									<li>режим «Comfort»</li>
+									<li>режим «зима/лето»</li>
+									<li>модуляция пламени в режиме отопления и ГВС</li>
+									<li>автоматический электророзжиг</li>
+									<li>Безопасность</li>
+								</ul>
+							</div>
+							<div class="card-tabs__info-side card-tabs__info-side__1">
+								<h4 class="card-tabs__info-side__title">Как мы работаем?</h4>
+								<ul class="card-tabs__info-side__list">
+									<li>Самовывоз</li>
+									<li>Внутри МКАД</li>
+									<li>За МКАД</li>
+									<li>По всей России</li>
+								</ul>
+								<ul class="card-tabs__info-side__img">
+									<li><a href="#"><img src="img/pay.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/visa.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/master.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card-tabs__info tab-block" id="tab-2">
+						<h3 class="card-tabs__info-title">Характеристики</h3>
+						<div class="card-tabs__info-row">
+							<div class="card-tabs__info-col">
+								<ul class="card-tabs__info-col__list">
+									<li><span>Lorem ipsum</span><b>Италия</b></li>
+									<li><span>Lorem ipsum</span><b>Италия</b></li>
+									<li><span>ipsum</span><b>24</b></li>
+									<li><span>ips</span><b>93</b></li>
+									<li><span>ip</span><b>2</b></li>
+									<li><span>ipsum</span><b>14</b></li>
+									<li><span>ipsum</span><b>454</b></li>
+									<li><span>ipsum ipsum</span><b>223</b></li>
+									<li><span>ipsum ipsum ii</span><b>21</b></li>
+								</ul>
+							</div>
+							<div class="card-tabs__info-col">
+								<ul class="card-tabs__info-col__list">
+									<li><span>Lorem ipsum</span><b>Италия</b></li>
+									<li><span>Lorem ipsum</span><b>Италия</b></li>
+									<li><span>ipsum</span><b>24</b></li>
+									<li><span>ips</span><b>93</b></li>
+									<li><span>ip</span><b>2</b></li>
+									<li><span>ipsum</span><b>14</b></li>
+									<li><span>ipsum</span><b>454</b></li>
+									<li><span>ipsum ipsum</span><b>223</b></li>
+									<li><span>ipsum ipsum ii</span><b>21</b></li>
+								</ul>
+							</div>
+							<div class="card-tabs__info-side">
+								<h4 class="card-tabs__info-side__title">Нужна помощь?</h4>
+								<p>Читай подробные объяснения у нас в блоге или позвони нам</p>
+								<a class="card-tabs__info-side__link" href="#">Смотреть</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="may-need may-need__main">
+				<h2 class="may-need__title">Вам может понадобиться</h2>
+				<div class="may-need__row">
+					<div class="may-need__col">
+						<a href="#" class="may-need__col-link"></a>
+						<div class="may-need__col-img">
+							<img src="img/article-1.png" alt="">
+						</div>
+						<p class="may-need__col-category"><a href="#">Комплектующие</a></p>
+						<p class="may-need__col-name"><a href="#">Комплект дымохода</a></p>
+						<div class="may-need__col-bottom">
+							<p>1 800 ₽</p>
+							<a href="#" class="may-need__col-plus"></a>
+						</div>
+					</div><!-- col(1) -->
+					<div class="may-need__col">
+						<a href="#" class="may-need__col-link"></a>
+						<div class="may-need__col-img">
+							<img src="img/article-1.png" alt="">
+						</div>
+						<p class="may-need__col-category"><a href="#">Комплектующие</a></p>
+						<p class="may-need__col-name"><a href="#">Комплект дымохода</a></p>
+						<div class="may-need__col-bottom">
+							<p>1 800 ₽</p>
+							<a href="#" class="may-need__col-plus"></a>
+						</div>
+					</div><!-- col(2) -->
+					<div class="may-need__col">
+						<a href="#" class="may-need__col-link"></a>
+						<div class="may-need__col-img">
+							<img src="img/article-1.png" alt="">
+						</div>
+						<p class="may-need__col-category"><a href="#">Комплектующие</a></p>
+						<p class="may-need__col-name"><a href="#">Комплект дымохода</a></p>
+						<div class="may-need__col-bottom">
+							<p>1 800 ₽</p>
+							<a href="#" class="may-need__col-plus"></a>
+						</div>
+					</div><!-- col(3) -->
+					<div class="may-need__col">
+						<a href="#" class="may-need__col-link"></a>
+						<div class="may-need__col-img">
+							<img src="img/article-1.png" alt="">
+						</div>
+						<p class="may-need__col-category"><a href="#">Комплектующие</a></p>
+						<p class="may-need__col-name"><a href="#">Комплект дымохода</a></p>
+						<div class="may-need__col-bottom">
+							<p>1 800 ₽</p>
+							<a href="#" class="may-need__col-plus"></a>
+						</div>
+					</div><!-- col(4) -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end card -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-top__info">
+					<div class="footer-top__logo">
+						<a href="#">info@zhirafe.ru</a>
+					</div>
+					<div class="footer-top__call">
+						<p>Перезвоните мне</p>
+					</div>
+				</div>
+				<div class="footer-top__menu">
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Покупателю</h3>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Возврат</a></li>
+							<li><a href="#">Гарантии</a></li>
+						</ul>
+					</div><!-- col(1) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Услуги</h3>
+						<ul>
+							<li><a href="#">Проектирование</a></li>
+							<li><a href="#">Монтаж</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Запчасти</a></li>
+						</ul>
+					</div><!-- col(2) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">О нас</h3>
+						<ul>
+							<li><a href="#">Бренды</a></li>
+							<li><a href="#">Объекты</a></li>
+							<li><a href="#">Сертификаты</a></li>
+						</ul>
+					</div><!-- col(3) -->
+					<div class="footer-top__menu-col">
+						<h3 class="footer-top__menu-title">Блог</h3>
+						<ul>
+							<li><a href="#">Личный кабинет</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div><!-- col(4) -->
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="footer-bottom__ways">
+					<li><a href="#"><img src="img/pay.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/visa.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/master.svg" alt=""></a></li>
+				</ul>
+				<ul class="footer-bottom__text">
+					<li><a href="#">Правила и условия</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
