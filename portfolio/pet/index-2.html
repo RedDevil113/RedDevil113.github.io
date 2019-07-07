@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="menu-mob">
+		<div class="menu-mob__head">
+			<div class="menu-mob__head-row">
+				<div class="menu-mob__close"></div>
+				<div class="menu-mob__head-logo">
+					<a href="#">Pet Service Booking</a>
+				</div>
+				<ul>
+					<li><a href="#">Log in</a></li>
+					<li><a class="sign-up" href="#">Sign up</a></li>
+				</ul>
+			</div>
+			<form action="">
+				<input type="text" placeholder="Search keywords">
+			</form>
+		</div>
+		<ul class="menu-mob__list">
+			<li><a href="#">Safety Center</a></li>
+			<li><a href="#">FAQ & Support</a></li>
+			<li><a class="active" href="#">Our Team</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Partners Log in <img src="img/ico-1.svg" alt=""></a></li>
+		</ul>
+	</div>
+	<!-- start header -->
+	<header class="header header-2">
+		<div class="wrapper">
+			<div class="menu-bar">
+				<span></span>
+			</div>
+			<div class="header-logo">
+				<a href="#">Pet Service Booking</a>
+			</div>
+			<ul class="header-menu">
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Our Mission</a></li>
+				<li><a href="#">FAQ & Support</a></li>
+			</ul>
+			<div class="header-right">
+				<ul>
+					<li><a href="#">Log in</a></li>
+					<li><a class="sign-up" href="#">Sign up</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main-2">
+		<div class="main-mob" style="background-image: url(img/main-bg.jpg);"></div>
+		<div class="main-info">
+			<h1 class="main-info__title">Take care of your pet.<span>Professionally.</span></h1>
+			<div class="main-info__wrap">
+				<div class="main-info__drop main-info__drop-up">
+					<div class="main-info__drop-head">
+						<span>Service</span>
+						<p>Boarding <br>& Grooming</p>
+					</div>
+					<div class="main-info__drop-down">
+						<h3 class="main-info__drop-down__title">Service</h3>
+						<div class="cancel"></div>
+						<div class="checkbox-button">
+							<input type="checkbox" checked="checked">
+							<span></span>
+							<p>Boarding</p>
+						</div>
+						<div class="checkbox-button">
+							<input type="checkbox" checked="checked">
+							<span></span>
+							<p>Grooming</p>
+						</div>
+						<div class="checkbox-button">
+							<input type="checkbox">
+							<span></span>
+							<p>Daycare</p>
+						</div>
+					</div>
+				</div>
+				<div class="main-info__drop main-info__drop-up">
+					<div class="main-info__drop-head">
+						<span>Date & Time</span>
+						<p>May, 17 <br>19:00–20:00</p>
+					</div>
+					<div class="main-info__drop-down main-info__drop-down__datepicker">
+						<h3 class="main-info__drop-down__title">Service</h3>
+						<div class="cancel"></div>
+						<div id="datepicker"></div>
+					</div>
+				</div>
+				<div class="main-info__drop main-info__drop-up">
+					<div class="main-info__drop-head">
+						<span>Pet</span>
+						<div class="main-info__drop-row">
+							<div>
+								<img src="img/small-i.png" alt="">
+							</div>
+							<p>Santia</p>
+						</div>
+					</div>
+					<div class="main-info__drop-down">
+						<h3 class="main-info__drop-down__title">Service</h3>
+						<div class="cancel"></div>
+						<div class="main-info__drop-add">
+							<form action="">
+								<label for="f-1">Breed</label>
+								<input type="text" id="f-1" placeholder="American Staffordshire Terrier">
+								<label for="f-2">Age</label>
+								<div class="main-info__drop-add__row">
+									<div class="main-info__drop-add__age">
+										<input type="text" value="15">
+										<p>years</p>
+									</div>
+									<div class="main-info__drop-add__age">
+										<input type="text" value="7">
+										<p>months</p>
+									</div>
+								</div>
+								<label for="f-3">Sex</label>
+								<div class="main-info__drop-add__row">
+									<div class="radio-button">
+										<input type="radio" name="gender" checked="checked">
+										<p>Male</p>
+									</div>
+									<div class="radio-button">
+										<input type="radio" name="gender">
+										<p>Female</p>
+									</div>
+								</div>
+								<div class="main-info__drop-add__bottom">
+									<div class="checkbox-button">
+										<input type="checkbox" checked="checked">
+										<span></span>
+										<p>Sterilized</p>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="main-info__drop-col">
+							<div class="main-info__drop-row main-info__drop-new">
+								<div>
+									<img src="img/plus.svg" alt="">
+								</div>
+								<p>New pet</p>
+							</div>
+							<div class="main-info__drop-row active">
+								<div>
+									<img src="img/small-i.png" alt="">
+								</div>
+								<p>Santia</p>
+							</div>
+							<div class="main-info__drop-row">
+								<div>
+									<img src="img/small-i.png" alt="">
+								</div>
+								<p>Vasya</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-info__drop main-info__drop-last">
+					<a href="#" class="main-btn">Find</a>
+				</div>
+			</div>
+		</div>
+		<div class="grid">
+		  <div class="grid-sizer"></div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__016.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__049.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__006.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__020.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		   <img src="img/bg_img__020.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		  	<img src="img/bg_img__037.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__049.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__043.png" alt="">
+		  </div>
+		   <div class="grid-item">
+		   <img src="img/bg_img__020.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__016.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		   <img src="img/bg_img__020.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		  	<img src="img/bg_img__037.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__006.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		    <img src="img/bg_img__020.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		   <img src="img/bg_img__020.png" alt="">
+		  </div>
+		  <div class="grid-item">
+		  	<img src="img/bg_img__037.png" alt="">
+		  </div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start hotels -->
+	<section class="hotels">
+		<div class="wrapper">
+			<h2 class="section-title">New Hotels</h2>
+		</div>
+		<div class="hotels-slider">
+			<div class="hotels-slide">
+				<div class="hotels-slide__wrap" style="background-image: url(img/ht-1.png);">
+					<a href="#" class="hotels-slide__all"></a>
+					<p class="hotels-slide__tag">Deal Type</p>
+					<div class="hotels-slide__descr">
+						<h3 class="hotels-slide__title">Hotel Title</h3>
+						<p>Offer description</p>
+					</div>
+					<div class="hotels-slide__link">
+						<a href="#">Go to offer page</a>
+					</div>
+				</div>
+			</div><!-- slide(1) -->
+			<div class="hotels-slide">
+				<div class="hotels-slide__wrap" style="background-image: url(img/ht-1.png);">
+					<a href="#" class="hotels-slide__all"></a>
+					<div class="hotels-slide__descr">
+						<h3 class="hotels-slide__title">Park9</h3>
+						<p>Fitness and spa facility for your pet, is opening a second location this March designed to be a concept resort for dogs.</p>
+					</div>
+					<div class="hotels-slide__link">
+						<a href="#">View place</a>
+					</div>
+				</div>
+			</div><!-- slide(2) -->
+			<div class="hotels-slide">
+				<div class="hotels-slide__wrap" style="background-image: url(img/ht-1.png);">
+					<a href="#" class="hotels-slide__all"></a>
+					<p class="hotels-slide__tag">New Hotel</p>
+					<div class="hotels-slide__descr">
+						<h3 class="hotels-slide__title">Toronto Dog Boarding</h3>
+						<p>Offer description</p>
+					</div>
+					<div class="hotels-slide__link">
+						<a href="#">View place</a>
+					</div>
+				</div>
+			</div><!-- slide(3) -->
+			<div class="hotels-slide">
+				<div class="hotels-slide__wrap" style="background-image: url(img/ht-1.png);">
+					<a href="#" class="hotels-slide__all"></a>
+					<p class="hotels-slide__tag">Deal Type</p>
+					<div class="hotels-slide__descr">
+						<h3 class="hotels-slide__title">Hotel Title</h3>
+						<p>Offer description</p>
+					</div>
+					<div class="hotels-slide__link">
+						<a href="#">Go to offer page</a>
+					</div>
+				</div>
+			</div><!-- slide(4) -->
+			<div class="hotels-slide">
+				<div class="hotels-slide__wrap" style="background-image: url(img/ht-1.png);">
+					<a href="#" class="hotels-slide__all"></a>
+					<div class="hotels-slide__descr">
+						<h3 class="hotels-slide__title">Park9</h3>
+						<p>Fitness and spa facility for your pet, is opening a second location this March designed to be a concept resort for dogs.</p>
+					</div>
+					<div class="hotels-slide__link">
+						<a href="#">View place</a>
+					</div>
+				</div>
+			</div><!-- slide(5) -->
+		</div>
+		<div class="wrapper">
+			<a href="#" class="main-btn">View All</a>
+		</div>
+	</section>
+	<!-- end hotels -->
+	<!-- start offers -->
+	<section class="offers">
+		<div class="wrapper">
+			<h2 class="section-title">Special Offers</h2>
+		</div>
+		<div class="offers-slider">
+			<div class="offers-slide">
+				<div class="offers-slide__wrap offers-slide__red">
+					<a href="#" class="hotels-slide__all"></a>
+					<h4 class="offers-slide__title">Toronto Dog Boarding</h4>
+					<p>50% off on grooming until 30th may</p>
+					<div class="offers-slide__link">
+						<a href="#">$17<span>/hour</span></a>
+					</div>
+				</div>
+			</div><!-- slide(1) -->
+			<div class="offers-slide">
+				<div class="offers-slide__wrap offers-slide__orange">
+					<a href="#" class="hotels-slide__all"></a>
+					<h4 class="offers-slide__title">Plan 9</h4>
+					<p>Book 5 nights — get one night  for free!</p>
+					<div class="offers-slide__link">
+						<a href="#">Book Now</a>
+					</div>
+				</div>
+			</div><!-- slide(2) -->
+			<div class="offers-slide">
+				<div class="offers-slide__wrap offers-slide__red">
+					<a href="#" class="hotels-slide__all"></a>
+					<h4 class="offers-slide__title">Toronto Dog Boarding</h4>
+					<p>50% off on grooming until 30th may</p>
+					<div class="offers-slide__link">
+						<p>$299</p>
+						<a href="#">$149<span>/day</span></a>
+					</div>
+				</div>
+			</div><!-- slide(3) -->
+			<div class="offers-slide">
+				<div class="offers-slide__wrap offers-slide__orange">
+					<a href="#" class="hotels-slide__all"></a>
+					<h4 class="offers-slide__title">Plan 9</h4>
+					<p>Get one night  for free!</p>
+					<div class="offers-slide__link">
+						<a href="#">Book Now</a>
+					</div>
+				</div>
+			</div><!-- slide(4) -->
+		</div>
+		<div class="wrapper">
+			<a href="#" class="main-btn">Show More</a>
+		</div>
+	</section>
+	<!-- end offers -->
+	<!-- start about -->
+	<section class="about">
+		<div class="wrapper">
+			<h2 class="section-title">About Us</h2>
+			<div class="about-video">
+				<span class="about-video__link">https://www.youtube.com/embed/iYi-hO7PZYA?&autoplay=1</span>
+				<iframe src="https://www.youtube.com/embed/iYi-hO7PZYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="about-video__play"></div>
+				<div class="about-video__img" style="background-image: url(img/video.jpg);"></div>
+			</div>
+			<div class="about-info">
+				<h3 class="about-info__title">About Pet Service Booking</h3>
+				<p>The health & safety of pets is our priority.  Knowing the dietary needs, exercise restrictions  or required medications for our guests helps us provide the best experience.</p>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-col">
+				<ul>
+					<li><a href="#">Safety Center</a></li>
+					<li><a href="#">FAQ & Support</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div><!-- col(1) -->
+			<div class="footer-col">
+				<ul>
+					<li><a href="#">Special Offers</a></li>
+					<li><a href="#">Weekly Deals</a></li>
+					<li><a href="#">Something Else?</a></li>
+					<li class="footer-col__mob"><a href="#">For Partners</a></li>
+					<li class="footer-col__mob"><a href="#"><span><img src="img/ico-1.svg" alt=""></span>Partners Log in</a></li>
+				</ul>
+			</div><!-- col(2) -->
+			<div class="footer-col footer-col__3">
+				<ul>
+					<li><a href="#">For Partners</a></li>
+					<li><a href="#"><span><img src="img/ico-1.svg" alt=""></span>Partners Log in</a></li>
+				</ul>
+			</div><!-- col(3) -->
+			<div class="footer-col">
+				<ul>
+					<li><a href="#"><span><img src="img/ico-2.svg" alt=""></span>Facebook</a></li>
+					<li><a href="#"><span><img src="img/ico-3.svg" alt=""></span>Instagram</a></li>
+					<li><a href="#"><span><img src="img/ico-4.svg" alt=""></span>Youtube</a></li>
+					<li><a href="#"><span><img src="img/ico-5.svg" alt=""></span>Twitter</a></li>
+				</ul>
+			</div><!-- col(4) -->
+			<div class="footer-col">
+				<img src="img/footer-img.svg" alt="">
+			</div><!-- col(5) -->
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
