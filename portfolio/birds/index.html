@@ -34,9 +34,9 @@
 					<li><a href="#section-4">кто мы</a></li>
 					<li><a href="#section-5">отзывы</a></li>
 				</ul>
-				<div class="header-menu__right">
+				<div class="header-menu__right hidden-input">
 					<a href="#" class="header-phone">+ 7 (905) 345 65 65</a>
-					<a href="#" class="header-call"><span>Позвоните мне</span></a>
+					<a href="#modal-form" class="header-call button-modal hidden-input__value"><span>Позвоните мне</span></a>
 				</div>
 			</nav>
 		</div>
@@ -48,7 +48,7 @@
 		<div class="wrapper">
 			<div class="main-info">
 				<h1 class="main-info__title">ФОТОГРАФИРОВАНИЕ <b>птиц <span>стало доступнее!</span></b></h1>
-				<a href="#" class="main-info__btn">Узнать подробнее</a>
+				<a href="#section-1" class="main-info__btn">Узнать подробнее</a>
 			</div>
 		</div>
 	</section>
@@ -108,8 +108,8 @@
 				<h2 class="scope-title">Каталог<span></span></h2>
 			</div>
 			<div class="catalog-wrap">
-				<div class="catalog-card">
-					<h3 class="catalog-card__title">Telescope 40/60</h3>
+				<div class="catalog-card hidden-input">
+					<h3 class="catalog-card__title hidden-input__value">Telescope 40/60</h3>
 					<div class="catalog-row">
 						<div class="catalog-slider"><!-- data-vertical="false" -->
 							<div class="fotorama" data-width="100%" data-ratio="19/12" data-caption="true" data-thumbBorderColor="transparent" data-background="#FFFFFF" data-thumbBorderWidth="0" data-fullscreenIcon="true" data-navPosition="right" data-vertical="false">
@@ -162,12 +162,12 @@
 							<p>2 940 р</p>
 						</div>
 						<div class="catalog-info__col">
-							<a href="#" class="main-btn">Заказать</a>
+							<a href="#modal-form" class="main-btn button-modal">Заказать</a>
 						</div>
 					</div>
 				</div><!-- card(1) -->
-				<div class="catalog-card">
-					<h3 class="catalog-card__title">Telescope 40/60</h3>
+				<div class="catalog-card hidden-input">
+					<h3 class="catalog-card__title hidden-input__value">Telescope 40/60(2)</h3>
 					<div class="catalog-row">
 						<div class="catalog-slider"><!-- data-vertical="false" -->
 							<div class="fotorama" data-width="100%" data-ratio="19/12" data-caption="true" data-thumbBorderColor="transparent" data-background="#FFFFFF" data-thumbBorderWidth="0" data-fullscreenIcon="true" data-navPosition="left">
@@ -220,12 +220,12 @@
 							<p>2 940 р</p>
 						</div>
 						<div class="catalog-info__col">
-							<a href="#" class="main-btn">Заказать</a>
+							<a href="#modal-form" class="main-btn button-modal">Заказать</a>
 						</div>
 					</div>
 				</div><!-- card(2) -->
-				<div class="catalog-card">
-					<h3 class="catalog-card__title">Telescope 40/60</h3>
+				<div class="catalog-card hidden-input">
+					<h3 class="catalog-card__title hidden-input__value">Telescope 40/60(3)</h3>
 					<div class="catalog-row">
 						<div class="catalog-slider"><!-- data-vertical="false" -->
 							<div class="fotorama" data-width="100%" data-ratio="19/12" data-caption="true" data-thumbBorderColor="transparent" data-background="#FFFFFF" data-thumbBorderWidth="0" data-fullscreenIcon="true" data-navPosition="left">
@@ -278,7 +278,7 @@
 							<p>2 940 р</p>
 						</div>
 						<div class="catalog-info__col">
-							<a href="#" class="main-btn">Заказать</a>
+							<a href="#modal-form" class="main-btn button-modal">Заказать</a>
 						</div>
 					</div>
 				</div><!-- card(3) -->
@@ -464,8 +464,8 @@
 	<section class="stock">
 		<div class="main-bg" style="background-image: url(img/main-bg.jpg);"></div>
 		<div class="wrapper">
-			<div class="stock-row">
-				<h2 class="stock-title">ЗАКАЖИТЕ СЕЙЧАС СО СКИДКОЙ 50%</h2>
+			<div class="stock-row hidden-input">
+				<h2 class="stock-title hidden-input__value">ЗАКАЖИТЕ СЕЙЧАС СО СКИДКОЙ 50%</h2>
 				<div class="stock-wrap">
 					<h3 class="stock-wrap__subtitle">До конца акции осталось:</h3>
 					<script src="//megatimer.ru/get/606e047a1db039a01f1c57c3ea51f800.js"></script>
@@ -485,7 +485,7 @@
 							<p>2 940 р</p>
 						</div>
 						<div class="catalog-info__col">
-							<a href="#" class="main-btn">Заказать</a>
+							<a href="#modal-form" class="main-btn button-modal">Заказать</a>
 						</div>
 					</div>
 				</div>
@@ -514,6 +514,36 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<form class="callback" method="POST">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="birds">
+				<input type="hidden" name="admin_email" value="polyak36rus@mail.ru">
+				<input type="hidden" name="form_subject" value="Заявка мобильного зума">
+				<input type="hidden" name="subject" value="" id="info-form">
+
+				<h3 class="modal-content__title">Оставьте заявку</h3>
+				<p class="modal-content__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
+				<div class="modal-content__input">
+					<input type="text" name="name" placeholder="Введите имя" required minlength="2">
+					<img src="img/ico-1.svg" alt="">
+				</div>
+				<div class="modal-content__input">
+					<input type="tel" name="phone" placeholder="Введите телефон" minlength="8">
+					<img src="img/ico-2.svg" alt="">
+				</div>
+				<div class="modal-content__input">
+					<input type="text" name="address" placeholder="Введите адрес" minlength="5">
+					<img src="img/ico-3.svg" alt="">
+				</div>
+				<button class="main-btn submit">ОСТАВИТЬ ЗАЯВКУ</button>
+			</form>
+		</div>
+	</div>
+
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
