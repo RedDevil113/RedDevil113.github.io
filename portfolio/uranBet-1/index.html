@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="main-bg" style="background-image: url(img/bg-1.png);"></div>
+	<div class="mob-img mob-img__1" style="background-image: url(img/mob-1.png);"></div>
+	<div class="mob-img mob-img__2" style="background-image: url(img/mob-2.png);"></div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>
+			<ul class="header-list">
+				<li><a class="button-modal" href="#modal-form">log in</a></li>
+				<li><a class="button-scroll" href="#registration">registration</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="wrapper">
+			<div class="main-info">
+				<h1 class="main-info__title">get a deposit bonus if you replenish money through <span>perfect money</span></h1>
+				<p class="main-info__bonus"><span>+</span>10<b>%</b></p>
+				<a href="#" class="main-btn"><span>get a bonus</span></a>
+			</div>
+		</div>
+		<div class="main-img">
+			<img src="img/img-1.png" alt="">
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start registration -->
+	<section class="registration" id="registration">
+		<div class="wrapper">
+			<h2 class="registration-title">registration</h2>
+			<div class="registration-form">
+				<form action="">
+					<input type="text" name="name" placeholder="Your name">
+					<input type="email" name="email" placeholder="Your e-mail">
+					<input type="password" name="password" placeholder="password">
+					<input type="password" name="password-2" placeholder="repeat the password">
+					<button class="main-btn registration-form__btn"><span>sing up</span></button>
+					<p>Log in via Social Networks</p>
+				</form>
+			</div>
+			<div class="registration-info">
+				<p>By clicking the "Sigh up" button or logging in via social networks, <br>I confirm my age and agree to the rules of the site</p>
+			</div>
+		</div>
+	</section>
+	<!-- end registration -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="cancel"></div>
+		<h3 class="modal-title">login</h3>
+		<form action="">
+			<div class="modal-row">
+				<input type="email" name="m-email" placeholder="Your e-mail">
+				<input type="password" name="m-password" placeholder="password">
+			</div>
+			<div class="modal-wrap">
+				<a href="#" class="modal-link">Recover a password</a>
+			</div>
+			<button class="modal-btn">LOG in</button>
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
