@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+				<p>Uygur National Music Station</p>
+			</div>
+			<div class="header-mode">
+				<p>Night mode</p>
+				<div class="toggle">
+					<span></span>
+				</div>
+			</div>
+			<div class="header-langs">
+				<div class="drop">
+					<p>Ru</p>
+					<ul>
+						<li><a href="#">Uyghurche</a></li>
+						<li><a href="#">Уйгурча</a></li>
+						<li><a class="active" href="#">Русский</a></li>
+						<li><a href="#">English</a></li>
+						<li><a href="#">Turkce</a></li>
+						<li><a href="#">Chinesse</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-search">
+				<div class="header-search__wrap">
+					<form action="">
+						<input type="text" name="search" placeholder="поиск">
+						<button class="search"></button>
+					</form>
+				</div>
+			</div>
+			<div class="header-btn">
+				<a href="#modal-come" class="button-modal main-btn">войти</a>
+				<a href="#modal-checkIn" class="button-modal second-btn"><span>регистрация</span></a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="wrapper">
+			<div class="row">
+				<div class="sidebar">
+					<div class="sidebar-close"></div>
+					<ul class="sidebar-menu">
+						<li><a class="icon-1 active" href="#">Главная</a></li>
+						<li><a class="icon-2" href="#">О проекте</a></li>
+						<li><a class="icon-3" href="#">Артисты</a></li>
+						<li><a class="icon-4" href="#">Альбомы</a></li>
+						<li><a class="icon-5" href="#">Песни</a></li>
+						<li><a class="icon-6" href="#">Настройки</a></li>
+					</ul>
+					<div class="sidebar-block sidebar-playlists">
+						<h3 class="sidebar-block__title">Ваши плейлисты</h3>
+						<ul>
+							<li><a href="#">Плейлист 1</a></li>
+							<li><a href="#">Плейлист 2</a></li>
+						</ul>
+						<a href="#" class="add-playlists">Добавить плейлист</a>
+					</div>
+					<div class="sidebar-block sidebar-contacts">
+						<h3 class="sidebar-block__title">Контакты</h3>
+						<p><a href="#">example@gmail.com</a></p>
+						<ul class="social-networks">
+							<li><a class="inst" href="#"></a></li>
+							<li><a class="fac" href="#"></a></li>
+							<li><a class="twit" href="#"></a></li>
+							<li><a class="yout" href="#"></a></li>
+							<li><a class="com" href="#"></a></li>
+						</ul>
+					</div>
+					<div class="sidebar-block sidebar-statistics">
+						<h3 class="sidebar-block__title">Cтатистика</h3>
+						<ul>
+							<li>Слушателей радио: <span>123</span></li>
+							<li>Пользователей: <span>12563</span></li>
+							<li>Артистов: <span>12353</span></li>
+							<li>Альбомов: <span>13523</span></li>
+							<li>Песен: <span>13623</span></li>
+						</ul>
+					</div>
+					<div class="sidebar-block sidebar-bottom">
+						<ul>
+							<li><a href="#">Условия использования</a></li>
+							<li><a href="#">Политика контента</a></li>
+							<li><a href="#">Реклама</a></li>
+						</ul>
+						<p>Copyright by Uygur Inc. © 2019</p>
+						<div>
+							<a href="#"><img src="img/goog-p.svg" alt=""></a>
+							<a href="#"><img src="img/app-s.svg" alt=""></a>
+						</div>
+					</div>
+				</div><!-- sidebar -->
+				<div class="content">
+					<div class="sidebar-bar">
+						<div class="sidebar-bar__wrap">
+							<span></span>
+							<p>Меню</p>
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="content-block__top">
+							<h3 class="content-block__top-title">Профиль артиста</h3>
+						</div>
+						<div class="bg-wh artiste">
+							<div class="artiste-row">
+								<div class="artiste-img">
+									<img src="img/img-big.jpg" alt="">
+								</div>
+								<div class="artiste-info">
+									<div class="artiste-info__top">
+										<div class="artiste-info__top-col artiste-info__top-col__big">
+											<span class="artiste-info__top-title">Dua Lipa</span>
+											<p><a href="#">www.dualipa.com</a></p>
+										</div>
+										<div class="artiste-info__top-col">
+											<span class="artiste-info__top-title">5</span>
+											<p>Альбомов</p>
+										</div>
+										<div class="artiste-info__top-col">
+											<span class="artiste-info__top-title">35</span>
+											<p>Песен</p>
+										</div>
+										<div class="artiste-info__top-col">
+											<span class="artiste-info__top-title">13</span>
+											<p>Видео</p>
+										</div>
+									</div>
+									<p>Британская певица косовского происхождения, автор песен и модель. В феврале 2019 года на церемонии Grammy Awards, получила две награды: в категориях Лучший новый исполнитель и Лучшая танцевальная запись за сингл «Electricity».</p>
+								</div>
+							</div>
+							<div class="artiste-bottom">
+								<ul class="artiste-bottom__list artiste-bottom__list-main">
+									<li><a clas="email" href="#">dua@gmail.com</a></li>
+									<li><a class="phone" href="#">+7 701 223345</a></li>
+								</ul>
+								<ul class="artiste-bottom__list">
+									<li><a href="#">Instagram</a></li>
+									<li><a href="#">Facebook</a></li>
+									<li><a href="#">WeChat</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="content-block__top content-block__top-row">
+							<div>
+								<h3 class="content-block__top-title">Артисты</h3>
+								<a href="#">(5)</a>
+							</div>
+						</div>
+						<div class="compilation">
+							<div class="compilation-slider">
+								<div class="compilation-slide">
+									<div class="compilation-slide__wrap">
+										<div class="compilation-slide__img" style="background-image: url(img/img-small.png);">
+											<a href="#" class="play"></a>
+										</div>
+										<div class="compilation-slide__info">
+											<h3 class="compilation-slide__info-name"><a href="#">Имя  Артиста</a></h3>
+											<ul>
+												<li>Альбомов: 5 </li>
+												<li>Песен: 234</li>
+											</ul>
+										</div>
+									</div>
+								</div><!-- slide(1) -->
+								<div class="compilation-slide">
+									<div class="compilation-slide__wrap">
+										<div class="compilation-slide__img" style="background-image: url(img/img-small.png);">
+											<a href="#" class="play"></a>
+										</div>
+										<div class="compilation-slide__info">
+											<h3 class="compilation-slide__info-name"><a href="#">Имя  Артиста</a></h3>
+											<ul>
+												<li>Альбомов: 5 </li>
+												<li>Песен: 234</li>
+											</ul>
+										</div>
+									</div>
+								</div><!-- slide(2) -->
+								<div class="compilation-slide">
+									<div class="compilation-slide__wrap">
+										<div class="compilation-slide__img" style="background-image: url(img/img-small.png);">
+											<a href="#" class="play"></a>
+										</div>
+										<div class="compilation-slide__info">
+											<h3 class="compilation-slide__info-name"><a href="#">Имя  Артиста</a></h3>
+											<ul>
+												<li>Альбомов: 5 </li>
+												<li>Песен: 234</li>
+											</ul>
+										</div>
+									</div>
+								</div><!-- slide(3) -->
+								<div class="compilation-slide">
+									<div class="compilation-slide__wrap">
+										<div class="compilation-slide__img" style="background-image: url(img/img-small.png);">
+											<a href="#" class="play"></a>
+										</div>
+										<div class="compilation-slide__info">
+											<h3 class="compilation-slide__info-name"><a href="#">Имя  Артиста</a></h3>
+											<ul>
+												<li>Альбомов: 5 </li>
+												<li>Песен: 234</li>
+											</ul>
+										</div>
+									</div>
+								</div><!-- slide(4) -->
+							</div>
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="content-block__top content-block__top-row">
+							<div>
+								<h3 class="content-block__top-title">Песни артиста</h3>
+								<a href="#">(35)</a>
+							</div>
+							<a href="#">смотреть все</a>
+						</div>
+						<div class="song">
+							<div class="song-main">
+								<div class="song-main__img" style="background-image: url(img/img-small.png);">
+									<a href="#" class="play"></a>
+								</div>
+								<div class="song-main__info">
+									<h3 class="song-main__info-name"><a href="#">Название песни</a></h3>
+									<p><a href="#">Имя Артиста</a></p>
+								</div>
+							</div>
+							<div class="song-row">
+								<p>4:36</p>
+								<ul>
+									<li><a href="#"><span class="icon-headp"></span>235</a></li>
+									<li><a href="#"><span class="icon-download"></span>235</a></li>
+									<li><a href="#"><span class="icon-share"></span>235</a></li>
+									<li><a href="#"><span class="icon-like"></span>235</a></li>
+								</ul>
+								<a href="#" class="song-add"></a>
+							</div>
+						</div>
+						<div class="song">
+							<div class="song-main">
+								<div class="song-main__img" style="background-image: url(img/img-small.png);">
+									<a href="#" class="play"></a>
+								</div>
+								<div class="song-main__info">
+									<h3 class="song-main__info-name"><a href="#">Название песни</a></h3>
+									<p><a href="#">Имя Артиста</a></p>
+								</div>
+							</div>
+							<div class="song-row">
+								<p>4:36</p>
+								<ul>
+									<li><a href="#"><span class="icon-headp"></span>235</a></li>
+									<li><a href="#"><span class="icon-download"></span>235</a></li>
+									<li><a href="#"><span class="icon-share"></span>235</a></li>
+									<li><a href="#"><span class="icon-like"></span>235</a></li>
+								</ul>
+								<a href="#" class="song-add"></a>
+							</div>
+						</div>
+						<div class="song">
+							<div class="song-main">
+								<div class="song-main__img" style="background-image: url(img/img-small.png);">
+									<a href="#" class="play"></a>
+								</div>
+								<div class="song-main__info">
+									<h3 class="song-main__info-name"><a href="#">Название песни</a></h3>
+									<p><a href="#">Имя Артиста</a></p>
+								</div>
+							</div>
+							<div class="song-row">
+								<p>4:36</p>
+								<ul>
+									<li><a href="#"><span class="icon-headp"></span>235</a></li>
+									<li><a href="#"><span class="icon-download"></span>235</a></li>
+									<li><a href="#"><span class="icon-share"></span>235</a></li>
+									<li><a href="#"><span class="icon-like"></span>235</a></li>
+								</ul>
+								<a href="#" class="song-add"></a>
+							</div>
+						</div>
+						<div class="song">
+							<div class="song-main">
+								<div class="song-main__img" style="background-image: url(img/img-small.png);">
+									<a href="#" class="play"></a>
+								</div>
+								<div class="song-main__info">
+									<h3 class="song-main__info-name"><a href="#">Название песни</a></h3>
+									<p><a href="#">Имя Артиста</a></p>
+								</div>
+							</div>
+							<div class="song-row">
+								<p>4:36</p>
+								<ul>
+									<li><a href="#"><span class="icon-headp"></span>235</a></li>
+									<li><a href="#"><span class="icon-download"></span>235</a></li>
+									<li><a href="#"><span class="icon-share"></span>235</a></li>
+									<li><a href="#"><span class="icon-like"></span>235</a></li>
+								</ul>
+								<a href="#" class="song-add"></a>
+							</div>
+						</div>
+						<div class="song">
+							<div class="song-main">
+								<div class="song-main__img" style="background-image: url(img/img-small.png);">
+									<a href="#" class="play"></a>
+								</div>
+								<div class="song-main__info">
+									<h3 class="song-main__info-name"><a href="#">Название песни</a></h3>
+									<p><a href="#">Имя Артиста</a></p>
+								</div>
+							</div>
+							<div class="song-row">
+								<p>4:36</p>
+								<ul>
+									<li><a href="#"><span class="icon-headp"></span>235</a></li>
+									<li><a href="#"><span class="icon-download"></span>235</a></li>
+									<li><a href="#"><span class="icon-share"></span>235</a></li>
+									<li><a href="#"><span class="icon-like"></span>235</a></li>
+								</ul>
+								<a href="#" class="song-add"></a>
+							</div>
+						</div>
+					</div>
+					<div class="content-block">
+						<div class="content-block__top content-block__top-row">
+							<div>
+								<h3 class="content-block__top-title">Видео артиста</h3>
+								<a href="#">(13)</a>
+							</div>
+						</div>
+						<div class="video-slider bg-wh">
+							<div class="video-slide">
+								<div class="video-wrap">
+									<a class="video-img button-modal" href="#modal-video">
+										<span class="video-link">https://www.youtube.com/embed/OXuIqaeg0SI</span>
+										<img src="img/video.jpg" alt="">
+									</a>
+									<h3 class="video-name"><a href="#">Swang Song video</a></h3>
+									<p class="video-author"><a href="#">Dua Lipa</a></p>
+								</div>
+							</div><!-- slide(1) -->
+							<div class="video-slide">
+								<div class="video-wrap">
+									<a class="video-img button-modal" href="#modal-video">
+										<span class="video-link">https://www.youtube.com/embed/OXuIqaeg0SI</span>
+										<img src="img/video.jpg" alt="">
+									</a>
+									<h3 class="video-name"><a href="#">Swang Song video</a></h3>
+									<p class="video-author"><a href="#">Dua Lipa</a></p>
+								</div>
+							</div><!-- slide(2) -->
+							<div class="video-slide">
+								<div class="video-wrap">
+									<a class="video-img button-modal" href="#modal-video">
+										<span class="video-link">https://www.youtube.com/embed/OXuIqaeg0SI</span>
+										<img src="img/video.jpg" alt="">
+									</a>
+									<h3 class="video-name"><a href="#">Swang Song video</a></h3>
+									<p class="video-author"><a href="#">Dua Lipa</a></p>
+								</div>
+							</div><!-- slide(3) -->
+						</div>
+					</div>
+				</div><!-- content -->
+				<div class="radio">
+					<div class="radio-top">
+						<h3 class="radio-title">Радио</h3>
+						<div class="radio-slider">
+							<div class="radio-slide">
+								<p>Love radio</p>
+								<div class="radio-slide__wrap">
+									<img src="img/surface1.svg" alt="">
+								</div>
+							</div>
+							<div class="radio-slide">
+								<p>Love radio</p>
+								<div class="radio-slide__wrap">
+									<img src="img/surface1.svg" alt="">
+								</div>
+							</div>
+							<div class="radio-slide">
+								<p>Love radio</p>
+								<div class="radio-slide__wrap">
+									<img src="img/surface1.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="radio-top__info">
+							<div class="radio-top__info-music">
+								<div class="music-status">
+									
+								</div>
+								<div class="music-info">
+									<p><a href="#">Bruno E</a></p>
+									<span>1923</span>
+								</div>
+							</div>
+							<div class="radio-top__info-quality">
+								<h3 class="radio-subtitle">качество звучания</h3>
+								<div class="radio-top__info-quality__wrap">
+									<p>LQ</p>
+									<div class="toggle toggle-active">
+										<span></span>
+									</div>
+									<p>HQ</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="radio-ether">
+						<h3 class="radio-subtitle">далее в эфире</h3>
+						<div class="radio-ether__wrap">
+							<div class="radio-ether__row">
+								<span>12:42:42</span>
+								<p><a href="#">Unicorn Heads - Get in the...</a></p>
+								<b>2:24</b>
+							</div>
+							<div class="radio-ether__row">
+								<span>12:42:42</span>
+								<p><a href="#">Unicorn Heads - Get in the...</a></p>
+								<b>2:24</b>
+							</div>
+							<div class="radio-ether__row">
+								<span>12:42:42</span>
+								<p><a href="#">Bruno E - 1923</a></p>
+								<b>2:24</b>
+							</div>
+							<div class="radio-ether__row">
+								<span>12:42:42</span>
+								<p><a href="#">Unicorn Heads - Get in the...</a></p>
+								<b>2:24</b>
+							</div>
+							<div class="radio-ether__row">
+								<span>12:42:42</span>
+								<p><a href="#">Unicorn Heads - Get in the...</a></p>
+								<b>2:24</b>
+							</div>
+							<div class="radio-ether__row">
+								<span>12:42:42</span>
+								<p><a href="#">Bruno E - 1923</a></p>
+								<b>2:24</b>
+							</div>
+							<div class="radio-ether__row">
+								<span>12:42:42</span>
+								<p><a href="#">Unicorn Heads - Get in the...</a></p>
+								<b>2:24</b>
+							</div>
+						</div>
+					</div>
+					<div class="radio-bottom">
+						<div class="radio-bottom__info">
+							<h3 class="radio-subtitle">Реклама</h3>
+							<a href="#">Как опубликовать рекламу?</a>
+						</div>
+						<a href="#">
+							<img src="img/banner.png" alt="">
+						</a>
+					</div>
+				</div><!-- radio -->
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal modal-small" id="modal-come">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-wrap modal-wrap__small">
+				<form method="POST">
+					<h3 class="modal-title">Вход</h3>
+					<div class="modal-input">
+						<input type="text" name="name" placeholder="Введите имя">
+					</div>
+					<div class="modal-input">
+						<input type="password" name="password" placeholder="Введите пароль">
+						<p class="forgot"><a href="#modal-forgot" class="button-modal">Забыли пароль?</a></p>
+					</div>
+					<button class="main-btn submit">войти</button>
+				</form>
+			</div>
+			<div class="modal-bottom">
+				<p>Войти с помощью</p>
+				<ul class="social-networks">
+					<li><a class="fac" href="#"></a></li>
+					<li><a class="inst" href="#"></a></li>
+					<li><a class="com" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-checkIn">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<form method="POST">
+					<h3 class="modal-title">Регистрация</h3>
+					<div class="modal-input">
+						<input type="text" name="name" placeholder="Введите имя">
+					</div>
+					<div class="modal-input">
+						<input type="text" name="name" placeholder="Фамилия">
+					</div>
+					<div class="modal-input">
+						<input type="email" name="email" placeholder="Email">
+					</div>
+					<div class="modal-input">
+						<input type="password" name="password" placeholder="Пароль">
+					</div>
+					<div class="modal-input">
+						<input type="password" name="password" placeholder="Повторите пароль">
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<span></span>
+						<p>Я согласен с условиями использования и политикой контента</p>
+					</div>
+					<button class="main-btn submit">зарегистрироваться</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-small" id="modal-forgot">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<h3 class="modal-title">Восстановление пароля</h3>
+				<div class="modal-wrap__info">
+					<p>На ваш эл. адрес <span>email@email.com</span> было отправлено письмо со ссылкой для смены пароля.</p>
+					<ul>
+						<li>Если вы не получили письмо, попробуйте ещё раз через <b>60 сек</b>.</li>
+						<li>Или свяжитесь с нами по <span>email@email.com</span></li>
+					</ul>
+					<span class="modal-close main-btn">ок</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-video" id="modal-video">
+		<div class="close"></div>
+		<div class="modal-content">
+			<div class="modal-video__wrap">
+				<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
