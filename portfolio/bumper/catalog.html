@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="basket-overlay"></div>
+	<div class="mob-menu">
+		<div class="close"></div>
+		<p><a class="button-modal" href="#modal-check-in">Вход</a> / <a class="button-modal" href="#modal-login">Регистрация</a></p>
+		<ul class="mob-menu__list">
+			<li><a href="#">АвтоВаз в цвет </a></li>
+			<li><a href="#">Кузовные детали </a></li>
+			<li><a href="#">Бамперы </a></li>
+			<li><a href="#">Пластик </a></li>
+			<li><a href="#">Механика </a></li>
+			<li><a class="active" href="#">Оптика Подбор по модели</a></li>
+		</ul>
+		<ul class="mob-menu__categories">
+			<li><a href="#">О компании </a></li>
+			<li><a href="#">Доставка и оплата </a></li>
+			<li><a href="#">Палитра цветов </a></li>
+			<li><a href="#">Скидки оптовикам</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-row">
+				<div class="header-bar"></div>
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-wrap">
+					<div class="header-wrap__row">
+						<div class="header-contacts">
+							<a href="#" class="header-phone">+7 (499) 652-92-16</a>
+							<ul>
+								<li><a class="whatsapp-ico" href="#"></a></li>
+								<li><a class="viber-ico" href="#"></a></li>
+							</ul>
+						</div>
+						<ul class="header-menu">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Палитра цветов</a></li>
+							<li><a href="#">Скидки оптовикам</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<p class="header-actions"><a class="button-modal" href="#modal-check-in">Вход</a> / <a class="button-modal" href="#modal-login">Регистрация</a></p>
+					</div>
+					<div class="header-wrap__row">
+						<ul class="header-categories">
+							<li><a href="#">АвтоВаз в цвет</a></li>
+							<li class="drop">
+								<a href="#">Кузовные детали</a>
+								<ul>
+									<li><a href="#">Багажник</a></li>
+									<li><a href="#">Бампера</a></li>
+									<li><a href="#">Двери</a></li>
+									<li><a href="#">Запчасти кузова</a></li>
+									<li><a href="#">прочие</a></li>
+									<li><a href="#">Защита двигателя</a></li>
+									<li><a href="#">Капот</a></li>
+									<li><a href="#">Крылья</a></li>
+									<li><a href="#">Крышка багажника</a></li>
+									<li><a href="#">Панель крыши</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Бамперы</a></li>
+							<li><a href="#">Пластик</a></li>
+							<li><a href="#">Механика</a></li>
+							<li><a href="#">Оптика</a></li>
+							<li><a href="#">Подбор по модели</a></li>
+						</ul>
+						<div class="header-basket">
+							<div class="header-basket__main">
+								<p>32 990 Р</p>
+								<div class="header-basket__ico">
+									<span>24</span>
+								</div>
+							</div>
+							<div class="header-basket__drop">
+								<div class="header-basket__row">
+									<div class="close"></div>
+									<div class="header-basket__img">
+										<img src="img/product-small-2.png" alt="">
+									</div>
+									<div class="header-basket__info">
+										<h3 class="header-basket__info-title"><a href="#">Бампер ВАЗ 21704 передний «Белое облако» 240</a></h3>
+										<div class="header-basket__info-row">
+											<p class="header-basket__info-price">2 900 руб.</p>
+											<div>
+												<p class="header-basket__info-old">3600 руб.</p>
+												<span class="discount">-5%</span>
+											</div>
+										</div>
+									</div>
+								</div><!-- row(1) -->
+								<div class="header-basket__row">
+									<div class="close"></div>
+									<div class="header-basket__img">
+										<img src="img/product-small-2.png" alt="">
+									</div>
+									<div class="header-basket__info">
+										<h3 class="header-basket__info-title"><a href="#">Бампер ВАЗ 21704 передний «Белое облако» 240</a></h3>
+										<div class="header-basket__info-row">
+											<p class="header-basket__info-price">2 900 руб. <b>х3</b></p>
+											<div>
+												<p class="header-basket__info-old">3600 руб.</p>
+												<span class="discount">-5%</span>
+											</div>
+										</div>
+									</div>
+								</div><!-- row(2) -->
+								<div class="header-basket__row">
+									<div class="close"></div>
+									<div class="header-basket__img">
+										<img src="img/product-small-2.png" alt="">
+									</div>
+									<div class="header-basket__info">
+										<h3 class="header-basket__info-title"><a href="#">Бампер ВАЗ 21704 передний «Белое облако» 240</a></h3>
+										<div class="header-basket__info-row">
+											<p class="header-basket__info-price">2 900 руб. <b>х3</b></p>
+											<div>
+												<p class="header-basket__info-old">3600 руб.</p>
+												<span class="discount">-5%</span>
+											</div>
+										</div>
+									</div>
+								</div><!-- row(3) -->
+								<div class="header-basket__bottom">
+									<p>Итого: <b>12 900 руб.</b></p>
+									<a href="#" class="main-btn">Перейти в корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-search">
+				<form action="">
+					<input type="text" name="search" placeholder="Введите название, номер детали">
+					<button class="search"></button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start catalog -->
+	<section class="catalog section-top">
+		<div class="wrapper">
+			<div class="catalog-top">
+				<div class="catalog-filter"></div>
+				<h1 class="section-title">Кузовные детали</h1>
+				<div class="catalog-top__row">
+					<p>Сортировать по:</p>
+					<ul>
+						<li class="active"><a href="#">Релевантность</a></li>
+						<li><a href="#">Рекомендуемые товары</a></li>
+						<li><a class="price" href="#">Цене</a></li>
+					</ul>
+				</div>
+				<div class="catalog-top__form">
+					<a class="card-list" href="#"></a>
+					<a class="card-col active" href="#"></a>
+				</div>
+			</div>
+			<div class="catalog-row">
+				<div class="catalog-sidebar">
+					<div class="close"></div>
+					<div class="catalog-sidebar__top">
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span></span>
+							<p>Багажник</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<span></span>
+							<p>Бампера</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<span></span>
+							<p>Двери</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<span></span>
+							<p>Запчасти кузова прочие</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<span></span>
+							<p>Защита двигателя</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<span></span>
+							<p>Капот</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<span></span>
+							<p>Крылья</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<span></span>
+							<p>Крышка багажника</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox">
+							<span></span>
+							<p>Панель крыши</p>
+						</div>
+					</div>
+					<div class="catalog-sidebar__wrap">
+						<div class="catalog-sidebar__accordeon accordeon">
+							<h3 class="catalog-sidebar__accordeon-title">Бренд</h3>
+							<div class="accordeon-block">
+								<div class="catalog-sidebar__accordeon-block">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos officia, rerum. Explicabo, eaque sit aut saepe. Porro ad error sed.</p>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-sidebar__accordeon accordeon">
+							<h3 class="catalog-sidebar__accordeon-title">Тип детали кузова</h3>
+							<div class="accordeon-block">
+								<div class="catalog-sidebar__accordeon-block">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos officia, rerum. Explicabo, eaque sit aut saepe. Porro ad error sed.</p>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-sidebar__accordeon accordeon">
+							<h3 class="catalog-sidebar__accordeon-title">Применимость к авто</h3>
+							<div class="accordeon-block">
+								<div class="catalog-sidebar__accordeon-block">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos officia, rerum. Explicabo, eaque sit aut saepe. Porro ad error sed.</p>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-sidebar__accordeon accordeon">
+							<h3 class="catalog-sidebar__accordeon-title">Цена</h3>
+							<div class="accordeon-block">
+								<div class="catalog-sidebar__accordeon-block">
+									<div class="catalog-sidebar__price">
+										<div class="catalog-sidebar__row">
+											<div class="catalog-sidebar__row-col">
+												<p>от</p>
+												<input type="text" id="search-price__1">
+											</div>
+											<div class="catalog-minus"></div>
+											<div class="catalog-sidebar__row-col">
+												<p>до</p>
+												<input type="text" id="search-price__2">
+											</div>
+										</div>
+										<div id="slider-range__1"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-content">
+					<div class="catalog-content__row">
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(1) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(2) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(3) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(4) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(5) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(6) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(7) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(8) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(9) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(10) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(11) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(12) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(13) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(14) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(15) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(16) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(17) -->
+						<div class="products-card">
+							<div class="products-card__wrap">
+								<a href="#" class="products-card__link"></a>
+								<div class="products-card__top">
+									<span>2,4 кг</span>
+									<span>23 х 534 х 324 см</span>
+								</div>
+								<div class="products-card__img">
+									<img src="img/product-1.png" alt="">
+								</div>
+								<h3 class="products-card__title">Бампер ВАЗ 21704 передний "Белое облако" 240</h3>
+								<p class="products-card__price">2 900 руб.</p>
+								<div class="products-card__row">
+									<p>3600 руб.</p>
+									<span class="products-card__discount">-10%</span>
+								</div>
+								<div class="products-card__bottom">
+									<div class="products-card__input">
+										<span class="products-card__ico products-card__minus">-</span>
+										<input type="text" value="0">
+										<span class="products-card__ico products-card__plus">+</span>
+									</div>
+									<a href="#" class="products-card__basket">В корзину</a>
+								</div>
+							</div>
+						</div><!-- card(18) -->
+					</div>
+					<div class="pagination">
+					  <ul>
+					    <li class="active"><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li><a href="#">6</a></li>
+					    <li><a href="#">7</a></li>
+					    <li>...</li>
+					    <li><a href="#">25</a></li>
+					  </ul>
+					  <div class="pagination-row">
+					  	<p>Выводить по</p>
+					  	<div class="pagination-deduce">18</div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end catalog -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-col footer-col__1">
+				<div class="footer-col__info">
+					<span class="footer-col__info-title">Работаем с 10:00 до 20:00</span>
+					<a href="tel:+74996529216" class="phone">+7 (499) 652-92-16</a>
+					<a href="tel:+79015100097" class="phone">+7 (901) 510-00-97</a>
+				</div>
+				<div class="footer-col__info">
+					<span class="footer-col__info-title">Самовывоз с 8:00 до 17:00</span>
+					<p>Москва, метро Кожуховская,<br> 2й Южнопортовый проезд, 10</p>
+				</div>
+			</div>
+			<div class="footer-col footer-col__2">
+				<ul class="footer-col__list">
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Доставка и оплата </a></li>
+					<li><a href="#">Скидки оптовикам </a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Палитра цветов</a></li>
+				</ul>
+			</div>
+			<div class="footer-col footer-col__3">
+				<div class="footer-col__block">
+					<span>Способы оплаты:</span>
+					<div class="footer-col__block-row">
+						<img src="img/visa.svg" alt="">
+						<img src="img/master-card.svg" alt="">
+					</div>
+				</div>
+				<div class="footer-col__block">
+					<span>Доставка в регионы:</span>
+					<div class="footer-col__block-row">
+						<img src="img/pek.svg" alt="">
+						<img src="img/sdek.svg" alt="">
+					</div>
+				</div>
+				<a href="#" class="price-list">Скачать Прайс-лист</a>
+			</div>
+			<div class="footer-col footer-col__4">
+				<div class="footer-col__logo">
+					<img src="img/logo.svg" alt="">
+				</div>
+				<a href="#" class="politics">Политика конфиденциальности</a>
+				<p>Создание сайта -<a href="#">Nikoland</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-login">
+		<div class="modal-content">
+			<div class="close"></div>
+			<form method="">
+				<h3 class="modal-content__title">Авторизация</h3>
+				<p class="modal-content__text">Уже были у нас? <a class="button-modal" href="#modal-check-in">Регистрация</a></p>
+				<div class="modal-content__input">
+					<input type="email" name="email" placeholder="E-mail">
+				</div>
+				<div class="modal-content__input">
+					<input type="password" name="password" placeholder="Пароль">
+				</div>
+				<button class="main-btn">Войти</button>
+				<p><a href="#">Забыли пароль?</a></p>
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="modal-check-in">
+		<div class="modal-content">
+			<div class="close"></div>
+			<form method="">
+				<h3 class="modal-content__title">Регистрация</h3>
+				<p class="modal-content__text">Уже были у нас? <a class="button-modal" href="#modal-login">Авторизация</a></p>
+				<div class="modal-content__input">
+					<input type="text" name="name" placeholder="ФИО">
+				</div>
+				<div class="modal-content__input">
+					<input type="email" name="email" placeholder="E-mail">
+				</div>
+				<div class="modal-content__input">
+					<input type="password" name="password" placeholder="Пароль">
+				</div>
+				<button class="main-btn">Зарегистрироваться</button>
+				<div class="checkbox">
+					<input type="checkbox" checked>
+					<span></span>
+					<p>Согласен с обработкой <a href="#">персональных данных</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
