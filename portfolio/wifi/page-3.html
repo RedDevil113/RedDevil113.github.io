@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href="https://st.townwifi.ru/assets/access/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://st.townwifi.ru/assets/access/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!--[if lt IE 9]><script src="//st.townwifi.ru/assets/access/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <!--[if lt IE 9]>
+  <script src="//st.townwifi.ru/assets/access/js/html5shiv.min.js"></script>
+  <script src="//st.townwifi.ru/assets/access/js/respond.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="https://st.townwifi.ru/assets/access/js/ie-emulation-modes-warning.js"></script>
+  <script src="https://st.townwifi.ru/assets/access/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="https://st.townwifi.ru/assets/access/jquery/jquery.min.js"></script>
+  <script src="https://st.townwifi.ru/assets/access/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start main -->
+	<section class="main">
+		<div class="main-img">
+			<img src="img/main-bg.png" alt="">
+		</div>
+		<div class="main-row">
+			<div class="main-logo">
+				<a href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>
+			<div class="main-wrap">
+				<div class="main-wrap__row active-2">
+					<div class="main-wrap__col main-wrap__col-1">
+						<p>Введите телефон</p>
+					</div>
+					<div class="main-wrap__col main-wrap__col-2">
+						<p>Введите СМС-код</p>
+					</div>
+					<div class="main-wrap__col main-wrap__col-3">
+						<p>Вы в интернете</p>
+					</div>
+				</div>
+				<div class="main-wrap__form">
+					<h3 class="main-wrap__form-title">Ваш полученный СМС-код</h3>
+					<form action="">
+						<input type="text" placeholder="45673">
+						<button class="second-btn">Отправить</button>
+					</form>
+				</div>
+			</div>
+			<div class="main-nearby">
+				<h3 class="main-nearby__title">Рядом с вами</h3>
+				<div class="main-nearby__row">
+					<div class="main-nearby__info">
+						<img src="img/logo-1.png" alt="">
+						<p>Макдональдз</p>
+					</div>
+					<p>100 м</p>
+				</div>
+				<div class="main-nearby__row">
+					<div class="main-nearby__info">
+						<img src="img/logo-1.png" alt="">
+						<p>Макдональдз</p>
+					</div>
+					<p>100 м</p>
+				</div>
+				<div class="main-nearby__row">
+					<div class="main-nearby__info">
+						<img src="img/logo-1.png" alt="">
+						<p>Макдональдз</p>
+					</div>
+					<p>100 м</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start footer -->
+	<footer class="footer">
+		<ul>
+			<li><a href="#">Privacy policy</a></li>
+			<li><a href="#">Help</a></li>
+			<li><a href="#">Русский</a></li>
+		</ul>
+	</footer>
+	<!-- end footer -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="success">
+				<h3 class="modal-content__title">Спасибо за заявку</h3>
+				<p class="modal-content__subtitle">Мы перезвоним Вам в ближайшее время</p>
+			</div>
+			<form class="callback" method="POST">
+				<input type="hidden" name="subject" value="" id="info-form">
+				<h3 class="modal-content__title">Оставьте заявку</h3>
+				<p class="modal-content__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
+				<div class="modal-content__input">
+					<input type="text" name="name" placeholder="Введите имя" required minlength="2">
+				</div>
+				<div class="modal-content__input">
+					<input type="tel" name="phone" placeholder="Введите телефон" minlength="8">
+				</div>
+				<div class="modal-content__input">
+					<input type="text" name="address" placeholder="Введите адрес" minlength="5">
+				</div>
+				<button class="main-btn submit">ОСТАВИТЬ ЗАЯВКУ</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
