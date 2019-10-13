@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start lk-main -->
+	<section class="lk-main">
+		<div class="lk-wrapper">
+			<ul class="lk-crumbs">
+				<li><a href="#">Главная</a></li>
+				<li>Личный кабинт</li>
+			</ul>
+			<h1 class="lk-title">Личный кабинет</h1>
+			<div class="lk-row">
+				<div class="lk-sidebar">
+					<div class="lk-sidebar-block">
+						<h3 class="lk-sidebar-title">ООО "Рога и копыта"</h3>
+						<span class="lk-sidebar-subtitle">rogaikopita@hotmail.com</span>
+						<ul>
+							<li><a class="active" href="#"><i class="fa fa-user" aria-hidden="true"></i><span>Персональные данные</span></a></li>
+							<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>Организации</span></a></li>
+							<li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i><span>Мои заказы</span></a></li>
+							<li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i><span>Новый заказ</span></a></li>
+						</ul>
+						<a href="#" class="lk-sidebar-exit"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i><span>Выход</span></a>
+					</div>
+					<div class="lk-sidebar-block">
+						<span class="lk-sidebar-subtitle">Ваш менеджер:</span>
+						<div class="lk-sidebar-human"><i class="fa fa-user" aria-hidden="true"></i><span>Наталья Богатырева</span></div>
+						<div class="lk-sidebar-link">
+							<a href="#">Связаться с менеджером</a>
+						</div>
+					</div>
+				</div>
+				<div class="lk-content">
+					<div class="lk-content-wrap">
+						<div class="lk-content-name">
+							<i class="fa fa-user-o" aria-hidden="true"></i>
+							<h2 class="lk-content-title">Персональные данные</h2>
+						</div>
+						<div class="lk-content-row">
+							<div class="lk-content-col">
+								<p>Основная информация</p>
+								<div class="lk-input">
+									<label for="i-1">Название компании</label>
+									<div class="lk-input-wrap">
+										<input type="text" id="i-1">
+									</div>
+								</div>
+								<div class="lk-input">
+									<label for="i-2">Контактное лицо</label>
+									<div class="lk-input-wrap">
+										<input type="text" id="i-2">
+									</div>
+								</div>
+								<div class="lk-input">
+									<label for="i-3">Телефон</label>
+									<div class="lk-input-wrap">
+										<input type="text" id="i-3">
+									</div>
+								</div>
+							</div><!-- col(1) -->
+							<div class="lk-content-col">
+								<p>Сменить пароль</p>
+								<div class="lk-input">
+									<label for="i-4">Действующий пароль</label>
+									<div class="lk-input-wrap">
+										<input type="text" id="i-4">
+										<i class="fa fa-eye-slash" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="lk-input">
+									<label for="i-5">Новый пароль</label>
+									<div class="lk-input-wrap">
+										<input type="text" id="i-5">
+										<i class="fa fa-eye" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="lk-input">
+									<label for="i-6">Повторите новый пароль</label>
+									<div class="lk-input-wrap">
+										<input type="text" id="i-6">
+										<i class="fa fa-eye-slash" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div><!-- col(2) -->
+						</div>
+						<div class="lk-bottom">
+							<a href="#" class="main-btn">Сохранить настройки</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end lk-main -->
+	<!-- modal-form -->
+	<div class="modal-overlay open-overlay"></div>
+	<div class="lk-modal lk-modal-open" id="lk-modal">
+		<div class="lk-close">
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div>
+		<h2 class="lk-modal-title">Добавление новой организации</h2>
+		<h3 class="lk-modal-subtitle">Информация о покупателе</h3>
+		<div class="lk-modal-row">
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-1">Контактное лицо <span>*</span></label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-1">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-2">E-mail <span>*</span></label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-2">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-3">Телефон <span>*</span></label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-3">
+					</div>
+				</div>
+			</div><!-- col -->
+		</div>
+		<h3 class="lk-modal-subtitle">Данные плательщика</h3>
+		<div class="lk-modal-row">
+			<div class="lk-modal-col">
+				<div class="lk-input lk-select">
+					<label for="j-4">Тип плательщика</label>
+					<div class="lk-input-wrap">
+						<select name="">
+							<option value="">Юридическое лицо</option>
+							<option value="">Юридическое лицо</option>
+							<option value="">Юридическое лицо</option>
+						</select>
+						<i class="fa fa-angle-down" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-5">ОКПО</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-5">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-6">Название организации <span>*</span></label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-6">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-7">Номер договора</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-7">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-8">ИНН <span>*</span></label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-8">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-9">Сайт</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-9">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-10">КПП</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-10">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-11">Юридический адрес <span>*</span></label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-11">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-checkbox">
+				<div class="lk-modal-checkbox-wrap">
+					<label>Фактический адрес</label>
+					<div class="lk-checkbox">
+						<input type="checkbox" checked>
+						<span></span>
+						<p>Совпадает с юридическим</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3 class="lk-modal-subtitle">Банковские реквизиты</h3>
+		<div class="lk-modal-row">
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-12">Номер счета</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-12">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-13">Корр.счет</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-13">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-14">БИК</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-14">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-15">Местонахождение банка</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-15">
+					</div>
+				</div>
+			</div><!-- col -->
+			<div class="lk-modal-col">
+				<div class="lk-input">
+					<label for="j-16">Банк</label>
+					<div class="lk-input-wrap">
+						<input type="text" id="j-16">
+					</div>
+				</div>
+			</div><!-- col -->
+		</div>
+		<div class="lk-modal-bottom">
+			<a href="#" class="second-btn">Отменить</a>
+			<a href="#" class="main-btn">Добавить</a>
+		</div>
+	</div>
+</body>
+</html>
