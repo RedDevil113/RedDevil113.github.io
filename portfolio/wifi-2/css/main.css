@@ -124,8 +124,7 @@ input {
 
 .main {
   position: relative;
-  padding: 165px 0 120px;
-  min-height: 830px; }
+  padding: 165px 0 120px; }
   .main-img {
     position: absolute;
     width: 100%;
@@ -312,8 +311,7 @@ input {
 
 @media only screen and (max-width: 768px) {
   .main {
-    padding: 100px 0 120px;
-    min-height: 90vh; }
+    padding: 100px 0 80px; }
     .main-img {
       top: 20px; }
     .main-info__title {
