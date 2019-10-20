@@ -17,6 +17,27 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
 <body>
+	<div class="overlay"></div>
+	<div class="mob-menu">
+		<div class="mob-menu__close"></div>
+		<div class="mob-menu__top">
+			<div class="mob-menu__logo">
+				<a href="#">
+					<img src="img/logo.png" alt="">
+					<span>найти сразу</span>
+				</a>
+			</div>
+		</div>
+		<div class="mob-menu__wrap">
+			<ul>
+				<li><a href="#">Задания</a></li>
+				<li><a href="#">Отклики</a></li>
+				<li><a href="#">Как работает Таланты Тут?</a></li>
+				<li><a href="#">Техническая поддержка</a></li>
+				<li><a href="#">Популярные вопросы</a></li>
+			</ul>
+		</div>
+	</div>
 	<!-- start header -->
 	<header class="header header-drop">
 		<div class="wrapper">
@@ -31,7 +52,7 @@
 					<li><a class="active" href="#">Задания</a></li>
 					<li><a href="#">Отклики</a></li>
 					<li class="drop">
-						<a href="#">Помощь</a>
+						<a class="drop-text" href="#">Помощь</a>
 						<ul class="drop-list">
 							<li><a href="#">Как работает Таланты Тут?</a></li>
 							<li><a href="#">Техническая поддержка</a></li>
@@ -46,37 +67,73 @@
 				</div>
 				<div class="header-notification drop">
 					<span class="header-ico__mes"></span>
-					<div class="header-ico header-notification__ico"></div>
+					<div class="header-ico header-notification__ico drop-text"></div>
 					<div class="header-notification__list drop-list">
-						<ul>
-							<li class="color-orange"><a href="#">Выведено с баланса - 3 000 р.</a></li>
-							<li class="color-orange"><a href="#">Переведно в арбитраж “Установить душевую каб в ванную комнату”</a></li>
-							<li class="color-green"><a href="#">Заказчик зарезервировал средства на “Установить душевую каб ...”</a></li>
-							<li class="color-blue"><a href="#">Сообщения в “Установить душевую кабину в ванную комнату”</a></li>
-							<li class="color-green"><a href="#">Пополнен баланс на 3000р.</a></li>
-						</ul>
-						<div class="header-notification__list-hide">
+						<div class="header-notification__list-wrap">
 							<ul>
 								<li class="color-orange"><a href="#">Выведено с баланса - 3 000 р.</a></li>
 								<li class="color-orange"><a href="#">Переведно в арбитраж “Установить душевую каб в ванную комнату”</a></li>
 								<li class="color-green"><a href="#">Заказчик зарезервировал средства на “Установить душевую каб ...”</a></li>
 								<li class="color-blue"><a href="#">Сообщения в “Установить душевую кабину в ванную комнату”</a></li>
 								<li class="color-green"><a href="#">Пополнен баланс на 3000р.</a></li>
-								<li class="color-orange"><a href="#">Выведено с баланса - 3 000 р.</a></li>
-								<li class="color-orange"><a href="#">Переведно в арбитраж “Установить душевую каб в ванную комнату”</a></li>
-								<li class="color-green"><a href="#">Заказчик зарезервировал средства на “Установить душевую каб ...”</a></li>
-								<li class="color-blue"><a href="#">Сообщения в “Установить душевую кабину в ванную комнату”</a></li>
-								<li class="color-green"><a href="#">Пополнен баланс на 3000р.</a></li>
 							</ul>
+							<div class="header-notification__list-hide">
+								<ul>
+									<li class="color-orange"><a href="#">Выведено с баланса - 3 000 р.</a></li>
+									<li class="color-orange"><a href="#">Переведно в арбитраж “Установить душевую каб в ванную комнату”</a></li>
+									<li class="color-green"><a href="#">Заказчик зарезервировал средства на “Установить душевую каб ...”</a></li>
+									<li class="color-blue"><a href="#">Сообщения в “Установить душевую кабину в ванную комнату”</a></li>
+									<li class="color-green"><a href="#">Пополнен баланс на 3000р.</a></li>
+									<li class="color-orange"><a href="#">Выведено с баланса - 3 000 р.</a></li>
+									<li class="color-orange"><a href="#">Переведно в арбитраж “Установить душевую каб в ванную комнату”</a></li>
+									<li class="color-green"><a href="#">Заказчик зарезервировал средства на “Установить душевую каб ...”</a></li>
+									<li class="color-blue"><a href="#">Сообщения в “Установить душевую кабину в ванную комнату”</a></li>
+									<li class="color-green"><a href="#">Пополнен баланс на 3000р.</a></li>
+								</ul>
+							</div>
 						</div>
 						<div class="header-notification__bottom">
 							<a href="#">Показать ещё (24)</a>
 							<div class="header-settings"></div>
 						</div>
 					</div>
+					<div class="header-notification__push">
+						<div class="header-notification__push-top">
+							<div class="header-notification__push-back"></div>
+							<p>Тип уведомления</p>
+							<span><img src="img/desktop-monitor.svg" alt="">Push</span>
+						</div>
+						<div class="header-notification__push-wrap">
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Смена статуса</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Финансы приход</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox" checked>
+								<span></span>
+								<p>Финансы расход</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Системные предупреждение</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Системные информирование</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="header-profile drop">
-					<div class="header-profile__row">
+					<div class="header-profile__row drop-text">
 						<img src="img/human-ico.png" alt="">
 						<p>Сергей</p>
 					</div>
@@ -85,6 +142,7 @@
 							<li><a href="#">Анкета</a></li>
 							<li><a href="#">Настройки</a></li>
 							<li>Финансы: <span>10 000 р.</span></li>
+							<li>Финансы: <i>0 р.</i> <a class="head-link" href="#">пополнить</a></li>
 							<li><a href="#">Помощь</a></li>
 						</ul>
 						<div class="toggle">
@@ -234,7 +292,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="main-block">
+					<div class="main-block certifications">
 						<h3 class="content-subtitle">Сертификаты и награды</h3>
 						<div class="awards">
 							<div class="btn-center">
@@ -246,7 +304,7 @@
 							<div class="awards-slider">
 								<div class="awards-slide">
 									<div class="awards-slide__wrap">
-										<a class="fancybox" rel="fancybox-thumb" data-fancybox="gallery-1" href="img/certificate.png">
+										<a class="fancybox" rel="fancybox-thumb" title="Краткое описание проделаной работы" data-fancybox="gallery-1" href="img/fancybox-img.png">
 											<img src="img/certificate.png" alt="" />
 											<div class="fancybox-hover">
 												<span class="close"></span>
@@ -256,7 +314,7 @@
 								</div><!-- slide(1) -->
 								<div class="awards-slide">
 									<div class="awards-slide__wrap">
-										<a class="fancybox" rel="fancybox-thumb" data-fancybox="gallery-1" href="img/certificate.png">
+										<a class="fancybox" rel="fancybox-thumb" title="Краткое описание проделаной работы" data-fancybox="gallery-1" href="img/fancybox-img.png">
 											<img src="img/certificate.png" alt="" />
 											<div class="fancybox-hover">
 												<span class="close"></span>
@@ -266,7 +324,7 @@
 								</div><!-- slide(2) -->
 								<div class="awards-slide">
 									<div class="awards-slide__wrap">
-										<a class="fancybox" rel="fancybox-thumb" data-fancybox="gallery-1" href="img/certificate.png">
+										<a class="fancybox" rel="fancybox-thumb" title="Краткое описание проделаной работы" data-fancybox="gallery-1" href="img/fancybox-img.png">
 											<img src="img/certificate.png" alt="" />
 											<div class="fancybox-hover">
 												<span class="close"></span>
@@ -276,7 +334,7 @@
 								</div><!-- slide(3) -->
 								<div class="awards-slide">
 									<div class="awards-slide__wrap">
-										<a class="fancybox" rel="fancybox-thumb" data-fancybox="gallery-1" href="img/certificate.png">
+										<a class="fancybox" rel="fancybox-thumb" title="Краткое описание проделаной работы" data-fancybox="gallery-1" href="img/fancybox-img.png">
 											<img src="img/certificate.png" alt="" />
 											<div class="fancybox-hover">
 												<span class="close"></span>
@@ -306,9 +364,9 @@
 					</div>
 					<div class="sidebar-video main-block">
 						<h3 class="sidebar-title">Загрузите видео</h3>
-						<div class="video">
-							<iframe src="https://www.youtube.com/embed/OXuIqaeg0SI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
+						<a href="https://www.youtube.com/watch?v=OXuIqaeg0SI&t=" id="frame" class="video" style="background-image: url(img/video.png);">
+							<span class="video-hover"></span>
+						</a>
 						<div class="sidebar-video__bottom">
 							<div class="sidebar-video__bottom-wrap">
 								<div class="file-btn">
