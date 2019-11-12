@@ -82,17 +82,20 @@
 		<div class="wrapper">
 			<div class="profile-edit"></div>
 			<div class="profile-avatar">
-				<div class="profile-avatar__img">
-					<img src="img/human-img.jpg" alt="">
-					<div class="status-active"></div>
-					<a href="#" class="ico-pencil"></a>
+				<div class="profile-avatar__user">
+					<img src="img/img-user.svg" alt="">
+					<p>Нет аватара</p>
+					<div class="main-btn download-btn">
+						Загрузить
+						<input type="file">
+					</div>
 				</div>
 				<div class="profile-avatar__bottom">
 					<div class="profile-avatar__row">
-						<a href="#modal-follow" class="main-btn button-modal">Подписаться</a>
+						<a href="#modal-subscriptions" class="main-btn gray-btn button-modal">Подписаться</a>
 						<a href="#modal-rating" class="profile-avatar__star button-modal">
 							<div class="ico-star ico-star-big"></div>
-							<span>9.8</span>
+							<span>0.0</span>
 						</a>
 					</div>
 					<div class="profile-avatar__link">
@@ -104,26 +107,49 @@
 				<div class="profile-info">
 					<div class="profile-name">
 						<h1 class="profile-title">EmiliaHult</h1>
-						<ul>
-							<li><img src="img/youtube.png" alt=""></li>
-							<li><img src="img/ico-confirmed.svg" alt=""></li>
-							<li><img src="img/like-big.svg" alt=""></li>
-						</ul>
 					</div>
 					<ul class="profile-social">
 						<li><a href="#"><img src="img/social-3.svg" alt=""></a></li>
 						<li><a href="#"><img src="img/social-2.svg" alt=""></a></li>
 						<li><a href="#"><img src="img/social-1.svg" alt=""></a></li>
 					</ul>
-					<div class="profile-follow">
-						<div class="ico-follow"></div>
-						<p><span>89 700</span>фолловеров</p>
+					<div class="profile-redact">
+						<div class="profile-redact__add">
+							<input type="text" name="text" placeholder="Ссылка на канал">
+							<select name="text" id="platforms">
+								<option value="youtube"></option>
+							  <option value="twitch"></option>
+							</select>
+							<div class="ico-add"></div>
+						</div>
+						<div class="profile-redact__row">
+							<a href="#" class="profile-redact__confirm">
+								<img src="img/ico-confirmed.svg" alt="">
+								<span>Подтвердить личность</span>
+							</a>
+							<div class="profile-follow">
+								<div class="ico-follow"></div>
+								<p><span>10</span>фолловеров</p>
+							</div>
+						</div>
+						<div class="profile-redact__text">
+							<p>Основная тема стримов:</p>
+							<select name="text" id="">
+								<option value="">Counter-Strike: Global Offensive</option>
+								<option value="">Counter-Strike: Global Offensive</option>
+								<option value="">Counter-Strike: Global Offensive</option>
+								<option value="">Counter-Strike: Global Offensive</option>
+							</select>
+						</div>
+						<div class="input-block">
+							<label for="i-3">Расскажите о себе:</label>
+							<input id="i-3" type="text" name="text">
+						</div>
 					</div>
-					<p><b>Основная тема стримов:</b> Counter-Strike: Global Offensive</p>
-					<p>Уже несколько лет является одним из лучших игроков планеты и самым перспективным игроком в Дании. Ежегодно входит в топ-10 лучших игроков мира по мнению известных изданий и  игровых порталов.</p>
 				</div>
 				<div class="profile-bottom">
 					<div class="profile-bottom__col profile-bottom__col-first">
+						<h4 class="profile-bottom__title">Оборудование:</h4>
 						<div class="accordeon">
 							<p class="accordeon-title"><span>Конфигурация ПК</span></p>
 							<div class="accordeon-block">
@@ -175,66 +201,17 @@
 					</div>
 					<div class="profile-bottom__col">
 						<h4 class="profile-bottom__title">Администратор:</h4>
-						<div class="profile-bottom__admin">
-							<div class="profile-bottom__admin-img">
-								<img src="img/human-1.png" alt="">
-							</div>
-							<div class="profile-bottom__admin-info">
-								<p>hellomoto12</p>
-								<span>админ</span>
-							</div>
-						</div>
+						<a href="#" class="main-btn main-btn-light">Выбрать...</a>
 					</div>
 				</div>
 			</div>
-			<div class="profile-photo">
-				<div class="profile-photo__wrap">
-					<div class="profile-photo__row">
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
-						<div class="profile-photo__col">
-							<a class="fancybox" rel="fancybox-thumb" href="img/img-small.jpg"><img src="img/img-small.jpg" alt=""/></a>
-						</div>
+			<div class="profile-photo profile-photo__download">
+				<div class="download-block">
+					<div class="download-block__wrap">
+						<input type="file">
+						<div class="ico-download"></div>
+						<span>Загрузить фон аккаунта</span>
+						<p>Допустимые форматы: .jpg, .png, .gif. Максимальный размер до 5 Мб</p>
 					</div>
 				</div>
 			</div>
@@ -242,7 +219,7 @@
 	</section>
 	<!-- end profile -->
 	<!-- start achievements -->
-	<section class="achievements">
+	<section class="achievements achievements-prof">
 		<div class="achievements-top">
 			<div class="wrapper">
 				<div class="achievements-top__wrap">
@@ -280,122 +257,29 @@
 		<div class="achievements-bottom">
 			<div class="wrapper">
 				<div class="achievements-bottom__col">
-					<div class="post post-big">
-						<div class="post-top">
-							<img src="img/post-3.jpg" alt="">
+					<div class="achievements-records">
+						<div class="achievements-records__block">
+							<img src="img/post.png" alt="">
+							<p>На стене пока нет записей</p>
+							<a href="#" class="main-btn achievements-btn">Создать</a>
 						</div>
-						<div class="post-info">
-							<div class="post-list">
-								<a href="#" class="like">
-									<div class="ico-like"></div>
-									<span>25 789</span>
-								</a>
-								<a href="#" class="post-list__comment">
-									<div class="ico-comment"></div>
-									<span>Лей</span>
-								</a>
-								<a href="#" class="post-list__add ico-add"></a>
-							</div>
-						</div>
-						<div class="post-row">
-							<div class="post-row__wrap">
-								<div class="post-row__img">
-									<img src="img/human-2.jpg" alt="">
+						<div class="achievements-form">
+							<form action="">
+								<input type="text" name="text" placeholder="Тема">
+								<textarea name="text" placeholder="Чем Вы хотите поделиться?"></textarea>
+								<div class="achievements-form__row">
+									<button class="main-btn">Отправить</button>
+									<ul class="achievements-form__list">
+										<li><a href="#" class="ico-form ico-form-1"></a></li>
+										<li><a href="#" class="ico-form ico-form-2"></a></li>
+										<li><a href="#" class="ico-form ico-form-3"></a></li>
+									</ul>
+									<a href="#" class="achievements-form__setting">
+										<span class="ico-form ico-form-4"></span>
+									</a>
 								</div>
-								<div class="post-row__info">
-									<div class="drop">
-										<h4 class="post-row__name drop-text"><span>greenmojo</span></h4>
-										<ul class="drop-list">
-											<li><a href="#">Отслеживать</a></li>
-											<li><a href="#">Заблокировать</a></li>
-											<li><a href="#">Пожаловаться</a></li>
-										</ul>
-									</div>
-									<p>Прикольная игра, только ачивок маловато и выбора героев</p>
-									<div class="ico-like-gray"></div>
-									<div class="ico-plus"></div>
-								</div>
-							</div>
+							</form>
 						</div>
-						<a href="#" class="post-arrow"></a>
-					</div>
-					<div class="post post-big">
-						<div class="post-top">
-							<img src="img/post-3.jpg" alt="">
-						</div>
-						<div class="post-info">
-							<div class="post-list">
-								<a href="#" class="like">
-									<div class="ico-like"></div>
-									<span>25 789</span>
-								</a>
-								<a href="#" class="post-list__comment">
-									<div class="ico-comment"></div>
-									<span>Лей</span>
-								</a>
-								<a href="#" class="post-list__add ico-add"></a>
-							</div>
-						</div>
-						<div class="post-row">
-							<div class="post-row__wrap">
-								<div class="post-row__img">
-									<img src="img/human-2.jpg" alt="">
-								</div>
-								<div class="post-row__info">
-									<div class="drop">
-										<h4 class="post-row__name drop-text"><span>greenmojo</span></h4>
-										<ul class="drop-list">
-											<li><a href="#">Отслеживать</a></li>
-											<li><a href="#">Заблокировать</a></li>
-											<li><a href="#">Пожаловаться</a></li>
-										</ul>
-									</div>
-									<p>Прикольная игра, только ачивок маловато и выбора героев</p>
-									<div class="ico-like-gray"></div>
-									<div class="ico-plus"></div>
-								</div>
-							</div>
-						</div>
-						<a href="#" class="post-arrow"></a>
-					</div>
-					<div class="post post-big">
-						<div class="post-top">
-							<img src="img/post-3.jpg" alt="">
-						</div>
-						<div class="post-info">
-							<div class="post-list">
-								<a href="#" class="like">
-									<div class="ico-like"></div>
-									<span>25 789</span>
-								</a>
-								<a href="#" class="post-list__comment">
-									<div class="ico-comment"></div>
-									<span>Лей</span>
-								</a>
-								<a href="#" class="post-list__add ico-add"></a>
-							</div>
-						</div>
-						<div class="post-row">
-							<div class="post-row__wrap">
-								<div class="post-row__img">
-									<img src="img/human-2.jpg" alt="">
-								</div>
-								<div class="post-row__info">
-									<div class="drop">
-										<h4 class="post-row__name drop-text"><span>greenmojo</span></h4>
-										<ul class="drop-list">
-											<li><a href="#">Отслеживать</a></li>
-											<li><a href="#">Заблокировать</a></li>
-											<li><a href="#">Пожаловаться</a></li>
-										</ul>
-									</div>
-									<p>Прикольная игра, только ачивок маловато и выбора героев</p>
-									<div class="ico-like-gray"></div>
-									<div class="ico-plus"></div>
-								</div>
-							</div>
-						</div>
-						<a href="#" class="post-arrow"></a>
 					</div>
 				</div>
 				<div class="flood-col">
@@ -713,6 +597,93 @@
 		<div class="modal-rating__bottom">
 			<a href="#" class="modal-rating__link">Удалить оценку</a>
 			<a href="#" class="main-btn">Оценить</a>
+		</div>
+	</div>
+	<div class="modal modal-subscriptions" id="modal-subscriptions">
+		<div class="modal-close"></div>
+		<div class="modal-subscriptions__content">
+			<div class="modal-subscriptions__row">
+				<div class="modal-subscriptions__col">
+					<div class="modal-subscriptions__col-wrap">
+						<div class="modal-subscriptions__col-bg" style="background-image: url(img/bg-sub.jpg);"></div>
+						<div class="modal-subscriptions__col-info">
+							<img src="img/human-2.jpg" alt="">
+							<h3 class="modal-subscriptions__col-title">RikkiMortini85 <span class="ico-youtube"></span></h3>
+							<a href="#" class="modal-subscriptions__col-link">Отписаться</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-subscriptions__col">
+					<div class="modal-subscriptions__col-wrap">
+						<div class="modal-subscriptions__col-bg" style="background-image: url(img/bg-sub.jpg);"></div>
+						<div class="modal-subscriptions__col-info">
+							<img src="img/human-2.jpg" alt="">
+							<h3 class="modal-subscriptions__col-title">RikkiMortini85 <span class="ico-twitch"></span></h3>
+							<a href="#" class="modal-subscriptions__col-link">Отписаться</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-subscriptions__col">
+					<div class="modal-subscriptions__col-wrap">
+						<div class="modal-subscriptions__col-bg" style="background-image: url(img/bg-sub.jpg);"></div>
+						<div class="modal-subscriptions__col-info">
+							<img src="img/human-2.jpg" alt="">
+							<h3 class="modal-subscriptions__col-title">RikkiMortini85 <span class="ico-youtube"></span></h3>
+							<a href="#" class="modal-subscriptions__col-link">Отписаться</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-subscriptions__col">
+					<div class="modal-subscriptions__col-wrap">
+						<div class="modal-subscriptions__col-bg" style="background-image: url(img/bg-sub.jpg);"></div>
+						<div class="modal-subscriptions__col-info">
+							<img src="img/human-2.jpg" alt="">
+							<h3 class="modal-subscriptions__col-title">RikkiMortini85 <span class="ico-youtube"></span></h3>
+							<a href="#" class="modal-subscriptions__col-link">Отписаться</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-subscriptions__col">
+					<div class="modal-subscriptions__col-wrap">
+						<div class="modal-subscriptions__col-bg" style="background-image: url(img/bg-sub.jpg);"></div>
+						<div class="modal-subscriptions__col-info">
+							<img src="img/human-2.jpg" alt="">
+							<h3 class="modal-subscriptions__col-title">RikkiMortini85 <span class="ico-youtube"></span></h3>
+							<a href="#" class="modal-subscriptions__col-link">Отписаться</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-subscriptions__col">
+					<div class="modal-subscriptions__col-wrap">
+						<div class="modal-subscriptions__col-bg" style="background-image: url(img/bg-sub.jpg);"></div>
+						<div class="modal-subscriptions__col-info">
+							<img src="img/human-2.jpg" alt="">
+							<h3 class="modal-subscriptions__col-title">RikkiMortini85 <span class="ico-youtube"></span></h3>
+							<a href="#" class="modal-subscriptions__col-link">Отписаться</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-subscriptions__col">
+					<div class="modal-subscriptions__col-wrap">
+						<div class="modal-subscriptions__col-bg" style="background-image: url(img/bg-sub.jpg);"></div>
+						<div class="modal-subscriptions__col-info">
+							<img src="img/human-2.jpg" alt="">
+							<h3 class="modal-subscriptions__col-title">RikkiMortini85 <span class="ico-youtube"></span></h3>
+							<a href="#" class="modal-subscriptions__col-link">Отписаться</a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-subscriptions__col">
+					<div class="modal-subscriptions__col-wrap">
+						<div class="modal-subscriptions__col-bg" style="background-image: url(img/bg-sub.jpg);"></div>
+						<div class="modal-subscriptions__col-info">
+							<img src="img/human-2.jpg" alt="">
+							<h3 class="modal-subscriptions__col-title">RikkiMortini85 <span class="ico-youtube"></span></h3>
+							<a href="#" class="modal-subscriptions__col-link">Отписаться</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
