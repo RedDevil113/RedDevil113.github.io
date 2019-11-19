@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper"></div>
+	</header>
+	<!-- end header -->
+	<!-- start catalog -->
+	<section class="catalog">
+		<div class="wrapper">
+			<div class="catalog-sidebar">
+				<div class="catalog-sidebar__top">
+					<h3 class="catalog-sidebar__top-title">Фильтр</h3>
+					<div class="catalog-close"></div>
+				</div>
+				<div class="catalog-sidebar__wrap">
+					<h1 class="catalog-sidebar__title">Здоровье</h1>
+					<div class="catalog-sidebar__block catalog-sidebar__block-info">
+						<div class="accordeon">
+							<h3 class="accordeon-title">Бальзамы и<br> Растительные комплексы</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">Для женщин</a></li>
+									<li><a href="#">Для мужчин</a></li>
+									<li><a href="#">Для детей</a></li>
+									<li><a href="#">Для зрения</a></li>
+									<li><a href="#">Для иммунитета</a></li>
+									<li><a class="active" href="#">Для очищения организма</a></li>
+									<li><a href="#">Для печени и почек</a></li>
+									<li><a href="#">Для пищеварения</a></li>
+									<li><a href="#">Для похудения</a></li>
+									<li><a href="#">Для сердца и сосудов</a></li>
+									<li><a href="#">Для суставов</a></li>
+									<li><a href="#">От простуды</a></li>
+									<li><a href="#">Тонизирующие</a></li>
+									<li><a href="#">Успокаивающие</a></li>
+									<li><a href="#">Для мозговой активности</a></li>
+									<li><a href="#">Для щитовидной</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Живица</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Жир</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Каменное масло</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Мумие</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Подарочные наборы</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Пантогематоген</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Продукция Alapantan</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Алтайские сборы</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="accordeon">
+							<h3 class="accordeon-title">Алтайские травы</h3>
+							<div class="accordeon-block">
+								<ul>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+									<li><a href="#">lorem-1</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-sidebar__block">
+						<div class="catalog-sidebar__price">
+							<h4 class="catalog-sidebar__subtitle">Цена</h4>
+							<div id="slider-range__1"></div>
+							<div class="catalog-sidebar__price-row">
+								<div class="catalog-sidebar__price-col">
+									<span>от</span>
+									<input type="text" id="search-price__1">
+								</div>
+								<div class="catalog-sidebar__price-col">
+									<span>до</span>
+									<input type="text" id="search-price__2">
+									<span>руб</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-sidebar__block catalog-sidebar__block-big">
+						<div class="catalog-sidebar__block-wrap">
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Товары со скидкой</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Новинки</p>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-sidebar__block">
+						<div class="catalog-sidebar__block-wrap">
+							<h4 class="catalog-sidebar__subtitle">Бренды</h4>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Алтай-Селигор</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>АлтайБиоПроект</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Алтайский букет</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>АлтайФлора</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Две линии</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span></span>
+								<p>Зеленый Алтай</p>
+							</div>
+							<div class="catalog-sidebar__link">
+								<a href="#">Посмотреть все</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-sidebar__bottom">
+						<a href="#" class="second-btn">Показать</a>
+						<a href="#" class="solid-btn">Очистить</a>
+					</div>
+				</div>
+			</div>
+			<div class="catalog-content">
+				<ul class="bread-crumbs">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Здоровье</a></li>
+					<li><a href="#">Бальзамы и Растительные комплексы</a></li>
+					<li>Для очищения организма</li>
+				</ul>
+				<div class="catalog-info">
+					<h3 class="catalog-info__title">Алтайские бальзамы</h3>
+					<p>Алтайские бальзамы для организма являются чудодейственным средством от многих заболеваний.В их состав входят различные лекарственные растения и уникальные компоненты, взяты от самой природы. В зависимости от вида бальзама в нём содержится мёд, барсучий жир и многие другие полезные компоненты все он.</p>
+					<div class="catalog-info__link">
+						<a href="#">Читать полностью</a>
+					</div>
+				</div>
+				<div class="catalog-sort">
+					<div class="catalog-sort__row">
+						<a href="#" class="catalog-sort__link">По популярности</a>
+						<a href="#" class="catalog-sort__link catalog-sort__link-2">По алфавиту</a>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span></span>
+							<p>В наличии</p>
+						</div>
+					</div>
+					<a href="#" class="catalog-sort__filter">Фильтр</a>
+					<a href="#" class="catalog-sort__clear">Очистить фильтр</a>
+				</div>
+				<div class="catalog-row">
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn products-col__btn-discover">Узнать о поступлении</a>
+						</div>
+					</div><!-- col(1) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag products-col__tag-new">новинка</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big-2.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<div class="products-col__quantity">
+								<div class="products-col__quantity-minus">-</div>
+								<input name="text" type="text" value="1">
+								<div class="products-col__quantity-plus">+</div>
+							</div>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(2) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(3) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(4) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(5) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(6) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(7) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(8) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(9) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(10) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(11) -->
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div><!-- col(12) -->
+				</div>
+				<div class="catalog-control">
+					<a href="#" class="second-btn"><img src="img/update.png" alt=""><span>Показать еще</span></a>
+					<div class="pagination">
+						<ul>
+							<li><a class="active" href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<a href="#" class="pagination-ico pagination-next"></a>
+					</div>
+				</div>
+				<div class="catalog-bottom">
+					<p>Алтайские бальзамы для организма являются чудодейственным средством от многих заболеваний. В их состав входят различные лекарственные растения и уникальные компоненты, взяты от самой природы. В зависимости от вида бальзама в нём содержится мёд, барсучий жир и многие другие полезные компоненты. Все они направлены на улучшение и поддержание состояния здоровья людей.</p>
+					<p>Особенности алтайских бальзамов заключается в том, что в них отсутствует спирт. Для производства бальзамов применяется особая технология по изготовлению средств. В ней лежат рецепты, взятые от предков и разработанные веками. Такая уникальная технология дает возможность изготавливать бальзамы без применения спирта. При этом сохраняются все полезные вещества от природы и лечебные характеристики компонентов. Безалкогольные бальзамы - это уникальные средства для каждого человека, кто заботится о своем здоровье и выбирает для лечения проверенные средства.</p>
+					<p>Приобретая алтайский бальзам Вы получаете всю природу Алтая в одном флаконе, которая будет заботиться о Вашем здоровье.</p>
+					<h3 class="catalog-bottom__title">Преимущества алтайских препаратов:</h3>
+					<ul>
+						<li>Приятные вкусовые свойства и натуральные ароматы.</li>
+						<li>Ноты целебных компонентов: сок деревьев и фруктовые экстракты.</li>
+						<li>Качественная продукция, имеющая сертификат.</li>
+						<li>Алтайские бальзамы на травах безопасны для людей, в том числе и для детей.</li>
+						<li>Это органическая продукция для здоровья.</li>
+					</ul>
+					<h3 class="catalog-bottom__title">В чём польза от алтайских бальзамов?</h3>
+					<ul>
+						<li>Восстанавливают функции органов.</li>
+						<li>Укрепляют иммунную систему.</li>
+						<li>Оказывают регенерирующее воздействие на клетки кожи.</li>
+						<li>Имеют противовоспалительный эффект.</li>
+						<li>Оказывают тонизирующее действия на организм.</li>
+						<li>Используются против простуды и вирусных заболеваний.</li>
+						<li>Способствуют уменьшению устранения зуда и кожных заболеваний.</li>
+						<li>Оказывают благоприятное воздействие на желудочно-кишечный тракт.</li>
+					</ul>
+					<p>Выбор алтайских бальзамов настолько велик, что каждый сможет подобрать себе именно тот, который подходит для него.  Вы можете подобрать для себя женский, мужской бальзам, препарат для сердца, от стресса и другие варианты.</p>
+					<h4 class="catalog-bottom__subtitle">Уже многие люди убедились в том, что бальзамы Алтая несут в себе уникальные лечебные свойства и оказывают благотворное влияние на организм человека. Купить алтайские бальзамы Вы можете в нашем интернет-магазине по выгодной цене и отличного качества.</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end catalog -->
+	<!-- start brands -->
+	<section class="brands">
+		<div class="wrapper">
+			<div class="brands-slider">
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-1.png" alt="">
+					</div>
+				</div><!-- slide(1) -->
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-2.png" alt="">
+					</div>
+				</div><!-- slide(2) -->
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-3.png" alt="">
+					</div>
+				</div><!-- slide(3) -->
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-4.png" alt="">
+					</div>
+				</div><!-- slide(4) -->
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-5.png" alt="">
+					</div>
+				</div><!-- slide(5) -->
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-6.png" alt="">
+					</div>
+				</div><!-- slide(6) -->
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-2.png" alt="">
+					</div>
+				</div><!-- slide(7) -->
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-2.png" alt="">
+					</div>
+				</div><!-- slide(8) -->
+				<div class="brands-slide">
+					<div class="brands-slide__wrap">
+						<img src="img/logo-2.png" alt="">
+					</div>
+				</div><!-- slide(9) -->
+			</div>
+		</div>
+	</section>
+	<!-- end brands -->
+	<!-- start stocks -->
+	<section class="stocks">
+		<div class="wrapper">
+			<div class="stocks-row">
+				<div class="stocks-col">
+					<a href="#">
+						<img src="img/banner-1.jpg" alt="">
+					</a>
+				</div>
+				<div class="stocks-col">
+					<a href="#">
+						<img src="img/banner-2.png" alt="">
+					</a>
+				</div>
+				<div class="stocks-col">
+					<a href="#">
+						<img src="img/banner-3.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end stocks -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<h4 class="footer-top__title">Подпишитесь на нашу рассылку и будьте в курсе всех акций и новинок</h4>
+				<div class="footer-top__form">
+					<form action="">
+						<input type="text" name="text" placeholder="Введите Ваш E-mail">
+						<button class="main-btn">Подписаться</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer-social">
+				<p>Мы в соцсетях</p>
+				<ul>
+					<li><a href="#"><img src="img/soc-1.png" alt=""></a></li>
+					<li><a href="#"><img src="img/soc-2.png" alt=""></a></li>
+					<li><a href="#"><img src="img/soc-3.png" alt=""></a></li>
+					<li><a href="#"><img src="img/soc-4.png" alt=""></a></li>
+					<li><a href="#"><img src="img/soc-5.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="footer-middle">
+				<div class="footer-col footer-col__first">
+					<div class="footer-col__wrap">
+						<div class="footer-col__mob">
+							<a href="#">
+								<img src="img/logo-footer-mob.png" alt="">
+							</a>
+						</div>
+						<div class="footer-col__logo">
+							<a href="#">
+								<img src="img/logo-footer.png" alt="">
+							</a>
+						</div>
+						<div class="footer-col__row">
+							<div class="footer-col__phone">
+								<ul>
+									<li><a href="#">8 (800) 777-36-57</a></li>
+									<li><a href="#">8 (812) 309-29-47</a></li>
+								</ul>
+							</div>
+							<div class="footer-col__pay">
+								<img src="img/mir.png" alt="">
+								<img src="img/visa.png" alt="">
+								<img src="img/mastercard.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col">
+					<h3 class="footer-col__title">О компании</h3>
+					<ul>
+						<li><a href="#">Карта сайта</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">График работы</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h3 class="footer-col__title">Сервис</h3>
+					<ul>
+						<li><a href="#">Баллы</a></li>
+						<li><a href="#">Как купить</a></li>
+						<li><a href="#">Вопрос/Ответ</a></li>
+						<li><a href="#">Узнать где заказ</a></li>
+						<li><a href="#">Способы оплаты</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Возврат</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h3 class="footer-col__title">Мы в соцсетях</h3>
+					<ul>
+						<li><a href="#">ODNOKLASSNIKI</a></li>
+						<li><a href="#">VKONTAKTE</a></li>
+						<li><a href="#">FACEBOOK</a></li>
+						<li><a href="#">TWITTER</a></li>
+						<li><a href="#">INSTAGRAM</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 2017 - 2019 alapantan.ru © Все права защищены.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="success">
+				<h3 class="modal-content__title">Спасибо за заявку</h3>
+				<p class="modal-content__subtitle">Мы перезвоним Вам в ближайшее время</p>
+			</div>
+			<form class="callback" method="POST">
+				<input type="hidden" name="subject" value="" id="info-form">
+				<h3 class="modal-content__title">Оставьте заявку</h3>
+				<p class="modal-content__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
+				<div class="modal-content__input">
+					<input type="text" name="name" placeholder="Введите имя" required minlength="2">
+				</div>
+				<div class="modal-content__input">
+					<input type="tel" name="phone" placeholder="Введите телефон" minlength="8">
+				</div>
+				<div class="modal-content__input">
+					<input type="text" name="address" placeholder="Введите адрес" minlength="5">
+				</div>
+				<button class="main-btn submit">ОСТАВИТЬ ЗАЯВКУ</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

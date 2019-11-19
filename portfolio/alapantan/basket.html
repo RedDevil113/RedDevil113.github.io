@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper"></div>
+	</header>
+	<!-- end header -->
+	<!-- start basket -->
+	<section class="basket">
+		<div class="wrapper">
+			<ul class="bread-crumbs">
+				<li><a href="#">Главная</a></li>
+				<li>Корзина</li>
+			</ul>
+			<h1 class="page-name">Моя корзина</h1>
+		</div>
+		<div class="wrapper basket-wrapper">
+			<div class="basket-table">
+				<div class="basket-row basket-top">
+					<div class="basket-col basket-col__1">
+						<p>Товары </p>
+					</div>
+					<div class="basket-col__row">
+						<div class="basket-col basket-col__2">
+							<p>Количество</p>
+						</div>
+						<div class="basket-col basket-col__3">
+							<p>Цена</p>
+						</div>
+						<div class="basket-col basket-col__4">
+							<p>Удалить</p>
+						</div>
+					</div>
+				</div>
+				<div class="basket-row">
+					<div class="basket-col basket-col__1">
+						<div class="basket-col__img">
+							<img src="img/product-big.jpg" alt="">
+						</div>
+						<div class="basket-col__info">
+							<h3 class="basket-col__title">Алтэя Масло конопляное с добавлением льняного</h3>
+							<span class="basket-col__size">100 мл</span>
+						</div>
+					</div>
+					<div class="basket-col__row">
+						<div class="basket-col basket-col__2">
+							<div class="basket-col__input">
+								<span class="basket-col__input-minus">-</span>
+								<input type="text" name="text" value="1">
+								<span class="basket-col__input-add">+</span>
+							</div>
+							<p>100 шт в наличии</p>
+						</div>
+						<div class="basket-col basket-col__3">
+							<p class="basket-col__price">345 р</p>
+							<p><span>400 Р</span><b>Скидка 55 р</b></p>
+							<p>379 Р / шт</p>
+						</div>
+						<div class="basket-col basket-col__4">
+							<a href="#" class="basket-del"></a>
+						</div>
+					</div>
+				</div>
+				<div class="basket-row">
+					<div class="basket-col basket-col__1">
+						<div class="basket-col__img">
+							<img src="img/product-big.jpg" alt="">
+						</div>
+						<div class="basket-col__info">
+							<h3 class="basket-col__title">Алтэя Масло конопляное с добавлением льняного</h3>
+							<span class="basket-col__size">100 мл</span>
+						</div>
+					</div>
+					<div class="basket-col__row">
+						<div class="basket-col basket-col__2">
+							<div class="basket-col__input">
+								<span class="basket-col__input-minus">-</span>
+								<input type="text" name="text" value="1">
+								<span class="basket-col__input-add">+</span>
+							</div>
+							<p>100 шт в наличии</p>
+						</div>
+						<div class="basket-col basket-col__3">
+							<p class="basket-col__price">345 р</p>
+							<p><span>400 Р</span><b>Скидка 55 р</b></p>
+							<p>379 Р / шт</p>
+						</div>
+						<div class="basket-col basket-col__4">
+							<a href="#" class="basket-del"></a>
+						</div>
+					</div>
+				</div>
+				<div class="basket-row">
+					<div class="basket-col basket-col__1">
+						<div class="basket-col__img">
+							<img src="img/product-big.jpg" alt="">
+						</div>
+						<div class="basket-col__info">
+							<h3 class="basket-col__title">Алтэя Масло конопляное с добавлением льняного</h3>
+							<span class="basket-col__size">100 мл</span>
+						</div>
+					</div>
+					<div class="basket-col__row">
+						<div class="basket-col basket-col__2">
+							<div class="basket-col__input">
+								<span class="basket-col__input-minus">-</span>
+								<input type="text" name="text" value="1">
+								<span class="basket-col__input-add">+</span>
+							</div>
+							<p>100 шт в наличии</p>
+						</div>
+						<div class="basket-col basket-col__3">
+							<p class="basket-col__price">345 р</p>
+							<p><span>400 Р</span><b>Скидка 55 р</b></p>
+							<p>379 Р / шт</p>
+						</div>
+						<div class="basket-col basket-col__4">
+							<a href="#" class="basket-del"></a>
+						</div>
+					</div>
+				</div>
+				<div class="basket-bottom">
+					<div class="basket-bottom__row">
+						<div class="basket-bottom__text">
+							<p>Итого:</p>
+						</div>
+						<div class="basket-bottom__info">
+							<p>4 товара на сумму<span>2 000 Р</span></p>
+							<p class="discount">Скидка  5%<span>- 300 Р</span></p>
+							<div class="basket-bottom__info-total">
+								<p>Общая стоимость<span>1 700 Р</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="basket-bottom__btn">
+						<a href="#" class="second-btn">Оформить заказ</a>
+						<a href="#" class="solid-btn">Вернуться к покупкам</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end basket -->
+	<!-- start recommended -->
+	<section class="recommended">
+		<div class="wrapper">
+			<h3 class="recommended-title">Рекомендуем</h3>
+			<div class="recommended-slider">
+				<div class="recommended-slide">
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div>
+				</div><!-- slide(1) -->
+				<div class="recommended-slide">
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div>
+				</div><!-- slide(2) -->
+				<div class="recommended-slide">
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div>
+				</div><!-- slide(3) -->
+				<div class="recommended-slide">
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div>
+				</div><!-- slide(4) -->
+				<div class="recommended-slide">
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div>
+				</div><!-- slide(5) -->
+				<div class="recommended-slide">
+					<div class="products-col">
+						<a href="#" class="products-col__tag">хит</a>
+						<div class="products-col__row">
+							<div class="products-col__img">
+								<img src="img/product-big.jpg" alt="">
+							</div>
+							<div class="products-col__info">
+								<div class="products-col__saving">
+									<b>-15%</b>
+									<span>Экономия 56 р</span>
+								</div>
+								<p>Масло конопляное с добавлением льняного Алтэя 100 мл</p>
+								<div class="products-col__stars">
+									<img src="img/stars-row.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="products-col__wrap">
+							<p class="products-col__price">319 р<span>375 р</span></p>
+							<div class="products-col__points">+10<span>баллов</span></div>
+						</div>
+						<div class="products-col__bottom">
+							<a href="#" class="products-col__btn">Купить</a>
+							<a href="#" class="products-col__like"></a>
+						</div>
+					</div>
+				</div><!-- slide(6) -->
+			</div>
+		</div>
+	</section>
+	<!-- end recommended -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<h4 class="footer-top__title">Подпишитесь на нашу рассылку и будьте в курсе всех акций и новинок</h4>
+				<div class="footer-top__form">
+					<form action="">
+						<input type="text" name="text" placeholder="Введите Ваш E-mail">
+						<button class="main-btn">Подписаться</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer-social">
+				<p>Мы в соцсетях</p>
+				<ul>
+					<li><a href="#"><img src="img/soc-1.png" alt=""></a></li>
+					<li><a href="#"><img src="img/soc-2.png" alt=""></a></li>
+					<li><a href="#"><img src="img/soc-3.png" alt=""></a></li>
+					<li><a href="#"><img src="img/soc-4.png" alt=""></a></li>
+					<li><a href="#"><img src="img/soc-5.png" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="footer-middle">
+				<div class="footer-col footer-col__first">
+					<div class="footer-col__wrap">
+						<div class="footer-col__mob">
+							<a href="#">
+								<img src="img/logo-footer-mob.png" alt="">
+							</a>
+						</div>
+						<div class="footer-col__logo">
+							<a href="#">
+								<img src="img/logo-footer.png" alt="">
+							</a>
+						</div>
+						<div class="footer-col__row">
+							<div class="footer-col__phone">
+								<ul>
+									<li><a href="#">8 (800) 777-36-57</a></li>
+									<li><a href="#">8 (812) 309-29-47</a></li>
+								</ul>
+							</div>
+							<div class="footer-col__pay">
+								<img src="img/mir.png" alt="">
+								<img src="img/visa.png" alt="">
+								<img src="img/mastercard.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col">
+					<h3 class="footer-col__title">О компании</h3>
+					<ul>
+						<li><a href="#">Карта сайта</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">График работы</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h3 class="footer-col__title">Сервис</h3>
+					<ul>
+						<li><a href="#">Баллы</a></li>
+						<li><a href="#">Как купить</a></li>
+						<li><a href="#">Вопрос/Ответ</a></li>
+						<li><a href="#">Узнать где заказ</a></li>
+						<li><a href="#">Способы оплаты</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Возврат</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h3 class="footer-col__title">Мы в соцсетях</h3>
+					<ul>
+						<li><a href="#">ODNOKLASSNIKI</a></li>
+						<li><a href="#">VKONTAKTE</a></li>
+						<li><a href="#">FACEBOOK</a></li>
+						<li><a href="#">TWITTER</a></li>
+						<li><a href="#">INSTAGRAM</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright 2017 - 2019 alapantan.ru © Все права защищены.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-form">
+		<div class="modal-content">
+			<div class="success">
+				<h3 class="modal-content__title">Спасибо за заявку</h3>
+				<p class="modal-content__subtitle">Мы перезвоним Вам в ближайшее время</p>
+			</div>
+			<form class="callback" method="POST">
+				<input type="hidden" name="subject" value="" id="info-form">
+				<h3 class="modal-content__title">Оставьте заявку</h3>
+				<p class="modal-content__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
+				<div class="modal-content__input">
+					<input type="text" name="name" placeholder="Введите имя" required minlength="2">
+				</div>
+				<div class="modal-content__input">
+					<input type="tel" name="phone" placeholder="Введите телефон" minlength="8">
+				</div>
+				<div class="modal-content__input">
+					<input type="text" name="address" placeholder="Введите адрес" minlength="5">
+				</div>
+				<button class="main-btn submit">ОСТАВИТЬ ЗАЯВКУ</button>
+			</form>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
