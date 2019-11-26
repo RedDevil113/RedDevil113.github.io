@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="hb-btns">
+		<div class="wrapper">
+			<ul>
+				<li><a class="button-modal second-btn" href="#modal-1">modal-1</a></li>
+				<li><a class="button-modal second-btn" href="#modal-2">modal-2</a></li>
+				<li><a class="button-modal second-btn" href="#modal-3">modal-3</a></li>
+				<li><a class="button-modal second-btn" href="#modal-4">modal-4</a></li>
+				<li><a class="button-modal second-btn" href="#modal-5">modal-5</a></li>
+				<li><a class="button-modal second-btn" href="#modal-6">modal-6</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- modal-form -->
+	<div class="modal-overlay open-overlay"></div>
+	<div class="modal modal-call modal-small" id="modal-1">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Заказать обратный звонок</h3>
+			<form method="POST">
+				<label for="g-1">Введите номер телефона<span>*</span></label>
+				<input id="g-1" type="text" name="text">
+				<p class="modal-text"><span>*</span> - поля обязательные к заполнению</p>
+				<button class="second-btn">Позвоните мне</button>
+			</form>
+		</div>
+		<div class="modal-bottom">
+			<p>Мы свяжемся с Вами в течении 5 минут</p>
+		</div>
+	</div>
+	<div class="modal modal-recovery modal-small" id="modal-2">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Восстановление пароля</h3>
+			<div class="modal-center">
+				<img src="img/check_up.png" alt="">
+				<p>Контрольная строка для смены пароля, а также ваши регистрационные данные, высланы вам на email.</p>
+			</div>
+			<button class="second-btn">Вход</button>
+		</div>
+	</div>
+	<div class="modal modal-entry modal-small" id="modal-3">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Вход</h3>
+			<form method="POST">
+				<div class="modal-input">
+					<label for="f-1">Введите Ваше имя<span>*</span></label>
+					<input id="f-1" type="text" name="text">
+				</div>
+				<div class="modal-input">
+					<label for="f-2">Введите пароль<span>*</span></label>
+					<input id="f-2" type="text" name="text">
+				</div>
+				<div class="modal-check">
+					<div class="checkbox">
+						<input type="checkbox">
+						<span></span>
+						<p>Запомнить меня</p>
+					</div>
+					<a href="#">Забыли пароль?</a>
+				</div>
+				<p class="modal-text"><span>*</span> - поля обязательные к заполнению</p>
+				<button class="second-btn">Войти</button>
+			</form>
+		</div>
+		<div class="modal-bottom">
+			<a href="#">Зарегистироваться</a>
+		</div>
+	</div>
+	<div class="modal modal-check-in" id="modal-4">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Регистрация</h3>
+			<p class="modal-top__text">Уже зарегистрированы? <a href="#">Войдите</a></p>
+			<form method="POST">
+				<div class="modal-input__row">
+					<div class="modal-input">
+						<label for="h-1">Имя<span>*</span></label>
+						<input id="h-1" type="text" name="text">
+					</div>
+					<div class="modal-input">
+						<label for="h-2">Фамилия<span>*</span></label>
+						<input id="h-2" type="text" name="text">
+					</div>
+					<div class="modal-input">
+						<label for="h-3">Номер телефона<span>*</span></label>
+						<input id="h-3" type="text" name="text">
+					</div>
+					<div class="modal-input">
+						<label for="h-4">E-mail<span>*</span></label>
+						<input id="h-4" type="text" name="text">
+					</div>
+					<div class="modal-input">
+						<label for="h-5">Введите пароль<span>*</span></label>
+						<input id="h-5" type="text" name="text">
+					</div>
+					<div class="modal-input">
+						<label for="h-6">Повторить пароль<span>*</span></label>
+						<input id="h-6" type="text" name="text">
+					</div>
+				</div>
+				<p class="modal-text"><span>*</span> - поля обязательные к заполнению</p>
+				<button class="second-btn">Зарегистрироваться</button>
+				<p class="modal-bottom__text">Нажимая на кнопку “Зарегистрироваться”, Вы соглашаетесь на обработку персональных данных</p>
+			</form>
+		</div>
+	</div>
+	<div class="modal modal-data" id="modal-5">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Введите данные, чтобы узнать статус заказа</h3>
+			<form method="POST">
+				<div class="modal-row">
+					<div class="modal-col">
+						<div class="modal-input">
+							<label for="k-1">Введите номер заказа</label>
+							<input id="k-1" type="text" name="text">
+						</div>
+					</div>
+					<div class="modal-col">
+						<a href="#" class="second-btn">Проверить статус заказа</a>
+					</div>
+				</div>
+				<p>Если вы не знаете свой номер заказа или у вас возникли вопросы по статусу заказа - свяжитесь с нами по телефону 8 (812) 309-29-47 или оставьте свой телефон и мы вам перезвоним в ближайшее время.</p>
+				<div class="modal-row">
+					<div class="modal-col">
+						<div class="modal-input">
+							<label for="k-2">Введите номер телефона</label>
+							<input id="k-2" type="text" name="text">
+						</div>
+					</div>
+					<div class="modal-col">
+						<a href="#" class="second-btn">Позвоните мне</a>
+					</div>
+				</div>
+				<p class="data-text"><a href="#">Зарегистрируйтесь</a> сейчас, чтобы иметь возможность просматривать историю своих покупок, сумму накоплений и уровень скидки.</p>
+			</form>
+		</div>
+	</div>
+	<div class="modal modal-subscription open" id="modal-6">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<div class="modal-subscription__info">
+				<h3 class="modal-title">Хотите знать обо всех акциях и новинках?</h3>
+				<p>Подписывайтесь<br>на нашу группу вконтакте</p>
+				<a href="#" class="second-btn">Подписаться<span class="ico-hb ico-vk"></span></a>
+			</div>
+		</div>
+		<div class="modal-subscription__img">
+			<img src="img/modal-bg.png" alt="">
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
