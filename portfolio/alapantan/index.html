@@ -635,6 +635,14 @@
 						<span class="main-mob__name">Бытовая химия</span>
 					</a>
 				</div>
+				<div class="main-mob__col main-mob__col-mob">
+					<a href="#">
+						<span class="main-mob__ico">
+							<img src="img/ico-mob-7.png" alt="">
+						</span>
+						<span class="main-mob__name">Назначение</span>
+					</a>
+				</div>
 				<div class="main-mob__col">
 					<a href="#">
 						<span class="main-mob__ico">
@@ -942,7 +950,7 @@
 				</div><!-- slide(6) -->
 				<div class="brands-slide">
 					<div class="brands-slide__wrap">
-						<img src="img/logo-2.png" alt="">
+						<img src="img/logo-7.png" alt="">
 					</div>
 				</div><!-- slide(7) -->
 				<div class="brands-slide">
@@ -1108,6 +1116,9 @@
 					</div>
 				</div><!-- slide(5) -->
 			</div>
+			<div class="catalog-control">
+				<a href="#" class="second-btn"><img src="img/update.png" alt=""><span>Показать еще</span></a>
+			</div>
 		</div>
 	</section>
 	<!-- end rating -->
@@ -1233,7 +1244,7 @@
 		<div class="map-link">
 			<a href="#"><span>Посмотреть на карте</span></a>
 		</div>
-		<div id="map" class="map-wrap" style="background-image: url(img/map.jpg);"></div>
+		<div id="map" class="map-wrap"></div>
 	</section>
 	<!-- end map -->
 	<!-- start footer -->
@@ -1292,6 +1303,7 @@
 						<li><a href="#">Карта сайта</a></li>
 						<li><a href="#">О нас</a></li>
 						<li><a href="#">График работы</a></li>
+						<li><a href="#">Политика о конфиденциальности</a></li>
 					</ul>
 				</div>
 				<div class="footer-col">
@@ -1312,7 +1324,6 @@
 						<li><a href="#">ODNOKLASSNIKI</a></li>
 						<li><a href="#">VKONTAKTE</a></li>
 						<li><a href="#">FACEBOOK</a></li>
-						<li><a href="#">TWITTER</a></li>
 						<li><a href="#">INSTAGRAM</a></li>
 					</ul>
 				</div>
@@ -1325,7 +1336,65 @@
 	<!-- end footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 	<script>
+		ymaps.ready(function () {
+    	var myMap = new ymaps.Map('map', {
+          center: [55.751574, 37.573856],
+          zoom: 9
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Собственный значок метки',
+          balloonContent: 'Это красивая метка'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/map-icon.png',
+          // Размеры метки.
+          iconImageSize: [58, 77],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+      }),
+
+      myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+          hintContent: 'Собственный значок метки с контентом',
+          balloonContent: 'А эта — новогодняя',
+          iconContent: '12'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#imageWithContent',
+          // Своё изображение иконки метки.
+          iconImageHref: 'images/ball.png',
+          // Размеры метки.
+          iconImageSize: [48, 48],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-24, -24],
+          // Смещение слоя с содержимым относительно слоя с картинкой.
+          iconContentOffset: [15, 15],
+          // Макет содержимого.
+          iconContentLayout: MyIconContentLayout
+      });
+
+		  myMap.geoObjects
+        .add(myPlacemark)
+        .add(myPlacemarkWithContent);
+
+      myMap.behaviors.disable('scrollZoom');
+		});
+
 		$('.products-col__btn').click(function(e){
 			e.preventDefault();
 			var block = $(this).parent().parent().find('.products-col__img'),
