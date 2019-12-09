@@ -11,9 +11,8 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
-	<link rel="stylesheet" href="https://www.bamperauto.ru/assets/templates/bmpr/js/blue/style.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/main-2.css">
+	<link rel="stylesheet" href="css/main-3.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
@@ -213,78 +212,170 @@
 		</div>
 	</header>
 	<!-- end header -->
-	<!-- start palette -->
-	<section class="palette section-top">
+	<!-- start checkout -->
+	<section class="checkout section-top">
 		<div class="wrapper">
-			<div class="palette-top">
-				<h1 class="section-title">Палитра цветов АВТОВАЗ</h1>
-				<p>Стикер с названием и кодом цвета обычно клеится на крышке багажника или кладется в нишу запасного колеса. В техпаспорте отображается не название цвета, а его визуальное описание!</p>
+			<div class="order-row">
+				<div class="order-sidebar">
+					<div class="order-sidebar__wrap">
+						<a href="#" class="order-sidebar__back">Вернуться в корзину</a>
+						<h3 class="order-sidebar__title">Оформление заказа</h3>
+						<div class="order-sidebar__block">
+							<span>12 товаров на сумму: <p>122 990 руб.</p></span>
+							<span>Доставка: <p>800 руб.</p></span>
+						</div>
+						<div class="order-sidebar__block">
+							<span>Итого: <b>123 790 руб.</b></span>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span></span>
+							<p>Я согласен(на) с обработкой моих персональных данных в соответствии с Политикой конфиденциальности</p>
+						</div>
+						<div class="order-sidebar__btn">
+							<a href="#" class="main-btn">Оформить заказ</a>
+						</div>
+					</div>
+				</div>
+				<div class="order-content">
+					<div class="checkout-wrap">
+						<div class="checkout-contacs">
+							<h3 class="checkout-title">Укажите контактные данные <span>или</span> <a href="#">Авторизуйтесь</a></h3>
+							<div class="checkout-way__row">
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="delivery-human" checked>
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Физическое лицо</p>
+										</div>
+									</div>
+								</div><!-- col(1) -->
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="delivery-human">
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Юридическое лицо</p>
+										</div>
+									</div>
+								</div><!-- col(2) -->
+							</div>
+							<div class="checkout-contacs__row">
+								<div class="checkout-contacs__input">
+									<span>ФИО *</span>
+									<input type="text">
+								</div>
+								<div class="checkout-contacs__input">
+									<span>Ваш e-mail *</span>
+									<input type="text">
+								</div>
+								<div class="checkout-contacs__input">
+									<span>Ваш телефон *</span>
+									<input type="text">
+								</div>
+							</div>
+						</div>
+						<div class="checkout-delivery">
+							<h3 class="checkout-title">Способ доставки</h3>
+							<div class="checkout-way__row">
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="delivery-method">
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Самовывоз</p>
+											<span>Ежедневно 8.00-17.00</span>
+											<a href="#">Москва, метро Кожуховская, 2й Южнопортовый проезд, 10</a>
+											<div class="checkout-way__col-bottom">
+												<p>Бесплатно</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- col(1) -->
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="delivery-method" checked>
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Доставка по Москве</p>
+											<span>в пределах МКАД (сегодня или завтра)</span>
+											<div class="checkout-way__col-bottom">
+												<p>800 руб.</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- col(2) -->
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="delivery-method">
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Доставка за МКАД</p>
+											<span>стоимость рассчитает наш менеджер</span>
+											<div class="checkout-way__col-bottom">
+												<p>800 руб. + 50 руб/км</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- col(3) -->
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="delivery-method">
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Доставка по России</p>
+											<span>стоимость рассчитает наш менеджер</span>
+											<a href="#">Рассчитать стоимость</a>
+											<div class="checkout-way__col-bottom">
+												<div>
+													<img src="img/pek.svg" alt="">
+													<img src="img/sdek.svg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- col(4) -->
+							</div>
+							<div class="checkout-delivery__input">
+								<div class="checkout-contacs__input">
+									<span>Адрес доставки *</span>
+									<input type="text">
+								</div>
+							</div>
+						</div>
+						<div class="checkout-way">
+							<h3 class="checkout-title">Способ оплаты</h3>
+							<div class="checkout-way__row">
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="payment-method">
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Наличный расчёт</p>
+											<span>при самовывозе или курьеру</span>
+										</div>
+									</div>
+								</div><!-- col(1) -->
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="payment-method">
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Онлайн оплата</p>
+											<span>с помощью банковской карты</span>
+										</div>
+									</div>
+								</div><!-- col(2) -->
+								<div class="checkout-way__col">
+									<div class="checkout-way__col-block">
+										<input type="radio" name="payment-method" checked>
+										<div class="checkout-way__col-wrap">
+											<p class="checkout-way__col-title">Безналичный расчет</p>
+											<span>для юридических лиц</span>
+										</div>
+									</div>
+								</div><!-- col(3) -->
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<table hidefocus="true" id="car-colors" class="palette-table tablesorter">
-				<thead>
-		      <tr>
-		         <th class="header" title="Код краски">Код</th>
-		         <th class="header" title="Образец цвета краски">Образец</th>
-		         <th class="header" title="Название цвета">Краска</th>
-		         <th class="header" title="Название цвета краски для техпаспорта">Описание цвета (для техпаспорта)</th>
-		         <th class="header" title="Является ли краска металликом">Металлик</th>
-		      </tr>
-  		 </thead>
-  		 <tbody>
-  		 		<tr>
-		      	<td>12</td>
-		      	<td bgcolor="#e9d28a"></td>
-		      	<td>Золотая звезда</td>
-		      	<td>(GM) Бежево-золотистый</td>
-		      	<td></td>
-	      	</tr>
-	      	<tr>
-		      	<td>321</td>
-		      	<td bgcolor="#CC6633"></td>
-		      	<td>Золотая звезда</td>
-		      	<td>(GM) Бежево-золотистый</td>
-		      	<td></td>
-	      	</tr>
-	      	<tr>
-		      	<td>435</td>
-		      	<td bgcolor="#EDF5F6"></td>
-		      	<td>Золотая звезда</td>
-		      	<td>(GM) Бежеweво-золотистый</td>
-		      	<td></td>
-	      	</tr>
-	      	<tr>
-		      	<td>1901</td>
-		      	<td bgcolor="#665739"></td>
-		      	<td>Золотая звезда</td>
-		      	<td>(GM) Бежев32о-золотистый</td>
-		      	<td></td>
-	      	</tr>
-	      	<tr>
-		      	<td>1901</td>
-		      	<td bgcolor="#000"></td>
-		      	<td>Золотая звезда</td>
-		      	<td>(GM) Бежево-золотистый</td>
-		      	<td></td>
-	      	</tr>
-	      	<tr>
-		      	<td>1901</td>
-		      	<td bgcolor="#336600"></td>
-		      	<td>Золотая звезда</td>
-		      	<td>(GM) Бежево-золотистый</td>
-		      	<td></td>
-	      	</tr>
-	      	<tr>
-		      	<td>1901</td>
-		      	<td bgcolor="#25a5b5"></td>
-		      	<td>Золотая звезда</td>
-		      	<td>(GM) Бежево-зо542лотистый</td>
-		      	<td></td>
-	      	</tr>
-  		 	</tbody>
-			</table>
 		</div>
 	</section>
-	<!-- end palette -->
+	<!-- end checkout -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
@@ -337,7 +428,6 @@
 	</footer>
 	<!-- end footer -->
 	<!-- modal-form -->
-	<div class="basket-overlay"></div>
 	<div class="modal-overlay"></div>
 	<div class="modal" id="modal-login">
 		<div class="modal-content">
@@ -383,13 +473,7 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
-	<script type="text/javascript" src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.combined.js"></script>
-	<script>
-		$("#car-colors").tablesorter({
-			sortList: [[0,0], [1,0]],
-		}
-  );
-	</script>
 	<script src="js/common.js"></script>
+	<script src="js/checkout.js"></script>
 </body>
 </html>

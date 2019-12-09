@@ -2564,50 +2564,6 @@ input {
     -webkit-background-size: 17px 17px;
             background-size: 17px; }
 
-table.palette-table {
-  font-family: "Roboto Condensed", sans-serif;
-  width: 100%;
-  padding: 50px 30px 25px;
-  background: #fff;
-  margin: 0; }
-  table.palette-table thead tr th {
-    border: none;
-    background-color: transparent; }
-
-.palette-table th, .palette-table td {
-  padding: 4px 20px; }
-  .palette-table th:nth-child(1), .palette-table td:nth-child(1) {
-    width: 90px;
-    padding: 4px; }
-  .palette-table th:nth-child(2), .palette-table td:nth-child(2) {
-    width: 300px;
-    padding: 4px 0; }
-  .palette-table th:nth-child(3), .palette-table td:nth-child(3) {
-    width: 250px; }
-  .palette-table th:nth-child(4), .palette-table td:nth-child(4) {
-    width: 400px; }
-  .palette-table th:nth-child(5), .palette-table td:nth-child(5) {
-    width: 170px;
-    text-align: center; }
-
-.palette-table th {
-  text-align: left;
-  font-size: 17px;
-  font-weight: bold; }
-  .palette-table th.header {
-    height: auto; }
-  .palette-table th:nth-child(1) {
-    padding: 4px 4px 4px; }
-  .palette-table th:nth-child(2) {
-    padding: 4px 0 4px; }
-
-.palette-table td {
-  font-size: 15px; }
-  .palette-table td:nth-child(5) {
-    background: url(../img/check-green.svg) no-repeat center;
-    -webkit-background-size: 17px 17px;
-            background-size: 17px; }
-
 /* -- catalog -- */
 .pagination {
   display: -webkit-box;
@@ -4251,9 +4207,7 @@ table.palette-table {
       padding-top: 10px; }
     .catalog-content__row-list .products-card__bottom {
       top: auto;
-      bottom: 10px; }
-  table.palette-table {
-    padding: 30px 0 30px 10px; } }
+      bottom: 10px; } }
 
 @media only screen and (max-width: 900px) {
   .header-search__result {
@@ -4478,9 +4432,7 @@ table.palette-table {
     height: 22px;
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
-            transform: translate(0, 0); }
-  .palette-table th:nth-child(4), .palette-table th:nth-child(5), .palette-table td:nth-child(4), .palette-table td:nth-child(5) {
-    display: none; } }
+            transform: translate(0, 0); } }
 
 @media only screen and (max-width: 700px) {
   .catalog-content__row-list .products-card__wrap {
