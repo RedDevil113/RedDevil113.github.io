@@ -1,13 +1,28 @@
-.order-sidebar__wrap.sidebar-fixed {
-  position: fixed;
-  top: 80px;
-  left: 0;
-  width: 290px;
-  background: #f7f7f7;
-  z-index: 99; }
+.order-sidebar {
+  position: relative; }
+  .order-sidebar__wrap {
+    width: 290px;
+    background: #f7f7f7;
+    z-index: 99; }
+    .order-sidebar__wrap.sidebar-fixed {
+      position: fixed;
+      top: 80px;
+      left: 0; }
+    .order-sidebar__wrap.sidebar-absolute {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      left: 0; }
+
+@media only screen and (max-width: 1100px) {
+  .order-sidebar__wrap.sidebar-fixed {
+    top: 100px; } }
 
 @media only screen and (max-width: 800px) {
-  .order-sidebar__wrap.sidebar-fixed {
-    position: relative;
-    top: 0;
-    left: 0; } }
+  .order-sidebar__wrap {
+    width: 100%;
+    position: relative; }
+    .order-sidebar__wrap.sidebar-fixed {
+      position: relative;
+      top: 0;
+      left: 0; } }
