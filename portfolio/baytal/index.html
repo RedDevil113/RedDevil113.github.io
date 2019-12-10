@@ -583,16 +583,16 @@
 		ymaps.ready(init);		
 		function init() {
 			var myMap = new ymaps.Map("map", {
-				center: [55.76, 37.64],
+				center: [49.04709849999997, 55.821477068907086],
 				zoom: 10
 			}, {
 				searchControlProvider: 'yandex#search'
 			});
 				
-			var myPlacemark = new ymaps.Placemark([55.75,37.75],{
+			var myPlacemark = new ymaps.Placemark([49.04709849999997, 55.821477068907086],{
 				balloonContentBody: '<div class="map-balloon"><h4 class="map-title"><span>Наши</span> КОНТАКТЫ</h4><ul class="map-list"><li><span class="ico-hb ico-map"></span>г.Казань, ул. Солнечная улица, 2</li><li><span class="ico-hb ico-phone"></span><a href="#">8 (843) 200-00-00</a></li><li><span class="ico-hb ico-mail"></span><a href="#">info@akbaital.ru</a></li></ul></div>',
 				hintContent: "Подсказка",
-				minHeight: 200
+				minHeight: 230
 				}, {
 				iconLayout: 'default#image',
 				iconImageHref: "img/map-i.png",
