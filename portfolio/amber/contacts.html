@@ -106,37 +106,37 @@
 						<li><a href="#">Картины из янтаря</a></li>
 						<li>Картины из янтаря</li>
 					</ul>
-					<h1 class="page__name">Войти, используя эл.почту и пароль</h1>
-					<div class="entrance">
-						<div class="entrance__block">
-							<form action="">
-								<div class="entrance__block-row">
-									<div class="entrance__block-col">
-										<div class="input__block">
-											<input id="i-1" name="email" type="text" autocomplete="off" required="">
-											<label for="i-1">Введите email</label>
-											<span>Неверный формат email</span>
-										</div>
-										<button class="main-btn">Войти</button>
-									</div>
-									<div class="entrance__block-col">
-										<div class="input__block">
-											<input id="i-2" name="text" type="text" autocomplete="off" required="">
-											<label for="i-2">Введите пароль</label>
-										</div>
-										<a href="#" class="link">Забыли пароль?</a>
-										<ul class="social">
-											<li><a class="ico-instagram" href="#"></a></li>
-											<li><a class="ico-facebook" href="#"></a></li>
-											<li><a class="ico-vk" href="#"></a></li>
-										</ul>
+					<h1 class="page__name">Контакты</h1>
+					<div class="contacts">
+						<div class="contacts__row">
+							<div class="contacts__col">
+								<div class="contacts__col-wrap">
+									<h3 class="contacts__col-title">Магазин в ТЦ "Ханой Москва"</h3>
+									<ul>
+										<li>Ярославское ш., 146, павильон А 52-54</li>
+										<li>Телефон: +7 (495) 943-43-23</li>
+										<li>Режим работы: пн-вс с 10-00 до 22-00</li>
+									</ul>
+									<p><span class="ico-hb ico-metro"></span>Охотный ряд, Театральная</p>
+									<div class="contacts__col-map">
+										<div id="map" class="map__block"></div>
 									</div>
 								</div>
-							</form>
-						</div>
-						<div class="entrance__block">
-							<h3 class="entrance__title">Впервые на сайте?</h3>
-							<a href="#" class="main-btn">Зарегистрируйтесь</a>
+							</div><!-- col(1) -->
+							<div class="contacts__col">
+								<div class="contacts__col-wrap">
+									<h3 class="contacts__col-title">Магазин в ТЦ "Ханой Москва"</h3>
+									<ul>
+										<li>Ярославское ш., 146, павильон А 52-54</li>
+										<li>Телефон: +7 (495) 943-43-23</li>
+										<li>Режим работы: пн-вс с 10-00 до 22-00</li>
+									</ul>
+									<p><span class="ico-hb ico-metro"></span>Охотный ряд, Театральная</p>
+									<div class="contacts__col-map">
+										<div id="map2" class="map__block"></div>
+									</div>
+								</div>
+							</div><!-- col(1) -->
 						</div>
 					</div>
 				</div>
@@ -223,5 +223,41 @@
 	<!-- end page -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+		ymaps.ready(init);		
+		function init() {
+			var myMap = new ymaps.Map("map", {
+				center: [55.821477068907086,49.04709849999997],
+				zoom: 16
+			}, {
+				searchControlProvider: 'yandex#search'
+			});
+				
+			var myPlacemark = new ymaps.Placemark([55.821477068907086,49.04709849999997],{
+				iconImageHref: "img/ping.svg",
+				iconImageSize: [88, 88],
+				iconImageOffset: [-44, -88],
+			});
+			myMap.geoObjects.add(myPlacemark);
+			myMap.behaviors.disable('scrollZoom');
+
+			var myMap = new ymaps.Map("map2", {
+				center: [55.821477068907086,49.04709849999997],
+				zoom: 16
+			}, {
+				searchControlProvider: 'yandex#search'
+			});
+				
+			var myPlacemark = new ymaps.Placemark([55.821477068907086,49.04709849999997],{
+				iconImageHref: "img/ping.svg",
+				iconImageSize: [88, 88],
+				iconImageOffset: [-44, -88],
+			});
+			myMap.geoObjects.add(myPlacemark);
+			myMap.behaviors.disable('scrollZoom');
+			
+		}
+	</script>
 </body>
 </html>
