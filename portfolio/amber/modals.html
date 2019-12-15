@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start page -->
+	<main class="page">
+		<!-- start sidebar -->
+		<aside class="sidebar">
+			<div class="sidebar__close ico-hb ico-close"></div>
+			<div class="sidebar__wrap">
+				<div class="sidebar__logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<h3 class="sidebar__title">Каталог</h3>
+				<nav class="sidebar__nav">
+					<ul class="sidebar__list">
+						<li><a class="drop__item" href="#">Браслеты</a></li>
+						<li><a href="#">Броши</a></li>
+						<li><a href="#">Брошь-кулоны посеребрение ручник</a></li>
+						<li><a href="#">Буранит</a></li>
+						<li><a href="#">Бусы</a></li>
+						<li><a href="#">Иконы</a></li>
+						<li><a class="active" href="#">Картины из янтаря</a></li>
+						<li><a href="#">Колье</a></li>
+						<li><a href="#">Кольца</a></li>
+						<li><a href="#">Комплекты украшений</a></li>
+						<li><a href="#">Крестики</a></li>
+						<li><a href="#">Кулоны</a></li>
+						<li><a href="#">Подарочная упаковка</a></li>
+						<li><a href="#">Полунатуральные изделия</a></li>
+						<li><a href="#">Прессованный янтарь</a></li>
+						<li><a href="#">Пусеты</a></li>
+						<li><a href="#">Серьги</a></li>
+						<li><a href="#">Сувениры янтарные</a></li>
+						<li><a href="#">Целебный янтарь</a></li>
+						<li><a href="#">Четки</a></li>
+						<li><a href="#">Янтарь в серебре</a></li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+		<!-- end sidebar -->
+		<!-- start main -->
+		<div class="main">
+			<!-- start header -->
+			<header class="header">
+				<div class="header__top">
+					<div class="wrapper">
+						<div class="header__bar"></div>
+						<ul class="header__menu">
+							<li><a href="#">Как сделать покупку</a></li>
+							<li><a href="#">О магазине</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+						</ul>
+						<div class="header__row">
+							<a href="tel:+73832078658" class="header__phone">+ 7 (383) 207-86-58</a>
+							<a href="tel:+88005056158" class="header__phone">8-800-505-61-58</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="wrapper">
+						<div class="header__logo-mob">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+						</div>
+						<div class="header__search">
+							<form action="">
+								<input type="text" placeholder="Поиск по сайту">
+								<span class="ico-hb ico-search"></span>
+							</form>
+						</div>
+						<ul class="header__list">
+							<li><a class="ico-hb ico-like" href="#"></a></li>
+							<li><a class="ico-hb ico-user" href="#"></a></li>
+							<li><a class="ico-hb ico-basket" href="#"><b>2</b></a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+			<!-- start content -->
+			<div class="content">
+				<div class="wrapper">
+					<ul class="bread-crumbs">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Картины из янтаря</a></li>
+						<li>Картины из янтаря</li>
+					</ul>
+					<h1 class="page__name">Брошь "Цветок" Янтарь</h1>
+					<a href="#modal-1" class="main-btn modal-btn">modal-1</a>
+					<a href="#modal-2" class="main-btn modal-btn">modal-2</a>
+					<a href="#modal-3" class="main-btn modal-btn">modal-3</a>
+					<a href="#modal-4" class="main-btn modal-btn">modal-4</a>
+					<a href="#modal-5" class="main-btn modal-btn">modal-5</a>
+					<a href="#modal-6" class="main-btn modal-btn">modal-6</a>
+				</div>
+			</div>
+			<!-- end content -->
+			<!-- start footer -->
+			<footer class="footer">
+				<div class="footer__action">
+					<div class="wrapper">
+						<div class="footer__action-row">
+							<div class="footer__action-img">
+								<img src="img/mail-send.svg" alt="">
+							</div>
+							<p>Подпишитесь на рассылку и получите информацию о лучших предложениях</p>
+						</div>
+						<div class="footer__form">
+							<form action="">
+								<div class="footer__form-wrap">
+									<input name="email" type="email" class="footer__input" placeholder="Введите E-mail">
+									<button class="footer__form-btn main-btn">ПОДПИСАТЬСЯ</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="footer__top">
+					<div class="wrapper">
+						<div class="footer__col footer__col-1">
+							<div class="footer__col-img">
+								<img src="img/question.svg" alt="">
+							</div>
+							<div class="footer__col-info">
+								<p>Остались вопросы?Звоните нам:</p>
+								<a href="tel:+88005056158" class="footer__phone">8 (800) 505-61-58</a>
+							</div>
+						</div>
+						<div class="footer__col footer__col-2">
+							<div class="footer__col-img">
+								<img src="img/calendar.svg" alt="">
+							</div>
+							<div class="footer__col-info">
+								<p>Время работы:</p>
+								<ul>
+									<li>Пн-Пт: <span>с 09:00 до 19:00</span></li>
+									<li>Сб-Вс: <span>с 10:00 до 18:00</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__col footer__col-3">
+							<p>Присоединяйтесь к нам в социальных сетях:</p>
+							<ul class="footer__social social">
+								<li><a class="ico-instagram" href="#"></a></li>
+								<li><a class="ico-facebook" href="#"></a></li>
+								<li><a class="ico-vk" href="#"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__middle">
+					<div class="wrapper">
+						<ul class="footer__list">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Реквизиты</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="wrapper">
+						<p>© 2019 Интернет-магазин «Russianamber.ru»</p>
+						<div class="footer__bottom-row">
+							<p>Мы принимаем к оплате</p>
+							<img src="img/payment-methods.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- end footer -->	
+		</div>
+		<!-- end main -->
+	</main>
+	<!-- end page -->
+	<div id="modal-1" class="modal">
+		<div class="modal__close"></div>
+		<div class="modal__wrapper">
+			<div class="modal__product">
+				<div class="modal__product-wrap">
+					<h3 class="modal__product-title">Брошь "Цветок" Янтарь</h3>
+					<div class="modal__product-img">
+						<img src="img/detail-img-big.png" alt="">
+					</div>
+				</div>
+				<div class="modal__product-info">
+					<p class="detail__info-price">2 290 ₽</p>
+					<p class="detail__info-availability">В наличии на складе</p>
+					<p class="detail__info-number">#113170008</p>
+					<div class="detail__info-size">
+						<p>Размер:</p>
+						<div class="detail__info-list">
+							<ul>
+								<li><a class="active" href="#">18</a></li>
+								<li><a href="#">18</a></li>
+								<li><a href="#">18</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="detail__info-row">
+						<a href="#" class="main-btn">Купить в 1 клик</a>
+						<a href="#" class="main-btn">В корзину</a>
+					</div>
+					<a href="#" class="detail__info-link detail__info-arrow">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modal-2" class="modal">
+		<div class="modal__close"></div>
+		<div class="modal__wrapper modal__wrapper-min">
+			<h3 class="modal__title">Быстрый заказ</h3>
+			<div class="modal__text">
+				<p>Введите свой номер телефона и имя.</p>
+				<p>Вам позвонит менеджер для согласования доставки.</p>
+			</div>
+			<div class="modal__info">
+				<div class="modal__row">
+					<div class="input__block">
+						<input id="k-1" name="text" type="text" autocomplete="off" required="">
+						<label for="k-1">Введите Имя</label>
+					</div>
+					<div class="input__block">
+						<input id="k-2" name="text" type="text" autocomplete="off" required="">
+						<label for="k-2">Введите номер мобильного телефона</label>
+					</div>
+					<a href="#" class="main-btn">Заказать</a>
+				</div>
+				<p>Нажимая на кнопку «Заказать», вы принимаете условия <a href="#">Публичной оферты</a></p>
+			</div>
+			<div class="modal__bottom">
+				<p><a href="#">В корзине 5 товаров</a> на сумму 10 217 ₽</p>
+				<a href="#" class="modal__link"><span class="ico-hb ico-arrow"></span>Продолжить покупки</a>
+			</div>
+		</div>
+	</div>
+	<div id="modal-3" class="modal">
+		<div class="modal__close"></div>
+		<div class="modal__wrapper modal__wrapper-min">
+			<h3 class="modal__title">Купить в 1 клик</h3>
+			<div class="modal__info">
+				<div class="modal__row">
+					<div class="input__block">
+						<input id="g-1" name="text" type="text" autocomplete="off" required="">
+						<label for="g-1">Введите Имя</label>
+					</div>
+					<div class="input__block">
+						<input id="g-2" name="text" type="text" autocomplete="off" required="">
+						<label for="g-2">Введите номер мобильного телефона</label>
+					</div>
+					<a href="#" class="main-btn">Заказать</a>
+				</div>
+				<p>Нажимая на кнопку «Заказать», вы принимаете условия <a href="#">Публичной оферты</a></p>
+			</div>
+			<div class="modal__bottom modal__bottom-second">
+				<a href="#" class="modal__link"><span class="ico-hb ico-arrow"></span>Продолжить покупки</a>
+			</div>
+		</div>
+	</div>
+	<div id="modal-4" class="modal">
+		<div class="modal__close"></div>
+		<div class="modal__wrapper modal__wrapper-min">
+			<h3 class="modal__title">Купить в 1 клик</h3>
+			<div class="modal__text">
+				<p>Заказа № 455 оформлен. В ближайшее время с вами свяжется наш менеджер.</p>
+			</div>
+			<div class="modal__bottom modal__bottom-second">
+				<a href="#" class="modal__link"><span class="ico-hb ico-arrow"></span>Продолжить покупки</a>
+			</div>
+		</div>
+	</div>
+	<div id="modal-5" class="modal">
+		<div class="modal__close"></div>
+		<div class="modal__wrapper">
+			<h3 class="modal__title">Комплект добавлен в корзину</h3>
+			<div class="basket__card">
+				<a href="#" class="basket__card-link">х   удалить</a>
+				<div class="basket__card-row">
+					<div class="basket__card-img">
+						<img src="img/basket-img.png" alt="">
+					</div>
+					<h3 class="basket__card-name">Брошь "Цветок" Янтарь</h3>
+				</div>
+				<div class="basket__card-info">
+					<p><span>258 ₽</span>208 ₽</p>
+					<div class="basket__card-input">
+						<span class="basket__card-minus"></span>
+						<input name="text" type="text" value="1">
+						<span class="basket__card-plus"></span>
+					</div>
+				</div>
+			</div>
+			<div class="basket__card">
+				<a href="#" class="basket__card-link">х   удалить</a>
+				<div class="basket__card-row">
+					<div class="basket__card-img">
+						<img src="img/basket-img.png" alt="">
+					</div>
+					<h3 class="basket__card-name">Брошь "Цветок" Янтарь</h3>
+				</div>
+				<div class="basket__card-info">
+					<p><span>258 ₽</span>208 ₽</p>
+					<div class="basket__card-input">
+						<span class="basket__card-minus"></span>
+						<input name="text" type="text" value="1">
+						<span class="basket__card-plus"></span>
+					</div>
+				</div>
+			</div>
+			<div class="basket__card">
+				<a href="#" class="basket__card-link">х   удалить</a>
+				<div class="basket__card-row">
+					<div class="basket__card-img">
+						<img src="img/basket-img.png" alt="">
+					</div>
+					<h3 class="basket__card-name">Брошь "Цветок" Янтарь</h3>
+				</div>
+				<div class="basket__card-info">
+					<p><span>258 ₽</span>208 ₽</p>
+					<div class="basket__card-input">
+						<span class="basket__card-minus"></span>
+						<input name="text" type="text" value="1">
+						<span class="basket__card-plus"></span>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bottom-row">
+				<p><a href="#">В корзине 5 товаров</a> на сумму 10 217 ₽</p>
+				<div>
+					<a href="#" class="modal__link"><span class="ico-hb ico-arrow"></span>Продолжить покупки</a>
+					<a href="#" class="main-btn">Перейти в корзину</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modal-6" class="modal modal__basket">
+		<div class="modal__close"></div>
+		<div class="modal__wrapper">
+			<h3 class="modal__title">Товар добавлен в корзину</h3>
+			<div class="basket__card">
+				<a href="#" class="basket__card-link">х   удалить</a>
+				<div class="basket__card-row">
+					<div class="basket__card-img">
+						<img src="img/basket-img.png" alt="">
+					</div>
+					<h3 class="basket__card-name">Брошь "Цветок" Янтарь</h3>
+				</div>
+				<div class="basket__card-info">
+					<p><span>258 ₽</span>208 ₽</p>
+					<div class="basket__card-input">
+						<span class="basket__card-minus"></span>
+						<input name="text" type="text" value="1">
+						<span class="basket__card-plus"></span>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bottom-row">
+				<p><a href="#">В корзине 5 товаров</a> на сумму 10 217 ₽</p>
+				<div>
+					<a href="#" class="modal__link"><span class="ico-hb ico-arrow"></span>Продолжить покупки</a>
+					<a href="#" class="main-btn">Перейти в корзину</a>
+				</div>
+			</div>
+			<div class="products">
+				<h2 class="products__title">С этим товаром покупают</h2>
+				<div class="products__slider">
+					<div class="products__slide">
+						<div class="product">
+							<div class="product__wrap">
+								<div class="product__slider">
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(1) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(2) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(3) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(4) -->
+								</div>
+								<h3 class="product__name"><a href="#">Браслет , Янтарь</a></h3>
+								<div class="product__info">
+									<p class="product__info-old">13500₽<span>-30%</span></p>
+									<p class="product__info-price">9500₽</p>
+									<p class="product__info-benefit">выгода 1000р</p>
+									<a href="#" class="product__btn"></a>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide(1) -->
+					<div class="products__slide">
+						<div class="product">
+							<div class="product__wrap">
+								<div class="product__slider">
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(1) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(2) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(3) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(4) -->
+								</div>
+								<h3 class="product__name"><a href="#">Браслет , Янтарь</a></h3>
+								<div class="product__info">
+									<p class="product__info-old">13500₽<span>-30%</span></p>
+									<p class="product__info-price">9500₽</p>
+									<p class="product__info-benefit">выгода 1000р</p>
+									<a href="#" class="product__btn"></a>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide(2) -->
+					<div class="products__slide">
+						<div class="product">
+							<div class="product__wrap">
+								<div class="product__slider">
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(1) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(2) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(3) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(4) -->
+								</div>
+								<h3 class="product__name"><a href="#">Браслет , Янтарь</a></h3>
+								<div class="product__info">
+									<p class="product__info-old">13500₽<span>-30%</span></p>
+									<p class="product__info-price">9500₽</p>
+									<p class="product__info-benefit">выгода 1000р</p>
+									<a href="#" class="product__btn"></a>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide(3) -->
+					<div class="products__slide">
+						<div class="product">
+							<div class="product__wrap">
+								<div class="product__slider">
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(1) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(2) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(3) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(4) -->
+								</div>
+								<h3 class="product__name"><a href="#">Браслет , Янтарь</a></h3>
+								<div class="product__info">
+									<p class="product__info-old">13500₽<span>-30%</span></p>
+									<p class="product__info-price">9500₽</p>
+									<p class="product__info-benefit">выгода 1000р</p>
+									<a href="#" class="product__btn"></a>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide(4) -->
+					<div class="products__slide">
+						<div class="product">
+							<div class="product__wrap">
+								<div class="product__slider">
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(1) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(2) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1.png" alt="">
+										</div>
+									</div><!-- slide(3) -->
+									<div class="product__slide">
+										<div class="product__slide-wrap">
+											<img src="img/product-1-1.png" alt="">
+										</div>
+									</div><!-- slide(4) -->
+								</div>
+								<h3 class="product__name"><a href="#">Браслет , Янтарь</a></h3>
+								<div class="product__info">
+									<p class="product__info-old">13500₽<span>-30%</span></p>
+									<p class="product__info-price">9500₽</p>
+									<p class="product__info-benefit">выгода 1000р</p>
+									<a href="#" class="product__btn"></a>
+								</div>
+							</div>
+						</div>
+					</div><!-- slide(5) -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
