@@ -19,7 +19,55 @@
 <body>
 	<!-- start header -->
 	<header class="header">
-		<div class="wrapper"></div>
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header-nav">
+				<ul class="header-list">
+					<li><a href="#">Главная</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text"><span>Нефтепродукты</span></a>
+						<ul class="drop-list">
+							<li><a href="#">Категория 1</a></li>
+							<li><a href="#">Категория 2</a></li>
+							<li><a href="#">Категория 3</a></li>
+							<li><a href="#">Категория 4</a></li>
+							<li><a href="#">Категория 5</a></li>
+							<li><a href="#">Категория 6</a></li>
+							<li><a href="#">Категория 7</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Транспортные Услуги</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+				<ul class="header-info__social">
+					<li><a href="#"><img src="img/inst-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/facebook-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/vk-ico.svg" alt=""></a></li>
+				</ul>
+				<a href="#" class="header-phone">+7 (977) 303-81-81</a>
+			</div>
+			<div class="header-bar"></div>
+		</div>
+		<div class="header-info">
+			<div class="header-info__wrap">
+				<div class="header-info__logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+				<p>(ООО «Терминал») обеспечивает<br> нефтепродуктами компании по всей<br>России и осуществляет поставки на экспорт.</p>
+				<a href="#" class="main-btn">Заказать звонок</a>
+				<ul class="header-info__social">
+					<li><a href="#"><img src="img/inst-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/facebook-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/vk-ico.svg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
 	</header>
 	<!-- end header -->
 	<!-- start main -->
@@ -97,6 +145,7 @@
 	<!-- start supplier -->
 	<section class="supplier">
 		<div class="supplier-bg" style="background-image: url(img/supplier-bg.png);"></div>
+		<div class="supplier-bg supplier-bg__mob" style="background-image: url(img/supplier-bg-mob.png);"></div>
 		<div class="wrapper">
 			<div class="supplier-row">
 				<div class="supplier-call">
@@ -228,6 +277,7 @@
 	<!-- start request -->
 	<section class="request">
 		<div class="wrapper">
+			<div class="request-img" style="background-image: url(img/request.jpg);"></div>
 			<div class="request-info">
 				<h2 class="request-title">Оставьте заявку</h2>
 				<p>Звоните нам, если ваше предприятие нуждается в качественных нефтепродуктах и оперативных поставках. Информацию о продукции, ее цене и поставках вам предоставит менеджер. Наш успех базируется на профессионализме, оперативности решений и индивидуальном подходе к нуждам клиентов!</p>
@@ -238,7 +288,6 @@
 					</div>
 				</form>
 			</div>
-			<div class="request-img" style="background-image: url(img/request.jpg);"></div>
 		</div>
 	</section>
 	<!-- end request -->
@@ -247,15 +296,15 @@
 		<div class="wrapper">
 			<div class="working-info">
 				<h2 class="section-title">Мы работаем по всему миру</h2>
+				<div class="working-img">
+					<img src="img/working.png" alt="">
+				</div>
 				<ul>
 					<li>Покупаем нефть</li>
 					<li>Перерабатываем нефть в нефепродукты</li>
 					<li>Организуем прокачку по трубе</li>
 					<li>Организуем перевозку (вагоны, пароходы, бензовозы)</li>
 				</ul>
-			</div>
-			<div class="working-img">
-				<img src="img/working.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -353,35 +402,44 @@
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
-			
+			<div class="footer-row">
+				<div class="footer-main">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="img/logo-footer.svg" alt="">
+						</a>
+					</div>
+					<p>(ООО «Терминал») обеспечивает<br> нефтепродуктами компании по всей<br>России и осуществляет поставки на экспорт.</p>
+				</div>
+				<div class="footer-info">
+					<ul class="footer-list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Нефтепродукты</a></li>
+						<li><a href="#">Транспортные услуги</a></li>
+						<li><a href="#">О компании</a></li>
+					</ul>
+					<div class="footer-info__row">
+						<div class="footer-col">
+							<span class="footer-col__subtitle">АДРЕС</span>
+							<p>Г. Москва, ул. Арбат, 54/2 с1,<br>оф. 423 (головной офис)</p>
+						</div>
+						<div class="footer-col">
+							<span class="footer-col__subtitle">ТЕЛЕФОН</span>
+							<p><a href="#">+7 (977) 303-81-81</a></p>
+						</div>
+						<div class="footer-col">
+							<span class="footer-col__subtitle">E-MAIL</span>
+							<p><a href="#">info@terminal.moscow</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>2005–2019 © Terminal</p>
+			</div>
 		</div>
 	</footer>
 	<!-- end footer -->
-	<!-- modal-form -->
-	<div class="modal-overlay"></div>
-	<div class="modal" id="modal-form">
-		<div class="modal-content">
-			<div class="success">
-				<h3 class="modal-content__title">Спасибо за заявку</h3>
-				<p class="modal-content__subtitle">Мы перезвоним Вам в ближайшее время</p>
-			</div>
-			<form class="callback" method="POST">
-				<input type="hidden" name="subject" value="" id="info-form">
-				<h3 class="modal-content__title">Оставьте заявку</h3>
-				<p class="modal-content__subtitle">Наш менеджер перезвонит Вам в ближайшее время</p>
-				<div class="modal-content__input">
-					<input type="text" name="name" placeholder="Введите имя" required minlength="2">
-				</div>
-				<div class="modal-content__input">
-					<input type="tel" name="phone" placeholder="Введите телефон" minlength="8">
-				</div>
-				<div class="modal-content__input">
-					<input type="text" name="address" placeholder="Введите адрес" minlength="5">
-				</div>
-				<button class="main-btn submit">ОСТАВИТЬ ЗАЯВКУ</button>
-			</form>
-		</div>
-	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
