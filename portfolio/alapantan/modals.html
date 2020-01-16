@@ -29,6 +29,9 @@
 				<li><a class="button-modal second-btn" href="#modal-7">modal-7</a></li>
 				<li><a class="button-modal second-btn" href="#modal-8">modal-8</a></li>
 				<li><a class="button-modal second-btn" href="#modal-9">modal-9</a></li>
+				<li><a class="button-modal second-btn" href="#modal-10">modal-10</a></li>
+				<li><a class="button-modal second-btn" href="#modal-11">modal-11</a></li>
+				<li><a class="button-modal second-btn" href="#modal-12">modal-12</a></li>
 			</ul>
 		</div>
 	</div>
@@ -374,7 +377,7 @@
 				<h3 class="modal-review__add-title">Добавьте фотографии</h3>
 				<div class="modal-review__photo">
 					<div class="modal-review__photo-ico">
-						<input type="checkbox">
+						<input type="file">
 					</div>
 					<div class="modal-review__photo-info">
 						<p>Нажмите на фотоаппарат или перетащите на него фотографию</p>
@@ -396,6 +399,109 @@
 					<a href="#" class="second-btn">Отправить отзыв</a>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="modal modal-comment" id="modal-10">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Оставить комментарий к отзыву</h3>
+			<form method="POST">
+				<div class="modal-input__row">
+					<div class="modal-input">
+						<label for="p-1">Введите Ваше имя<span>*</span></label>
+						<input id="p-1" type="text" name="text">
+					</div>
+					<div class="modal-input">
+						<label for="p-2">Введите E-mail<span>*</span></label>
+						<input id="p-2" type="text" name="text">
+					</div>
+					<div class="modal-review__content modal-input modal-input__full">
+						<textarea name="text" placeholder="Написать комментарий..."></textarea>
+					</div>
+				</div>
+				<p class="modal-text"><span>*</span> - поля обязательные к заполнению</p>
+				<button class="second-btn">Оставить комментарий</button>
+			</form>
+		</div>
+	</div>
+	<div class="modal modal-comment" id="modal-11">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Оставить отзыв</h3>
+			<div class="modal-stars">
+				<div class="rating-slide__row">
+				<p tabindex="0">Оценка:</p>
+					<div class="stars">
+				    <input type="radio" id="star5" name="rating" value="5" tabindex="0"><label for="star5"></label>
+				    <input type="radio" id="star4" name="rating" value="4" tabindex="0"><label for="star4"></label>
+				    <input type="radio" id="star3" name="rating" value="3" tabindex="0"><label for="star3"></label>
+				    <input type="radio" id="star2" name="rating" value="2" tabindex="0"><label for="star2"></label>
+				    <input type="radio" id="star1" name="rating" value="1" tabindex="0"><label for="star1"></label>
+					</div>
+				</div>
+			</div>
+			<form method="POST">
+				<div class="modal-input__row">
+					<div class="modal-input">
+						<label for="pc-1">Введите Ваше имя<span>*</span></label>
+						<input id="pc-1" type="text" name="text">
+					</div>
+					<div class="modal-input">
+						<label for="pc-2">Введите E-mail<span>*</span></label>
+						<input id="pc-2" type="text" name="text">
+					</div>
+					<div class="modal-review__content modal-input modal-input__full">
+						<textarea name="text" placeholder="Написать комментарий..."></textarea>
+					</div>
+				</div>
+				<p class="modal-text"><span>*</span> - поля обязательные к заполнению</p>
+				<button class="second-btn">Написать отзыв...</button>
+			</form>
+		</div>
+	</div>
+	<div class="modal modal-order" id="modal-12">
+		<div class="modal-close ico-close"></div>
+		<div class="modal-content">
+			<h3 class="modal-title">Быстрое оформление заказа</h3>
+			<p class="modal-order__text">После отправки заказа наши менеджеры свяжутся с Вами <span>в ближайшее время</span></p>
+			<h3 class="modal-order__title">Панты Марала консервированные слайсы , 40 г</h3>
+			<form action="">
+				<div class="modal-order__row">
+					<div class="modal-order__img">
+						<img src="img/modal-img.png" alt="">
+						<div class="modal-order__input">
+							<label for="hh">Количество</label>
+							<div class="basket-col__input">
+								<span class="basket-col__input-minus">-</span>
+								<input type="text" name="text" value="1" id="hh">
+								<span class="basket-col__input-add">+</span>
+							</div>
+						</div>
+					</div>
+					<div class="modal-order__info">
+						<div class="modal-input">
+							<label for="ji-1">Имя<span>*</span></label>
+							<input id="ji-1" type="text" name="text">
+						</div>
+						<div class="modal-input">
+							<label for="ji-2">E-mail<span>*</span></label>
+							<input id="ji-2" type="text" name="text">
+						</div>
+						<div class="modal-input">
+							<label for="ji-3">Номер телефона<span>*</span></label>
+							<input id="ji-3" type="text" name="text" class="phone-input">
+						</div>
+						<div class="modal-input">
+							<label for="ji-4">Комментарий</label>
+							<textarea name="text" id="ji-4"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="modal-order__bottom">
+					<button class="second-btn">Оформить заказ</button>
+					<p>Нажимая на кнопку <a href="#">“Оформить заказ”</a>,<br>Вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+				</div>
+			</form>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
