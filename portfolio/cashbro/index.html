@@ -497,10 +497,12 @@
 			<h3 class="modal-title">Регистрация</h3>
 			<form method="POST">
 				<div class="modal-input">
-					<input type="email" name="email" placeholder="Введите ваш  e-mail">
+					<input type="email" name="email" placeholder="Введите ваш  e-mail" minlength="20" required="required">
+					<span>Введен неверный email</span>
 				</div>
 				<div class="modal-input modal-input__password">
-					<input type="password" name="password" placeholder="Придумайте пароль">
+					<input type="password" name="password" placeholder="Придумайте пароль" required>
+					<span>Введен неверный пароль</span>
 					<div class="hb-ico password-ico"></div>
 				</div>
 				<button class="main-btn">Зарегистрироваться</button>
