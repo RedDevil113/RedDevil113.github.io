@@ -697,10 +697,12 @@
 			<h3 class="modal-title">Регистрация</h3>
 			<form method="POST">
 				<div class="modal-input">
-					<input type="email" name="email" placeholder="Введите ваш  e-mail">
+					<input type="email" name="email" placeholder="Введите ваш  e-mail" minlength="20" required="required">
+					<span>Введен неверный email</span>
 				</div>
 				<div class="modal-input modal-input__password">
-					<input type="password" name="password" placeholder="Придумайте пароль">
+					<input type="password" name="password" placeholder="Придумайте пароль" required>
+					<span>Введен неверный пароль</span>
 					<div class="hb-ico password-ico"></div>
 				</div>
 				<button class="main-btn">Зарегистрироваться</button>
@@ -716,9 +718,9 @@
 					<p>Нажав «Зарегистрироваться», я принимаю <a href="#">условия клиентского соглашения</a> и <a href="#">политика конфиденциальности</a></p>
 				</div>
 			</form>
-		</div>
-		<div class="modal-bottom">
-			<p>Уже есть аккаунт? <a href="#modal-entry" class="button-modal">Войти</a></p>
+			<div class="modal-bottom">
+				<p>Уже есть аккаунт? <a href="#modal-entry" class="button-modal">Войти</a></p>
+			</div>
 		</div>
 	</div>
 	<div class="modal" id="modal-entry">
@@ -747,9 +749,9 @@
 					</ul>
 				</div>
 			</form>
-		</div>
-		<div class="modal-bottom">
-			<p>Нет аккаунта? <a href="#modal-registration" class="button-modal">Зарегистрироваться</a></p>
+			<div class="modal-bottom">
+				<p>Нет аккаунта? <a href="#modal-registration" class="button-modal">Зарегистрироваться</a></p>
+			</div>
 		</div>
 	</div>
 	<div class="modal modal-reestablish" id="modal-reestablish">
@@ -762,9 +764,9 @@
 				</div>
 				<button class="main-btn">Восстановить</button>
 			</form>
-		</div>
-		<div class="modal-bottom">
-			<p>Вспомнили пароль? <a href="#modal-entry" class="button-modal">Войти</a></p>
+			<div class="modal-bottom">
+				<p>Вспомнили пароль? <a href="#modal-entry" class="button-modal">Войти</a></p>
+			</div>
 		</div>
 	</div>
 	<div class="modal modal-form" id="modal-form">
