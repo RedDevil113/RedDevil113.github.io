@@ -70,8 +70,8 @@
 	<section class="main">
 		<div class="main-slider">
 			<div class="main-slide">
-				<div class="main-slide__img">
-					<img data-speed="-1.6" class="main-slide__img-1 img-parallax" src="img/image_slider.jpg" alt="">
+				<div class="main-slide__img" data-relative-input="true" id="parallax">
+					<img class="thumbnail main-slide__img-1" src="img/image_slider.jpg" alt="">
 					<img class="main-slide__img-2" src="img/main-2.png" alt="">
 				</div>
 				<div class="wrapper">
@@ -577,6 +577,14 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+	<script>
+		var image = document.getElementsByClassName('thumbnail');
+		new simpleParallax(image, {
+			delay: 0.3,
+			scale: 1.5
+		});
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
