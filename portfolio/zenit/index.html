@@ -240,7 +240,7 @@
 	<!-- start map -->
 	<section class="map" style="background-image: url(img/map-bg.png);">
 		<h2 class="section-title">Где купить</h2>
-		<div id="map" class="map-wrap" style="background-image: url(img/map.png);"></div>
+		<div id="map" class="map-wrap"></div>
 		<a href="#" class="map-link">Полный список адресов</a>
 	</section>
 	<!-- end map -->
@@ -814,5 +814,267 @@
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=6a195d57-dcaa-4b51-9aa7-5052e3ce2318" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);  
+	  function init() {
+	   	var myMap = new ymaps.Map("map", {
+	    center: [55.821477068907086,49.04709849999997],
+	    zoom: 16
+	   	}, {
+	    	searchControlProvider: 'yandex#search'
+	   });
+	 	}
+		var mapPoints = [ 
+		  { 
+		    coordinates: [59.875998, 30.348531], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Витебский пр д.11</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.980682, 30.322471], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Выборгская наб. д. 61 </p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.758708, 30.470064], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>пос. Ленсоветовский  Московское ш. 231</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.998216, 30.235074], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Оптиков д. 15 </p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [60.018907, 30.430996], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Руставели д.42</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.994499, 30.327411], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Сердобольская д. 3</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.917317, 30.358439], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Черняховского д. 21 </p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.939181, 30.415276], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>пр. Шаумяна д. 4 </p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.861422, 30.288119], 
+		    properties: {
+				balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Краснопутиловская 46 а</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.997397, 30.364880], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Политехническая 15А</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [60.038209, 30.317216], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Выборгское шоссе 22Б</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.946284, 30.433476], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Партизанская 15к1</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.950839, 30.246060], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>пр. Кима  д.6, В.О.</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.824606, 30.191011], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>пр. Народного Ополчения д.201К</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.995287, 30.409104], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>пр. Непокорённых  д.64</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.988572, 30.348459], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Харченко, д.41</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.971172, 30.297578], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Эксклюзив»</b></font></div>",
+					balloonContentBody: "<div class='map-balloon-body'><p>ул. Профессора Попова д.38 (въезд с ул. Даля)</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://tyres.spb.ru/catalog_tires_level_search_d_0_w_0_h_0_season_0_brand_continental' target='_blank'>https://tyres.spb.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [60.042568, 30.317782], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Автоэксперт»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Выборгское шоссе д. 7 корпус 1</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://5koleso.com/catalog/continental/letnie.html' target='_blank'>https://www.shinaexpert.ru</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.879281, 30.382056], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Автоэксперт»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул.Пражская 5</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://5koleso.com/catalog/continental/letnie.html' target='_blank'>https://www.shinaexpert.ru</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.881078, 30.382316], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Автоэксперт»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул.Фучика, д.17 </p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://5koleso.com/catalog/continental/letnie.html' target='_blank'>https://www.shinaexpert.ru</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.961061, 30.442593], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Автоэксперт»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ш.Революции, дом 58</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://5koleso.com/catalog/continental/letnie.html' target='_blank'>https://www.shinaexpert.ru</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [60.059086, 30.335020], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>пр. Энгельса,  154 е</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [60.025215, 30.317458], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>пр. Энгельса, 96</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.857509,30.202824], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Десантников, 11</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.966935, 30.469408], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Химиков, 10</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  {
+				coordinates: [59.882225, 30.377349], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>ул. Фучика, 8</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.826411, 30.189951], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>проспект маршала Жукова, 78</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [59.851363, 30.295431], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Ленинский проспект, 147</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [60.025682, 30.613731], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Ленинградская обл., г. Всеволожск, Дорога Жизни 6 километр</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [60.069611, 30.288973], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Шинсервис»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Выборгское ш., 212 литера В</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='https://spb.shinservice.ru/search/continental/summer/205-55-R16/' target='_blank'>https://spb.shinservice.ru/</a></div>"
+		    }
+		  },
+		  { 
+		    coordinates: [60.042298, 30.235199], 
+		    properties: {
+		      balloonContentHeader: "<div class='map-balloon-header'><font size=3><b>ООО «Зеленая Шина»</b></font></div>",
+		      balloonContentBody: "<div class='map-balloon-body'><p>Парашютная 70</p></div>",
+		      balloonContentFooter: "<div class='map-balloon-footer'><a href='http://www.greentyre.ru/catalog/tyres/?property_groupid=711&property_132=&property_136=&property_131=&property_130=%D0%9B%D0%B5%D1%82%D0%BE&property_134=&filter=1' target='_blank'>http://www.greentyre.ru/</a></div>"
+		    }
+		  }
+		]
+	</script>
 </body>
 </html>
