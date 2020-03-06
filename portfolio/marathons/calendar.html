@@ -171,144 +171,16 @@
 		</div>
 	</header>
 	<!-- end header -->
-	<!-- start balance -->
-	<section class="balance">
+	<!-- start timetable -->
+	<section class="timetable">
 		<div class="wrapper">
-			<h1 class="page-title">Мой баланс</h1>
-			<div class="balance-wrap">
-				<div class="balance-row">
-					<div class="balance-col">
-						<span class="balance-subtitle">Текущий</span>
-						<span class="balance-price">7 250 ₽</span>
-					</div>
-					<div class="balance-col balance-col__2">
-						<span class="balance-subtitle">Доступно к выводу</span>
-						<span class="balance-price">1 290 ₽<span class="tooltip">?<b>Lorem ipsum dolor sit.</b></span></span>
-					</div>
-				</div>
-				<div class="balance-btn">
-					<a href="#modal-facilities" class="main-btn button-modal">Вывести средства</a>
-				</div>
+			<h1 class="page-title">Расписание прямых эфиров</h1>
+			<div class="timetable-wrap">
+				<div id='calendar'></div>
 			</div>
 		</div>
 	</section>
-	<!-- end balance -->
-	<!-- start history -->
-	<section class="history">
-		<div class="wrapper">
-			<div class="member-top">
-				<h2 class="section-title">История</h2>
-				<div class="select">
-					<div class="select-text">Все операции</div>
-					<div class="select-info">
-						<ul class="select-list">
-							<li>тема 1</li>
-							<li>тема 2</li>
-							<li>тема 3</li>
-						</ul>
-					</div>
-					<input type="text" name="text" class="select-value" value="">
-				</div>
-			</div>
-			<div class="history-table">
-				<div class="history-row history-row__top">
-					<div class="history-col history-col__1">
-						<p>Дата</p>
-					</div>
-					<div class="history-col history-col__2">
-						<p>Сумма, руб</p>
-					</div>
-					<div class="history-col history-col__3">
-						<p>Операция</p>
-					</div>
-				</div>
-				<div class="history-row">
-					<div class="history-col history-col__1">
-						<p>10.09.2019, 14:43</p>
-					</div>
-					<div class="history-col history-col__2">
-						<p class="text-green">+1 000</p>
-					</div>
-					<div class="history-col history-col__3">
-						<p>Покупка участия в марафоне «Как круто обрабатывать фото в Instagram»</p>
-					</div>
-				</div>
-				<div class="history-row">
-					<div class="history-col history-col__1">
-						<p>10.09.2019, 14:17</p>
-					</div>
-					<div class="history-col history-col__2">
-						<p class="text-red">-500</p>
-					</div>
-					<div class="history-col history-col__3">
-						<p>Вы купили участие в марафоне <a href="#">«Название марафона»</a></p>
-					</div>
-				</div>
-				<div class="history-row">
-					<div class="history-col history-col__1">
-						<p>10.09.2019, 13:08</p>
-					</div>
-					<div class="history-col history-col__2">
-						<p class="text-green">+1 500</p>
-					</div>
-					<div class="history-col history-col__3">
-						<p>Покупка участия в марафоне «Название марафона»</p>
-					</div>
-				</div>
-				<div class="history-row">
-					<div class="history-col history-col__1">
-						<p>10.09.2019, 12:00</p>
-					</div>
-					<div class="history-col history-col__2">
-						<p class="text-red">-2 750</p>
-					</div>
-					<div class="history-col history-col__3">
-						<p>Вывод средств</p>
-					</div>
-				</div>
-				<div class="history-row">
-					<div class="history-col history-col__1">
-						<p>10.09.2019, 11:29</p>
-					</div>
-					<div class="history-col history-col__2">
-						<p class="text-red">-500</p>
-					</div>
-					<div class="history-col history-col__3">
-						<p>Вы купили участие в марафоне «Название марафона»</p>
-					</div>
-				</div>
-				<div class="history-row">
-					<div class="history-col history-col__1">
-						<p>10.09.2019, 7:18</p>
-					</div>
-					<div class="history-col history-col__2">
-						<p class="text-green">+500</p>
-					</div>
-					<div class="history-col history-col__3">
-						<p>Вы купили участие в марафоне «Название марафона»</p>
-					</div>
-				</div>
-			</div>
-			<div class="dots">
-				<li class="active" data-scroll="1"></li>
-				<li data-scroll="2"></li>
-			</div>
-			<div class="pagination">
-				<a href="#" class="pagination-arrow"><svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2932 29.7071C14.6837 30.0976 15.3167 30.0976 15.7072 29.7071C16.0976 29.3167 16.0976 28.6836 15.7072 28.2931L2.41472 15L15.7071 1.70693C16.0976 1.31645 16.0976 0.683346 15.7071 0.292862C15.3167 -0.09762 14.6836 -0.09762 14.2932 0.292862L0.330177 14.2566C0.317522 14.268 0.305089 14.2798 0.292892 14.292C0.104991 14.4799 0.00751686 14.724 0.000468254 14.9703C-0.00764847 15.2363 0.0898075 15.5049 0.292836 15.708C0.305395 15.7205 0.318207 15.7327 0.331252 15.7444L14.2932 29.7071Z" fill="#3F4D64"/></svg></a>
-				<ul>
-					<li class="active">1</li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li><span>...</span></li>
-					<li><a href="#">28</a></li>
-				</ul>
-				<a href="#" class="pagination-arrow"><svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.70677 0.292862C1.31633 -0.0976208 0.683284 -0.0976208 0.292836 0.292862C-0.0976124 0.683346 -0.0976116 1.31644 0.292837 1.70693L13.5853 15L0.292892 28.2931C-0.0975557 28.6836 -0.0975564 29.3167 0.292892 29.7071C0.68334 30.0976 1.31638 30.0976 1.70683 29.7071L15.6698 15.7434C15.6825 15.732 15.6949 15.7202 15.7071 15.708C15.895 15.5201 15.9925 15.276 15.9995 15.0297C16.0076 14.7637 15.9102 14.4951 15.7072 14.292C15.6946 14.2795 15.6818 14.2673 15.6687 14.2556L1.70677 0.292862Z" fill="#3F4D64"/></svg></a>
-			</div>
-		</div>
-	</section>
-	<!-- end history -->
+	<!-- end timetable -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="footer-top">
@@ -366,47 +238,40 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-	<div class="modal-overlay"></div>
-	<div id="modal-facilities" class="modal">
-		<div class="close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2929 0.292893C14.6834 -0.0976311 15.3166 -0.0976311 15.7071 0.292893C16.0976 0.683417 16.0976 1.31658 15.7071 1.70711L9.41431 7.99988L15.7073 14.2929C16.0978 14.6834 16.0978 15.3166 15.7073 15.7071C15.3168 16.0976 14.6836 16.0976 14.2931 15.7071L8.00009 9.41409L1.70711 15.7071C1.31658 16.0976 0.683417 16.0976 0.292893 15.7071C-0.0976315 15.3166 -0.0976307 14.6834 0.292894 14.2929L6.58588 7.99988L0.293109 1.70711C-0.0974149 1.31658 -0.0974158 0.683418 0.293108 0.292893C0.683633 -0.0976309 1.3168 -0.0976309 1.70732 0.292893L8.00009 6.58566L14.2929 0.292893Z" fill="#C1CADA"/></svg></div>
-		<div class="modal-content">
-			<form action="">
-				<h3 class="modal-title">Вывод средств</h3>
-				<div class="modal-conclusion">
-					<p>Какую сумму вывести</p>
-					<div class="modal-conclusion__wrap">
-						<input type="text" name="text" value="1290">
-						<span>₽</span>
-					</div>
-				</div>
-				<div class="modal-text">
-					<p>Внимание! Запрошенная сумма будет списана с вашего баланса. <br>Вы можете в любой момент отменить запрос на выплату.</p>
-					<p>Следующая выплата будет произведена 02.01.2020</p>
-				</div>
-				<div class="modal-btns">
-					<a href="#" class="main-btn">Вывести</a>
-					<a href="#" class="second-btn">Отмена</a>
-				</div>
-			</form>
-		</div>
-	</div>
-	<div id="modal-confirmation" class="modal">
-		<div class="close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2929 0.292893C14.6834 -0.0976311 15.3166 -0.0976311 15.7071 0.292893C16.0976 0.683417 16.0976 1.31658 15.7071 1.70711L9.41431 7.99988L15.7073 14.2929C16.0978 14.6834 16.0978 15.3166 15.7073 15.7071C15.3168 16.0976 14.6836 16.0976 14.2931 15.7071L8.00009 9.41409L1.70711 15.7071C1.31658 16.0976 0.683417 16.0976 0.292893 15.7071C-0.0976315 15.3166 -0.0976307 14.6834 0.292894 14.2929L6.58588 7.99988L0.293109 1.70711C-0.0974149 1.31658 -0.0974158 0.683418 0.293108 0.292893C0.683633 -0.0976309 1.3168 -0.0976309 1.70732 0.292893L8.00009 6.58566L14.2929 0.292893Z" fill="#C1CADA"/></svg></div>
-		<div class="modal-content">
-			<form action="">
-				<h3 class="modal-title">Подтвердите действие</h3>
-				<div class="modal-text modal-center">
-					<p>Вы действительно хотите удалить пользователя<br>из вашего списка кураторов?</p>
-				</div>
-				<div class="modal-btns">
-					<a href="#" class="main-btn">Удалить</a>
-					<a href="#" class="second-btn">Отмена</a>
-				</div>
-			</form>
-		</div>
-	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+	<script>
+
+	  document.addEventListener('DOMContentLoaded', function() {
+	    var calendarEl = document.getElementById('calendar');
+
+	    var calendar = new FullCalendar.Calendar(calendarEl, {
+	      plugins: [ 'interaction', 'dayGrid' ],
+	      defaultDate: '2020-02-12',
+	      editable: true,
+	      eventLimit: true, // allow "more" link when too many events
+	      events: [
+	        {
+	          title: 'Генеральная уборка частной двухкомнатной',
+	          start: '2020-02-12T10:30:00',
+	          end: '2020-02-12T12:30:00'
+	        },
+	        {
+	          title: 'Как круто обрабатывать фото',
+	          start: '2020-02-12T10:31:00',
+	          end: '2020-02-12T12:32:00'
+	        },
+	        {
+	          title: 'Кто заработает быстрее свои первые 250 000 ₽ рублей',
+	          start: '2020-02-12T12:00:00'
+	        },
+	      ]
+	    });
+
+	    calendar.render();
+	  });
+
+	</script>
 </body>
 </html>
