@@ -242,35 +242,64 @@
 	<script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 	<script>
+		if($(window).width() > 850){
+		  document.addEventListener('DOMContentLoaded', function() {
+		    var calendarEl = document.getElementById('calendar');
 
-	  document.addEventListener('DOMContentLoaded', function() {
-	    var calendarEl = document.getElementById('calendar');
+		    var calendar = new FullCalendar.Calendar(calendarEl, {
+		      plugins: [ 'interaction', 'dayGrid' ],
+		      defaultDate: '2020-02-12',
+		      editable: true,
+		      eventLimit: true, // allow "more" link when too many events
+		      events: [
+		        {
+		          title: 'Генеральная уборка частной двухкомнатной',
+		          start: '2020-02-12T10:30:00',
+		          end: '2020-02-12T12:30:00'
+		        },
+		        {
+		          title: 'Как круто обрабатывать фото',
+		          start: '2020-02-12T10:31:00',
+		          end: '2020-02-12T12:32:00'
+		        },
+		        {
+		          title: 'Кто заработает быстрее свои первые 250 000 ₽ рублей',
+		          start: '2020-02-12T12:00:00'
+		        },
+		      ]
+		    });
 
-	    var calendar = new FullCalendar.Calendar(calendarEl, {
-	      plugins: [ 'interaction', 'dayGrid' ],
-	      defaultDate: '2020-02-12',
-	      editable: true,
-	      eventLimit: true, // allow "more" link when too many events
-	      events: [
-	        {
-	          title: 'Генеральная уборка частной двухкомнатной',
-	          start: '2020-02-12T10:30:00',
-	          end: '2020-02-12T12:30:00'
-	        },
-	        {
-	          title: 'Как круто обрабатывать фото',
-	          start: '2020-02-12T10:31:00',
-	          end: '2020-02-12T12:32:00'
-	        },
-	        {
-	          title: 'Кто заработает быстрее свои первые 250 000 ₽ рублей',
-	          start: '2020-02-12T12:00:00'
-	        },
-	      ]
-	    });
+		    calendar.render();
+		  });
+		}
+		else{
+		  document.addEventListener('DOMContentLoaded', function() {
+			  var calendarEl = document.getElementById('calendar');
 
-	    calendar.render();
-	  });
+			  var calendar = new FullCalendar.Calendar(calendarEl, {
+			    plugins: [ 'interaction', 'dayGrid', 'list' ],
+			    timeZone: 'UTC',
+			    defaultView: 'listMonth',
+
+			    // customize the button names,
+			    // otherwise they'd all just say "list"
+			    views: {
+			      listDay: { buttonText: 'list day' },
+			      listWeek: { buttonText: 'list week' },
+			      listMonth: { buttonText: 'list month' }
+			    },
+
+			    header: {
+			                left: 'prev,next today',
+			                center: 'title',
+			                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+			            },
+			    events: 'https://fullcalendar.io/demo-events.json'
+			  });
+
+			  calendar.render();
+			});
+		}
 
 	</script>
 </body>

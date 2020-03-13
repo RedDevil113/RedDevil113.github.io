@@ -208,66 +208,68 @@
 				<li><a href="#">Форум</a></li>
 			</ul>
 			<h1 class="page-title">Новое обсуждение</h1>
-			<div class="forum-second">
-				<div class="forum-contact">
-					<div class="contacts-block input-block">
-						<label for="i-1">Наименование темы</label>
-						<input id="i-1" type="text" name="text">
-					</div>
-					<div class="contacts-row">
+			<form action="">
+				<div class="forum-second">
+					<div class="forum-contact">
 						<div class="contacts-block input-block">
-							<label for="j">Категория</label>
-							<div class="select">
-								<div class="select-text">Выбрать</div>
-								<div class="select-info">
-									<ul class="select-list">
-										<li>тема 1</li>
-										<li>тема 2</li>
-										<li>тема 3</li>
-									</ul>
+							<label for="i-1">Наименование темы</label>
+							<input id="i-1" type="text" name="text">
+						</div>
+						<div class="contacts-row">
+							<div class="contacts-block input-block">
+								<label for="j">Категория</label>
+								<div class="select">
+									<div class="select-text">Выбрать</div>
+									<div class="select-info">
+										<ul class="select-list">
+											<li>тема 1</li>
+											<li>тема 2</li>
+											<li>тема 3</li>
+										</ul>
+									</div>
+									<input type="text" name="text" class="select-value" value="">
 								</div>
-								<input type="text" name="text" class="select-value" value="">
+							</div>
+							<div class="contacts-block input-block">
+								<label for="i">Целевая группа</label>
+								<div class="select">
+									<div class="select-text">Выбрать</div>
+									<div class="select-info">
+										<ul class="select-list">
+											<li>тема 1</li>
+											<li>тема 2</li>
+											<li>тема 3</li>
+										</ul>
+									</div>
+									<input type="text" name="text" class="select-value" value="">
+								</div>
 							</div>
 						</div>
 						<div class="contacts-block input-block">
-							<label for="i">Целевая группа</label>
-							<div class="select">
-								<div class="select-text">Выбрать</div>
+							<div class="input-drop">
+								<label for="i-2">Укажите марафон</label>
+								<input id="i-2" type="text" name="text" autocomplete="off">
 								<div class="select-info">
-									<ul class="select-list">
-										<li>тема 1</li>
-										<li>тема 2</li>
-										<li>тема 3</li>
-									</ul>
-								</div>
-								<input type="text" name="text" class="select-value" value="">
-							</div>
-						</div>
-					</div>
-					<div class="contacts-block input-block">
-						<div class="input-drop">
-							<label for="i-2">Укажите марафон</label>
-							<input id="i-2" type="text" name="text" autocomplete="off">
-							<div class="select-info">
-								<div class="input-drop__wrap nano">
-									<ul class="select-list nano-content">
-										<li><span>Как круто обрабатывать фото для Instagram</span><img src="img/user-i.png" alt=""></li>
-										<li><span>Как круто печь классические блины</span><img src="img/user-i.png" alt=""></li>
-										<li><span>Как круто выглядеть на свадьбе</span><img src="img/user-i.png" alt=""></li>
-										<li><span>Как круто обрабатывать фото для Instagram</span><img src="img/user-i.png" alt=""></li>
-										<li><span>Как круто печь классические блины</span><img src="img/user-i.png" alt=""></li>
-									</ul>
+									<div class="input-drop__wrap nano">
+										<ul class="select-list nano-content">
+											<li><span>Как круто обрабатывать фото для Instagram</span><img src="img/user-i.png" alt=""></li>
+											<li><span>Как круто печь классические блины</span><img src="img/user-i.png" alt=""></li>
+											<li><span>Как круто выглядеть на свадьбе</span><img src="img/user-i.png" alt=""></li>
+											<li><span>Как круто обрабатывать фото для Instagram</span><img src="img/user-i.png" alt=""></li>
+											<li><span>Как круто печь классические блины</span><img src="img/user-i.png" alt=""></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
+						<div class="contacts-block input-block">
+							<label for="i-3">Текст сообщения</label>
+							<textarea id="i-3" name="text"></textarea>
+						</div>
+						<button class="main-btn">Опубликовать</button>
 					</div>
-					<div class="contacts-block input-block">
-						<label for="i-3">Текст сообщения</label>
-						<textarea id="i-3" name="text"></textarea>
-					</div>
-					<button class="main-btn">Опубликовать</button>
 				</div>
-			</div>
+			</form>
 		</div>
 	</section>
 	<!-- end forum -->
