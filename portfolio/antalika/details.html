@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-main">
+					<a href="#" class="header-lang">
+						<img src="img/flag_ru.png" alt="">
+					</a>
+					<form action="">
+						<div class="header-search">
+							<input type="text" name="text" placeholder="Search in site">
+							<button class="search-btn"><img src="img/search.png" alt=""></button>
+						</div>
+					</form>
+				</div>
+				<div class="header-btns">
+					<div class="header-profile">
+						<div class="header-profile__top">
+							<img src="img/noavatar.jpg" alt="">
+							<span class="header-profile__name">hellgarden02</span>
+						</div>
+						<ul class="header-profile__list">
+							<li><a href="#">My auctions</a></li>
+							<li><a href="#">favourite</a></li>
+							<li><a href="#">My story</a></li>
+							<li><a href="#">My wins</a></li>
+							<li><a href="#">My shopping</a></li>
+							<li><a href="#">My details</a></li>
+							<li><a href="#" class="exit">exit</a></li>
+						</ul>
+					</div>
+					<div class="header-cell">Bids: <b>11</b></div>
+					<div class="header-cell header-cell__mob">Demobids: <b>20</b></div>
+					<div class="header-cell">Balance: <b>0</b></div>
+					<div class="header-add">
+						<span class="header-add__btn">Add funds</span>
+						<ul class="header-profile__list">
+							<li><a href="#">Bids</a></li>
+							<li><a href="#">Balance</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.jpg" alt="">
+					</a>
+				</div>
+				<div class="header-bar">
+					<span></span>
+				</div>
+				<ul class="header-list">
+					<li><a href="#">все аукционы</a></li>
+					<li><a href="#">как это работает</a></li>
+					<li><a href="#">бонусы</a></li>
+					<li><a href="#">магазин</a></li>
+					<li><a href="#">помощь</a></li>
+					<li><a href="#">обратная связь</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start details -->
+	<section class="details">
+		<div class="wrapper">
+			<div class="lk-top">
+				<div class="lk-title">MY DETAILS</div>
+			</div>
+			<div class="details-row">
+				<div class="details-sidebar">
+					<ul class="details-list tab-list">
+						<li><a href="#tab-1" class="active">My profile</a></li>
+						<li><a href="#tab-2">My details</a></li>
+						<li><a href="#tab-3">Change password</a></li>
+						<li><a href="#tab-4">My Shipping Address</a></li>
+					</ul>
+				</div>
+				<div class="details-content">
+					<div class="details-tab tab tab-active" id="tab-1">
+						<div class="details-form__row">
+							<label for="x-1">My avatar</label>
+							<div class="details-profile">
+								<div class="details-img">
+									<img src="img/noavatar.jpg" alt="">
+								</div>
+								<div class="select">
+									<div class="select-text">CHANGING OF AVATAR</div>
+									<div class="select-info">
+										<ul class="select-list">
+											<li>CHANGING OF AVATAR</li>
+											<li>UPLOAD A NEW PHOTO</li>
+											<li>REMOVE OF AVATAR</li>
+										</ul>
+									</div>
+									<input class="select-value" type="text">
+								</div>
+							</div>
+						</div>
+						<div class="details-form__row">
+							<label for="s-1">Nick</label>
+							<input id="s-1" type="text" name="text" value="hellgarden02">
+						</div>
+						<div class="details-form__row">
+							<label for="s-2">E-mail</label>
+							<input id="s-2" type="email" name="email" value="hellgarden02@gmail.com">
+						</div>
+						<div class="details-form__row">
+							<label for="s-3">Registered</label>
+							<input id="s-3" type="text" name="text" value="19.01.2020 в 12:40:21">
+						</div>
+						<div class="details-form__btn">
+							<div class="balloon">
+								<img src="img/info_sign.png" alt="">
+								<div class="balloon-text">
+									<span>If you need to change your email address or nickname refer to the administration of the site through the feedback form</span>
+								</div>
+							</div>
+							<a href="#" class="main-btn main-btn-gray">PLACE AN ORDER</a>
+						</div>
+					</div>
+					<div class="details-tab tab" id="tab-2">
+						<div class="details-profile">
+							<div class="details-form">
+								<div class="details-form__row">
+									<label for="d-1">Name</label>
+									<input id="d-1" type="text" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="d-2">Last name</label>
+									<input id="d-2" type="text" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="d-3">Sex</label>
+									<select name="" id="d-3">
+										<option value="Mr.">Mr.</option>
+										<option value="Mrs.">Mrs.</option>
+									</select>
+								</div>
+								<div class="details-form__row">
+									<label for="d-3">Sex</label>
+									<select name="" id="d-3">
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+									</select>
+								</div>
+								<div class="details-form__row">
+									<label for="d-2">Subscription</label>
+									<div class="details-checkbox">
+										<input type="checkbox" checked>
+									</div>
+								</div>
+								<div class="details-form__btn">
+									<a href="#" class="main-btn main-btn-gray">save</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="details-tab tab" id="tab-3">
+						<div class="details-profile">
+							<div class="details-form">
+								<div class="details-form__row">
+									<label for="b-1">Old password</label>
+									<input id="b-1" type="password" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="b-2">New password</label>
+									<input id="b-2" type="password" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="b-3">Confirm password</label>
+									<input id="b-3" type="password" name="text">
+								</div>
+								<div class="details-form__btn">
+									<a href="#" class="main-btn main-btn-gray">save</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="details-tab tab" id="tab-4">
+						<div class="details-profile">
+							<div class="details-form">
+								<div class="details-form__row">
+									<label for="h-1">Recipient (Name)</label>
+									<input id="h-1" type="text" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="h-2">ZIP</label>
+									<input id="h-2" type="text" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="h-3">Country</label>
+									<input id="h-3" type="text" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="h-4">City</label>
+									<input id="h-4" type="text" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="h-5">Address</label>
+									<input id="h-5" type="text" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="h-6">Contact phone</label>
+									<input id="h-6" type="text" name="text">
+								</div>
+								<div class="details-form__row">
+									<label for="h-7">Note</label>
+									<textarea name="text" id="h-7"></textarea>
+								</div>
+								<div class="details-form__btn">
+									<a href="#" class="main-btn main-btn-gray">save</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end details -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-row">
+				<div class="footer-col footer-col__1">
+					<span class="footer-col__subtitle">© 2015 - 2020 auction.antalika.com</span>
+				</div>
+				<div class="footer-col footer-col__2">
+					<span class="footer-col__subtitle">auction.antalika.com</span>
+					<ul>
+						<li><a href="#">All auctions</a></li>
+						<li><a href="#">Personal account</a></li>
+						<li><a href="#">Buy bids</a></li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col__3">
+					<span class="footer-col__subtitle">Note</span>
+					<ul>
+						<li><a href="#">How it works</a></li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col__4">
+					<span class="footer-col__subtitle">Useful links</span>
+					<ul>
+						<li><a href="#">Feedback</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="footer-col footer-col__5">
+					<div class="footer-col__wrap">
+						<a href="#" class="footer-phone">+7(499)7033778</a>
+						<p>Call us if you have any questions on the purchase and work of auctions!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-logIn">
+		<div class="modal-content">
+			<div class="modal-top">
+				<span class="modal-subtitle">Entry</span>
+				<div class="modal-close"></div>
+			</div>
+			<div class="modal-wrap">
+				<form method="">
+					<div class="modal-input">
+						<label for="i-1">E-mail:</label>
+						<input id="i-1" type="email" name="email">
+					</div>
+					<div class="modal-input">
+						<label for="i-2">Password:</label>
+						<input id="i-2" type="password" name="password">
+					</div>
+					<div class="modal-checkbox">
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span></span>
+							<p>Remember me</p>
+						</div>
+					</div>
+					<div class="modal-center">
+						<button class="modal-btn">Log In</button>
+					</div>
+					<ul class="modal-social">
+						<li><a class="ico-vk" href="#"></a></li>
+						<li><a class="ico-classmates" href="#"></a></li>
+						<li><a class="ico-mailru" href="#"></a></li>
+						<li><a class="ico-fb" href="#"></a></li>
+						<li><a class="ico-tw" href="#"></a></li>
+						<li><a class="ico-inst" href="#"></a></li>
+					</ul>
+				</form>
+			</div>
+			<div class="modal-bottom">
+				<a href="#" class="modal-link">Forgot your password?</a>
+				<a href="#modal-registration" class="modal-link button-modal">Registration >></a>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-registration">
+		<div class="modal-content">
+			<div class="modal-top">
+				<span class="modal-subtitle">Registration</span>
+				<div class="modal-close"></div>
+			</div>
+			<div class="modal-wrap">
+				<form method="">
+					<div class="modal-input">
+						<label for="i-3">E-mail:</label>
+						<input id="i-3" type="email" name="email">
+					</div>
+					<div class="modal-input">
+						<label for="i-4">Password:</label>
+						<input id="i-4" type="password" name="password">
+					</div>
+					<div class="modal-checkbox">
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span></span>
+							<p>With <a href="#">conditions</a> agree</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span></span>
+							<p>To <a href="#">processing of personal data</a> agree</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span></span>
+							<p>Receive news</p>
+						</div>
+					</div>
+					<div class="modal-center">
+						<button class="modal-btn">Log In</button>
+					</div>
+					<ul class="modal-social">
+						<li><a class="ico-vk" href="#"></a></li>
+						<li><a class="ico-classmates" href="#"></a></li>
+						<li><a class="ico-mailru" href="#"></a></li>
+						<li><a class="ico-fb" href="#"></a></li>
+						<li><a class="ico-tw" href="#"></a></li>
+						<li><a class="ico-inst" href="#"></a></li>
+					</ul>
+				</form>
+			</div>
+			<div class="modal-bottom">
+				<a href="#modal-logIn" class="modal-link button-modal"><< Log In</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
