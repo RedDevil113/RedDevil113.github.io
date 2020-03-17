@@ -165,11 +165,11 @@
 			<div class="account-row">
 				<div class="account-sidebar">
 					<ul>
-						<li><a href="#" class="active">Баланс</a></li>
+						<li><a href="#">Баланс</a></li>
 						<li><a href="#">Избранное</a></li>
 						<li><a href="#">Мои заказы</a></li>
 						<li><a href="#">Промокоды</a></li>
-						<li><a href="#">Тикеты</a></li>
+						<li><a href="#" class="active">Тикеты</a></li>
 						<li><a href="#">Профиль</a></li>
 						<li><a href="#">Выйти</a></li>
 					</ul>
@@ -177,41 +177,47 @@
 				<div class="account-content">
 					<div class="account-wrap">
 						<div class="account-top">
-							<h1 class="page-title">Баланс: $100</h1>
+							<h1 class="page-title">Тикеты</h1>
+							<a href="#" class="primary-btn">Создать тикет</a>
 						</div>
-						<div class="card-block">
-							<div class="card-row card-row__scroll">
-								<div class="card">
-									<div class="card-wrap">
-										<h3 class="card-name">Standart</h3>
-										<p>$10</p>
-										<a href="#" class="primary-btn">Купить</a>
+						<div class="tickets">
+							<div class="orders-crad orders-crad-main">
+								<div class="orders-crad__block orders-crad__top">
+									<div class="orders-crad__block-row">
+										<h3 class="orders-crad__name">Тикет от 12 февраля</h3>
+										<span class="orders-crad__name text-blue">В процессе</span>
+									</div>
+									<div class="orders-crad__block-row">
+										<p>№12345678</p>
+										<a href="#" class="text-red">Удалить</a>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card-wrap">
-										<h3 class="card-name">Business</h3>
-										<p>$50</p>
-										<a href="#" class="primary-btn">Купить</a>
+								<div class="orders-crad">
+									<div class="orders-crad__block orders-crad__top">
+										<div class="orders-crad__block-row">
+											<h3 class="orders-crad__name">Заказ от 6 февраля</h3>
+											<span class="orders-crad__name">$15</span>
+										</div>
+										<div class="orders-crad__block-row">
+											<p>№12345678</p>
+											<p>Оплачено PayPal</p>
+										</div>
+									</div>
+									<div class="orders-crad__block orders-crad__row">
+										<p>Instagram Likes [1K] [LQ]</p>
+										<p>1000</p>
+										<p>durov</p>
+										<p>$20</p>
+									</div>
+									<div class="orders-crad__block">
+										<p>Скидка</p>
+										<p class="rebate">−$5</p>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card-wrap">
-										<h3 class="card-name">Super</h3>
-										<p>$100</p>
-										<a href="#" class="primary-btn">Купить</a>
-									</div>
+								<div class="orders-crad__bottom btn-flex">
+									<a href="#" class="second-btn second-btn-flex"><span>Подробнее</span><svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0085 0.841835L6.99996 5.85033L1.99146 0.841835L0.341797 2.4915L6.99996 9.14967L13.6581 2.4915L12.0085 0.841835Z" fill="#428DFC"/></svg></a>
 								</div>
 							</div>
-						</div>
-						<div class="anyAmount">
-							<h2 class="block-title">Любая сумма</h2>
-							<form action="">
-								<div class="anyAmount-form">
-									<input type="text" name="text" placeholder="Любая сумма">
-									<button class="primary-btn">Пополнить</button>
-								</div>
-							</form>
 						</div>
 					</div>
 				</div>
