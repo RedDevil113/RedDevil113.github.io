@@ -34,8 +34,8 @@
 							<option value="">iOS</option>
 							<option value="">win</option>
 						</select>
+						<div class="header-symbol">$</div>
 					</div>
-					<span class="header-symbol">$</span>
 					<a href="#" class="header-btn">Помощь</a>
 				</div>
 				<div class="header-logo">
@@ -133,13 +133,164 @@
 	<!-- start checkout -->
 	<section class="checkout">
 		<div class="wrapper">
+			<div class="account-top">
+				<h1 class="page-title">Оформление заказа</h1>
+			</div>
 			<div class="checkout-row">
 				<div class="checkout-content">
-					<h1 class="page-title"></h1>
+					<div class="checkout-step">
+						<div class="checkout-step__top">
+							<span>1</span>
+							<h3 class="checkout-title">Имя пользователя</h3>
+						</div>
+						<div class="block-input input-drop">
+							<div class="input-close"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8906 0.401367L6.94046 5.35037L1.99146 0.401367L0.341797 2.05103L5.2908 7.00003L0.341797 11.949L1.99146 13.5987L6.94046 8.6497L11.8906 13.5987L13.5403 11.949L8.5913 7.00003L13.5403 2.05103L11.8906 0.401367Z" fill="#828282"/></svg></div>
+							<input type="text" name="text" placeholder="Имя пользователя" autocomplete="off">
+							<div class="input-drop__info">
+								<div class="input-drop__info-row">
+									<div class="input-drop__info-img">
+										<img src="img/user.svg" alt="">
+									</div>
+									<div class="input-drop__info-descr">
+										<span class="drop-name">durov</span>
+										<span class="drop-text">Pavel Durov</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="checkout-step">
+						<div class="checkout-step__top">
+							<span>2</span>
+							<h3 class="checkout-title">Выберите публикации</h3>
+						</div>
+						<div class="checkout-text">
+							<p><b>1000 лайков</b></p>
+							<p>Выбрано <b>2</b> публикации, <b>500</b> лайков на публикацию</p>
+						</div>
+						<div class="checkout-publications">
+							<div class="checkout-col">
+								<img src="img/post.svg" alt="">
+							</div>
+							<div class="checkout-col">
+								<img src="img/post.svg" alt="">
+							</div>
+							<div class="checkout-col">
+								<img src="img/post.svg" alt="">
+							</div>
+							<div class="checkout-col">
+								<img src="img/post.svg" alt="">
+							</div>
+							<div class="checkout-col">
+								<img src="img/post.svg" alt="">
+							</div>
+							<div class="checkout-col">
+								<img src="img/post.svg" alt="">
+							</div>
+						</div>
+						<a href="#" class="second-btn second-btn-big">Показать больше</a>
+						<div class="social-row">
+							<div class="product">
+								<div class="product-wrap">
+									<h3 class="product-title">Добавь подписчиков со скидкой 50%</h3>
+									<div class="product-row">
+										<div class="product-info">
+											<span class="product-price">$15 <b>$20</b></span>
+										</div>
+										<span class="discount">−25%</span>
+									</div>
+									<ul class="product-size">
+										<li><a href="#">100</a></li>
+										<li><a href="#">500</a></li>
+										<li><a href="#" class="active">1000</a></li>
+										<li><a href="#">2500</a></li>
+										<li><a href="#">5000</a></li>
+										<li><a href="#">10 000</a></li>
+									</ul>
+									<div class="product-bottom">
+										<div class="product-range">
+											<div class="product-input"></div>
+											<div class="product-range__row">
+												<span class="product-start">1000</span>
+												<span class="product-end">2500</span>
+											</div>
+										</div>
+										<a href="#" class="second-btn">Добавить</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="checkout-step checkout-step__last">
+						<div class="checkout-step__top">
+							<span>3</span>
+							<h3 class="checkout-title">Оплата</h3>
+						</div>
+						<div class="checkout-form">
+							<div class="block-input">
+								<label for="h-1">Электронная почта</label>
+								<input id="h-1" type="email" name="email" placeholder="Электронная почта">
+							</div>
+							<div class="checkout-form__row">
+								<div class="block-input">
+									<label for="h-2">Промокод</label>
+									<input id="h-2" type="text" name="text" placeholder="Промокод">
+								</div>
+								<a href="#" class="second-btn">Применить</a>
+							</div>
+							<div class="checkout-text">
+								<p><b>Баланс: $5</b></p>
+								<div class="checkbox">
+									<input type="checkbox" checked>
+									<span><svg width="14" height="10" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.66667 10.1837L1.82484 6.34183L0.175171 7.9915L5.66667 13.483L16.9915 2.15817L15.3418 0.508499L5.66667 10.1837Z" fill="#fff"/></svg></span>
+									<p>Списать с баланса $5</p>
+								</div>
+								<p><span>$10 к оплате</span></p>
+							</div>
+						</div>
+						<div class="payment-row">
+							<div class="payment-col">
+								<div class="payment-wrap">
+									<img src="img/payment-1.svg" alt="">
+									<input type="radio" name="radio">
+									<span></span>
+								</div>
+							</div>
+							<div class="payment-col">
+								<div class="payment-wrap">
+									<img src="img/payment-2.svg" alt="">
+									<input type="radio" name="radio">
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="sidebar">
 					<div class="sidebar-wrap">
-						
+						<div class="sidebar-info">
+							<div class="sidebar-row">
+								<p>Instagram Likes [1K] [LQ]<span>1000</span></p>
+								<p>$20</p>
+							</div>
+							<div class="sidebar-row">
+								<p>Скидка</p>
+								<p class="text-red">−$5</p>
+							</div>
+						</div>
+						<div class="sidebar-bottom">
+							<div class="sidebar-row">
+								<span class="sidebar-subtitle">Итого</span>
+								<span class="sidebar-subtitle">$15</span>
+							</div>
+							<div class="sidebar-row sidebar-row__text">
+								<p><span>Списано с баланса</span></p>
+								<p><span>−$5</span></p>
+							</div>
+							<div class="sidebar-btn">
+								<a href="#" class="primary-btn primary-btn-big">Оплатить $10</a>
+							</div>
+						</div>
 					</div>
 					<div class="sidebar-text">
 						<p>Нажимая на кнопку, вы подтверждаете своё совершеннолетие, соглашаетесь на обработку персональных данных в соответствии с <a href="#">Условиями</a>, а также с <a href="#">Условиями продажи</a></p>
