@@ -27,12 +27,12 @@
 			</div>
 			<div class="header-row">
 				<ul class="header-list">
-					<li><a href="#">О воде</a></li>
-					<li><a href="#">Упаковка</a></li>
+					<li><a href="#about" class="link-scroll">О воде</a></li>
+					<li><a href="#production" class="link-scroll">Упаковка</a></li>
 				</ul>
 				<ul class="header-list header-list__second">
-					<li><a href="#">Контакты</a></li>
-					<li><a href="#">Блог</a></li>
+					<li><a href="#contacts" class="link-scroll">Контакты</a></li>
+					<li><a href="#news" class="link-scroll">Блог</a></li>
 				</ul>
 				<a href="#" class="header-lang">EN</a>
 			</div>
@@ -49,13 +49,13 @@
 			<div class="main-wrap">
 				<h1 class="page-title">настоящая РОДНИКОВАЯ ВОДА</h1>
 				<p>Родниковая вода высшей категории, сохранившая максимум природной пользы и приятный освежающий вкус, благодаря уникальной системе фильтрации и самой экологически чистой упаковке из представленных на современном российском рынке.</p>
-				<a href="#" class="second-btn">Связаться с нами</a>
+				<a href="#contacts" class="link-scroll second-btn">Связаться с нами</a>
 			</div>
 		</div>
 	</section>
 	<!-- end main -->
 	<!-- start about -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="about-bg" style="background-image: url(img/about-bg.png);"></div>
 		<div class="wrapper">
 			<div class="about-row">
@@ -153,13 +153,13 @@
 						<span>10 г/л</span>
 					</div>
 				</div>
-				<a href="#" class="second-btn">Связаться с нами</a>
+				<a href="#contacts" class="link-scroll second-btn">Связаться с нами</a>
 			</div>
 		</div>
 	</section>
 	<!-- end advantages -->
 	<!-- start production -->
-	<section class="production">
+	<section class="production" id="production">
 		<div class="production-bg" style="background-image: url(img/production-bg.jpg);"></div>
 		<div class="wrapper">
 			<div class="production-wrap">
@@ -220,14 +220,14 @@
 	</section>
 	<!-- end production -->
 	<!-- start news -->
-	<section class="news">
+	<section class="news" id="news">
 		<div class="wrapper">
 			<div class="news-top">
 				<div class="select">
 					<div class="select-top">
 						<div class="select-text">Выберите рубрику</div>
 						<div class="select-arrow">
-							<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path fill="#231F20" fill-rule="evenodd" d="M1382.875 4705L1382 4705.855 1386.249 4710.001 1382 4714.147 1382.875 4715 1388 4710.001 1388 4710z" transform="rotate(90 3048.5 1666.5)"/></svg>
+							<svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8 8L15 1" stroke="#043448"/></svg>
 						</div>
 					</div>
 					<div class="select-info">
@@ -239,8 +239,8 @@
 					</div>
 					<input type="text" name="text" class="select-value" value="">
 				</div>
-				<div class="news-top__row">
-					<div class="news-input"></div>
+				<div class="news-input">
+					<input type="text" name="text" placeholder="поиск по тегу">
 				</div>
 			</div>
 			<div class="news-row">
@@ -286,7 +286,7 @@
 	</section>
 	<!-- end news -->
 	<!-- start contacts -->
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="contacts-product">
 			<img src="img/product-big.png" alt="">
 		</div>
