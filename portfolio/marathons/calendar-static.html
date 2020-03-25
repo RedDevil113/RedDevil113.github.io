@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="block-wrap">
+			<div class="calendar">
+				<div class="calendar-top">
+					<h3 class="calendar-title">Декабрь, 2019</h3>
+					<div class="calendar-pagination">
+						<span class="calendar-prev"><svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2932 29.7071C14.6837 30.0976 15.3167 30.0976 15.7072 29.7071C16.0976 29.3167 16.0976 28.6836 15.7072 28.2931L2.41472 15L15.7071 1.70693C16.0976 1.31645 16.0976 0.683346 15.7071 0.292862C15.3167 -0.09762 14.6836 -0.09762 14.2932 0.292862L0.330177 14.2566C0.317522 14.268 0.305089 14.2798 0.292892 14.292C0.104991 14.4799 0.00751686 14.724 0.000468254 14.9703C-0.00764847 15.2363 0.0898075 15.5049 0.292836 15.708C0.305395 15.7205 0.318207 15.7327 0.331252 15.7444L14.2932 29.7071Z" fill="#3F4D64"/></svg></span>
+						<span class="calendar-next"><svg width="16" height="30" viewBox="0 0 16 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.70677 0.292862C1.31633 -0.0976208 0.683284 -0.0976208 0.292836 0.292862C-0.0976124 0.683346 -0.0976116 1.31644 0.292837 1.70693L13.5853 15L0.292892 28.2931C-0.0975557 28.6836 -0.0975564 29.3167 0.292892 29.7071C0.68334 30.0976 1.31638 30.0976 1.70683 29.7071L15.6698 15.7434C15.6825 15.732 15.6949 15.7202 15.7071 15.708C15.895 15.5201 15.9925 15.276 15.9995 15.0297C16.0076 14.7637 15.9102 14.4951 15.7072 14.292C15.6946 14.2795 15.6818 14.2673 15.6687 14.2556L1.70677 0.292862Z" fill="#3F4D64"/></svg></span>
+					</div>
+				</div>
+				<div class="calendar-content">
+					<div class="calendar-row calendar-row__top">
+						<div class="calendar-col">
+							<span class="calendar-day">Пн</span>
+						</div>
+						<div class="calendar-col">
+							<span class="calendar-day">Вт</span>
+						</div>
+						<div class="calendar-col">
+							<span class="calendar-day">Ср</span>
+						</div>
+						<div class="calendar-col">
+							<span class="calendar-day">Чт</span>
+						</div>
+						<div class="calendar-col">
+							<span class="calendar-day">Пт</span>
+						</div>
+						<div class="calendar-col">
+							<span class="calendar-day">Сб</span>
+						</div>
+						<div class="calendar-col">
+							<span class="calendar-day">Вс</span>
+						</div>
+					</div>
+					<div class="calendar-row">
+						<div class="calendar-col">
+							<div class="calendar-num">1<span class="calendar-day">Пн</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">2<span class="calendar-day">Вт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">3<span class="calendar-day">Ср</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">4<span class="calendar-day">Чт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">5<span class="calendar-day">Пт</span></div>
+						</div>
+						<div class="calendar-col">
+							<span class="calendar-num">6<span class="calendar-day">Сб</span></span>
+							<div class="calendar-mob">
+								<span class="calendar-quantity">12</span>
+								<p>прямых эфиров</p>
+							</div>
+							<div class="calendar-info">
+								Генеральная уборка частной двухкомнатной
+								<span class="svg">
+									<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10ZM6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="#7E57C2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10ZM12 12C15.3137 12 18 9.31371 18 6C18 2.68629 15.3137 0 12 0C8.68629 0 6 2.68629 6 6C6 9.31371 8.68629 12 12 12Z" fill="#7E57C2"/></svg>
+								</span>
+							</div>
+							<div class="calendar-info">
+								Как круто обрабатывать фото
+							</div>
+							<div class="calendar-wrap">
+								<div class="calendar-info">
+									Генеральная уборка частной двухкомнатной
+									<span class="svg">
+										<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10ZM6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="#7E57C2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10ZM12 12C15.3137 12 18 9.31371 18 6C18 2.68629 15.3137 0 12 0C8.68629 0 6 2.68629 6 6C6 9.31371 8.68629 12 12 12Z" fill="#7E57C2"/></svg>
+									</span>
+								</div>
+								<div class="calendar-info">
+									Как круто обрабатывать фото
+								</div>
+								<div class="calendar-info">
+									Генеральная уборка частной двухкомнатной
+									<span class="svg">
+										<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10ZM6 12C9.31371 12 12 9.31371 12 6C12 2.68629 9.31371 0 6 0C2.68629 0 0 2.68629 0 6C0 9.31371 2.68629 12 6 12Z" fill="#7E57C2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10ZM12 12C15.3137 12 18 9.31371 18 6C18 2.68629 15.3137 0 12 0C8.68629 0 6 2.68629 6 6C6 9.31371 8.68629 12 12 12Z" fill="#7E57C2"/></svg>
+									</span>
+								</div>
+							</div>
+							<a href="#" class="calendar-btn">Показать ещё 6</a>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">7<span class="calendar-day">Вс</span></div>
+						</div>
+					</div>
+					<div class="calendar-row">
+						<div class="calendar-col">
+							<div class="calendar-num">8<span class="calendar-day">Пн</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">9<span class="calendar-day">Вт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">10<span class="calendar-day">Ср</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">11<span class="calendar-day">Чт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">12<span class="calendar-day">Пт</span></div>
+						</div>
+						<div class="calendar-col active">
+							<div class="calendar-num">13<span class="calendar-day">Сб</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">14<span class="calendar-day">Вс</span></div>
+						</div>
+					</div>
+					<div class="calendar-row">
+						<div class="calendar-col">
+							<div class="calendar-num">15<span class="calendar-day">Пн</span></div>
+							<div class="calendar-mob">
+								<span class="calendar-quantity">4</span>
+								<p>прямых эфиров</p>
+							</div>
+							<div class="calendar-info">
+								Как круто обрабатывать фото
+							</div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">16<span class="calendar-day">Вт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">17<span class="calendar-day">Ср</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">18<span class="calendar-day">Чт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">19<span class="calendar-day">Пт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">20<span class="calendar-day">Сб</span></div>
+							<div class="calendar-info">
+								Как круто обрабатывать фото
+							</div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">21<span class="calendar-day">Вс</span></div>
+						</div>
+					</div>
+					<div class="calendar-row">
+						<div class="calendar-col">
+							<div class="calendar-num">22<span class="calendar-day">Пн</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">23<span class="calendar-day">Вт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">24<span class="calendar-day">Ср</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">25<span class="calendar-day">Чт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">26<span class="calendar-day">Пт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">27<span class="calendar-day">Сб</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">28<span class="calendar-day">Вс</span></div>
+							<div class="calendar-info">
+								Как круто обрабатывать фото
+							</div>
+						</div>
+					</div>
+					<div class="calendar-row">
+						<div class="calendar-col">
+							<div class="calendar-num">29<span class="calendar-day">Пн</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">30<span class="calendar-day">Вт</span></div>
+						</div>
+						<div class="calendar-col">
+							<div class="calendar-num">31<span class="calendar-day">Ср</span></div>
+						</div>
+						<div class="calendar-col calendar-nextMonth">
+							<div class="calendar-num">1<span class="calendar-day">Чт</span></div>
+						</div>
+						<div class="calendar-col calendar-nextMonth">
+							<div class="calendar-num">2<span class="calendar-day">Пт</span></div>
+						</div>
+						<div class="calendar-col calendar-nextMonth">
+							<div class="calendar-num">3<span class="calendar-day">Сб</span></div>
+						</div>
+						<div class="calendar-col calendar-nextMonth">
+							<div class="calendar-num">4<span class="calendar-day">Вс</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
