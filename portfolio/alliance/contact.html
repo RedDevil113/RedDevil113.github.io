@@ -87,7 +87,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="contacts-map" style="background-image: url(img/map.jpg);">
+			<div class="contacts-map">
 				<div id="map"></div>
 			</div>
 			<div class="contacts-form">
@@ -227,6 +227,23 @@
 			</div>
 		</div>
 	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script>
+		ymaps.ready(init);
+		var myMap;
+
+		function init(){    
+	    myMap = new ymaps.Map ("map", {
+	        center: [55.7084, 37.6527],
+	        zoom: 16,
+	        controls: []
+	    });
+	    myMap.behaviors.disable([
+			  'scrollZoom'
+			]);
+
+		}
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
