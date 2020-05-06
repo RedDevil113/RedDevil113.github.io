@@ -27,7 +27,7 @@
 				<b>меню</b>
 			</div>
 			<div class="header-row">
-				<a  href="#" class="header-logo">
+				<a  href="#" class="header-logo" style="background: #009D4C;">
 					<img src="img/logo.svg" alt="">
 				</a>
 				<div class="header-wrap">
@@ -47,13 +47,20 @@
 						<div>
 							<a href="#" class="header-link">info@ramelectric.ru</a>
 						</div>
-						<a href="#modal-form" class="main-btn button-modal">заказать звонок</a>
+						<a href="#modal-call" class="main-btn button-modal" style="background: linear-gradient(180deg,rgba(255,255,255,.3) 0,rgba(255,255,255,0) 100%),#009d4c;">заказать звонок</a>
 					</div>
 				</div>
 			</div>
-			<ul class="header-list">
+			<ul class="header-list" style="background: #009D4C;">
 				<li><a href="#">Главная</a></li>
-				<li><a href="#">Обо мне</a></li>
+				<li class="drop">
+					<a href="#" class="drop-text">Обо мне</a>
+					<ul class="drop-list" style="background: #009D4C;">
+						<li><a href="#">Пункт меню длинный 1</a></li>
+						<li><a href="#">Пункт меню длинный 2</a></li>
+						<li><a href="#">Пункт меню длинный 3</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Советы электрика</a></li>
 				<li><a href="#">Отзывы</a></li>
 				<li><a href="#">Контакты</a></li>
@@ -78,10 +85,10 @@
 						<div class="aboutMe-block">
 							<h2 class="section-title">Обычно в отзыве пишут:</h2>
 							<ul>
-								<li>Какую работу я сделал?</li>
-								<li>Как это у меня получилось?</li>
-								<li>Будете ли вы еще мне звонить?</li>
-								<li>Оцените количеством звезд мою работу.</li>
+								<li><span class="li-ico" style="background-color: #009D4C;"></span>Какую работу я сделал?</li>
+								<li><span class="li-ico" style="background-color: #009D4C;"></span>Как это у меня получилось?</li>
+								<li><span class="li-ico" style="background-color: #009D4C;"></span>Будете ли вы еще мне звонить?</li>
+								<li><span class="li-ico" style="background-color: #009D4C;"></span>Оцените количеством звезд мою работу.</li>
 							</ul>
 						</div>
 					</div>
@@ -166,7 +173,7 @@
 						</a>
 					</div>
 					<div class="page-btn">
-						<a href="#" class="main-btn">оставить отзыв</a>
+						<a href="#modal-review" class="main-btn button-modal" style="background: linear-gradient(180deg,rgba(255,255,255,.3) 0,rgba(255,255,255,0) 100%),#009d4c;">оставить отзыв</a>
 					</div>
 				</div>
 				<div class="sidebar sidebar-second">
@@ -218,7 +225,37 @@
 	<!-- end footer -->
 	<!-- modal-form -->
 	<div class="modal-overlay"></div>
-	<div class="modal" id="modal-form">
+	<div class="modal" id="modal-call">
+		<div class="modal-close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.96 11.9992L23.3847 19.424C24.2051 20.2443 24.2051 21.5743 23.3847 22.3934L22.3949 23.3832C21.5743 24.2038 20.2443 24.2038 19.4252 23.3832L12.0008 15.9587L4.57604 23.3847C3.75569 24.2051 2.42569 24.2051 1.60661 23.3847L0.615266 22.3949C-0.205089 21.5743 -0.205089 20.2443 0.615266 19.4252L8.04127 11.9992L0.616804 4.57476C-0.203807 3.75415 -0.203807 2.42415 0.616804 1.60508L1.60661 0.615267C2.42697 -0.205088 3.75697 -0.205088 4.57604 0.615267L12.0008 8.03999L19.4252 0.615267C20.2458 -0.205088 21.5758 -0.205088 22.3949 0.615267L23.3847 1.60508C24.2051 2.42569 24.2051 3.75569 23.3847 4.57476L15.96 11.9992Z" fill="#B7B7B7"/></svg>
+		</div>
+		<div class="modal-content">
+			<h3 class="modal-title">Заказ выезда мастера</h3>
+			<form action="">
+				<div class="input-block">
+					<label for="j-1">Ваш телефон или почта<b>*</b></label>
+					<input id="j-1" type="text" name="text">
+					<span class="error-text">Введите пожалуйста телефон или почту</span>
+				</div>
+				<!-- error input -->
+				<!--
+				<div class="input-block error-input">
+					<label for="j-1">Ваш телефон или почта<b>*</b></label>
+					<input id="j-1" type="text" name="text">
+					<span class="error-text">Введите пожалуйста телефон или почту</span>
+				</div>
+				-->
+				<div class="input-block">
+					<label for="i-2">Причина выезда</label>
+					<textarea name="text" id="j-2" placeholder="Опишите кратко проблему, ваш адрес, в какое время удобен звоное и как вас зовут"></textarea>
+				</div>
+				<div class="modal-btn">
+					<button class="main-btn" style="background: linear-gradient(180deg,rgba(255,255,255,.3) 0,rgba(255,255,255,0) 100%),#009d4c;">заказать звонок</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal modal-review" id="modal-review">
 		<div class="modal-close">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.96 11.9992L23.3847 19.424C24.2051 20.2443 24.2051 21.5743 23.3847 22.3934L22.3949 23.3832C21.5743 24.2038 20.2443 24.2038 19.4252 23.3832L12.0008 15.9587L4.57604 23.3847C3.75569 24.2051 2.42569 24.2051 1.60661 23.3847L0.615266 22.3949C-0.205089 21.5743 -0.205089 20.2443 0.615266 19.4252L8.04127 11.9992L0.616804 4.57476C-0.203807 3.75415 -0.203807 2.42415 0.616804 1.60508L1.60661 0.615267C2.42697 -0.205088 3.75697 -0.205088 4.57604 0.615267L12.0008 8.03999L19.4252 0.615267C20.2458 -0.205088 21.5758 -0.205088 22.3949 0.615267L23.3847 1.60508C24.2051 2.42569 24.2051 3.75569 23.3847 4.57476L15.96 11.9992Z" fill="#B7B7B7"/></svg>
 		</div>
@@ -253,7 +290,7 @@
 						</div>
 					</div>
 				</div>
-				<button class="main-btn">оставить отзыв</button>
+				<button class="main-btn" style="background: linear-gradient(180deg,rgba(255,255,255,.3) 0,rgba(255,255,255,0) 100%),#009d4c;">оставить отзыв</button>
 			</form>
 		</div>
 	</div>
@@ -265,7 +302,7 @@
 			<div class="modal-ico">
 				<img src="img/check.svg" alt="">
 			</div>
-			<h3 class="modal-title">Спасибо за ваш отзыв.<br>Мы опубликуем<br> его в ближайшее время</h3>
+			<h3 class="modal-subtitle">Спасибо за ваш отзыв.<br>Мы опубликуем<br> его в ближайшее время</h3>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
