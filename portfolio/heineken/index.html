@@ -74,7 +74,7 @@
 					<h3 class="about-title">Покупай</h3>
 					<p>две и более<br> единицы <a href="#">Heineken®</a> <br>или <a href="#">Heineken 0.0®</a></p>
 				</div>
-				<div class="about-col">
+				<div class="about-col about-col-h">
 					<div class="about-ico">
 						<img src="img/about-img-2.png" alt="">
 					</div>
@@ -88,9 +88,10 @@
 					<h3 class="about-title">Получай</h3>
 					<p>код IVI гарантированно <br>за за успешную регистрацию первого чека</p>
 				</div>
-				<div class="about-col">
+				<div class="about-col about-col-h about-col-hov">
 					<div class="about-ico">
 						<img src="img/about-img-4.png" alt="">
+						<img class="about-hov" src="img/about-img-4-1.png" alt="">
 					</div>
 					<h3 class="about-title">Участвуй</h3>
 					<p>в розыгрыше<br> еженедельных<br>и главных призов</p>
@@ -115,35 +116,79 @@
 			<div class="gifts-wrap">
 				<div class="gifts-row">
 					<div class="gifts-col">
-						<div class="gifts-col__img">
-							<img src="img/gifts.png" alt="">
+						<div class="gifts-col__row">
+							<div class="gifts-col__img">
+								<img src="img/gifts.png" alt="">
+							</div>
+							<div class="gifts-col__wrap">
+								<span class="gifts-subtitle">Надо быстро придумать,<br> что приготовить на ужин?</span>
+							</div>
 						</div>
-						<div class="gifts-col__wrap">
-							<span class="gifts-subtitle">Надо быстро придумать,<br> что приготовить на ужин?</span>
-						</div>
-					</div>
-					<div class="gifts-col">
-						<div class="gifts-col__img">
-							<img src="img/gifts.png" alt="">
-						</div>
-						<div class="gifts-col__wrap">
-							<span class="gifts-subtitle">У меня столько планов! <br>Как везде успеть?</span>
-						</div>
-					</div>
-					<div class="gifts-col">
-						<div class="gifts-col__img">
-							<img src="img/gifts.png" alt="">
-						</div>
-						<div class="gifts-col__wrap">
-							<span class="gifts-subtitle">У меня столько интересов,всегда нужно что-то разное...</span>
+						<div class="lk-col">
+							<div class="lk-img">
+								<img src="img/lk-1.png" alt="">
+							</div>
+							<div class="lk-col__wrap">
+								<span class="lk-subtitle">Надо быстро придумать,<br> что приготовить на ужин?</span>
+								<a href="#" class="main-btn">ВЫБРАТЬ</a>
+							</div>
 						</div>
 					</div>
 					<div class="gifts-col">
-						<div class="gifts-col__img">
-							<img src="img/gifts.png" alt="">
+						<div class="gifts-col__row">
+							<div class="gifts-col__img">
+								<img src="img/gifts.png" alt="">
+							</div>
+							<div class="gifts-col__wrap">
+								<span class="gifts-subtitle">У меня столько планов! <br>Как везде успеть?</span>
+							</div>
 						</div>
-						<div class="gifts-col__wrap">
-							<span class="gifts-subtitle">У меня всё хорошо!<br>Хочу подарок от Heineken®</span>
+						<div class="lk-col">
+							<div class="lk-img">
+								<img src="img/lk-2.png" alt="">
+							</div>
+							<div class="lk-col__wrap">
+								<span class="lk-subtitle">У меня столько планов! <br>Как везде успеть?</span>
+								<a href="#" class="main-btn">ВЫБРАТЬ</a>
+							</div>
+						</div>
+					</div>
+					<div class="gifts-col">
+						<div class="gifts-col__row">
+							<div class="gifts-col__img">
+								<img src="img/gifts.png" alt="">
+							</div>
+							<div class="gifts-col__wrap">
+								<span class="gifts-subtitle">У меня столько интересов,всегда нужно что-то разное...</span>
+							</div>
+						</div>
+						<div class="lk-col">
+							<div class="lk-img">
+								<img src="img/lk-3.png" alt="">
+							</div>
+							<div class="lk-col__wrap">
+								<span class="lk-subtitle">У меня столько интересов, всегда нужно что-то разное...</span>
+								<a href="#" class="main-btn">ВЫБРАТЬ</a>
+							</div>
+						</div>
+					</div>
+					<div class="gifts-col">
+						<div class="gifts-col__row">
+							<div class="gifts-col__img">
+								<img src="img/gifts.png" alt="">
+							</div>
+							<div class="gifts-col__wrap">
+								<span class="gifts-subtitle">У меня всё хорошо!<br>Хочу подарок от Heineken®</span>
+							</div>
+						</div>
+						<div class="lk-col">
+							<div class="lk-img">
+								<img src="img/lk-4.png" alt="">
+							</div>
+							<div class="lk-col__wrap">
+								<span class="lk-subtitle">У меня всё хорошо! Я просто хочу подарок от Heineken®</span>
+								<a href="#" class="main-btn">ВЫБРАТЬ</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -343,20 +388,19 @@
 					</div>
 				</div>
 				<div class="tab lk-tab" id="tab-2">
-					<p>222Здесь ты можешь увидеть, в розыгрышах каких призов участвуют твои чеки  (указаны ФП чеков). Не забывай, что все чеки, указанные здесь, участвуют в розыгрыше главного приза.</p>
-					<div class="lk-table">
+					<div class="lk-table lk-table__second">
 						<div class="lk-table__row lk-table__row-top">
 							<div class="lk-table__col lk-table__col-1">
 								<span>Дата</span>
 							</div>
 							<div class="lk-table__col lk-table__col-2">
-								<span>Сертификат</span>
+								<span>ФП чека</span>
 							</div>
 							<div class="lk-table__col lk-table__col-3">
-								<span>Тип приза</span>
+								<span>Статус модерации</span>
 							</div>
 							<div class="lk-table__col lk-table__col-4">
-								<span>Вид приза</span>
+								<span>Приз</span>
 							</div>
 						</div>
 						<div class="lk-table__row">
@@ -364,39 +408,54 @@
 								<span>18.06.20</span>
 							</div>
 							<div class="lk-table__col lk-table__col-2">
-								<span>certificate.pdf</span>
+								<span><img src="img/scale.svg" alt="">1234567812345678</span>
 							</div>
 							<div class="lk-table__col lk-table__col-3">
-								<span>Еженедельный приз</span>
+								<span><img src="img/update.svg" alt="">Обрабатывается</span>
+							</div>
+							<div class="lk-table__col lk-table__col-4"></div>
+						</div>
+						<div class="lk-table__row">
+							<div class="lk-table__col lk-table__col-1">
+								<span>18.06.20</span>
+							</div>
+							<div class="lk-table__col lk-table__col-2">
+								<span><img src="img/scale.svg" alt="">1234567812345678</span>
+							</div>
+							<div class="lk-table__col lk-table__col-3">
+								<span><img src="img/warning.svg" alt="">Не принят (дубликат)</span>
+							</div>
+							<div class="lk-table__col lk-table__col-4"></div>
+						</div>
+						<div class="lk-table__row">
+							<div class="lk-table__col lk-table__col-1">
+								<span>18.06.20</span>
+							</div>
+							<div class="lk-table__col lk-table__col-2">
+								<span><img src="img/scale.svg" alt="">1234567812345678</span>
+							</div>
+							<div class="lk-table__col lk-table__col-3">
+								<span><img src="img/sheck-tab.svg" alt="">принят</span>
 							</div>
 							<div class="lk-table__col lk-table__col-4">
-								<span>
-									<img src="img/ico-i.svg" alt="">
-									<b>
-										Сертификат на такси 1000 рублей
-									</b>
-								</span>
+								<span>Сертификат Яндекс.Еда</span>
 							</div>
 							<a href="#" class="second-btn">Получить</a>
 						</div>
 						<div class="lk-table__row">
 							<div class="lk-table__col lk-table__col-1">
-								<span>10.07.20       </span>
+								<span>18.06.20</span>
 							</div>
-							<div class="lk-table__col lk-table__col-center lk-table__col-2">
-								<span>—</span>
+							<div class="lk-table__col lk-table__col-2">
+								<span><img src="img/scale.svg" alt="">1234567812345678</span>
 							</div>
 							<div class="lk-table__col lk-table__col-3">
-								<span>Главный приз</span>
+								<span><img src="img/sheck-tab.svg" alt="">принят</span>
 							</div>
 							<div class="lk-table__col lk-table__col-4">
-								<span>
-									<img src="img/ico-i.svg" alt="">
-									<b>
-										Смартфон
-									</b>
-								</span>
+								<span>Сертификат IVI</span>
 							</div>
+							<a href="#" class="second-btn">Получить</a>
 						</div>
 					</div>
 				</div>
