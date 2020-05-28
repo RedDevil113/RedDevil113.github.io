@@ -11,6 +11,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -37,249 +38,269 @@
 		</div>
 	</header>
 	<!-- end header -->
-	<!-- start catalog -->
-	<section class="catalog">
+	<!-- start profile -->
+	<section class="profile">
 		<div class="wrapper">
-			<div class="catalog-row">
-				<div class="catalog-mob">
-					<div class="filter">
-						<div class="filter-row">
-							<div class="filter-btn">
-								<img src="img/filter.svg" alt="">
+			<div class="profile-row">
+				<div class="profile-content">
+					<div class="profile-top">
+						<div class="profile-img">
+							<img src="img/avatar.jpg" alt="">
+						</div>
+						<div class="profile-top__info">
+							<h1 class="profile-name">Екатерина Германова</h1>
+							<a href="#" class="profile-city">Минск, Ленинский</a>
+							<div class="stars">
+								<span class="stars-num">4.0</span>
+								<div class="rate">
+							    <input id="rate1-star5" type="radio" name="rate1" value="5" />
+							    <label for="rate1-star5" title="Excellent">5</label>
+
+							    <input id="rate1-star4" type="radio" name="rate1" value="4" checked/>
+							    <label for="rate1-star4" title="Good"></label>
+
+							    <input id="rate1-star3" type="radio" name="rate1" value="3" />
+							    <label for="rate1-star3" title="Satisfactory">3</label>
+
+							    <input id="rate1-star2" type="radio" name="rate1" value="2" />
+							    <label for="rate1-star2" title="Bad">2</label>
+
+							    <input id="rate1-star1" type="radio" name="rate1" value="1" />
+							    <label for="rate1-star1" title="Very bad">1</label>
+							  </div>
+								<span class="stars-quantity">13 отзывов</span>
 							</div>
-							<span>Фильтр</span>
-						</div>
-					</div>
-				</div>
-				<div class="catalog-sidebar">
-					<div class="sidebar-close">
-						<svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
-					</div>
-					<div class="catalog-sidebar__block">
-						<span class="catalog-subtitle">Город</span>
-						<select name="city" id="">
-							<option value="">Выберите город</option>
-							<option value="">Выберите город</option>
-							<option value="">Выберите город</option>
-						</select>
-					</div>
-					<div class="catalog-sidebar__block">
-						<span class="catalog-subtitle">Район</span>
-						<div class="checkbox">
-							<input type="checkbox" name="area" checked>
-							<span class="checkbox-ico"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><g><g><path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7C514.5,101.703,514.499,85.494,504.502,75.496z"/></g></g></svg></span>
-							<p>Ленинский</p>
-						</div>
-						<div class="checkbox">
-							<input type="checkbox" name="area">
-							<span class="checkbox-ico"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><g><g><path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7C514.5,101.703,514.499,85.494,504.502,75.496z"/></g></g></svg></span>
-							<p>Лукашенский</p>
-						</div>
-						<div class="checkbox">
-							<input type="checkbox" name="area">
-							<span class="checkbox-ico"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><g><g><path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7C514.5,101.703,514.499,85.494,504.502,75.496z"/></g></g></svg></span>
-							<p>Сталинский</p>
-						</div>
-						<a href="#" class="catalog-all">Показать все</a>
-						<div class="catalog-sidebar__wrap">
-							<div class="checkbox">
-								<input type="checkbox" name="area" checked>
-								<span class="checkbox-ico"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><g><g><path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7C514.5,101.703,514.499,85.494,504.502,75.496z"/></g></g></svg></span>
-								<p>Ленинский</p>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="area">
-								<span class="checkbox-ico"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><g><g><path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7C514.5,101.703,514.499,85.494,504.502,75.496z"/></g></g></svg></span>
-								<p>Лукашенский</p>
-							</div>
-							<div class="checkbox">
-								<input type="checkbox" name="area">
-								<span class="checkbox-ico"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve"><g><g><path d="M504.502,75.496c-9.997-9.998-26.205-9.998-36.204,0L161.594,382.203L43.702,264.311c-9.997-9.998-26.205-9.997-36.204,0c-9.998,9.997-9.998,26.205,0,36.203l135.994,135.992c9.994,9.997,26.214,9.99,36.204,0L504.502,111.7C514.5,101.703,514.499,85.494,504.502,75.496z"/></g></g></svg></span>
-								<p>Сталинский</p>
+							<div class="profile-btn">
+								<a href="#" class="second-btn">
+									<span class="second-btn-ico">
+										<svg viewBox="0 0 512.00095 512" xmlns="http://www.w3.org/2000/svg"><path d="m255 202c11.046875 0 20 8.953125 20 20s-8.953125 20-20 20-20-8.953125-20-20 8.953125-20 20-20zm70 20c0 11.046875 8.953125 20 20 20s20-8.953125 20-20-8.953125-20-20-20-20 8.953125-20 20zm-180 0c0 11.046875 8.953125 20 20 20s20-8.953125 20-20-8.953125-20-20-20-20 8.953125-20 20zm349.414062 187.5625c23.40625 23.40625 23.40625 61.46875.011719 84.863281-11.695312 11.695313-27.0625 17.546875-42.425781 17.546875s-30.730469-5.851562-42.425781-17.546875l-109.789063-109.542969c-2.332031-2.328124-4.050781-5.191406-5.007812-8.347656l-23.914063-78.722656c-2.121093-6.980469-.273437-14.558594 4.820313-19.78125 5.09375-5.21875 12.625-7.25 19.65625-5.304688l80.722656 22.359376c3.324219.921874 6.351562 2.683593 8.792969 5.121093zm-162.824218-49.453125 74.089844 73.925781 28.289062-28.289062-73.652344-73.511719-40.609375-11.25zm134.550781 77.75-3.859375-3.855469-28.285156 28.285156 3.847656 3.835938c7.8125 7.816406 20.5 7.816406 28.296875.015625 7.800781-7.796875 7.800781-20.484375 0-28.28125zm-199.015625-23.40625c-3.695312.160156-7.4375.242187-11.125.242187-32.160156 0-63.121094-5.988281-92.019531-17.796874-4.921875-2.007813-10.445313-1.976563-15.34375.089843l-91.066407 38.441407 30.683594-72.683594c3-7.105469 1.644532-15.308594-3.488281-21.074219-29.285156-32.898437-44.765625-72.261719-44.765625-113.824219 0-103.578125 96.898438-187.847656 216-187.847656s216 84.269531 216 187.847656c0 24.5625-6.03125 49.222656-17.929688 73.289063-4.894531 9.902343-.835937 21.898437 9.066407 26.792969 9.902343 4.894531 21.898437.835937 26.792969-9.066407 14.644531-29.628906 22.070312-60.25 22.070312-91.015625 0-125.636718-114.839844-227.847656-256-227.847656-141.15625 0-256 102.210938-256 227.847656 0 47.421875 16.078125 92.332032 46.636719 130.632813l-45.0625 106.742187c-3.164063 7.496094-1.46875 16.164063 4.285156 21.917969 3.828125 3.828125 8.941406 5.859375 14.144531 5.859375 2.621094 0 5.265625-.515625 7.773438-1.574219l128.929687-54.425781c31.445313 11.746094 64.808594 17.695312 99.292969 17.695312 4.265625 0 8.597656-.097656 12.875-.28125 11.035156-.484374 19.589844-9.820312 19.105469-20.855468-.480469-11.035156-9.835938-19.617188-20.855469-19.105469zm0 0"/></svg>
+									</span>
+									<i>Написать отзыв</i>
+								</a>
 							</div>
 						</div>
 					</div>
-					<div class="catalog-sidebar__block">
-						<span class="catalog-subtitle">Выберите услугу</span>
-						<ul class="catalog-list">
-							<li><a href="#">Стрижка Мужская</a></li>
-							<li><a href="#">Монтаж сантехнического </a></li>
-							<li><a href="#">оборудования</a></li>
-							<li><a href="#">Укладка</a></li>
-							<li><a href="#">Химическая завивка</a></li>
-							<li><a href="#">Свадебная прическа</a></li>
-							<li><a href="#">Плетения</a></li>
-							<li><a href="#">Окрашивание волос</a></li>
-							<li><a href="#">Наращивание волос</a></li>
-							<li><a href="#">Ламинирование волос</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="catalog-content">
-					<ul class="breadCrumbs">
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Минск</a></li>
-						<li>Парикмахеры</li>
+					<ul class="profile-tabs tab-list">
+						<li><a href="#tab-1" class="active">О себе (это табы)</a></li>
+						<li><a href="#tab-2">Галерея</a></li>
+						<li><a href="#tab-3">Услуги и Цены</a></li>
+						<li><a href="#tab-4">Отзывы (13)</a></li>
 					</ul>
-					<h1 class="catalog-title">Парикмахерские услуги в Минске</h1>
-					<div class="post">
-						<div class="post-img">
-							<img src="img/avatar.jpg" alt="">
-						</div>
-						<div class="post-wrap">
-							<div class="post-info">
-								<div class="post-info__row">
-									<h3 class="post-name">Екатерина Германова</h3>
-									<a href="#" class="post-city">Минск, Ленинский</a>
-									<ul class="post-list">
-										<li>Работает дистанционно</li>
-									</ul>
-									<div class="post-action">
-										<div class="post-stars">
-											<img src="img/stars.png" alt="">
-										</div>
-										<a href="#" class="post-testimonials">13 отзывов</a>
-									</div>
-								</div>
-								<p>Здравствуйте, уважаемые заказчики! Сантехника это одна из важных составляющих в жизни каждого человека, поэтому....</p>
-							</div>
-							<div class="post-slider demo-gallery lightgallery">
-								<div class="post-slide" data-src="img/1.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/1.jpeg">
-								</div>
-								<div class="post-slide" data-src="img/3.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/3.jpeg">
-								</div>
-								<div class="post-slide" data-src="img/4.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/4.jpeg">
-								</div>
-								<div class="post-slide" data-src="img/5.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/5.jpeg">
-								</div>
-								<div class="post-slide" data-src="img/1.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/1.jpeg">
-								</div>
-								<div class="post-slide" data-src="img/3.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/3.jpeg">
-								</div>
-								<div class="post-slide" data-src="img/4.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/4.jpeg">
-								</div>
-								<div class="post-slide" data-src="img/5.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/5.jpeg">
-								</div>
-							</div>
-							<div class="post-row">
-								<div class="post-col">
-									<div class="post-col__wrap">
-										<h3 class="post-title">Репетитор по английскому языку</h3>
-										<div class="post-col__row">
-											<span class="post-price">100 руб</span>
-										</div>
-									</div>
-								</div>
-								<div class="post-col">
-									<div class="post-col__wrap">
-										<h3 class="post-title">Мужская стрижка</h3>
-										<div class="post-col__row">
-											<span class="post-price">10000 руб</span>
-											<a href="#" class="post-link">Все цены →</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="post">
-						<div class="post-img">
-							<img src="img/avatar.jpg" alt="">
-						</div>
-						<div class="post-wrap">
-							<div class="post-info">
-								<div class="post-info__row">
-									<h3 class="post-name">Екатерина Германова</h3>
-									<a href="#" class="post-city">Минск, Ленинский</a>
-									<div class="post-action">
-										<div class="post-stars">
-											<img src="img/stars.png" alt="">
-										</div>
-										<a href="#" class="post-testimonials">13 отзывов</a>
-									</div>
-								</div>
-								<p>Здравствуйте, уважаемые заказчики! Сантехника это одна из важных составляющих в жизни каждого человека, поэтому....</p>
-							</div>
-							<div class="post-slider demo-gallery lightgallery">
-								<div class="post-slide" data-src="img/1.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/1.jpeg">
-								</div>
-								<div class="post-slide" data-src="img/3.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-	               	<img class="img-responsive" src="img/3.jpeg">
-								</div>
-							</div>
-							<div class="post-row">
-								<div class="post-col">
-									<div class="post-col__wrap">
-										<h3 class="post-title">Репетитор по английскому языку</h3>
-										<div class="post-col__row">
-											<span class="post-price">100 руб</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="post">
-						<div class="post-img">
-							<img src="img/avatar.jpg" alt="">
-						</div>
-						<div class="post-wrap">
-							<div class="post-info">
-								<div class="post-info__row">
-									<h3 class="post-name">Екатерина Германова</h3>
-									<a href="#" class="post-city">Минск, Ленинский</a>
-									<div class="post-action">
-										<div class="post-stars">
-											<img src="img/stars.png" alt="">
-										</div>
-										<a href="#" class="post-testimonials">13 отзывов</a>
-									</div>
-								</div>
-							</div>
-							<div class="post-row">
-								<div class="post-col">
-									<div class="post-col__wrap">
-										<h3 class="post-title">Репетитор по английскому языку</h3>
-										<div class="post-col__row">
-											<span class="post-price">100 руб</span>
-										</div>
-									</div>
-								</div>
-								<div class="post-col">
-									<div class="post-col__wrap">
-										<h3 class="post-title">Мужская стрижка</h3>
-										<div class="post-col__row">
-											<span class="post-price">10000 руб</span>
-											<a href="#" class="post-link">Все цены →</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pagination">
-						<a href="#" class="pagination-prev">←</a>
-						<ul>
-							<li><a href="#" class="active">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
+					<div class="profile-tab tab tab-active" id="tab-1">
+						<h2 class="profile-title">О себе</h2>
+						<ul class="post-list">
+							<li>Принимает у себя</li>
+							<li>Выезжает к клиентам</li>
+							<li>Работает дистанционно</li>
 						</ul>
-						<a href="#" class="pagination-prev">→</a>
+						<div class="profile-text">
+							<p>Здравствуйте, уважаемые заказчики! Сантехника это одна из самых важных составляющих в жизни каждого человека, поэтому. Сервис автоматически проверит ваши основные параметры сайта с историей по дням.</p>
+							<div class="link-more__wrap">
+								<div class="link-more__block">
+									<span class="link-more__subtitle">Опыт работы</span>
+									<p>10 лет</p>
+									<p>Мое мнение, следует воздержаться от шлифовки в межсезонье: осенью, когда уже холодно, но отопление еще не включили, и весной-когда отопление уже отключили.</p>
+								</div>
+								<div class="link-more__block">
+									<span class="link-more__subtitle">Образование</span>
+									<p>Минский государственный архитектурно-строительный колледж, специализация — паркетные работы.</p>
+									<p>Помогу с выбором материала, расскажу о его характеристиках, сориентирую в ценовом диапазоне, подскажу, что лучше для вашего основания пола.</p>
+								</div>
+							</div>
+							<a href="#" data-text="Показать полностью" data-expand="Свернуть часть" class="link-more">Показать полностью</a>
+						</div>
+					</div>
+					<div class="profile-tab tab" id="tab-2">
+						<h2 class="profile-title">Галерея</h2>
+						<div class="post-slider demo-gallery lightgallery">
+							<div class="post-slide" data-src="img/1.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+	             	<img class="img-responsive" src="img/1.jpeg">
+							</div>
+							<div class="post-slide" data-src="img/3.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+	             	<img class="img-responsive" src="img/3.jpeg">
+							</div>
+							<div class="post-slide" data-src="img/4.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+	             	<img class="img-responsive" src="img/4.jpeg">
+							</div>
+							<div class="post-slide" data-src="img/5.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+	             	<img class="img-responsive" src="img/5.jpeg">
+							</div>
+							<div class="post-slide" data-src="img/1.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+	             	<img class="img-responsive" src="img/1.jpeg">
+							</div>
+							<div class="post-slide" data-src="img/3.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+	             	<img class="img-responsive" src="img/3.jpeg">
+							</div>
+							<div class="post-slide" data-src="img/4.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+	             	<img class="img-responsive" src="img/4.jpeg">
+							</div>
+							<div class="post-slide" data-src="img/5.jpeg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+	             	<img class="img-responsive" src="img/5.jpeg">
+							</div>
+						</div>
+					</div>
+					<div class="profile-tab tab" id="tab-3">
+						<h2 class="profile-title">Услуги и цены</h2>
+						<span class="profile-subtitle">Парикмахер</span>
+						<div class="profile-list">
+							<div class="profile-li"><span>Мужская стрижка</span><b>100 руб</b></div>
+							<div class="profile-li"><span>Репетитор по английскому языку</span><b>100 руб / 40 мин</b></div>
+							<div class="profile-li"><span>Мужская стрижка</span><b>100 руб</b></div>
+							<div class="profile-li"><span>Мужская стрижка</span><b>100 руб</b></div>
+							<div class="profile-li"><span>Мужская стрижка</span><b>Договорная</b></div>
+							<div class="link-more__wrap">
+								<div class="profile-li"><span>Мужская стрижка</span><b>100 руб</b></div>
+								<div class="profile-li"><span>Репетитор по английскому языку</span><b>100 руб / 40 мин</b></div>
+								<div class="profile-li"><span>Мужская стрижка</span><b>100 руб</b></div>
+								<div class="profile-li"><span>Мужская стрижка</span><b>100 руб</b></div>
+								<div class="profile-li"><span>Мужская стрижка</span><b>Договорная</b></div>
+							</div>
+							<a href="#" data-text="Показать еще" data-expand="Свернуть часть" class="link-more">Показать еще</a>
+						</div>
+					</div>
+					<div class="profile-tab tab" id="tab-4">
+						<h2 class="profile-title">Отзывы (2)</h2>
+						<div class="testimonials">
+							<span class="testimonials-name">Анна Аннова</span>
+							<div class="stars">
+								<div class="rate">
+							    <input id="star5" type="radio" name="rate11" value="5" />
+							    <label for="star5" title="Excellent">5</label>
+
+							    <input id="star4" type="radio" name="rate11" value="4" checked />
+							    <label for="star4" title="Good">4</label>
+
+							    <input id="star3" type="radio" name="rate11" value="3" />
+							    <label for="star3" title="Satisfactory">3</label>
+
+							    <input id="star2" type="radio" name="rate11" value="2" />
+							    <label for="star2" title="Bad">2</label>
+
+							    <input id="star1" type="radio" name="rate11" value="1" />
+							    <label for="star1" title="Very bad">1</label>
+							  </div>
+							</div>
+							<p>Мастер Александр Сергеевич выполнил электромонтажные работы. Работой довольна, всеее учтено.</p>
+							<div class="testimonials-row">
+								<span class="testimonials-date">1 июня 2020</span>
+							</div>
+						</div>
+						<div class="testimonials">
+							<span class="testimonials-name">Анна Аннова</span>
+							<div class="stars">
+								<div class="rate">
+							    <input id="star51" type="radio" name="rate12" value="5" />
+							    <label for="star51" title="Excellent">5</label>
+
+							    <input id="star41" type="radio" name="rate12" value="4" />
+							    <label for="star41" title="Good">4</label>
+
+							    <input id="star31" type="radio" name="rate12" value="3" checked />
+							    <label for="star31" title="Satisfactory">3</label>
+
+							    <input id="star21" type="radio" name="rate12" value="2" />
+							    <label for="star21" title="Bad">2</label>
+
+							    <input id="star11" type="radio" name="rate12" value="1" />
+							    <label for="star11" title="Very bad">1</label>
+							  </div>
+							</div>
+							<p>Мастер Александр Сергеевич выполнил электромонтажные работы. Работой довольна, всеее учтено.</p>
+							<div class="testimonials-row">
+								<span class="testimonials-date">Отзыв оставлен: 1 июня 2020</span>
+								<span class="testimonials-date">Дата заказа услуги: 1 июля 2019</span>
+							</div>
+						</div>
+						<div class="profile-wrap">
+							<h2 class="profile-title">Оставить отзыв</h2>
+							<div class="profile-form">
+								<form action="">
+									<div class="profile-form__row">
+										<div class="profile-rate">
+											<span>Оцените специалиста</span>
+											<div class="rate">
+										    <input id="star52" type="radio" name="rate12" value="5" />
+										    <label for="star52" title="Excellent">5</label>
+
+										    <input id="star42" type="radio" name="rate12" value="4" checked />
+										    <label for="star42" title="Good">4</label>
+
+										    <input id="star32" type="radio" name="rate12" value="3" />
+										    <label for="star32" title="Satisfactory">3</label>
+
+										    <input id="star22" type="radio" name="rate12" value="2" />
+										    <label for="star22" title="Bad">2</label>
+
+										    <input id="star12" type="radio" name="rate12" value="1" />
+										    <label for="star12" title="Very bad">1</label>
+										  </div>
+										</div>
+										<div class="profile-date">
+											<span>Дата заказа услуги</span>
+											<div class="date">
+												<div class="date-ico">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512"><g><path d="M55,8H51V6a4,4,0,0,0-8,0V8H35V6a4,4,0,0,0-8,0V8H19V6a4,4,0,0,0-8,0V8H7a5.006,5.006,0,0,0-5,5V55a5.006,5.006,0,0,0,5,5H37a1,1,0,0,0,0-2H7a3,3,0,0,1-3-3V22H58V36a1,1,0,0,0,2,0V13A5.006,5.006,0,0,0,55,8ZM45,6a2,2,0,0,1,4,0v6a2,2,0,0,1-4,0ZM29,6a2,2,0,0,1,4,0v6a2,2,0,0,1-4,0ZM13,6a2,2,0,0,1,4,0v6a2,2,0,0,1-4,0ZM4,20V13a3,3,0,0,1,3-3h4v2a4,4,0,0,0,8,0V10h8v2a4,4,0,0,0,8,0V10h8v2a4,4,0,0,0,8,0V10h4a3,3,0,0,1,3,3v7Z"/><path d="M61,41a1,1,0,0,0,0-2H57a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V42.693a10.975,10.975,0,1,1-5.162-4,1,1,0,1,0,.7-1.875A13.018,13.018,0,1,0,59.235,41Z"/><path d="M50,46.184V41a1,1,0,0,0-2,0v5.184A3,3,0,0,0,46.184,48H43a1,1,0,0,0,0,2h3.184A2.993,2.993,0,1,0,50,46.184ZM49,50a1,1,0,1,1,1-1A1,1,0,0,1,49,50Z"/><path d="M27,33H23a2,2,0,0,1-2-2V28a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v3A2,2,0,0,1,27,33Zm-4-5v3h4V28Z"/><path d="M39,33H35a2,2,0,0,1-2-2V28a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v3A2,2,0,0,1,39,33Zm-4-5v3h4V28Z"/><path d="M15,33H11a2,2,0,0,1-2-2V28a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v3A2,2,0,0,1,15,33Zm-4-5v3h4V28Z"/><path d="M51,33H47a2,2,0,0,1-2-2V28a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v3A2,2,0,0,1,51,33Zm-4-5v3h4V28Z"/><path d="M27,44H23a2,2,0,0,1-2-2V39a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v3A2,2,0,0,1,27,44Zm-4-5v3h4V39Z"/><path d="M35,44a2,2,0,0,1-2-2V39a2,2,0,0,1,2-2h3a1,1,0,0,1,0,2H35v3a1,1,0,0,1,0,2Z"/><path d="M15,44H11a2,2,0,0,1-2-2V39a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v3A2,2,0,0,1,15,44Zm-4-5v3h4V39Z"/><path d="M27,55H23a2,2,0,0,1-2-2V50a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v3A2,2,0,0,1,27,55Zm-4-5v3h4V50Z"/><path d="M15,55H11a2,2,0,0,1-2-2V50a2,2,0,0,1,2-2h4a2,2,0,0,1,2,2v3A2,2,0,0,1,15,55Zm-4-5v3h4V50Z"/></g></svg>
+												</div>
+												<input type="text" class="datepicker" placeholder="Выбрать дату">
+											</div>
+										</div>
+									</div>
+									<textarea name="text" placeholder="Ваш отзыв..."></textarea>
+									<div class="profile-form__btn">
+										<button class="main-btn">Отправить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="profile-sidebar">
+					<div class="profile-sidebar__wrap profile-phone">
+						<a href="#modal-profile" class="button-modal main-btn">Показать телефон</a>
+						<span class="profile-sidebar__subtitle">Я в социальных сетях</span>
+						<ul class="profile-sidebar__list">
+							<li><a href="#">
+								<svg height="512" version="1.1" viewBox="0 0 512 512" width="512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs12"/><g id="g5608"><rect height="512" id="rect2987" rx="64" ry="64" style="fill:#4c75a3;fill-opacity:1;fill-rule:nonzero;stroke:none" width="512" x="0" y="0"/><path d="m 251.70955,369.14455 h 23.90722 c 0,0 7.21927,-0.79762 10.91007,-4.76903 3.39705,-3.65021 3.28841,-10.50167 3.28841,-10.50167 0,0 -0.47175,-32.08055 14.42054,-36.80302 14.67964,-4.6544 33.52648,31.00352 53.50297,44.7136 15.10712,10.3751 26.58794,8.10401 26.58794,8.10401 l 53.41814,-0.74389 c 0,0 27.93719,-1.7254 14.69046,-23.69711 -1.08421,-1.79346 -7.72077,-16.24983 -39.71651,-45.94943 -33.50267,-31.09426 -29.01187,-26.06134 11.33755,-79.83777 24.56987,-32.75042 34.39689,-52.73881 31.32344,-61.30492 -2.92543,-8.15775 -20.99737,-6.00608 -20.99737,-6.00608 l -60.14789,0.37614 c 0,0 -4.45617,-0.60898 -7.76492,1.36837 -3.22986,1.93675 -5.30509,6.45384 -5.30509,6.45384 0,0 -9.52735,25.34252 -22.21891,46.89512 -26.77781,45.47421 -37.48837,47.88141 -41.86576,45.05151 -10.18409,-6.5816 -7.63722,-26.43388 -7.63722,-40.54397 0,-44.07239 6.68431,-62.45001 -13.02109,-67.20472 -6.53861,-1.57852 -11.353,-2.62571 -28.07453,-2.79407 -21.45819,-0.21851 -39.62332,0.0681 -49.90525,5.10336 -6.84198,3.35887 -12.12325,10.8181 -8.90281,11.25035 3.9749,0.53016 12.97566,2.42511 17.74706,8.92193 6.16377,8.38702 5.94764,27.21599 5.94764,27.21599 0,0 3.54393,51.88028 -8.27001,58.32099 -8.10874,4.42157 -19.22901,-4.60187 -43.10881,-45.86108 -12.23061,-21.1311 -21.46783,-44.49746 -21.46783,-44.49746 0,0 -1.77673,-4.36067 -4.9565,-6.69981 -3.8544,-2.83349 -9.24187,-3.72903 -9.24187,-3.72903 l -57.154499,0.37016 c 0,0 -8.58037,0.24358 -11.72552,3.97499 -2.80725,3.32066 -0.22448,10.18167 -0.22448,10.18167 0,0 44.742259,104.68594 95.406949,157.43907 46.46763,48.38052 99.21848,45.20196 99.21848,45.20196 l 0,0 z" id="path9" style="fill:#ffffff;fill-rule:evenodd"/></g></svg>
+								<span>ВКонтакте</span>
+							</a></li>
+							<li><a href="#">
+								<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="SVGID_1_" gradientTransform="matrix(0 -1.982 -1.844 0 -132.522 -51.077)" gradientUnits="userSpaceOnUse" x1="-37.106" x2="-26.555" y1="-72.705" y2="-84.047"><stop offset="0" stop-color="#fd5"/><stop offset=".5" stop-color="#ff543e"/><stop offset="1" stop-color="#c837ab"/></linearGradient><path d="m1.5 1.633c-1.886 1.959-1.5 4.04-1.5 10.362 0 5.25-.916 10.513 3.878 11.752 1.497.385 14.761.385 16.256-.002 1.996-.515 3.62-2.134 3.842-4.957.031-.394.031-13.185-.001-13.587-.236-3.007-2.087-4.74-4.526-5.091-.559-.081-.671-.105-3.539-.11-10.173.005-12.403-.448-14.41 1.633z" fill="url(#SVGID_1_)"/><path d="m11.998 3.139c-3.631 0-7.079-.323-8.396 3.057-.544 1.396-.465 3.209-.465 5.805 0 2.278-.073 4.419.465 5.804 1.314 3.382 4.79 3.058 8.394 3.058 3.477 0 7.062.362 8.395-3.058.545-1.41.465-3.196.465-5.804 0-3.462.191-5.697-1.488-7.375-1.7-1.7-3.999-1.487-7.374-1.487zm-.794 1.597c7.574-.012 8.538-.854 8.006 10.843-.189 4.137-3.339 3.683-7.211 3.683-7.06 0-7.263-.202-7.263-7.265 0-7.145.56-7.257 6.468-7.263zm5.524 1.471c-.587 0-1.063.476-1.063 1.063s.476 1.063 1.063 1.063 1.063-.476 1.063-1.063-.476-1.063-1.063-1.063zm-4.73 1.243c-2.513 0-4.55 2.038-4.55 4.551s2.037 4.55 4.55 4.55 4.549-2.037 4.549-4.55-2.036-4.551-4.549-4.551zm0 1.597c3.905 0 3.91 5.908 0 5.908-3.904 0-3.91-5.908 0-5.908z" fill="#fff"/></svg>
+								<span>Инстаграм</span>
+							</a></li>
+							<li><a href="#">
+								<svg height="512" version="1.1" viewBox="0 0 512 512" width="512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs12"/><g id="g5499"><rect height="512" id="rect2987" rx="64" ry="64" style="fill:#f48420;fill-opacity:1;fill-rule:nonzero;stroke:none" width="512" x="0" y="5.6843419e-014"/><g id="g7980" transform="matrix(1.3569974,0,0,1.3569974,-1327.8679,-536.34264)"><path d="m 1167.189,585.71779 c 41.2019,0 74.5979,-33.40112 74.5979,-74.60401 0,-41.20186 -33.396,-74.604 -74.5979,-74.604 -41.208,0 -74.604,33.40214 -74.604,74.604 0,41.20187 33.396,74.60401 74.604,74.60401 z m 0,-111.30587 c 20.2659,0 36.7019,16.42977 36.7019,36.70186 0,20.27209 -16.436,36.70187 -36.7019,36.70187 -20.2721,0 -36.708,-16.42978 -36.708,-36.70187 0,-20.27209 16.4359,-36.70186 36.708,-36.70186 z" id="path9" style="fill:#ffffff"/><path d="m 1221.8035,591.53418 c -20.9585,16.51507 -54.6145,16.51507 -54.6145,16.51507 0,0 -33.6631,0 -54.6186,-16.51507 -15.5049,-12.21443 -27.1696,-5.17926 -31.3808,3.2874 -7.3424,14.74857 0.9516,21.8793 19.6771,33.89643 15.994,10.26912 37.9658,14.10527 52.1544,15.53779 l -11.8476,11.84551 c -16.6846,16.67846 -32.7876,32.78556 -43.959,43.959 -6.6817,6.67755 -6.6817,17.51598 0,24.19251 l 2.0152,2.01416 c 6.6837,6.68166 17.5139,6.68166 24.1914,0 l 43.9652,-43.95798 c 16.6846,16.6836 32.7876,32.78659 43.959,43.95798 6.6817,6.68166 17.5119,6.68166 24.1956,0 l 2.0152,-2.01416 c 6.6775,-6.6868 6.6775,-17.51496 0,-24.19251 l -43.9683,-43.96517 -11.8804,-11.88045 c 14.2019,-1.45923 35.9414,-5.31285 51.7967,-15.49771 18.7225,-12.01712 27.0216,-19.14786 19.6771,-33.89643 -4.2091,-8.4646 -15.881,-15.5008 -31.3777,-3.28637 z" id="path11-0" style="fill:#ffffff"/></g></g></svg>
+								<span>Одноклассники</span>
+							</a></li>
+							<li><a href="#">
+								<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m21 0h-18c-1.655 0-3 1.345-3 3v18c0 1.654 1.345 3 3 3h18c1.654 0 3-1.346 3-3v-18c0-1.655-1.346-3-3-3z" fill="#3b5999"/><path d="m16.5 12v-3c0-.828.672-.75 1.5-.75h1.5v-3.75h-3c-2.486 0-4.5 2.014-4.5 4.5v3h-3v3.75h3v8.25h4.5v-8.25h2.25l1.5-3.75z" fill="#fff"/></svg>
+								<span>Facebook</span>
+							</a></li>
+						</ul>
+					</div>
+					<div class="profile-discounts">
+						<div class="profile-discounts__top">
+							<svg height="314pt" viewBox="0 0 314 314" width="314pt" xmlns="http://www.w3.org/2000/svg"><path d="m157 314c86.570312 0 157-70.429688 157-157s-70.429688-157-157-157-157 70.429688-157 157 70.429688 157 157 157zm0-300c78.851562 0 143 64.148438 143 143s-64.148438 143-143 143-143-64.148438-143-143 64.148438-143 143-143zm0 0"/><path d="m118.300781 142.890625c16.011719 0 28.988281-12.980469 28.988281-28.988281.003907-16.011719-12.976562-28.992188-28.988281-28.992188s-28.988281 12.980469-28.988281 28.988282c.015625 16.003906 12.984375 28.972656 28.988281 28.992187zm0-43.980469c8.277344 0 14.988281 6.710938 14.988281 14.988282.003907 8.28125-6.707031 14.992187-14.988281 14.992187-8.277343 0-14.988281-6.710937-14.988281-14.992187.007812-8.273438 6.714844-14.976563 14.988281-14.988282zm0 0"/><path d="m164.953125 201.859375c0 16.011719 12.980469 28.988281 28.988281 28.988281 16.011719 0 28.992188-12.976562 28.992188-28.988281s-12.980469-28.992187-28.992188-28.992187c-16.003906.019531-28.96875 12.988281-28.988281 28.992187zm43.980469 0c0 8.277344-6.710938 14.988281-14.992188 14.988281-8.277344 0-14.988281-6.710937-14.988281-14.988281s6.710937-14.988281 14.988281-14.992187c8.277344.011718 14.980469 6.714843 14.992188 14.992187zm0 0"/><path d="m103.699219 238.726562c3.238281 2.113282 7.578125 1.199219 9.6875-2.039062l98.953125-151.726562c1.371094-2.097657 1.519531-4.765626.390625-7-1.132813-2.234376-3.371094-3.695313-5.871094-3.828126-2.5-.132812-4.882813 1.078126-6.246094 3.179688l-98.953125 151.726562c-2.113281 3.242188-1.199218 7.578126 2.039063 9.6875zm0 0"/></svg>
+							<span>Скидка</span>
+						</div>
+						<p>При заказе услуг сообщите специалисту, что вы с сайта x.by и получите скидку до 10%.</p>
+						<span class="profile-sidebar__subtitle">Поделиться профилем</span>
+						<ul class="profile-sidebar__social">
+							<li><a href="#">
+								<svg height="512" version="1.1" viewBox="0 0 512 512" width="512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs12"/><g id="g5608"><rect height="512" id="rect2987" rx="64" ry="64" style="fill:#4c75a3;fill-opacity:1;fill-rule:nonzero;stroke:none" width="512" x="0" y="0"/><path d="m 251.70955,369.14455 h 23.90722 c 0,0 7.21927,-0.79762 10.91007,-4.76903 3.39705,-3.65021 3.28841,-10.50167 3.28841,-10.50167 0,0 -0.47175,-32.08055 14.42054,-36.80302 14.67964,-4.6544 33.52648,31.00352 53.50297,44.7136 15.10712,10.3751 26.58794,8.10401 26.58794,8.10401 l 53.41814,-0.74389 c 0,0 27.93719,-1.7254 14.69046,-23.69711 -1.08421,-1.79346 -7.72077,-16.24983 -39.71651,-45.94943 -33.50267,-31.09426 -29.01187,-26.06134 11.33755,-79.83777 24.56987,-32.75042 34.39689,-52.73881 31.32344,-61.30492 -2.92543,-8.15775 -20.99737,-6.00608 -20.99737,-6.00608 l -60.14789,0.37614 c 0,0 -4.45617,-0.60898 -7.76492,1.36837 -3.22986,1.93675 -5.30509,6.45384 -5.30509,6.45384 0,0 -9.52735,25.34252 -22.21891,46.89512 -26.77781,45.47421 -37.48837,47.88141 -41.86576,45.05151 -10.18409,-6.5816 -7.63722,-26.43388 -7.63722,-40.54397 0,-44.07239 6.68431,-62.45001 -13.02109,-67.20472 -6.53861,-1.57852 -11.353,-2.62571 -28.07453,-2.79407 -21.45819,-0.21851 -39.62332,0.0681 -49.90525,5.10336 -6.84198,3.35887 -12.12325,10.8181 -8.90281,11.25035 3.9749,0.53016 12.97566,2.42511 17.74706,8.92193 6.16377,8.38702 5.94764,27.21599 5.94764,27.21599 0,0 3.54393,51.88028 -8.27001,58.32099 -8.10874,4.42157 -19.22901,-4.60187 -43.10881,-45.86108 -12.23061,-21.1311 -21.46783,-44.49746 -21.46783,-44.49746 0,0 -1.77673,-4.36067 -4.9565,-6.69981 -3.8544,-2.83349 -9.24187,-3.72903 -9.24187,-3.72903 l -57.154499,0.37016 c 0,0 -8.58037,0.24358 -11.72552,3.97499 -2.80725,3.32066 -0.22448,10.18167 -0.22448,10.18167 0,0 44.742259,104.68594 95.406949,157.43907 46.46763,48.38052 99.21848,45.20196 99.21848,45.20196 l 0,0 z" id="path9" style="fill:#ffffff;fill-rule:evenodd"/></g></svg>
+							</a></li>
+							<li><a href="#">
+								<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m21 0h-18c-1.655 0-3 1.345-3 3v18c0 1.654 1.345 3 3 3h18c1.654 0 3-1.346 3-3v-18c0-1.655-1.346-3-3-3z" fill="#3b5999"/><path d="m16.5 12v-3c0-.828.672-.75 1.5-.75h1.5v-3.75h-3c-2.486 0-4.5 2.014-4.5 4.5v3h-3v3.75h3v8.25h4.5v-8.25h2.25l1.5-3.75z" fill="#fff"/></svg>
+							</a></li>
+							<li><a href="#">
+								<svg height="512" version="1.1" viewBox="0 0 512 512" width="512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs12"/><g id="g5499"><rect height="512" id="rect2987" rx="64" ry="64" style="fill:#f48420;fill-opacity:1;fill-rule:nonzero;stroke:none" width="512" x="0" y="5.6843419e-014"/><g id="g7980" transform="matrix(1.3569974,0,0,1.3569974,-1327.8679,-536.34264)"><path d="m 1167.189,585.71779 c 41.2019,0 74.5979,-33.40112 74.5979,-74.60401 0,-41.20186 -33.396,-74.604 -74.5979,-74.604 -41.208,0 -74.604,33.40214 -74.604,74.604 0,41.20187 33.396,74.60401 74.604,74.60401 z m 0,-111.30587 c 20.2659,0 36.7019,16.42977 36.7019,36.70186 0,20.27209 -16.436,36.70187 -36.7019,36.70187 -20.2721,0 -36.708,-16.42978 -36.708,-36.70187 0,-20.27209 16.4359,-36.70186 36.708,-36.70186 z" id="path9" style="fill:#ffffff"/><path d="m 1221.8035,591.53418 c -20.9585,16.51507 -54.6145,16.51507 -54.6145,16.51507 0,0 -33.6631,0 -54.6186,-16.51507 -15.5049,-12.21443 -27.1696,-5.17926 -31.3808,3.2874 -7.3424,14.74857 0.9516,21.8793 19.6771,33.89643 15.994,10.26912 37.9658,14.10527 52.1544,15.53779 l -11.8476,11.84551 c -16.6846,16.67846 -32.7876,32.78556 -43.959,43.959 -6.6817,6.67755 -6.6817,17.51598 0,24.19251 l 2.0152,2.01416 c 6.6837,6.68166 17.5139,6.68166 24.1914,0 l 43.9652,-43.95798 c 16.6846,16.6836 32.7876,32.78659 43.959,43.95798 6.6817,6.68166 17.5119,6.68166 24.1956,0 l 2.0152,-2.01416 c 6.6775,-6.6868 6.6775,-17.51496 0,-24.19251 l -43.9683,-43.96517 -11.8804,-11.88045 c 14.2019,-1.45923 35.9414,-5.31285 51.7967,-15.49771 18.7225,-12.01712 27.0216,-19.14786 19.6771,-33.89643 -4.2091,-8.4646 -15.881,-15.5008 -31.3777,-3.28637 z" id="path11-0" style="fill:#ffffff"/></g></g></svg>
+							</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- end catalog -->
+	<!-- end profile -->
 	<!-- start footer -->
 	<footer class="footer">
 		<div class="wrapper">
@@ -301,20 +322,53 @@
 	<!-- end footer -->
 	<!-- modal-form -->
 	<div class="modal-overlay"></div>
-	<div class="modal" id="modal-form">
+	<div class="modal" id="modal-profile">
 		<div class="modal-close">
-			
+			<svg height="329pt" viewBox="0 0 329.26933 329" width="329pt" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
 		</div>
 		<div class="modal-content">
-			<form method="POST">
-				<div class="input-block">
-					<input type="text" name="text" placeholder="oooo">
+			<div class="modal-wrap">
+				<span class="modal-title">Екатерина Германова</span>
+				<div class="modal-city">
+					<span>Минск, Ленинский</span>
 				</div>
-				<button class="main-btn">HHHH</button>
-			</form>
+			</div>
+			<div class="modal-block">
+				<a href="#" class="modal-title">+375 778 45-94-1</a>
+				<div class="modal-row">
+					<span>Написать в</span>
+					<ul>
+						<li><a href="#">
+							<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g fill="#8e24aa"><path d="m23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001c-3.086-2.939-13.508-3.374-17.2.132-1.658 1.715-2.242 4.232-2.306 7.348-.064 3.117-.14 8.956 5.301 10.54h.005l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zm-12.237 5.477s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168 3.239-3.037 12.376-2.358 14.704-.17 2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z"/><path d="m12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z"/><path d="m16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716z"/><path d="m15.521 12.774c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z"/><path d="m13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z"/></g></svg>
+							Viber         
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="modal-block">
+				<a href="#" class="modal-title">+375 778 65-11-4</a>
+				<div class="modal-row">
+					<span>Написать в</span>
+					<ul>
+						<li><a href="#">
+							<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><g fill="#8e24aa"><path d="m23.155 13.893c.716-6.027-.344-9.832-2.256-11.553l.001-.001c-3.086-2.939-13.508-3.374-17.2.132-1.658 1.715-2.242 4.232-2.306 7.348-.064 3.117-.14 8.956 5.301 10.54h.005l-.005 2.419s-.037.98.589 1.177c.716.232 1.04-.223 3.267-2.883 3.724.323 6.584-.417 6.909-.525.752-.252 5.007-.815 5.695-6.654zm-12.237 5.477s-2.357 2.939-3.09 3.702c-.24.248-.503.225-.499-.267 0-.323.018-4.016.018-4.016-4.613-1.322-4.341-6.294-4.291-8.895.05-2.602.526-4.733 1.93-6.168 3.239-3.037 12.376-2.358 14.704-.17 2.846 2.523 1.833 9.651 1.839 9.894-.585 4.874-4.033 5.183-4.667 5.394-.271.09-2.786.737-5.944.526z"/><path d="m12.222 4.297c-.385 0-.385.6 0 .605 2.987.023 5.447 2.105 5.474 5.924 0 .403.59.398.585-.005h-.001c-.032-4.115-2.718-6.501-6.058-6.524z"/><path d="m16.151 10.193c-.009.398.58.417.585.014.049-2.269-1.35-4.138-3.979-4.335-.385-.028-.425.577-.041.605 2.28.173 3.481 1.729 3.435 3.716z"/><path d="m15.521 12.774c-.494-.286-.997-.108-1.205.173l-.435.563c-.221.286-.634.248-.634.248-3.014-.797-3.82-3.951-3.82-3.951s-.037-.427.239-.656l.544-.45c.272-.216.444-.736.167-1.247-.74-1.337-1.237-1.798-1.49-2.152-.266-.333-.666-.408-1.082-.183h-.009c-.865.506-1.812 1.453-1.509 2.428.517 1.028 1.467 4.305 4.495 6.781 1.423 1.171 3.675 2.371 4.631 2.648l.009.014c.942.314 1.858-.67 2.347-1.561v-.007c.217-.431.145-.839-.172-1.106-.562-.548-1.41-1.153-2.076-1.542z"/><path d="m13.169 8.104c.961.056 1.427.558 1.477 1.589.018.403.603.375.585-.028-.064-1.346-.766-2.096-2.03-2.166-.385-.023-.421.582-.032.605z"/></g></svg>
+							Viber         
+						</a></li>
+						<li><a href="#">
+							<svg height="512pt" viewBox="-1 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m10.894531 512c-2.875 0-5.671875-1.136719-7.746093-3.234375-2.734376-2.765625-3.789063-6.78125-2.761719-10.535156l33.285156-121.546875c-20.722656-37.472656-31.648437-79.863282-31.632813-122.894532.058594-139.941406 113.941407-253.789062 253.871094-253.789062 67.871094.0273438 131.644532 26.464844 179.578125 74.433594 47.925781 47.972656 74.308594 111.742187 74.289063 179.558594-.0625 139.945312-113.945313 253.800781-253.867188 253.800781 0 0-.105468 0-.109375 0-40.871093-.015625-81.390625-9.976563-117.46875-28.84375l-124.675781 32.695312c-.914062.238281-1.84375.355469-2.761719.355469zm0 0" fill="#e5e5e5"/><path d="m10.894531 501.105469 34.46875-125.871094c-21.261719-36.839844-32.445312-78.628906-32.429687-121.441406.054687-133.933594 109.046875-242.898438 242.976562-242.898438 64.992188.027344 125.996094 25.324219 171.871094 71.238281 45.871094 45.914063 71.125 106.945313 71.101562 171.855469-.058593 133.929688-109.066406 242.910157-242.972656 242.910157-.007812 0 .003906 0 0 0h-.105468c-40.664063-.015626-80.617188-10.214844-116.105469-29.570313zm134.769531-77.75 7.378907 4.371093c31 18.398438 66.542969 28.128907 102.789062 28.148438h.078125c111.304688 0 201.898438-90.578125 201.945313-201.902344.019531-53.949218-20.964844-104.679687-59.09375-142.839844-38.132813-38.160156-88.832031-59.1875-142.777344-59.210937-111.394531 0-201.984375 90.566406-202.027344 201.886719-.015625 38.148437 10.65625 75.296875 30.875 107.445312l4.804688 7.640625-20.40625 74.5zm0 0" fill="#fff"/><path d="m19.34375 492.625 33.277344-121.519531c-20.53125-35.5625-31.324219-75.910157-31.3125-117.234375.050781-129.296875 105.273437-234.488282 234.558594-234.488282 62.75.027344 121.644531 24.449219 165.921874 68.773438 44.289063 44.324219 68.664063 103.242188 68.640626 165.898438-.054688 129.300781-105.28125 234.503906-234.550782 234.503906-.011718 0 .003906 0 0 0h-.105468c-39.253907-.015625-77.828126-9.867188-112.085938-28.539063zm0 0" fill="#64b161"/><g fill="#fff"><path d="m10.894531 501.105469 34.46875-125.871094c-21.261719-36.839844-32.445312-78.628906-32.429687-121.441406.054687-133.933594 109.046875-242.898438 242.976562-242.898438 64.992188.027344 125.996094 25.324219 171.871094 71.238281 45.871094 45.914063 71.125 106.945313 71.101562 171.855469-.058593 133.929688-109.066406 242.910157-242.972656 242.910157-.007812 0 .003906 0 0 0h-.105468c-40.664063-.015626-80.617188-10.214844-116.105469-29.570313zm134.769531-77.75 7.378907 4.371093c31 18.398438 66.542969 28.128907 102.789062 28.148438h.078125c111.304688 0 201.898438-90.578125 201.945313-201.902344.019531-53.949218-20.964844-104.679687-59.09375-142.839844-38.132813-38.160156-88.832031-59.1875-142.777344-59.210937-111.394531 0-201.984375 90.566406-202.027344 201.886719-.015625 38.148437 10.65625 75.296875 30.875 107.445312l4.804688 7.640625-20.40625 74.5zm0 0"/><path d="m195.183594 152.246094c-4.546875-10.109375-9.335938-10.3125-13.664063-10.488282-3.539062-.152343-7.589843-.144531-11.632812-.144531-4.046875 0-10.625 1.523438-16.1875 7.597657-5.566407 6.074218-21.253907 20.761718-21.253907 50.632812 0 29.875 21.757813 58.738281 24.792969 62.792969 3.035157 4.050781 42 67.308593 103.707031 91.644531 51.285157 20.226562 61.71875 16.203125 72.851563 15.191406 11.132813-1.011718 35.917969-14.6875 40.976563-28.863281 5.0625-14.175781 5.0625-26.324219 3.542968-28.867187-1.519531-2.527344-5.566406-4.046876-11.636718-7.082032-6.070313-3.035156-35.917969-17.726562-41.484376-19.75-5.566406-2.027344-9.613281-3.035156-13.660156 3.042969-4.050781 6.070313-15.675781 19.742187-19.21875 23.789063-3.542968 4.058593-7.085937 4.566406-13.15625 1.527343-6.070312-3.042969-25.625-9.449219-48.820312-30.132812-18.046875-16.089844-30.234375-35.964844-33.777344-42.042969-3.539062-6.070312-.058594-9.070312 2.667969-12.386719 4.910156-5.972656 13.148437-16.710937 15.171875-20.757812 2.023437-4.054688 1.011718-7.597657-.503906-10.636719-1.519532-3.035156-13.320313-33.058594-18.714844-45.066406zm0 0" fill-rule="evenodd"/></g></svg>
+							Whatsapp         
+						</a></li>
+						<li><a href="#">
+							<svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" fill="#039be5" r="12"/><path d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="#fff"/></svg>
+							Telegram         
+						</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
