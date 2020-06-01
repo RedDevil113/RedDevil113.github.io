@@ -45,8 +45,8 @@
 						<a href="#" class="drop-text">Електроенергія<i class="material-icons">expand_more</i></a>
 						<div class="drop-list">
 							<ul>
-								<li><a href="#">Інф. про постачання електроенергії</a></li>
-								<li><a href="#">Порядок вирішення спорів </a></li>
+								<li><a href="#">Інформація про постачання електроенергії</a></li>
+								<li><a href="#">Порядок вирішення спорів</a></li>
 								<li><a href="#">Нормативно-правові акти</a></li>
 								<li><a href="#">Договір.pdf</a></li>
 								<li><a href="#">Заява-приєднання. Додаток 1.pdf</a></li>
@@ -98,6 +98,15 @@
 			</div>
 			<div class="search-ico">
 				<i class="material-icons">search</i>
+			</div>
+			<div class="search-form">
+				<div class="search-form__ico">
+					<i class="material-icons">search</i>
+				</div>
+				<input type="text" name="text" placeholder="Пошук по сайту...">
+				<div class="search-form__close">
+					<i class="material-icons">close</i>
+				</div>
 			</div>
 			<div class="header-bar">
 				<svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="22" height="1.5" rx="0.75" fill="#090E17"/><rect y="6.5" width="22" height="1.5" rx="0.75" fill="#090E17"/><rect y="13" width="22" height="1.5" rx="0.75" fill="#090E17"/></svg>
@@ -293,22 +302,140 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBKtQuyC-t1nVL0IiNFLqP7L3gruU2w1s&callback=initMap" async defer></script>
 	<script>
 		function initMap() {
-	    var myLatLng = {lat: 50.44734469, lng: 30.53580546};
+			var styles = [
+				{
+					"featureType": "all",
+					"elementType": "labels.text.fill",
+					"stylers": [
+						{
+							"color": "#090e17"
+						}
+					]
+				},
+				{
+					"featureType": "all",
+					"elementType": "labels.text.stroke",
+					"stylers": [
+						{
+							"visibility": "off"
+						}
+					]
+				},
+				{
+					"featureType": "administrative",
+					"elementType": "geometry.fill",
+					"stylers": [
+						{
+							"color": "#e0f4ff"
+						},
+						{
+							"lightness": 20
+						},
+						{
+							"visibility": "on"
+						}
+					]
+				},
+				{
+					"featureType": "landscape",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"color": "#ebf8ff"
+						},
+						{
+							"lightness": 20
+						}
+					]
+				},
+				{
+					"featureType": "poi",
+					"elementType": "geometry.fill",
+					"stylers": [
+						{
+							"visibility": "on"
+						}
+					]
+				},
+				{
+					"featureType": "poi",
+					"elementType": "labels.icon",
+					"stylers": [
+						{
+							"visibility": "on"
+						}
+					]
+				},
+				{
+					"featureType": "road.highway",
+					"elementType": "geometry.fill",
+					"stylers": [
+						{
+							"visibility": "off"
+						}
+					]
+				},
+				{
+					"featureType": "road.arterial",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"color": "#bfe8ff"
+						}
+					]
+				},
+				{
+					"featureType": "road.local",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"color": "#ccedff"
+						},
+						{
+							"weight": "1.00"
+						}
+					]
+				},
+				{
+					"featureType": "transit",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "off"
+						}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"color": "#b2d9ff"
+						},
+						{
+							"lightness": 17
+						}
+					]
+				}
+			];
 
-	    var map = new google.maps.Map(document.getElementById('map'), {
-	      center: myLatLng,
-	      scrollwheel: false,
-	      zoom: 12,
+			var myLatLng = {lat: 46.498086, lng: 30.726468};
 
-	    });
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  center: myLatLng,
+			  scrollwheel: false,
+			  zoom: 12,
+			  styles: styles
 
-	    // Create a marker and set its position.
-	    var marker = new google.maps.Marker({
-	      map: map,
-	      position: myLatLng,
-	      icon: 'img/map-ico.svg'
-	    });
-	  }
+			});
+
+			// Create a marker and set its position.
+			var marker = new google.maps.Marker({
+			  map: map,
+			  position: myLatLng,
+			  icon: 'img/map-ico.svg'
+			});
+	    }
 	</script>
 </body>
 </html>
