@@ -16,7 +16,7 @@
 	<meta name="msapplication-navbutton-color" content="#000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
-<body class="hasMessage">
+<body class="hasMessage body-over">
 	<div class="message">
 		<div class="message-info">
 			<h2 class="message-title">Вам уже есть 18 лет?</h2>
@@ -42,8 +42,8 @@
 					<li><a href="#winners" class="header-scroll">ПОБЕДИТЕЛИ</a></li>
 					<li><a href="#modal-call" class="button-modal">Обратная связь</a></li>
 				</ul>
-				<a href="#" class="main-btn">зарегистрировать чек</a>
-				<a href="#" class="header-user">
+				<a href="#modal-loading" class="button-modal main-btn">зарегистрировать чек</a>
+				<a href="#modal-authorization" class="button-modal header-user">
 					<span>Варфаломеев и.</span>
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0002 0C5.37299 0 0.000244141 5.37275 0.000244141 12C0.000244141 18.6273 5.37299 24 12.0002 24C18.6275 24 24.0002 18.6273 24.0002 12C24.0002 5.37275 18.6275 0 12.0002 0ZM12.0002 22.5854C6.15597 22.5854 1.41481 17.8486 1.41481 12C1.41481 6.1514 6.15597 1.41456 12.0002 1.41456C17.8445 1.41456 22.5857 6.1514 22.5857 12C22.5857 17.8486 17.8445 22.5854 12.0002 22.5854Z" fill="#F3819C"/><path d="M12.0004 13.4751C14.6284 13.4751 16.7589 11.3447 16.7589 8.71664C16.7589 6.0886 14.6284 3.95816 12.0004 3.95816C9.37238 3.95816 7.24194 6.0886 7.24194 8.71664C7.24194 11.3447 9.37238 13.4751 12.0004 13.4751Z" fill="white"/><path d="M12.0004 22.5638C15.513 22.5638 18.6233 20.8507 20.544 18.212C20.5267 18.16 20.5094 18.1081 20.4878 18.0562C19.6529 15.8284 17.7192 14.1283 15.353 13.6265C15.0285 13.8471 14.6824 14.0375 14.3147 14.1932C13.5793 14.5047 12.8007 14.6604 12.0004 14.6604C11.2001 14.6604 10.4215 14.5047 9.68606 14.1932C9.31836 14.0375 8.97229 13.8471 8.64785 13.6265C6.28159 14.1283 4.34792 15.8284 3.51302 18.0562C3.49139 18.1081 3.47409 18.16 3.45679 18.2163C5.37748 20.8464 8.48779 22.5638 12.0004 22.5638Z" fill="#F3819C"/></svg>
 				</a>
@@ -478,7 +478,7 @@
 					<svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.89527 0.912712L12.2916 10.3058L21.6879 0.912712C22.4289 0.0959252 23.17 0.078936 23.911 0.861745C24.6521 1.64455 24.6521 2.41037 23.911 3.1592L13.4031 13.7768C13.1335 14.1172 12.763 14.2871 12.2916 14.2871C11.8202 14.2871 11.4496 14.1172 11.1806 13.7768L0.672123 3.1592C-0.0682774 2.41037 -0.0682774 1.64455 0.672123 0.861745C1.41317 0.078936 2.15422 0.0959252 2.89527 0.912712Z" fill="#F3819C"/></svg>
 				</div>
 			</div>
-			<div class="accordeon-wrap">
+			<div class="accordeon-wrap tabs-wrapper">
 				<div class="winners-tabs">
 					<ul class="winners-list tab-list">
 						<li><a href="#week-1" class="active">1 неделя</a></li>
@@ -660,79 +660,59 @@
 	</footer>
 	<!-- end footer -->
 	<!-- start modals -->
-	<div class="modal-overlay"></div>
-	<div class="modal modal-small" id="modal-registration">
-		<div class="close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.8255 13.7881L10.0374 8L15.8255 2.21193C16.0107 2.02671 16.0261 1.82606 15.8718 1.60997L14.39 0.128229C14.2048 -0.0569904 14.0042 -0.0415557 13.7881 0.174533L8 5.9626L2.21193 0.174533C1.99584 -0.0415557 1.79519 -0.0569904 1.60997 0.128229L0.128229 1.60997C-0.0569901 1.79519 -0.0415557 1.99584 0.174533 2.21193L5.9626 8L0.174533 13.7881C-0.0415557 14.0042 -0.0569904 14.2048 0.128229 14.39L1.60997 15.8718C1.79519 16.057 1.99584 16.0416 2.21193 15.8255L8 10.0374L13.7881 15.8255C13.9733 16.0107 14.1739 16.0261 14.39 15.8718L15.8718 14.39C16.057 14.2048 16.0416 14.0042 15.8255 13.7881Z" fill="#969696"/></svg></div>
+	<div class="modal-overlay open-overlay"></div>
+	<div class="modal modal-registration open" id="modal-registration">
+		<h3 class="modal-title">Регистрация</h3>
 		<div class="modal-content">
-			<form class="callback" method="POST">
-				<h3 class="modal-title">Регистрация</h3>
-				<div class="modal-input">
+			<form action="">
+				<div class="registration-wrap">
 					<div class="input-block">
-						<label for="t-1">Имя</label>
-						<input id="t-1" type="text" name="name">
+						<label for="i-1">Имя</label>
+						<input id="i-1" type="text" name="name">
 					</div>
-				</div>
-				<div class="modal-input">
 					<div class="input-block">
-						<label for="t-2">Фамилия</label>
-						<input id="t-2" type="text" name="name">
+						<label for="i-2">Фамилия</label>
+						<input id="i-2" type="text" name="secondname">
 					</div>
-				</div>
-				<div class="modal-input">
 					<div class="input-block">
-						<label for="t-3">Телефон</label>
-						<input id="t-3" type="tel" name="tel">
+						<label for="i-3">E-mail</label>
+						<input id="i-3" type="email" name="email">
 					</div>
-				</div>
-				<div class="modal-input">
 					<div class="input-block">
-						<label for="t-4">E-mail</label>
-						<input id="t-4" type="email" name="email">
+						<label for="i-4">Телефон</label>
+						<input id="i-4" type="tel" name="tel">
 					</div>
-				</div>
-				<div class="modal-input">
-					<div class="input-block">
-						<label for="t-5">Дата рождения</label>
-						<input id="t-5" type="tel" name="date">
+					<div class="input-block input-block__small">
+						<label for="i-5">Дата рождения</label>
+						<input id="i-5" type="text" name="date">
 					</div>
-				</div>
-				<div class="modal-input">
-					<div class="input-block">
-						<label for="f-1">Пароль</label>
-						<input id="f-1" type="password" name="password">
+					<div class="registration-bottom">
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span class="checkbox-ico">
+								<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3333 0.571289L5.33333 8.97129L2.66667 6.17129L0 8.97129L5.33333 14.5713L16 3.37129L13.3333 0.571289Z" fill="#13670B"/></svg>
+							</span>
+							<p>Я прочитал и согласен с <a href="#">Правилами акции</a> и <a href="#">Пользовательским соглашением</a>, согласен на обработку персональных данных</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" checked>
+							<span class="checkbox-ico">
+								<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3333 0.571289L5.33333 8.97129L2.66667 6.17129L0 8.97129L5.33333 14.5713L16 3.37129L13.3333 0.571289Z" fill="#13670B"/></svg>
+							</span>
+							<p>Я согласен получать информацию об акции по E-mail</p>
+						</div>
+						<div class="registration-btns">
+							<div class="registration-btn">
+								<button class="second-btn">Отправить</button>
+							</div>
+							<div class="registration-btn">
+								<a href="#modal-authorization" class="button-modal registration-link">У меня уже есть аккаунт</a>
+								<a href="#modal-authorization" class="button-modal main-btn">войти</a>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="modal-input">
-					<div class="input-block">
-						<label for="f-2">Подтверждение пароля</label>
-						<input id="f-2" type="password" name="password">
-					</div>
-				</div>
-				<div class="modal-checkbox">
-					<div class="checkbox">
-						<input type="checkbox">
-						<span class="checkbox-ico">
-							<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3333 0.571289L5.33333 8.97129L2.66667 6.17129L0 8.97129L5.33333 14.5713L16 3.37129L13.3333 0.571289Z" fill="#13670B"/></svg>
-						</span>
-						<p>Я прочитал и согласен с <a href="#">Правилами акции и Пользовательским соглашением</a>, согласен на обработку персональных данных</p>
-					</div>
-					<div class="checkbox">
-						<input type="checkbox">
-						<span class="checkbox-ico">
-							<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3333 0.571289L5.33333 8.97129L2.66667 6.17129L0 8.97129L5.33333 14.5713L16 3.37129L13.3333 0.571289Z" fill="#13670B"/></svg>
-						</span>
-						<p>Я согласен получать информацию об акции по E-mail</p>
-					</div>
-					<div class="checkbox">
-						<input type="checkbox">
-						<span class="checkbox-ico">
-							<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3333 0.571289L5.33333 8.97129L2.66667 6.17129L0 8.97129L5.33333 14.5713L16 3.37129L13.3333 0.571289Z" fill="#13670B"/></svg>
-						</span>
-						<p>Я согласен получать информацию об акции по СМС</p>
-					</div>
-				</div>
-				<button class="main-btn btn-big">Зарегистрироваться</button>
-			</form>
+				</form>
+			</div>
 		</div>
 	</div>
 	<div class="modal modal-small" id="modal-authorization">
@@ -742,8 +722,8 @@
 				<h3 class="modal-title">Авторизация</h3>
 				<div class="modal-input">
 					<div class="input-block">
-						<label for="t-6">Телефон</label>
-						<input id="t-6" type="tel" name="tel">
+						<label for="t-6">Email</label>
+						<input id="t-6" type="tel" name="email">
 					</div>
 					<p>Lorem ipsum dolor sit.</p>
 				</div>
@@ -985,243 +965,117 @@
 		<div class="modal-content">
 			<h3 class="personalArea-title">Личный кабинет</h3>
 			<div class="personalArea-top">
-				<span class="personalArea-name">Иванова Анастасия</span>
-				<a href="$" class="main-btn notActive">подтверди свой E-mail</a>
+				<span class="personalArea-name">Денис Тихомиров</span>
 			</div>
 			<div class="personalArea-info">
-				<div class="lk-text">
+				<div class="lk-check">
+					<svg width="146" height="141" viewBox="0 0 146 141" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.2832 138.537L2.2832 2.03711H108.547L143.651 70.2871L108.547 138.537H2.2832Z" stroke="#F3819C" stroke-width="3.5"></path></svg>
 					<span>4</span>
 					<p>чека добавлено</p>
 				</div>
-				<p>Выбери свой случай для регистрации чека и участия в розыгрыше:</p>
 			</div>
-			<div class="personalArea-row">
-				<div class="personalArea-col personalArea-col__1">
-					<div class="gifts-wrap">
-						<div class="gifts-row">
-							<div class="gifts-col">
-								<div class="gifts-col__row">
-									<div class="gifts-col__img">
-										<img src="img/gifts.png" alt="">
-									</div>
-									<div class="gifts-col__wrap">
-										<span class="gifts-subtitle">Надо быстро придумать,<br> что приготовить на ужин?</span>
-									</div>
-								</div>
-								<div class="lk-col">
-									<div class="lk-img">
-										<img src="img/lk-1.png" alt="">
-									</div>
-									<div class="lk-col__wrap">
-										<span class="lk-subtitle">Надо быстро придумать,<br> что приготовить на ужин?</span>
-										<a href="#" class="main-btn">ВЫБРАТЬ</a>
-									</div>
-								</div>
-							</div>
-							<div class="gifts-col">
-								<div class="gifts-col__row">
-									<div class="gifts-col__img">
-										<img src="img/gifts.png" alt="">
-									</div>
-									<div class="gifts-col__wrap">
-										<span class="gifts-subtitle">У меня столько планов! <br>Как везде успеть?</span>
-									</div>
-								</div>
-								<div class="lk-col">
-									<div class="lk-img">
-										<img src="img/lk-2.png" alt="">
-									</div>
-									<div class="lk-col__wrap">
-										<span class="lk-subtitle">У меня столько планов! <br>Как везде успеть?</span>
-										<a href="#" class="main-btn">ВЫБРАТЬ</a>
-									</div>
-								</div>
-							</div>
-							<div class="gifts-col">
-								<div class="gifts-col__row">
-									<div class="gifts-col__img">
-										<img src="img/gifts.png" alt="">
-									</div>
-									<div class="gifts-col__wrap">
-										<span class="gifts-subtitle">У меня столько интересов, всегда нужно что-то разное...</span>
-									</div>
-								</div>
-								<div class="lk-col">
-									<div class="lk-img">
-										<img src="img/lk-3.png" alt="">
-									</div>
-									<div class="lk-col__wrap">
-										<span class="lk-subtitle">У меня столько интересов, всегда нужно что-то разное...</span>
-										<a href="#" class="main-btn">ВЫБРАТЬ</a>
-									</div>
-								</div>
-							</div>
-							<div class="gifts-col">
-								<div class="gifts-col__row">
-									<div class="gifts-col__img">
-										<img src="img/gifts.png" alt="">
-									</div>
-									<div class="gifts-col__wrap">
-										<span class="gifts-subtitle">У меня всё хорошо!<br>Хочу подарок от Heineken®</span>
-									</div>
-								</div>
-								<div class="lk-col">
-									<div class="lk-img">
-										<img src="img/lk-4.png" alt="">
-									</div>
-									<div class="lk-col__wrap">
-										<span class="lk-subtitle">У меня всё хорошо! Я просто хочу подарок от Heineken®</span>
-										<a href="#" class="main-btn">ВЫБРАТЬ</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="personalArea-bottom personalArea-mob">
-					<a href="#modal-loading" class="button-modal second-btn">Зарегистрировать чек</a>
-				</div>
-				<div class="personalArea-col personalArea-col__2">
-					<div class="lk-bottom">
-						<ul class="lk-tabs tab-list">
-							<li><a href="#personalArea-1" class="second-btn active">розыгрыши</a></li>
-							<li><a href="#personalArea-2" class="second-btn">чеки</a></li>
-						</ul>
-						<div class="tab lk-tab tab-active" id="personalArea-1">
-							<p>Здесь ты можешь увидеть, в розыгрышах каких призов участвуют твои чеки  (указаны ФП чеков). Не забывай, что все чеки, указанные здесь, участвуют в розыгрыше главного приза.</p>
-							<div class="lk-table">
-								<div class="lk-table__row lk-table__row-top">
-									<div class="lk-table__col lk-table__col-1">
-										<span>Дата</span>
-									</div>
-									<div class="lk-table__col lk-table__col-2">
-										<span>Сертификат</span>
-									</div>
-									<div class="lk-table__col lk-table__col-3">
-										<span>Тип приза</span>
-									</div>
-									<div class="lk-table__col lk-table__col-4">
-										<span>Вид приза</span>
-									</div>
-								</div>
-								<div class="lk-table__row">
-									<div class="lk-table__col lk-table__col-1">
-										<span>18.06.20</span>
-									</div>
-									<div class="lk-table__col lk-table__col-2">
-										<span>certificate.pdf</span>
-									</div>
-									<div class="lk-table__col lk-table__col-3">
-										<span>Еженедельный приз</span>
-									</div>
-									<div class="lk-table__col lk-table__col-4">
-										<span>
-											<img src="img/ico-i.svg" alt="">
-											<b>
-												Сертификат на такси 1000 рублей
-											</b>
-										</span>
-									</div>
-									<a href="#" class="second-btn">Получить</a>
-								</div>
-								<div class="lk-table__row">
-									<div class="lk-table__col lk-table__col-1">
-										<span>10.07.20       </span>
-									</div>
-									<div class="lk-table__col lk-table__col-center lk-table__col-2">
-										<span>—</span>
-									</div>
-									<div class="lk-table__col lk-table__col-3">
-										<span>Главный приз</span>
-									</div>
-									<div class="lk-table__col lk-table__col-4">
-										<span>
-											<img src="img/ico-i.svg" alt="">
-											<b>
-												Смартфон
-											</b>
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab lk-tab" id="personalArea-2">
-							<div class="lk-table lk-table__second">
-								<div class="lk-table__row lk-table__row-top">
-									<div class="lk-table__col lk-table__col-1">
-										<span>Дата</span>
-									</div>
-									<div class="lk-table__col lk-table__col-2">
-										<span>ФП чека</span>
-									</div>
-									<div class="lk-table__col lk-table__col-3">
-										<span>Статус модерации</span>
-									</div>
-									<div class="lk-table__col lk-table__col-4">
-										<span>Приз</span>
-									</div>
-								</div>
-								<div class="lk-table__row">
-									<div class="lk-table__col lk-table__col-1">
-										<span>18.06.20</span>
-									</div>
-									<div class="lk-table__col lk-table__col-2">
-										<span><img src="img/scale.svg" alt="">1234567812345678</span>
-									</div>
-									<div class="lk-table__col lk-table__col-3">
-										<span><img src="img/update.svg" alt="">Обрабатывается</span>
-									</div>
-									<div class="lk-table__col lk-table__col-4"></div>
-								</div>
-								<div class="lk-table__row">
-									<div class="lk-table__col lk-table__col-1">
-										<span>18.06.20</span>
-									</div>
-									<div class="lk-table__col lk-table__col-2">
-										<span><img src="img/scale.svg" alt="">1234567812345678</span>
-									</div>
-									<div class="lk-table__col lk-table__col-3">
-										<span><img src="img/warning.svg" alt="">Не принят (дубликат)</span>
-									</div>
-									<div class="lk-table__col lk-table__col-4"></div>
-								</div>
-								<div class="lk-table__row">
-									<div class="lk-table__col lk-table__col-1">
-										<span>18.06.20</span>
-									</div>
-									<div class="lk-table__col lk-table__col-2">
-										<span><img src="img/scale.svg" alt="">1234567812345678</span>
-									</div>
-									<div class="lk-table__col lk-table__col-3">
-										<span><img src="img/sheck-tab.svg" alt="">принят</span>
-									</div>
-									<div class="lk-table__col lk-table__col-4">
-										<span>Сертификат Яндекс.Еда</span>
-									</div>
-									<a href="#" class="second-btn">Получить</a>
-								</div>
-								<div class="lk-table__row">
-									<div class="lk-table__col lk-table__col-1">
-										<span>18.06.20</span>
-									</div>
-									<div class="lk-table__col lk-table__col-2">
-										<span><img src="img/scale.svg" alt="">1234567812345678</span>
-									</div>
-									<div class="lk-table__col lk-table__col-3">
-										<span><img src="img/sheck-tab.svg" alt="">принят</span>
-									</div>
-									<div class="lk-table__col lk-table__col-4">
-										<span>Сертификат IVI</span>
-									</div>
-									<a href="#" class="second-btn">Получить</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="personalArea-bottom">
+			<div class="personalArea-btns">
 				<a href="#modal-loading" class="button-modal second-btn">Зарегистрировать чек</a>
+			</div>
+			<div class="personalArea-row tabs-wrapper">
+				<ul class="personalArea-tabs tab-list">
+					<li><a href="#personalArea-1" class="main-btn active">розыгрыши</a></li>
+					<li><a href="#personalArea-2" class="main-btn">чеки</a></li>
+				</ul>
+				<div class="personalArea-text">
+					<p>Здесь ты можешь увидеть, в розыгрышах каких призов участвуют твои чеки (указаны ФП чеков). Не забывай, что все чеки, указанные здесь, участвуют в розыгрыше главного приза.</p>
+				</div>
+				<div class="personalArea-tab tab tab-active" id="personalArea-1">
+					<div class="prizes-table__row prizes-table__row-top">
+						<div class="prizes-table__col prizes-table__col-1">
+							<span>Дата</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-2">
+							<span>Сертификат</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-3">
+							<span>Тип приза</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-4">
+							<span>Вид приза</span>
+						</div>
+					</div>
+					<div class="prizes-table__row">
+						<div class="prizes-table__col prizes-table__col-1">
+							<span>18.06.20</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-2">
+							<span>certificate.pdf</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-3">
+							<span>Еженедельный приз</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-4">
+							<div class="prizes-view">
+								<img src="img/i-ico.svg" alt="" class="view-ico">
+								<img src="img/prize-small.png" alt="">
+								<span>500 рублей</span>
+							</div>
+						</div>
+						<a href="#" class="prizes-btn">Получить</a>
+					</div>
+					<div class="prizes-table__row">
+						<div class="prizes-table__col prizes-table__col-1">
+							<span>18.06.20</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-2">
+							<span>certificate.pdf</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-3">
+							<span>Еженедельный приз</span>
+						</div>
+						<div class="prizes-table__col prizes-table__col-4">
+							<div class="prizes-view">
+								<img src="img/i-ico.svg" alt="" class="view-ico">
+								<img src="img/prize-small.png" alt="">
+								<span>500 рублей</span>
+							</div>
+						</div>
+						<a href="#" class="prizes-btn">Получить</a>
+					</div>
+				</div>
+				<div class="personalArea-tab tab" id="personalArea-2">
+					<div class="lk-table">
+						<div class="lk-table__row">
+							<div class="lk-table__col lk-table__col-1">
+								<span><img src="img/magnifier-ico.svg" alt="">1234567812345678</span>
+							</div>
+							<div class="lk-table__col lk-table__col-2">
+								<span><img src="img/check-circle-ico.svg" alt="">принят</span>
+							</div>
+							<div class="lk-table__col lk-table__col-3">
+								<span>18.09.17</span>
+							</div>
+						</div>
+						<div class="lk-table__row">
+							<div class="lk-table__col lk-table__col-1">
+								<span><img src="img/magnifier-ico.svg" alt="">1234567812345678</span>
+							</div>
+							<div class="lk-table__col lk-table__col-2">
+								<span><img src="img/warning-ico.svg" alt="">Не принят (дубликат)</span>
+							</div>
+							<div class="lk-table__col lk-table__col-3">
+								<span>18.09.17</span>
+							</div>
+						</div>
+						<div class="lk-table__row">
+							<div class="lk-table__col lk-table__col-1">
+								<span><img src="img/magnifier-ico.svg" alt="">1234567812345678</span>
+							</div>
+							<div class="lk-table__col lk-table__col-2">
+								<span><img src="img/process-ico.svg" alt="">Обрабатывается</span>
+							</div>
+							<div class="lk-table__col lk-table__col-3">
+								<span>18.09.17</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
