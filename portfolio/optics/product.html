@@ -6,11 +6,12 @@
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/256х256.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/256х256.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/256х256.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/256х256.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/main.min.css">
 	<meta name="theme-color" content="#000">
 	<meta name="msapplication-navbutton-color" content="#000">
@@ -26,7 +27,7 @@
 				</div>
 				<div class="header-logo">
 					<a href="#">
-						<img src="img/logo.png" alt="">
+						<img src="img/logo-head-2.png" alt="">
 					</a>
 				</div>
 				<div class="header-row">
@@ -245,22 +246,34 @@
 								</div>
 								<div class="product-slider">
 									<div class="product-slide">
-										<img src="img/slider-1.png" alt="">
+										<a class="fancybox" rel="group" data-fancybox="gallery" href="img/slider-1.png">
+											<img src="img/slider-1.png" alt="">
+										</a>
 									</div>
 									<div class="product-slide">
-										<img src="img/catalog-2.png" alt="">
+										<a class="fancybox" rel="group" data-fancybox="gallery" href="img/catalog-2.png">
+											<img src="img/catalog-2.png" alt="">
+										</a>
 									</div>
 									<div class="product-slide">
-										<img src="img/catalog-3.png" alt="">
+										<a class="fancybox" rel="group" data-fancybox="gallery" href="img/catalog-3.png">
+											<img src="img/catalog-3.png" alt="">
+										</a>
 									</div>
 									<div class="product-slide">
-										<img src="img/catalog-1.png" alt="">
+										<a class="fancybox" rel="group" data-fancybox="gallery" href="img/catalog-1.png">
+											<img src="img/catalog-1.png" alt="">
+										</a>
 									</div>
 									<div class="product-slide">
-										<img src="img/catalog-2.png" alt="">
+										<a class="fancybox" rel="group" data-fancybox="gallery" href="img/catalog-2.png">
+											<img src="img/catalog-2.png" alt="">
+										</a>
 									</div>
 									<div class="product-slide">
-										<img src="img/catalog-3.png" alt="">
+										<a class="fancybox" data-fancybox="gallery" href="img/catalog-3.png">
+											<img src="img/catalog-3.png" alt="">
+										</a>
 									</div>
 								</div>
 							</div>
@@ -284,7 +297,7 @@
 							<li><a href="#tab-3">Характеристики</a></li>
 							<li><a href="#tab-4">Документация</a></li>
 						</ul>
-						<div class="descr-tab tab tab-active" id="tab-1">
+						<div class="descr-tab tab" id="tab-1">
 							<div class="descr-table">
 								<div class="descr-row descr-top">
 									<div class="descr-col descr-col__1">
@@ -395,337 +408,102 @@
 								</div>
 							</div>
 						</div>
-						<div class="descr-tab tab" id="tab-2">
-							<div class="descr-table">
-								<div class="descr-row descr-top">
-									<div class="descr-col descr-col__1">
-										<span>Название</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>Наличие</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<span>Количество</span>
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>Размеры</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>Толщина</span>
-									</div>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
+						<div class="descr-tab tab tab-active" id="tab-2">
+							<div class="descr-text">
+								<p>ТМ-10 – миниатюрный тепловизионный модуль с охлаждаемой матрицей 640 х 512 пикселей на основе КРТ, который работает в инфракрасном диапазоне 3-5 мкм и предназначен для установки в оптико-электронные системы различного класса, что позволяет получать изображения высокого качества на больших расстояниях.</p>
+								<span class="descr-text__subtitle">Преимущества:</span>
+								<ul>
+									<li>Миниатюрный размер (165мм х 70мм х 105мм);</li>
+									<li>Функции калибровки и регулировки изображения;</li>
+									<li>Автоматическое и ручное управление оптическим приближением и фокусировкой;</li>
+									<li>Алгоритмы цифрового улучшения детализации изображения;</li>
+									<li>До 8 часов непрерывной работы;</li>
+									<li>Устойчивость к шоковым воздействиям (GJB150.18-1986).</li>
+								</ul>
 							</div>
 						</div>
 						<div class="descr-tab tab" id="tab-3">
-							<div class="descr-table">
-								<div class="descr-row descr-top">
-									<div class="descr-col descr-col__1">
-										<span>Название</span>
+							<div class="descr-characteristics">
+								<div class="characteristics-row">
+									<div class="characteristics-col characteristics-col__1">
+										<span>Тип</span>
 									</div>
-									<div class="descr-col descr-col__2">
-										<span>Наличие</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<span>Количество</span>
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>Размеры</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>Толщина</span>
+									<div class="characteristics-col characteristics-col__2">
+										<span>Сотовая оптическая</span>
 									</div>
 								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
+								<div class="characteristics-row">
+									<div class="characteristics-col characteristics-col__1">
+										<span>Длинна, мм</span>
 									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
+									<div class="characteristics-col characteristics-col__2">
+										<span>1200 — 5000</span>
 									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
 								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
+								<div class="characteristics-row">
+									<div class="characteristics-col characteristics-col__1">
+										<span>Ширина, мм</span>
 									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
+									<div class="characteristics-col characteristics-col__2">
+										<span>600 — 1500</span>
 									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
 								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
+								<div class="characteristics-row">
+									<div class="characteristics-col characteristics-col__1">
+										<span>Толщина, мм</span>
 									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
+									<div class="characteristics-col characteristics-col__2">
+										<span>200 — 400</span>
 									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
 								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
+								<div class="characteristics-row">
+									<div class="characteristics-col characteristics-col__1">
+										<span>Длинна, мм</span>
 									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
+									<div class="characteristics-col characteristics-col__2">
+										<span>1200 — 5000</span>
 									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
 								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
+								<div class="characteristics-row">
+									<div class="characteristics-col characteristics-col__1">
+										<span>Ширина, мм</span>
 									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
+									<div class="characteristics-col characteristics-col__2">
+										<span>600 — 1500</span>
 									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
+								</div>
+								<div class="characteristics-row">
+									<div class="characteristics-col characteristics-col__1">
+										<span>Толщина, мм</span>
 									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
+									<div class="characteristics-col characteristics-col__2">
+										<span>200 — 400</span>
 									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
 								</div>
 							</div>
 						</div>
 						<div class="descr-tab tab" id="tab-4">
-							<div class="descr-table">
-								<div class="descr-row descr-top">
-									<div class="descr-col descr-col__1">
-										<span>Название</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>Наличие</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<span>Количество</span>
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>Размеры</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>Толщина</span>
-									</div>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
-								<div class="descr-row">
-									<div class="descr-col descr-col__1">
-										<span>Росоптикс Special</span>
-									</div>
-									<div class="descr-col descr-col__2">
-										<span>1</span>
-									</div>
-									<div class="descr-col descr-col__3">
-										<input type="number" name="num" value="1">
-									</div>
-									<div class="descr-col descr-col__4">
-										<span>1000x2000</span>
-									</div>
-									<div class="descr-col descr-col__5">
-										<span>200 мм.</span>
-									</div>
-									<a href="#" class="main-btn">КУПИТЬ</a>
-								</div>
+							<div class="descr-docks">
+								<ul>
+									<li>
+										<a href="#">
+											<svg width="42" height="50" viewBox="0 0 42 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M41.8984 8.15576L33.7427 0H9.47656V30.0958C4.25576 30.4002 0.101562 34.7433 0.101562 40.0391C0.101562 45.5315 4.57002 50 10.0625 50C13.7819 50 17.0312 47.9505 18.7418 44.9219H41.8984V8.15576ZM34.0859 2.00049L39.8979 7.8125H34.0859V2.00049ZM10.0625 48.8281C5.21621 48.8281 1.27344 44.8854 1.27344 40.0391C1.27344 35.1928 5.21621 31.25 10.0625 31.25C14.9088 31.25 18.8516 35.1928 18.8516 40.0391C18.8516 44.8854 14.9088 48.8281 10.0625 48.8281ZM19.306 43.75C19.7683 42.6025 20.0234 41.3501 20.0234 40.0391C20.0234 34.7433 15.8692 30.4002 10.6484 30.0958V1.17188H32.9141V8.98438H40.7266V43.75H19.306Z" fill="black"/><path d="M14.75 6.25H24.125V7.42188H14.75V6.25Z" fill="black"/><path d="M14.75 9.375H21V10.5469H14.75V9.375Z" fill="black"/><path d="M14.75 14.0625H36.625V15.2344H14.75V14.0625Z" fill="black"/><path d="M14.75 17.1875H36.625V18.3594H14.75V17.1875Z" fill="black"/><path d="M14.75 23.4375H36.625V24.6094H14.75V23.4375Z" fill="black"/><path d="M14.75 26.5625H30.375V27.7344H14.75V26.5625Z" fill="black"/><path d="M14.75 20.3125H36.625V21.4844H14.75V20.3125Z" fill="black"/><path d="M28.8125 31.25H36.625V32.4219H28.8125V31.25Z" fill="black"/><path d="M13.6019 38.8909L12.7732 38.0622L10.6485 40.187V33.7891H9.47661V40.187L7.3519 38.0622L6.52319 38.8909L10.0625 42.4302L13.6019 38.8909Z" fill="black"/><path d="M13.3828 44.1406H6.74219V41.6016H5.57031V45.3125H14.5547V41.6016H13.3828V44.1406Z" fill="black"/></svg>
+											<span><b>Скачать лицензию</b></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg width="42" height="50" viewBox="0 0 42 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M41.8984 8.15576L33.7427 0H9.47656V30.0958C4.25576 30.4002 0.101562 34.7433 0.101562 40.0391C0.101562 45.5315 4.57002 50 10.0625 50C13.7819 50 17.0312 47.9505 18.7418 44.9219H41.8984V8.15576ZM34.0859 2.00049L39.8979 7.8125H34.0859V2.00049ZM10.0625 48.8281C5.21621 48.8281 1.27344 44.8854 1.27344 40.0391C1.27344 35.1928 5.21621 31.25 10.0625 31.25C14.9088 31.25 18.8516 35.1928 18.8516 40.0391C18.8516 44.8854 14.9088 48.8281 10.0625 48.8281ZM19.306 43.75C19.7683 42.6025 20.0234 41.3501 20.0234 40.0391C20.0234 34.7433 15.8692 30.4002 10.6484 30.0958V1.17188H32.9141V8.98438H40.7266V43.75H19.306Z" fill="black"/><path d="M14.75 6.25H24.125V7.42188H14.75V6.25Z" fill="black"/><path d="M14.75 9.375H21V10.5469H14.75V9.375Z" fill="black"/><path d="M14.75 14.0625H36.625V15.2344H14.75V14.0625Z" fill="black"/><path d="M14.75 17.1875H36.625V18.3594H14.75V17.1875Z" fill="black"/><path d="M14.75 23.4375H36.625V24.6094H14.75V23.4375Z" fill="black"/><path d="M14.75 26.5625H30.375V27.7344H14.75V26.5625Z" fill="black"/><path d="M14.75 20.3125H36.625V21.4844H14.75V20.3125Z" fill="black"/><path d="M28.8125 31.25H36.625V32.4219H28.8125V31.25Z" fill="black"/><path d="M13.6019 38.8909L12.7732 38.0622L10.6485 40.187V33.7891H9.47661V40.187L7.3519 38.0622L6.52319 38.8909L10.0625 42.4302L13.6019 38.8909Z" fill="black"/><path d="M13.3828 44.1406H6.74219V41.6016H5.57031V45.3125H14.5547V41.6016H13.3828V44.1406Z" fill="black"/></svg>
+											<span><b>Скачать руководство пользователя</b></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg width="42" height="50" viewBox="0 0 42 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M41.8984 8.15576L33.7427 0H9.47656V30.0958C4.25576 30.4002 0.101562 34.7433 0.101562 40.0391C0.101562 45.5315 4.57002 50 10.0625 50C13.7819 50 17.0312 47.9505 18.7418 44.9219H41.8984V8.15576ZM34.0859 2.00049L39.8979 7.8125H34.0859V2.00049ZM10.0625 48.8281C5.21621 48.8281 1.27344 44.8854 1.27344 40.0391C1.27344 35.1928 5.21621 31.25 10.0625 31.25C14.9088 31.25 18.8516 35.1928 18.8516 40.0391C18.8516 44.8854 14.9088 48.8281 10.0625 48.8281ZM19.306 43.75C19.7683 42.6025 20.0234 41.3501 20.0234 40.0391C20.0234 34.7433 15.8692 30.4002 10.6484 30.0958V1.17188H32.9141V8.98438H40.7266V43.75H19.306Z" fill="black"/><path d="M14.75 6.25H24.125V7.42188H14.75V6.25Z" fill="black"/><path d="M14.75 9.375H21V10.5469H14.75V9.375Z" fill="black"/><path d="M14.75 14.0625H36.625V15.2344H14.75V14.0625Z" fill="black"/><path d="M14.75 17.1875H36.625V18.3594H14.75V17.1875Z" fill="black"/><path d="M14.75 23.4375H36.625V24.6094H14.75V23.4375Z" fill="black"/><path d="M14.75 26.5625H30.375V27.7344H14.75V26.5625Z" fill="black"/><path d="M14.75 20.3125H36.625V21.4844H14.75V20.3125Z" fill="black"/><path d="M28.8125 31.25H36.625V32.4219H28.8125V31.25Z" fill="black"/><path d="M13.6019 38.8909L12.7732 38.0622L10.6485 40.187V33.7891H9.47661V40.187L7.3519 38.0622L6.52319 38.8909L10.0625 42.4302L13.6019 38.8909Z" fill="black"/><path d="M13.3828 44.1406H6.74219V41.6016H5.57031V45.3125H14.5547V41.6016H13.3828V44.1406Z" fill="black"/></svg>
+											<span><b>Скачать сертификат подлинности</b></span>
+										</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -768,7 +546,7 @@
 					<a href="#">
 						<img src="img/logo-footer.png" alt="">
 					</a>
-					<p>2020 - Все права защищены. Разработка сайта — «АБВ сайт»</p>
+					<p>2020 - Все права защищены. Разработка сайта — «<a href="#">АБВ сайт</a>»</p>
 				</div>
 			</div>
 			<div class="footer-menu">
@@ -793,6 +571,7 @@
 	</footer>
 	<!-- end footer -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
