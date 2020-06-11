@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header-row">
+				<ul class="header-list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О системе</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<div class="header-btns">
+					<a href="#forms-registration" class="modal-btn second-btn">Регистрация</a>
+					<a href="#forms-login" class="modal-btn main-btn">Вход</a>
+				</div>
+			</div>
+			<div class="header-bar">
+				<span></span>
+			</div>
+		</div>
+		<div class="forms-bg"></div>
+		<div class="forms">
+			<div class="forms-wrap">
+				<div class="forms-back">
+					<svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.8196 24.5232L16.2836 25.8366C15.6332 26.3927 14.5815 26.3927 13.9381 25.8366L0.48778 14.3418C-0.162593 13.7857 -0.162593 12.8865 0.48778 12.3363L13.9381 0.835655C14.5884 0.279554 15.6401 0.279554 16.2836 0.835655L17.8196 2.149C18.4768 2.71102 18.463 3.628 17.7919 4.17818L9.45464 10.9697H29.3395C30.2597 10.9697 31 11.6027 31 12.3896V14.2827C31 15.0695 30.2597 15.7025 29.3395 15.7025H9.45464L17.7919 22.494C18.4699 23.0442 18.4838 23.9612 17.8196 24.5232Z" fill="#F8F8F8"/></svg>
+					Назад
+				</div>
+				<div class="forms-tab forms-login" id="forms-login">
+					<div class="section-top">
+						<h2 class="section-title">Вход</h2>
+						<span>Вход</span>
+					</div>
+					<form action="">
+						<div class="input-block">
+							<div class="input-block__wrap">
+								<input type="text" name="text" placeholder="Логин">
+							</div>
+						</div>
+						<div class="input-block">
+							<div class="input-block__wrap">
+								<input type="password" name="password" placeholder="Пароль">
+							</div>
+							<a href="#forms-recovery" class="input-link modal-btn">Я забыл пароль</a>
+						</div>
+						<div class="forms-btn">
+							<button class="main-btn">Войти</button>
+							<p>Нет аккаунта? <a href="#forms-registration" class="modal-btn">Регистрация</a></p>
+						</div>
+					</form>
+				</div>
+				<div class="forms-tab forms-registration" id="forms-registration">
+					<div class="section-top">
+						<h2 class="section-title">Регистрация</h2>
+						<span>Регистрация</span>
+					</div>
+					<form action="">
+						<div class="input-block__row">
+							<div class="input-block">
+								<div class="input-block__wrap">
+									<input type="text" name="text" placeholder="Имя">
+								</div>
+							</div>
+							<div class="input-block">
+								<div class="input-block__wrap">
+									<input type="text" name="text" placeholder="Фамилия">
+								</div>
+							</div>
+						</div>
+						<div class="input-block">
+							<div class="input-block__wrap">
+								<input type="text" name="text" placeholder="Телефон">
+							</div>
+						</div>
+						<div class="input-block">
+							<div class="input-block__wrap">
+								<input type="email" name="email" placeholder="Эмеил">
+							</div>
+						</div>
+						<div class="input-block">
+							<div class="input-block__wrap">
+								<input type="password" name="password" placeholder="Пароль">
+							</div>
+							<p>Пароль должен содержать ...</p>
+						</div>
+						<div class="input-block">
+							<div class="input-block__wrap">
+								<input type="password" name="password" placeholder="Повторите пароль еще раз">
+							</div>
+						</div>
+						<div class="forms-btn">
+							<a href="#" class="main-btn">Продолжить</a>
+							<div class="forms-text">
+								<p>Регистрируясь, вы соглашаетесь с правилами <a href="#">пользовательского соглашения</a></p>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="forms-tab forms-recovery" id="forms-recovery">
+					<div class="section-top">
+						<h2 class="section-title">Восстановление пароля</h2>
+						<span>Восстановление пароля</span>
+					</div>
+					<form action="">
+						<div class="input-block">
+							<div class="input-block__wrap">
+								<input type="email" name="email" placeholder="Эмеил">
+							</div>
+						</div>
+						<div class="forms-btn">
+							<button class="main-btn">Продолжить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start contacts -->
+	<section class="contacts">
+		<div class="contacts-bg">
+			<img src="img/contacts-bg.svg" alt="">
+		</div>
+		<div class="wrapper">
+			<div class="contacts-top">
+				<div class="contacts-info">
+					<div class="section-top">
+						<h2 class="section-title">Контакты</h2>
+						<span>Контакты</span>
+					</div>
+					<p>При возникновении проблем с регистрацией чека или по любым другим вопросам пользования нашим сервисом, просим связаться с нами любым удобным для вас способом.</p>
+				</div>
+				<div class="contacts-social" style="background-image: url(img/contacts-bg-2.svg);">
+					<span class="contacts-subtitle">Мы в социальных сетях:</span>
+					<ul>
+						<li><a href="#">
+							<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.65316 1.13865L8.54503 0.274445C8.92266 -0.0914816 9.53331 -0.0914816 9.90693 0.274445L17.7168 7.83822C18.0944 8.20415 18.0944 8.79586 17.7168 9.15789L9.90693 16.7256C9.52929 17.0915 8.91865 17.0915 8.54503 16.7256L7.65316 15.8613C7.27151 15.4915 7.27954 14.8881 7.66923 14.5261L12.5102 10.0571H0.964178C0.429863 10.0571 0 9.6406 0 9.12285V7.87715C0 7.3594 0.429863 6.94287 0.964178 6.94287H12.5102L7.66923 2.47389C7.27553 2.11186 7.26749 1.50847 7.65316 1.13865Z" fill="#F99422"/></svg>
+							Telegram
+						</a></li>
+						<li><a href="#">
+							<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.65316 1.13865L8.54503 0.274445C8.92266 -0.0914816 9.53331 -0.0914816 9.90693 0.274445L17.7168 7.83822C18.0944 8.20415 18.0944 8.79586 17.7168 9.15789L9.90693 16.7256C9.52929 17.0915 8.91865 17.0915 8.54503 16.7256L7.65316 15.8613C7.27151 15.4915 7.27954 14.8881 7.66923 14.5261L12.5102 10.0571H0.964178C0.429863 10.0571 0 9.6406 0 9.12285V7.87715C0 7.3594 0.429863 6.94287 0.964178 6.94287H12.5102L7.66923 2.47389C7.27553 2.11186 7.26749 1.50847 7.65316 1.13865Z" fill="#F99422"/></svg>
+							Whatsapp
+						</a></li>
+						<li><a href="#">
+							<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.65316 1.13865L8.54503 0.274445C8.92266 -0.0914816 9.53331 -0.0914816 9.90693 0.274445L17.7168 7.83822C18.0944 8.20415 18.0944 8.79586 17.7168 9.15789L9.90693 16.7256C9.52929 17.0915 8.91865 17.0915 8.54503 16.7256L7.65316 15.8613C7.27151 15.4915 7.27954 14.8881 7.66923 14.5261L12.5102 10.0571H0.964178C0.429863 10.0571 0 9.6406 0 9.12285V7.87715C0 7.3594 0.429863 6.94287 0.964178 6.94287H12.5102L7.66923 2.47389C7.27553 2.11186 7.26749 1.50847 7.65316 1.13865Z" fill="#F99422"/></svg>
+							Vkontakte
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="contacts-bottom">
+				<div class="section-top">
+					<h2 class="section-title">Свяжитесь с нами</h2>
+					<span>Свяжитесь с нами</span>
+				</div>
+				<div class="contacts-row">
+					<div class="contacts-col contacts-form">
+						<form action="">
+							<div class="contacts-form__row">
+								<div class="input-block">
+									<label for="i-1">Ваше Имя<span>*</span></label>
+									<div class="input-block__wrap">
+										<input id="i-1" type="text" name="text" placeholder="Иван">
+									</div>
+								</div>
+								<div class="input-block">
+									<label for="i-2">Ваша Фамилия<span>*</span></label>
+									<div class="input-block__wrap">
+										<input id="i-2" type="text" name="text" placeholder="Иванов">
+									</div>
+								</div>
+								<div class="input-block">
+									<label for="i-3">Эмеил<span>*</span></label>
+									<div class="input-block__wrap">
+										<input id="i-3" type="text" name="text" placeholder="mail@gmail.com">
+									</div>
+								</div>
+								<div class="input-block">
+									<label for="i-4">Телефон</label>
+									<div class="input-block__wrap">
+										<input id="i-4" type="text" name="text" placeholder="+7 964-123-45-67">
+									</div>
+								</div>
+							</div>
+							<div class="input-block">
+								<label for="i-5">Тема сообщения:</label>
+								<div class="input-block__wrap">
+									<select name="text" id="i-5">
+										<option value="">Я нашел баг</option>
+										<option value="">Я нашел баг</option>
+										<option value="">Я нашел баг</option>
+									</select>
+								</div>
+							</div>
+							<div class="input-block">
+								<div class="input-block__wrap">
+									<textarea name="text" placeholder="Сообщение"></textarea>
+									<p>Поля (<span>*</span>) обязательны для заполнения</p>
+								</div>
+							</div>
+							<div class="contacts-btn">
+								<button class="main-btn">Отправить</button>
+							</div>
+						</form>
+					</div>
+					<div class="contacts-col contacts-last">
+						<div class="contacts-block">
+							<div class="contacts-ico">
+								<img src="img/contacts-ico-1.svg" alt="">
+							</div>
+							<span class="contacts-title">hello@email.com</span>
+							<p>Эмеил</p>
+						</div>
+						<div class="contacts-block">
+							<div class="contacts-ico">
+								<img src="img/contacts-ico-2.svg" alt="">
+							</div>
+							<span class="contacts-title">+7 993 992 33 16</span>
+							<p>Телефон</p>
+						</div>
+						<div class="contacts-block">
+							<div class="contacts-ico">
+								<img src="img/contacts-ico-3.svg" alt="">
+							</div>
+							<span class="contacts-title">Main Street 32b, NYC</span>
+							<p>Адресс</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contacts -->
+	<!-- start faq -->
+	<section class="faq faq-second">
+		<div class="wrapper">
+			<div class="section-top">
+				<h2 class="section-title">Частые вопросы</h2>
+				<span>Частые вопросы</span>
+			</div>
+			<div class="faq-wrap">
+				<div class="faq-accordeon accordeon">
+					<div class="faq-top">
+						<h3 class="faq-title">1. В чем выгода UGS?</h3>
+						<div class="faq-arrow">
+							<svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.381653 2.25084C0.17426 2.05294 0.175367 1.72156 0.384077 1.52505L1.65814 0.325514C1.8519 0.143086 2.1546 0.144398 2.34678 0.328499L8.15679 5.89449C8.35024 6.07981 8.65537 6.07975 8.84873 5.89434L14.6532 0.328791C14.8454 0.144548 15.1482 0.14317 15.342 0.325655L16.6161 1.52517C16.8247 1.72163 16.8259 2.05293 16.6186 2.25084L8.84801 9.67042C8.65483 9.85487 8.35079 9.85492 8.15755 9.67053L0.381653 2.25084Z" fill="#1B1B1B"/></svg>
+						</div>
+					</div>
+					<div class="accordeon-block">
+						<div class="faq-block">
+							<div class="faq-info">
+								<p>UGS – это страхование от постоянного проигрыша денежных средств. Мы позволяем крупным игрокам не переживать за сыгранные ставки, так как они в итоге получают 50% суммы обратно в случае проигрыша. UGS – это максимально прозрачная система, которая получает всего 10% от проигрыша. </p>
+								<p>Чтобы удостовериться в прозрачности работы нашего сервиса, предлагаем заинтересованным игрокам ознакомиться с отзывами клиентов нашего сервиса.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="faq-accordeon accordeon">
+					<div class="faq-top">
+						<h3 class="faq-title">2. Есть ли перенос негативного баланса в UGS?</h3>
+						<div class="faq-arrow">
+							<svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.381653 2.25084C0.17426 2.05294 0.175367 1.72156 0.384077 1.52505L1.65814 0.325514C1.8519 0.143086 2.1546 0.144398 2.34678 0.328499L8.15679 5.89449C8.35024 6.07981 8.65537 6.07975 8.84873 5.89434L14.6532 0.328791C14.8454 0.144548 15.1482 0.14317 15.342 0.325655L16.6161 1.52517C16.8247 1.72163 16.8259 2.05293 16.6186 2.25084L8.84801 9.67042C8.65483 9.85487 8.35079 9.85492 8.15755 9.67053L0.381653 2.25084Z" fill="#1B1B1B"/></svg>
+						</div>
+					</div>
+					<div class="accordeon-block">
+						<div class="faq-block">
+							<div class="faq-info">
+								<p>UGS – это страхование от постоянного проигрыша денежных средств. Мы позволяем крупным игрокам не переживать за сыгранные ставки, так как они в итоге получают 50% суммы обратно в случае проигрыша. UGS – это максимально прозрачная система, которая получает всего 10% от проигрыша. </p>
+								<p>Чтобы удостовериться в прозрачности работы нашего сервиса, предлагаем заинтересованным игрокам ознакомиться с отзывами клиентов нашего сервиса.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="faq-accordeon accordeon">
+					<div class="faq-top">
+						<h3 class="faq-title">3. Что будет, если ставка выиграет? </h3>
+						<div class="faq-arrow">
+							<svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.381653 2.25084C0.17426 2.05294 0.175367 1.72156 0.384077 1.52505L1.65814 0.325514C1.8519 0.143086 2.1546 0.144398 2.34678 0.328499L8.15679 5.89449C8.35024 6.07981 8.65537 6.07975 8.84873 5.89434L14.6532 0.328791C14.8454 0.144548 15.1482 0.14317 15.342 0.325655L16.6161 1.52517C16.8247 1.72163 16.8259 2.05293 16.6186 2.25084L8.84801 9.67042C8.65483 9.85487 8.35079 9.85492 8.15755 9.67053L0.381653 2.25084Z" fill="#1B1B1B"/></svg>
+						</div>
+					</div>
+					<div class="accordeon-block">
+						<div class="faq-block">
+							<div class="faq-info">
+								<p>UGS – это страхование от постоянного проигрыша денежных средств. Мы позволяем крупным игрокам не переживать за сыгранные ставки, так как они в итоге получают 50% суммы обратно в случае проигрыша. UGS – это максимально прозрачная система, которая получает всего 10% от проигрыша. </p>
+								<p>Чтобы удостовериться в прозрачности работы нашего сервиса, предлагаем заинтересованным игрокам ознакомиться с отзывами клиентов нашего сервиса.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="faq-accordeon accordeon">
+					<div class="faq-top">
+						<h3 class="faq-title">4. Почему стоит доверять?</h3>
+						<div class="faq-arrow">
+							<svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.381653 2.25084C0.17426 2.05294 0.175367 1.72156 0.384077 1.52505L1.65814 0.325514C1.8519 0.143086 2.1546 0.144398 2.34678 0.328499L8.15679 5.89449C8.35024 6.07981 8.65537 6.07975 8.84873 5.89434L14.6532 0.328791C14.8454 0.144548 15.1482 0.14317 15.342 0.325655L16.6161 1.52517C16.8247 1.72163 16.8259 2.05293 16.6186 2.25084L8.84801 9.67042C8.65483 9.85487 8.35079 9.85492 8.15755 9.67053L0.381653 2.25084Z" fill="#1B1B1B"/></svg>
+						</div>
+					</div>
+					<div class="accordeon-block">
+						<div class="faq-block">
+							<div class="faq-info">
+								<p>UGS – это страхование от постоянного проигрыша денежных средств. Мы позволяем крупным игрокам не переживать за сыгранные ставки, так как они в итоге получают 50% суммы обратно в случае проигрыша. UGS – это максимально прозрачная система, которая получает всего 10% от проигрыша. </p>
+								<p>Чтобы удостовериться в прозрачности работы нашего сервиса, предлагаем заинтересованным игрокам ознакомиться с отзывами клиентов нашего сервиса.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="faq-accordeon accordeon">
+					<div class="faq-top">
+						<h3 class="faq-title">5. Есть ли минимальная ставка и коэффициент для возможности пользования сервисом?</h3>
+						<div class="faq-arrow">
+							<svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.381653 2.25084C0.17426 2.05294 0.175367 1.72156 0.384077 1.52505L1.65814 0.325514C1.8519 0.143086 2.1546 0.144398 2.34678 0.328499L8.15679 5.89449C8.35024 6.07981 8.65537 6.07975 8.84873 5.89434L14.6532 0.328791C14.8454 0.144548 15.1482 0.14317 15.342 0.325655L16.6161 1.52517C16.8247 1.72163 16.8259 2.05293 16.6186 2.25084L8.84801 9.67042C8.65483 9.85487 8.35079 9.85492 8.15755 9.67053L0.381653 2.25084Z" fill="#1B1B1B"/></svg>
+						</div>
+					</div>
+					<div class="accordeon-block">
+						<div class="faq-block">
+							<div class="faq-info">
+								<p>UGS – это страхование от постоянного проигрыша денежных средств. Мы позволяем крупным игрокам не переживать за сыгранные ставки, так как они в итоге получают 50% суммы обратно в случае проигрыша. UGS – это максимально прозрачная система, которая получает всего 10% от проигрыша. </p>
+								<p>Чтобы удостовериться в прозрачности работы нашего сервиса, предлагаем заинтересованным игрокам ознакомиться с отзывами клиентов нашего сервиса.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-btn">
+				<a href="#" class="second-btn">Все вопросы</a>
+			</div>
+		</div>
+	</section>
+	<!-- end faq -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<ul class="footer-list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О системе</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/inst.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p><b>UGC</b>  Все права защищены. 2020.</p>
+				<ul class="footer-list">
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
