@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-logo">
+					<a href="#">
+						<img src="img/logo.png" alt="">
+					</a>
+				</div>
+				<div class="header-info">
+					<div class="header-col header-col__1">
+						<div class="header-select">
+							<select name="text">
+								<option value="">Ваш город</option>
+								<option value="">Ваш город</option>
+								<option value="">Ваш город</option>
+							</select>
+							<div class="input-icon">
+								<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+							</div>
+						</div>
+						<p class="header-city">Королев</p>
+					</div>
+					<div class="header-col header-col__2">
+						<b>Ежедневно</b>
+						<p>10:00–22:00</p>
+					</div>
+					<div class="header-col header-col__3">
+						<div class="header-phone">
+							<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.6367 11.2734C18.5117 15.3906 15.3906 18.5117 11.2734 20.6367L8.15234 17.5156C7.70964 17.0729 7.22266 16.9622 6.69141 17.1836C5.09766 17.7148 3.41536 17.9805 1.64453 17.9805C1.24609 17.9805 0.914062 18.1133 0.648438 18.3789C0.382812 18.6445 0.25 18.9766 0.25 19.375V24.3555C0.25 24.7539 0.382812 25.0859 0.648438 25.3516C0.914062 25.6172 1.24609 25.75 1.64453 25.75C8.28516 25.75 13.974 23.4036 18.7109 18.7109C23.4036 13.974 25.75 8.28516 25.75 1.64453C25.75 1.24609 25.6172 0.914062 25.3516 0.648438C25.0859 0.382812 24.7539 0.25 24.3555 0.25H19.375C18.9766 0.25 18.6445 0.382812 18.3789 0.648438C18.1133 0.914062 17.9805 1.24609 17.9805 1.64453C17.9805 3.41536 17.7148 5.09766 17.1836 6.69141C17.0065 7.26693 17.1172 7.75391 17.5156 8.15234L20.6367 11.2734Z" fill="#383838"/></svg>
+							<ul>
+								<li><a href="#">8 (495) 760-20-58</a></li>
+								<li><a href="#">8 (910) 464-93-77</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-col header-col__4">
+						<p>г. Королев, г. Балашиха,<br>г. Москва, г. Мытищи, г. Пушкино</p>
+					</div>
+				</div>
+				<div class="header-btns">
+					<a href="#" class="main-btn">Добавить объявление</a>
+					<a href="#" class="second-btn">Оценка недвижимости</a>
+				</div>
+				<div class="header-bar">
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="wrapper">
+				<div class="header-row">
+					<div class="header-over">
+						<div class="header-mob">
+							<div class="header-block">
+								<div class="header-block__row">
+									<div class="header-phone">
+										<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.6367 11.2734C18.5117 15.3906 15.3906 18.5117 11.2734 20.6367L8.15234 17.5156C7.70964 17.0729 7.22266 16.9622 6.69141 17.1836C5.09766 17.7148 3.41536 17.9805 1.64453 17.9805C1.24609 17.9805 0.914062 18.1133 0.648438 18.3789C0.382812 18.6445 0.25 18.9766 0.25 19.375V24.3555C0.25 24.7539 0.382812 25.0859 0.648438 25.3516C0.914062 25.6172 1.24609 25.75 1.64453 25.75C8.28516 25.75 13.974 23.4036 18.7109 18.7109C23.4036 13.974 25.75 8.28516 25.75 1.64453C25.75 1.24609 25.6172 0.914062 25.3516 0.648438C25.0859 0.382812 24.7539 0.25 24.3555 0.25H19.375C18.9766 0.25 18.6445 0.382812 18.3789 0.648438C18.1133 0.914062 17.9805 1.24609 17.9805 1.64453C17.9805 3.41536 17.7148 5.09766 17.1836 6.69141C17.0065 7.26693 17.1172 7.75391 17.5156 8.15234L20.6367 11.2734Z" fill="#383838"/></svg>
+										<ul>
+											<li><a href="#">8 (495) 760-20-58</a></li>
+											<li><a href="#">8 (910) 464-93-77</a></li>
+										</ul>
+									</div>
+									<div class="header-col">
+										<b>Ежедневно</b>
+										<p>10:00–22:00</p>
+									</div>
+								</div>
+								<div class="header-col header-col__4">
+									<p>г. Королев, г. Балашиха,<br>г. Москва, г. Мытищи, г. Пушкино</p>
+								</div>
+							</div>
+						</div>
+						<ul class="header-list">
+							<li><a href="#">Приватизация</a></li>
+							<li><a href="#">Бесплатная консультация</a></li>
+							<li class="drop">
+								<a href="#" class="drop-text">
+									Кредит
+									<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66406 0.00390625L7.48438 0.824219L3.98438 4.32422L0.484375 0.824219L1.30469 0.00390625L3.98438 2.68359L6.66406 0.00390625Z" fill="white"/></svg>
+								</a>
+								<ul class="drop-list">
+									<li><a href="#">Кредит 1</a></li>
+									<li><a href="#">Кредит 2</a></li>
+									<li><a href="#">Кредит 3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Собственникам</a></li>
+							<li class="drop">
+								<a href="#" class="drop-text">
+									Полезное
+									<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66406 0.00390625L7.48438 0.824219L3.98438 4.32422L0.484375 0.824219L1.30469 0.00390625L3.98438 2.68359L6.66406 0.00390625Z" fill="white"/></svg>
+								</a>
+								<ul class="drop-list">
+									<li><a href="#">Полезное 1</a></li>
+									<li><a href="#">Полезное 2</a></li>
+									<li><a href="#">Полезное 3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Партнеры</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<div class="header-mob">
+							<a href="#" class="second-btn">Оценка недвижимости</a>
+							<a href="#" class="main-btn">Добавить объявление</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start main -->
+	<section class="main">
+		<div class="main-bg" style="background-image: url(img/main-bg.jpg);"></div>
+		<div class="main-bg main-bg-mob" style="background-image: url(img/main-bg-mob.jpg);"></div>
+		<div class="wrapper">
+			<div class="main-wrap">
+				<h1 class="main-title">Поиск недвижимости</h1>
+				<form action="">
+					<div class="main-row">
+						<div class="main-col">
+							<div class="input-block">
+								<div class="input-wrap input-select">
+									<select name="text">
+										<option value="">Снять</option>
+										<option value="">Снять</option>
+										<option value="">Снять</option>
+									</select>
+									<div class="input-icon">
+										<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+									</div>
+								</div>
+							</div>
+						</div><!-- col(1) -->
+						<div class="main-col">
+							<div class="input-block">
+								<div class="input-wrap input-select">
+									<select name="text">
+										<option value="">Жилую недвижимость</option>
+										<option value="">Жилую недвижимость</option>
+										<option value="">Жилую недвижимость</option>
+									</select>
+									<div class="input-icon">
+										<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+									</div>
+								</div>
+							</div>
+						</div><!-- col(2) -->
+						<div class="main-col">
+							<div class="input-block">
+								<div class="input-wrap input-select">
+									<select name="text">
+										<option value="">Квартиру</option>
+										<option value="">Квартиру</option>
+										<option value="">Квартиру</option>
+									</select>
+									<div class="input-icon">
+										<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+									</div>
+								</div>
+							</div>
+						</div><!-- col(3) -->
+						<div class="main-col">
+							<div class="input-block">
+								<div class="input-wrap input-select">
+									<select name="text">
+										<option value="">Город</option>
+										<option value="">Город</option>
+										<option value="">Город</option>
+									</select>
+									<div class="input-icon">
+										<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+									</div>
+								</div>
+							</div>
+						</div><!-- col(4) -->
+						<div class="main-col">
+							<div class="input-block">
+								<div class="input-wrap input-select">
+									<select name="text">
+										<option value="">Метро любое</option>
+										<option value="">Метро любое</option>
+										<option value="">Метро любое</option>
+									</select>
+									<div class="input-icon">
+										<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+									</div>
+								</div>
+							</div>
+						</div><!-- col(5) -->
+						<div class="main-col">
+							<div class="input-block">
+								<div class="input-wrap">
+									<input type="text" name="text" placeholder="Цена от">
+								</div>
+							</div>
+						</div><!-- col(6) -->
+						<div class="main-col">
+							<div class="input-block">
+								<div class="input-wrap">
+									<input type="text" name="text" placeholder="Цена до">
+								</div>
+							</div>
+						</div><!-- col(7) -->
+						<div class="main-col">
+							<div class="input-block">
+								<div class="input-wrap input-select">
+									<select name="text">
+										<option value="">Руб.</option>
+										<option value="">Руб.</option>
+										<option value="">Руб.</option>
+									</select>
+									<div class="input-icon">
+										<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+									</div>
+								</div>
+							</div>
+						</div><!-- col(8) -->
+					</div>
+					<div class="main-block">
+						<div class="main-block__row">
+							<div class="main-col">
+								<div class="input-block">
+									<div class="input-wrap input-select">
+										<select name="text">
+											<option value="">Новостройки</option>
+											<option value="">Новостройки</option>
+											<option value="">Новостройки</option>
+										</select>
+										<div class="input-icon">
+											<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+										</div>
+									</div>
+								</div>
+							</div><!-- col(1) -->
+							<div class="main-col">
+								<div class="input-quantity">
+									<div class="quantity-col">
+										<input type="checkbox" name="quantity">
+										<span class="quantity-ico">1</span>
+									</div>
+									<div class="quantity-col">
+										<input type="checkbox" name="quantity">
+										<span class="quantity-ico">2</span>
+									</div>
+									<div class="quantity-col">
+										<input type="checkbox" name="quantity">
+										<span class="quantity-ico">3</span>
+									</div>
+									<div class="quantity-col">
+										<input type="checkbox" name="quantity">
+										<span class="quantity-ico">4</span>
+									</div>
+								</div>
+							</div><!-- col(2) -->
+							<div class="main-col main-col__row">
+								<div class="input-block">
+									<div class="input-wrap">
+										<input type="number" name="from" placeholder="От">
+									</div>
+								</div>
+								<div class="input-block">
+									<div class="input-wrap">
+										<input type="number" name="to" placeholder="До">
+									</div>
+								</div>
+							</div><!-- col(3) -->
+							<div class="main-col main-col__row">
+								<div class="input-block">
+									<div class="input-wrap">
+										<input type="number" name="from" placeholder="От">
+									</div>
+								</div>
+								<div class="input-block">
+									<div class="input-wrap">
+										<input type="number" name="to" placeholder="До">
+									</div>
+								</div>
+							</div><!-- col(4) -->
+						</div>
+					</div>
+					<div class="main-bottom">
+						<a href="#" class="main-details">
+							Еще детали
+							<span class="details-arrow">
+								<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5938 0.578125L12 1.98438L6 7.98438L0 1.98438L1.40625 0.578125L6 5.17188L10.5938 0.578125Z" fill="#383838"/></svg>
+							</span>
+						</a>
+						<div class="main-btns">
+							<a href="#" class="main-btn">Сбросить</a>
+							<a href="#" class="second-btn">Показать</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- end main -->
+	<!-- start advertisements -->
+	<section class="advertisements">
+		<div class="wrapper">
+			<div class="streamline">
+				Упорядочить:
+				<span class="streamline-link">
+					По дате
+					<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.21307 2.48409L3.59943 0.204545C3.73125 0.0681818 3.9108 0 4.10852 0C4.30625 0 4.48352 0.0681818 4.61761 0.204545L7.01307 2.48409C7.29716 2.75455 7.29716 3.19545 7.01307 3.46591C6.72898 3.73636 6.26989 3.73636 5.9858 3.46591L4.84034 2.37273V7.30455C4.84034 7.68864 4.51534 8 4.11307 8C3.7108 8 3.3858 7.68864 3.3858 7.30455V2.37273L2.24034 3.46818C1.95625 3.73864 1.49716 3.73864 1.21307 3.46818C0.928977 3.19545 0.928977 2.75682 1.21307 2.48409Z" fill="#001B36"/><mask id="agrefg" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="7" height="8"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.21307 2.48409L3.59943 0.204545C3.73125 0.0681818 3.9108 0 4.10852 0C4.30625 0 4.48352 0.0681818 4.61761 0.204545L7.01307 2.48409C7.29716 2.75455 7.29716 3.19545 7.01307 3.46591C6.72898 3.73636 6.26989 3.73636 5.9858 3.46591L4.84034 2.37273V7.30455C4.84034 7.68864 4.51534 8 4.11307 8C3.7108 8 3.3858 7.68864 3.3858 7.30455V2.37273L2.24034 3.46818C1.95625 3.73864 1.49716 3.73864 1.21307 3.46818C0.928977 3.19545 0.928977 2.75682 1.21307 2.48409Z" fill="white"/></mask><g mask="url(#agrefg)"><rect width="8" height="8" fill="#8B8B8B"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M13.7869 5.51591L11.4006 7.79545C11.2687 7.93182 11.0892 8 10.8915 8C10.6937 8 10.5165 7.93182 10.3824 7.79545L7.98693 5.51591C7.70284 5.24545 7.70284 4.80455 7.98693 4.53409C8.27102 4.26364 8.73011 4.26364 9.0142 4.53409L10.1597 5.62727L10.1597 0.695454C10.1597 0.311364 10.4847 3.07321e-07 10.8869 2.72153e-07C11.2892 2.36985e-07 11.6142 0.311363 11.6142 0.695454L11.6142 5.62727L12.7597 4.53182C13.0437 4.26136 13.5028 4.26136 13.7869 4.53182C14.071 4.80455 14.071 5.24318 13.7869 5.51591Z" fill="#001B36"/><mask id="dsa" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="0" width="7" height="8"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.7869 5.51591L11.4006 7.79545C11.2687 7.93182 11.0892 8 10.8915 8C10.6937 8 10.5165 7.93182 10.3824 7.79545L7.98693 5.51591C7.70284 5.24545 7.70284 4.80455 7.98693 4.53409C8.27102 4.26364 8.73011 4.26364 9.0142 4.53409L10.1597 5.62727L10.1597 0.695454C10.1597 0.311364 10.4847 3.07321e-07 10.8869 2.72153e-07C11.2892 2.36985e-07 11.6142 0.311363 11.6142 0.695454L11.6142 5.62727L12.7597 4.53182C13.0437 4.26136 13.5028 4.26136 13.7869 4.53182C14.071 4.80455 14.071 5.24318 13.7869 5.51591Z" fill="white"/></mask><g mask="url(#dsa)"><rect x="15" y="8" width="8" height="8" transform="rotate(180 15 8)" fill="#8B8B8B"/></g></svg>
+				</span>
+			</div>
+			<div class="advertisements-row">
+				<div class="advertisements-wrap">
+					<div class="advertisements-images">
+						<div class="advertisements-slider">
+							<div class="advertisements-slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+						<div class="advertisements-navigation">
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advertisements-info">
+						<div class="advertisements-top">
+							<span class="advertisements-price">4 900 000 ₽</span>
+							<span class="advertisements-num">Номер объекта: 01-15583</span>
+						</div>
+						<ul class="advertisements-list">
+							<li>1 комнатная</li>
+							<li>Площадь 60/35/– м2</li>
+							<li>Этаж 2/3</li>
+						</ul>
+						<span class="advertisements-address">г. Королёв, ул. Радужная, д. 7</span>
+						<span class="advertisements-date">25 Мая 2020</span>
+						<div class="advertisements-btns">
+							<a href="#" class="second-btn">Детали</a>
+							<a href="#" class="main-btn">Показать номер</a>
+						</div>
+					</div>
+				</div>
+				<div class="advertisements-wrap">
+					<div class="advertisements-images">
+						<div class="advertisements-slider">
+							<div class="advertisements-slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+						<div class="advertisements-navigation">
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advertisements-info">
+						<div class="advertisements-top">
+							<span class="advertisements-price">4 900 000 ₽</span>
+							<span class="advertisements-num">Номер объекта: 01-15583</span>
+						</div>
+						<ul class="advertisements-list">
+							<li>1 комнатная</li>
+							<li>Площадь 60/35/– м2</li>
+							<li>Этаж 2/3</li>
+						</ul>
+						<span class="advertisements-address">г. Королёв, ул. Радужная, д. 7</span>
+						<span class="advertisements-date">25 Мая 2020</span>
+						<div class="advertisements-btns">
+							<a href="#" class="second-btn">Детали</a>
+							<a href="#" class="main-btn">Показать номер</a>
+						</div>
+					</div>
+				</div>
+				<div class="advertisements-wrap">
+					<div class="advertisements-images">
+						<div class="advertisements-slider">
+							<div class="advertisements-slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+						<div class="advertisements-navigation">
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advertisements-info">
+						<div class="advertisements-top">
+							<span class="advertisements-price">4 900 000 ₽</span>
+							<span class="advertisements-num">Номер объекта: 01-15583</span>
+						</div>
+						<ul class="advertisements-list">
+							<li>1 комнатная</li>
+							<li>Площадь 60/35/– м2</li>
+							<li>Этаж 2/3</li>
+						</ul>
+						<span class="advertisements-address">г. Королёв, ул. Радужная, д. 7</span>
+						<span class="advertisements-date">25 Мая 2020</span>
+						<div class="advertisements-btns">
+							<a href="#" class="second-btn">Детали</a>
+							<a href="#" class="main-btn">Показать номер</a>
+						</div>
+					</div>
+				</div>
+				<div class="advertisements-wrap">
+					<div class="advertisements-images">
+						<div class="advertisements-slider">
+							<div class="advertisements-slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+						<div class="advertisements-navigation">
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advertisements-info">
+						<div class="advertisements-top">
+							<span class="advertisements-price">4 900 000 ₽</span>
+							<span class="advertisements-num">Номер объекта: 01-15583</span>
+						</div>
+						<ul class="advertisements-list">
+							<li>1 комнатная</li>
+							<li>Площадь 60/35/– м2</li>
+							<li>Этаж 2/3</li>
+						</ul>
+						<span class="advertisements-address">г. Королёв, ул. Радужная, д. 7</span>
+						<span class="advertisements-date">25 Мая 2020</span>
+						<div class="advertisements-btns">
+							<a href="#" class="second-btn">Детали</a>
+							<a href="#" class="main-btn">Показать номер</a>
+						</div>
+					</div>
+				</div>
+				<div class="advertisements-wrap">
+					<div class="advertisements-images">
+						<div class="advertisements-slider">
+							<div class="advertisements-slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+						<div class="advertisements-navigation">
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advertisements-info">
+						<div class="advertisements-top">
+							<span class="advertisements-price">4 900 000 ₽</span>
+							<span class="advertisements-num">Номер объекта: 01-15583</span>
+						</div>
+						<ul class="advertisements-list">
+							<li>1 комнатная</li>
+							<li>Площадь 60/35/– м2</li>
+							<li>Этаж 2/3</li>
+						</ul>
+						<span class="advertisements-address">г. Королёв, ул. Радужная, д. 7</span>
+						<span class="advertisements-date">25 Мая 2020</span>
+						<div class="advertisements-btns">
+							<a href="#" class="second-btn">Детали</a>
+							<a href="#" class="main-btn">Показать номер</a>
+						</div>
+					</div>
+				</div>
+				<div class="advertisements-wrap">
+					<div class="advertisements-images">
+						<div class="advertisements-slider">
+							<div class="advertisements-slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+						<div class="advertisements-navigation">
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advertisements-info">
+						<div class="advertisements-top">
+							<span class="advertisements-price">4 900 000 ₽</span>
+							<span class="advertisements-num">Номер объекта: 01-15583</span>
+						</div>
+						<ul class="advertisements-list">
+							<li>1 комнатная</li>
+							<li>Площадь 60/35/– м2</li>
+							<li>Этаж 2/3</li>
+						</ul>
+						<span class="advertisements-address">г. Королёв, ул. Радужная, д. 7</span>
+						<span class="advertisements-date">25 Мая 2020</span>
+						<div class="advertisements-btns">
+							<a href="#" class="second-btn">Детали</a>
+							<a href="#" class="main-btn">Показать номер</a>
+						</div>
+					</div>
+				</div>
+				<div class="advertisements-wrap">
+					<div class="advertisements-images">
+						<div class="advertisements-slider">
+							<div class="advertisements-slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+						<div class="advertisements-navigation">
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advertisements-info">
+						<div class="advertisements-top">
+							<span class="advertisements-price">4 900 000 ₽</span>
+							<span class="advertisements-num">Номер объекта: 01-15583</span>
+						</div>
+						<ul class="advertisements-list">
+							<li>1 комнатная</li>
+							<li>Площадь 60/35/– м2</li>
+							<li>Этаж 2/3</li>
+						</ul>
+						<span class="advertisements-address">г. Королёв, ул. Радужная, д. 7</span>
+						<span class="advertisements-date">25 Мая 2020</span>
+						<div class="advertisements-btns">
+							<a href="#" class="second-btn">Детали</a>
+							<a href="#" class="main-btn">Показать номер</a>
+						</div>
+					</div>
+				</div>
+				<div class="advertisements-wrap">
+					<div class="advertisements-images">
+						<div class="advertisements-slider">
+							<div class="advertisements-slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+						<div class="advertisements-navigation">
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-1.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-2.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-3.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-4.png" alt="">
+							</div>
+							<div class="advertisements-navigation__slide">
+								<img src="img/post-5.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advertisements-info">
+						<div class="advertisements-top">
+							<span class="advertisements-price">4 900 000 ₽</span>
+							<span class="advertisements-num">Номер объекта: 01-15583</span>
+						</div>
+						<ul class="advertisements-list">
+							<li>1 комнатная</li>
+							<li>Площадь 60/35/– м2</li>
+							<li>Этаж 2/3</li>
+						</ul>
+						<span class="advertisements-address">г. Королёв, ул. Радужная, д. 7</span>
+						<span class="advertisements-date">25 Мая 2020</span>
+						<div class="advertisements-btns">
+							<a href="#" class="second-btn">Детали</a>
+							<a href="#" class="main-btn">Показать номер</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pagination">
+				<a href="#" class="pagination-prev">
+					<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.59108 12.0046L18.5482 2.67425C18.7732 2.44381 18.7679 2.0633 18.5375 1.8275L16.9357 0.18758C16.7054 -0.0482256 16.3304 -0.0535849 16.1054 0.176861L5.16608 11.5705C5.04822 11.6885 4.99465 11.8492 5.00537 12.0046C5.00001 12.1654 5.05358 12.3208 5.16608 12.4387L16.1054 23.8378C16.3304 24.0682 16.7054 24.0629 16.9357 23.8271L18.5375 22.1871C18.7679 21.9513 18.7732 21.5708 18.5482 21.3404L9.59108 12.0046Z" fill="#001B36"/><mask id="inev" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="0" width="14" height="25"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.59108 12.0046L18.5482 2.67425C18.7732 2.44381 18.7679 2.0633 18.5375 1.8275L16.9357 0.18758C16.7054 -0.0482256 16.3304 -0.0535849 16.1054 0.176861L5.16608 11.5705C5.04822 11.6885 4.99465 11.8492 5.00537 12.0046C5.00001 12.1654 5.05358 12.3208 5.16608 12.4387L16.1054 23.8378C16.3304 24.0682 16.7054 24.0629 16.9357 23.8271L18.5375 22.1871C18.7679 21.9513 18.7732 21.5708 18.5482 21.3404L9.59108 12.0046Z" fill="white"/></mask><g mask="url(#inev)"><rect width="24" height="24" fill="#8B8B8B"/></g></svg>
+				</a>
+				<ul class="pagination-list">
+					<li class="active">1</li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><span>...</span></li>
+					<li><a href="#">215</a></li>
+				</ul>
+				<a href="#" class="pagination-next">
+					<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.1232 12.0046L5.16607 2.67425C4.94107 2.44381 4.94642 2.0633 5.17678 1.8275L6.77857 0.18758C7.00892 -0.0482256 7.38392 -0.0535849 7.60892 0.176861L18.5482 11.5759C18.6661 11.6938 18.7196 11.8546 18.7089 12.01C18.7143 12.1708 18.6607 12.3262 18.5482 12.4441L7.60892 23.8378C7.38392 24.0682 7.00892 24.0629 6.77857 23.8271L5.17678 22.1871C4.94642 21.9513 4.94107 21.5708 5.16607 21.3404L14.1232 12.0046Z" fill="#001B36"/><mask id="jnew" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="0" width="14" height="25"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.1232 12.0046L5.16607 2.67425C4.94107 2.44381 4.94642 2.0633 5.17678 1.8275L6.77857 0.18758C7.00892 -0.0482256 7.38392 -0.0535849 7.60892 0.176861L18.5482 11.5759C18.6661 11.6938 18.7196 11.8546 18.7089 12.01C18.7143 12.1708 18.6607 12.3262 18.5482 12.4441L7.60892 23.8378C7.38392 24.0682 7.00892 24.0629 6.77857 23.8271L5.17678 22.1871C4.94642 21.9513 4.94107 21.5708 5.16607 21.3404L14.1232 12.0046Z" fill="white"/></mask><g mask="url(#jnew)"><rect width="24" height="24" fill="#8B8B8B"/></g></svg>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- end advertisements -->
+	<!-- start about -->
+	<section class="about">
+		<div class="wrapper">
+			<div class="about-mob">
+				<h2 class="page-title">Агентство недвижимости “3 Ступени”</h2>
+				<img src="img/about-mob.jpg" alt="">
+			</div>
+			<div class="about-row">
+				<div class="about-info">
+					<p>Наше агентство недвижимости создано для людей, которые желают выгодно купить, продать, сдать, снять или обменять любой объект недвижимости в Подмосковье. "3 Ступени" предлагает услуги по купле-продаже, обмену, приватизации, сдаче в аренду жилых и не жилых помещений в Королеве и других городах Ярославского направления. А также услуги по согласованию перепланировок, сопровождению сделок, юридической проверке всей документации, консультации квалифицированного юриста и экспертов.</p>
+					<p>Постоянно обновляемая база недвижимости агентства позволит вам найти самые свежие и актуальные предложения на рынке недвижимости ближнего Подмосковья.  На сайте представлены новостройки, вторичное жилье, коммерческая недвижимость, земельные участки, дома и коттеджи.</p>
+					<p>Агентство недвижимости «3 Ступени» является действительным членом Российской Гильдии Риэлторов. Для желающих окажем помощь всего за 1 день. При недостатке материальных средств, наши специалисты предложат рассмотреть различные варианты кредитования или ипотеки.</p>
+					<p>Вы можете подать заявку на сайте агентства недвижимости «3 Ступени» и получить консультации у специалистов по жилищному законодательству, либо просто разместить Ваши предложения и пожелания в онлайн-заявке. Вашему вниманию представлен большой объем тематических статей, из которых вы можете почерпнуть полезную информацию для себя.</p>
+					<p>Приглашаем к взаимовыгодному сотрудничеству: строительные компании, риэлторов, частных маклеров и просто, владельцев собственности. Ваши предложения вы можете размещать на нашем сайте. Кроме того, приглашаем собственников жилья к заключению эксклюзивного договора. Для вас это будет совершенно бесплатно.</p>
+				</div>
+				<div class="about-img">
+					<img src="img/about-img.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<ul class="footer-list">
+					<li><a href="#">Приватизация</a></li>
+					<li><a href="#">Бесплатная консультация</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Кредит
+							<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66406 0.00390625L7.48438 0.824219L3.98438 4.32422L0.484375 0.824219L1.30469 0.00390625L3.98438 2.68359L6.66406 0.00390625Z" fill="white"/></svg>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">Кредит 1</a></li>
+							<li><a href="#">Кредит 2</a></li>
+							<li><a href="#">Кредит 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Собственникам</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">
+							Полезное
+							<svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66406 0.00390625L7.48438 0.824219L3.98438 4.32422L0.484375 0.824219L1.30469 0.00390625L3.98438 2.68359L6.66406 0.00390625Z" fill="white"/></svg>
+						</a>
+						<ul class="drop-list">
+							<li><a href="#">Полезное 1</a></li>
+							<li><a href="#">Полезное 2</a></li>
+							<li><a href="#">Полезное 3</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="footer-social">
+					<li><a href="#"><img src="img/google-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/inst-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/whatsApp-ico.svg" alt=""></a></li>
+					<li><a href="#"><img src="img/youtube-ico.svg" alt=""></a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-mob">Все права защищены. 2020.</p>
+				<p><a href="#">Лигал</a></p>
+				<ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>
