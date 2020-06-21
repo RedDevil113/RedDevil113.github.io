@@ -620,139 +620,144 @@
 	</footer>
 	<!-- end footer -->
 	<!-- modal-form -->
-	<div class="modal-overlay open-overlay"></div>
-	<div class="modal" id="modal-login">
-		<div class="modal-content">
-			<div class="modal-close">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L18 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-			</div>
-			<form method="POST">
-				<div class="modal-top">
-					<h3 class="modal-title">Вход на сайт</h3>
+	<div class="modal-overlay">
+		<div class="modal" id="modal-login">
+			<div class="modal-content">
+				<div class="modal-close">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L18 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 				</div>
-				<div class="modal-wrap">
-					<div class="input-block">
-						<label for="i-1">Введите номер вашего телефона</label>
-						<div class="input-wrap">
-							<input id="i-1" class="input-tel" type="tel" name="tel" placeholder="+7 (___) ___-__-__">
-						</div>
+				<form method="POST">
+					<div class="modal-top">
+						<h3 class="modal-title">Вход на сайт</h3>
 					</div>
-					<button class="main-btn">Получить код</button>
-					<div class="modal-text">
-						<p>Нажимая «Получить код», вы даете согласие на получение sms и принимаете условия <a href="#" class="modal-link">пользовательского соглашения</a></p>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-	<div class="modal" id="modal-sms">
-		<div class="modal-content">
-			<div class="modal-close">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L18 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-			</div>
-			<form method="POST">
-				<div class="modal-top">
-					<h3 class="modal-title">Введите код из смс</h3>
-				</div>
-				<div class="modal-wrap">
-					<div class="input-block">
-						<label for="i-2">Мы отправили его на номер +7 903 077 93 98</label>
-						<div class="input-wrap">
-							<input id="i-2" type="text" name="text" placeholder="Введите код из смс">
-						</div>
-					</div>
-					<button class="main-btn">Подтвердить</button>
-					<div class="modal-text">
-						<ul>
-							<li><a href="#">Отправить код повторно</a></li>
-							<li><a href="#">Изменить номер телефона</a></li>
-						</ul>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-	<div class="modal modal-big open" id="modal-location">
-		<div class="modal-content">
-			<div class="modal-close">
-				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L18 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-			</div>
-				<div class="modal-top">
-					<h3 class="modal-title">Изменение адреса и получателя</h3>
-					<p>Укажите точку на карте или заполните поля</p>
-				</div>
-				<div class="modal-wrap">
-					<div class="map" id="map"></div>
-					<form method="POST">
-						<div class="modal-row">
-							<div class="modal-col modal-col__big modal-col__row">
-								<div class="input-block input-block__full">
-									<label for="s-1">Город, улица и дом</label>
-									<div class="input-wrap">
-										<input id="s-1" type="text" name="text" value="Казань, улица Николая Ершова, 15/38-40С9, кв.47">
-									</div>
-								</div>
-								<div class="input-block input-block__fix">
-									<label for="s-2">Квартира</label>
-									<div class="input-wrap">
-										<input id="s-2" type="text" name="text" value="147">
-									</div>
-								</div>
-							</div>
-							<div class="modal-col__33">
-								<div class="input-block">
-									<label for="s-3">Подъезд</label>
-									<div class="input-wrap">
-										<input id="s-3" type="text" name="text" value="3">
-									</div>
-								</div>
-							</div>
-							<div class="modal-col__33">
-								<div class="input-block">
-									<label for="s-4">Этаж</label>
-									<div class="input-wrap">
-										<input id="s-4" type="text" name="text" value="8">
-									</div>
-								</div>
-							</div>
-							<div class="modal-col__33">
-								<div class="input-block">
-									<label for="s-5">Код домофона</label>
-									<div class="input-wrap">
-										<input id="s-5" type="text" name="text" value="7809">
-									</div>
-								</div>
-							</div>
-							<div class="modal-col">
-								<div class="input-block">
-									<label for="s-6">Имя</label>
-									<div class="input-wrap">
-										<input id="s-6" type="text" name="text" value="Николай">
-									</div>
-								</div>
-							</div>
-							<div class="modal-col">
-								<div class="input-block">
-									<label for="s-7">Телефон</label>
-									<div class="input-wrap">
-										<input id="s-7" type="tel" name="tel" value="+7 (937) 892-55-40">
-									</div>
-								</div>
-							</div>
-							<div class="modal-col modal-col__big">
-								<div class="input-block">
-									<label for="s-8">Комментарий (необязательно)</label>
-									<div class="input-wrap">
-										<textarea name="text"></textarea>
-									</div>
-								</div>
+					<div class="modal-wrap">
+						<div class="input-block">
+							<label for="i-1">Введите номер вашего телефона</label>
+							<div class="input-wrap">
+								<input id="i-1" class="input-tel" type="tel" name="tel" placeholder="+7 (___) ___-__-__">
 							</div>
 						</div>
-						<div class="modal-btns">
-							<a href="#" class="main-btn">Сохранить изменения</a>
-							<a href="#" class="modal-link">Удалить адрес</a>
+						<button class="main-btn">Получить код</button>
+						<div class="modal-text">
+							<p>Нажимая «Получить код», вы даете согласие на получение sms и принимаете условия <a href="#" class="modal-link">пользовательского соглашения</a></p>
 						</div>
+					</div>
 				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal-overlay">
+		<div class="modal" id="modal-sms">
+			<div class="modal-content">
+				<div class="modal-close">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L18 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</div>
+				<form method="POST">
+					<div class="modal-top">
+						<h3 class="modal-title">Введите код из смс</h3>
+					</div>
+					<div class="modal-wrap">
+						<div class="input-block">
+							<label for="i-2">Мы отправили его на номер +7 903 077 93 98</label>
+							<div class="input-wrap">
+								<input id="i-2" type="text" name="text" placeholder="Введите код из смс">
+							</div>
+						</div>
+						<button class="main-btn">Подтвердить</button>
+						<div class="modal-text">
+							<ul>
+								<li><a href="#">Отправить код повторно</a></li>
+								<li><a href="#">Изменить номер телефона</a></li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal-overlay open-overlay">
+		<div class="modal modal-big open" id="modal-location">
+			<div class="modal-content">
+				<div class="modal-close">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L18 18" stroke="#878786" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				</div>
+					<div class="modal-top">
+						<h3 class="modal-title">Изменение адреса и получателя</h3>
+						<p>Укажите точку на карте или заполните поля</p>
+					</div>
+					<div class="modal-wrap">
+						<div class="map" id="map"></div>
+						<form method="POST">
+							<div class="modal-row">
+								<div class="modal-col modal-col__big modal-col__row">
+									<div class="input-block input-block__full">
+										<label for="s-1">Город, улица и дом</label>
+										<div class="input-wrap">
+											<input id="s-1" type="text" name="text" value="Казань, улица Николая Ершова, 15/38-40С9, кв.47">
+										</div>
+									</div>
+									<div class="input-block input-block__fix">
+										<label for="s-2">Квартира</label>
+										<div class="input-wrap">
+											<input id="s-2" type="text" name="text" value="147">
+										</div>
+									</div>
+								</div>
+								<div class="modal-col__33">
+									<div class="input-block">
+										<label for="s-3">Подъезд</label>
+										<div class="input-wrap">
+											<input id="s-3" type="text" name="text" value="3">
+										</div>
+									</div>
+								</div>
+								<div class="modal-col__33">
+									<div class="input-block">
+										<label for="s-4">Этаж</label>
+										<div class="input-wrap">
+											<input id="s-4" type="text" name="text" value="8">
+										</div>
+									</div>
+								</div>
+								<div class="modal-col__33">
+									<div class="input-block">
+										<label for="s-5">Код домофона</label>
+										<div class="input-wrap">
+											<input id="s-5" type="text" name="text" value="7809">
+										</div>
+									</div>
+								</div>
+								<div class="modal-col">
+									<div class="input-block">
+										<label for="s-6">Имя</label>
+										<div class="input-wrap">
+											<input id="s-6" type="text" name="text" value="Николай">
+										</div>
+									</div>
+								</div>
+								<div class="modal-col">
+									<div class="input-block">
+										<label for="s-7">Телефон</label>
+										<div class="input-wrap">
+											<input id="s-7" type="tel" name="tel" value="+7 (937) 892-55-40">
+										</div>
+									</div>
+								</div>
+								<div class="modal-col modal-col__big">
+									<div class="input-block">
+										<label for="s-8">Комментарий (необязательно)</label>
+										<div class="input-wrap">
+											<textarea name="text"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-btns">
+								<a href="#" class="main-btn">Сохранить изменения</a>
+								<a href="#" class="modal-link">Удалить адрес</a>
+							</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
