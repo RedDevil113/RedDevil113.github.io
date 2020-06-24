@@ -20,15 +20,20 @@
 	<!-- start header -->
 	<header class="header">
 		<div class="wrapper">
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/logo-modal.png" alt="">
+				</a>
+			</div>
 			<div class="header-menu">
 				<ul class="header-list">
-					<li><a href="#">условия акции</a></li>
-					<li><a href="#">Подарки</a></li>
-					<li><a href="#">Победители</a></li>
+					<li><a href="#steps" class="header-scroll">условия акции</a></li>
+					<li><a href="#prizes" class="header-scroll">Подарки</a></li>
+					<li><a href="#winners" class="header-scroll">Победители</a></li>
 				</ul>
 				<div class="header-btns">
-					<a href="#">Регистрация</a>
-					<a href="#">
+					<a class="button-modal" href="#modal-registration">Регистрация</a>
+					<a class="button-modal" href="#modal-login">
 						Войти
 						<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.9997 1.50199C20.8912 1.50199 26.4983 7.10852 26.4983 14C26.4983 17.2034 25.2855 20.1278 23.2969 22.3419C22.5619 19.4636 20.0958 18.4211 17.6907 18.0458C19.0726 16.9527 19.9636 15.265 19.9636 13.3704C19.9636 10.0822 17.2883 7.40683 14 7.40683C10.7117 7.40683 8.03641 10.0822 8.03641 13.3704C8.03641 15.2654 8.9271 16.9527 10.3093 18.0458C7.90423 18.4211 5.43844 19.4632 4.70311 22.3422C2.71449 20.1281 1.50167 17.2034 1.50167 14C1.50167 7.10852 7.10852 1.50199 13.9997 1.50199ZM9.53776 13.3704C9.53776 10.9098 11.5394 8.9085 14 8.9085C16.4606 8.9085 18.4622 10.9102 18.4622 13.3704C18.4622 15.831 16.4606 17.8327 14 17.8327C11.5394 17.8327 9.53776 15.831 9.53776 13.3704ZM6.00634 23.5988C6.25667 20.5037 8.50575 19.3343 14 19.3343C19.4939 19.3343 21.7437 20.5034 21.9937 23.5985C19.8252 25.4073 17.0379 26.498 13.9997 26.498C10.9617 26.498 8.17447 25.4076 6.00634 23.5988ZM13.9997 28C21.7195 28 28 21.7195 28 14C28 6.2805 21.7195 0 13.9997 0C6.28017 0 0 6.2805 0 14C0 21.7195 6.28017 28 13.9997 28Z" fill="#C5B185"/></svg>
 					</a>
@@ -58,37 +63,48 @@
 							<img src="img/logo-modal.png" alt="">
 						</a>
 					</div>
-					<div class="main-info">
-						<div class="main-subtitle">
-							<img src="img/main-subtitle.svg" alt="">
-						</div>
-						<h1 class="main-title">выбор за тобой</h1>
-						<div class="main-row">
-							<div class="main-col main-col__1">
-								<div class="main-col__img">
-									<img src="img/prize-1.png" alt="">
-								</div>
-								<h3 class="main-col__title">На твой выбор</h3>
-								<span class="main-col__subtitle">Гарантированно</span>
+					<div class="main-all">
+						<div class="main-info">
+							<div class="main-subtitle">
+								<img src="img/main-subtitle.svg" alt="">
 							</div>
-							<div class="main-col main-col__2">
-								<div class="main-col__img">
-									<img src="img/prize-2.png" alt="">
+							<h1 class="main-title">выбор за тобой</h1>
+							<div class="main-row">
+								<div class="main-col main-col__1">
+									<div class="main-col__img">
+										<img src="img/prize-1.png" alt="">
+										<img src="img/prize-1-mob.png" alt="" class="main-col__mob">
+									</div>
+									<div class="main-col__wrap">
+										<h3 class="main-col__title">На твой выбор</h3>
+										<span class="main-col__subtitle">Гарантированно</span>
+									</div>
 								</div>
-								<h3 class="main-col__title">Сертификат на 1000 Р</h3>
-								<span class="main-col__subtitle">Еженедельно</span>
-							</div>
-							<div class="main-col main-col__3">
-								<div class="main-col__img">
-									<img src="img/prize-3.png" alt="">
+								<div class="main-col main-col__2">
+									<div class="main-col__img">
+										<img src="img/prize-2.png" alt="">
+										<img src="img/prize-2-mob.png" alt="" class="main-col__mob">
+									</div>
+									<div class="main-col__wrap">
+										<h3 class="main-col__title">Сертификат на 1000 Р</h3>
+										<span class="main-col__subtitle">Еженедельно</span>
+									</div>
 								</div>
-								<h3 class="main-col__title"><span>JBL</span> — колонка или наушники</h3>
-								<span class="main-col__subtitle">Ежемесячно</span>
+								<div class="main-col main-col__3">
+									<div class="main-col__img">
+										<img src="img/prize-3.png" alt="">
+										<img src="img/prize-3-mob.png" alt="" class="main-col__mob">
+									</div>
+									<div class="main-col__wrap">
+										<h3 class="main-col__title"><span>JBL</span> — колонка или наушники</h3>
+										<span class="main-col__subtitle">Ежемесячно</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="main-bottom">
-						<a href="#" class="primary-btn"><span>Зарегистрировать код</span></a>
+						<a href="#modal-registration" class="button-modal primary-btn"><span>Зарегистрировать код</span></a>
 						<div class="main-text">
 							<img src="img/alk-product.png" alt="">
 							<p>Акция проводится на территории РФ с 1 июля по 31 августа 2020</p>
@@ -101,12 +117,15 @@
 	</section>
 	<!-- end main -->
 	<!-- start steps -->
-	<section class="steps">
+	<section class="steps" id="steps">
 		<div class="wrapper">
 			<div class="steps-row">
 				<div class="steps-col steps-col__1">
 					<div class="steps-wrap">
-						<svg width="182" height="225" viewBox="0 0 182 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M140.623 110.782L141.604 110L140.623 109.218L2.62331 -0.781973L1 -2.07592V0L1 220V222.076L2.62331 220.782L140.623 110.782Z" stroke="url(#fd1)" stroke-width="2"/><rect x="40" y="61" width="142" height="78" fill="#070606"/><defs><linearGradient id="fd1" x1="33.2109" y1="250.122" x2="119.927" y2="51.4807" gradientUnits="userSpaceOnUse"><stop stop-color="#E0C280"/><stop offset="0.528294" stop-color="#F2E3B7"/><stop offset="1" stop-color="#E0C280"/></linearGradient></defs></svg>
+						<svg width="182" height="225" viewBox="0 0 182 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M140.623 110.782L141.604 110L140.623 109.218L2.62331 -0.781973L1 -2.07592V0L1 220V222.076L2.62331 220.782L140.623 110.782Z" stroke="url(#932n)" stroke-width="2"/><rect x="40" y="63" width="142" height="119" fill="#070606"/><defs><linearGradient id="932n" x1="33.2109" y1="250.122" x2="119.927" y2="51.4807" gradientUnits="userSpaceOnUse"><stop stop-color="#E0C280"/><stop offset="0.528294" stop-color="#F2E3B7"/><stop offset="1" stop-color="#E0C280"/></linearGradient></defs></svg>
+						<div class="steps-bg">
+							<svg width="192" height="161" viewBox="0 0 192 161" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.81849 2.25768L99.5778 80.1818L1.81849 158.106L1.81849 2.25768Z" stroke="url(#vbnm)" stroke-width="2"/><rect x="50" y="33" width="142" height="69" fill="#070606"/><defs><linearGradient id="vbnm" x1="23.5174" y1="182.088" x2="86.5836" y2="37.6222" gradientUnits="userSpaceOnUse"><stop stop-color="#E0C280"/><stop offset="0.528294" stop-color="#F2E3B7"/><stop offset="1" stop-color="#E0C280"/></linearGradient></defs></svg>
+						</div>
 						<div class="steps-text">
 							<h3 class="steps-title">Покупай</h3>
 							<span class="steps-subtitle">Miller</span>
@@ -117,6 +136,9 @@
 				<div class="steps-col steps-col__2">
 					<div class="steps-wrap">
 						<svg width="182" height="225" viewBox="0 0 182 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M140.623 110.782L141.604 110L140.623 109.218L2.62331 -0.781973L1 -2.07592V0L1 220V222.076L2.62331 220.782L140.623 110.782Z" stroke="url(#fd2)" stroke-width="2"/><rect x="40" y="61" width="142" height="78" fill="#070606"/><defs><linearGradient id="fd2" x1="33.2109" y1="250.122" x2="119.927" y2="51.4807" gradientUnits="userSpaceOnUse"><stop stop-color="#E0C280"/><stop offset="0.528294" stop-color="#F2E3B7"/><stop offset="1" stop-color="#E0C280"/></linearGradient></defs></svg>
+						<div class="steps-bg">
+							<svg width="186" height="161" viewBox="0 0 186 161" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.81849 2.25768L99.5778 80.1818L1.81849 158.106L1.81849 2.25768Z" stroke="url(#lkjhgf)" stroke-width="2"/><rect x="44" y="62" width="142" height="78" fill="#070606"/><defs><linearGradient id="lkjhgf" x1="23.5174" y1="182.088" x2="86.5836" y2="37.6222" gradientUnits="userSpaceOnUse"><stop stop-color="#E0C280"/><stop offset="0.528294" stop-color="#F2E3B7"/><stop offset="1" stop-color="#E0C280"/></linearGradient></defs></svg>
+						</div>
 						<div class="steps-text">
 							<h3 class="steps-title">Регистрируй</h3>
 							<span class="steps-subtitle">коды</span>
@@ -126,7 +148,10 @@
 				</div>
 				<div class="steps-col steps-col__3">
 					<div class="steps-wrap">
-						<svg width="182" height="225" viewBox="0 0 182 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M140.623 110.782L141.604 110L140.623 109.218L2.62331 -0.781973L1 -2.07592V0L1 220V222.076L2.62331 220.782L140.623 110.782Z" stroke="url(#fd3)" stroke-width="2"/><rect x="40" y="61" width="142" height="78" fill="#070606"/><defs><linearGradient id="fd3" x1="33.2109" y1="250.122" x2="119.927" y2="51.4807" gradientUnits="userSpaceOnUse"><stop stop-color="#E0C280"/><stop offset="0.528294" stop-color="#F2E3B7"/><stop offset="1" stop-color="#E0C280"/></linearGradient></defs></svg>
+						<svg width="182" height="225" viewBox="0 0 182 225" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M140.623 110.782L141.604 110L140.623 109.218L2.62331 -0.781973L1 -2.07592V0L1 220V222.076L2.62331 220.782L140.623 110.782Z" stroke="url(#kmsd)" stroke-width="2"/><rect x="40" y="69" width="142" height="108" fill="#070606"/><defs><linearGradient id="kmsd" x1="33.2109" y1="250.122" x2="119.927" y2="51.4807" gradientUnits="userSpaceOnUse"><stop stop-color="#E0C280"/><stop offset="0.528294" stop-color="#F2E3B7"/><stop offset="1" stop-color="#E0C280"/></linearGradient></defs></svg>
+						<div class="steps-bg">
+							<svg width="198" height="160" viewBox="0 0 198 160" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.73559L136.006 80L1 158.264L1 1.73559Z" stroke="url(#poiuyt)" stroke-width="2"/><rect x="56" y="39" width="142" height="108" fill="#070606"/><defs><linearGradient id="poiuyt" x1="31.2109" y1="181.907" x2="80.8179" y2="25.6587" gradientUnits="userSpaceOnUse"><stop stop-color="#E0C280"/><stop offset="0.528294" stop-color="#F2E3B7"/><stop offset="1" stop-color="#E0C280"/></linearGradient></defs></svg>
+						</div>
 						<div class="steps-text">
 							<h3 class="steps-title">Выбирай</h3>
 							<span class="steps-subtitle">подарки</span>
@@ -139,7 +164,7 @@
 	</section>
 	<!-- end steps -->
 	<!-- start prizes -->
-	<section class="prizes">
+	<section class="prizes" id="prizes">
 		<div class="wrapper">
 			<div class="prizes-wrap">
 				<div class="prizes-bg" style="background-image: url(img/prizes-bg.jpg);"></div>
@@ -183,9 +208,9 @@
 				</div>
 				<div class="prizes-bottom">
 					<div class="prizes-bottom__row">
-						<a href="#" class="main-btn">Войти</a>
+						<a href="#modal-login" class="button-modal main-btn">Войти</a>
 						<span>или</span>
-						<a href="#" class="prizes-link">Зарегистрироваться</a>
+						<a href="#modal-registration" class="button-modal prizes-link">Зарегистрироваться</a>
 					</div>
 					<ul class="prizes-social">
 						<li><a href="#"><svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#g2)"><path fill-rule="evenodd" clip-rule="evenodd" d="M102 52C102 78.5097 80.5097 100 54 100C27.4903 100 6 78.5097 6 52C6 25.4903 27.4903 4 54 4C80.5097 4 102 25.4903 102 52ZM56.9458 75.2091H52.6055C52.6055 75.2091 43.0292 75.7913 34.5943 66.9206C25.3962 57.2464 17.2736 38.0497 17.2736 38.0497C17.2736 38.0497 16.8051 36.7915 17.3142 36.1824C17.8864 35.4984 19.4438 35.4544 19.4438 35.4544L29.8195 35.3859C29.8195 35.3859 30.7972 35.5505 31.4968 36.0697C32.0737 36.4982 32.3966 37.2987 32.3966 37.2987C32.3966 37.2987 34.0737 41.5829 36.2943 45.4583C40.629 53.0242 42.6481 54.6789 44.1196 53.8684C46.2642 52.6869 45.6211 43.1732 45.6211 43.1732C45.6211 43.1732 45.6602 39.7203 44.5411 38.1822C43.6747 36.9916 42.0407 36.6431 41.319 36.5461C40.735 36.4672 41.6934 35.0982 42.9356 34.4837C44.8027 33.5598 48.0995 33.5077 51.9955 33.5477C55.0311 33.579 55.9052 33.7703 57.0919 34.0596C59.8458 34.7313 59.7599 36.8833 59.5747 41.5268C59.5193 42.9143 59.4551 44.5242 59.4551 46.3836C59.4551 46.8022 59.443 47.2485 59.4305 47.7076C59.3661 50.0855 59.2923 52.8071 60.8421 53.8187C61.6369 54.3373 63.5813 53.8959 68.4432 45.5567C70.747 41.6042 72.4758 36.9573 72.4758 36.9573C72.4758 36.9573 72.8524 36.1286 73.4393 35.7739C74.0392 35.4113 74.8491 35.5227 74.8491 35.5227L85.7676 35.4545C85.7676 35.4545 89.0488 35.0594 89.5796 36.5553C90.1368 38.1254 88.3538 41.7916 83.8931 47.7971C79.6545 53.5037 77.5957 55.5992 77.7917 57.4566C77.9344 58.809 79.2723 60.0352 81.8344 62.4371C87.2084 67.4759 88.6417 70.1222 88.9822 70.7509C89.0098 70.8018 89.0302 70.8395 89.045 70.8641C91.4504 74.8929 86.3777 75.2091 86.3777 75.2091L76.6803 75.346C76.6803 75.346 74.5963 75.7624 71.8539 73.86C70.4201 72.8658 69.0182 71.2423 67.6826 69.6954C65.6401 67.33 63.7522 65.1436 62.1408 65.6597C59.4382 66.5261 59.5232 72.4089 59.5232 72.4089C59.5232 72.4089 59.5428 73.6653 58.9268 74.3348C58.2565 75.0632 56.9458 75.2091 56.9458 75.2091Z" fill="url(#g1)"/></g><defs><filter id="g2" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="3"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter><linearGradient id="g1" x1="102" y1="1.98248" x2="1.96497" y2="1.98248" gradientUnits="userSpaceOnUse"><stop stop-color="#F7E1B8"/><stop offset="1" stop-color="#BD9B5E"/></linearGradient></defs></svg></a></li>
@@ -198,24 +223,36 @@
 	</section>
 	<!-- end prizes -->
 	<!-- start winners -->
-	<section class="winners">
+	<section class="winners" id="winners">
 		<div class="wrapper">
 			<h2 class="section-title">Победители</h2>
 			<div class="winners-tabs">
-				<ul class="winners-tabs__list">
-					<li><a href="#winners-1" class="active">1 неделя</a></li>
-					<li><a href="#winners-2">2 неделя</a></li>
-					<li><a href="#winners-3">3 неделя</a></li>
-					<li><a href="#winners-4">4 неделя</a></li>
-					<li><a href="#winners-5">5 неделя</a></li>
-				</ul>
+				<div class="winners-tabs__select">
+					<div class="winners-tabs__select-main">
+						<span>1 неделя</span>
+						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.0868 0L0 2.48695L9.84679 10.7494L9.88287 10.7064L9.91896 10.7494L19.7657 2.48695L17.679 0L9.88287 6.54169L2.0868 0Z" fill="white"/><mask mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="11"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.0868 0L0 2.48695L9.84679 10.7494L9.88287 10.7064L9.91896 10.7494L19.7657 2.48695L17.679 0L9.88287 6.54169L2.0868 0Z" fill="white"/></mask><g></g></svg>
+					</div>
+					<ul class="winners-tabs__list select-list">
+						<li><a href="#winners-1" class="active">1 неделя</a></li>
+						<li><a href="#winners-2">2 неделя</a></li>
+						<li><a href="#winners-3">3 неделя</a></li>
+						<li><a href="#winners-4">4 неделя</a></li>
+						<li><a href="#winners-5">5 неделя</a></li>
+					</ul>
+				</div>
 			</div>
 			<div id="winners-1" class="week-tab tab-active">
-				<ul class="winners-list tab-list">
-					<li><a href="#tab-1" class="active">ежедневные</a></li>
-					<li><a href="#tab-2">еженедельные</a></li>
-					<li><a href="#tab-3">ежемесячные</a></li>
-				</ul>
+				<div class="winners-tabs__select">
+					<div class="winners-tabs__select-main">
+						<span>ежедневные</span>
+						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.0868 0L0 2.48695L9.84679 10.7494L9.88287 10.7064L9.91896 10.7494L19.7657 2.48695L17.679 0L9.88287 6.54169L2.0868 0Z" fill="white"/><mask mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="11"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.0868 0L0 2.48695L9.84679 10.7494L9.88287 10.7064L9.91896 10.7494L19.7657 2.48695L17.679 0L9.88287 6.54169L2.0868 0Z" fill="white"/></mask><g></g></svg>
+					</div>
+					<ul class="winners-list tab-list select-list">
+						<li><a href="#tab-1" class="active">ежедневные</a></li>
+						<li><a href="#tab-2">еженедельные</a></li>
+						<li><a href="#tab-3">ежемесячные</a></li>
+					</ul>
+				</div>
 				<div id="tab-1" class="winners-tab tab tab-active">
 					<div class="winners-slider">
 						<div class="winners-slide">
@@ -376,7 +413,7 @@
 							</div>
 							<div class="winners-row">
 								<div class="winners-col winners-col__1">
-									<b class="winners-col__mob">Имя</b>
+									<b class="winners-col__mob">2Имя</b>
 									<p>Роман</p>
 								</div>
 								<div class="winners-col winners-col__2">
@@ -520,7 +557,7 @@
 							</div>
 							<div class="winners-row">
 								<div class="winners-col winners-col__1">
-									<b class="winners-col__mob">Имя</b>
+									<b class="winners-col__mob">3Имя</b>
 									<p>Роман</p>
 								</div>
 								<div class="winners-col winners-col__2">
@@ -650,11 +687,17 @@
 				</div>
 			</div>
 			<div id="winners-2" class="week-tab">
-				<ul class="winners-list tab-list">
-					<li><a href="#tab-4" class="active">2ежедневные</a></li>
-					<li><a href="#tab-5">еженедельные</a></li>
-					<li><a href="#tab-6">ежемесячные</a></li>
-				</ul>
+				<div class="winners-tabs__select">
+					<div class="winners-tabs__select-main">
+						<span>ежедневные</span>
+						<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.0868 0L0 2.48695L9.84679 10.7494L9.88287 10.7064L9.91896 10.7494L19.7657 2.48695L17.679 0L9.88287 6.54169L2.0868 0Z" fill="white"/><mask mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="11"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.0868 0L0 2.48695L9.84679 10.7494L9.88287 10.7064L9.91896 10.7494L19.7657 2.48695L17.679 0L9.88287 6.54169L2.0868 0Z" fill="white"/></mask><g></g></svg>
+					</div>
+					<ul class="winners-list tab-list select-list">
+						<li><a href="#tab-4" class="active">ежедневные</a></li>
+						<li><a href="#tab-5">еженедельные</a></li>
+						<li><a href="#tab-6">ежемесячные</a></li>
+					</ul>
+				</div>
 				<div id="tab-4" class="winners-tab tab tab-active">
 					<div class="winners-slider">
 						<div class="winners-slide">
@@ -1326,7 +1369,7 @@
 		<div class="wrapper">
 			<ul class="footer-list">
 				<li><a href="#">Правила акции</a></li>
-				<li><a href="#">Обратная связь</a></li>
+				<li><a class="button-modal" href="#modal-feedback">Обратная связь</a></li>
 			</ul>
 			<ul class="footer-social">
 				<li><a href="#"><svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#g2)"><path fill-rule="evenodd" clip-rule="evenodd" d="M102 52C102 78.5097 80.5097 100 54 100C27.4903 100 6 78.5097 6 52C6 25.4903 27.4903 4 54 4C80.5097 4 102 25.4903 102 52ZM56.9458 75.2091H52.6055C52.6055 75.2091 43.0292 75.7913 34.5943 66.9206C25.3962 57.2464 17.2736 38.0497 17.2736 38.0497C17.2736 38.0497 16.8051 36.7915 17.3142 36.1824C17.8864 35.4984 19.4438 35.4544 19.4438 35.4544L29.8195 35.3859C29.8195 35.3859 30.7972 35.5505 31.4968 36.0697C32.0737 36.4982 32.3966 37.2987 32.3966 37.2987C32.3966 37.2987 34.0737 41.5829 36.2943 45.4583C40.629 53.0242 42.6481 54.6789 44.1196 53.8684C46.2642 52.6869 45.6211 43.1732 45.6211 43.1732C45.6211 43.1732 45.6602 39.7203 44.5411 38.1822C43.6747 36.9916 42.0407 36.6431 41.319 36.5461C40.735 36.4672 41.6934 35.0982 42.9356 34.4837C44.8027 33.5598 48.0995 33.5077 51.9955 33.5477C55.0311 33.579 55.9052 33.7703 57.0919 34.0596C59.8458 34.7313 59.7599 36.8833 59.5747 41.5268C59.5193 42.9143 59.4551 44.5242 59.4551 46.3836C59.4551 46.8022 59.443 47.2485 59.4305 47.7076C59.3661 50.0855 59.2923 52.8071 60.8421 53.8187C61.6369 54.3373 63.5813 53.8959 68.4432 45.5567C70.747 41.6042 72.4758 36.9573 72.4758 36.9573C72.4758 36.9573 72.8524 36.1286 73.4393 35.7739C74.0392 35.4113 74.8491 35.5227 74.8491 35.5227L85.7676 35.4545C85.7676 35.4545 89.0488 35.0594 89.5796 36.5553C90.1368 38.1254 88.3538 41.7916 83.8931 47.7971C79.6545 53.5037 77.5957 55.5992 77.7917 57.4566C77.9344 58.809 79.2723 60.0352 81.8344 62.4371C87.2084 67.4759 88.6417 70.1222 88.9822 70.7509C89.0098 70.8018 89.0302 70.8395 89.045 70.8641C91.4504 74.8929 86.3777 75.2091 86.3777 75.2091L76.6803 75.346C76.6803 75.346 74.5963 75.7624 71.8539 73.86C70.4201 72.8658 69.0182 71.2423 67.6826 69.6954C65.6401 67.33 63.7522 65.1436 62.1408 65.6597C59.4382 66.5261 59.5232 72.4089 59.5232 72.4089C59.5232 72.4089 59.5428 73.6653 58.9268 74.3348C58.2565 75.0632 56.9458 75.2091 56.9458 75.2091Z" fill="url(#g1)"/></g><defs><filter id="g2" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="3"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter><linearGradient id="g1" x1="102" y1="1.98248" x2="1.96497" y2="1.98248" gradientUnits="userSpaceOnUse"><stop stop-color="#F7E1B8"/><stop offset="1" stop-color="#BD9B5E"/></linearGradient></defs></svg></a></li>
@@ -1337,20 +1380,6 @@
 	</footer>
 	<!-- end footer -->
 	<!-- modal-form -->
-	<div class="modal-overlay"></div>
-	<div class="modal" id="modal-form">
-		<div class="modal-close">
-			
-		</div>
-		<div class="modal-content">
-			<form method="POST">
-				<div class="input-block">
-					<input type="text" name="text" placeholder="oooo">
-				</div>
-				<button class="main-btn">HHHH</button>
-			</form>
-		</div>
-	</div>
 	<div class="stub">
 		<div class="stub-wrap">
 			<div class="stub-row">
@@ -1380,6 +1409,274 @@
 			</div>
 		</div>
 		<div class="stub-bg" style="background-image: url(img/modal-bg.jpg);"></div>
+	</div>
+	<div class="modal-overlay"></div>
+	<div class="modal" id="modal-registration">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<div class="modal-top">
+					<h2 class="modal-title">Регистрация</h2>
+					<div class="modal-close">
+						<img src="img/close.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<div class="modal-form">
+					<form method="">
+						<div class="input-block">
+							<label for="n-1">Имя</label>
+							<input id="n-1" type="name" name="name">
+						</div>
+						<div class="input-block">
+							<label for="n-2">Фамилия</label>
+							<input id="n-2" type="text" name="secondname">
+						</div>
+						<div class="input-block">
+							<label for="n-3">E-mail</label>
+							<input id="n-3" type="email" name="email">
+						</div>
+						<div class="input-block">
+							<label for="n-4">Дата рождения</label>
+							<input id="n-4" type="text" name="text">
+						</div>
+						<div class="input-block">
+							<label for="n-5">Пароль</label>
+							<input id="n-5" type="password" name="password">
+						</div>
+						<div class="input-block">
+							<label for="n-6">Повторение пароля</label>
+							<input id="n-6" type="password" name="password">
+						</div>
+						<div class="modal-checkbox">
+							<div class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox-ico"><svg height="417pt" viewBox="0 -46 417.81333 417" width="417pt" xmlns="http://www.w3.org/2000/svg"><path d="m159.988281 318.582031c-3.988281 4.011719-9.429687 6.25-15.082031 6.25s-11.09375-2.238281-15.082031-6.25l-120.449219-120.46875c-12.5-12.5-12.5-32.769531 0-45.246093l15.082031-15.085938c12.503907-12.5 32.75-12.5 45.25 0l75.199219 75.203125 203.199219-203.203125c12.503906-12.5 32.769531-12.5 45.25 0l15.082031 15.085938c12.5 12.5 12.5 32.765624 0 45.246093zm0 0"/></svg></span>
+								<p>Я прочитал и согласен с <a href="#">Правилами акции</a> и <a href="#">Пользовательским соглашением</a>, согласен на обработку персональных данных</p>
+							</div>
+							<div class="checkbox">
+								<input type="checkbox">
+								<span class="checkbox-ico"><svg height="417pt" viewBox="0 -46 417.81333 417" width="417pt" xmlns="http://www.w3.org/2000/svg"><path d="m159.988281 318.582031c-3.988281 4.011719-9.429687 6.25-15.082031 6.25s-11.09375-2.238281-15.082031-6.25l-120.449219-120.46875c-12.5-12.5-12.5-32.769531 0-45.246093l15.082031-15.085938c12.503907-12.5 32.75-12.5 45.25 0l75.199219 75.203125 203.199219-203.203125c12.503906-12.5 32.769531-12.5 45.25 0l15.082031 15.085938c12.5 12.5 12.5 32.765624 0 45.246093zm0 0"/></svg></span>
+								<p>Я согласен получать информацию об акции по E-mail</p>
+							</div>
+						</div>
+						<div class="modal-btn">
+							<button class="main-btn">Зарегистрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-login">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<div class="modal-top">
+					<h2 class="modal-title">Вход</h2>
+					<div class="modal-close">
+						<img src="img/close.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<div class="modal-form">
+					<form method="">
+						<div class="input-block">
+							<label for="n-7">E-mail</label>
+							<input id="n-7" type="email" name="email">
+						</div>
+						<div class="input-block">
+							<label for="n-8">Пароль</label>
+							<input id="n-8" type="password" name="password">
+						</div>
+						<div class="modal-btn">
+							<button class="main-btn">Войти</button>
+						</div>
+						<div class="modal-bottom">
+							<a href="#" class="modal-link">Забыли пароль?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-feedback">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<div class="modal-top">
+					<h2 class="modal-title">Форма обратной связи</h2>
+					<div class="modal-close">
+						<img src="img/close.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<div class="modal-form">
+					<form method="">
+						<div class="input-block">
+							<label for="n-9">Имя</label>
+							<input id="n-9" type="text" name="name">
+						</div>
+						<div class="input-block">
+							<label for="n-10">E-mail</label>
+							<input id="n-10" type="email" name="email">
+						</div>
+						<div class="input-block">
+							<label for="n-11">Тема</label>
+							<select name="text" id="n-11">
+								<option value="">Текст в поле</option>
+								<option value="">Текст в поле</option>
+								<option value="">Текст в поле</option>
+							</select>
+						</div>
+						<div class="input-block">
+							<label for="n-12">Ваш вопрос</label>
+							<textarea id="n-12" name="text"></textarea>
+						</div>
+						<div class="modal-btn">
+							<button class="main-btn">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-choose">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<div class="modal-top">
+					<h2 class="modal-title">Выбрать гарантированный подарок</h2>
+					<div class="modal-close">
+						<img src="img/close.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<div class="modal-form modal-form__big">
+					<form method="">
+						<div class="input-block input-center">
+							<label for="n-13">Укажи имя своего аккаунта Стим</label>
+							<input id="n-13" type="text" name="name">
+						</div>
+						<div class="input-block input-center">
+							<label for="n-14">Подтвердите имя своего аккаунта</label>
+							<input id="n-14" type="text" name="secondname">
+						</div>
+						<div class="modal-btns">
+							<button class="main-btn">подтвердить</button>
+							<a href="#" class="second-btn"><span><b>назад</b></span></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-feedback2">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<div class="modal-top">
+					<h2 class="modal-title">Форма обратной связи</h2>
+					<div class="modal-close">
+						<img src="img/close.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<div class="modal-form">
+					<form method="">
+						<div class="input-block">
+							<label for="n-15">Имя</label>
+							<input id="n-15" type="text" name="name">
+						</div>
+						<div class="input-block">
+							<label for="n-16">E-mail</label>
+							<input id="n-16" type="email" name="email">
+						</div>
+						<div class="input-block">
+							<label for="n-17">Тема</label>
+							<select name="text" id="n-17">
+								<option value="">Текст в поле</option>
+								<option value="">Текст в поле</option>
+								<option value="">Текст в поле</option>
+							</select>
+						</div>
+						<div class="input-block">
+							<label for="n-18">Ваш вопрос</label>
+							<textarea id="n-18" name="text"></textarea>
+						</div>
+						<div class="modal-btn">
+							<div class="file">
+								<input type="file">
+								<a href="#" class="second-btn"><span><b>загрузить фото</b></span></a>
+							</div>
+							<button class="main-btn">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-check">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<div class="modal-top">
+					<h2 class="modal-title">Загрузить чек</h2>
+					<div class="modal-close">
+						<img src="img/close.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				<div class="modal-text">
+					<ul>
+						<li>1. Сфотографируйте крупно QR-код, а также чек полностью. Если чек длинный, то вы можете сфотографировать его по частям (до 5 частей)</li>
+						<li>2. Фотография QR кода должна быть в фокусе, не содержать изгибов, бликов и теней</li>
+						<li>3. На чеке обязательно должны присутствовать: номер чека, дата и время покупки, итоговая сумма, ФН, ФД, ФПД, QR-код</li>
+						<li>4. В чеке обязательно должен присутствовать продукт Miller</li>
+						<li>5. Дата на чеке должна быть не ранее 1.06.2020</li>
+						<li>6. Нельзя загружать сразу несколько чеков за один раз</li>
+						<li>7. Файлы должны быть в формате JPEG или PNG</li>
+						<li>8. Размер файла не должен быть более 10 Мб</li>
+					</ul>
+				</div>
+				<div class="modal-btn">
+					<div class="file">
+						<input type="file">
+						<a href="#" class="second-btn"><span><b>загрузить фото</b></span></a>
+					</div>
+					<button class="main-btn">Отправить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal open" id="modal-confirm">
+		<div class="modal-wrap">
+			<div class="modal-head">
+				<div class="modal-top">
+					<h2 class="modal-title">Подтвердить выбор подарка</h2>
+					<div class="modal-close">
+						<img src="img/close.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-content">
+			<div class="modal-wrap">
+				
+			</div>
+		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
