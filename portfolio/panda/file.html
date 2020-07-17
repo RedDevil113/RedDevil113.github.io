@@ -80,7 +80,7 @@
 						</ul>
 					</div>
 					<ul class="menu-list">
-						<li><a href="#" class="active">
+						<li><a href="#">
 							<b class="menu-ico"><img src="img/menu-ico-1.svg" alt=""></b>
 							<span>Личный кабинет</span>
 						</a></li>
@@ -96,7 +96,7 @@
 							<b class="menu-ico"><img src="img/menu-ico-4.svg" alt=""></b>
 							<span>Мои заметки</span>
 						</a></li>
-						<li><a href="#">
+						<li><a href="#" class="active">
 							<b class="menu-ico"><img src="img/menu-ico-5.svg" alt=""></b>
 							<span>Мой словарь</span>
 						</a></li>
@@ -140,169 +140,146 @@
 		<div class="personalArea-content">
 			<div class="personalArea-block">
 				<div class="personalArea-block__top">
-					<span class="personalArea-block__title">Баланс: <span>8 уроков до 09.08.2020</span></span>
+					<span class="personalArea-block__title">Загрузить новый файл</span>
 					<div class="personalArea-block__top-b"></div>
 				</div>
-				<div class="personalArea-balance">
-					<div class="personalArea-balance__info">
-						<p>4 занятия</p>
-						<p><a href="#">История оплат</a></p>
-					</div>
-					<a href="#" class="main-btn">Пополнить счет</a>
-					<div class="personalArea-balance__img">
-						<img src="img/balance0img.svg" alt="">
+				<div class="file-upload">
+					<form action="">
+						<div class="file-upload__wrap">
+							<div class="file-upload__row">
+								<div class="input-block">
+									<input type="text" name="text" placeholder="Заголовок для файла">
+								</div>
+								<div class="input-upload">
+									<input type="file">
+									<span class="second-btn">Загрузить файл</span>
+								</div>
+							</div>
+							<p>Минимальный размер: 100мб</p>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="personalArea-block">
+				<div class="personalArea-block__top">
+					<span class="personalArea-block__title">Изображения</span>
+					<div class="personalArea-block__top-b"></div>
+				</div>
+				<div class="file-block">
+					<div class="personalArea-slider__wrap range-slider__wrap">
+						<div class="file-slider range-slider">
+							<div class="file-slide">
+								<div class="file-wrap">
+									<div class="file-img">
+										<a data-caption='<a class="file-descr" href="#"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8203 1.32031V3H0.179688V1.32031H3.07031L3.92969 0.5H8.07031L8.92969 1.32031H11.8203ZM1 13.8203V3.82031H11V13.8203C11 14.263 10.8307 14.6536 10.4922 14.9922C10.1536 15.3307 9.76302 15.5 9.32031 15.5H2.67969C2.23698 15.5 1.84635 15.3307 1.50781 14.9922C1.16927 14.6536 1 14.263 1 13.8203Z" fill="#F8FFFC"/></svg>Удалить файл</a>' data-fancybox="gallery" href="img/file-1.jpg">
+										<img src="img/file-1.jpg" alt="">
+									</a>
+									</div>
+									<div class="file-info">
+										<p>Картинка_1.jpg</p>
+										<span class="file-ico"><svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35938 1.35938C8.83333 0.885417 9.38021 0.648438 10 0.648438C10.6198 0.648438 11.1667 0.885417 11.6406 1.35938C12.1146 1.83333 12.3516 2.38021 12.3516 3C12.3516 3.61979 12.1146 4.16667 11.6406 4.64062C11.1667 5.11458 10.6198 5.35156 10 5.35156C9.38021 5.35156 8.83333 5.11458 8.35938 4.64062C7.88542 4.16667 7.64844 3.61979 7.64844 3C7.64844 2.38021 7.88542 1.83333 8.35938 1.35938ZM15.3594 1.35938C15.8333 0.885417 16.3802 0.648438 17 0.648438C17.6198 0.648438 18.1667 0.885417 18.6406 1.35938C19.1146 1.83333 19.3516 2.38021 19.3516 3C19.3516 3.61979 19.1146 4.16667 18.6406 4.64062C18.1667 5.11458 17.6198 5.35156 17 5.35156C16.3802 5.35156 15.8333 5.11458 15.3594 4.64062C14.8854 4.16667 14.6484 3.61979 14.6484 3C14.6484 2.38021 14.8854 1.83333 15.3594 1.35938ZM1.35938 1.35938C1.83333 0.885417 2.38021 0.648438 3 0.648438C3.61979 0.648438 4.16667 0.885417 4.64062 1.35938C5.11458 1.83333 5.35156 2.38021 5.35156 3C5.35156 3.61979 5.11458 4.16667 4.64062 4.64062C4.16667 5.11458 3.61979 5.35156 3 5.35156C2.38021 5.35156 1.83333 5.11458 1.35938 4.64062C0.885417 4.16667 0.648438 3.61979 0.648438 3C0.648438 2.38021 0.885417 1.83333 1.35938 1.35938Z" fill="#2F2F2F"/></svg></span>
+									</div>
+								</div>
+							</div>
+							<div class="file-slide">
+								<div class="file-wrap">
+									<div class="file-img">
+										<a data-caption='<a class="file-descr" href="#"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8203 1.32031V3H0.179688V1.32031H3.07031L3.92969 0.5H8.07031L8.92969 1.32031H11.8203ZM1 13.8203V3.82031H11V13.8203C11 14.263 10.8307 14.6536 10.4922 14.9922C10.1536 15.3307 9.76302 15.5 9.32031 15.5H2.67969C2.23698 15.5 1.84635 15.3307 1.50781 14.9922C1.16927 14.6536 1 14.263 1 13.8203Z" fill="#F8FFFC"/></svg>Удалить файл</a>' data-fancybox="gallery" href="img/file-1.jpg">
+										<img src="img/file-1.jpg" alt="">
+									</a>
+									</div>
+									<div class="file-info">
+										<p>Картинка_1.jpg</p>
+										<span class="file-ico"><svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35938 1.35938C8.83333 0.885417 9.38021 0.648438 10 0.648438C10.6198 0.648438 11.1667 0.885417 11.6406 1.35938C12.1146 1.83333 12.3516 2.38021 12.3516 3C12.3516 3.61979 12.1146 4.16667 11.6406 4.64062C11.1667 5.11458 10.6198 5.35156 10 5.35156C9.38021 5.35156 8.83333 5.11458 8.35938 4.64062C7.88542 4.16667 7.64844 3.61979 7.64844 3C7.64844 2.38021 7.88542 1.83333 8.35938 1.35938ZM15.3594 1.35938C15.8333 0.885417 16.3802 0.648438 17 0.648438C17.6198 0.648438 18.1667 0.885417 18.6406 1.35938C19.1146 1.83333 19.3516 2.38021 19.3516 3C19.3516 3.61979 19.1146 4.16667 18.6406 4.64062C18.1667 5.11458 17.6198 5.35156 17 5.35156C16.3802 5.35156 15.8333 5.11458 15.3594 4.64062C14.8854 4.16667 14.6484 3.61979 14.6484 3C14.6484 2.38021 14.8854 1.83333 15.3594 1.35938ZM1.35938 1.35938C1.83333 0.885417 2.38021 0.648438 3 0.648438C3.61979 0.648438 4.16667 0.885417 4.64062 1.35938C5.11458 1.83333 5.35156 2.38021 5.35156 3C5.35156 3.61979 5.11458 4.16667 4.64062 4.64062C4.16667 5.11458 3.61979 5.35156 3 5.35156C2.38021 5.35156 1.83333 5.11458 1.35938 4.64062C0.885417 4.16667 0.648438 3.61979 0.648438 3C0.648438 2.38021 0.885417 1.83333 1.35938 1.35938Z" fill="#2F2F2F"/></svg></span>
+									</div>
+								</div>
+							</div>
+							<div class="file-slide">
+								<div class="file-wrap">
+									<div class="file-img">
+										<a data-caption='<a class="file-descr" href="#"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8203 1.32031V3H0.179688V1.32031H3.07031L3.92969 0.5H8.07031L8.92969 1.32031H11.8203ZM1 13.8203V3.82031H11V13.8203C11 14.263 10.8307 14.6536 10.4922 14.9922C10.1536 15.3307 9.76302 15.5 9.32031 15.5H2.67969C2.23698 15.5 1.84635 15.3307 1.50781 14.9922C1.16927 14.6536 1 14.263 1 13.8203Z" fill="#F8FFFC"/></svg>Удалить файл</a>' data-fancybox="gallery" href="img/file-1.jpg">
+										<img src="img/file-1.jpg" alt="">
+									</a>
+									</div>
+									<div class="file-info">
+										<p>Картинка_1.jpg</p>
+										<span class="file-ico"><svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35938 1.35938C8.83333 0.885417 9.38021 0.648438 10 0.648438C10.6198 0.648438 11.1667 0.885417 11.6406 1.35938C12.1146 1.83333 12.3516 2.38021 12.3516 3C12.3516 3.61979 12.1146 4.16667 11.6406 4.64062C11.1667 5.11458 10.6198 5.35156 10 5.35156C9.38021 5.35156 8.83333 5.11458 8.35938 4.64062C7.88542 4.16667 7.64844 3.61979 7.64844 3C7.64844 2.38021 7.88542 1.83333 8.35938 1.35938ZM15.3594 1.35938C15.8333 0.885417 16.3802 0.648438 17 0.648438C17.6198 0.648438 18.1667 0.885417 18.6406 1.35938C19.1146 1.83333 19.3516 2.38021 19.3516 3C19.3516 3.61979 19.1146 4.16667 18.6406 4.64062C18.1667 5.11458 17.6198 5.35156 17 5.35156C16.3802 5.35156 15.8333 5.11458 15.3594 4.64062C14.8854 4.16667 14.6484 3.61979 14.6484 3C14.6484 2.38021 14.8854 1.83333 15.3594 1.35938ZM1.35938 1.35938C1.83333 0.885417 2.38021 0.648438 3 0.648438C3.61979 0.648438 4.16667 0.885417 4.64062 1.35938C5.11458 1.83333 5.35156 2.38021 5.35156 3C5.35156 3.61979 5.11458 4.16667 4.64062 4.64062C4.16667 5.11458 3.61979 5.35156 3 5.35156C2.38021 5.35156 1.83333 5.11458 1.35938 4.64062C0.885417 4.16667 0.648438 3.61979 0.648438 3C0.648438 2.38021 0.885417 1.83333 1.35938 1.35938Z" fill="#2F2F2F"/></svg></span>
+									</div>
+								</div>
+							</div>
+							<div class="file-slide">
+								<div class="file-wrap">
+									<div class="file-img">
+										<a data-caption='<a class="file-descr" href="#"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8203 1.32031V3H0.179688V1.32031H3.07031L3.92969 0.5H8.07031L8.92969 1.32031H11.8203ZM1 13.8203V3.82031H11V13.8203C11 14.263 10.8307 14.6536 10.4922 14.9922C10.1536 15.3307 9.76302 15.5 9.32031 15.5H2.67969C2.23698 15.5 1.84635 15.3307 1.50781 14.9922C1.16927 14.6536 1 14.263 1 13.8203Z" fill="#F8FFFC"/></svg>Удалить файл</a>' data-fancybox="gallery" href="img/file-1.jpg">
+										<img src="img/file-1.jpg" alt="">
+									</a>
+									</div>
+									<div class="file-info">
+										<p>Картинка_1.jpg</p>
+										<span class="file-ico"><svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35938 1.35938C8.83333 0.885417 9.38021 0.648438 10 0.648438C10.6198 0.648438 11.1667 0.885417 11.6406 1.35938C12.1146 1.83333 12.3516 2.38021 12.3516 3C12.3516 3.61979 12.1146 4.16667 11.6406 4.64062C11.1667 5.11458 10.6198 5.35156 10 5.35156C9.38021 5.35156 8.83333 5.11458 8.35938 4.64062C7.88542 4.16667 7.64844 3.61979 7.64844 3C7.64844 2.38021 7.88542 1.83333 8.35938 1.35938ZM15.3594 1.35938C15.8333 0.885417 16.3802 0.648438 17 0.648438C17.6198 0.648438 18.1667 0.885417 18.6406 1.35938C19.1146 1.83333 19.3516 2.38021 19.3516 3C19.3516 3.61979 19.1146 4.16667 18.6406 4.64062C18.1667 5.11458 17.6198 5.35156 17 5.35156C16.3802 5.35156 15.8333 5.11458 15.3594 4.64062C14.8854 4.16667 14.6484 3.61979 14.6484 3C14.6484 2.38021 14.8854 1.83333 15.3594 1.35938ZM1.35938 1.35938C1.83333 0.885417 2.38021 0.648438 3 0.648438C3.61979 0.648438 4.16667 0.885417 4.64062 1.35938C5.11458 1.83333 5.35156 2.38021 5.35156 3C5.35156 3.61979 5.11458 4.16667 4.64062 4.64062C4.16667 5.11458 3.61979 5.35156 3 5.35156C2.38021 5.35156 1.83333 5.11458 1.35938 4.64062C0.885417 4.16667 0.648438 3.61979 0.648438 3C0.648438 2.38021 0.885417 1.83333 1.35938 1.35938Z" fill="#2F2F2F"/></svg></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<input type="range" class="range" min="1" value="1" step="1" max="5">
 					</div>
 				</div>
 			</div>
 			<div class="personalArea-block">
 				<div class="personalArea-block__top">
-					<span class="personalArea-block__title">Статистика</span>
+					<span class="personalArea-block__title">Документы</span>
 					<div class="personalArea-block__top-b"></div>
 				</div>
-				<div class="personalArea-statistics__row">
-					<div class="personalArea-statistics__col">
-						<div class="personalArea-statistics__circle">
-							<div class="personalArea-statistics__ico" id="perstatistics1"></div>
-							<div class="personalArea-statistics__hidden" id="perstatistics1-1">5</div>
-							<div class="personalArea-statistics__hidden" id="perprocent-1">0.94</div>
-						</div>
-						<span class="personalArea-statistics__subtitle">Срений бал за задания</span>
-					</div>
-					<div class="personalArea-statistics__col">
-						<div class="personalArea-statistics__circle">
-							<div class="personalArea-statistics__ico" id="perstatistics2"></div>
-							<div class="personalArea-statistics__hidden" id="perstatistics2-2">5</div>
-							<div class="personalArea-statistics__hidden" id="perprocent-2">0.94</div>
-						</div>
-						<span class="personalArea-statistics__subtitle">Срений бал за тесты</span>
-					</div>
-					<div class="personalArea-statistics__col">
-						<div class="personalArea-statistics__circle">
-							<div class="personalArea-statistics__ico" id="perstatistics3"></div>
-							<div class="personalArea-statistics__hidden" id="perstatistics3-3">5</div>
-							<div class="personalArea-statistics__hidden" id="perprocent-3">0.94</div>
-						</div>
-						<span class="personalArea-statistics__subtitle">Срений бал за игры</span>
-					</div>
-				</div>
-			</div>
-			<div class="personalArea-block">
-				<div class="personalArea-block__top">
-					<span class="personalArea-block__title">Текущий курс</span>
-					<div class="personalArea-block__top-b"></div>
-				</div>
-				<div class="personalArea-course">
-					<div class="personalArea-course__col">
-						<h3 class="personalArea-course__title">Английский язык</h3>
-						<ul>
-							<li>Пройдено уроков: <span>12 из 38</span></li>
-							<li>До конца курса осталось: <span>~3 месяца</span></li>
-						</ul>
-					</div>
-					<div class="personalArea-course__col">
-						<h3 class="personalArea-course__title">Преподаватель</h3>
-						<div class="personalArea-course__user">
-							<div class="personalArea-course__user-img">
-								<img src="img/user.jpg" alt="">
+				<div class="file-block file-block__second">
+					<div class="personalArea-slider__wrap range-slider__wrap">
+						<div class="file-slider range-slider">
+							<div class="file-slide">
+								<div class="file-wrap">
+									<div class="file-img">
+										<img src="img/Microsoft_Excel-Logo.png" alt="">
+									</div>
+									<div class="file-info">
+										<p>Файл001.xls</p>
+										<span class="file-ico"><svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35938 1.35938C8.83333 0.885417 9.38021 0.648438 10 0.648438C10.6198 0.648438 11.1667 0.885417 11.6406 1.35938C12.1146 1.83333 12.3516 2.38021 12.3516 3C12.3516 3.61979 12.1146 4.16667 11.6406 4.64062C11.1667 5.11458 10.6198 5.35156 10 5.35156C9.38021 5.35156 8.83333 5.11458 8.35938 4.64062C7.88542 4.16667 7.64844 3.61979 7.64844 3C7.64844 2.38021 7.88542 1.83333 8.35938 1.35938ZM15.3594 1.35938C15.8333 0.885417 16.3802 0.648438 17 0.648438C17.6198 0.648438 18.1667 0.885417 18.6406 1.35938C19.1146 1.83333 19.3516 2.38021 19.3516 3C19.3516 3.61979 19.1146 4.16667 18.6406 4.64062C18.1667 5.11458 17.6198 5.35156 17 5.35156C16.3802 5.35156 15.8333 5.11458 15.3594 4.64062C14.8854 4.16667 14.6484 3.61979 14.6484 3C14.6484 2.38021 14.8854 1.83333 15.3594 1.35938ZM1.35938 1.35938C1.83333 0.885417 2.38021 0.648438 3 0.648438C3.61979 0.648438 4.16667 0.885417 4.64062 1.35938C5.11458 1.83333 5.35156 2.38021 5.35156 3C5.35156 3.61979 5.11458 4.16667 4.64062 4.64062C4.16667 5.11458 3.61979 5.35156 3 5.35156C2.38021 5.35156 1.83333 5.11458 1.35938 4.64062C0.885417 4.16667 0.648438 3.61979 0.648438 3C0.648438 2.38021 0.885417 1.83333 1.35938 1.35938Z" fill="#2F2F2F"/></svg></span>
+									</div>
+								</div>
 							</div>
-							<div class="personalArea-course__user-info">
-								<spna class="personalArea-course__name">Иван Иванов</spna>
-								<a href="#" class="personalArea-course__link">Посмотреть профиль</a>
+							<div class="file-slide">
+								<div class="file-wrap">
+									<div class="file-img">
+										<img src="img/Microsoft_Word-Logo.png" alt="">
+									</div>
+									<div class="file-info">
+										<p>Файл001.xls</p>
+										<span class="file-ico"><svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35938 1.35938C8.83333 0.885417 9.38021 0.648438 10 0.648438C10.6198 0.648438 11.1667 0.885417 11.6406 1.35938C12.1146 1.83333 12.3516 2.38021 12.3516 3C12.3516 3.61979 12.1146 4.16667 11.6406 4.64062C11.1667 5.11458 10.6198 5.35156 10 5.35156C9.38021 5.35156 8.83333 5.11458 8.35938 4.64062C7.88542 4.16667 7.64844 3.61979 7.64844 3C7.64844 2.38021 7.88542 1.83333 8.35938 1.35938ZM15.3594 1.35938C15.8333 0.885417 16.3802 0.648438 17 0.648438C17.6198 0.648438 18.1667 0.885417 18.6406 1.35938C19.1146 1.83333 19.3516 2.38021 19.3516 3C19.3516 3.61979 19.1146 4.16667 18.6406 4.64062C18.1667 5.11458 17.6198 5.35156 17 5.35156C16.3802 5.35156 15.8333 5.11458 15.3594 4.64062C14.8854 4.16667 14.6484 3.61979 14.6484 3C14.6484 2.38021 14.8854 1.83333 15.3594 1.35938ZM1.35938 1.35938C1.83333 0.885417 2.38021 0.648438 3 0.648438C3.61979 0.648438 4.16667 0.885417 4.64062 1.35938C5.11458 1.83333 5.35156 2.38021 5.35156 3C5.35156 3.61979 5.11458 4.16667 4.64062 4.64062C4.16667 5.11458 3.61979 5.35156 3 5.35156C2.38021 5.35156 1.83333 5.11458 1.35938 4.64062C0.885417 4.16667 0.648438 3.61979 0.648438 3C0.648438 2.38021 0.885417 1.83333 1.35938 1.35938Z" fill="#2F2F2F"/></svg></span>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="personalArea-block">
-				<div class="personalArea-block__top">
-					<span class="personalArea-block__title">Текущее домашнее задание</span>
-					<div class="personalArea-block__top-b"></div>
-				</div>
-				<div class="personalArea-slider__wrap range-slider__wrap">
-					<div class="personalArea-slider range-slider">
-						<div class="personalArea-slide">
-							<div class="lessonTopic">
-								<span class="lessonTopic-subtitle">Тема урока:</span>
-								<p><a href="#">Притяжательный падеж существительного.</a></p>
-								<div class="lessonTopic-bottom">
-									<span class="lessonTopic-subtitle">Срок сдачи:</span>
-									<p>25 мая 2020</p>
+							<div class="file-slide">
+								<div class="file-wrap">
+									<div class="file-img">
+										<img src="img/Microsoft_Excel-Logo.png" alt="">
+									</div>
+									<div class="file-info">
+										<p>Файл001.xls</p>
+										<span class="file-ico"><svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35938 1.35938C8.83333 0.885417 9.38021 0.648438 10 0.648438C10.6198 0.648438 11.1667 0.885417 11.6406 1.35938C12.1146 1.83333 12.3516 2.38021 12.3516 3C12.3516 3.61979 12.1146 4.16667 11.6406 4.64062C11.1667 5.11458 10.6198 5.35156 10 5.35156C9.38021 5.35156 8.83333 5.11458 8.35938 4.64062C7.88542 4.16667 7.64844 3.61979 7.64844 3C7.64844 2.38021 7.88542 1.83333 8.35938 1.35938ZM15.3594 1.35938C15.8333 0.885417 16.3802 0.648438 17 0.648438C17.6198 0.648438 18.1667 0.885417 18.6406 1.35938C19.1146 1.83333 19.3516 2.38021 19.3516 3C19.3516 3.61979 19.1146 4.16667 18.6406 4.64062C18.1667 5.11458 17.6198 5.35156 17 5.35156C16.3802 5.35156 15.8333 5.11458 15.3594 4.64062C14.8854 4.16667 14.6484 3.61979 14.6484 3C14.6484 2.38021 14.8854 1.83333 15.3594 1.35938ZM1.35938 1.35938C1.83333 0.885417 2.38021 0.648438 3 0.648438C3.61979 0.648438 4.16667 0.885417 4.64062 1.35938C5.11458 1.83333 5.35156 2.38021 5.35156 3C5.35156 3.61979 5.11458 4.16667 4.64062 4.64062C4.16667 5.11458 3.61979 5.35156 3 5.35156C2.38021 5.35156 1.83333 5.11458 1.35938 4.64062C0.885417 4.16667 0.648438 3.61979 0.648438 3C0.648438 2.38021 0.885417 1.83333 1.35938 1.35938Z" fill="#2F2F2F"/></svg></span>
+									</div>
+								</div>
+							</div>
+							<div class="file-slide">
+								<div class="file-wrap">
+									<div class="file-img">
+										<img src="img/Microsoft_Excel-Logo.png" alt="">
+									</div>
+									<div class="file-info">
+										<p>Файл001.xls</p>
+										<span class="file-ico"><svg width="20" height="6" viewBox="0 0 20 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.35938 1.35938C8.83333 0.885417 9.38021 0.648438 10 0.648438C10.6198 0.648438 11.1667 0.885417 11.6406 1.35938C12.1146 1.83333 12.3516 2.38021 12.3516 3C12.3516 3.61979 12.1146 4.16667 11.6406 4.64062C11.1667 5.11458 10.6198 5.35156 10 5.35156C9.38021 5.35156 8.83333 5.11458 8.35938 4.64062C7.88542 4.16667 7.64844 3.61979 7.64844 3C7.64844 2.38021 7.88542 1.83333 8.35938 1.35938ZM15.3594 1.35938C15.8333 0.885417 16.3802 0.648438 17 0.648438C17.6198 0.648438 18.1667 0.885417 18.6406 1.35938C19.1146 1.83333 19.3516 2.38021 19.3516 3C19.3516 3.61979 19.1146 4.16667 18.6406 4.64062C18.1667 5.11458 17.6198 5.35156 17 5.35156C16.3802 5.35156 15.8333 5.11458 15.3594 4.64062C14.8854 4.16667 14.6484 3.61979 14.6484 3C14.6484 2.38021 14.8854 1.83333 15.3594 1.35938ZM1.35938 1.35938C1.83333 0.885417 2.38021 0.648438 3 0.648438C3.61979 0.648438 4.16667 0.885417 4.64062 1.35938C5.11458 1.83333 5.35156 2.38021 5.35156 3C5.35156 3.61979 5.11458 4.16667 4.64062 4.64062C4.16667 5.11458 3.61979 5.35156 3 5.35156C2.38021 5.35156 1.83333 5.11458 1.35938 4.64062C0.885417 4.16667 0.648438 3.61979 0.648438 3C0.648438 2.38021 0.885417 1.83333 1.35938 1.35938Z" fill="#2F2F2F"/></svg></span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="personalArea-slide">
-							<div class="lessonTopic">
-								<span class="lessonTopic-subtitle">Тема урока:</span>
-								<p><a href="#">Множественное число существительного.</a></p>
-								<div class="lessonTopic-bottom">
-									<span class="lessonTopic-subtitle">Срок сдачи:</span>
-									<p>28 мая 2020</p>
-								</div>
-							</div>
-						</div>
-						<div class="personalArea-slide">
-							<div class="lessonTopic">
-								<span class="lessonTopic-subtitle">Тема урока:</span>
-								<p><a href="#">Упражнения на артикли</a></p>
-								<div class="lessonTopic-bottom">
-									<span class="lessonTopic-subtitle">Срок сдачи:</span>
-									<p>30 мая 2020</p>
-								</div>
-							</div>
-						</div>
-						<div class="personalArea-slide">
-							<div class="lessonTopic">
-								<span class="lessonTopic-subtitle">Тема урока:</span>
-								<p><a href="#">Множественное число существительного.</a></p>
-								<div class="lessonTopic-bottom">
-									<span class="lessonTopic-subtitle">Срок сдачи:</span>
-									<p>28 мая 2020</p>
-								</div>
-							</div>
-						</div>
-						<div class="personalArea-slide">
-							<div class="lessonTopic">
-								<span class="lessonTopic-subtitle">Тема урока:</span>
-								<p><a href="#">Притяжательный падеж существительного.</a></p>
-								<div class="lessonTopic-bottom">
-									<span class="lessonTopic-subtitle">Срок сдачи:</span>
-									<p>25 мая 2020</p>
-								</div>
-							</div>
-						</div>
+						<input type="range" class="range" min="1" value="1" step="1" max="5">
 					</div>
-					<input type="range" class="range" min="1" value="1" step="1" max="5">
-				</div>
-			</div>
-			<div class="personalArea-block">
-				<div class="personalArea-block__top personalArea-block__top-flex">
-					<span class="personalArea-block__title"><img src="img/warning.svg" alt="">Хвосты</span>
-					<div class="personalArea-block__top-b"></div>
-				</div>
-				<div class="personalArea-slider__wrap range-slider__wrap">
-					<div class="personalArea-slider range-slider">
-						<div class="personalArea-slide">
-							<div class="lessonTopic">
-								<span class="lessonTopic-subtitle">Тема урока:</span>
-								<p><a href="#">Притяжательный падеж существительного.</a></p>
-								<div class="lessonTopic-bottom">
-									<span class="lessonTopic-subtitle">Срок сдачи:</span>
-									<p>25 мая 2020</p>
-								</div>
-							</div>
-						</div>
-						<div class="personalArea-slide">
-							<div class="lessonTopic">
-								<span class="lessonTopic-subtitle">Тема урока:</span>
-								<p><a href="#">Множественное число существительного.</a></p>
-								<div class="lessonTopic-bottom">
-									<span class="lessonTopic-subtitle">Срок сдачи:</span>
-									<p>28 мая 2020</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<input type="range" class="range" min="1" value="1" step="1" max="2">
 				</div>
 			</div>
 		</div>
