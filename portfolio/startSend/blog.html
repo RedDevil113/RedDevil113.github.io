@@ -27,20 +27,26 @@
 			</div>
 			<div class="header-over">
 				<ul class="header-menu">
-					<li><a href="#">SMS</a></li>
-					<li><a href="#">VIBER</a></li>
+					<li class="drop">
+						<a href="#" class="drop-text">Тарифы</a>
+						<ul class="header-drop">
+							<li><a href="#">SMS</a></li>
+							<li><a href="#">VIBER</a></li>
+						</ul>
+					</li>
 					<li><a href="#">API</a></li>
 					<li><a href="#">ВОПРОСЫ</a></li>
 					<li><a href="#">КОНТАКТЫ</a></li>
+					<li><a href="#">Блог</a></li>
 				</ul>
 				<div class="header-btns">
-					<a href="#" class="header-btn">Вход</a>
-					<a href="#" class="header-link">Регистация</a>
+					<a href="#modal-entrance" class="header-btn button-modal">Вход</a>
+					<a href="#modal-registration" class="header-link button-modal">Регистация</a>
 				</div>
 			</div>
 			<div class="header-btns header-btns__mob">
-				<a href="#" class="header-btn">Вход</a>
-				<a href="#" class="header-link">Регистация</a>
+				<a href="#modal-entrance" class="header-btn button-modal">Вход</a>
+				<a href="#modal-registration" class="header-link button-modal">Регистация</a>
 			</div>
 			<ul class="header-list">
 				<li><a href="tel:88005514046" class="footer-phone">8-800-551-40-46</a></li>
@@ -373,6 +379,62 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<!-- modal-form -->
+	<div class="modal-overlay"></div>
+	<div class="modal modal-small" id="modal-registration">
+		<div class="modal-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g><g><path fill="#353c43" d="M11.759 9.996l7.862-7.87a1.252 1.252 0 0 0-1.768-1.77l-7.862 7.87L2.128.356A1.252 1.252 0 0 0 .36 2.125l7.863 7.87-7.863 7.87a1.252 1.252 0 0 0 1.768 1.77l7.863-7.871 7.862 7.87a1.245 1.245 0 0 0 1.768 0 1.252 1.252 0 0 0 0-1.77z"/></g></g></svg>
+		</div>
+		<div class="modal-content">
+			<h3 class="modal-head">Регистрация</h3>
+			<div class="modal-form">
+				<form action="">
+					<div class="input-block">
+						<input type="text" name="name" placeholder="Имя">
+					</div>
+					<div class="input-block">
+						<input type="tel" name="tel" placeholder="Телефон">
+					</div>
+					<button class="main-btn">Зарегистрироваться</button>
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<span class="checkbox-ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12"><g><g><path fill="#02182b" d="M15.612.82L15.15.37a1.334 1.334 0 0 0-1.848 0L5.456 8.022 2.672 5.308a1.333 1.333 0 0 0-1.846 0l-.462.45a1.256 1.256 0 0 0 0 1.801l4.167 4.067c.507.495 1.339.495 1.846 0l9.235-9.005a1.257 1.257 0 0 0 0-1.801z"/></g></g></svg></span>
+						<p>Я ознакомился с договором публичной оферты </p>
+					</div>
+				</form>
+			</div>
+			<div class="modal-bottom">
+				<p>Есть аккаунт? <a href="#modal-entrance" class="button-modal">Войти</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-small" id="modal-entrance">
+		<div class="modal-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g><g><path fill="#353c43" d="M11.759 9.996l7.862-7.87a1.252 1.252 0 0 0-1.768-1.77l-7.862 7.87L2.128.356A1.252 1.252 0 0 0 .36 2.125l7.863 7.87-7.863 7.87a1.252 1.252 0 0 0 1.768 1.77l7.863-7.871 7.862 7.87a1.245 1.245 0 0 0 1.768 0 1.252 1.252 0 0 0 0-1.77z"/></g></g></svg>
+		</div>
+		<div class="modal-content">
+			<h3 class="modal-head">Вход</h3>
+			<div class="modal-form">
+				<form action="">
+					<div class="input-block">
+						<input type="text" name="name" placeholder="Имя">
+					</div>
+					<div class="input-block">
+						<input type="tel" name="tel" placeholder="Телефон">
+					</div>
+					<button class="main-btn">Зарегистрироваться</button>
+					<div class="checkbox">
+						<input type="checkbox" checked>
+						<span class="checkbox-ico"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12"><g><g><path fill="#02182b" d="M15.612.82L15.15.37a1.334 1.334 0 0 0-1.848 0L5.456 8.022 2.672 5.308a1.333 1.333 0 0 0-1.846 0l-.462.45a1.256 1.256 0 0 0 0 1.801l4.167 4.067c.507.495 1.339.495 1.846 0l9.235-9.005a1.257 1.257 0 0 0 0-1.801z"/></g></g></svg></span>
+						<p>Я ознакомился с договором публичной оферты</p>
+					</div>
+				</form>
+			</div>
+			<div class="modal-bottom">
+				<p>Нет аккаунта? <a href="#modal-registration" class="button-modal">Регистрация</a></p>
+			</div>
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
