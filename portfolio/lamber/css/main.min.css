@@ -1,0 +1,25 @@
+/* -- main -- */
+.col-secondImg .colection-screen__img {
+  width: auto; }
+
+.col-secondImg img {
+  max-height: 710px; }
+
+.container-1090 {
+  max-width: 1170px;
+  width: 100%; }
+
+.decor-collection-left {
+  top: auto;
+  bottom: 550px; }
+  .decor-collection-left__first {
+    bottom: auto;
+    top: 330px;
+    max-width: 250px; }
+
+.decor-collection-right {
+  top: auto;
+  bottom: 550px; }
+  .decor-collection-right__first {
+    bottom: auto;
+    top: 1650px; }
