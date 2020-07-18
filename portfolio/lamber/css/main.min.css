@@ -23,3 +23,11 @@
   .decor-collection-right__first {
     bottom: auto;
     top: 1650px; }
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .col-secondImg img {
+    max-width: 240px; } }
+
+@media only screen and (max-width: 450px) {
+  .col-secondImg img {
+    max-width: 150px; } }
