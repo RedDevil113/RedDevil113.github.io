@@ -1,4 +1,7 @@
 /* -- main -- */
+.colection-screen__desc, .colection-screen__name {
+  max-width: 100%; }
+
 .col-secondImg .colection-screen__img {
   width: auto; }
 
@@ -22,7 +25,7 @@
   bottom: 550px; }
   .decor-collection-right__first {
     bottom: auto;
-    top: 1650px; }
+    top: 1400px; }
 
 @media (max-width: 767px) and (min-width: 320px) {
   .col-secondImg img {
