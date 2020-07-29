@@ -1,0 +1,79 @@
+@import "vars"
+
+.drop
+	position: relative
+	z-index: 20
+	&-wrap
+		position: absolute
+		top: 100%
+		left: 0
+		width: 220px
+		border: 1px solid rgba(0,0,0,.15)
+		border-radius: 3px
+		background: #fff
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.15)
+		z-index: 21
+		opacity: 0
+		visibility: hidden
+		transition: $transition
+		ul
+			li
+				a
+					display: block
+					width: 100%
+					line-height: 42px
+					font-size: 16px
+					color: #232323
+					padding: 0 10px
+					&:hover
+						background: #f7f7f7
+	&:hover
+		ul
+			opacity: 1
+			visibility: visible
+
+.header
+	&-bar span,&-bar span:before,&-bar span:after
+		display: block
+		height: 3px
+		width: 32px
+		position: absolute
+		top: 50%
+		margin-top: -1.5px
+		left: 50%
+		margin-left: -16px
+		background: $colorAccent
+	&-bar
+		position: absolute
+		top: 50%
+		right: 15px
+		transform: translate(0,-50%)
+		width: 40px
+		height: 40px
+		z-index: 1000
+		cursor: pointer
+		display: none
+		span
+			&:after
+				content: ''
+				transition: $transition
+				margin-top: 11px
+			&:before
+				content: ''
+				transition: $transition
+				margin-top: -13px
+	&.header-active
+		.header
+			&-bar
+				span
+					background: transparent
+					&:after
+						transform: rotate(-135deg)
+						margin-top: 0
+					&:before
+						transform: rotate(135deg)
+						margin-top: 0
+
+@media only screen and (max-width : 1200px)
+	.header
+	
